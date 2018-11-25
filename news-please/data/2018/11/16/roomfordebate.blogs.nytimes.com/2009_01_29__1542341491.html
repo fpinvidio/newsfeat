@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-roomfordebate section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta name="author" content="" />
+<meta name="CLMST" content="" />
+<meta name="byl" content="" />
+<meta name="GBLC" content="Business;Economy">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1233268248" />
+<meta name="PUD" content="20090129" />
+<meta name="pdate" content="20090129" />
+<meta name="ptime" content="20090129173048" />
+<meta name="utime" content="20090130193453" />
+<meta property="article:modified_time" itemprop="dateModified" content="2009-01-30T19:34:53-05:00" />
+<meta name="DISPLAYDATE" content="January 29, 2009" />
+<meta name="dat" content="January 29, 2009" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="roomfordebate" />
+<meta name="BN" content="roomfordebate" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Business" />
+<meta property="article:tag" content="Economy" />
+<meta property="article:tag" content="_featured" />
+<meta name="keywords" content="Business,Economy,_featured" />
+<meta name="description" content="Wall Street doled out $18.4 billion in bonuses for 2008. How does a compensation system allow for such pay in the midst of a financial industry collapse?" />
+<meta name="hdl" content="Bonuses for Bad Performance" />
+<meta property="og:title" content="Bonuses for Bad Performance" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//roomfordebate.blogs.nytimes.com/2009/01/29/bonuses-for-bad-performance/" />
+<meta property="og:site_name" content="Room for Debate" />
+<meta property="og:description" content="Wall Street doled out $18.4 billion in bonuses for 2008. How does a compensation system allow for such pay in the midst of a financial industry collapse?" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Bonuses for Bad Performance" />
+<meta name="twitter:url" content="//roomfordebate.blogs.nytimes.com/2009/01/29/bonuses-for-bad-performance/" />
+<meta name="twitter:description" content="Wall Street doled out $18.4 billion in bonuses for 2008. How does a compensation system allow for such pay in the midst of a financial industry collapse?" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='What&#8217;s Missing in the Stimulus Plan' href='//roomfordebate.blogs.nytimes.com/2009/01/28/whats-missing-in-the-stimulus-plan/' />
+<link rel='next' title='Michelle Obama&#8217;s Balancing Act' href='//roomfordebate.blogs.nytimes.com/2009/01/30/michelle-obamas-balancing-act/' />
+<link rel='canonical' href='//roomfordebate.blogs.nytimes.com/2009/01/29/bonuses-for-bad-performance/' />
+<link rel='shortlink' href='https://nyti.ms/2nSFjrs' />
+<link rel='https://github.com/WP-API/WP-API' href='//roomfordebate.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/roomfordebate/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//roomfordebate.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/roomfordebate/2009/01/29/bonuses-for-bad-performance/" />
+<meta name="dfp-ad-unit-path" content="opinion/roomfordebate" />			<title>Bonuses for Bad Performance - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-143 blog-universal nyt-blog-roomfordebate" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//roomfordebate.blogs.nytimes.com">
+                Room for Debate            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Bonuses for Bad Performance        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//roomfordebate.blogs.nytimes.com/2009/01/29/bonuses-for-bad-performance/"
+	 data-title="Bonuses for Bad Performance"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Wall Street doled out $18.4 billion in bonuses for 2008. How does a compensation system allow for such pay in the midst of a financial industry collapse? &lt;/span&gt;&lt;a href=&quot;//roomfordebate.blogs.nytimes.com/2009/01/29/bonuses-for-bad-performance/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="January 29, 2009 5:30 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="roomfordebate" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//roomfordebate.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="site-title">Room for Debate</div><div class="site-description">A New York Times Blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//roomfordebate.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Room for Debate">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-143 post type-post status-publish hentry category-business category-economy tag-bailout tag-bank-of-america tag-bonuses tag-executives tag-finance tag-investment-banks tag-merrill-lynch tag-wall-street" id="post-143">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Bonuses for Bad Performance</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+							</address>
+			<!-- date published --><time class="dateline " datetime="2009-01-29T22:30:48+00:00" itemprop="datePublished">January 29, 2009 5:30 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">January 29, 2009 5:30 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2009/01/28/opinion/29thain.480.jpg" alt="John Thain"><span class="caption">Merrill Lynch’s former chief executive, John A. Thain, has come under scrutiny for Merrill’s decision to pay $4 billion to $5 billion in bonuses in 2008. (Photo: Mario Tama/Getty Images)</span></div>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s official: your suspicions of Wall Street greed have been confirmed. Despite last year&#8217;s huge losses, multibillion-dollar bailouts and closings of some of the biggest names in the industry, Wall Street still gave out <a href="//www.nytimes.com/2009/01/29/business/29bonus.html">an estimated $18.4 billion in bonuses</a>. Indeed,<a href="//www.osc.state.ny.us/press/releases/jan09/012809.htm"> last year&#8217;s bonuses</a> were the <a href="//dealbook.blogs.nytimes.com/2009/01/28/wall-street-bonuses-fell-44-in-2008-report-says/">sixth-largest on record</a>. </p>
+<p class="story-body-text" itemprop="articleBody">On Thursday, President Obama, in a flash of anger, <a href="//thecaucus.blogs.nytimes.com/2009/01/29/dodd-slams-wall-st-bonuses-warns-firms/">called</a> <a href="//www.nytimes.com/2009/01/30/business/30obama.html">these bonuses &#8220;shameful,&#8221;</a> suggesting that he intended to take a hard line against excesses in executive compensation.</p>
+<p class="story-body-text" itemprop="articleBody">Is it time to make corporate compensation less reliant on bonuses? Here&#8217;s what some people in the know had to say. </p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-143"></span></p>
+<ul>
+<li><a href="#coffee">John C. Coffee Jr.,</a> law professor</li>
+<li><a href="#kletzer">Lori Kletzer,</a> professor of labor economics </li>
+<li><a href="#reed">Susan E. Reed,</a> business writer</li>
+<li><a href="#coffman">Curt W. Coffman,</a> management consultant</li>
+<li><a href="#othmer">James P. Othmer,</a> novelist</li>
+</ul>
+<hr/>
+<h4>The End of an Era</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/john_coffee.50.jpg" alt="John Coffee"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a name="coffee">John C. Coffee Jr.</a></strong> is the Adolf A. Berle Professor of Law and director of the Center on Corporate Governance at Columbia University Law School.</em></p>
+<p class="story-body-text" itemprop="articleBody">Although the public is amazed at the seeming arrogance underlying Merrill Lynch’s payment of more than $4 billion in discretionary bonuses to its investment bankers in a year in which it incurred record losses, this episode may more truly mark the “last hurrah” for a system and a culture that is approaching extinction. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>&#8220;Investment banks were teams of prima donnas, compensated under an &#8216;eat-what-you-kill&#8217; system.&#8221;</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Free-standing investment banks were the historical product of the Glass-Steagall Act of 1933, which insisted on the separation of investment and commercial banking. With the repeal of that legislation in 1999, larger commercial banks gradually began to acquire investment banks, and the 2008 financial crisis simply accelerated this process. </p>
+<p class="story-body-text" itemprop="articleBody">As this happened, two very different cultures collided &#8212; and Bank of America’s evident anger at the Merrill Lynch bonuses shows this culture shock. Commercial banks tend to be bureaucratic and hierarchical institutions with large executive staffs, in which junior officers climb the executive ladder patiently. </p>
+<div class="w190 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/wall_street.190h.jpg" alt="Wall Street"><span class="caption">(Photo: Mary Altaffer/Associated Press)</span></div>
+<p class="story-body-text" itemprop="articleBody">Investment banks were teams of prima donnas, compensated under an “eat-what-you-kill” system. Investment bankers were also highly mobile, and even mid-level bankers might be the key “relationship” partners to major clients, who could take the clients with them if they moved. Hence, they could command a portion of the transaction revenues that they generated.</p>
+<p class="story-body-text" itemprop="articleBody">The federal bailout is compelling the end of this compensation system  because the bonuses would come from taxpayer subsidies. But the incompatibility of the two cultures would likely have curtailed them anyway.</p>
+<p class="story-body-text" itemprop="articleBody">Does this mean that the day of the entrepreneurial risk-taking professional, who accepts feast and famine in alternating years, is over? Not really. Other professions seem also to thrive on “eat-what-you-kill” compensation. Witness the plaintiff’s attorney paid by contingency fees and the professional athlete with performance bonuses. But such a compensation system proves organizationally disruptive within larger and more staid &#8220;corporatist&#8221; organizations &#8212; except possibly at the very top!</p>
+<hr/>
+<h4>Bonuses v. Bailout</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/lori_kletzer.50.jpg" alt="Lori Kletzer"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a name="kletzer">Lori Kletzer</a></strong> is a professor of labor economics at University of California, Santa Cruz.</em></p>
+<p class="story-body-text" itemprop="articleBody">The point of employee bonuses is to tie compensation to results. If employees do better when the firm does better, then individual efforts and interests may be more correctly aligned with firm interests. </p>
+<p class="story-body-text" itemprop="articleBody">Hence, workers get bonuses in good times, and get their &#8220;guaranteed&#8221; salary in bad times. For Wall Street firms, 2008 was clearly a &#8220;terrible, horrible, no good, very bad&#8221; year (with apologies to Judith Viorst&#8217;s Alexander). Surely, there was no &#8220;performance&#8221; reason for Wall Street to dole out $18.4 billion in bonuses.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>&#8220;Firms taking bailout money should be subject to full public scrutiny in their compensation schemes.&#8221;</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Worse, those bonuses came for a year when financial firms took government bailout money. In the sense that &#8220;all dollars are green,&#8221; it not only looks wrong, it<em> is </em>wrong for taxpayer money (including future generations, given the bailout/deficit link) to go to bonuses of the already affluent. </p>
+<p class="story-body-text" itemprop="articleBody">Yes, we know that some bonuses dribble down to administrative assistants and clerical staff. But shouldn&#8217;t these workers get appropriately sized guaranteed salaries without depending on bonuses? After all, it&#8217;s unlikely that their particular efforts drove firm profits. At the same time, these workers surely were not responsible for the financial crisis. So what can be done?</p>
+<p class="story-body-text" itemprop="articleBody">Treasury Secretary Timothy Geithner noted the inappropriateness of Citigroup buying a $50 million corporate jet. Likewise, firms taking bailout money should be subject to full public scrutiny in their compensation schemes. The problem is not the bonus payments per se, it is the bailout money.</p>
+<hr/>
+<h4> Something&#8217;s Fishy</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/susan_reed.50.jpg" alt="Susan E. Reed"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a name="reed">Susan E. Reed</a></strong> is a journalist who has covered business news for CBS and several other organizations for 20 years.</em></p>
+<p class="story-body-text" itemprop="articleBody">Merrill Lynch shareholders have begun to discuss the possibility of suing the company for reportedly paying out $3 to $4 billion in cash bonuses to the financial wizards who enabled the firm to lose billions last year.  A successful suit of this kind would give financial services companies the shove they need to reform bonus practices that sanctify infernal risk and focus too little on the long-term growth and stability of the company. </p>
+<p class="story-body-text" itemprop="articleBody">A more productive way to distribute rewards is by only awarding company stock.  This would keep employees mindful of the risks they are taking to their organization and would tie their company’s performance to their own.  It would reduce the every-man-for-himself mentality that has thrived inside the big investment houses. And it would require employees and managers to shoulder their own risk.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>&#8220;A more productive way to distribute rewards is by only awarding company stock.&#8221;</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">It is not at all clear at this point how the Merrill shareholders will proceed now that they have sold or traded their shares as part of the merger with Bank of America.  But the fact that Andrew Cuomo, New York’s attorney general, has started to subpoena the main players in the case indicates that he is at least suspicious of why the bonuses were paid in the first place, and issued in December, conveniently before the Bank of America’s acquisition in January.</p>
+<p class="story-body-text" itemprop="articleBody">The larger question for taxpayers, who, through the Troubled Asset Relief Program, will contribute an estimated $7,000 per family to some of the very financial companies that caused the meltdown, is why the risk the companies took will be socialized, spread to all taxpayers, while the gains will remain privatized.  This means, essentially, that each American family will pay at least $7,000 in bonuses to these companies for the destabilizing risks that undermined the global economy.  It begins to put bonuses in an entirely new light, doesn’t it?</p>
+<hr/>
+<h4>Money Isn&#8217;t Everything</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/curt_coffman.50.jpg" alt="Curt W. Coffman"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a name="coffman">Curt W. Coffman</a></strong>, a senior partner of a management consulting firm, is the co-author of “First, Break All the Rules” and “Follow This Path.”</em></p>
+<p class="story-body-text" itemprop="articleBody">Many corporate directors and compensation committee members say they will lose great people and talent if bonuses are not provided. But this isn’t true.  Research shows that while pay and compensation are important, intrinsic motivation such as mission, purpose, achievement and creation of value trumps the dollar.  Indeed, when order of importance is tabulated, pay hovers at seventh place in its importance to creating high performance among employees. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>&#8220;Corporate leaders who received a bonus in 2008 should do the right thing and return it to the company.&#8221;</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">We don’t need to reform how we pay and reward employees, we simply need to return to the basic principles of performance-based compensation.  During the past decade or so, the criteria for bonuses on Wall Street has moved away from the company’s actual worth, or revenue, to posted gains instead. Those gains are often based on risky investments and offer only short-term insight into a company’s worth. </p>
+<p class="story-body-text" itemprop="articleBody">Going forward, corporate directors need to tie compensation to clearly defined targets that build the value of the company’s shares to the benefit of employees, shareholders and long-term sustainability.  Why? Because organizations need to eschew “buying growth” and dedicate themselves instead to “building growth.” </p>
+<p class="story-body-text" itemprop="articleBody">In the meantime, corporate leaders who received a bonus in 2008 should do the right thing and return it to the company. And at the end of the day, if you must pay employees the unearned bonus &#8212; do so and quickly show them the door!</p>
+<hr/>
+<h4>The Wrong Word</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/james_othmer.50.jpg" alt="James P. Othmer"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a name="othmer">James P. Othmer</a></strong> is the author of  “The Futurist,” a novel, and the forthcoming “Adland: Searching for the Meaning of Life on a Branded Planet.”</em></p>
+<p class="story-body-text" itemprop="articleBody">The problem isn’t with corporate bonuses; it’s with corporate semantics.  </p>
+<p class="story-body-text" itemprop="articleBody">By definition, a bonus is “something in addition to what is expected or strictly due.”  Perhaps, pre-Enron, pre-Madoff, pre-collapse of the financial, real estate and automotive industries, executives got away with receiving their annual seven figure bonuses because we were willing to believe that they truly were surprised by them.  Or we were so comfortable with our own financial situation that we didn’t care.</p>
+<p class="story-body-text" itemprop="articleBody">After all, it was a bonus!  Super-sized versions of the token gestures we were occasionally given even in our own jobs. The holiday turkey.  The extra week’s paycheck.  Or, if you happened to work in my field of advertising during the 1990s, the window pane envelope filled with soon to be worthless stock options.  </p>
+<p class="story-body-text" itemprop="articleBody">The primary reason we could call them bonuses is because some years we got one, but for so many others we got an explanation.  A key account was lost.  The global network had an off year. Something to do with the price of something.</p>
+<p class="story-body-text" itemprop="articleBody">Any true bonus has the thrill of uncertainty about it.  And the knowledge that when you finally get a good one all of your vocational stars are in alignment.</p>
+<p class="story-body-text" itemprop="articleBody">However, when a bonus is not only expected but mandated under any circumstance, it ceases to be a bonus.   It becomes an outrage.  Same goes for perks.</p>
+<p class="story-body-text" itemprop="articleBody">All of which is why I’m convinced if the Wall Street executives who this year raked in the sixth-highest haul in the history of bonuses, despite being responsible for the worst performing market of our lifetime, simply had the foresight to call their windfall anything but a bonus, we’d be cool with them.</p>
+<p class="story-body-text" itemprop="articleBody">We don’t need to reform corporate bonuses.  We just need to rephrase them.  Too bad bailout is taken.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//roomfordebate.blogs.nytimes.com/2009/01/29/bonuses-for-bad-performance/" data-title="Bonuses for Bad Performance" data-description="Wall Street doled out $18.4 billion in bonuses for 2008. How does a compensation system allow for such pay in the midst of a financial industry collapse? ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-9939">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Murray Schwartz</span>
+			<span class="comment-link">
+				<a href="#comment-9939" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Now that President Obama has expressed his outrage &#8211; along with most of us &#8211; what will he do abot it?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9941">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Grebo</span>
+			<span class="comment-link">
+				<a href="#comment-9941" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>If there is a  movement among investors to switch brokerage firms,  count me in.  I am ready to pull the plug on mine, to teach them a lesson.  I hope there is a national effort to tell these companies to recover the bonuses by a date certain, or we investors walk, en masse.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9943">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mark</span>
+			<span class="comment-link">
+				<a href="#comment-9943" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:16 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Make them ALL  &#8212; GIVE IT BACK!!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9945">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">amelia</span>
+			<span class="comment-link">
+				<a href="#comment-9945" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Since these companies were so eager to award such horrific business performances then they should return that same amount of money back to the taxpayers who bailed them out. It&#8217;s only fair.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9947">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JM</span>
+			<span class="comment-link">
+				<a href="#comment-9947" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Keep it up boys and girls, we will come and RETRIEVE any and all misappropriated funds!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9949">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Bob Lewis</span>
+			<span class="comment-link">
+				<a href="#comment-9949" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Such greed in such difficult times would suggest the need for some thorough IRS audits.  If greed drives one to take money virtually stolen from other, what might they do or report on a tax return to hold onto even more unearned money?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9951">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Karen Mines</span>
+			<span class="comment-link">
+				<a href="#comment-9951" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr. Obama did not spare the company in his remarks on Thursday, although he did not mention Citi by name. “Secretary Geithner already had to pull back on one institution that had gone forward with a multimillion-dollar plane it purchased at the same time as they are receiving TARP money,” he said, using the acronym for the government’s $700 billion Troubled Assets Relief Program, intended to rescue shaky financial firms. “We shouldn’t have to do that, because they should know better.”</p>
+<p>Well&#8230; they don&#8217;t know better. for the first time, as an Obama supporter and a contributor, I beg them to make this all VERY clear and punish the greedy. Again, GREED. It sickens me that the money sent to rescue the economy had no stipulations.<br />
+That &#8220;they should have known better&#8221; is not a term to explain what has happened. I welcome the government controls. PLEASE make this clear, or make it clear that money can be rescinded and prosecutions will follow for those who do not follow the spirit of the law.<br />
+karen</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9953">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Robert</span>
+			<span class="comment-link">
+				<a href="#comment-9953" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Since I have already contributed to the wealth that Bank of America has used to pay a premium price for a company eager to give away 5 billion dollars, I think that it is perfectly reasonable to stop paying said bank the money I owe them. The paltry 20 K of their money that I am using to survive wouldn&#8217;t pay for half of Thrain&#8217;s commode. I&#8217;m sure he wouldn&#8217;t mind sharing the wealth. What do you think? Would a wave of voluntary non-payment get their attention?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9955">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">dbsmith</span>
+			<span class="comment-link">
+				<a href="#comment-9955" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>With respect, where&#8217;s the &#8220;debate&#8221;?</p>
+<p>Every opinion you&#8217;ve highlighted is anti-bonus.</p>
+<p>Take an example:</p>
+<p>Merrill Lynch has some 60,000 employees spread across hundreds of profit centers (I will assume that people understand the profit center concept).</p>
+<p>Not all, or even most, of Merrill&#8217;s profit centers lost money in 2008. Lots of rank-and-file bankers worked very hard and produced profits for the company.</p>
+<p>All of your &#8220;experts&#8221; want to say that, because a few Merrill employees made horrendously bad deals/trades (most of them several years ago), NO ONE at Merrill should get a bonus. </p>
+<p>It is a well-settled management principle that people should not be held responsible for matters over which they have no authority. The vast majority of those 60,000 bankers have NO authority over anything other than their own (and their profit center&#8217;s) performance.</p>
+<p>The other problem with your &#8220;experts'&#8221; analysis is that ignores (surely they know it) that a &#8220;bonus&#8221; on Wall Street&#8217;s compensation culture is NOT completely discretionary. </p>
+<p>Young graduates are hired at base salaries which in no way support life in New York City. They sign on because they are promised an annual &#8220;bonus&#8221;. </p>
+<p>The amount of the bonus can vary based on individual and profit center performance but the implicit (and often explicit) promise made is that, at the end of the year, a living wage will be paid to compensate for working 18 hour days, six days a week.</p>
+<p>Finally, the NY Times reported that 2008 &#8220;bonus&#8221; payments are off 44%. The practical FACT of that number is that bankers took a BIG pay cut in 2008. For the typical investment banker a 44% cut in year end payment is NOT trivial.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9957">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">CGG217</span>
+			<span class="comment-link">
+				<a href="#comment-9957" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The truth is for many of us we don&#8217;t think we have much choice in how our money is &#8216;kept&#8217; and we do what we can with what we have and tolerate what we feel we have no control over. </p>
+<p>I&#8217;m just waiting for someone to look into how Student Loan companies, like Sallie Mae, have handled our dollars and the tax dollars that subsidized our loans.  There are lengthy blogs about what these student loan companies have done to consumers and given my experience with Sallie Mae, clearly they should be at the top of the list of trees we are shaking and how our tax dollars are spent, and what consumer protections are in place. </p>
+<p>The banking industry, we all knew about, the difference is now we have someone in office who cares about the corruption and what its doing to our economy.  </p>
+<p>The truth is anyone can do anything, but most of the time people forget that all things connect to one another and there are consequences to every decision made.  What I see is that many people make choices based on short term gains and long term losses.  </p>
+<p>We all share the same country, I think we need to learn to act like we do.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9959">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">CTfan</span>
+			<span class="comment-link">
+				<a href="#comment-9959" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:25 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Tying bonuses to sustainable long-term growth is an absolute must. </p>
+<p>Anyone who took a bonus based on work related to toxic assets should be required to return the $$, or face dismissal. These employees did not produce anything of value for their firms, and should not be rewarded for their dismal performances.</p>
+<p>The argument that bonuses are required to attract and retain talent is outmoded and lacks credibility in the world we know now . Both Titans and Pip-squeaks of Wall Street are grateful to have any job at all. No need to &#8220;incentivize.&#8221; (What an awful word.)</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9961">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JJ</span>
+			<span class="comment-link">
+				<a href="#comment-9961" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:25 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Meanwhile, my mother&#8217;s &#8220;low-risk&#8221; retirement fund (she is a retired NYC schoolteacher who practically broke her back teaching the city&#8217;s children) is down 50% and probably never to return.</p>
+<p>Where is her bonus?</p>
+<p>All of those bankers should be strung up in a public place.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9963">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Chitral Cheetah</span>
+			<span class="comment-link">
+				<a href="#comment-9963" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:25 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I can only think about Cisco&#8217;s CEO who in 2001 declared that he will take a salary of $1 until he brought Cisco out of the dotcom bust.  He deftly and responsibly did exactly that.<br />
+ Cisco continued to take good care of its employees as well. In the end Mr Chambers made good money from his stock options which was well deserved after all he more than anybody else was responsible for that rise in Cisco&#8217;s stock price. </p>
+<p>  Mr Thain, the auto execs and the greedy Wall St. Investment bankers need to learn a lesson or two from Mr Chambers.</p>
+<p>CC</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9965">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mike the Plumber</span>
+			<span class="comment-link">
+				<a href="#comment-9965" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:26 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The solution seem simple for jerks getting bonuses.  Lets institute a tax on bonuses of 125% when companies break even or loose money.  This way, the lucky receiptent, will have to pay big money to get the bonus.</p>
+<p>In fact, lets institute it now for the 2008 tax year.  The treasury sure could use the money.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9967">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Poppy</span>
+			<span class="comment-link">
+				<a href="#comment-9967" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>These incompetent crooks not only pay themselves big bonuses, they have the nerve to appear on CNBC and say that the current stimulus bill is more of the same entitlement programs extended. These financial channels are nothing but the voice of the corporate scums. Hardworking folks have seen their 401 K drop by 50% and more. While most middleclass families and the poor have been living through these hardships since 2006, one morning in November 2008, this morning show host on CNBC says  &#8211; How did it come to this state?. Clearly the financial reporters are having fun time galavanting around the world in the corporate jets, and are more of secretaries  than Journalists. Shame on CNBC and their ilk.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9969">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">nswfm</span>
+			<span class="comment-link">
+				<a href="#comment-9969" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>One doesn&#8217;t earn a bonus in a year where the American Taxpayer has to bailout your poorly run company. Nor did the shareholders deserve a dividend in a year where the American Taxpayer has to bailout your poorly run company.</p>
+<p>The  American Taxpayer should get their money back. Hank Paulson, the 3-page memo guy, should land in jail. Chris Cox, I didn&#8217;t have enough staff and didn&#8217;t make a compelling case to Congress to get more&#8211;even when controlled by the Republicans who appointed me, should land in jail. The division of AIG which did the CDSs should land in jail.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9971">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">padmelon</span>
+			<span class="comment-link">
+				<a href="#comment-9971" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:32 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I thought this was a &#8220;room for debate&#8221; column.  Won&#8217;t anyone take the side of the poor bonus recipients??</p>
+<p>As for these angry workers who will walk if they don&#8217;t get their bonuses, where will they walk to?  What other industry pays these salaries&#8211;not to mention bonuses?  Will they leave the US to work somewhere else where taxes are higher (England), they don&#8217;t speak the language (Tokyo), and the culture won&#8217;t tolerate the disparity of wages we seem to for granted (Seoul)?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9973">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">deujebaby</span>
+			<span class="comment-link">
+				<a href="#comment-9973" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:32 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>tar and feathers</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9975">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">rayleequooted</span>
+			<span class="comment-link">
+				<a href="#comment-9975" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:33 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This is criminal and perverted.   If they take the taxpayers money, the US should recover these ill gotten gains.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9977">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Frank, Poughkeepsie, New York</span>
+			<span class="comment-link">
+				<a href="#comment-9977" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:33 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Wall Street, Wall Street, Wall Street.  Why is everyone so fixated on Wall Street?  Do you REALLY think that they hold the monopoly on greed and stupidity?  The average CEO now receives more compensation in ONE year (based primarily on the achievement of short term objectives) than the average worker would receive in TEN working LIFETIMES.  THAT is the root cause of the rot that is eating our economy.  These people stand to make so much money THIS YEAR that they don&#8217;t care what damage is done to the firm in the medium to long term.  This is NOT capitalism &#8211; this is uncontrolled greed.  In Sweden, the average CEO compensation is FOUR times the average worker&#8217;s compensation, not four hundred times.  Yet they don&#8217;t appear to have a problem hiring and holding top talent &#8211; the reason that boards and compensation committees regularly trot out for paying their paymasters absurd sums of money.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9979">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Chris D</span>
+			<span class="comment-link">
+				<a href="#comment-9979" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:34 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The problem with attacking Wall Street bonuses is that Wall Street is not a monolith: not every employee, or even every investment banking executive, was losing money in credit default swaps and shoddy mortgage-backed securities.  If you&#8217;re an associate who worked your tail off taking a company public and made everyone &#8211; the company and your bank &#8211; a lot of money, why should you not get your bonus just because someone else lost money elsewhere?  This is the same logic that sees companies sell profitable units to finance money losers.  It doesn&#8217;t make sense.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9981">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">michelle</span>
+			<span class="comment-link">
+				<a href="#comment-9981" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:35 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>How difficult would it have been in the Paulson/Bernanke/Bush plan to build safeguards in such as &#8220;no bank that gives bonuses this year gets a penny of this money. . . .&#8221;<br />
+Or has I heard Robert Reich suggest  the other day on NPR: &#8220;no bank that gets TARP money gets to lobby Congress for x number of years. . . .&#8221;  </p>
+<p>Oops, I keep forgetting:  as long as you have any Republican in office, you will have billions of dollars in handouts to their billionaire friends and tough luck for the rest of us!  The GOP motto: &#8220;I&#8217;ve got mine and screw the rest of you!&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9983">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Metrofoxhills</span>
+			<span class="comment-link">
+				<a href="#comment-9983" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I am not surprised that banking and investment executives continue to give themselves bonuses even during this economic recession that we are having in this country.  They will go and lay off their workers and still continue to accept bonuses.  I think it is wrong; they feel they are better than most of their employees and the American consumers.  Any company that accepts taxpayer bailout funds and then gives their executives bonsus; the Federal Government should demand the companies return the bailout money at once.  They also need to cut out executive retreats, company planes and cars, executive formal lunches and dinners.  They need to learn to live like most of the working people in this country.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-9985">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">B.</span>
+			<span class="comment-link">
+				<a href="#comment-9985" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Funniest thing is that I am not amazed at these guys. What was expected but that the TARP would be regarded as free money. I&#8217;m amazed that I have not seen one damn decent riot about it. Especially now that the economy is in the tank, too. I&#8217;ve made my share of mistakes in life. Seems to me I paid for them. Sorry, it just looks that way to me. These guys make mistakes and we pay for them. Yes, something needed to be done. But now we need to start looking for revenge. It&#8217;s a simple concept. An eye for a jet? A limb for a portfolio. Can we get Biblical on their useless arses? Can I get an amen? </p>
+<p>Probably not. We have developed an weak social gag reflex. We swallow too damn much now. We are now become part of the problem.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-9989">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">A.S.</span>
+			<span class="comment-link">
+				<a href="#comment-9989" title="Comment Permalink">
+					<span class="comment-date">January 29, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:38 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>What about the possibility that such egregious acts be defined as a special sort of felony and upon trial and conviction allow for public whipping as a suitable form of punishment.</p>
+<p>It&#8217;s time that these people experience the pain their behavior inflicts on the rest of us.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2009/01/28/whats-missing-in-the-stimulus-plan/" title="What&#039;s Missing in the Stimulus Plan">
+				What&#8217;s Missing in the Stimulus Plan			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2009/01/30/michelle-obamas-balancing-act/" title="Michelle Obama&#039;s Balancing Act">
+				Michelle Obama&#8217;s Balancing Act			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//roomfordebate.blogs.nytimes.com/2010/07/'> July 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/06/'> June 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/05/'> May 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/04/'> April 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/03/'> March 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/02/'> February 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/01/'> January 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/12/'> December 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/11/'> November 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/10/'> October 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/09/'> September 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/08/'> August 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/07/'> July 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/06/'> June 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/05/'> May 2009 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" title="Read: Room for Debate Has Moved">Room for Debate Has Moved</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Visit Room for Debate&#8217;s new home on The New York Times Web site.<a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" title="Read: Should More Veterans Get P.T.S.D. Benefits?">Should More Veterans Get P.T.S.D. Benefits?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/"></a>
+				</span>			</h5>
+			<p class="summary">
+			What does the latest research tell us about the extent of combat trauma?<a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" title="Read: Do U.S. Donors Drive Israeli Politics?">Do U.S. Donors Drive Israeli Politics?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are American citizens&#8217; contributions to West Bank settlements helping or hurting the peace process?<a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" title="Read: What We Still Don&#8217;t Know About Sunscreens">What We Still Don&#8217;t Know About Sunscreens</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Why has the F.D.A. stalled in requiring better labels and safer ingredients in sunscreens?<a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" title="Read: The Pitfalls in Identifying a Gifted Child">The Pitfalls in Identifying a Gifted Child</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are New York City&#8217;s plans to revamp testing of preschoolers for gifted programs a step backward? <a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">Room for Debate on</span></span>
+</h4>
+<ul>
+</ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-74',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":86,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

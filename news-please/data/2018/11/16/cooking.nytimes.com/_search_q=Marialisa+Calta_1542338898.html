@@ -1,0 +1,4433 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Search Thousands of Recipes - NYT Cooking</title>
+
+    <script>
+      window.googletag = window.googletag || {};
+      window.googletag.cmd = window.googletag.cmd || [];
+    </script>
+
+    <script>
+      // nyt-a cookie required for Abra
+      document.cookie="nyt-a="+(document.cookie.match(/(?:^|;) *nyt-a=([^;]+)/)||[,btoa(String.fromCharCode.apply(String,(window.crypto||msCrypto).getRandomValues(new Uint8Array(18)))).replace(/\+/g,"-").replace(/\//g,"_")])[1]+";domain=.nytimes.com;path=/;expires="+new Date(+new Date+31536e6).toUTCString();
+
+      var NYTD=NYTD||{};NYTD.Abra=function(t){"use strict";function n(t){var n=i[t];return n&&n[1]||null}function e(t,n){if(t){var e,o,r=n[0],i=n[1],u=0,c=0;if(1!==i.length||4294967296!==i[0])for(e=a(t+" "+r)>>>0,u=0,c=0;o=i[u++];)if(e<(c+=o[0]))return o}}function o(n,e,o,a){s+="subject="+n+"&test="+encodeURIComponent(e)+"&variant="+encodeURIComponent(o||0)+"&url="+encodeURIComponent(t.location.href)+"&instant=1&skipAugment=true\n",a&&f.push(a),c||(c=t.setTimeout(r,0))}function r(){var n=new t.XMLHttpRequest,e=f;n.withCredentials=!0,n.open("POST",u),n.onreadystatechange=function(){var t,o;if(4==n.readyState)for(t=200==n.status?null:new Error(n.statusText);o=e.shift();)o(t)},n.send(s),s="",f=[],c=null}function a(t){for(var n,e,o,r,a,i,u,c=0,s=0,f=[],l=[n=1732584193,e=4023233417,~n,~e,3285377520],h=[],p=t.length;s<=p;)h[s>>2]|=(s<p?t.charCodeAt(s):128)<<8*(3-s++%4);for(h[u=p+8>>2|15]=p<<3;c<=u;c+=16){for(n=l,s=0;s<80;n=[0|[(i=((t=n[0])<<5|t>>>27)+n[4]+(f[s]=s<16?~~h[c+s]:i<<1|i>>>31)+1518500249)+((e=n[1])&(o=n[2])|~e&(r=n[3])),a=i+(e^o^r)+341275144,i+(e&o|e&r|o&r)+882459459,a+1535694389][0|s++/20],t,e<<30|e>>>2,o,r])i=f[s-3]^f[s-8]^f[s-14]^f[s-16];for(s=5;s;)l[--s]=l[s]+n[s]|0}return l[0]}var i,u,c,s="",f=[];return n.init=function(n,r){var a,c,s,f,l,h=[],p=(t.document.cookie.match(/(^|;) *nyt-a=([^;]*)/)||[])[2],d=(t.document.cookie.match(/(^|;) *ab7=([^;]*)/)||[])[2],m=new RegExp("[?&]abra(=([^&#]*))"),g=m.exec(t.location.search);if(g&&g[2]&&(d=d?g[2]+"&"+d:g[2]),i)throw new Error("can't init twice");if(u=r,i={},d)for(d=decodeURIComponent(d).split("&"),a=0;a<d.length;a++)l=d[a].split("="),l[0]in i||(i[l[0]]=[,l[1],1],o("ab-alloc",l[0],l[1]),l[1]&&h.push(l[0]+"="+l[1]));for(a=0;a<n.length;a++)s=n[a],(c=s[0])in i||(f=e(p,s)||[],i[c]=f,f[1]&&h.push(c.replace(/[^\w-]/g)+"="+(""+f[1]).replace(/[^\w-]/g)),f[2]&&o("ab-alloc",c,f[1]));h.length&&t.document.documentElement.setAttribute("data-nyt-ab",h.join(" "))},n.reportExposure=function(n,e){var r=i[n];r&&r[2]?o("ab-expose",n,r[1],e):e&&t.setTimeout(function(){e(null)},0)},n}(this);
+
+        NYTD.Abra.init([
+  [
+    "COOK_TP3_FreePayBalance",
+    [
+      [
+        429496730,
+        "0_control",
+        1
+      ],
+      [
+        429496730,
+        "1_paid",
+        1
+      ],
+      [
+        3435973836,
+        "holdout",
+        0
+      ]
+    ]
+  ]
+], '//et.nytimes.com');
+    </script>
+
+    <meta charset="UTF-8">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dea65dec80","applicationID":"38387186","transactionName":"cAleTBBWWVVRRBtDVlFJQ10DS1ZRG0VRVUFQDg==","queueTime":0,"applicationTime":230,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="sourceApp" content="nytcooking" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+<meta name="CG" content="npv">
+<meta name="SCG" content="cooking">
+<meta name="PT" content="search results">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="apple-itunes-app"
+      content="app-id=911422904">
+
+  <meta name="robots" content="noindex">
+
+  <meta property="og:url" content="https://cooking.nytimes.com/partial/search?query=marialisa+calta"/>
+  <link rel="canonical" href="https://cooking.nytimes.com/partial/search?query=marialisa+calta" />
+
+  <meta property="og:title" content="Search Thousands of Recipes" />
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="NYT Cooking"/>
+<meta property="article:publisher" content="https://www.facebook.com/nytcooking"/>
+<meta property="fb:app_id" content="422306974586348" />
+
+
+  <meta property="og:description" content="Search The New York Times recipe database to find the perfect recipe for any ingredient, season, type of dish, or cooking level."/>
+
+    <meta name="description" content="Search The New York Times recipe database to find the perfect recipe for any ingredient, season, type of dish, or cooking level."/>
+
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nytfood"/>
+
+
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+  <script async src="//typeface.nytimes.com/plw8kql.js"></script>
+
+
+      <script>
+    dataLayer = [{
+      'pageCategory': 'search'
+    }];
+  </script>
+
+
+      <link rel="stylesheet" media="all" href="//int.nyt.com/applications/cooking/b6a7ace/assets/core.min.css" />
+
+    <meta name="apple-mobile-web-app-title" content="NYT Cooking">
+<meta name="application-name" content="NYT Cooking">
+
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+
+  </head>
+
+  <body class="search-page logged-out    ">
+      <div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://cooking.nytimes.com/search?q=Marialisa+Calta&quot;,&quot;location&quot;:&quot;/search?q=Marialisa+Calta&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;cooking.nytimes.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/search&quot;,&quot;search&quot;:&quot;q=Marialisa+Calta&quot;,&quot;httpAcceptLanguage&quot;:&quot;en&quot;,&quot;serverSide&quot;:false}"></div>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="SiteNavWrapped" data-props="{&quot;user&quot;:null,&quot;modalState&quot;:{&quot;isOpen&quot;:false},&quot;popover&quot;:{&quot;dragToFolderPopover&quot;:{&quot;isDisplayed&quot;:false},&quot;savePopover&quot;:{&quot;isDisplayed&quot;:false,&quot;saveType&quot;:&quot;&quot;},&quot;signUpPopover&quot;:{&quot;isShown&quot;:false},&quot;subscribePopover&quot;:{&quot;isDisplayed&quot;:false}},&quot;app&quot;:{&quot;consumerMarketingURL&quot;:&quot;https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?return_url=https://cooking.nytimes.com&quot;,&quot;env&quot;:&quot;production&quot;,&quot;saveRecapURL&quot;:&quot;https://ckg-user-recommendations-dot-nyt-ckg-prd.appspot.com/recommendations/users&quot;,&quot;staticAssetHost&quot;:&quot;//int.nyt.com/applications/cooking/static&quot;},&quot;page&quot;:{&quot;type&quot;:&quot;search-page&quot;,&quot;id&quot;:null,&quot;viewableType&quot;:null},&quot;editorsCollections&quot;:{},&quot;promos&quot;:{&quot;homepage&quot;:null,&quot;recipeDetails&quot;:null,&quot;isFetchingPromos&quot;:false},&quot;recirculationBand&quot;:{&quot;suggestionsData&quot;:[],&quot;isTablet&quot;:false,&quot;promo&quot;:null},&quot;searchBarIsOpen&quot;:false,&quot;sidebarIsOpen&quot;:false,&quot;siteSearch&quot;:{&quot;query&quot;:&quot;marialisa calta&quot;,&quot;isFocused&quot;:false,&quot;autocomplete&quot;:{&quot;tags&quot;:null,&quot;recipes&quot;:null,&quot;guides&quot;:null}},&quot;topNav&quot;:{&quot;label&quot;:&quot;Thanksgiving&quot;,&quot;path&quot;:&quot;/topics/thanksgiving&quot;}}" data-trace="true" data-dom-id="siteNavMount"></div>
+    <div id="siteNavMount"><div data-reactroot="" data-reactid="1" data-react-checksum="2132701700"><div class="nytc---sitenav---siteNav" data-reactid="2"><div class="nytc---sitenav---siteNavWrap" data-reactid="3"><div class="nytc---maintenancemodebanner---maintenance-mode-banner" data-reactid="4"><span data-reactid="5">Sorry! We&#x27;re currently performing maintenance on the site. Certain actions are not working at this time. Check back later.</span></div><div class="nytc---hamburgerbtn---hamburgerWrapper" data-reactid="6"><a class="nytc---hamburgerbtn---hamburger" data-reactid="7"><span data-reactid="8">Menu</span></a></div><a href="/?action=click&amp;module=nav&amp;region=logo&amp;pgType=search-page" class="nytc---sitelogo---logoWrapper" alt="Cooking with The New York Times" data-reactid="9"><div class="nytc---sitelogo---logo" data-reactid="10"></div></a><a class="nytc---mobileSearchIcon---iconWrapper nytc---mobileSearchIcon---position" data-reactid="11"><span class="nytc---mobileSearchIcon---icon" data-reactid="12"></span></a><div class="nytc---mask---hidden nytc---mask---showNavBlackBG" data-reactid="13"></div></div></div><div class="nytc---sitesearch---siteSearch nytc---sitesearch---isNotLoggedIn nytc---sitesearch---isNotSubscribed nytc---sitesearch---isSearchPage nytc---sitesearch---open" data-reactid="14"><div class="nytc---sitesearchbar---inputWrap nytc---sitesearchbar---isSearchPage" data-reactid="15"><form class="nytc---sitesearchbar---searchForm" action="/" data-reactid="16"><span class="nytc---sitesearchbar---clearQuery" data-reactid="17">X</span><input type="search" aria-label="Search NYT Cooking" class="nytc---sitesearchbar---searchInput" placeholder="What would you like to cook?" value="marialisa calta" data-reactid="18"/><span class="nytc---sitesearchbar---searchBTN" data-reactid="19">Search</span></form></div></div></div></div>
+    
+<script id="consoleReplayLog">
+console.log.apply(console, ["[SERVER] RENDERED SiteNavWrapped to dom node with id: siteNavMount with railsContext:","{\"inMailer\":false,\"i18nLocale\":\"en\",\"i18nDefaultLocale\":\"en\",\"href\":\"https://cooking.nytimes.com/search?q=Marialisa+Calta\",\"location\":\"/search?q=Marialisa+Calta\",\"scheme\":\"https\",\"host\":\"cooking.nytimes.com\",\"port\":null,\"pathname\":\"/search\",\"search\":\"q=Marialisa+Calta\",\"httpAcceptLanguage\":\"en\",\"serverSide\":true}"]);
+</script>
+
+
+    <div id="appContainer"></div>
+    <div id="alertBannerMount"></div>
+
+
+        <div id="search-section" class="search-nav">
+          <div class="search-wrap">
+  <div id="inner-search-section" class="grid-wrap">
+
+      <div id="facets">
+  <div class="related-facets">
+
+      <h6 class="related-facets-header">Related Filters</h6>
+
+    <ul>
+        <li>
+          <a class="related-facet" term="thai" key=cuisines>
+            Thai
+          </a>
+        </li>
+        <li>
+          <a class="related-facet" term="mediterranean" key=cuisines>
+            Mediterranean
+          </a>
+        </li>
+        <li>
+          <a class="related-facet" term="middle%20eastern" key=cuisines>
+            Middle Eastern
+          </a>
+        </li>
+        <li>
+          <a class="related-facet" term="dinner" key=meal_types>
+            Dinner
+          </a>
+        </li>
+        <li>
+          <a class="related-facet" term="brunch" key=meal_types>
+            Brunch
+          </a>
+        </li>
+        <li>
+          <a class="related-facet" term="lunch" key=meal_types>
+            Lunch
+          </a>
+        </li>
+        <li>
+          <a class="related-facet" term="breakfast" key=meal_types>
+            Breakfast
+          </a>
+        </li>
+    </ul>
+  </div> <!-- close related-facets -->
+
+  <div id="all-facets">
+    <h6 class="filters-header"><span class="filters-text">More Filters</span></h6>
+
+    <div class="category-wrap">
+      
+        <div class="category openable mobile-modal" facet-type="special_diets">
+          <div class="category-name">
+            <div class="category-name-text" default="Diets" facet-type="special_diets">
+              Diets
+            </div>
+            <div class="arrow"></div>
+            <div class="clear-facet-circle" facet-type="special_diets"><span>X</span></div>
+          </div> <!-- close category-name -->
+
+          <div class="term-div openable-content">
+            <h4 class="term-list-label">Diets</h4>
+
+            <div class="term-list-container">
+              <ul class="term-list term-list-special_diets" facet-type=special_diets>
+                    <div class="term-wrapper" term="dairy-free" count="11">
+                    <li class="term" term="dairy-free" count="11" >
+                      <div class="checkbox" term="dairy-free" key="special_diets">
+                      </div>
+                      <label class="general-facet">dairy-free</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="gluten-free" count="15">
+                    <li class="term" term="gluten-free" count="15" >
+                      <div class="checkbox" term="gluten-free" key="special_diets">
+                      </div>
+                      <label class="general-facet">gluten-free</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="halal" count="0">
+                    <li class="term" term="halal" count="0" >
+                      <div class="checkbox" term="halal" key="special_diets">
+                      </div>
+                      <label class="general-facet">halal</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="healthy" count="0">
+                    <li class="term" term="healthy" count="0" >
+                      <div class="checkbox" term="healthy" key="special_diets">
+                      </div>
+                      <label class="general-facet">healthy</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="high fiber" count="0">
+                    <li class="term" term="high fiber" count="0" >
+                      <div class="checkbox" term="high fiber" key="special_diets">
+                      </div>
+                      <label class="general-facet">high fiber</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="high protein" count="0">
+                    <li class="term" term="high protein" count="0" >
+                      <div class="checkbox" term="high protein" key="special_diets">
+                      </div>
+                      <label class="general-facet">high protein</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="kosher" count="0">
+                    <li class="term" term="kosher" count="0" >
+                      <div class="checkbox" term="kosher" key="special_diets">
+                      </div>
+                      <label class="general-facet">kosher</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="low calorie" count="0">
+                    <li class="term" term="low calorie" count="0" >
+                      <div class="checkbox" term="low calorie" key="special_diets">
+                      </div>
+                      <label class="general-facet">low calorie</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="low cholesterol" count="0">
+                    <li class="term" term="low cholesterol" count="0" >
+                      <div class="checkbox" term="low cholesterol" key="special_diets">
+                      </div>
+                      <label class="general-facet">low cholesterol</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="low sugar" count="0">
+                    <li class="term" term="low sugar" count="0" >
+                      <div class="checkbox" term="low sugar" key="special_diets">
+                      </div>
+                      <label class="general-facet">low sugar</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="low-carb" count="0">
+                    <li class="term" term="low-carb" count="0" >
+                      <div class="checkbox" term="low-carb" key="special_diets">
+                      </div>
+                      <label class="general-facet">low-carb</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="low-fat" count="0">
+                    <li class="term" term="low-fat" count="0" >
+                      <div class="checkbox" term="low-fat" key="special_diets">
+                      </div>
+                      <label class="general-facet">low-fat</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="low-sodium" count="0">
+                    <li class="term" term="low-sodium" count="0" >
+                      <div class="checkbox" term="low-sodium" key="special_diets">
+                      </div>
+                      <label class="general-facet">low-sodium</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="nut-free" count="20">
+                    <li class="term" term="nut-free" count="20" >
+                      <div class="checkbox" term="nut-free" key="special_diets">
+                      </div>
+                      <label class="general-facet">nut-free</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="paleo" count="0">
+                    <li class="term" term="paleo" count="0" >
+                      <div class="checkbox" term="paleo" key="special_diets">
+                      </div>
+                      <label class="general-facet">paleo</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="raw" count="0">
+                    <li class="term" term="raw" count="0" >
+                      <div class="checkbox" term="raw" key="special_diets">
+                      </div>
+                      <label class="general-facet">raw</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="vegan" count="5">
+                    <li class="term" term="vegan" count="5" >
+                      <div class="checkbox" term="vegan" key="special_diets">
+                      </div>
+                      <label class="general-facet">vegan</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="vegetarian" count="11">
+                    <li class="term" term="vegetarian" count="11" >
+                      <div class="checkbox" term="vegetarian" key="special_diets">
+                      </div>
+                      <label class="general-facet">vegetarian</label>
+                    </li>
+                   </div>
+              </ul>
+            </div>
+
+            <button class="done-button">Done</button>
+          </div>
+
+      </div>
+        <div class="category openable mobile-modal" facet-type="cuisines">
+          <div class="category-name">
+            <div class="category-name-text" default="Cuisines" facet-type="cuisines">
+              Cuisines
+            </div>
+            <div class="arrow"></div>
+            <div class="clear-facet-circle" facet-type="cuisines"><span>X</span></div>
+          </div> <!-- close category-name -->
+
+          <div class="term-div openable-content">
+            <h4 class="term-list-label">Cuisines</h4>
+
+            <div class="term-list-container">
+              <ul class="term-list term-list-cuisines" facet-type=cuisines>
+                    <div class="term-wrapper" term="african" count="0">
+                    <li class="term" term="african" count="0" >
+                      <div class="checkbox" term="african" key="cuisines">
+                      </div>
+                      <label class="general-facet">african</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="american" count="0">
+                    <li class="term" term="american" count="0" >
+                      <div class="checkbox" term="american" key="cuisines">
+                      </div>
+                      <label class="general-facet">american</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="asian" count="1">
+                    <li class="term" term="asian" count="1" >
+                      <div class="checkbox" term="asian" key="cuisines">
+                      </div>
+                      <label class="general-facet">asian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="australian" count="0">
+                    <li class="term" term="australian" count="0" >
+                      <div class="checkbox" term="australian" key="cuisines">
+                      </div>
+                      <label class="general-facet">australian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="austrian" count="0">
+                    <li class="term" term="austrian" count="0" >
+                      <div class="checkbox" term="austrian" key="cuisines">
+                      </div>
+                      <label class="general-facet">austrian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="barbecue" count="0">
+                    <li class="term" term="barbecue" count="0" >
+                      <div class="checkbox" term="barbecue" key="cuisines">
+                      </div>
+                      <label class="general-facet">barbecue</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="belgian" count="0">
+                    <li class="term" term="belgian" count="0" >
+                      <div class="checkbox" term="belgian" key="cuisines">
+                      </div>
+                      <label class="general-facet">belgian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="brazilian" count="0">
+                    <li class="term" term="brazilian" count="0" >
+                      <div class="checkbox" term="brazilian" key="cuisines">
+                      </div>
+                      <label class="general-facet">brazilian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="british" count="0">
+                    <li class="term" term="british" count="0" >
+                      <div class="checkbox" term="british" key="cuisines">
+                      </div>
+                      <label class="general-facet">british</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cajun" count="0">
+                    <li class="term" term="cajun" count="0" >
+                      <div class="checkbox" term="cajun" key="cuisines">
+                      </div>
+                      <label class="general-facet">cajun</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="canadian" count="0">
+                    <li class="term" term="canadian" count="0" >
+                      <div class="checkbox" term="canadian" key="cuisines">
+                      </div>
+                      <label class="general-facet">canadian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="caribbean" count="0">
+                    <li class="term" term="caribbean" count="0" >
+                      <div class="checkbox" term="caribbean" key="cuisines">
+                      </div>
+                      <label class="general-facet">caribbean</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="central american" count="0">
+                    <li class="term" term="central american" count="0" >
+                      <div class="checkbox" term="central american" key="cuisines">
+                      </div>
+                      <label class="general-facet">central american</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="chinese" count="4">
+                    <li class="term" term="chinese" count="4" >
+                      <div class="checkbox" term="chinese" key="cuisines">
+                      </div>
+                      <label class="general-facet">chinese</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="creole" count="0">
+                    <li class="term" term="creole" count="0" >
+                      <div class="checkbox" term="creole" key="cuisines">
+                      </div>
+                      <label class="general-facet">creole</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cuban" count="0">
+                    <li class="term" term="cuban" count="0" >
+                      <div class="checkbox" term="cuban" key="cuisines">
+                      </div>
+                      <label class="general-facet">cuban</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="eastern european" count="1">
+                    <li class="term" term="eastern european" count="1" >
+                      <div class="checkbox" term="eastern european" key="cuisines">
+                      </div>
+                      <label class="general-facet">eastern european</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="ethiopian" count="0">
+                    <li class="term" term="ethiopian" count="0" >
+                      <div class="checkbox" term="ethiopian" key="cuisines">
+                      </div>
+                      <label class="general-facet">ethiopian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="filipino" count="0">
+                    <li class="term" term="filipino" count="0" >
+                      <div class="checkbox" term="filipino" key="cuisines">
+                      </div>
+                      <label class="general-facet">filipino</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="french" count="1">
+                    <li class="term" term="french" count="1" >
+                      <div class="checkbox" term="french" key="cuisines">
+                      </div>
+                      <label class="general-facet">french</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="german" count="0">
+                    <li class="term" term="german" count="0" >
+                      <div class="checkbox" term="german" key="cuisines">
+                      </div>
+                      <label class="general-facet">german</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="greek" count="0">
+                    <li class="term" term="greek" count="0" >
+                      <div class="checkbox" term="greek" key="cuisines">
+                      </div>
+                      <label class="general-facet">greek</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="icelandic" count="0">
+                    <li class="term" term="icelandic" count="0" >
+                      <div class="checkbox" term="icelandic" key="cuisines">
+                      </div>
+                      <label class="general-facet">icelandic</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="indian" count="0">
+                    <li class="term" term="indian" count="0" >
+                      <div class="checkbox" term="indian" key="cuisines">
+                      </div>
+                      <label class="general-facet">indian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="indonesian" count="0">
+                    <li class="term" term="indonesian" count="0" >
+                      <div class="checkbox" term="indonesian" key="cuisines">
+                      </div>
+                      <label class="general-facet">indonesian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="irish" count="1">
+                    <li class="term" term="irish" count="1" >
+                      <div class="checkbox" term="irish" key="cuisines">
+                      </div>
+                      <label class="general-facet">irish</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="italian" count="6">
+                    <li class="term" term="italian" count="6" >
+                      <div class="checkbox" term="italian" key="cuisines">
+                      </div>
+                      <label class="general-facet">italian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="japanese" count="0">
+                    <li class="term" term="japanese" count="0" >
+                      <div class="checkbox" term="japanese" key="cuisines">
+                      </div>
+                      <label class="general-facet">japanese</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="jewish" count="0">
+                    <li class="term" term="jewish" count="0" >
+                      <div class="checkbox" term="jewish" key="cuisines">
+                      </div>
+                      <label class="general-facet">jewish</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="korean" count="0">
+                    <li class="term" term="korean" count="0" >
+                      <div class="checkbox" term="korean" key="cuisines">
+                      </div>
+                      <label class="general-facet">korean</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="latin american" count="0">
+                    <li class="term" term="latin american" count="0" >
+                      <div class="checkbox" term="latin american" key="cuisines">
+                      </div>
+                      <label class="general-facet">latin american</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="malaysian" count="0">
+                    <li class="term" term="malaysian" count="0" >
+                      <div class="checkbox" term="malaysian" key="cuisines">
+                      </div>
+                      <label class="general-facet">malaysian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="mediterranean" count="1">
+                    <li class="term" term="mediterranean" count="1" >
+                      <div class="checkbox" term="mediterranean" key="cuisines">
+                      </div>
+                      <label class="general-facet">mediterranean</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="mexican" count="0">
+                    <li class="term" term="mexican" count="0" >
+                      <div class="checkbox" term="mexican" key="cuisines">
+                      </div>
+                      <label class="general-facet">mexican</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="middle eastern" count="1">
+                    <li class="term" term="middle eastern" count="1" >
+                      <div class="checkbox" term="middle eastern" key="cuisines">
+                      </div>
+                      <label class="general-facet">middle eastern</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="moroccan" count="0">
+                    <li class="term" term="moroccan" count="0" >
+                      <div class="checkbox" term="moroccan" key="cuisines">
+                      </div>
+                      <label class="general-facet">moroccan</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="new england" count="0">
+                    <li class="term" term="new england" count="0" >
+                      <div class="checkbox" term="new england" key="cuisines">
+                      </div>
+                      <label class="general-facet">new england</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pakistani" count="0">
+                    <li class="term" term="pakistani" count="0" >
+                      <div class="checkbox" term="pakistani" key="cuisines">
+                      </div>
+                      <label class="general-facet">pakistani</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="portuguese" count="0">
+                    <li class="term" term="portuguese" count="0" >
+                      <div class="checkbox" term="portuguese" key="cuisines">
+                      </div>
+                      <label class="general-facet">portuguese</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="provencal" count="0">
+                    <li class="term" term="provencal" count="0" >
+                      <div class="checkbox" term="provencal" key="cuisines">
+                      </div>
+                      <label class="general-facet">provencal</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="russian" count="0">
+                    <li class="term" term="russian" count="0" >
+                      <div class="checkbox" term="russian" key="cuisines">
+                      </div>
+                      <label class="general-facet">russian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="scandinavian" count="0">
+                    <li class="term" term="scandinavian" count="0" >
+                      <div class="checkbox" term="scandinavian" key="cuisines">
+                      </div>
+                      <label class="general-facet">scandinavian</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="south american" count="0">
+                    <li class="term" term="south american" count="0" >
+                      <div class="checkbox" term="south american" key="cuisines">
+                      </div>
+                      <label class="general-facet">south american</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="southern" count="0">
+                    <li class="term" term="southern" count="0" >
+                      <div class="checkbox" term="southern" key="cuisines">
+                      </div>
+                      <label class="general-facet">southern</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="southwestern" count="2">
+                    <li class="term" term="southwestern" count="2" >
+                      <div class="checkbox" term="southwestern" key="cuisines">
+                      </div>
+                      <label class="general-facet">southwestern</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="spanish" count="0">
+                    <li class="term" term="spanish" count="0" >
+                      <div class="checkbox" term="spanish" key="cuisines">
+                      </div>
+                      <label class="general-facet">spanish</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="thai" count="0">
+                    <li class="term" term="thai" count="0" >
+                      <div class="checkbox" term="thai" key="cuisines">
+                      </div>
+                      <label class="general-facet">thai</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="tibetan" count="0">
+                    <li class="term" term="tibetan" count="0" >
+                      <div class="checkbox" term="tibetan" key="cuisines">
+                      </div>
+                      <label class="general-facet">tibetan</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="turkish" count="0">
+                    <li class="term" term="turkish" count="0" >
+                      <div class="checkbox" term="turkish" key="cuisines">
+                      </div>
+                      <label class="general-facet">turkish</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="vietnamese" count="0">
+                    <li class="term" term="vietnamese" count="0" >
+                      <div class="checkbox" term="vietnamese" key="cuisines">
+                      </div>
+                      <label class="general-facet">vietnamese</label>
+                    </li>
+                   </div>
+              </ul>
+            </div>
+
+            <button class="done-button">Done</button>
+          </div>
+
+      </div>
+        <div class="category openable mobile-modal" facet-type="preparation_techniques">
+          <div class="category-name">
+            <div class="category-name-text" default="Preparation Methods" facet-type="preparation_techniques">
+              Preparation Methods
+            </div>
+            <div class="arrow"></div>
+            <div class="clear-facet-circle" facet-type="preparation_techniques"><span>X</span></div>
+          </div> <!-- close category-name -->
+
+          <div class="term-div openable-content">
+            <h4 class="term-list-label">Preparation Methods</h4>
+
+            <div class="term-list-container">
+              <ul class="term-list term-list-preparation_techniques" facet-type=preparation_techniques>
+                    <div class="term-wrapper" term="bake" count="17">
+                    <li class="term" term="bake" count="17" >
+                      <div class="checkbox" term="bake" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">bake</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="barbecue" count="0">
+                    <li class="term" term="barbecue" count="0" >
+                      <div class="checkbox" term="barbecue" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">barbecue</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="blanch" count="0">
+                    <li class="term" term="blanch" count="0" >
+                      <div class="checkbox" term="blanch" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">blanch</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="blind bake" count="0">
+                    <li class="term" term="blind bake" count="0" >
+                      <div class="checkbox" term="blind bake" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">blind bake</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="boil" count="12">
+                    <li class="term" term="boil" count="12" >
+                      <div class="checkbox" term="boil" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">boil</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="braise" count="2">
+                    <li class="term" term="braise" count="2" >
+                      <div class="checkbox" term="braise" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">braise</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="brine" count="0">
+                    <li class="term" term="brine" count="0" >
+                      <div class="checkbox" term="brine" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">brine</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="broil" count="0">
+                    <li class="term" term="broil" count="0" >
+                      <div class="checkbox" term="broil" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">broil</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="brown" count="0">
+                    <li class="term" term="brown" count="0" >
+                      <div class="checkbox" term="brown" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">brown</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="butterfly" count="0">
+                    <li class="term" term="butterfly" count="0" >
+                      <div class="checkbox" term="butterfly" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">butterfly</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="candy" count="0">
+                    <li class="term" term="candy" count="0" >
+                      <div class="checkbox" term="candy" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">candy</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="caramelize" count="0">
+                    <li class="term" term="caramelize" count="0" >
+                      <div class="checkbox" term="caramelize" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">caramelize</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="char" count="0">
+                    <li class="term" term="char" count="0" >
+                      <div class="checkbox" term="char" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">char</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="chiffonade" count="0">
+                    <li class="term" term="chiffonade" count="0" >
+                      <div class="checkbox" term="chiffonade" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">chiffonade</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="chill" count="0">
+                    <li class="term" term="chill" count="0" >
+                      <div class="checkbox" term="chill" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">chill</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="chop" count="7">
+                    <li class="term" term="chop" count="7" >
+                      <div class="checkbox" term="chop" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">chop</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="clarify" count="0">
+                    <li class="term" term="clarify" count="0" >
+                      <div class="checkbox" term="clarify" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">clarify</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="clean fish" count="0">
+                    <li class="term" term="clean fish" count="0" >
+                      <div class="checkbox" term="clean fish" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">clean fish</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="coat" count="0">
+                    <li class="term" term="coat" count="0" >
+                      <div class="checkbox" term="coat" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">coat</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="confit" count="0">
+                    <li class="term" term="confit" count="0" >
+                      <div class="checkbox" term="confit" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">confit</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cream" count="0">
+                    <li class="term" term="cream" count="0" >
+                      <div class="checkbox" term="cream" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">cream</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="crimp" count="0">
+                    <li class="term" term="crimp" count="0" >
+                      <div class="checkbox" term="crimp" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">crimp</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="crush" count="0">
+                    <li class="term" term="crush" count="0" >
+                      <div class="checkbox" term="crush" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">crush</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cure" count="0">
+                    <li class="term" term="cure" count="0" >
+                      <div class="checkbox" term="cure" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">cure</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cut" count="3">
+                    <li class="term" term="cut" count="3" >
+                      <div class="checkbox" term="cut" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">cut</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="de-bone" count="0">
+                    <li class="term" term="de-bone" count="0" >
+                      <div class="checkbox" term="de-bone" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">de-bone</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="deep fry" count="0">
+                    <li class="term" term="deep fry" count="0" >
+                      <div class="checkbox" term="deep fry" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">deep fry</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="deglaze" count="0">
+                    <li class="term" term="deglaze" count="0" >
+                      <div class="checkbox" term="deglaze" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">deglaze</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="dice" count="0">
+                    <li class="term" term="dice" count="0" >
+                      <div class="checkbox" term="dice" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">dice</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="double boil" count="0">
+                    <li class="term" term="double boil" count="0" >
+                      <div class="checkbox" term="double boil" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">double boil</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="dredge" count="2">
+                    <li class="term" term="dredge" count="2" >
+                      <div class="checkbox" term="dredge" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">dredge</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="emulsify" count="0">
+                    <li class="term" term="emulsify" count="0" >
+                      <div class="checkbox" term="emulsify" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">emulsify</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="ferment" count="0">
+                    <li class="term" term="ferment" count="0" >
+                      <div class="checkbox" term="ferment" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">ferment</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="flambe" count="0">
+                    <li class="term" term="flambe" count="0" >
+                      <div class="checkbox" term="flambe" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">flambe</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="frost" count="0">
+                    <li class="term" term="frost" count="0" >
+                      <div class="checkbox" term="frost" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">frost</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="fry" count="3">
+                    <li class="term" term="fry" count="3" >
+                      <div class="checkbox" term="fry" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">fry</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="fry glaze" count="0">
+                    <li class="term" term="fry glaze" count="0" >
+                      <div class="checkbox" term="fry glaze" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">fry glaze</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="grill" count="0">
+                    <li class="term" term="grill" count="0" >
+                      <div class="checkbox" term="grill" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">grill</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="indirect grilling" count="0">
+                    <li class="term" term="indirect grilling" count="0" >
+                      <div class="checkbox" term="indirect grilling" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">indirect grilling</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="infuse" count="0">
+                    <li class="term" term="infuse" count="0" >
+                      <div class="checkbox" term="infuse" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">infuse</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="juice" count="0">
+                    <li class="term" term="juice" count="0" >
+                      <div class="checkbox" term="juice" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">juice</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="julienne" count="0">
+                    <li class="term" term="julienne" count="0" >
+                      <div class="checkbox" term="julienne" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">julienne</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="knead" count="0">
+                    <li class="term" term="knead" count="0" >
+                      <div class="checkbox" term="knead" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">knead</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="macerate" count="0">
+                    <li class="term" term="macerate" count="0" >
+                      <div class="checkbox" term="macerate" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">macerate</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="marinate" count="3">
+                    <li class="term" term="marinate" count="3" >
+                      <div class="checkbox" term="marinate" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">marinate</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="mash" count="0">
+                    <li class="term" term="mash" count="0" >
+                      <div class="checkbox" term="mash" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">mash</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="melt" count="0">
+                    <li class="term" term="melt" count="0" >
+                      <div class="checkbox" term="melt" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">melt</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="microwave" count="0">
+                    <li class="term" term="microwave" count="0" >
+                      <div class="checkbox" term="microwave" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">microwave</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="mince" count="0">
+                    <li class="term" term="mince" count="0" >
+                      <div class="checkbox" term="mince" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">mince</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="muddle" count="0">
+                    <li class="term" term="muddle" count="0" >
+                      <div class="checkbox" term="muddle" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">muddle</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="no cook" count="0">
+                    <li class="term" term="no cook" count="0" >
+                      <div class="checkbox" term="no cook" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">no cook</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pan-fry" count="0">
+                    <li class="term" term="pan-fry" count="0" >
+                      <div class="checkbox" term="pan-fry" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">pan-fry</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pan-grill" count="0">
+                    <li class="term" term="pan-grill" count="0" >
+                      <div class="checkbox" term="pan-grill" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">pan-grill</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="parboil" count="0">
+                    <li class="term" term="parboil" count="0" >
+                      <div class="checkbox" term="parboil" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">parboil</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pickle" count="0">
+                    <li class="term" term="pickle" count="0" >
+                      <div class="checkbox" term="pickle" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">pickle</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="poach" count="0">
+                    <li class="term" term="poach" count="0" >
+                      <div class="checkbox" term="poach" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">poach</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="preserve" count="0">
+                    <li class="term" term="preserve" count="0" >
+                      <div class="checkbox" term="preserve" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">preserve</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pressure cook" count="0">
+                    <li class="term" term="pressure cook" count="0" >
+                      <div class="checkbox" term="pressure cook" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">pressure cook</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="puree" count="0">
+                    <li class="term" term="puree" count="0" >
+                      <div class="checkbox" term="puree" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">puree</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="reduce" count="0">
+                    <li class="term" term="reduce" count="0" >
+                      <div class="checkbox" term="reduce" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">reduce</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="render" count="0">
+                    <li class="term" term="render" count="0" >
+                      <div class="checkbox" term="render" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">render</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="rice" count="0">
+                    <li class="term" term="rice" count="0" >
+                      <div class="checkbox" term="rice" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">rice</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="roast" count="2">
+                    <li class="term" term="roast" count="2" >
+                      <div class="checkbox" term="roast" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">roast</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="roux" count="0">
+                    <li class="term" term="roux" count="0" >
+                      <div class="checkbox" term="roux" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">roux</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="saute" count="13">
+                    <li class="term" term="saute" count="13" >
+                      <div class="checkbox" term="saute" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">saute</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="sear" count="0">
+                    <li class="term" term="sear" count="0" >
+                      <div class="checkbox" term="sear" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">sear</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="shuck" count="0">
+                    <li class="term" term="shuck" count="0" >
+                      <div class="checkbox" term="shuck" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">shuck</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="simmer" count="0">
+                    <li class="term" term="simmer" count="0" >
+                      <div class="checkbox" term="simmer" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">simmer</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="skewer" count="0">
+                    <li class="term" term="skewer" count="0" >
+                      <div class="checkbox" term="skewer" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">skewer</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="skim" count="0">
+                    <li class="term" term="skim" count="0" >
+                      <div class="checkbox" term="skim" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">skim</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="slice" count="0">
+                    <li class="term" term="slice" count="0" >
+                      <div class="checkbox" term="slice" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">slice</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="slow cook" count="3">
+                    <li class="term" term="slow cook" count="3" >
+                      <div class="checkbox" term="slow cook" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">slow cook</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="smoke" count="1">
+                    <li class="term" term="smoke" count="1" >
+                      <div class="checkbox" term="smoke" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">smoke</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="sous vide" count="0">
+                    <li class="term" term="sous vide" count="0" >
+                      <div class="checkbox" term="sous vide" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">sous vide</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="spatchcock" count="0">
+                    <li class="term" term="spatchcock" count="0" >
+                      <div class="checkbox" term="spatchcock" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">spatchcock</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="steam" count="1">
+                    <li class="term" term="steam" count="1" >
+                      <div class="checkbox" term="steam" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">steam</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="steep" count="0">
+                    <li class="term" term="steep" count="0" >
+                      <div class="checkbox" term="steep" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">steep</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="stem" count="0">
+                    <li class="term" term="stem" count="0" >
+                      <div class="checkbox" term="stem" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">stem</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="stew" count="0">
+                    <li class="term" term="stew" count="0" >
+                      <div class="checkbox" term="stew" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">stew</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="stir-fry" count="2">
+                    <li class="term" term="stir-fry" count="2" >
+                      <div class="checkbox" term="stir-fry" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">stir-fry</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="stuff" count="0">
+                    <li class="term" term="stuff" count="0" >
+                      <div class="checkbox" term="stuff" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">stuff</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="sweat" count="0">
+                    <li class="term" term="sweat" count="0" >
+                      <div class="checkbox" term="sweat" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">sweat</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="temper" count="0">
+                    <li class="term" term="temper" count="0" >
+                      <div class="checkbox" term="temper" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">temper</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="toast" count="0">
+                    <li class="term" term="toast" count="0" >
+                      <div class="checkbox" term="toast" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">toast</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="trim" count="0">
+                    <li class="term" term="trim" count="0" >
+                      <div class="checkbox" term="trim" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">trim</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="truss" count="0">
+                    <li class="term" term="truss" count="0" >
+                      <div class="checkbox" term="truss" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">truss</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="unmold" count="0">
+                    <li class="term" term="unmold" count="0" >
+                      <div class="checkbox" term="unmold" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">unmold</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="wash" count="0">
+                    <li class="term" term="wash" count="0" >
+                      <div class="checkbox" term="wash" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">wash</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="water bath" count="0">
+                    <li class="term" term="water bath" count="0" >
+                      <div class="checkbox" term="water bath" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">water bath</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="whip" count="0">
+                    <li class="term" term="whip" count="0" >
+                      <div class="checkbox" term="whip" key="preparation_techniques">
+                      </div>
+                      <label class="general-facet">whip</label>
+                    </li>
+                   </div>
+              </ul>
+            </div>
+
+            <button class="done-button">Done</button>
+          </div>
+
+      </div>
+        <div class="category openable mobile-modal" facet-type="meal_types">
+          <div class="category-name">
+            <div class="category-name-text" default="Meal Types" facet-type="meal_types">
+              Meal Types
+            </div>
+            <div class="arrow"></div>
+            <div class="clear-facet-circle" facet-type="meal_types"><span>X</span></div>
+          </div> <!-- close category-name -->
+
+          <div class="term-div openable-content">
+            <h4 class="term-list-label">Meal Types</h4>
+
+            <div class="term-list-container">
+              <ul class="term-list term-list-meal_types" facet-type=meal_types>
+                    <div class="term-wrapper" term="appetizer" count="6">
+                    <li class="term" term="appetizer" count="6" >
+                      <div class="checkbox" term="appetizer" key="meal_types">
+                      </div>
+                      <label class="general-facet">appetizer</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="breakfast" count="1">
+                    <li class="term" term="breakfast" count="1" >
+                      <div class="checkbox" term="breakfast" key="meal_types">
+                      </div>
+                      <label class="general-facet">breakfast</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="brunch" count="0">
+                    <li class="term" term="brunch" count="0" >
+                      <div class="checkbox" term="brunch" key="meal_types">
+                      </div>
+                      <label class="general-facet">brunch</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="dessert" count="3">
+                    <li class="term" term="dessert" count="3" >
+                      <div class="checkbox" term="dessert" key="meal_types">
+                      </div>
+                      <label class="general-facet">dessert</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="dinner" count="13">
+                    <li class="term" term="dinner" count="13" >
+                      <div class="checkbox" term="dinner" key="meal_types">
+                      </div>
+                      <label class="general-facet">dinner</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="easy" count="7">
+                    <li class="term" term="easy" count="7" >
+                      <div class="checkbox" term="easy" key="meal_types">
+                      </div>
+                      <label class="general-facet">easy</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="for one" count="0">
+                    <li class="term" term="for one" count="0" >
+                      <div class="checkbox" term="for one" key="meal_types">
+                      </div>
+                      <label class="general-facet">for one</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="for two" count="0">
+                    <li class="term" term="for two" count="0" >
+                      <div class="checkbox" term="for two" key="meal_types">
+                      </div>
+                      <label class="general-facet">for two</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="lunch" count="2">
+                    <li class="term" term="lunch" count="2" >
+                      <div class="checkbox" term="lunch" key="meal_types">
+                      </div>
+                      <label class="general-facet">lunch</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="main course" count="15">
+                    <li class="term" term="main course" count="15" >
+                      <div class="checkbox" term="main course" key="meal_types">
+                      </div>
+                      <label class="general-facet">main course</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="quick" count="3">
+                    <li class="term" term="quick" count="3" >
+                      <div class="checkbox" term="quick" key="meal_types">
+                      </div>
+                      <label class="general-facet">quick</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="side dish" count="14">
+                    <li class="term" term="side dish" count="14" >
+                      <div class="checkbox" term="side dish" key="meal_types">
+                      </div>
+                      <label class="general-facet">side dish</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="snack" count="0">
+                    <li class="term" term="snack" count="0" >
+                      <div class="checkbox" term="snack" key="meal_types">
+                      </div>
+                      <label class="general-facet">snack</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="weekday" count="13">
+                    <li class="term" term="weekday" count="13" >
+                      <div class="checkbox" term="weekday" key="meal_types">
+                      </div>
+                      <label class="general-facet">weekday</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="weeknight" count="0">
+                    <li class="term" term="weeknight" count="0" >
+                      <div class="checkbox" term="weeknight" key="meal_types">
+                      </div>
+                      <label class="general-facet">weeknight</label>
+                    </li>
+                   </div>
+              </ul>
+            </div>
+
+            <button class="done-button">Done</button>
+          </div>
+
+      </div>
+        <div class="category openable mobile-modal" facet-type="dish_types">
+          <div class="category-name">
+            <div class="category-name-text" default="More" facet-type="dish_types">
+              More
+            </div>
+            <div class="arrow"></div>
+            <div class="clear-facet-circle" facet-type="dish_types"><span>X</span></div>
+          </div> <!-- close category-name -->
+
+          <div class="term-div openable-content">
+            <h4 class="term-list-label">More</h4>
+
+            <div class="term-list-container">
+              <ul class="term-list term-list-dish_types" facet-type=dish_types>
+                    <div class="term-wrapper" term="Video" count="0">
+                    <li class="term" term="Video" count="0" >
+                      <div class="checkbox" term="Video" key="dish_types">
+                      </div>
+                      <label class="general-facet">Video</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="barbecues" count="0">
+                    <li class="term" term="barbecues" count="0" >
+                      <div class="checkbox" term="barbecues" key="dish_types">
+                      </div>
+                      <label class="general-facet">barbecues</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="beans" count="0">
+                    <li class="term" term="beans" count="0" >
+                      <div class="checkbox" term="beans" key="dish_types">
+                      </div>
+                      <label class="general-facet">beans</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="breads" count="0">
+                    <li class="term" term="breads" count="0" >
+                      <div class="checkbox" term="breads" key="dish_types">
+                      </div>
+                      <label class="general-facet">breads</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="burgers" count="0">
+                    <li class="term" term="burgers" count="0" >
+                      <div class="checkbox" term="burgers" key="dish_types">
+                      </div>
+                      <label class="general-facet">burgers</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="burritos and nachos" count="0">
+                    <li class="term" term="burritos and nachos" count="0" >
+                      <div class="checkbox" term="burritos and nachos" key="dish_types">
+                      </div>
+                      <label class="general-facet">burritos and nachos</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cakes" count="0">
+                    <li class="term" term="cakes" count="0" >
+                      <div class="checkbox" term="cakes" key="dish_types">
+                      </div>
+                      <label class="general-facet">cakes</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="candies" count="0">
+                    <li class="term" term="candies" count="0" >
+                      <div class="checkbox" term="candies" key="dish_types">
+                      </div>
+                      <label class="general-facet">candies</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="casseroles" count="1">
+                    <li class="term" term="casseroles" count="1" >
+                      <div class="checkbox" term="casseroles" key="dish_types">
+                      </div>
+                      <label class="general-facet">casseroles</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cocktails" count="0">
+                    <li class="term" term="cocktails" count="0" >
+                      <div class="checkbox" term="cocktails" key="dish_types">
+                      </div>
+                      <label class="general-facet">cocktails</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="condiments" count="1">
+                    <li class="term" term="condiments" count="1" >
+                      <div class="checkbox" term="condiments" key="dish_types">
+                      </div>
+                      <label class="general-facet">condiments</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cookbook exclusive" count="0">
+                    <li class="term" term="cookbook exclusive" count="0" >
+                      <div class="checkbox" term="cookbook exclusive" key="dish_types">
+                      </div>
+                      <label class="general-facet">cookbook exclusive</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="cookies and bars" count="0">
+                    <li class="term" term="cookies and bars" count="0" >
+                      <div class="checkbox" term="cookies and bars" key="dish_types">
+                      </div>
+                      <label class="general-facet">cookies and bars</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="crackers and chips" count="0">
+                    <li class="term" term="crackers and chips" count="0" >
+                      <div class="checkbox" term="crackers and chips" key="dish_types">
+                      </div>
+                      <label class="general-facet">crackers and chips</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="curries" count="0">
+                    <li class="term" term="curries" count="0" >
+                      <div class="checkbox" term="curries" key="dish_types">
+                      </div>
+                      <label class="general-facet">curries</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="custards and puddings" count="0">
+                    <li class="term" term="custards and puddings" count="0" >
+                      <div class="checkbox" term="custards and puddings" key="dish_types">
+                      </div>
+                      <label class="general-facet">custards and puddings</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="dips and spreads" count="0">
+                    <li class="term" term="dips and spreads" count="0" >
+                      <div class="checkbox" term="dips and spreads" key="dish_types">
+                      </div>
+                      <label class="general-facet">dips and spreads</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="dumplings" count="0">
+                    <li class="term" term="dumplings" count="0" >
+                      <div class="checkbox" term="dumplings" key="dish_types">
+                      </div>
+                      <label class="general-facet">dumplings</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="editors&#39; pick" count="0">
+                    <li class="term" term="editors&#39; pick" count="0" >
+                      <div class="checkbox" term="editors&#39; pick" key="dish_types">
+                      </div>
+                      <label class="general-facet">editors&#39; pick</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="finger foods" count="0">
+                    <li class="term" term="finger foods" count="0" >
+                      <div class="checkbox" term="finger foods" key="dish_types">
+                      </div>
+                      <label class="general-facet">finger foods</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="grains and rice" count="0">
+                    <li class="term" term="grains and rice" count="0" >
+                      <div class="checkbox" term="grains and rice" key="dish_types">
+                      </div>
+                      <label class="general-facet">grains and rice</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="ice creams and sorbets" count="1">
+                    <li class="term" term="ice creams and sorbets" count="1" >
+                      <div class="checkbox" term="ice creams and sorbets" key="dish_types">
+                      </div>
+                      <label class="general-facet">ice creams and sorbets</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="ice dishes" count="0">
+                    <li class="term" term="ice dishes" count="0" >
+                      <div class="checkbox" term="ice dishes" key="dish_types">
+                      </div>
+                      <label class="general-facet">ice dishes</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="jams" count="0">
+                    <li class="term" term="jams" count="0" >
+                      <div class="checkbox" term="jams" key="dish_types">
+                      </div>
+                      <label class="general-facet">jams</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="meat" count="0">
+                    <li class="term" term="meat" count="0" >
+                      <div class="checkbox" term="meat" key="dish_types">
+                      </div>
+                      <label class="general-facet">meat</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="meatballs" count="0">
+                    <li class="term" term="meatballs" count="0" >
+                      <div class="checkbox" term="meatballs" key="dish_types">
+                      </div>
+                      <label class="general-facet">meatballs</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="non-alcoholic drinks" count="0">
+                    <li class="term" term="non-alcoholic drinks" count="0" >
+                      <div class="checkbox" term="non-alcoholic drinks" key="dish_types">
+                      </div>
+                      <label class="general-facet">non-alcoholic drinks</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="noodles" count="0">
+                    <li class="term" term="noodles" count="0" >
+                      <div class="checkbox" term="noodles" key="dish_types">
+                      </div>
+                      <label class="general-facet">noodles</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="one pot" count="1">
+                    <li class="term" term="one pot" count="1" >
+                      <div class="checkbox" term="one pot" key="dish_types">
+                      </div>
+                      <label class="general-facet">one pot</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pancakes" count="0">
+                    <li class="term" term="pancakes" count="0" >
+                      <div class="checkbox" term="pancakes" key="dish_types">
+                      </div>
+                      <label class="general-facet">pancakes</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="parfaits and trifles" count="0">
+                    <li class="term" term="parfaits and trifles" count="0" >
+                      <div class="checkbox" term="parfaits and trifles" key="dish_types">
+                      </div>
+                      <label class="general-facet">parfaits and trifles</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pastas" count="1">
+                    <li class="term" term="pastas" count="1" >
+                      <div class="checkbox" term="pastas" key="dish_types">
+                      </div>
+                      <label class="general-facet">pastas</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pastries" count="0">
+                    <li class="term" term="pastries" count="0" >
+                      <div class="checkbox" term="pastries" key="dish_types">
+                      </div>
+                      <label class="general-facet">pastries</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pickles" count="0">
+                    <li class="term" term="pickles" count="0" >
+                      <div class="checkbox" term="pickles" key="dish_types">
+                      </div>
+                      <label class="general-facet">pickles</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pies and tarts" count="0">
+                    <li class="term" term="pies and tarts" count="0" >
+                      <div class="checkbox" term="pies and tarts" key="dish_types">
+                      </div>
+                      <label class="general-facet">pies and tarts</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="pizza and calzones" count="1">
+                    <li class="term" term="pizza and calzones" count="1" >
+                      <div class="checkbox" term="pizza and calzones" key="dish_types">
+                      </div>
+                      <label class="general-facet">pizza and calzones</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="poultry" count="0">
+                    <li class="term" term="poultry" count="0" >
+                      <div class="checkbox" term="poultry" key="dish_types">
+                      </div>
+                      <label class="general-facet">poultry</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="project" count="1">
+                    <li class="term" term="project" count="1" >
+                      <div class="checkbox" term="project" key="dish_types">
+                      </div>
+                      <label class="general-facet">project</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="punches" count="0">
+                    <li class="term" term="punches" count="0" >
+                      <div class="checkbox" term="punches" key="dish_types">
+                      </div>
+                      <label class="general-facet">punches</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="quick breads" count="0">
+                    <li class="term" term="quick breads" count="0" >
+                      <div class="checkbox" term="quick breads" key="dish_types">
+                      </div>
+                      <label class="general-facet">quick breads</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="roasts" count="1">
+                    <li class="term" term="roasts" count="1" >
+                      <div class="checkbox" term="roasts" key="dish_types">
+                      </div>
+                      <label class="general-facet">roasts</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="salads and dressings" count="1">
+                    <li class="term" term="salads and dressings" count="1" >
+                      <div class="checkbox" term="salads and dressings" key="dish_types">
+                      </div>
+                      <label class="general-facet">salads and dressings</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="sandwiches" count="0">
+                    <li class="term" term="sandwiches" count="0" >
+                      <div class="checkbox" term="sandwiches" key="dish_types">
+                      </div>
+                      <label class="general-facet">sandwiches</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="sauces and gravies" count="1">
+                    <li class="term" term="sauces and gravies" count="1" >
+                      <div class="checkbox" term="sauces and gravies" key="dish_types">
+                      </div>
+                      <label class="general-facet">sauces and gravies</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="sausages" count="0">
+                    <li class="term" term="sausages" count="0" >
+                      <div class="checkbox" term="sausages" key="dish_types">
+                      </div>
+                      <label class="general-facet">sausages</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="seafood" count="0">
+                    <li class="term" term="seafood" count="0" >
+                      <div class="checkbox" term="seafood" key="dish_types">
+                      </div>
+                      <label class="general-facet">seafood</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="shakes and smoothies" count="0">
+                    <li class="term" term="shakes and smoothies" count="0" >
+                      <div class="checkbox" term="shakes and smoothies" key="dish_types">
+                      </div>
+                      <label class="general-facet">shakes and smoothies</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="skewers and kebabs" count="0">
+                    <li class="term" term="skewers and kebabs" count="0" >
+                      <div class="checkbox" term="skewers and kebabs" key="dish_types">
+                      </div>
+                      <label class="general-facet">skewers and kebabs</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="slaws" count="0">
+                    <li class="term" term="slaws" count="0" >
+                      <div class="checkbox" term="slaws" key="dish_types">
+                      </div>
+                      <label class="general-facet">slaws</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="soups and stews" count="1">
+                    <li class="term" term="soups and stews" count="1" >
+                      <div class="checkbox" term="soups and stews" key="dish_types">
+                      </div>
+                      <label class="general-facet">soups and stews</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="steaks and chops" count="0">
+                    <li class="term" term="steaks and chops" count="0" >
+                      <div class="checkbox" term="steaks and chops" key="dish_types">
+                      </div>
+                      <label class="general-facet">steaks and chops</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="stuffing and dressing" count="0">
+                    <li class="term" term="stuffing and dressing" count="0" >
+                      <div class="checkbox" term="stuffing and dressing" key="dish_types">
+                      </div>
+                      <label class="general-facet">stuffing and dressing</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="tacos" count="0">
+                    <li class="term" term="tacos" count="0" >
+                      <div class="checkbox" term="tacos" key="dish_types">
+                      </div>
+                      <label class="general-facet">tacos</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="tagine" count="0">
+                    <li class="term" term="tagine" count="0" >
+                      <div class="checkbox" term="tagine" key="dish_types">
+                      </div>
+                      <label class="general-facet">tagine</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="times classics" count="1">
+                    <li class="term" term="times classics" count="1" >
+                      <div class="checkbox" term="times classics" key="dish_types">
+                      </div>
+                      <label class="general-facet">times classics</label>
+                    </li>
+                   </div>
+                    <div class="term-wrapper" term="vegetables" count="0">
+                    <li class="term" term="vegetables" count="0" >
+                      <div class="checkbox" term="vegetables" key="dish_types">
+                      </div>
+                      <label class="general-facet">vegetables</label>
+                    </li>
+                   </div>
+              </ul>
+            </div>
+
+            <button class="done-button">Done</button>
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div> <!-- /.search-wrap  -->
+
+        </div>
+
+    <div id="container">
+      
+
+
+
+
+<div id="top" class="top" query="marialisa calta"></div>
+
+<div id="content" class="search-content" itemscope itemtype="http://schema.org/SearchResultsPage">
+      <div id="search-results" class="grid-wrap">
+
+  <div id="search-count" data-count=40>
+    40 results for <span class="search-query">marialisa calta</span>
+  </div>
+
+  <section class="recipe-card-list track-card-params"
+           data-layout="grid"
+           data-analytics-category="Search Results"
+           data-start-rank="0"
+           data-tracker-module="Global Search Recipe Card"
+           data-tracker-region=""
+           data-page-type="search">
+    
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10741"
+           data-url="/recipes/10741-middle-eastern-meat-loaf"
+           data-seo-image-url="https://static01.nyt.com/images/2015/04/29/dining/middle-eastern-meatloaf/middle-eastern-meatloaf-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10741-middle-eastern-meat-loaf"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2015/04/29/dining/middle-eastern-meatloaf/middle-eastern-meatloaf-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2015/04/29/dining/middle-eastern-meatloaf/middle-eastern-meatloaf-verticalTwoByThree735-v2.jpg' alt='Image for Middle Eastern Meat Loaf'>
+      </div>
+  </a>
+
+    <a class="sticker classic"
+       href="/search?q=&amp;filters[dish_types][]=times classics"
+       title="Search for Times Classic Recipes">
+      Classic
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10741-middle-eastern-meat-loaf"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Middle Eastern Meat Loaf"
+          data-share-title="Middle+Eastern+Meat+Loaf+by+Marialisa+Calta">
+        Middle Eastern Meat Loaf
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="5931"
+           data-url="/recipes/5931-swiss-potatoes"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/32.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/5931-swiss-potatoes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-32 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/32.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/5931-swiss-potatoes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Swiss Potatoes"
+          data-share-title="Swiss+Potatoes+by+Marialisa+Calta">
+        Swiss Potatoes
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1141"
+           data-url="/recipes/1141-lorraine-bodgers-lemon-shortbread"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/42.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1141-lorraine-bodgers-lemon-shortbread"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-42 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/42.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1141-lorraine-bodgers-lemon-shortbread"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Lorraine Bodger&#39;s Lemon Shortbread"
+          data-share-title="Lorraine+Bodger%27s+Lemon+Shortbread+by+Marialisa+Calta">
+        Lorraine Bodger&#39;s Lemon Shortbread
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+    
+<section
+  id="search-paid-post-desktop-ad"
+  class="paid-post-desktop
+         ad-container collapsed
+         desktop-ad
+         
+         recipe-card card"
+>
+  <div id='div-gpt-ad-804752003747430782-paid-post-desktop' class="ad-unit">
+    <script>
+        (function() {
+          const breakpoints = ["desktop"];
+          window.adUnits = window.adUnits || {};
+          breakpoints.forEach(function(br) {
+            window.adUnits[br] = window.adUnits[br] || {};
+            window.adUnits[br]['paid-post-desktop'] = {
+              pos: 'mid1',
+              size: [[235, 278]],
+            };
+          });
+          window.googletag.cmd.push(function() {
+            window.googletag.display(`div-gpt-ad-804752003747430782-paid-post-desktop`);
+          });
+        })();
+    </script>
+  </div>
+</section>
+
+    
+<section
+  id="search-paid-post-tablet-ad"
+  class="paid-post-tablet
+         ad-container collapsed
+         tablet-ad
+         
+         recipe-card card"
+>
+  <div id='div-gpt-ad-804752003747430782-paid-post-tablet' class="ad-unit">
+    <script>
+        (function() {
+          const breakpoints = ["tablet"];
+          window.adUnits = window.adUnits || {};
+          breakpoints.forEach(function(br) {
+            window.adUnits[br] = window.adUnits[br] || {};
+            window.adUnits[br]['paid-post-tablet'] = {
+              pos: 'mid1',
+              size: [[235, 278]],
+            };
+          });
+          window.googletag.cmd.push(function() {
+            window.googletag.display(`div-gpt-ad-804752003747430782-paid-post-tablet`);
+          });
+        })();
+    </script>
+  </div>
+</section>
+
+    
+<section
+  id="search-paid-post-mobile-landscape-ad"
+  class="paid-post-mobile-landscape
+         ad-container collapsed
+         mobileLandscape-ad
+         
+         recipe-card card"
+>
+  <div id='div-gpt-ad-804752003747430782-paid-post-mobile-landscape' class="ad-unit">
+    <script>
+        (function() {
+          const breakpoints = ["mobileLandscape"];
+          window.adUnits = window.adUnits || {};
+          breakpoints.forEach(function(br) {
+            window.adUnits[br] = window.adUnits[br] || {};
+            window.adUnits[br]['paid-post-mobile-landscape'] = {
+              pos: 'mid1',
+              size: [[235, 278]],
+            };
+          });
+          window.googletag.cmd.push(function() {
+            window.googletag.display(`div-gpt-ad-804752003747430782-paid-post-mobile-landscape`);
+          });
+        })();
+    </script>
+  </div>
+</section>
+
+    
+<section
+  id="search-paid-post-mobile-ad"
+  class="paid-post-mobile
+         ad-container collapsed
+         mobile-ad
+         
+         recipe-card card"
+>
+  <div id='div-gpt-ad-804752003747430782-paid-post-mobile' class="ad-unit">
+    <script>
+        (function() {
+          const breakpoints = ["mobile"];
+          window.adUnits = window.adUnits || {};
+          breakpoints.forEach(function(br) {
+            window.adUnits[br] = window.adUnits[br] || {};
+            window.adUnits[br]['paid-post-mobile'] = {
+              pos: 'mid1',
+              size: [[145, 212]],
+            };
+          });
+          window.googletag.cmd.push(function() {
+            window.googletag.display(`div-gpt-ad-804752003747430782-paid-post-mobile`);
+          });
+        })();
+    </script>
+  </div>
+</section>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7050"
+           data-url="/recipes/7050-no-frills-risotto"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/1.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7050-no-frills-risotto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-1 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/1.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7050-no-frills-risotto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="No-Frills Risotto"
+          data-share-title="No-Frills+Risotto+by+Marialisa+Calta">
+        No-Frills Risotto
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">35 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7047"
+           data-url="/recipes/7047-polenta"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/48.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7047-polenta"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-48 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/48.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7047-polenta"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Polenta"
+          data-share-title="Polenta+by+Marialisa+Calta">
+        Polenta
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="3564"
+           data-url="/recipes/3564-potato-pancakes-with-scallions-and-prosciutto"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/15.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/3564-potato-pancakes-with-scallions-and-prosciutto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-15 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/15.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/3564-potato-pancakes-with-scallions-and-prosciutto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Potato Pancakes With Scallions And Prosciutto"
+          data-share-title="Potato+Pancakes+With+Scallions+And+Prosciutto+by+Marialisa+Calta">
+        Potato Pancakes With Scallions And Prosciutto
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4217"
+           data-url="/recipes/4217-maple-lamb-and-eggplant-curry"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/18.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4217-maple-lamb-and-eggplant-curry"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-18 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/18.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4217-maple-lamb-and-eggplant-curry"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Maple Lamb And Eggplant Curry"
+          data-share-title="Maple+Lamb+And+Eggplant+Curry+by+Marialisa+Calta">
+        Maple Lamb And Eggplant Curry
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">35 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1144"
+           data-url="/recipes/1144-chocolate-amaretti-torte"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/45.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1144-chocolate-amaretti-torte"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-45 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/45.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1144-chocolate-amaretti-torte"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chocolate Amaretti Torte"
+          data-share-title="Chocolate+Amaretti+Torte+by+Marialisa+Calta">
+        Chocolate Amaretti Torte
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7052"
+           data-url="/recipes/7052-hazelnut-biscotti"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/3.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7052-hazelnut-biscotti"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-3 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/3.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7052-hazelnut-biscotti"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Hazelnut Biscotti"
+          data-share-title="Hazelnut+Biscotti+by+Marialisa+Calta">
+        Hazelnut Biscotti
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">2 hours 45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4680"
+           data-url="/recipes/4680-goulash-and-spatzle"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/31.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4680-goulash-and-spatzle"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-31 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/31.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4680-goulash-and-spatzle"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Goulash and Spatzle"
+          data-share-title="Goulash+and+Spatzle+by+Marialisa+Calta">
+        Goulash and Spatzle
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">2 hours 30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1142"
+           data-url="/recipes/1142-spiced-amaretti"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/43.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1142-spiced-amaretti"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-43 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/43.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1142-spiced-amaretti"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spiced Amaretti"
+          data-share-title="Spiced+Amaretti+by+Marialisa+Calta">
+        Spiced Amaretti
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7049"
+           data-url="/recipes/7049-ravioli-with-spinach"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/50.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7049-ravioli-with-spinach"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-50 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/50.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7049-ravioli-with-spinach"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Ravioli With Spinach"
+          data-share-title="Ravioli+With+Spinach+by+Marialisa+Calta">
+        Ravioli With Spinach
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour, plus overnight refrigeration and sit time</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1143"
+           data-url="/recipes/1143-natalie-haughtons-chocolate-almond-crunch-cookies"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/44.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1143-natalie-haughtons-chocolate-almond-crunch-cookies"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-44 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/44.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1143-natalie-haughtons-chocolate-almond-crunch-cookies"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Natalie Haughton&#39;s Chocolate Almond Crunch Cookies"
+          data-share-title="Natalie+Haughton%27s+Chocolate+Almond+Crunch+Cookies+by+Marialisa+Calta">
+        Natalie Haughton&#39;s Chocolate Almond Crunch Cookies
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">35 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7051"
+           data-url="/recipes/7051-sauteed-peppers-and-tomatoes"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/2.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7051-sauteed-peppers-and-tomatoes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-2 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/2.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7051-sauteed-peppers-and-tomatoes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Sauteed Peppers And Tomatoes"
+          data-share-title="Sauteed+Peppers+And+Tomatoes+by+Marialisa+Calta">
+        Sauteed Peppers And Tomatoes
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7361"
+           data-url="/recipes/7361-porch-chicken"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/12.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7361-porch-chicken"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-12 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/12.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7361-porch-chicken"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Porch Chicken"
+          data-share-title="Porch+Chicken+by+Marialisa+Calta">
+        Porch Chicken
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">2 hours, plus 2 hours&#39; marination</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10743"
+           data-url="/recipes/10743-grandma-crawfords-meat-loaf-for-a-crowd"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/44.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10743-grandma-crawfords-meat-loaf-for-a-crowd"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-44 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/44.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10743-grandma-crawfords-meat-loaf-for-a-crowd"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Grandma Crawford&#39;s Meat Loaf For A Crowd"
+          data-share-title="Grandma+Crawford%27s+Meat+Loaf+For+A+Crowd+by+Marialisa+Calta">
+        Grandma Crawford&#39;s Meat Loaf For A Crowd
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4219"
+           data-url="/recipes/4219-sawmill-farm-pancakes"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/20.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4219-sawmill-farm-pancakes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-20 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/20.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4219-sawmill-farm-pancakes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Sawmill Farm Pancakes"
+          data-share-title="Sawmill+Farm+Pancakes+by+Marialisa+Calta">
+        Sawmill Farm Pancakes
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10829"
+           data-url="/recipes/10829-string-beans-vinaigrette"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/30.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10829-string-beans-vinaigrette"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-30 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/30.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10829-string-beans-vinaigrette"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="String Beans Vinaigrette"
+          data-share-title="String+Beans+Vinaigrette+by+Marialisa+Calta">
+        String Beans Vinaigrette
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">15 minutes, including refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4215"
+           data-url="/recipes/4215-maple-glazed-roast-loin-of-pork-with-apple-puree"
+           data-seo-image-url="//int.nyt.com/applications/cooking/static/images/pattern/16.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4215-maple-glazed-roast-loin-of-pork-with-apple-puree"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-16 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='//int.nyt.com/applications/cooking/static/images/pattern/16.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4215-maple-glazed-roast-loin-of-pork-with-apple-puree"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Maple-Glazed Roast Loin Of Pork With Apple Puree"
+          data-share-title="Maple-Glazed+Roast+Loin+Of+Pork+With+Apple+Puree+by+Marialisa+Calta">
+        Maple-Glazed Roast Loin Of Pork With Apple Puree
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 50 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10742"
+           data-url="/recipes/10742-extra-special-meat-loaf"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/43.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10742-extra-special-meat-loaf"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-43 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/43.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10742-extra-special-meat-loaf"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Extra Special Meat Loaf"
+          data-share-title="Extra+Special+Meat+Loaf+by+Marialisa+Calta">
+        Extra Special Meat Loaf
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4214"
+           data-url="/recipes/4214-red-cabbage-glazed-with-maple-syrup"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/15.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4214-red-cabbage-glazed-with-maple-syrup"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-15 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/15.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4214-red-cabbage-glazed-with-maple-syrup"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Red Cabbage Glazed With Maple Syrup"
+          data-share-title="Red+Cabbage+Glazed+With+Maple+Syrup+by+Marialisa+Calta">
+        Red Cabbage Glazed With Maple Syrup
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4216"
+           data-url="/recipes/4216-spinach-salad-with-ten-acres-lodge-maple-mustard-dressing"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/17.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4216-spinach-salad-with-ten-acres-lodge-maple-mustard-dressing"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-17 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/17.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4216-spinach-salad-with-ten-acres-lodge-maple-mustard-dressing"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spinach Salad With Ten Acres Lodge Maple-Mustard Dressing"
+          data-share-title="Spinach+Salad+With+Ten+Acres+Lodge+Maple-Mustard+Dressing+by+Marialisa+Calta">
+        Spinach Salad With Ten Acres Lodge Maple-Mustard Dressing
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">5 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4018"
+           data-url="/recipes/4018-vermont-recipes-mushroom-almond-pate"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/19.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4018-vermont-recipes-mushroom-almond-pate"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-19 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/19.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4018-vermont-recipes-mushroom-almond-pate"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Vermont Recipes Mushroom-Almond Pate"
+          data-share-title="Vermont+Recipes+Mushroom-Almond+Pate+by+Marialisa+Calta">
+        Vermont Recipes Mushroom-Almond Pate
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">15 minutes, plus a few hours&#39; refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10832"
+           data-url="/recipes/10832-zucchini-phyllo-pizza"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/33.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10832-zucchini-phyllo-pizza"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-33 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/33.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10832-zucchini-phyllo-pizza"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Zucchini Phyllo Pizza"
+          data-share-title="Zucchini+Phyllo+Pizza+by+Marialisa+Calta">
+        Zucchini Phyllo Pizza
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">About 40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7362"
+           data-url="/recipes/7362-blackberry-ice-cream-with-candied-lemon-zest"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/13.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7362-blackberry-ice-cream-with-candied-lemon-zest"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-13 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/13.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7362-blackberry-ice-cream-with-candied-lemon-zest"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Blackberry Ice Cream With Candied Lemon Zest"
+          data-share-title="Blackberry+Ice+Cream+With+Candied+Lemon+Zest+by+Marialisa+Calta">
+        Blackberry Ice Cream With Candied Lemon Zest
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">45 minutes, plus freeze time</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10831"
+           data-url="/recipes/10831-zucchini-and-cheddar-cheese-soup"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/32.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10831-zucchini-and-cheddar-cheese-soup"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-32 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/32.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10831-zucchini-and-cheddar-cheese-soup"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Zucchini And Cheddar Cheese Soup"
+          data-share-title="Zucchini+And+Cheddar+Cheese+Soup+by+Marialisa+Calta">
+        Zucchini And Cheddar Cheese Soup
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1145"
+           data-url="/recipes/1145-old-world-raspberry-cheese-squares"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/46.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1145-old-world-raspberry-cheese-squares"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-46 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/46.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1145-old-world-raspberry-cheese-squares"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Old-World Raspberry-Cheese Squares"
+          data-share-title="Old-World+Raspberry-Cheese+Squares+by+Marialisa+Calta">
+        Old-World Raspberry-Cheese Squares
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1146"
+           data-url="/recipes/1146-grandpas-fruit-bars"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/47.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1146-grandpas-fruit-bars"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-47 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/47.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1146-grandpas-fruit-bars"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Grandpa&#39;s Fruit Bars"
+          data-share-title="Grandpa%27s+Fruit+Bars+by+Marialisa+Calta">
+        Grandpa&#39;s Fruit Bars
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">50 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10830"
+           data-url="/recipes/10830-zucchini-tomato-tian-with-olives"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/31.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10830-zucchini-tomato-tian-with-olives"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-31 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/31.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10830-zucchini-tomato-tian-with-olives"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Zucchini-Tomato Tian With Olives"
+          data-share-title="Zucchini-Tomato+Tian+With+Olives+by+Marialisa+Calta">
+        Zucchini-Tomato Tian With Olives
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">50 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4020"
+           data-url="/recipes/4020-pecan-and-hazelnut-roll"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/21.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4020-pecan-and-hazelnut-roll"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-21 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/21.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4020-pecan-and-hazelnut-roll"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pecan And Hazelnut Roll"
+          data-share-title="Pecan+And+Hazelnut+Roll+by+Marialisa+Calta">
+        Pecan And Hazelnut Roll
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10828"
+           data-url="/recipes/10828-quick-fried-green-beans-in-onion-and-garlic-sauce"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/29.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10828-quick-fried-green-beans-in-onion-and-garlic-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-29 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/29.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10828-quick-fried-green-beans-in-onion-and-garlic-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Quick-Fried Green Beans In Onion And Garlic Sauce"
+          data-share-title="Quick-Fried+Green+Beans+In+Onion+And+Garlic+Sauce+by+Marialisa+Calta">
+        Quick-Fried Green Beans In Onion And Garlic Sauce
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="4019"
+           data-url="/recipes/4019-chicken-with-olives-prunes-and-capers"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/20.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/4019-chicken-with-olives-prunes-and-capers"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-20 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/20.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/4019-chicken-with-olives-prunes-and-capers"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chicken With Olives, Prunes And Capers"
+          data-share-title="Chicken+With+Olives%2C+Prunes+And+Capers+by+Marialisa+Calta">
+        Chicken With Olives, Prunes And Capers
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 10 minutes, plus overnight refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10739"
+           data-url="/recipes/10739-basic-texas-meat-loaf"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/40.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10739-basic-texas-meat-loaf"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-40 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/40.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10739-basic-texas-meat-loaf"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Basic Texas Meat Loaf"
+          data-share-title="Basic+Texas+Meat+Loaf+by+Marialisa+Calta">
+        Basic Texas Meat Loaf
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">60 min</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10744"
+           data-url="/recipes/10744-jane-and-michael-sterns-mashed-potatoes"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/45.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10744-jane-and-michael-sterns-mashed-potatoes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-45 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/45.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10744-jane-and-michael-sterns-mashed-potatoes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Jane And Michael Stern&#39;s Mashed Potatoes"
+          data-share-title="Jane+And+Michael+Stern%27s+Mashed+Potatoes+by+Marialisa+Calta">
+        Jane And Michael Stern&#39;s Mashed Potatoes
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10740"
+           data-url="/recipes/10740-sauce"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/41.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10740-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-41 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/41.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10740-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Sauce"
+          data-share-title="Sauce+by+Marialisa+Calta">
+        Sauce
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">About 40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="3563"
+           data-url="/recipes/3563-chinese-omelet-with-stir-fried-vegetables-in-spicy-sauce"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/14.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/3563-chinese-omelet-with-stir-fried-vegetables-in-spicy-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-14 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/14.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/3563-chinese-omelet-with-stir-fried-vegetables-in-spicy-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chinese Omelet With Stir-Fried Vegetables In Spicy Sauce"
+          data-share-title="Chinese+Omelet+With+Stir-Fried+Vegetables+In+Spicy+Sauce+by+Marialisa+Calta">
+        Chinese Omelet With Stir-Fried Vegetables In Spicy Sauce
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="10833"
+           data-url="/recipes/10833-green-beans-with-mustard-oil-and-black-mustard-seeds"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/34.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/10833-green-beans-with-mustard-oil-and-black-mustard-seeds"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-34 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/34.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/10833-green-beans-with-mustard-oil-and-black-mustard-seeds"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Green Beans With Mustard Oil And Black Mustard Seeds"
+          data-share-title="Green+Beans+With+Mustard+Oil+And+Black+Mustard+Seeds+by+Marialisa+Calta">
+        Green Beans With Mustard Oil And Black Mustard Seeds
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="8854"
+           data-url="/recipes/8854-corn-obrien-for-100"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/5.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/8854-corn-obrien-for-100"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-5 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/5.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/8854-corn-obrien-for-100"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Corn O&#39;Brien for 100"
+          data-share-title="Corn+O%27Brien+for+100+by+Marialisa+Calta">
+        Corn O&#39;Brien for 100
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="7048"
+           data-url="/recipes/7048-rabbit-in-wine-sauce"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/49.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/7048-rabbit-in-wine-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-49 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/49.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/7048-rabbit-in-wine-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Rabbit In Wine Sauce"
+          data-share-title="Rabbit+In+Wine+Sauce+by+Marialisa+Calta">
+        Rabbit In Wine Sauce
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">2 hours 30 minutes, plus overnight refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="3565"
+           data-url="/recipes/3565-tea-smoked-cornish-hens-with-sesame-vinaigrette"
+           data-seo-image-url="https//int.nyt.com/applications/cooking/static/images/pattern/16.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/3565-tea-smoked-cornish-hens-with-sesame-vinaigrette"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-16 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https//int.nyt.com/applications/cooking/static/images/pattern/16.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/3565-tea-smoked-cornish-hens-with-sesame-vinaigrette"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Tea-Smoked Cornish Hens With Sesame Vinaigrette"
+          data-share-title="Tea-Smoked+Cornish+Hens+With+Sesame+Vinaigrette+by+Marialisa+Calta">
+        Tea-Smoked Cornish Hens With Sesame Vinaigrette
+      </h3>
+
+
+        <p class="card-byline">By Marialisa Calta</p>
+    </div>
+
+      <p class="cooking-time">1 hour 15 minutes, plus overnight refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+
+      
+
+  </section>
+
+</div>
+
+</div>
+
+
+      <footer id="footer">
+  <div class="footer-wrap">
+      <div class="footer-body clearfix">
+  <div class="container">
+    
+<div class="newsletter-container">
+  <form id="footer-newsletter-email" class="newsletter-form" method="POST" novalidate>
+      <h3 class="title">Get Our Newsletter</h3>
+      <span class="description">Get recipes, tips and NYT special offers delivered straight to your inbox. Opt out or <a class="contact-us-link" href="http://www.nytimes.com/help/index.html">contact us</a> anytime.</span>
+      <input class="newsletter-input genericInputField" type="email" name="email" placeholder="Add Your Email" />
+      <button type="submit" class="red-button button">Sign Up</button>
+      <div class="error-msg">Please enter a valid email address.</div>
+  </form>
+</div>
+
+
+    <div class="promo-container">
+      <div class="share-links">
+        <span class="blurb">Follow Cooking</span>
+        <a class="pinterest" target="_blank" rel="noreferrer noopener" href="https://www.pinterest.com/nytcooking/" alt="Visit NYT Cooking on Pinterest"></a>
+        <a class="fb" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/nytcooking" alt="Visit NYT Cooking on Facebook"></a>
+        <a class="twitter" target="_blank" rel="noreferrer noopener" href="https://twitter.com/nytfood" alt="Visit NYT Cooking on Twitter"></a>
+      </div>
+      <div class="ios">
+        <span class="blurb">Cooking For iPad &amp; iPhone</span>
+        <a class="icon-appstore-gray" target="_blank" rel="noreferrer noopener" href="http://appstore.com/nytcooking" alt="Download the iOS NYT Cooking app"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer-links">
+      <div class="container">
+        <div class="product-info">
+          <section class="about-us">
+            <h3 class="sub-heading">About Us</h3>
+              <p class="description">NYT Cooking is a subscription service of The New York Times. It is a digital cookbook and cooking guide alike, available on all platforms, that helps home cooks of every level discover, save and organize the world’s best recipes, while also helping them become better, more competent cooks. <a target="_blank" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?campaignId=79RLU" rel="noreferrer noopener" class="subscribe">Subscribe now</a> for full access.</p>
+          </section>
+          <section class="more">
+            <div class="learn-more">
+              <h3 class="sub-heading learn-shop">Learn More</h3>
+              <ul>
+                <li><a href="/ourcooks" class="footer-link">Our Cooks</a></li>
+                <li><a href="/see-our-features" class="footer-link">See Our Features</a></li>
+                <li><a href="/frequently-asked-questions" class="footer-link">FAQ</a></li>
+                <li><a href="/tools" class="footer-link">Tools for Saving</a></li>
+                <li><a target="_blank" href="https://www.nytimes.com/food" rel="noreferrer noopener" class="footer-link">NYTimes.com/food</a></li>
+                <li><a href="mailto:cookingcare@nytimes.com" class="footer-link send-feedback" id="customer-care-email">Send Us Feedback</a></li>
+              </ul>
+            </div>
+            <div class="shop">
+              <h3 class="sub-heading learn-shop">Shop</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.nytimes.com/subscriptions/Multiproduct/cooking_gift.html?campaignId=7HYRF" rel="noreferrer noopener" class="footer-link">Gift Subscription</a></li>
+                <h4 class="cookbooks">Cookbooks</h4>
+                <li><a href="https://store.nytimes.com/products/new-essentials-of-french-cooking?utm_source=NYT_Cooking_Website&utm_medium=referral&utm_campaign=French_Cookbook&utm_content=footer"  target="_blank" rel="noreferrer noopener" class="footer-link">“The New Essentials of French Cooking”</a></li>
+                <li><a target="_blank" href="https://store.nytimes.com/products/personalized-cookbook?utm_source=NYT_Cooking_Website&utm_medium=referral&utm_campaign=MYO_Cookbook&utm_content=footer" rel="noreferrer noopener" class="footer-link">“Make-Your-Own Cookbook: Dinner”</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <section class="legal">
+          <ul>
+            <li>
+              <a href="http://www.nytco.com" itemprop="copyrightNotice" class="legal-info">
+                &copy;
+                <span itemprop="copyrightHolder provider sourceOrganization" itemscope itemtype="http://schema.org/Corporation" itemid="http://www.nytimes.com">
+                  <span itemprop="name">The New York Times Company</span>
+                  <meta itemprop="tickerSymbol" content="NYSE NYT"/>
+                </span>
+              </a>
+            </li>
+            <li><a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html" class="legal-info">Privacy Policy</a></li>
+            <li><a href="http://www.nytimes.com/content/help/rights/terms/terms-of-service.html" class="legal-info">Terms of Service</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        Sorry, your changes didn&#8217;t save.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="icon-close-grey"></div>
+      <div class="modal-body"></div>
+      <div class="modal-footer btn-group">
+        <button type="button" class="btn-std btn-default cancel-btn">NO</button>
+        <button type="button" class="btn-std btn-primary ok-btn">YES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<script id="card-organize-tooltip" type="template">
+  <div class="collections-container">
+    <% if (!collections || !collections.length) { %>
+      <div class="no-collection-message">
+        <div class="no-collection-headline">Organize Your Recipes</div>
+        <div class="no-collection-body">Keep your Recipe Box organized by adding this recipe to a collection.</div>
+      </div>
+    <% } else {%>
+      <div class="header">Add to an Existing Collection:</div>
+      <ul>
+        <% collections.forEach(function(collection) { %>
+        <% var containsRecipe = _.contains(savedCollections, collection.id) ? 'contains-recipe' : ''; %>
+        <li class="<%= containsRecipe %>" data-id="<%= collection.id %>">
+        <span class="name"><%= _.escape(collection.name) %></span>
+        <span class="check-mark"></span>
+        </li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <div class="create-collection">
+      <form class="new-collection-form">
+        <input class="new-collection-input" autocomplete="off" placeholder='<%= (!collections || !collections.length) ? 'e.g., "Dinner Party Ideas"' : 'Create New Collection'%>'>
+        <div class="btn-primary new-collection-form-spinner hide" data-spinner-size="24"></div>
+        <button class="btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</script>
+
+<script id="card-organize-tooltip-second-save" type="template">
+  <div class="collections-container">
+    <% if (!collections || !collections.length) { %>
+      <div class="no-collection-message">
+        <div class="no-collection-headline">Success!</div>
+        <div class="no-collection-body">This recipe has been saved to your Recipe Box.</div>
+      </div>
+    <% } else {%>
+      <div class="header">Add to an Existing Collection:</div>
+      <ul>
+        <% collections.forEach(function(collection) { %>
+        <% var containsRecipe = _.contains(savedCollections, collection.id) ? 'contains-recipe' : ''; %>
+        <li class="<%= containsRecipe %>" data-id="<%= collection.id %>">
+        <span class="name"><%= _.escape(collection.name) %></span>
+        <span class="check-mark"></span>
+        </li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <div class="create-collection">
+      <form class="new-collection-form">
+        <input class="new-collection-input" autocomplete="off" placeholder='<%= (!collections || !collections.length) ? 'e.g., "Dinner Party Ideas"' : 'Create New Collection'%>'>
+        <div class="btn-primary new-collection-form-spinner hide" data-spinner-size="24"></div>
+        <button class="btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</script>
+
+<script id="remove-recipe-confirmation" type="template">
+  Are you sure you want to remove <b><%= _.escape(recipeName) %></b> from <%= collectionName ? '<b>' + _.escape(collectionName) + '</b>' : 'your recipe box' %>?
+</script>
+
+<script id="collection-item" type="template">
+
+  <li class="collection removable" data-collection-id="" data-collection-slug="-">
+  <a class="details needsclick" href="#">
+    <span class="name"></span>
+    <span class="count">0</span>
+    <span class="remove-icon"></span>
+  </a>
+  <span class="selected-arrow"></span>
+  <form class="inline-edit-form">
+    <input class="inline-edit">
+  </form>
+</li>
+
+</script>
+
+
+<script id="collection-delete-confirmation" type="template">
+  Are you sure you want to delete your folder <b><%= _.escape(name) %></b>?
+  <% if (extraDescription) { %>
+    Your recipes will still be saved under &ldquo;Saved Recipes.&rdquo;
+  <% } %>
+</script>
+
+<script id="regi-tooltip-content" type="template">
+  <a href="" class="regitip-login">Log in</a> or <a href="" class="regitip-regi">Sign up</a> <%= action %>.
+</script>
+
+<script id="tooltip-template" type="template">
+  <div class="popover <%= type %>" role="tooltip">
+    <div class="arrow"></div>
+    <div class="icon-close-grey <%= showCloseBtn ? '' : 'hidden' %>"></div>
+    <h3 class="popover-title"></h3>
+    <% if (body) { %>
+      <div class="popover-body"><%= body %></div>
+    <% } %>
+    <div class="popover-content"></div>
+  </div>
+</script>
+
+<script id="parse-msg-tmpl" type="template">
+  <div class="parse-message"><%= parse_msg %></div>
+</script>
+
+<script id="show-more-btn-tmpl" type="template">
+  <div class="btn-group">
+    <button class="btn-std btn-default show-more-<%= isReplies ? 'replies' : 'notes' %>-btn ladda-button grey-spinner" data-style="normal" data-spinner-size="17">Show More<%= isReplies ? ' Replies' : ' Notes' %></button>
+  </div>
+</script>
+
+<script id="onboarding-popover-template" type="template">
+  <button class="feature-onboarding-close onboarding-dismiss icon icon-close">Close</button>
+  <h3 class="feature-onboarding-title"><%= title %></h3>
+  <span class="icon onboarding-logo-icon <%= icon %>"></span>
+  <p class="feature-onboarding-content"><%= content %></p>
+  <button class="feature-onboarding-btn onboarding-dismiss">Got It</button>
+</script>
+
+
+    
+<script>
+  try {
+    bootstrap = window.bootstrap || {};
+    bootstrap.initialState = window.bootstrap.initialState || {};
+    bootstrap.initialState.features= {"promos_enabled":true,"optimizely_snippet":false,"tagx":true,"maintenance_mode":false,"disable_search":false,"chunk_search_populate_job":false,"publish_versioned_event_page_versions":false,"elasticsearch_live_updates_enabled":true,"paywall":true,"paywall_frontend":true,"paywall_debug":false,"hide_third_party_images":true,"all_guides_are_free":false,"subscription_info_service":true,"enroll_all_users_in_free_trial":true,"new_newsletter_subscribe_module":true,"paid_post":false,"recently_viewed_api":true,"recently_viewed_frontend":true,"abra_snippet":false,"features_onboarding":true,"sync_saves_for_recently_saved_service":true,"recently_viewed_jobs":true,"send_to_grocery_list":true,"json_kidd":true,"restrict_api_access":true,"grandfathering":true,"app_association_file":true,"include_promo_in_homepage_api":true,"save_recap":true,"react_notes":false,"sync_updated_recipes_on_gcp":true,"recently_viewed_band":true,"disable_newsletter_subscription_job":false,"disable_subscribe_email_job":false,"disable_cookie_refresh_call":false,"disable_recently_viewed_archive":true,"free_content_dashboard":true,"helix_api":true,"editors_collections_carousel":true,"editors_collections_new_cards":false,"new_listy":true,"gdpr_cookie_banner":true,"recently_viewed_sidekiq":true,"dfp_rules_logic":true,"check_third_party_tracker":true,"saved_recap_sidekiq":true,"weekly_planning":true,"weekly_planning_api":true,"test_paywall_5755":false,"baking_jobs":false,"survey_bucket1":false,"survey_bucket2":false,"survey_bucket3":false,"survey_bucket4":false,"survey_bucket5":false,"defer_css":false,"modal_window_api":true,"paywall_updates_2018":true,"thanksgiving_2018":true};
+    bootstrap.initialState.growler = {
+      type: null,
+      msg: null,
+    };
+    bootstrap.initialState.app = {
+      env:               'production',
+      debug:             false,
+      consumerMarketingURL: 'https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?return_url=https://cooking.nytimes.com',
+      saveRecapURL: 'https://ckg-user-recommendations-dot-nyt-ckg-prd.appspot.com/recommendations/users',
+    };
+    bootstrap.initialState.topNav = {
+      // TODO: Remove this and actually fix broken tests
+      label: "Thanksgiving",
+      path: "/topics/thanksgiving",
+    };
+    bootstrap.initialState.page = {
+      hasAccessState: false,
+      isFree: true,
+      type: 'search-page',
+      id: null,
+      viewableType: '',
+    };
+    bootstrap.initialState.popover = {
+      dragPopover: {
+        isDisplayed: true,
+      },
+      dragToFolderPopover: {
+        isDisplayed: false,
+      },
+      savePopover: {
+        isDisplayed: false,
+        saveType: '',
+      },
+      signUpPopover: {
+        isShown: false
+      },
+      subscribePopover: {
+        isDisplayed: false,
+      },
+    };
+    bootstrap.initialState.siteSearch = {
+      query: "marialisa calta",
+      isFocused: false,
+      autocomplete: {
+        tags: null,
+        recipes: null,
+        guides: null,
+      },
+    };
+    bootstrap.initialState.searchBarIsOpen = false;
+    bootstrap.initialState.sidebarIsOpen = false;
+    bootstrap.initialState.recirculationBand = {"suggestionsData":[],"isTablet":false,"promo":null}
+    bootstrap.initialState.editorsCollections = {}
+    bootstrap.release = "b6a7ace";
+  } catch(e) {}
+</script>
+
+
+    <script>
+      bootstrap = window.bootstrap || {};
+      bootstrap.page = {
+        env:               'production',
+        debug:             false,
+        name:              'search-page',
+        smartFoldersEnum:  [{"term":"all","uri_name":"all","key":"","display":"Saved Recipes","recipe_tag_ids":null,"fallback_image":null},{"term":"breakfast","uri_name":"breakfast","key":"meal_types","display":"Breakfast","recipe_tag_ids":[129],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/breakfast.jpg"},{"term":"brunch","uri_name":"brunch","key":"meal_types","display":"Brunch","recipe_tag_ids":[130],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/brunch.jpg"},{"term":"lunch","uri_name":"lunch","key":"meal_types","display":"Lunch","recipe_tag_ids":[131],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/lunch.jpg"},{"term":"snack","uri_name":"snack","key":"meal_types","display":"Snack","recipe_tag_ids":[136],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/snack.jpg"},{"term":"appetizer","uri_name":"appetizer","key":"meal_types","display":"Appetizer","recipe_tag_ids":[4],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/appetizer.jpg"},{"term":"soups","uri_name":"soups","key":"dish_types","display":"Soups","recipe_tag_ids":[63],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/soups.jpg"},{"term":"sides","uri_name":"sides","key":"courses","display":"Sides","recipe_tag_ids":[3],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/sides.jpg"},{"term":"dinner","uri_name":"dinner","key":"meal_types","display":"Dinner","recipe_tag_ids":[128],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/dinner.jpg"},{"term":"drinks","uri_name":"drinks","key":"dish_types","display":"Drinks","recipe_tag_ids":[66,67,68,88],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/drinks.jpg"},{"term":"dessert","uri_name":"dessert","key":"courses","display":"Dessert","recipe_tag_ids":[2],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/dessert.jpg"},{"term":"vegetarian","uri_name":"vegetarian","key":"diet_types","display":"Vegetarian","recipe_tag_ids":[225],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/vegetarian.jpg"}],
+        staticAssetHost:         '//int.nyt.com/applications/cooking/static',
+      };
+    </script>
+
+    
+
+    <script src="https://a1.nyt.com/analytics/json-kidd.min.js"></script>
+
+    <script src="//int.nyt.com/applications/cooking/b6a7ace/assets/core.bundle.js"></script>
+  </body>
+</html>

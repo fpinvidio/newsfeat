@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003467313"><meta name="author" content="Michael Gonchar" />
+<meta name="CLMST" content="Michael Gonchar" />
+<meta name="byl" content="Michael Gonchar" />
+<meta name="GBLC" content="Student Opinion">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1422007251" />
+<meta name="PUD" content="20150123" />
+<meta name="pdate" content="20150123" />
+<meta name="ptime" content="20150123050051" />
+<meta name="utime" content="20160223173704" />
+<meta property="article:modified_time" itemprop="dateModified" content="2016-02-23T17:37:04-05:00" />
+<meta name="DISPLAYDATE" content="January 23, 2015" />
+<meta name="dat" content="January 23, 2015" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Student Opinion" />
+<meta name="keywords" content="Student Opinion" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2015%2F01%2F23%2Fshould-a-college-education-be-free%2F" title="Should a College Education Be Free?" />
+<meta name="description" content="Should students have a right to higher education, the way they now have a right to elementary and secondary education?" />
+<meta name="hdl" content="Should a College Education Be Free?" />
+<meta property="og:title" content="Should a College Education Be Free?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="Should students have a right to higher education, the way they now have a right to elementary and secondary education?" />
+<meta property="og:image" content="https://static01.nyt.com/images/2014/10/02/multimedia/laguardia-student/laguardia-student-videoSixteenByNine600-v5.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2014/10/02/multimedia/laguardia-student/laguardia-student-thumbLarge-v5.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Should a College Education Be Free?" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/" />
+<meta name="twitter:description" content="Should students have a right to higher education, the way they now have a right to elementary and secondary education?" />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2014/10/02/multimedia/laguardia-student/laguardia-student-thumbLarge-v5.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2014/10/02/multimedia/laguardia-student/laguardia-student-thumbLarge-v5.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='6 Q&#8217;s About the News | Microsoft HoloLens: A Sensational Vision of the PC&#8217;s Future' href='//learning.blogs.nytimes.com/2015/01/23/6-qs-about-the-news-microsoft-hololens-a-sensational-vision-of-the-pcs-future/' />
+<link rel='next' title='Student Contest Winners | The 2014 Year in Rap' href='//learning.blogs.nytimes.com/2015/01/23/student-contest-winners-the-2014-year-in-rap/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/' />
+<link rel='shortlink' href='//nyti.ms/1uBsnao' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2015/01/23/should-a-college-education-be-free/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Should a College Education Be Free? - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-154394 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Should a College Education Be Free?        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/"
+	 data-title="Should a College Education Be Free?"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Should students have a right to higher education, the way they now have a right to elementary and secondary education? &lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="January 23, 2015 5:00 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-154394 post type-post status-publish hentry category-student-opinion tag-college tag-student-loans tag-tuition" id="post-154394">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Should a College Education Be Free?</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Michael Gonchar			</address>
+			<!-- date published --><time class="dateline " datetime="2015-01-23T10:00:51+00:00" itemprop="datePublished">January 23, 2015 5:00 am</time>
+			<!-- date updated --><span class="visually-hidden updated">January 23, 2015 5:00 am</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w592"><figure class="promo media video blog-video "
+    data-videoid="100000003155571" data-media-action="modal" data-autoplay="" data-embedded="true" aria-label="media" role="group">
+        <span class="visually-hidden">Video</span>
+
+    <figcaption class="caption">
+        <h4 class="headline">The Art of the Degree</h4>
+		        <div class="caption-video">
+                <div class="summary-credit">
+            <p class="summary">Vladimir de Jesus, a community college student, dreams of becoming an art teacher. But after first enrolling at LaGuardia Community College in 2008, he’s still working toward his degree.</p>
+            <span class="credit video-credit" itemprop="copyrightHolder">
+                By Kassie Bracken on                                                    <span class="visually-hidden">Publish Date </span>October 3, 2014.
+                            </span>
+            <span class="credit photo-credit" itemprop="copyrightHolder">
+                                    Photo by Jake Naughton for The New York Times.
+                                </span>
+        </div>
+
+                    <div class="sharetools-video-container">
+                <div id="sharetools-video-tools-100000003155571"
+                    class="sharetools sharetools-video-tools">
+                    <ul>
+                        <li class="sharetool embed-sharetool">
+                            <a href="javascript:;" data-share="embed" data-modal-title="">
+                                <i class="icon sprite-icon"></i>
+                                <span class="sharetool-text ">embed</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sharetools-video-inline-100000003155571"
+                    class="sharetools sharetools-video-inline"
+                    data-shares="facebook|,twitter|"
+                    data-url="https://www.nytimes.com/video/nyregion/100000003155571/the-art-of-the-degree.html?action=click&amp;contentCollection=nyregion&amp;module=blog-video&amp;region=caption&amp;pgtype=article"
+                    data-title="The Art of the Degree"
+                    data-description="Vladimir de Jesus, a community college student, dreams of becoming an art teacher. But after first enrolling at LaGuardia Community College in 2008, he’s still working toward his degree."
+                    data-content-type="video">
+                </div>
+            </div>
+        </div>
+            </figcaption>
+</figure>
+</div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/" data-title="Should a College Education Be Free?" data-description="Should students have a right to higher education, the way they now have a right to elementary and secondary education? ">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><div class="w151 right module">
+<div class="entry"><a title="See all Student Opinion" href="/category/student-opinion/"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning_student-opinion151.png" alt="Student Opinion - The Learning Network" /></a><a title="See all Student Opinion" href="/category/student-opinion/"><img class="w35 right" src="https://static01.nyt.com/images/blogs_v3/learning/learning_student-opinion35.png" alt="Student Opinion - The Learning Network" /></a></p>
+<p class="summary">Questions about issues in the news for students 13 and older.</p>
+<ul class="refer">
+<li><a title="See all Student Opinion" href="/category/student-opinion/">See all Student Opinion »</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">States offer children a free public school education until they complete 12th grade. After that, they have to pay tuition. President Obama recently announced his proposal to make community college free for many students. Is he onto something? Should students be able to get a free education after high school? </p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-154394"></span></p>
+<p class="story-body-text" itemprop="articleBody">In &#8220;<a href="//www.nytimes.com/2015/01/09/us/politics/obama-proposes-free-community-college-education-for-some-students.html">Obama Plan Would Help Many Go to Community College Free,</a>&#8221; Julie Hirschfeld Davis and Tamar Lewin write:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+President Obama said Thursday that he would propose a government program to make community college tuition-free for millions of students, an ambitious plan that would expand educational opportunities across the United States.</p>
+<p class="story-body-text" itemprop="articleBody">The initiative, which the president plans to officially announce Friday at a Tennessee community college, aims to transform publicly financed higher education in an effort to address growing income inequality.</p>
+<p class="story-body-text" itemprop="articleBody">The plan would be funded by the federal government and participating states, but White House officials declined to discuss how much it would cost or how it would be financed. It is bound to be expensive and likely a tough sell to a Republican Congress not eager to spend money, especially on a proposal from the White House.</p>
+<p class="story-body-text" itemprop="articleBody">“With no details or information on the cost, this seems more like a talking point than a plan,” said Cory Fritz, a spokesman for House Speaker John A. Boehner, Republican of Ohio.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Obama’s advisers acknowledged Thursday that the program’s goals would not be achieved quickly. The president, however, was more upbeat. “It’s something that we can accomplish, and it’s something that will train our work force so that we can compete with anybody in the world,” Mr. Obama said in a video posted Thursday night by the White House.</p>
+<p class="story-body-text" itemprop="articleBody">The proposal would cover half-time and full-time students who maintain a 2.5 grade point average — about a C-plus — and who “make steady progress toward completing a program,” White House officials said. It would apply to colleges that offered credit toward a four-year degree or occupational-training programs that award degrees in high-demand fields. The federal government would cover three-quarters of the average cost of community college for those students, and states that choose to participate would cover the remainder. If all states participate, the administration estimates, the program could cover as many as nine million students, saving them each an average of $3,800 a year.
+</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><strong>Students:</strong> Read the entire article, then tell us &#8230;</p>
+<p class="story-body-text" itemprop="articleBody">— Should a college education be free? Why?</p>
+<p class="story-body-text" itemprop="articleBody">— Should students have a right to higher education, the way they now have a right to elementary and secondary education? </p>
+<p class="story-body-text" itemprop="articleBody">— Would the availability of a free college education provide a boost for the economy? Would it help erase social inequality?</p>
+<p class="story-body-text" itemprop="articleBody">— Would such a proposal be too expensive for the government to maintain? Is it unrealistic?</p>
+<p class="story-body-text" itemprop="articleBody">— Do you support President Obama&#8217;s proposal? Do you think it might ever happen?</p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><strong>Students 13 and older</strong> are invited to comment below. Please use only your <strong>first name.</strong> For <a href="//www.nytimes.com/ref/membercenter/help/privacysummary.html">privacy policy</a> reasons, we will not publish student comments that include a last name.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2015/01/23/should-a-college-education-be-free/" data-title="Should a College Education Be Free?" data-description="Should students have a right to higher education, the way they now have a right to elementary and secondary education? ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-2152568">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Bree</span>
+			<span class="comment-link">
+				<a href="#comment-2152568" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:17 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>-Yes a college education should be free. How many people out there stop after high school just because they don&#8217;t have the money to continue their line of education? If people start arguing about financial aids and scholarships, they need to inform high school students how to get them and how to apply. The people that I&#8217;m surrounded by don&#8217;t know anything more than the basic information. These people are juniors. How bad is that?<br />
+-I disagree with this question because we already have the right to a higher education. If your grades are the reason why you can&#8217;t make the cut, then you shouldn&#8217;t even bother with looking at the price yet.<br />
+-No. It wouldn&#8217;t erase social inequality when people pay attention to gender and personality. Then it would depend on the job you get but what if you really couldn&#8217;t go to college. Wouldn&#8217;t that make you seem even worse and put you in a deeper pit when it comes to a &#8220;social inequality&#8221;?<br />
+A free college education would provide a boost for the economy if you&#8217;re talking about more people being able to enter the work field with higher degrees so they can use that to push our society but honestly, it all comes down to worth ethic. Besides, wouldn&#8217;t the same number of people be hired anyways? I mean, the way things are now, so many of us who have graduated colleges&#8211;even those who went to universities&#8211;don&#8217;t have jobs. Would a free college education change things like this? Probably not.<br />
+-Okay. Obviously. How many of us live in the US? When word gets out to other nations that we provide a free college education, wouldn&#8217;t people start pouring in? I mean, better than paying over thousands of dollars at the colleges near their homes. It is sort of unrealistic no matter how glorious this sounds.<br />
+-I think it&#8217;s an amazing idea, the works that this would do is great, and it would be incredibly helpful to everyone else but how is the government planning to pay for this if it passes? Taxes? That seems a bit iffy. If they say that they&#8217;re planning on doing this themselves, I wouldn&#8217;t believe they had the strength or money to. On top of that, would this really change things in the long run?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152741">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mitchell G. L.</span>
+			<span class="comment-link">
+				<a href="#comment-2152741" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:27 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>If you didn&#8217;t have to pay for a college education which is almost necessary to acquire a respective job, many more students would be attending. College is too expensive for a lot of people which forces them to either take out student loans which will only pile up, or skip the four year deal and maybe just settle for a two year. In Europe, I know many countries offer free college education because they see the youth&#8217;s drive for education as a benefit for their country, not just a way to make a ton of money. Also by not having to pay for college, some students who are academically fit but not financially would still be able to get into prestigious schools.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152747">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">josh2775</span>
+			<span class="comment-link">
+				<a href="#comment-2152747" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:32 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Kids binge drink cause they want to drink to get drunk. Kids are just trying to have a fun college life and want to drink and want to drink to have fun sure mistakes happen but until that happens kids will still drink. They just like to get drunk and and have fun and I don&#8217;t think there&#8217;s anything anyone can do if setting the drinking age at 21 doesn&#8217;t help.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152750">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Movtavius, Miguel, &amp; Ramiro</span>
+			<span class="comment-link">
+				<a href="#comment-2152750" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:39 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>yes college should be free because theres homeless people out here that want too go to college but have no money .</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152780">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Nicolette</span>
+			<span class="comment-link">
+				<a href="#comment-2152780" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:00 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The cost of college education is a tricky subject. Making college completely free for everyone would be quite the challenge. Private colleges are essentially no different than any other business. If they could no longer charge tuition, they would have no incentive to continue running. That being said, having the government pay for the upkeep of every college would cost a fortune. I don&#8217;t even want to know how high taxes would have to become to pay for this. One possible solution I can think of is placing tuition caps on private colleges. The cost of a US degree is absolutely absurd compared to the cost in any other country. I&#8217;m in favor of Obama&#8217;s proposal of a free community college education, but the problem is that associate&#8217;s degrees do not carry much weight in the job market anymore. Regarding the question of how free education would affect the economy, I do believe that in the long run, a better-educated labor force would certainly benefit the country. On the other hand, there is a need for trade workers, which I can see there becoming a deficit of in the future. High schools should expand students&#8217; access to vocational training to help our economy from the bottom-up.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152870">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Andrew</span>
+			<span class="comment-link">
+				<a href="#comment-2152870" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>lets the low class people get an chance to get their extended education. For example, the poor could be able to go to college to get their degree so they will be able to get a job. Better life and fewer people in proverty . for example, less people will be struggling with their financual problems</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152871">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Andrew</span>
+			<span class="comment-link">
+				<a href="#comment-2152871" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>lets the low class people get an chance to get their extended education. For example, the poor could be able to go to college to get their degree so they will be able to get a job. Better life and fewer people in proverty . for example, less people will be struggling with their financual problems .</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152919">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">TimothyHHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152919" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:27 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>For 2 years that&#8217;s alright but they also need to make money and they cant only do it off of fundraisers! Or 4 years would be nice.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152923">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Steven</span>
+			<span class="comment-link">
+				<a href="#comment-2152923" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:29 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Two year community colleges should be free the first year, if the student succeeds that first year and wants to go on to a second year. If a student struggles and fails and wants to go back the second year then have them pay for it. If you stay on task and are a great student, you should be rewarded</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152926">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Whitney HHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152926" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:33 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think it would be amazing if people could get a good education without having to worry about debt. However, I do not see this happening anytime soon.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152930">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Emma C. HHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152930" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think at least some form of higher or specialized education should be readily available to all those who have a desire for it. However, making all college tuition free seems unreasonable and unsustainable.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152931">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KyleeHHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152931" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Yes, i think a college education to be free. People are stopped from furthering there education because they don&#8217;t have the money to pay for college. If they do they could have financial problems in the future. People would have an education they need to get a good job and more people would be able to go into the work force.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152932">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Drew HHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152932" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The possibility that community college could be free is a great idea. it would help so many people that may not normally even think they have a chance of going to college actually get to. there are flaws with funding but give it time and there is a real possibility that community colleges will be free.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152933">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ashlin HHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152933" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The cost of college and higher education cost a lot. I think this will help kids want to do something better with their lives, to help their future families, and even themselves. I think that the requirements will also decrease the high school drop out rate and increase high school GPAs.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152935">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Hunter HHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152935" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:38 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Certain Colleges should be free or at least cheaper.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152936">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Olivia HHS</span>
+			<span class="comment-link">
+				<a href="#comment-2152936" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:39 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think his intentions are good, but it would be hard and expensive to make something like this work.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2152938">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lilianna N (HHS)</span>
+			<span class="comment-link">
+				<a href="#comment-2152938" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:42 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This wont happen if we just all sit back and see where this goes, we need to show how much it would make a difference for it to be free to go to school. Think about all the smart people in the world who cant afford to go to college, they cant be what they dreamed of/wanted to be. Is that not sad? because i think that has to be the saddest thing in the world, just think about all the parents who know there kids are so smart but cant afford for their child to go be something and live a good happy life. This can happen, but we all need to make it happen.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2152959">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Hayley G</span>
+			<span class="comment-link">
+				<a href="#comment-2152959" title="Comment Permalink">
+					<span class="comment-date">January 23, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think they should go to college for free, just because you turn 18 shouldn&#8217;t mean you have to pay for everything, including school, that&#8217;s ridiculous. They give us school for free until we&#8217;re 18. since we didn&#8217;t pay for school all through grade school and high school means we shouldn&#8217;t have to pay just to go to college. If we want to continue working on our plans for a career, we should be able to go to college without having to pay. instead of wasting money for more advanced school work to excel in a certain career. It&#8217;d be a lot easier paying rent, getting food, all the bills, etc. if we live in an apartment or house. but if you have to pay for college then you have to say up money for all the things you have to pay. What I&#8217;m saying is it&#8217;d make our lives easier if community college was free!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2153825">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Alex</span>
+			<span class="comment-link">
+				<a href="#comment-2153825" title="Comment Permalink">
+					<span class="comment-date">January 24, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Public school is not free. American tax payers pay to maintain schools and pay teachers. The only people that benefit from &#8220;free&#8221; are those that do not pay taxes because they are already supported by the government. President Obama is not making school free, the tax payers would be giving free school to the citizens on welfare, the immigrants granted amnesty. There is no free for the hard working of the United States. The middle class supports the poor and work all the harder to stay afloat themselves. School is NOT FREE!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2153851">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Godefroy, V, FP</span>
+			<span class="comment-link">
+				<a href="#comment-2153851" title="Comment Permalink">
+					<span class="comment-date">January 24, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A free college education could undoubtedly help multitudes of people improve their lives. There is therefore no debate about whether a free higher end education should exist. There is no downside to educating people (unless someone would like to argue for the oppression of the masses) and many benefits. People born in squalor and misery would have the chance through hard work and perseverance to improve their social standing and lead a life they chose to lead. After all, isn’t this one of our basic human rights: the right to the pursuit of happiness? A free college educative system would allow some to do just that: pursue their happiness.<br />
+	However, if the question is simply, ‘Should college be free?’ then the answer is no. Colleges do not have to be anything, as the prompt would imply. After all, many colleges are private institutions and could not function the way they do currently with free tuition. The right to a college education has never been considered a basic human right and perhaps should not. A more accurate question would be ‘Should some colleges be free?’ and I believe the answer to that is a resounding &#8216;Yes&#8217; backed by the aforementioned benefits to many people’s lives as well as a narrowing of the gaps in social inequality.<br />
+	One issue with government-backed free college education is that according to the Constitution, education systems are under the jurisdiction of state governments. Therefore, the White House has no right to even make plans for the creation of a free college system. Rather the White House, Congress and anyone who would see free colleges should make suggestions to individual states to create a free higher education system. In any case the federal government does not have the right to institute such a system and might instead want to plan a way to pass a 28th Amendment to the Constitution to give itself the power to enact their current plans.<br />
+	Were the federal government given such power, the next question would be a financial one. How does one create a free college? Does this entail unpaid professors, volunteer work, and donation funds? Would free colleges in essence be charities susceptible to the generosity of the various sponsors? This seems rather unreasonable to me, not a very promising course of action. The money to fund over 9 million student’s education would have to therefore stem from the federal government; this would certainly spark political conflict on an even greater scale than exists currently. Unless the government were to find some clever plan to siphon the money from elsewhere, the necessary funding would come from taxes or tariffs, both of which an increase of would hurt people across the nation.<br />
+	Conclusively, while a free college education would be a marvelous accomplishment, the federal government seems to have neither the right nor the ability to see such a plan into action. For such a system to be created, we must instead look to individual state governments and charities or change the entire framework of high end education in this country.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2153870">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Noah-F-FP</span>
+			<span class="comment-link">
+				<a href="#comment-2153870" title="Comment Permalink">
+					<span class="comment-date">January 24, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:05 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I believe that in a perfect world, college education should be free for everyone, but at this time, it is simply not a viable option. The benefits of a college education are clear in both monetary benefits (college graduates make on average $20,000 more than non-graduates) and intellectual benefits. If a college education was free, more people would be able to enter the job market with better credentials than high school graduates do now. That being said, the country is only now coming out of an economic depression and the government is simply not in the position to offer free scholarships to students with a C+ average.<br />
+          In the stronger economic future of this country, I do believe that the plan announced by President Obama would be effective in &#8220;training our workforce to compete with any country in the world&#8221; but the plan would also need some tweaks. Offering a free or almost free college of education to students with a 2.5 GPA is unrealistic. Students who are not able to maintain at least a B average essentially prove that they do not have a right to a college education and that they will most likely not work hard to get one (provided they are not mentally handicapped). I understand that a student can be brilliant and yet unmotivated but are these the people we want entering the labor force in a higher paying or ranking job than they would have without a college education? Furthermore, I do not believe that a free college education would help erase social inequality. I do not mean to say that students who would go to college as a result of the plan (as in they would not go otherwise) wouldn&#8217;t be more educated as a result of college education, but if virtually everyone were to get a free college education, the benefits of such an achievement would be diminished. The students able to go to college without the plan either as a result of economic prosperity or academic achievement would remain at the top of the social scheme while the students with a C+ high school average would remain towards the bottom, and those unable to qualify for that would end up in the same jobs and same lifestyle they would otherwise.<br />
+          President Obama&#8217;s plan would be effective in raising the overall intelligence and preparedness of our labor force but it would be ineffective in changing the social scheme. A college education is not a right, it must be earned, and while the promise of a free college education may motivate some students to do better, others will fall back to where they would be without the plan. Despite the possible benefits of a free college education for qualifying students, and the fact that I support President Obama&#8217;s plan in a perfect world scenario, the economic status of the United States does not allow for the administration of more than a million $3800 scholarships to students achieving a 2.5 GPA.<br />
+&#8212;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2153909">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ryan K</span>
+			<span class="comment-link">
+				<a href="#comment-2153909" title="Comment Permalink">
+					<span class="comment-date">January 24, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It seems to me that everyone is looking at the Benefits of free college, but not the costs. Of course it would be great to have free college. I agree there probably are great minds that are being wasted because they can’t afford to go to college. But before we get too carried away we need to stop and think about who will pay for this. First our government is already in debt. Paying for everyone’s college is not going to help. Second to raise money for this new cost the government will need to raise taxes. They will raise it on the upper class people like they usually do. But the upper class is what people are trying to get into as college students. Are people really going to be better off with free college? Norway has free college but they also have a 55% income tax rate is that really what we want.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2154035">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Marc G, FP</span>
+			<span class="comment-link">
+				<a href="#comment-2154035" title="Comment Permalink">
+					<span class="comment-date">January 24, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I believe that college education should be free for students. Making college education free would result in more college students while eliminating student debt. Student debt often slows down important life events for that graduate such as marrying, having kids, and buying a house. With free colleges, more students would graduate without debt. They have a clean slate and can make money and think about buying a house instead of paying a large debt (college debts can go over $200,000). Free college education won&#8217;t exactly erase social inequality since some people naturally do better than others, but it would move more people from the lower class into the middle class.<br />
+I like the proposal, but I am concerned with where the money will come from. Taxes may rise once this proposal goes into effect, but I am not sure if that would be enough. Over 8 million people attend community colleges in 2010-2011, and that number has been growing. According to the US News And World Report, there were 5.5 million community college students in 2000 (which means there was a 45% increase in just 10 years).<br />
+Paying for all of these students alone would cost the government about $30.4 billion every year. Making community college free would attract more students, and that would increase the amount of money the government spends to keep everyone&#8217;s college education free. The $18 trillion U.S. debt does not help the situation.<br />
+I believe that college should be free, but given the present circumstances, I have no idea how this goal will get achieved in present circumstances. Maybe the government decides to create an online college. Regardless of what the government does, there needs to be a better solution than spending $30.4 billion every year (and since community college would be more attractive, that number would go up every year).</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-2154137">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Paulina</span>
+			<span class="comment-link">
+				<a href="#comment-2154137" title="Comment Permalink">
+					<span class="comment-date">January 24, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:42 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Should a college education be free? Why?</p>
+<p>I think it is unrealistic to try to give a free college education. There is a lot of work ahead of us before a completely free education comes into reach. With that being said, college education should most definitely be cheaper. The cost today is absurd and so many kids are digging themselves financial holes before their life truly even begins.</p>
+<p>Should students have a right to higher education, the way they now have a right to elementary and secondary education?</p>
+<p>Absolutely. Every student has a right to learn as much as they desire, and go as far in their education as they can. American colleges need to continue to provide scholarships and need based financial aid to allow every person to get themselves to college, no matter the situation.</p>
+<p>Would the availability of a free college education provide a boast for the economy? Would it help erase social inequality?</p>
+<p>I think over a period of time, having a higher educated workforce would result in an economic boast. It would give the United States smarter, more efficient workers, and because of that increase production. I don&#8217;t believe it would erase social inequality by much though. I think there will always be the existence of a lower class, based purely on a few crucial mistakes combined with some bad luck.</p>
+<p>Would such a proposal be too expensive for the government to maintain? Is it unrealistic?</p>
+<p>I believe that right now it would be. The tax system would have to be changed significantly {and the wealthy would actually have to pay their full tax amount} as oppose to relying on the middle class.</p>
+<p>Do you support President Obama&#8217;s proposal? Do you think it might ever happen?</p>
+<p>I completely support Obama&#8217;s proposal. I think he has a realistic goal set to make two years of community college free for everyone by raising taxes for the upper class, and it will happen. He isn&#8217;t aiming to give Harvard a zero dollar price tag, and because of that I think he might very well make this work. <img src="//learning-admin.em.nytimes.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2154233">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mutaz</span>
+			<span class="comment-link">
+				<a href="#comment-2154233" title="Comment Permalink">
+					<span class="comment-date">January 25, 2015</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:01 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I 100% think that colleges should be free the United States. This would give more students that aren&#8217;t financially privileged the opportunity to go to college  after they graduate high school. With this new idea by President Barack Obama, it would not only give these students a chance of higher education but it would also boost the economy. With more people entering college and graduating them, they will be able to get a better job for themselves. With the amount of people getting these jobs it will also at the same time increase the economy. I do think that this proposal will take a while to happen but when it does it will be all for the better. This is a chance for high schools students to enter college who can&#8217;t afford it. This is an important proposal that needs to happen indefinitely.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2015/01/23/6-qs-about-the-news-microsoft-hololens-a-sensational-vision-of-the-pcs-future/" title="6 Q&#039;s About the News | Microsoft HoloLens: A Sensational Vision of the PC&#039;s Future">
+				6 Q&#8217;s About the News | Microsoft HoloLens: A Sensational Vision of the PC&#8217;s Future			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2015/01/23/student-contest-winners-the-2014-year-in-rap/" title="Student Contest Winners | The 2014 Year in Rap">
+				Student Contest Winners | The 2014 Year in Rap			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":105,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

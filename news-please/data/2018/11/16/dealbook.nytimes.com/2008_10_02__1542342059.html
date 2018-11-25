@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000005284728"><meta name="author" content="Dealbook" />
+<meta name="CLMST" content="Dealbook" />
+<meta name="byl" content="Dealbook" />
+<meta name="GBLC" content="Financial Services;Investment Banking;Main Topics;Revolving Door;Top Headline 1">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1222954357" />
+<meta name="PUD" content="20081002" />
+<meta name="pdate" content="20081002" />
+<meta name="ptime" content="20081002093237" />
+<meta name="utime" content="20170719192703" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-07-19T19:27:03-04:00" />
+<meta name="DISPLAYDATE" content="October 2, 2008" />
+<meta name="dat" content="October 2, 2008" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Financial Services" />
+<meta property="article:tag" content="Investment Banking" />
+<meta property="article:tag" content="Main Topics" />
+<meta property="article:tag" content="Revolving Door" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta name="keywords" content="Financial Services,Investment Banking,Main Topics,Revolving Door,Top Headline 1" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2008%2F10%2F02%2Fthain-to-take-role-at-bank-of-america%2F" title="Thain to Take Role at Bank of America" />
+<meta name="description" content="Merrill Lynch&#8217;s chairman and chief executive, John A. Thain, will remain at Bank of America after the merger of the two financial giants, Charlotte-based Bank of America said in a statement Thursday." />
+<meta name="hdl" content="Thain to Take Role at Bank of America" />
+<meta property="og:title" content="Thain to Take Role at Bank of America" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2008/10/02/thain-to-take-role-at-bank-of-america/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="Merrill Lynch&#8217;s chairman and chief executive, John A. Thain, will remain at Bank of America after the merger of the two financial giants, Charlotte-based Bank of America said in a statement Thursday." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Thain to Take Role at Bank of America" />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2008/10/02/thain-to-take-role-at-bank-of-america/" />
+<meta name="twitter:description" content="Merrill Lynch&#8217;s chairman and chief executive, John A. Thain, will remain at Bank of America after the merger of the two financial giants, Charlotte-based Bank of America said in a statement Thursday." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Take-Two Plans to Remain Independent' href='https://dealbook.nytimes.com/2008/10/02/take-two-plans-to-remain-independent/' />
+<link rel='next' title='Lessons from Huntsman v. Hexion' href='https://dealbook.nytimes.com/2008/10/02/lessons-from-huntsman-v-hexion/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2008/10/02/thain-to-take-role-at-bank-of-america/' />
+<link rel='shortlink' href='https://nyti.ms/2ovuOx7' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2008/10/02/thain-to-take-role-at-bank-of-america/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>Thain to Take Role at Bank of America - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-27021 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Thain to Take Role at Bank of America        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2008/10/02/thain-to-take-role-at-bank-of-america/"
+	 data-title="Thain to Take Role at Bank of America"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Merrill Lynch&#039;s chairman and chief executive, John A. Thain, will remain at Bank of America after the merger of the two financial giants, Charlotte-based Bank of America said in a statement Thursday. &lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2008/10/02/thain-to-take-role-at-bank-of-america/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="October 2, 2008 9:32 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-27021 post type-post status-publish hentry category-financial-services category-investment-banking category-main-topics category-revolving-door tag-bank-of-america tag-merrill-lynch" id="post-27021">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Thain to Take Role at Bank of America</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Dealbook			</address>
+			<!-- date published --><time class="dateline " datetime="2008-10-02T13:32:37+00:00" itemprop="datePublished">October 2, 2008 9:32 am</time>
+			<!-- date updated --><span class="visually-hidden updated">October 2, 2008 9:32 am</span>		</div>
+			</header>
+		<div class="entry-content">
+	<div class="thumbnail"><img src="https://static01.nyt.com/images/2007/11/17/business/17merrill.75.jpg"/></div>
+<div class="thumbnail"><img src="https://static01.nyt.com/images/blogs/dealbook/bofa75x75.jpg"/></div>
+<p class="story-body-text" itemprop="articleBody"><strong>Merrill Lynch</strong>&#8216;s chairman and chief executive, John A. Thain, will remain at <strong>Bank of America</strong> after the merger of the two financial giants, Charlotte-based Bank of America said in a statement Thursday.</p>
+<p class="story-body-text" itemprop="articleBody">The announcement settles a big question circulating around Wall Street: What was next for Mr. Thain, a veteran of Goldman Sachs who led the New York Stock Exchange before joining Merrill Lynch last fall?</p>
+<p class="story-body-text" itemprop="articleBody">According to Bank of America, Mr. Thain will become president of global banking, securities and wealth management in the combined company, essentially retaining control of the businesses run by Merrill. Similar units currently run by Bank of America will be merged into Merrill&#8217;s far larger and more established operations.<span id="more-27021"></span></p>
+<p class="story-body-text" itemprop="articleBody">&#8220;I am delighted that John has agreed to join Bank of America,&#8221; Kenneth D. Lewis, Bank of America&#8217;s chairman and chief executive, said in a statement. &#8220;His experience and expertise will be invaluable as we put our two companies together and move forward as the premier financial services company in the world.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Thain engineered Merrill&#8217;s sale to Bank of America nearly three weeks ago, in an emergency deal struck amid the collapse of Lehman Brothers. That agreement will create one of the world&#8217;s largest financial firms, with strong presences in investment and retail banking and wealth management, combining Bank of America&#8217;s retail banking network and Merrill&#8217;s corps of 16,000 financial advisers.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;This is an opportunity to create what will be the leading financial institution in the world,&#8221; Mr. Thain said in a statement. &#8220;Combining these two companies will create great value for our shareholders and clients around the world.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Separately, Bank of America said that Brian Moynihan, the firm&#8217;s current president of global corporate and investment banking, would remain in that post during the merger transition period. After that, he will take a new enterprise-wide role.</p>
+<p class="story-body-text" itemprop="articleBody"><a href="//prnewswire.com/cgi-bin/stories.pl?ACCT=104&#038;STORY=/www/story/10-02-2008/0004896673&#038;EDATE=#">Go to Bank of America Press Release via PR Newswire »</a></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2008/10/02/thain-to-take-role-at-bank-of-america/" data-title="Thain to Take Role at Bank of America" data-description="Merrill Lynch&#039;s chairman and chief executive, John A. Thain, will remain at Bank of America after the merger of the two financial giants, Charlotte-based Bank of America said in a statement Thursday. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-91293">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">D.</span>
+			<span class="comment-link">
+				<a href="#comment-91293" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:49 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>We all hope the Merrill Lynch CDC will also be given control of the BofA version!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91295">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">MARK KLEIN, M.D.</span>
+			<span class="comment-link">
+				<a href="#comment-91295" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:50 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The belief in the Divine Rights of Kings lives on Wall Street.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91297">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">B Shannon</span>
+			<span class="comment-link">
+				<a href="#comment-91297" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:32 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>How come no mention of the compensation to &#8216;retain&#8217; this talent?</p>
+<p>Is it because BOA cannot see through their own rhetoric and actually limit executive compensation on their own?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91299">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">manuel herrera</span>
+			<span class="comment-link">
+				<a href="#comment-91299" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:35 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I1m sorry about my english buy I want to say something:</p>
+<p>Is incredible. Some people who push companies to bunkrapcity, making damages to millions people in all over the world, and causing damages to their countries, will get money, prizes and honor. I understand the article &#8220;save the fat cats&#8221; and I share the Kristoff opinion, but one thing is &#8220;save&#8221; the companies but that is enough, is no neccesary, really is bad to save the persons who caused the default.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91301">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">willeigo</span>
+			<span class="comment-link">
+				<a href="#comment-91301" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:42 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Thain is a smart guy , he was not responsible for Merrill&#8217;s issues, he came on to address them. Duh &#8211; his new Merrill ship was taking on water and when the rescue cutter BoA came along he took the lifeline and got the first mate&#8217;s role on the savior ship ( question is whether he consciously knew he wanted it and played the &#8220;merger&#8221; and his own employment card in conjunction which might have been a conflict of interests for Merrill s/h, BoA s/h et al on the price of the deal ?? )</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91303">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">James &#8211; Wisconsin</span>
+			<span class="comment-link">
+				<a href="#comment-91303" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:45 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I seriously cannot believe that these people are the brightest people in the country.  MIT and Harvard degrees must not be what they used to be.  Plucking sons of mail carriers out the slums of the big cities, Thain should go back to the slum he came out of in Northern Illinois, and have him run the local city council, and not be selling out the country</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91305">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">David</span>
+			<span class="comment-link">
+				<a href="#comment-91305" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:46 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Yep, here we go again, many of the average employees will be laid off with the merger and overlapping busineses but the top executives will come out ok and probaly get even more stock options.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91307">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Philip</span>
+			<span class="comment-link">
+				<a href="#comment-91307" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:51 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Only on Wall Street (ok and maybe Hollywood) do the rich and incompetent get rewarded with (no doubt) higher paying, better jobs than their previous ones regardless of the success or failure of their previous businesses.  I am sure Mr. Thain is feeling the pain Congress has been speaking of for 2 weeks now.  This is a joke right? </p>
+<p>Corruption, Cronyism, and Incredulity are the watch words of Wall St.</p>
+<p>  I would rather sink on a boat full of these rats then lay on a life raft as their yacht sales by.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91309">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">arty</span>
+			<span class="comment-link">
+				<a href="#comment-91309" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:52 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Let&#8217;s get this straight. Last year Stanley O&#8217;Neal left Merrill Lynch after running it into the ground; for his expertise he was awarded a $161 million going away present.<br />
+Then John Thain took over, and Merrill continued its crawl into the dirt. So BofA swaggers in, grabs Merrill off the bottom shelf and gives Thain a job at the top which keeps him in control of the same Merrill operations which did so poorly that he had to sell the whole show to BofA.<br />
+Guy deserves a red ribbon and a prize, right? Just to make sure the poor guy doesn&#8217;t feel too bad, let&#8217;s hope it matches O&#8217;Neal&#8217;s booty, peer pressure, y&#8217;know.<br />
+In the meantime, Wall Street whines that it doesn&#8217;t get any respect for all its efforts to keep America going. Perhaps their image might improve if somehow the same 100 guys didn&#8217;t always wind up at the front of the line, wearing their tattered Goldman Sachs windbreakers, holding their hands out just in case there&#8217;s something to grab.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91311">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Frunobulax</span>
+			<span class="comment-link">
+				<a href="#comment-91311" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:59 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Boy, he sure paid a heavy price for all of this!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91313">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">James</span>
+			<span class="comment-link">
+				<a href="#comment-91313" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:03 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>His 100 million dollar pay day is safe. Thank Heavens</p>
+<p>Us lowly employees of ML will have to suck up the layoffs, but don&#8217;t worry he ll still get to be part of the 0.01% of the richest in the country.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91315">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Frank</span>
+			<span class="comment-link">
+				<a href="#comment-91315" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:29 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Okay. Drive your company into the ground, but be given a job with the new company. Sounds real good to me. NOT! This my friends is exactly the type of garbage the bailout will bring BACK to us. Do you still think it&#8217;s a good idea to give Paulson (CEO GoldmanSachs) money to start paying the very same people who brought us here to help themselves get out. Not a good idea. Oh well, we deserve what we bring upon oourselves through utter ignorance and stupidity. May my children and grandchildren be safe.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91317">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Julianna Pisch</span>
+			<span class="comment-link">
+				<a href="#comment-91317" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:48 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>and the band plays on</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91319">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">exboa</span>
+			<span class="comment-link">
+				<a href="#comment-91319" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:59 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>well, there you have it: BofA&#8217;s next CEO</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91321">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Stan</span>
+			<span class="comment-link">
+				<a href="#comment-91321" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:03 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This man was behind the wheel of a company that went belly up, now he gets another job making probably the same amount of money. I liked him at the NYSE, but this is ridiculous.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91323">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Factually</span>
+			<span class="comment-link">
+				<a href="#comment-91323" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Frank (posting Number 1):</p>
+<p>You must have been in a coma for the past year.  John Thain did not drive MER into the ground.  That honor goes to Stan O&#8217;Neal.  Thain actually saved Merrill Lynch in a BRILLIANT move a few weeks ago.  BAC is quite fortunate (as are its shareholders) to have a guy of Thain&#8217;s intellect and character on board.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91325">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">idiot</span>
+			<span class="comment-link">
+				<a href="#comment-91325" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Thain didnt drive the company into the ground. Stanley oneil, the CEO that resigned in october after pushing investments in risky mortgages, took care of that.  Thain did his best to revive the company and saved it before it collapsed by engineering a merger with bank of america.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91289">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Will</span>
+			<span class="comment-link">
+				<a href="#comment-91289" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr Thain didn&#8217;t run Merrill into the ground, his predecessor Mr O&#8217;Neal did. Mr Thain has been Merrill&#8217;s CEO for something like one year.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91327">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mike</span>
+			<span class="comment-link">
+				<a href="#comment-91327" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:40 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I actually give John Thain a lot of credit. The CEOs of Bear Stearns and Lehman Brothers knew (or should have known) what was coming, and opted to stand pat. They drove their companies into the ground, decimating shareholder value and illustrating a complete abrogation of their fiduciary duties. Thain, on the other hand, saw the hand he was dealt and made the most of it. He preserved shareholder value, the company&#8217;s assets and most likely the jobs of its employees. Thain was a good fiduciary in the midst of a godawful crisis.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91291">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">HB</span>
+			<span class="comment-link">
+				<a href="#comment-91291" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:51 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr. Thain was brought in to fix the train wreck created by Stan O&#8217;Neill, he had nothing to do with the problems that led to Merrill&#8217;s aquisition by BofA.  As a matter of fact, he probably saved Merrill from the same fate as Lehman.  Get a clue before you post a bunch of populist dribble!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91329">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KP</span>
+			<span class="comment-link">
+				<a href="#comment-91329" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Great now that the bailout is coming the rats are scurrying back into the sewer. Jeez.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91331">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jerry</span>
+			<span class="comment-link">
+				<a href="#comment-91331" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:27 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>HB’s right.  Merrill&#8217;s troubles are the fault of Stan O&#8217;Neal.  Thain was brought in to save Merrill, however, it was already too late.  It&#8217;s like if you were brought in to captain the Titanic minutes before it hit the iceberg.  Thain actually saved Merrill by getting BofA to buy it.  Merrill was headed for bankruptcy (again the fault of Stan O&#8217;Neal).  Those who blame Thain for Merrill&#8217;s demise are ignorant or have not followed the saga.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91333">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">arty</span>
+			<span class="comment-link">
+				<a href="#comment-91333" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:44 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Now it gets even funnier. Commenters 16 -20 seem to have gotten the same message from Mr. Thain&#8217;s operation at the same time and sent in the same comment.<br />
+Do the checks come immediately or do these true believers have to wait for the first of the year? Who ever said Wall Streeters aren&#8217;t loyal?<br />
+Going my way? Hey, let&#8217;s share a cab &#8211; we can each expense the fare.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-91335">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">HB</span>
+			<span class="comment-link">
+				<a href="#comment-91335" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>So, #23, by telling the real story, 16-20 are somehow on Thain&#8217;s payroll?  Seriously, get your facts straight and stop the mindless, pack mentality.  To re-educate you and the rest of the clearly uninformed crew, Thain was not responsible for Merrill&#8217;s woes, that honor goes to Stan O&#8217;Neill.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-91337">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Joe Mahmah</span>
+			<span class="comment-link">
+				<a href="#comment-91337" title="Comment Permalink">
+					<span class="comment-date">October 2, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Since you mentioned funny posts arty (#23), I think it&#8217;s really funny that you are trying to be cute and cut others (who are being serious and are correct) when you obviously have no idea what transpired with Merrill Lynch.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2008/10/02/take-two-plans-to-remain-independent/" title="Take-Two Plans to Remain Independent">
+				Take-Two Plans to Remain Independent			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2008/10/02/lessons-from-huntsman-v-hexion/" title="Lessons from Huntsman v. Hexion">
+				Lessons from Huntsman v. Hexion			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":47,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

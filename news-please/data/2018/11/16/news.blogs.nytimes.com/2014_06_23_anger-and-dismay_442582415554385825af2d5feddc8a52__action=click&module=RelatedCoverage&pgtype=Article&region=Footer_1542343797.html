@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-news section-"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-news section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-news section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-news section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/news/Anger and Dismay Online as Egypt Sentences Journalists  ( 20140623 )" />
+<meta name="communityAssetURL" content="//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002957635"><meta name="author" content="Robert Mackey" />
+<meta name="CLMST" content="Robert Mackey" />
+<meta name="byl" content="Robert Mackey" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/m/robert_mackey/index.html" /><meta name="GBLC" content="Middle East;Open Source;World">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1403537819" />
+<meta name="PUD" content="20140623" />
+<meta name="pdate" content="20140623" />
+<meta name="ptime" content="20140623113659" />
+<meta name="utime" content="20140722135449" />
+<meta property="article:modified_time" itemprop="dateModified" content="2014-07-22T13:54:49-04:00" />
+<meta name="DISPLAYDATE" content="June 23, 2014" />
+<meta name="dat" content="June 23, 2014" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="news" />
+<meta name="BN" content="news" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Fahmy, Mohamed Fadel;Greste, Peter;Kerry, John;Mohamed, Baher">
+<meta name="des" content="Freedom of the Press;Middle East and North Africa Unrest (2010- );Political Prisoners">
+<meta name="org" content="Al Jazeera English">
+<meta name="geo" content="Australia;Cairo (Egypt);Canada;Egypt">
+<meta property="article:tag" content="Fahmy Mohamed Fadel" />
+<meta property="article:tag" content="Greste Peter" />
+<meta property="article:tag" content="Kerry John" />
+<meta property="article:tag" content="Mohamed Baher" />
+<meta property="article:tag" content="Freedom of the Press" />
+<meta property="article:tag" content="Middle East and North Africa Unrest (2010- )" />
+<meta property="article:tag" content="Political Prisoners" />
+<meta property="article:tag" content="Al Jazeera English" />
+<meta property="article:tag" content="Australia" />
+<meta property="article:tag" content="Cairo (Egypt)" />
+<meta property="article:tag" content="Canada" />
+<meta property="article:tag" content="Egypt" />
+<meta property="article:tag" content="Middle East" />
+<meta property="article:tag" content="Open Source" />
+<meta property="article:tag" content="World" />
+<meta name="keywords" content="Fahmy Mohamed Fadel,Greste Peter,Kerry John,Mohamed Baher,Freedom of the Press,Middle East and North Africa Unrest (2010- ),Political Prisoners,Al Jazeera English,Australia,Cairo (Egypt),Canada,Egypt,Middle East,Open Source,World" />
+<meta name="news_keywords" content="Arab Spring,Australia,Baher Mohamed,Cairo,Canada,Egypt,Freedom of the press,John Kerry,Mohamed Fadel Fahmy,Peter Greste,Political prisoner" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fnews.blogs.nytimes.com%2F2014%2F06%2F23%2Fanger-and-dismay-online-as-egypt-sentences-journalists%2F" title="Anger and Dismay Online as Egypt Sentences Journalists" />
+<meta name="description" content="Rights activists, bloggers and journalists in Egypt responded with dismay to a court in Cairo sentencing three reporters to long prison terms for reporting on the unrest in the country last year." />
+<meta name="hdl" content="Anger and Dismay Online as Egypt Sentences Journalists " />
+<meta property="og:title" content="Anger and Dismay Online as Egypt Sentences Journalists " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="Rights activists, bloggers and journalists in Egypt responded with dismay to a court in Cairo sentencing three reporters to long prison terms for reporting on the unrest in the country last year." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Anger and Dismay Online as Egypt Sentences Journalists " />
+<meta name="twitter:url" content="//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/" />
+<meta name="twitter:description" content="Rights activists, bloggers and journalists in Egypt responded with dismay to a court in Cairo sentencing three reporters to long prison terms for reporting on the unrest in the country last year." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Activists Arrested in Cairo at March Against Protest Ban' href='//news.blogs.nytimes.com/2014/06/21/activists-arrested-in-cairo-at-march-against-protest-ban/' />
+<link rel='next' title='Slain Libyan Rights Activist Documented Her Last Hours Online' href='//news.blogs.nytimes.com/2014/06/26/slain-libyan-rights-activist-documented-her-last-hours-online/' />
+<link rel='canonical' href='//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/' />
+<link rel='shortlink' href='//nyti.ms/1qEGwzM' />
+<link rel='https://github.com/WP-API/WP-API' href='//news.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/news/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//news.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/news/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/" />
+<meta name="dfp-ad-unit-path" content="news" />			<title>Anger and Dismay Online as Egypt Sentences Journalists  - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/news.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-599 blog-universal nyt-blog-news full-width-headline" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//news.blogs.nytimes.com">
+                News            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Anger and Dismay Online as Egypt Sentences Journalists        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/"
+	 data-title="Anger and Dismay Online as Egypt Sentences Journalists"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Rights activists, bloggers and journalists in Egypt responded with dismay to a court in Cairo sentencing three reporters to long prison terms for reporting on the unrest in the country last year.&lt;/span&gt;&lt;a href=&quot;//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="June 23, 2014 11:36 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="news" class="spanAC blog">
+				<div class="postHeader story-header">
+	<div class="story-meta">
+		<button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		<h3 class="kicker"><span class="kicker-label kicker-middle-east"><a href="//www.nytimes.com/pages/world/middleeast/index.html">Middle East</a></span></h3>		<h1 class="entry-title story-heading">Anger and Dismay Online as Egypt Sentences Journalists</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Robert Mackey			</address>
+			<!-- date published --><time class="dateline " datetime="2014-06-23T15:36:59+00:00" itemprop="datePublished">June 23, 2014</time>
+			<!-- date updated --><span class="visually-hidden updated">June 23, 2014</span>			<div class="inside-story"></div><!-- Although this is empty, it is required for layout parity with NYT5 -->
+		</div>
+	</div>
+</div>
+<div class="a-column" id="a-col">
+	<div id="content" class="hfeed">
+			<article class="post-599 post type-post status-publish hentry category-middle-east category-open-source category-world tag-al-jazeera-english tag-australia tag-cairo-egypt tag-canada tag-egypt tag-fahmy-mohamed-fadel tag-freedom-of-the-press tag-greste-peter tag-kerry-john tag-middle-east-and-north-africa-unrest-2010 tag-mohamed-baher tag-political-prisoners per-fahmy-mohamed-fadel per-greste-peter per-kerry-john per-mohamed-baher des-freedom-of-the-press des-middle-east-and-north-africa-unrest-2010 des-political-prisoners org-al-jazeera-english geo-australia geo-cairo-egypt geo-canada geo-egypt news_keywords-arab-spring news_keywords-australia news_keywords-baher-mohamed news_keywords-cairo news_keywords-canada news_keywords-egypt news_keywords-freedom-of-the-press-2 news_keywords-john-kerry news_keywords-mohamed-fadel-fahmy news_keywords-peter-greste news_keywords-political-prisoner" id="post-599">
+                        <div class="visually-hidden">
+                <span itemprop="headline" class="entry-title">Anger and Dismay Online as Egypt Sentences Journalists</span>
+                <span class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+                    By Robert Mackey                </span>
+                <!-- date published --><time class="dateline " datetime="2014-06-23T15:36:59+00:00" itemprop="datePublished">June 23, 2014 11:36 am</time>
+			<!-- date updated --><span class="visually-hidden updated">June 23, 2014 11:36 am</span>            </div>
+			<div class="entry-content">
+			<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/" data-title="Anger and Dismay Online as Egypt Sentences Journalists" data-description="Rights activists, bloggers and journalists in Egypt responded with dismay to a court in Cairo sentencing three reporters to long prison terms for reporting on the unrest in the country last year.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody"><webonly>
+<div class="w480 youtube-video-container">
+<div class="youtube-video" data-youtube-id="JkOFLxZr6Ew" data-start="">
+<div class="thumb"><img src="https://img.youtube.com/vi/JkOFLxZr6Ew/0.jpg" />
+<div class="playButton">
+<div class="arrow"></div>
+</div>
+</div>
+</div>
+<div class="caption">Video from Australian television shows the parents of the journalist Peter Greste as they learn that their son has been sentenced to seven years in an Egyptian prison for reporting on the country for Al Jazeera.</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"></webonly></p>
+<div class="w151 right module">
+<div class="entry">
+<h5><a href="//topics.nytimes.com/top/reference/timestopics/people/m/robert_mackey/index.html">Open Source</a></h5>
+<ul class="refer">
+<li><a href="//topics.nytimes.com/top/reference/timestopics/people/m/robert_mackey/index.html">Read more columns »</a></li>
+</ul></div>
+</p></div>
+<p class="story-body-text" itemprop="articleBody"><span id="t13h3m" class="update">Updated, 1:03 p.m. | </span>Rights activists, bloggers and journalists in Egypt <a href="//egyptianchronicles.blogspot.com/2014/06/ajstafftrial-scandelous-verdicts-of-day.html">responded with dismay</a> on Monday after an Egyptian court sentenced three journalists to long prison terms despite a lack of evidence that the men, who worked for Al Jazeera English, had done anything but report on the unrest in the country last summer after the military deposed the elected president, Mohamed Morsi.</p>
+<p class="story-body-text" itemprop="articleBody">As my colleague <a href="//www.nytimes.com/2014/06/24/world/middleeast/egyptian-court-convicts-3-journalists.html">David Kirkpatrick reports</a>, the crew was convicted of conspiring with the Muslim Brotherhood to broadcast false reports of civil strife in Egypt last year.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">So as it turns out in Egypt journalism is a crime.</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/arabist">arabist (@arabist)</a> <a href="https://www.twitter.com/arabist/status/481003898745126913" data-datetime="2014-06-23T09:20:40+00:00">23 Jun 14</a><script async src="//platform.twitter.com/widgets.js" id="platform_twitter_js" charset="utf-8"></script></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Beyond the embarrassing verdict, there are lives of people who were doing ther job destroyed. &amp; a profession of great importance stigmatised</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/moftasa">Mostafa Hussein (@moftasa)</a> <a href="https://www.twitter.com/moftasa/status/480995500125356033" data-datetime="2014-06-23T08:47:18+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">#Egypt&#8217;s corrupt judges/prosecutors are the real criminals. This country&#8217;s judiciary belongs behind bars, not its journalists! #FreeAJStaff</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/JanoCharbel">Jano Charbel (@JanoCharbel)</a> <a href="https://www.twitter.com/JanoCharbel/status/481061406486568961" data-datetime="2014-06-23T13:09:11+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">The three journalists are respected professionals who have all reported from Egypt for other international news organizations. Mohamed Fahmy, a Canadian citizen of Egyptian descent, previously worked for CNN and The New York Times; Peter Greste, an Australian, had worked for the BBC and had spent only a few days in Egypt at the time of his arrest; and Baher Mohamed, an Egyptian, previously worked for the Japanese news organization The Asahi Shimbun.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">As they were being led out, mohamed fought with guards to let him speak, Baher had his head in hands, Peter looked in shock shaking his head</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/SherineT">Sherine Tadros (@SherineT)</a> <a href="https://www.twitter.com/SherineT/status/481022359244378112" data-datetime="2014-06-23T10:34:02+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">In messages posted on Twitter, Al Anstey, the managing director of Al Jazeera English, called the verdict unjust and promised to continue rallying support for the reporters.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Today&#8217;s verdict in Egypt defies logic, sense and any semblance of justice #FreeAJStaff</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/AlAnsteyAJ">Al Anstey (@AlAnsteyAJ)</a> <a href="https://www.twitter.com/AlAnsteyAJ/status/481012936870084609" data-datetime="2014-06-23T09:56:35+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Not a shred of evidence has been presented against our excellent journalists #FreeAJStaff #journalismisnotacrime</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/AlAnsteyAJ">Al Anstey (@AlAnsteyAJ)</a> <a href="https://www.twitter.com/AlAnsteyAJ/status/481013176348065792" data-datetime="2014-06-23T09:57:32+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Thank you for your support to #freeajstaff. Keep it going. We will continue with resolve till Peter, Baher and Mohamed are free.</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/AlAnsteyAJ">Al Anstey (@AlAnsteyAJ)</a> <a href="https://www.twitter.com/AlAnsteyAJ/status/481013712468205568" data-datetime="2014-06-23T09:59:40+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">On the eve of the verdict, dozens of foreign correspondents and editors at international news organizations had signed a letter appealing to President Abdel Fattah el-Sisi to pardon the journalists. After the sentencing, many more of their colleagues <a href="https://www.youtube.com/watch?v=wo-jF7wV-lM">in newsrooms</a> around the world joined <a href="https://www.twitter.com/hashtag/FreeAJStaff?src=hash">the online campaign</a> to free the Al Jazeera staff.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">As a friend I feel incredibly sad, as a journalist I&#8217;m scared, as an Egyptian I&#8217;m ashamed #AJTrial</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/SherineT">Sherine Tadros (@SherineT)</a> <a href="https://www.twitter.com/SherineT/status/481025885802598402" data-datetime="2014-06-23T10:48:02+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Reax after hearing #AJtrial sentence, @Bahrooz @Repent11. Barely keep from crying after taking photo. #FreeAJStaff //t.co/UvHtFGVKVO</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/makartwo">Amir Makar (@makartwo)</a> <a href="https://www.twitter.com/makartwo/status/481159006225190912" data-datetime="2014-06-23T19:37:01+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Some close observers of Egypt&#8217;s international relations, like Michael Hanna, a fellow at The Century Foundation in New York, pointed out that the harsh ruling came just one day after <a href="//www.nytimes.com/2014/06/23/world/middleeast/kerry-in-egypt-renewing-ties-with-el-sisi.html">Secretary of State John Kerry had visited Egypt</a> and promised to restart military aid to the new government led by Mr. Sisi, the former military chief who removed the elected president last year.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Timing of Kerry visit to Cairo yesterday is inexplicable in light of today&#8217;s AJE verdict. I wonder if assurances were given re the verdict.</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/mwhanna1">Michael Hanna (@mwhanna1)</a> <a href="https://www.twitter.com/mwhanna1/status/481033831609556992" data-datetime="2014-06-23T11:19:37+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">According to Ruth Pollard of The Sydney Morning Herald, Mr. Fahmy, who tweets as @Repent11, made a wry comment about Mr. Kerry as the defendants waited for the verdict.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">&#8220;Where&#8217;s John Kerry&#8221; @Repent11 says from the defendant&#8217;s cage. )The US Secretary of State was in #Egypt yesterday to meet Pres al-Sisi).</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/rpollard">Ruth Pollard (@rpollard)</a> <a href="https://www.twitter.com/rpollard/status/480981430617767936" data-datetime="2014-06-23T07:51:23+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">The Arabist, a Cairo blog founded by the Moroccan-American political analyst Issandr El Amrani, suggested that the verdict would do little to reassure investors about the rule of law in Egypt.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">The message to investors about Egypt is pretty clear: stay away, if a business dispute goes to court you’ll be in the hands of loonies.</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/arabist">arabist (@arabist)</a> <a href="https://www.twitter.com/arabist/status/481004656471339008" data-datetime="2014-06-23T09:23:41+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Heba Morayef, a former Egypt director for Human Rights Watch, said that the verdict, which could <a href="https://www.twitter.com/hebamorayef/status/480998467847090177">eventually</a> be overturned on appeal, suggests that the climate for press freedom in Egypt is now worse than it was before the autocratic Hosni Mubarak was forced from power in 2011.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Not a verdict we wd have seen under Mubarak where sensitivity to int&#8217;l reputation wd have resulted in a release for high-profile journos</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/hebamorayef">hebamorayef (@hebamorayef)</a> <a href="https://www.twitter.com/hebamorayef/status/480997198080249856" data-datetime="2014-06-23T08:54:03+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Appeal process (on points of law, then retrial) will be slow esp w judiciary summer vacation, trials unlikely to b scheduled til Sept or so</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/hebamorayef">hebamorayef (@hebamorayef)</a> <a href="https://www.twitter.com/hebamorayef/status/480997725425897472" data-datetime="2014-06-23T08:56:08+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Having said that, timing/pace/speed of trials has always been discretionary&amp; there could be a decision to speed up appeals process.</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/hebamorayef">hebamorayef (@hebamorayef)</a> <a href="https://www.twitter.com/hebamorayef/status/480998467847090177" data-datetime="2014-06-23T08:59:05+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">After the verdict, the police attempted to block journalists in the courtroom and outside from recording the reaction of the defendants and their family members, according to the Cairo-based reporters Louisa Loveluck and Jared Malsin.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">&#8220;They will pay for this, I promise they will pay for this,&#8221; shouts Fahmy as police drag him from the courtroom cage. //t.co/ntUQpX5UxS</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/leloveluck">Louisa Loveluck (@leloveluck)</a> <a href="https://www.twitter.com/leloveluck/status/481012181476323328" data-datetime="2014-06-23T09:53:35+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><iframe src="https://instagram.com/p/plQXXsLInS/embed/" width="480" height="590" frameborder="0" scrolling="no" allowtransparency="true"></iframe></p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Now the police are angrily clearing the defendants families and journalists from the prison entrance #AJTrial //t.co/Zu3nA6GZ0d</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/jmalsin">Jared Malsin (@jmalsin)</a> <a href="https://www.twitter.com/jmalsin/status/481007184583852032" data-datetime="2014-06-23T09:33:44+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">#Egypt in a nutshell via @jmalsin //t.co/WoM4jAa24R</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/cairocitylimits">sherief gaber (@cairocitylimits)</a> <a href="https://www.twitter.com/cairocitylimits/status/481007850542874625" data-datetime="2014-06-23T09:36:22+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">During his visit to Cairo, Mr. Kerry was <a href="//www.state.gov/secretary/remarks/2014/06/228234.htm">assured</a> by <a href="//www.mfa.gov.eg/English/Minister/Biography/Pages/default2.aspx">Sameh Shoukry</a>, the new Egyptian foreign minister, that the country was moving ahead with a return to democracy. However, Egyptians noted in the wake of the verdict that the country&#8217;s new constitution is supposed to guarantee press freedom.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Irony: Article 70 from the Egyptian constitution: &#8220;Freedom of journalism.. guaranteed by the state&#8221;. #AJTrial //t.co/bL5nkwaGnd</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/minafayek">Mina Fayek (@minafayek)</a> <a href="https://www.twitter.com/minafayek/status/480999291595796480" data-datetime="2014-06-23T09:02:22+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Mr. Shoukry, who was the Mubarak government&#8217;s last ambassador in Washington, was called an opponent of free speech by American diplomats in <a href="//www.washingtonpost.com/wp-srv/special/world/wikileaks/cable38.html">a leaked State Department cable</a> written in 2008. That cable, describing his previous work at the United Nations in Geneva, described him as aggressively pursuing &#8220;goals the U.S. does not support.&#8221; </p>
+<p class="story-body-text" itemprop="articleBody">&#8220;This has been most noticeable in the Human Rights Council, where Egypt has been arguably the most difficult delegation from our perspective, pushing hard &#8212; and often effectively &#8212; for many troubling Organization of the Islamic Conference&#8217;s resolutions and amendments, such as the one that subverted the mandate on freedom of expression,&#8221; American diplomats wrote in July 2008.</p>
+<p class="story-body-text" itemprop="articleBody">According to the BBC correspondent Lyse Doucet, state television in Egypt reported that Mr. Shoukry had forcefully rejected <a href="//www.nytimes.com/2014/06/24/world/middleeast/sentencing-of-journalists-in-egypt-draws-condemnation.html">pressure from foreign governments</a> to overturn the decision on Monday.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">#Egypt State TV &#8220;FM: Egypt asserts full rejection against any interference in its internal affairs&#8221;<br />
+#journalismisnotacrime #FreeAJStaff</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/bbclysedoucet">lyse doucet (@bbclysedoucet)</a> <a href="https://www.twitter.com/bbclysedoucet/status/481079797939208192" data-datetime="2014-06-23T14:22:16+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Asked about the case during a news conference in Baghdad on Monday, Mr. Kerry <a href="//en.aswatmasriya.com/news/view.aspx?id=876a12c0-7caf-47a2-95f9-5cbe4ad1f753">told reporters</a> that he had spoken with President Sisi about the case against the journalists during his visit, and then called Mr. Shoukry to object after the verdicts were announced.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">John Kerry says he phoned Egypt&#8217;s foreign minister to register &#8220;our serious displeasure&#8221; with court&#8217;s verdict against journalists.</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/Reuters">Reuters Top News (@Reuters)</a> <a href="https://www.twitter.com/Reuters/status/481083530659651584" data-datetime="2014-06-23T14:37:06+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Kerry says when he heard abt #AJStaff verdict he called Egyptian FM to register his concern. Sentencing is &#8220;chilling, draconian&#8221; 1/2</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/BBCKimGhattas">Kim Ghattas (@BBCKimGhattas)</a> <a href="https://www.twitter.com/BBCKimGhattas/status/481081569797758976" data-datetime="2014-06-23T14:29:18+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Kerry says he discussed these cases w al Sisi yday, now critical for Egy prez to move quickly to address int&#8217;l concerns on this. #AJTrial</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/BBCKimGhattas">Kim Ghattas (@BBCKimGhattas)</a> <a href="https://www.twitter.com/BBCKimGhattas/status/481081939575980033" data-datetime="2014-06-23T14:30:47+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">In <a href="//www.state.gov/secretary/remarks/2014/06/228291.htm">a statement</a> released later on Monday, Mr. Kerry said: &#8220;Today&#8217;s conviction and chilling, draconian sentences by the Cairo Criminal Court of three Al Jazeera journalists and fifteen others in a trial that lacked many fundamental norms of due process, is a deeply disturbing set-back to Egypt&#8217;s transition. Injustices like these simply cannot stand if Egypt is to move forward in the way that President al-Sisi and Foreign Minister Shoukry told me just yesterday that they aspire to see their country advance.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">The court also sentenced in absentia a Dutch reporter, Rena Netjes, to 10 years in jail. Ms. Netjes, who <a href="//thelede.blogs.nytimes.com/2014/02/03/al-jazeera-says-video-of-its-journalists-arrest-is-effort-to-demonize-them/">left Egypt in February</a> after being indicted in the case, was apparently convicted of anti-Egypt plotting just for having had coffee with one of the Al Jazeera journalists at the Marriott Hotel in Cairo. The case against her was so slight prosecutors were unable to even get her name right, having called her &#8220;Johanna Identity&#8221; in the official indictment.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">10 years for a cup of coffee in The Mariott. Too bizar for a filmscript. #Egypt</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/RenaNetjes">Rena Netjes (@RenaNetjes)</a> <a href="https://www.twitter.com/RenaNetjes/status/481076359847235585" data-datetime="2014-06-23T14:08:36+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">The Dutch foreign minister summoned Egypt&#8217;s ambassador to the Netherlands to demand an explanation, the country&#8217;s embassy in Cairo <a href="https://www.facebook.com/nlembassyegypt/posts/688458247892790">reported on Facebook</a>.</p>
+<p class="story-body-text" itemprop="articleBody">The Egyptian bloggers Sherief Gaber and Amro Ali said that the ruling on Monday illustrated that reform of Egypt&#8217;s judiciary, a demand of the protesters who filled Tahrir Square in 2011, remained necessary.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Now you know why law schools in #Egypt need to be reformed and elevated to the highest discipline, not lowest, in the county. #AJTrial</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/_amroali">Amro Ali (@_amroali)</a> <a href="https://www.twitter.com/_amroali/status/481045189952536576" data-datetime="2014-06-23T12:04:45+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">#Egypt 3 years ago; a protest holding the casket of the Egyptian Judiciary. Sadly, this is hardly news //t.co/dieZMGRXgm</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/cairocitylimits">sherief gaber (@cairocitylimits)</a> <a href="https://www.twitter.com/cairocitylimits/status/481006654629367808" data-datetime="2014-06-23T09:31:37+00:00">23 Jun 14</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">There was also concern on Monday for the fate of rights activists <a href="//news.blogs.nytimes.com/2014/06/21/activists-arrested-in-cairo-at-march-against-protest-ban/">detained on Saturday</a> after a march against a new law banning unsanctioned protests was stopped by the police.</p>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Meanwhile we are still waiting for the prosecutor to hear about the fate of the detained from June 21st including @sana2 #NoProtestLaw</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/Gsquare86">Gigi Ibrahim (@Gsquare86)</a> <a href="https://www.twitter.com/Gsquare86/status/481038066279526400" data-datetime="2014-06-23T11:36:26+00:00">23 Jun 14</a></p></blockquote>
+<blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">#eipr Yara Sallam is remanded in custody by a prosecutor in Cairo for 4 more days for being near a protest!!&#8230; //t.co/ZfPvu9GKRP</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/K_Mansour_">Khaled Mansour (@K_Mansour_)</a> <a href="https://www.twitter.com/K_Mansour_/status/481053464492244992" data-datetime="2014-06-23T12:37:38+00:00">23 Jun 14</a></p></blockquote>
+<footer class="story-footer">
+    <div class="story-meta">
+	    </div>
+</footer>
+</div>
+			<footer class="entry-footer">
+								<button class="button comments-button  theme-speech-bubble"></button>
+				
+				<div id="sharetools-post-footer" class="sharetools theme-classic"
+					data-shares="show-all|Share"
+					data-url="//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/"
+					data-title="Anger and Dismay Online as Egypt Sentences Journalists"
+					data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Rights activists, bloggers and journalists in Egypt responded with dismay to a court in Cairo sentencing three reporters to long prison terms for reporting on the unrest in the country last year.&lt;/span&gt;&lt;a href=&quot;//news.blogs.nytimes.com/2014/06/23/anger-and-dismay-online-as-egypt-sentences-journalists/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+					>
+					<div class="ad sharetools-inline-article-ad hidden"></div>
+				</div>
+				<div class="footer-tags">
+									</div>
+			</footer>
+		</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+		</div> <!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+			<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-154',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":69,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

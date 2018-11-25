@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-roomfordebate section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/roomfordebate/Angry Boomers and Other Election Clues" />
+<meta name="communityAssetURL" content="//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000242162"><meta name="author" content="The Editors" />
+<meta name="CLMST" content="The Editors" />
+<meta name="byl" content="The Editors" />
+<meta name="GBLC" content="Politics">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1274283451" />
+<meta name="PUD" content="20100519" />
+<meta name="pdate" content="20100519" />
+<meta name="ptime" content="20100519113731" />
+<meta name="utime" content="20170912190619" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-09-12T19:06:19-04:00" />
+<meta name="DISPLAYDATE" content="May 19, 2010" />
+<meta name="dat" content="May 19, 2010" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="roomfordebate" />
+<meta name="BN" content="roomfordebate" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Politics" />
+<meta property="article:tag" content="_featured" />
+<meta name="keywords" content="Politics,_featured" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Froomfordebate.blogs.nytimes.com%2F2010%2F05%2F19%2Fangry-boomers-and-other-election-clues%2F" title="Angry Boomers and Other Election Clues" />
+<meta name="description" content="What do Tuesday&#8217;s primaries in Pennsylvania, Arkansas and Kentucky indicate for the November contests?" />
+<meta name="hdl" content="Angry Boomers and Other Election Clues" />
+<meta property="og:title" content="Angry Boomers and Other Election Clues" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/" />
+<meta property="og:site_name" content="Room for Debate" />
+<meta property="og:description" content="What do Tuesday&#8217;s primaries in Pennsylvania, Arkansas and Kentucky indicate for the November contests?" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Angry Boomers and Other Election Clues" />
+<meta name="twitter:url" content="//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/" />
+<meta name="twitter:description" content="What do Tuesday&#8217;s primaries in Pennsylvania, Arkansas and Kentucky indicate for the November contests?" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Redefining Cruel Punishment for Juveniles' href='//roomfordebate.blogs.nytimes.com/2010/05/17/redefining-cruel-punishment-for-juveniles/' />
+<link rel='next' title='Politicians and Their Fake War Stories' href='//roomfordebate.blogs.nytimes.com/2010/05/19/politicians-and-their-fake-war-stories/' />
+<link rel='canonical' href='//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/' />
+<link rel='shortlink' href='https://nyti.ms/2oxupKq' />
+<link rel='https://github.com/WP-API/WP-API' href='//roomfordebate.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/roomfordebate/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//roomfordebate.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/roomfordebate/2010/05/19/angry-boomers-and-other-election-clues/" />
+<meta name="dfp-ad-unit-path" content="opinion/roomfordebate" />			<title>Angry Boomers and Other Election Clues - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-38389 blog-universal nyt-blog-roomfordebate" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//roomfordebate.blogs.nytimes.com">
+                Room for Debate            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Angry Boomers and Other Election Clues        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/"
+	 data-title="Angry Boomers and Other Election Clues"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;What do Tuesday&#039;s primaries in Pennsylvania, Arkansas and Kentucky indicate for the November contests?&lt;/span&gt;&lt;a href=&quot;//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="May 19, 2010 11:37 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="roomfordebate" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//roomfordebate.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="site-title">Room for Debate</div><div class="site-description">A New York Times Blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//roomfordebate.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Room for Debate">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-38389 post type-post status-publish hentry category-politics tag-arlen-specter tag-blanche-lincoln tag-democratic-party tag-elections tag-joe-sestak tag-rand-paul tag-republican-party tag-tea-party-movement" id="post-38389">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Angry Boomers and Other Election Clues</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By The Editors			</address>
+			<!-- date published --><time class="dateline " datetime="2010-05-19T15:37:31+00:00" itemprop="datePublished">May 19, 2010 11:37 am</time>
+			<!-- date updated --><span class="visually-hidden updated">May 19, 2010 11:37 am</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2010/05/17/opinion/17rfd-image/17rfd-image-custom1.jpg" alt="primary results" /><span class="credit">Left to right: Michael Perez/Associated Press, Jake Stevens/Reuters, Danny Johnston/Associated Press </span> <span class="caption">Left to right: Joe Sestak beat Arlen Specter in the Democratic Senate primary in Pennsylvania; Rand Paul won the Republican Senate primary in Kentucky; Senator Blanche Lincoln with her supporters in Little Rock, Ark. </span></div>
+<p class="story-body-text" itemprop="articleBody">The <a href="//www.nytimes.com/2010/05/19/us/politics/19elect.html">outcomes of the primaries in Pennsylvania, Kentucky and Arkansas</a> showed that both the Democratic and Republican parties face threats from candidates who are able to portray themselves as outsiders willing to shake up the system. </p>
+<div class="w190 right module">
+<div class="entry">
+<h6 class="kicker">In the Opinion section </h6>
+<ul class="refer">
+<li><a href="//opinionator.blogs.nytimes.com/2010/05/19/let-the-polarization-begin/">The Conversation: Let the Polarization Begin </a></li>
+</ul></div>
+</p></div>
+<p class="story-body-text" itemprop="articleBody">Rand Paul, the Tea Party candidate in Kentucky, prevailed in the Republican senatorial primary against Trey Grayson, who was endorsed by Senator Mitch McConnell. Senator Arlen Specter was defeated by Representative Joe Sestak in the Democratic primary in Pennsylvania. And Senator Blanche Lincoln now faces a run-off election against her challenger in June. </p>
+<p class="story-body-text" itemprop="articleBody">Of course, intra-party contests tend to draw more ideological voters. Even so, the anti-incumbent streak was apparent. What do these results indicate for the November elections?</p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-38389"></span></p>
+<ul>
+<li><a href="#dan">Dan Schnur,</a> former adviser to John McCain</li>
+<li><a href="#donna">Donna Brazile,</a> Democratic political strategist</li>
+<li><a href="#rick">Rick Shenkman,</a> history professor, George Mason University</li>
+<li><a href="#bob">Bob Moser,</a> editor, The Texas Observer</li>
+<li><a href="#lorenzo">Lorenzo Morris</a>, political scientist, Howard University</li>
+<li><a href="#lara">Lara M. Brown,</a> Villanova University</li>
+<li><a href="#sabato">Larry Sabato</a>, Center for Politics, University of Virginia</li>
+<li><a href="#susan">Susan Sullivan Lagon</a>, Georgetown University</li>
+</ul>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="dan"></a></p>
+<h4>When Outsiders Take Over Washington</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/dan_schnur.50.jpg" alt="Dan Schnur"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a id="aptureLink_mdu4JKNZX0" href="//college.usc.edu/unruh/staff/dan_schnur.html">Dan Schnur</a></strong> is the director of the Jesse M. Unruh Institute of Politics at the University of Southern California. He was the communications director for John McCain&#8217;s 2000 presidential campaign.</em></p>
+<p class="story-body-text" itemprop="articleBody">There’s no reliable way to determine whether voters are angrier than they were during previous anti-establishment voter revolts in 1980, 1994 or 2006. But they are certainly louder.  </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Stoking voter anger is easy, putting that raw emotion to more constructive uses is harder.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">The emotional energy among voters this year may not be significantly different than during those earlier change-driven elections. But advancements in technology make talk radio, cable television and online communications both more sophisticated and more accessible. It is easier than ever for a candidate in 2010 without institutional backing to gain notice and build support from a much broader and far-flung audience. Just as a singer can now be propelled to success and fame from a YouTube video, a political candidate or cause can easily thrive without support from national fundraisers, surrogates or powerbrokers.</p>
+<p class="story-body-text" itemprop="articleBody">Since the political establishment tends to cluster toward the ideological center, these technology-powered activist voices disproportionately veer hard to the left and right. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Their natural resentment toward the existing voices of authority, fueled by a populist passion that rages more strongly on the edges of the political debate than at its midpoint, provides greater motivation to move a message through nontraditional means. </p>
+<p class="story-body-text" itemprop="articleBody">While both groups will be angered by the comparison, a MoveOn member and a Tea Partier have much more in common than either would care to admit. Both are the driving forces within grassroots organizations that are more committed, more resourceful and more skillful at operating in what is no longer a new media landscape than the leaders of the political parties against whom they rebel.   Whether they can work together after the election is a more difficult challenge.</p>
+<p class="story-body-text" itemprop="articleBody">The next months will be consumed with speculation as to whether an anti-establishment rage helps one party’s prospects more than the other. But it’s worth devoting at least a portion of that time to a discussion of what needs to happen once all those political outsiders get to Washington and move inside the walls of power. Recognizing and stoking voter anger is the easy part. What’s harder is figuring out whether that raw emotion can be put to constructive use once the dust has settled in November.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="donna"></a></p>
+<h4>Not Anti-incumbents, Anti-phonies</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/donna_brazile.50.jpg" alt="Donna Brazile" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a href="//donnabrazile.com/page.cfm?id=2">Donna Brazile</a></strong> is a Democratic political strategist and the Democratic National Committee&#8217;s vice chairwoman of voter registration and participation. She is the author of “Cooking with Grease: Stirring the Pots in American Politics.”</em></p>
+<p class="story-body-text" itemprop="articleBody">Tuesday night gave us a sneak preview of the fall midterm contests and here’s the message that was loud and clear: Be prepared for a tidal wave of voter rebellion.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote> The good news: both parties have time to revise their playbook for the fall.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">This rebellion wasn’t directed at the incumbents, but rather at politicians they perceive to be phonies. That said, the results made clear three important trends:</p>
+<p class="story-body-text" itemprop="articleBody">&#8212; The far right and far left are ascendant in both parties.  The extremes of the spectrum made gains in each party&#8217;s primaries against the &#8220;all things to all people&#8221; incumbents. That includes Arkansas where liberal Lt. Gov. Bill Halter won a run-off with middle-of-the-road Senator Blanche Lincoln. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">&#8212; The Tea Party movement is gaining strength inside the Republican Party. While they have proven to have enough strength to win primaries and take the power away from the G.O.P. establishment, there’s little proof that they have the power to win a general election. </p>
+<p class="story-body-text" itemprop="articleBody">&#8212; Lastly, there is profound voter discontent with those in Washington. Republicans hoping to win back control in Congress lost an important race with a tail wind, and Democrats can’t seem to count on the president’s coattails to take them over the top. But the victory in Pennsylvania’s 12th Congressional district should put an end to the notion that everything is a referendum on President Obama and his policies. </p>
+<p class="story-body-text" itemprop="articleBody">The good news — both parties still have time to revise their playbook for the fall.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="rick"></a></p>
+<h4>Who&#8217;s Rebelling Now</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/rick_shenkman.50.jpg" alt="Rick Shenkman" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a id="aptureLink_mTE6bQ0RfF" href="//home.sprynet.com/~rshenkman/">Rick Shenkman</a></strong>, an associate professor of history at George Mason University and editor of the <a href="//www.historynewsnetwork.org/">History News Network</a>, is the author of &#8220;Just How Stupid Are We: Facing the Truth About the American Voter.&#8221; He is vice president of <a href="//voteiq.com">Vote iQ </a>, a new social networking site for politics. </em></p>
+<p class="story-body-text" itemprop="articleBody">The crowds were large and energized. Going into the primary election season, protesters faced skepticism  that theirs was indeed a movement. The pundits were shocked by their success. </p>
+<p class="story-body-text" itemprop="articleBody">The year? 1972. The hero of the hour? George McGovern.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote> It&#8217;s not ideology that is driving politics now. There&#8217;s not a hint of the culture wars in this year&#8217;s votes. </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Americans are always rebelling against the old order.  So why does what is happening now seem so unlike what happened in 1972?  When it is young people in rebellion, as in &#8217;72, we cannot resist the feeling that somehow someway what we are getting is a glimpse into The Future. </p>
+<p class="story-body-text" itemprop="articleBody">But when it is the middle-aged and older voters in rebellion &#8212;  as is happening this year not only in Massachusetts but now in Kentucky (Kentucky! When was the last time anyone thought of Kentucky as ground zero for a rebellion?) &#8212; we aren&#8217;t sure what to make of events.  The movement falls outside our usual narrative in which kids rebel against the status quo and older people are the status quo.  </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Older people rebelling is a different story, and it&#8217;s the only story that makes sense this year.  It&#8217;s not ideology that is driving politics now. There&#8217;s not a hint of the culture wars in this year&#8217;s votes.  It&#8217;s rebellion.  It&#8217;s the collective urge of both Tea Party supporters and mainstream conservatives and independents to break from the entrenched establishment.   </p>
+<p class="story-body-text" itemprop="articleBody">That ideology is not the driving force is made clear by a comparison of the records of Joe Sestak and Arlen Specter. Issue for issue they are mostly alike. They agree on abortion, spending cuts, gay marriage, Patriot Act, health care reform, assault weapons, cap and trade, the bank bailouts, and Iraq. They disagree on three issues. End the estate tax?  Sestak no, Specter yes. Promote free trade agreements like Cafta?  Sestak yes, Specter no.  Support Obama&#8217;s surge in Afghanistan?  Sestak yes, Specter no.  </p>
+<p class="story-body-text" itemprop="articleBody">And yet people in the Sestak and Specter camps are fundamentally different.  Sestak&#8217;s supporters are fed up.  Specter supporters are willing to leave things as they are even if they too are worried and a little agitated.</p>
+<p class="story-body-text" itemprop="articleBody">What does all this portend for November?</p>
+<p class="story-body-text" itemprop="articleBody">First, the general rule that incumbents get re-elected (for House members it&#8217;s been something like 98 percent) is in suspension this year.  A majority of the Democratic freshmen in the House won with less than a 4 percent margin in 2008 and are vulnerable to any throw-the-bums-out mood among voters.  The Democrats will very likely have much smaller majorities in Congress and might well lose the House.  </p>
+<p class="story-body-text" itemprop="articleBody">Second, while 77 percent of presidents come in with congressional majorities, 55 percent lose their majority in at least one house during their term.  Only three presidents have scored clear off-year victories in Congress since the Civil War (not counting Teddy Roosevelt&#8217;s, <a href="//hnn.us/articles/1094.html">which is complicated</a>), F.D.R. in 1934, Bill Clinton in 1998, and George W. Bush in 2002.  </p>
+<p class="story-body-text" itemprop="articleBody">For President Obama and incumbents come November, 2008 is going to seem like a long time ago. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="bob"></a></p>
+<h4>Fertile Ground for Libertarians</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/bob_moser.50.jpg" alt="Bob Moser" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a id="aptureLink_GgF9oF7aYj" href="//us.macmillan.com/author/bobmoser">Bob Moser,</a></strong> editor of The Texas Observer and contributing writer for The Nation, is the author of &#8220;Blue Dixie: Awakening the South&#8217;s Democratic Majority.&#8221; </em></p>
+<p class="story-body-text" itemprop="articleBody">Yesterday’s results from four state primaries — most notably, Libertarian Republican Rand Paul’s decisive victory in Kentucky — were being spun as a “Tea Party victory” the second the results came in. It is always, it seems, a good day for the Tea Party when Americans vote in 2010. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The new culture war is racial in part, but more immediately, the offspring of economic fear.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">But there is no resonant message coming out of a “Tea Party victory.”  What we saw was all over the map — more precisely, all over the left and right of the political map, with little action in the center. </p>
+<p class="story-body-text" itemprop="articleBody">Only one thing truly can be gleaned from Tuesday: For now, both Republican and Democratic primary voters have pretty much tossed aside the concept of “electability.” </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">The relative centrists — Lincoln, Specter and Grayson, for starters — took a beating. The candidates who played more brazenly to their base, left or right, outperformed expectations. Moderation, thinking about the good of the party in November — forget about it. </p>
+<p class="story-body-text" itemprop="articleBody">That kind of anti-incumbent spirit is not  unheard of in midterm primaries, of course. But usually there’s some evidence that winning in November was part of the voters’ calculations. When you choose Bill Halter over Blanche Lincoln in Arkansas (they are headed to a runoff), or Rand Paul over Trey Grayson in Kentucky, you’re thinking about something besides making sure your party wins in the fall. </p>
+<p class="story-body-text" itemprop="articleBody">It’s easy, and lazy, to attribute this to some kind of nebulous “anger” out there. But there is always anger in American politics. What matters is where, and how, it’s channeled. </p>
+<p class="story-body-text" itemprop="articleBody">The pundits started attributing Rand Paul’s win to “tea party anger” as soon as the results were in,  and  so did Paul. “We’ve come to take our government back,” he said. “This Tea Party movement is a message to Washington that we’re unhappy and that we want things done differently.”</p>
+<p class="story-body-text" itemprop="articleBody">The real significance of this mini-Tuesday is both more narrow and more revealing: In the quintessentially Republican state of Kentucky (part Southern, part Midwestern, overwhelmingly white), the party had a genuine free-for-all between an establishment conservative and a conservative libertarian. </p>
+<p class="story-body-text" itemprop="articleBody">The fact that they went for the conservative libertarian, Paul, does suggest something about the direction rank-and-file Republicans want to take their party. The direction? Out of the megachurches and into the cul-de-sacs and office parks. </p>
+<p class="story-body-text" itemprop="articleBody">It’s rarely been noted, but what we came to recognize as “culture-war” talk in the ‘80s and ‘90s has been conspicuously missing from this latest conservative surge. You didn’t hear Paul talking about family values or basing  his campaign on out-moral-valuing his opponent. </p>
+<p class="story-body-text" itemprop="articleBody">That’s emblematic of a trend that goes beyond Kentucky. Running for re-election in Texas, Gov. Rick Perry — whose earlier campaigns featured much talk of life and faith — has focused relentlessly on small-government economic issues. Sarah Palin, in her highly lucrative road trip across America, says little about culture-war issues beyond cheekily praising those who “cling to their guns and religion.” </p>
+<p class="story-body-text" itemprop="articleBody">There’s a new culture war on. It’s racial, in part, but it’s more immediately the offspring of economic fear. It’s fertile ground, right now, for the Libertarian Republicans to plow. But right now is a long way from November, when the middle matters again. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="lorenzo"></a></p>
+<h4>Rejecting the Center</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/lorenzo_morris.50.jpg" alt="Lorenzo Morris" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Lorenzo Morris </strong> is a professor and former chair of the department of political science at Howard University.  He is the author of several books and articles on electoral politics.</em></p>
+<p class="story-body-text" itemprop="articleBody">Somewhere in the universe of political clichés, the notion that “the center cannot hold” may eventually overshadow the idea of “anti-Washington movements” in conventional election analysis. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The focus on anti-Washington voter sentiment disguises the disenchantment with the middle of the road. </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">The idea that effective campaigns led by conservatives or liberals have to seek out the ideological center (as opposed to being dragged to it) has dominated political commentary. This election should help to undo that assumption.</p>
+<p class="story-body-text" itemprop="articleBody">Candidates who start out aiming for the center and voters looking for centrist candidates were both in short supply among those celebrating the outcome of Tuesday’s primary and special elections. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Republicans and Democrats who cluster around compromise increasingly make the biggest targets. The focus on anti-Washington voter sentiment by the media disguises the disenchantment with the middle of the road. </p>
+<p class="story-body-text" itemprop="articleBody">Accordingly, the most compromising of all, Senator Arlene Specter, the self-made bipartisan, fell to Rep. Joe Sestak, a  liberal Democrat, and Mark Critz, a longtime Capitol Hill staffer, defeated recovering Tea Party advocate Tim Burns for the Pennsylvania congressional seat. In Arkansas, Democratic voters moved to the labor-oriented left with Lt. Gov. Bill Halter while leaving Sen. Blanche Lincoln in the middle of the road.</p>
+<p class="story-body-text" itemprop="articleBody">The writing on the wall should have been obvious after Florida’s Governor Charlie Crist was forced to abandon to his Republican senatorial hopes for having said nice things to centrist and liberal Democrats, while Senator Robert Bennett of Utah was banished by the right. </p>
+<p class="story-body-text" itemprop="articleBody">What Rand Paul offered, and the voters seemed to buy, was not his capacity to bring people together but his seeming indifference to the center. While less vocal, the Democratic left also seems tired of indulging its unrepentant centrists. </p>
+<p class="story-body-text" itemprop="articleBody">It is likely that candidates in the November election will continue to seek out the center but the ideological distance from the right and left of primary election politics promises to be increasingly difficult to travel. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="lara"></a></p>
+<h4>Outsider Magic and Clinton&#8217;s Blessing</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/lara_brown1.50.jpg" alt="Lara M. Brown" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a href="//larambrownphd.com/">Lara M. Brown</a></strong> is an assistant professor of political science at Villanova University.  </em></p>
+<p class="story-body-text" itemprop="articleBody">Tuesday’s contests, particularly Senator Arlen Specter’s defeat in Pennsylvania’s Democratic primary and Republican Party favorite Trey Grayson’s loss in Kentucky, provided more evidence of a restless electorate, displeased with “insiders” from both parties. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Lesson for Republicans: think local and don&#8217;t let your challengers become part of the G.O.P. establishment.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">The results further revealed that the longest presidential coattails do not belong to President Obama, but to Bill Clinton, who is currently something of an “outsider” in the Democratic Party. In the two races in which he actively engaged, his candidates (despite being insiders and moderates who stood against some of the party’s positions on health care and energy reform) were incumbent Senator Blanche Lincoln, who did better than some expected in Arkansas’s Democratic primary, and Mark Critz, former aide to longtime Representative John Murtha, who won the special election in Pennsylvania’s 12th Congressional district.  </p>
+<p class="story-body-text" itemprop="articleBody">In terms of reading fall’s tea leaves, the most important of Tuesday’s contests was the special election.  This is especially true for the Democrats who may be tempted to discount what it took for them to retain the seat.  </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">First, though voters in that part of Pennsylvania are conservative, the district has a two to one registration advantage in favor of Democrats.  Second, while Mr. Critz earned a comfortable 53 percent of the vote, his predecessor, Representative Murtha, carried the seat less than two years ago by 58 percent.  Third, Mr. Critz ran against Washington, President Obama and the progressive wing of the Democratic Party.  Fourth, Mr. Critz was able to wrap himself in John Murtha’s mantle and campaign on his Congressional legacy.  </p>
+<p class="story-body-text" itemprop="articleBody">Few of the competitive seats this November pose these kinds of advantages.  And for the Republicans, one major lesson: do not let your challengers become part of the G.O.P. establishment or get too far away from local politics.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="sabato"></a></p>
+<h4>Incumbents May Still Win</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/larry_sabato.50.jpg" alt="Larry Sabato" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a href="//www.centerforpolitics.org/about/staff_sabato.htm">Larry J. Sabato</a></strong>, director of the <a href="//www.amoreperfectconstitution.com/">Center for Politics</a> and University Professor of Politics at the University of Virginia, is the author of &#8220;The Year of Obama.&#8221;</em></p>
+<p class="story-body-text" itemprop="articleBody">So far it’s a good year to be anti-establishment. Voters showed again last night that they’re willing to give a kick in the teeth to the leaders of both parties. President Obama, Vice President Biden, and Governor Ed Rendell had cast their lot with Senator Arlen Specter, but Pennsylvania Democrats said we’ll go with the guy who has never received George W. Bush’s blessing, Congressman Joe Sestak. Given Specter’s fate, there may be less party-switching for a while. Your former party loathes you, and your new party doesn’t trust you.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>As interesting as the primaries were, history tells us they have little predictive power.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">In Kentucky, the man who built the modern Bluegrass G.O.P. got his comeuppance. Senate Minority Leader Mitch McConnell had never been repudiated by fellow Republicans the way he was with Rand Paul’s landslide win over McConnell protégé Trey Grayson. If Paul gets the seat in the fall, Kentucky will have claim to the Senate’s premier odd couple from the same party.</p>
+<p class="story-body-text" itemprop="articleBody">Then in Arkansas, Senator Blanche Lincoln fought to a draw with Lt. Gov. Bill Halter, a union favorite who argued Lincoln is too conservative. Halter forced Lincoln into a June 8 runoff despite her support from home state favorite Bill Clinton and most senior Democrats. Congressman John Boozman, who received the Republican nomination without need of a runoff, probably is the big winner of the extended Lincoln-Halter war.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Too much should never be made of one special House election, but there’s no denying Democrats got a nice boost from their victory in Pennsylvania’s 12th district. This is the only district in the nation to have switched from Democrat John Kerry in 2004 to Republican John McCain in 2008, and it was ripe for a Republican takeover. </p>
+<p class="story-body-text" itemprop="articleBody">Yet the Democrat won handily, demoralizing many Republicans who had counted on this much-watched contest to be the keystone of a new House G.O.P. majority. So much for the heady (and always unrealistic) predictions of 70 to 100 House pickups in November.</p>
+<p class="story-body-text" itemprop="articleBody">As interesting as the primaries were, history tells us they have little predictive power. These are intra-party contests, after all. And it’s worth noting that despite the troubles of a handful of incumbents, the vast majority are doing quite well. They’ll be on the November ballot and most will win reelection. Even in ‘bad’ years, most incumbents survive and prosper.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="susan"></a></p>
+<h4>Mixed Results for Moderates</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/susan_lagon.50.jpg" alt="Susan Lagon" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Susan Sullivan Lagon</strong> is a senior fellow at the Government Affairs Institute at Georgetown University and has taught American politics and constitutional law at Georgetown.  </em></p>
+<p class="story-body-text" itemprop="articleBody">As usual, primary voters gravitated toward the extremes of their parties — those who pay attention before the general election are by definition the more ideological activists. So while a clearly angry electorate calls for an end to partisan bickering in Washington, primary voters tend to reject precisely those moderates who could broker compromises on Capitol Hill.  The problem for insurgents, it seems, is that they eventually become incumbents.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Millions spent against Blanche Lincoln by the service employees union and strong opposition from MoveOn.org was not enough to topple her. </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Despite Arlen Specter’s  changing parties, backing from the Service Employees International Union, the benefit of Gov. Ed Rendell’s operation, and President Obama’s robocalls, Specter lost to two-term Congressman Joe Sestak.  Sestak made Specter’s age an issue and successfully portrayed himself as the “real” Democrat to voters who were accustomed to voting against Specter in general elections for 30 years. Sestak will face conservative former Rep. Pat Toomey in November. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Senate Minority Leader Mitch McConnell was dealt a not unexpected blow in Kentucky by Rand Paul, who has never held elective office and beat establishment candidate Trey Grayson.  Paul’s victory gives the Tea Party movement a third Republican establishment casualty following the movement’s success in Florida and Utah. </p>
+<p class="story-body-text" itemprop="articleBody">In Arkansas, $6 million spent against Blanche Lincoln by the service employees union, (S.E.I.U.) and strong opposition from MoveOn.org was not enough to topple her. But backing from both Obama and Clinton wasn’t enough to give Senator Lincoln an outright victory, either. </p>
+<p class="story-body-text" itemprop="articleBody">Lt. Gov. Bill Halter, running on Senator Lincoln’s left, will face her in a runoff on June 8. (For the record, “outsider” Halter worked at the Social Security Administration under President Clinton.) Polls indicate both of them currently running behind Republican victor Rep. John Boozman, who won in very a crowded field.</p>
+<p class="story-body-text" itemprop="articleBody">What about the special election in the 12th Congressional district in Pennsylvania? </p>
+<p class="story-body-text" itemprop="articleBody">Republicans spent big on behalf of Tim Burns, but Mark Critz, a former aide for late Representative John Murtha, won. Critz prevailed in a district with a 2-to-1 Democratic registration advantage and probably benefited from turnout boosted by the Senate primary. Critz is pro-life, pro-gun, and opposed to Obama’s health care reforms &#8212; the signature achievement of the caucus he hopes to join. </p>
+</div>
+</div>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//roomfordebate.blogs.nytimes.com/2010/05/19/angry-boomers-and-other-election-clues/" data-title="Angry Boomers and Other Election Clues" data-description="What do Tuesday&#039;s primaries in Pennsylvania, Arkansas and Kentucky indicate for the November contests?">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2010/05/17/redefining-cruel-punishment-for-juveniles/" title="Redefining Cruel Punishment for Juveniles">
+				Redefining Cruel Punishment for Juveniles			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2010/05/19/politicians-and-their-fake-war-stories/" title="Politicians and Their Fake War Stories">
+				Politicians and Their Fake War Stories			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//roomfordebate.blogs.nytimes.com/2010/07/'> July 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/06/'> June 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/05/'> May 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/04/'> April 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/03/'> March 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/02/'> February 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/01/'> January 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/12/'> December 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/11/'> November 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/10/'> October 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/09/'> September 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/08/'> August 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/07/'> July 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/06/'> June 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/05/'> May 2009 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" title="Read: Room for Debate Has Moved">Room for Debate Has Moved</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Visit Room for Debate&#8217;s new home on The New York Times Web site.<a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" title="Read: Should More Veterans Get P.T.S.D. Benefits?">Should More Veterans Get P.T.S.D. Benefits?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/"></a>
+				</span>			</h5>
+			<p class="summary">
+			What does the latest research tell us about the extent of combat trauma?<a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" title="Read: Do U.S. Donors Drive Israeli Politics?">Do U.S. Donors Drive Israeli Politics?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are American citizens&#8217; contributions to West Bank settlements helping or hurting the peace process?<a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" title="Read: What We Still Don&#8217;t Know About Sunscreens">What We Still Don&#8217;t Know About Sunscreens</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Why has the F.D.A. stalled in requiring better labels and safer ingredients in sunscreens?<a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" title="Read: The Pitfalls in Identifying a Gifted Child">The Pitfalls in Identifying a Gifted Child</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are New York City&#8217;s plans to revamp testing of preschoolers for gifted programs a step backward? <a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">Room for Debate on</span></span>
+</h4>
+<ul>
+</ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-74',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":61,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

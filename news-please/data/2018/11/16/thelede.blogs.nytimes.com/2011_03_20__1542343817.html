@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-thelede section-"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-thelede section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-thelede section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-thelede section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/thelede/Taliban Condemn Attacks on Libya" />
+<meta name="communityAssetURL" content="//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000734861"><meta name="author" content="Rod Nordland" />
+<meta name="CLMST" content="Rod Nordland" />
+<meta name="byl" content="Rod Nordland" />
+<meta name="GBLC" content="Middle East;News">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1300638335" />
+<meta name="PUD" content="20110320" />
+<meta name="pdate" content="20110320" />
+<meta name="ptime" content="20110320122535" />
+<meta name="utime" content="20110320211314" />
+<meta property="article:modified_time" itemprop="dateModified" content="2011-03-20T21:13:14-04:00" />
+<meta name="DISPLAYDATE" content="March 20, 2011" />
+<meta name="dat" content="March 20, 2011" />
+<meta itemprop="articleSection" property="article:section" content="General" />
+<meta name="CG" content="General" />
+<meta name="SCG" content="thelede" />
+<meta name="BN" content="thelede" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Qaddafi, Muammar el-">
+<meta name="org" content="Taliban">
+<meta name="geo" content="Afghanistan;Libya">
+<meta property="article:tag" content="Qaddafi Muammar el-" />
+<meta property="article:tag" content="Taliban" />
+<meta property="article:tag" content="Afghanistan" />
+<meta property="article:tag" content="Libya" />
+<meta property="article:tag" content="Middle East" />
+<meta property="article:tag" content="News" />
+<meta name="keywords" content="Qaddafi Muammar el-,Taliban,Afghanistan,Libya,Middle East,News" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fthelede.blogs.nytimes.com%2F2011%2F03%2F20%2Ftaliban-condemn-attacks-on-libya%2F" title="Taliban Condemn Attacks on Libya" />
+<meta name="description" content="The Taliban in Afghanistan condemned what it called a &#8220;politically motivated&#8221; military intervention in Libya." />
+<meta name="hdl" content="Taliban Condemn Attacks on Libya" />
+<meta property="og:title" content="Taliban Condemn Attacks on Libya" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/" />
+<meta property="og:site_name" content="The Lede" />
+<meta property="og:description" content="The Taliban in Afghanistan condemned what it called a &#8220;politically motivated&#8221; military intervention in Libya." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Taliban Condemn Attacks on Libya" />
+<meta name="twitter:url" content="//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/" />
+<meta name="twitter:description" content="The Taliban in Afghanistan condemned what it called a &#8220;politically motivated&#8221; military intervention in Libya." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@thelede">
+<link rel='prev' title='Full Text and Audio of Obama&#8217;s Statement on Military Action in Libya' href='//thelede.blogs.nytimes.com/2011/03/19/full-text-and-audio-of-obamas-statement-on-military-action-in-libya/' />
+<link rel='next' title='March 21 Updates on War in Libya and Mideast Protests' href='//thelede.blogs.nytimes.com/2011/03/21/latest-updates-on-war-in-libya-and-mideast-protests/' />
+<link rel='canonical' href='//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/' />
+<link rel='shortlink' href='//nyti.ms/fzvih9' />
+<link rel='https://github.com/WP-API/WP-API' href='//thelede.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/thelede/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//thelede.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/thelede/2011/03/20/taliban-condemn-attacks-on-libya/" />
+<meta name="dfp-ad-unit-path" content="general/thelede" />			<title>Taliban Condemn Attacks on Libya - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-99607 blog-universal nyt-blog-thelede" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'General', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//thelede.blogs.nytimes.com">
+                The Lede            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Taliban Condemn Attacks on Libya        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/"
+	 data-title="Taliban Condemn Attacks on Libya"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;The Taliban in Afghanistan condemned what it called a &quot;politically motivated&quot; military intervention in Libya.&lt;/span&gt;&lt;a href=&quot;//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="March 20, 2011 12:25 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="thelede" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//thelede.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=General" title="Go to The Lede Home"><img src="https://static01.nyt.com/images/blogs_v5/thelede/thelede_post.png" alt="The Lede - The New York Times News Blog"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//thelede.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Lede">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-99607 post type-post status-publish hentry category-middle-east category-news tag-afghanistan tag-libya tag-taliban per-qaddafi-muammar-el org-taliban geo-afghanistan geo-libya" id="post-99607">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Taliban Condemn Attacks on Libya</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Rod Nordland			</address>
+			<!-- date published --><time class="dateline " datetime="2011-03-20T16:25:35+00:00" itemprop="datePublished">March 20, 2011 12:25 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">March 20, 2011 12:25 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">KABUL, Afghanistan — Col. Muammar el-Qaddafi has at least one good friend in the outside world — the Taliban in Afghanistan.</p>
+<p class="story-body-text" itemprop="articleBody">“The Islamic Emirate of Afghanistan strongly condemns this politically motivated and uncalled-for intervention and adventure by the Western countries in the internal conflict of the people of Libya,” the Taliban announced in a statement e-mailed to news organizations with the names the insurgents’ three key spokesmen.  <span id="more-99607"></span></p>
+<p class="story-body-text" itemprop="articleBody">The message was sent using an e-mail address that has been used previously for Taliban announcements, and was signed by Tariq Ghazniwal, who runs a Taliban Web site, and Zabiullah Mujahid and Qari Yousef Ahmadi, Taliban spokesmen for different regions of the country.</p>
+<p class="story-body-text" itemprop="articleBody">The statement scolded Libyans for squabbling among themselves and thereby giving Western countries an excuse to intervene, and it also warned “the rulers of the Islamic world not to remain neutral in this conflict.”</p>
+<p class="story-body-text" itemprop="articleBody">“In the view of the Islamic Emirate, it is a pity that the situation in Libya evolved to the extent that paved the way for the anti-Islamic forces to intervene,” the statement said.</p>
+<p class="story-body-text" itemprop="articleBody">“We believe the Western colonialists do not want a solution in this country on the basis of the aspirations of the people but rather have plans to weaken this Islamic country in a war of attrition and then seize its oil reserves through a direct invasion,” the statement said.</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//thelede.blogs.nytimes.com/2011/03/20/taliban-condemn-attacks-on-libya/" data-title="Taliban Condemn Attacks on Libya" data-description="The Taliban in Afghanistan condemned what it called a &quot;politically motivated&quot; military intervention in Libya.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thelede.blogs.nytimes.com/2011/03/19/full-text-and-audio-of-obamas-statement-on-military-action-in-libya/" title="Full Text and Audio of Obama&#039;s Statement on Military Action in Libya">
+				Full Text and Audio of Obama&#8217;s Statement on Military Action in Libya			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thelede.blogs.nytimes.com/2011/03/21/latest-updates-on-war-in-libya-and-mideast-protests/" title="March 21 Updates on War in Libya and Mideast Protests">
+				March 21 Updates on War in Libya and Mideast Protests			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">The Lede is a blog that remixes national and international news stories -- adding information gleaned from the Web or gathered through original reporting -- to supplement articles in The New York Times and draw readers in to the global conversation about the news taking place online.</p>
+<p>Readers are encouraged to take part in the blogging by using the comments threads to suggest links to relevant material elsewhere on the Web or by submitting eyewitness accounts, photographs or video of news events. <a href="//thelede.blogs.nytimes.com/about-the-lede/">Read more.</a></p>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//thelede.blogs.nytimes.com/2014/07/'> July 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/05/'> May 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/04/'> April 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/03/'> March 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/02/'> February 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/01/'> January 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/12/'> December 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/11/'> November 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/10/'> October 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/09/'> September 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/08/'> August 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/04/'> April 2013 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/07/14/the-lede-is-going-dark/" title="Read: The Lede Is Going Dark">The Lede Is Going Dark</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/07/14/the-lede-is-going-dark/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Lede will no longer be updated, but the blog&#8217;s regular features will remain a part of The New York Times news report. <a href="//thelede.blogs.nytimes.com/2014/07/14/the-lede-is-going-dark/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/22/family-of-detained-egyptian-journalist-say-leaked-images-of-him-were-staged/" title="Read: Family of Detained Egyptian Journalist Says Leaked Images of Him Were Staged">Family of Detained Egyptian Journalist Says Leaked Images of Him Were Staged</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/22/family-of-detained-egyptian-journalist-say-leaked-images-of-him-were-staged/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The family of an Egyptian journalist detained for nine months without charge expressed outrage that images of him were leaked to a Facebook page run by Interior Ministry sympathizers.<a href="//thelede.blogs.nytimes.com/2014/05/22/family-of-detained-egyptian-journalist-say-leaked-images-of-him-were-staged/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/21/iranians-detained-for-happy-video-released-on-bail/" title="Read: Iranians Detained for &#8216;Happy&#8217; Video Are Released on Bail">Iranians Detained for &#8216;Happy&#8217; Video Are Released on Bail</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/21/iranians-detained-for-happy-video-released-on-bail/"></a>
+				</span>			</h5>
+			<p class="summary">
+			One of the stars of &#8220;Happy in Tehran,&#8221; an exuberant music video that offended the sensibilities of Iran&#8217;s conservative judiciary, reported on Instagram Wednesday that she was free.<a href="//thelede.blogs.nytimes.com/2014/05/21/iranians-detained-for-happy-video-released-on-bail/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/"><img src="https://static01.nyt.com/images/2014/05/20/world/middleeast/20lede_happy/20lede_happy-thumbStandard.png" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/" title="Read: Young Iranians Arrested for Being Too &#8216;Happy in Tehran&#8217;">Young Iranians Arrested for Being Too &#8216;Happy in Tehran&#8217;</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Six young Iranians were arrested and forced to repent on state television Tuesday for the grievous offense of proclaiming themselves to be &#8220;Happy in Tehran,&#8221; in a homemade music video they posted on YouTube.<a href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/19/video-shows-killing-of-palestinians-on-nakba-day/" title="Read: Video Shows Killing of Palestinians on &#8216;Nakba Day&#8217;">Video Shows Killing of Palestinians on &#8216;Nakba Day&#8217;</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/19/video-shows-killing-of-palestinians-on-nakba-day/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Security-camera footage obtained by a rights group appears to show the fatal shooting of two young Palestinians during a demonstration in Beitunia, in the Israeli-occupied West Bank.<a href="//thelede.blogs.nytimes.com/2014/05/19/video-shows-killing-of-palestinians-on-nakba-day/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    <div id="blogroll-3" class="module nocontent widget_blogroll"><h4 class="moduleHeader">Blogroll</h4>		<div class="entry blogroll">
+						<h6 class="kicker">Analysis, Features and Documentaries</h6>
+						<ul class="refer odd">
+						<li><a href="//news.bbc.co.uk/panorama/hi/default.stm">BBC Panorama</a></li>
+						<li><a href="//news.bbc.co.uk/today/hi/default.stm">BBC Radio 4</a></li>
+						<li><a href="//www.boston.com/bigpicture/">Big Picture</a></li>
+						<li><a href="//www.pbs.org/wgbh/pages/frontline/">Frontline</a></li>
+						<li><a href="//www.bbc.co.uk/haveigotnewsforyou/seenit/borisvsken.shtml">Have I Got News For You</a></li>
+						<li><a href="//iwpr.net/programme/iran">Institute for War &amp; Peace Reporting/ Iran</a></li>
+						<li><a href="//iranprimer.usip.org/blog">Iran Primer</a></li>
+						<li><a href="//www.miller-mccune.com/">Miller-McCune</a></li>
+						<li><a href="//news.bbc.co.uk/2/hi/programmes/newsnight/default.stm">Newsnight</a></li>
+			</ul><ul class="refer even">			<li><a href="//www.pbs.org/newshour/home.html">PBS NewsHour</a></li>
+						<li><a href="//roomfordebate.blogs.nytimes.com/">Room for Debate</a></li>
+						<li><a href="//www.slate.com/">Slate</a></li>
+						<li><a href="//www.publicintegrity.org/">The Center for Public Integrity</a></li>
+						<li><a href="//www.thedailyshow.com/">The Daily Show</a></li>
+						<li><a href="//www.newyorker.com/">The New Yorker</a></li>
+						<li><a href="//pulitzercenter.org/untold-stories">Untold Stories</a></li>
+						<li><a href="//www.vanityfair.com/">Vanity Fair</a></li>
+						</ul>
+		</div>
+				<div class="entry blogroll">
+						<h6 class="kicker">Blogs</h6>
+						<ul class="refer odd">
+						<li><a href="//www.bbc.co.uk/blogs/adamcurtis/">Adam Curtis</a></li>
+						<li><a href="//arabist.net/">Arabist</a></li>
+						<li><a href="//atwar.blogs.nytimes.com/">At War</a></li>
+						<li><a href="//chinadigitaltimes.net/">China Digital Times</a></li>
+						<li><a href="//cityroom.blogs.nytimes.com/">City Room</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/closeread/">Close Read</a></li>
+						<li><a href="//coteret.com/">Coteret</a></li>
+						<li><a href="//cuminet.blogs.ku.dk/">Cuminet</a></li>
+						<li><a href="//www.damascusdiaries.com/">Damascus Diaries</a></li>
+						<li><a href="//blog.wired.com/defense/">Danger Room</a></li>
+						<li><a href="//dotearth.blogs.nytimes.com/">Dot Earth</a></li>
+						<li><a href="//www.enduringamerica.com/">EA WorldView</a></li>
+						<li><a href="//news.feetintwoworlds.org/">Feet in Two Worlds</a></li>
+						<li><a href="//firstroundbye.blogspot.com/">First Round Bye</a></li>
+						<li><a href="//blog.foreignpolicy.com/">Foreign Policy: Passport</a></li>
+						<li><a href="//garysick.tumblr.com/">Gary Sick</a></li>
+						<li><a href="//globalvoicesonline.org/">Global Voices</a></li>
+						<li><a href="//heresycorner.blogspot.com/">Heresy Corner</a></li>
+						<li><a href="//iranianvoicesintranslation.blogspot.com/">Iranian Progressives in Translation</a></li>
+						<li><a href="//jarretbrachman.net/">Jarret Brachman</a></li>
+						<li><a href="//jonathanturley.org/">Jonathan Turley</a></li>
+						<li><a href="//kottke.org/">Kottke</a></li>
+			</ul><ul class="refer even">			<li><a href="//languagelog.ldc.upenn.edu/nll/">Language Log</a></li>
+						<li><a href="//bigbrowser.blog.lemonde.fr/">Le Monde&#39;s News Blog</a></li>
+						<li><a href="//lens.blogs.nytimes.com/">Lens</a></li>
+						<li><a href="//www.murketing.com/journal/">Murketing</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/newsdesk/?xrail">New Yorker's News Desk</a></li>
+						<li><a href="//www.nowlebanon.com/Default.aspx">Now Lebanon</a></li>
+						<li><a href="//blogs.nybooks.com/">NYRB Blog</a></li>
+						<li><a href="//community.livejournal.com/nytimesinmoscow/">NYT: Moscow</a></li>
+						<li><a href="//www.propublica.org/ion/blog">Pro Publica Blog</a></li>
+						<li><a href="//robinwrightblog.blogspot.com/">Robin Wright</a></li>
+						<li><a href="//saudijeans.org/">Saudi Jeans</a></li>
+						<li><a href="//smallwarsjournal.com/blog/">Small Wars Journal</a></li>
+						<li><a href="//strangemaps.wordpress.com/">Strange Maps</a></li>
+						<li><a href="//www.talkingpointsmemo.com/">Talking Points Memo</a></li>
+						<li><a href="//thecaucus.blogs.nytimes.com/">The Caucus</a></li>
+						<li><a href="//www.npr.org/blogs/thetwo-way/">The Two-Way</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/stevecoll/">Think Tank</a></li>
+						<li><a href="//www.wired.com/threatlevel/">Threat Level</a></li>
+						<li><a href="//transitionland.wordpress.com/">Transitionland</a></li>
+						<li><a href="//www.vanityfair.com/online/daily">Vanity Fair Daily</a></li>
+						<li><a href="//www.salon.com/news/politics/war_room/index.html">War Room</a></li>
+						</ul>
+		</div>
+				<div class="entry blogroll">
+						<h6 class="kicker">News Sites </h6>
+						<ul class="refer odd">
+						<li><a href="//english.alarabiya.net/">Al Arabiya</a></li>
+						<li><a href="//english.aljazeera.net/">Al Jazeera (English)</a></li>
+						<li><a href="//www.ansa.it/site/notizie/awnplus/english/english.html">ANSA (English)</a></li>
+						<li><a href="//www.arabnews.com/">Arab News</a></li>
+						<li><a href="//www.asharq-e.com/default.asp">Asharq Al-Awsat</a></li>
+						<li><a href="//www.asianage.com/">Asian Age</a></li>
+						<li><a href="//news.bbc.co.uk/">BBC News</a></li>
+						<li><a href="//www.bbc.co.uk/worldservice/">BBC World Service</a></li>
+						<li><a href="//www.cbc.ca/news/">CBC</a></li>
+						<li><a href="//www.channel4.com/news/">Channel 4 News</a></li>
+						<li><a href="//www.clarin.com/">Clarín</a></li>
+						<li><a href="//www.cnn.com/">CNN</a></li>
+						<li><a href="//www.corriere.it/">Corriere della Sera</a></li>
+						<li><a href="//www.corriere.it/english/">Corriere Della Sera (English)</a></li>
+						<li><a href="//www.dailystar.com.lb/">Daily Star, Lebanon</a></li>
+						<li><a href="//www.dawn.com/wps/wcm/connect/Dawn%20Content%20Library/dawn/news/home/">Dawn</a></li>
+						<li><a href="//www.almasryalyoum.com/en">Egypt Independent</a></li>
+						<li><a href="//www.elmundo.es/">El Mundo</a></li>
+						<li><a href="//www.elpais.com/global/">El País</a></li>
+						<li><a href="//tribune.com.pk/">Express Tribune</a></li>
+						<li><a href="//www.ft.com/home/us">Financial Times</a></li>
+						<li><a href="//g1.globo.com/">Globo.com</a></li>
+						<li><a href="//news.google.com/">Google News</a></li>
+						<li><a href="//www.guardian.co.uk/">Guardian.co.uk</a></li>
+						<li><a href="//www.haaretz.com/">Haaretz</a></li>
+						<li><a href="//ibnlive.in.com/">IBNLive.com</a></li>
+						<li><a href="//www.irishtimes.com/">Irish Times</a></li>
+						<li><a href="//www.lanacion.com.ar/index.asp">Lanacion.com</a></li>
+						<li><a href="//www.latimes.com/">LATimes.com</a></li>
+						<li><a href="//www.lemonde.fr/">Le Monde</a></li>
+						<li><a href="//www.mcclatchydc.com">McClatchy</a></li>
+			</ul><ul class="refer even">			<li><a href="//www.msnbc.msn.com/">MSNBC</a></li>
+						<li><a href="//www.ndtv.com/convergence/ndtv/default.aspx">NDTV</a></li>
+						<li><a href="//www.npr.org/">NPR</a></li>
+						<li><a href="//oglobo.globo.com/">O Globo</a></li>
+						<li><a href="//www.propublica.org/">ProPublica</a></li>
+						<li><a href="//www.publicola.net/">PubliCola</a></li>
+						<li><a href="//www.rayogram.com/news">Rayogram/News</a></li>
+						<li><a href="//www.reuters.com/">Reuters</a></li>
+						<li><a href="//www.rue89.com/">Rue89</a></li>
+						<li><a href="//www.russiatoday.com/en">Russia Today</a></li>
+						<li><a href="//www.soitu.es/">Soitu</a></li>
+						<li><a href="//www.spiegel.de/international/">Spiegel (English)</a></li>
+						<li><a href="//www.smh.com.au/">Sydney Morning Herald</a></li>
+						<li><a href="//www.tehelka.com/">Tehelka</a></li>
+						<li><a href="//www.pbs.org/wgbh/pages/frontline/tehranbureau/">Tehran Bureau</a></li>
+						<li><a href="//hosted.ap.org/dynamic/fronts/HOME?SITE=AP&amp;SECTION=HOME">The Associated Press</a></li>
+						<li><a href="//www.theglobeandmail.com/">The Globe and Mail</a></li>
+						<li><a href="//www.thelocal.de/">The Local (Berlin)</a></li>
+						<li><a href="//www.mg.co.za/">The Mail and Guardian</a></li>
+						<li><a href="//www.thenational.ae/">The National</a></li>
+						<li><a href="//nytimes.com/">The New York Times</a></li>
+						<li><a href="//www.thenews.com.pk/index.html">The News (Pakistan)</a></li>
+						<li><a href="//seattletimes.nwsource.com/html/home/index.html">The Seattle Times</a></li>
+						<li><a href="//www.telegraph.co.uk/">The Telegraph</a></li>
+						<li><a href="//www.wsj.com">The Wall Street Journal</a></li>
+						<li><a href="//www.nytimes.com/pages/aponline/news/index.html">The Wires: A.P.</a></li>
+						<li><a href="//www.nytimes.com/pages/reuters/index.html">The Wires: Reuters</a></li>
+						<li><a href="//www.todayszaman.com/mainAction.action">Today&#039;s Zaman</a></li>
+						<li><a href="//www.voiceofsandiego.org/">Voice of San Diego</a></li>
+						<li><a href="//www.washingtonpost.com">Washingtonpost.com</a></li>
+						<li><a href="//www.heute.de/ZDFheute/inhalt/20/0,3672,20,00.html">ZDF</a></li>
+						</ul>
+		</div>
+				<div class="entry blogroll">
+						<h6 class="kicker">News Video</h6>
+						<ul class="refer odd">
+						<li><a href="//www.youtube.com/user/AlJazeeraEnglish#grid/uploads">Al Jazeera Video</a></li>
+						<li><a href="//www.youtube.com/user/AssociatedPress">AP Video</a></li>
+						<li><a href="//news.bbc.co.uk/2/hi/video_and_audio/default.stm">BBC News Video</a></li>
+						<li><a href="//news.bbc.co.uk/2/hi/video_and_audio/news_summary/8070822.stm">BBC One Minute World News</a></li>
+						<li><a href="//www.youtube.com/channel4news#g/u">Channel 4 News Video</a></li>
+						<li><a href="//www.cineinstitute.com/news/recovery-and-reportage">Cine Institute</a></li>
+						<li><a href="//www.citizentube.com/">CitizenTube</a></li>
+						<li><a href="//www.youtube.com/user/nocommenttv#g/u">Euronews/nocomment</a></li>
+			</ul><ul class="refer even">			<li><a href="//www.youtube.com/user/TheGuardian#g/u">Guardian Video</a></li>
+						<li><a href="//www.youtube.com/user/itnnews#play/all">ITN Video</a></li>
+						<li><a href="//mag.ma/">Magma</a></li>
+						<li><a href="//video.nytimes.com/">NYT.com Video</a></li>
+						<li><a href="//www.britishpathe.com/">Pathe Newsreel Archive</a></li>
+						<li><a href="//www.youtube.com/user/ReutersVideo">Reuters Video</a></li>
+						<li><a href="//www.youtube.com/user/skynews#g/u">Sky News</a></li>
+						<li><a href="//www.youtube.com/user/telegraphtv#g/u">Telegraph TV</a></li>
+						</ul>
+		</div>
+		</div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/thelede" title="Follow @thelede on twitter">@thelede</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/thelede" title="Follow thelede on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/thelede" title="Follow @thelede on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-21',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":70,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

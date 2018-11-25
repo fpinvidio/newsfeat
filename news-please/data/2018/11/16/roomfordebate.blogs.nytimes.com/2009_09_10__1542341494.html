@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-roomfordebate section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta name="author" content="The Editors" />
+<meta name="CLMST" content="The Editors" />
+<meta name="byl" content="The Editors" />
+<meta name="GBLC" content="Politics">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1252630074" />
+<meta name="PUD" content="20090910" />
+<meta name="pdate" content="20090910" />
+<meta name="ptime" content="20090910204754" />
+<meta name="utime" content="20090911163044" />
+<meta property="article:modified_time" itemprop="dateModified" content="2009-09-11T16:30:44-04:00" />
+<meta name="DISPLAYDATE" content="September 10, 2009" />
+<meta name="dat" content="September 10, 2009" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="roomfordebate" />
+<meta name="BN" content="roomfordebate" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Politics" />
+<meta property="article:tag" content="_featured" />
+<meta name="keywords" content="Politics,_featured" />
+<meta name="description" content="What does Joe Wilson&#8217;s outburst say about the political culture of the Palmetto State?" />
+<meta name="hdl" content="Over the Line in South Carolina" />
+<meta property="og:title" content="Over the Line in South Carolina" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/" />
+<meta property="og:site_name" content="Room for Debate" />
+<meta property="og:description" content="What does Joe Wilson&#8217;s outburst say about the political culture of the Palmetto State?" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Over the Line in South Carolina" />
+<meta name="twitter:url" content="//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/" />
+<meta name="twitter:description" content="What does Joe Wilson&#8217;s outburst say about the political culture of the Palmetto State?" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='What Was Missing in Obama&#8217;s Speech' href='//roomfordebate.blogs.nytimes.com/2009/09/10/what-was-missing-in-obamas-speech/' />
+<link rel='next' title='Why Wall Street Reforms Have Stalled' href='//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/' />
+<link rel='canonical' href='//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/' />
+<link rel='shortlink' href='https://nyti.ms/2oxpOHY' />
+<link rel='https://github.com/WP-API/WP-API' href='//roomfordebate.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/roomfordebate/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//roomfordebate.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/roomfordebate/2009/09/10/over-the-line-in-south-carolina/" />
+<meta name="dfp-ad-unit-path" content="opinion/roomfordebate" />			<title>Over the Line in South Carolina - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-18047 blog-universal nyt-blog-roomfordebate" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//roomfordebate.blogs.nytimes.com">
+                Room for Debate            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Over the Line in South Carolina        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/"
+	 data-title="Over the Line in South Carolina"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;What does Joe Wilson&#039;s outburst say about the political culture of the Palmetto State?&lt;/span&gt;&lt;a href=&quot;//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="September 10, 2009 8:47 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="roomfordebate" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//roomfordebate.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="site-title">Room for Debate</div><div class="site-description">A New York Times Blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//roomfordebate.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Room for Debate">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-18047 post type-post status-publish hentry category-politics tag-south-carolina" id="post-18047">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Over the Line in South Carolina</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By The Editors			</address>
+			<!-- date published --><time class="dateline " datetime="2009-09-11T00:47:54+00:00" itemprop="datePublished">September 10, 2009 8:47 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">September 10, 2009 8:47 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2009/09/10/opinion/10carolina.480.jpg" alt="South Carolina" /><span class="credit">Photo, left to right: Virginia Postic/Associated Press, Pablo Martinez Monsivais/Associated Press, Stephen Jaffe/Agence France-Presse — Getty Images</span> <span class="caption">Gov. Mark Sanford at a news conference in August; Representative Joe Wilson on Capital Hill on Wednesday; Senator Strom Thurmond in 1997.</span></div>
+<p class="story-body-text" itemprop="articleBody"><strong><span style="color:#8c2626;">Updated, Sept. 11, 12:20 p.m. | </span></strong>Bob Moser, editor of The Texas Observer and author of &#8220;Blue Dixie,&#8221; discusses South Carolina&#8217;s racial politics.    </p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody">Is it just a fluke that South Carolina has another politician in trouble for behaving badly? </p>
+<p class="story-body-text" itemprop="articleBody">Representative Joe Wilson, a Republican whose district includes Hilton Head, spent Thursday <a href="//www.nytimes.com/2009/09/11/us/politics/11Wilson.html">apologizing for yelling &#8220;you lie!&#8221; at Mr. Obama </a>during his health care address on Wednesday night.  </p>
+<p class="story-body-text" itemprop="articleBody">Meanwhile, South Carolina&#8217;s governor, Mark Sanford, whose acknowledgment of an extramarital affair has opened up broader accusations of official misconduct, has been <a href="//www.nytimes.com/2009/09/10/us/10brfs-REPUBLICANSA_BRF.html">asked to resign by 61 of the 72 Republicans</a> in the state House of Representatives. Mr. Sanford is standing firm. &#8220;God can use imperfect people to perform His will,&#8221; he said on Tuesday.</p>
+<p class="story-body-text" itemprop="articleBody">We asked some historians and analysts to offer some thoughts on the political culture of South Carolina, and its history. </p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-18047"></span></p>
+<ul>
+<li><a href="#bob">Bob Moser,</a> editor of The Texas Observer</li>
+<li><a href="#jack">Jack Bass,</a> humanities professor, College of Charleston</li>
+<li><a href="#armstrong">Armstrong Williams,</a> radio commentator</li>
+<li><a href="#lacy">Lacy K. Ford Jr.,</a> historian, University of South Carolina</li>
+<li><a href="#thomas">Thomas F. Schaller,</a> political scientist</li>
+</ul>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="bob"></a></p>
+<h4>The Rebel Yell</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/bob_moser.50.jpg" alt="Bob Moser" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Bob Moser,</strong> editor of The Texas Observer and contributing writer for The Nation, is the author of &#8220;Blue Dixie: Awakening the South&#8217;s Democratic Majority.&#8221; </em></p>
+<p class="story-body-text" itemprop="articleBody">I was talking with a New York friend right after the big health-care speech, and she asked: &#8220;Do you have any guesses about who yelled at Obama?&#8221; I think she had detected a Dixie yelp in the inflection of the voice that shattered Congressional decorum. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>In a Congressman&#8217;s bellow, echoes of John C. Calhoun,  Strom Thurmond &#8212; and a state&#8217;s racial politics.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">The desperate, yodeling quality of that &#8220;You lie!&#8221; — it was as if some member of Congress had suddenly, involuntarily burst out with an abbreviated version of the oldest of white conservative Southern complaints: We will not stand for this imposition, this trampling of our God-given rights, this insult to our honor and our sovereignty! Which made me reply, &#8220;I&#8217;d place my bet on a South Carolinian.&#8221;  </p>
+<p class="story-body-text" itemprop="articleBody">There has always been something uniquely spiky about South Carolina&#8217;s politics, from the run-up to secession right through Gov. Mark Sanford (who once brought live pigs onto the state House floor to protest &#8220;pork&#8221; spending) and, now, the mouthy Rep. Joe Wilson. What distinguishes South Carolina&#8217;s politics is the fierceness with which ideologies are held sacred — and the deep undercurrents of race that still run through everything. </p>
+<p class="story-body-text" itemprop="articleBody">While racial issues don&#8217;t infest the state&#8217;s politics in the blatant way that they once did, they still matter more in South Carolina than perhaps anywhere else in the South. The dominant Republican Party has managed to hold together its fundamentalist, anti-government and Chamber of Commerce factions largely because there&#8217;s some underlying — often unconscious — sympathy between them on issues of race. Meanwhile, Democrats are widely stereotyped in South Carolina as &#8220;the black party&#8221; — a label that hasn&#8217;t changed despite the Democratic leanings of the state&#8217;s fast-multiplying Latino population. </p>
+<p class="story-body-text" itemprop="articleBody">So it was no great surprise that Joe Wilson&#8217;s rebel yell was provoked by the first black president&#8217;s declaration that his health plans didn&#8217;t include government health care for illegal immigrants. It was an echo of the summer&#8217;s rowdy town halls all over America, for sure. But it was also an echo of those South Carolina statesmen, from John C. Calhoun to Strom Thurmond, who have forever specialized in one shouted word: &#8220;No!&#8221; </p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="jack"></a></p>
+<h4>Helping the Opposition</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/jack_bass.50.jpg" alt="Jack Bass" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Jack Bass</strong>, a professor of Humanities and Social Sciences at the College of Charleston, is author of several books about the American South and co-author of &#8220;Strom: The Complicated Personal and Political Life of Strom Thurmond.&#8221;  </em></p>
+<p class="story-body-text" itemprop="articleBody">Joe Wilson apparently has become infected with the peculiarly South Carolina disease known as politicus apologia, for which Gov. Mark Sanford apparently became the first known victim.  The governor has gone statewide for weeks with personal displays of the symptoms, which range from a combination of feverish denials of wrongdoing to sweaty speeches of apology for other doings before civic clubs and through media outlets. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Joe Wilson once denounced the claim of Essie Mae Washington-Williams as being a daughter of Strom Thurmond.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"> Another symptom, as Mr. Wilson is already demonstrating, is a painful boost in fundraising for one&#8217;s already announced opponent, in this case former Marine captain and Iraqi war veteran Rob Miller.  By mid-afternoon, the Democratic Congressional Campaign Committee announced Mr. Miller had raised $400,000 since Joe Wilson shouted, &#8220;You lie.&#8221;  Mr. Miller&#8217;s almost 47 percent of the vote against Mr. Wilson&#8217;s in 2008 chopped 10 percentage points off the incumbent&#8217;s showing two years earlier.  </p>
+<p class="story-body-text" itemprop="articleBody">Research continues on whether this infection in the state is limited to the South Carolina G.O.P.&#8217;s  DNA.  Earlier indicators of Mr. Wilson&#8217;s infection were displayed several years ago when he loudly denounced the claim of Essie Mae Washington-Williams as being a daughter of Strom Thurmond. Mr. Wilson called her story &#8220;unseemly&#8221; and a &#8220;smear.&#8221;  Her name today is listed on the State House monument to her father, alongside those of his white children.  </p>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s a great time to live in South Carolina.  Nobody&#8217;s bored.   </p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="armstrong"></a></p>
+<h4>An Honest Gut Reaction </h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/armstrong_williams.50.jpg" alt="Armstrong Williams" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><a href="//"><strong>Armstrong Williams </strong></a>can be heard nightly on Sirius/XM Power 169 from 9 pm to 10 pm.</em></p>
+<p class="story-body-text" itemprop="articleBody">I’ve often heard the phrase growing up around the fields of South Carolina that if you don’t make dust, you eat dust. In many respects, that phrase personifies how my South Carolina brothers view themselves and the rapid way they jump on issues. </p>
+<p class="story-body-text" itemprop="articleBody">Passion supplants civility. Not too often, but when it does, it is often perceived as warranted. Some would liken it to a hair-trigger mentality, but it’s more a verbal gut reaction and their wide-eyed views of what’s right and what’s wrong with the world, as they see it. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Joe Wilson will be regarded as a hero in some circles for calling out falsehoods of the Obama message machine. </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">In many respects, Joe Wilson’s outburst last night was more from the gut as it was from the heart. I know Joe Wilson. He’s a self-effacing, humble man, like many in his district. He’s not prone to such antics, which is why I was shocked to discover listening to the president’s speech that his was the voice that screamed those words. </p>
+<p class="story-body-text" itemprop="articleBody">Poor taste? You bet. But to many in the Palmetto State, Congressman Wilson’s lapse reflected weeks of pent up frustration from the thousands of constituents he and several of his colleagues heard at their own town halls. </p>
+<p class="story-body-text" itemprop="articleBody">He’ll be regarded as a hero in some circles; not for his disrespect, these are, after all, gentrified southerners. But rather, Joe Wilson will be viewed for doing the right thing  —  for calling out the falsehoods of the Obama message machine, there and then. No dawdling, no delay. </p>
+<p class="story-body-text" itemprop="articleBody">It may have taken Joe an errant syllable or two last night with his syrupy drawl, but he was going to make his point, all else be damned.</p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="lacy"></a></p>
+<h4>The Curse of One-Party Domination</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/lacy_ford.50.jpg" alt="Lacy Ford" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Lacy K. Ford Jr.</strong>is professor of history and chair of the department at the University of South Carolina. His most recent book, “Deliver Us From Evil: The Slavery Question in the Old South,” was published by Oxford University Press this month. </em></p>
+<p class="story-body-text" itemprop="articleBody">Many South Carolinians of both parties have suffered unexpected embarrassment from two of the state’s most prominent Republicans —  Governor Mark Sanford, who admitted an affair with an Argentinian woman, and Congressman Joe Wilson, who broke all the rules of Congressional decorum by shouting “you lie” at President Obama during his speech. </p>
+<p class="story-body-text" itemprop="articleBody">There is certainly no shortage of historical precedents for bold and outlandish, and even uncivil behavior by prominent South Carolina political figures. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Safe political seats have encouraged the rise of boorish behavior and ideological rigidity.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Perhaps the most famous of such precedents occurred in 1856 when South Carolina Congressman Preston Brooks, a nationalist, entered the Senate chamber and caned Massachusetts Senator Charles Sumner after the latter had given a speech attacking slavery and insulting South Carolina politicians. Sumner was temporarily disabled by the beating and missed many months of senate duty; Brooks resigned his seat but received a hero’s welcome in South Carolina for defending the honor of the state. </p>
+<p class="story-body-text" itemprop="articleBody">During the 1890s, Ben Tillman, an avowed racist who worked to disfranchise all African Americans in the state, drew national attention by declaring that, if elected to the U.S. Senate, he would stick his pitchfork in the fleshy ribs of the rotund Grover Cleveland, who was of Tillman’s own party. </p>
+<p class="story-body-text" itemprop="articleBody">But as a historian, I would suggest that the explanations for South Carolina’s more recent round of bad political behavior lie as much in the nature of the state’s newly-crafted political culture of one-party domination as in its older lineage of provincial defiance. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">In recent years, South Carolina has emerged as one of the reddest of the red states, meaning that in statewide races and in a healthy majority of congressional and legislative districts, Republican candidates cannot lose unless a significant number of loyal voters defect. </p>
+<p class="story-body-text" itemprop="articleBody">Democratic opposition is not a serious threat to most Republican candidates. The real competition Republicans face comes, if it comes at all, only in the Republican primary. Hence Republican candidates typically focus on trying to outdo each other in appealing to the state’s arch-conservative party base. </p>
+<p class="story-body-text" itemprop="articleBody">This process has pulled an already a very conservative Republican party even further to the right. The curse of safe seats has been the rise of boorish behavior and ideological rigidity. This trend has neither prepared Republicans well for governing nor, apparently, helped them remember how to engage in civil discourse with their opponents. </p>
+<p class="story-body-text" itemprop="articleBody">But Republicans confident of their power at home suddenly grew very testy when confronted with impotence on the national stage. As the elections of 2008 swept large Democratic majorities into the U.S.. House and Senate and elected a Democrat president, the ability of South Carolina Republicans to influence the national agenda dwindled. </p>
+<p class="story-body-text" itemprop="articleBody">The 2008 elections suggested that South Carolina’s bet on a Republican national majority as the key to its continued federal influence had been lost. As the Republicans retreated into their shrinking southern redoubt, frustration, anger, and in some instance, unspeakable ugliness (the Wilson outburst) emerged. </p>
+<p class="story-body-text" itemprop="articleBody">The case of the mercurial Governor Sanford is different. Never so much a Republican as a libertarian (and perhaps above all a narcissist), Governor Sanford had conducted himself for six and a half years as a man more determined to call attention to himself than to govern effectively.<br />
+ Few would have predicted that an affair would be his undoing, but anyone who had studied his career should have known his quirky vanity and a propensity to think his way was the only way. </p>
+<p class="story-body-text" itemprop="articleBody">But even in this hour of Republicans behaving badly, the G.O.P. in South Carolina can claim Lindsay Graham, a independent-minded conservative who has worked across the aisle in the U.S. Senate on a number of occasions, and state attorney general Henry McMaster, who broke with Governor Sanford when the governor opposed the acceptance of the federal stimulus package.  </p>
+<p class="story-body-text" itemprop="articleBody">Harvey Gantt, a Charleston native and the first African American to attend Clemson University, is reported to have noted in the 1960s that when you can’t appeal to South Carolinians’ morals, you can still appeal to their manners. Let’s hope, Joe Wilson and Mark Sanford aside, he may still be proven right. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="thomas"></a></p>
+<h4>A Tradition of Resistance</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/tom_schaller.50.jpg" alt="Thomas F. Schaller" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Thomas F. Schaller</strong> is associate professor of political science at the <a href="//www.umbc.edu/">University of Maryland, Baltimore County,</a> author of <a href="//www.amazon.com/Whistling-Past-Dixie-Democrats-Without/dp/074329016X/ref=ntt_at_ep_dpi_1">&#8220;Whistling Past Dixie,&#8221;</a> and a blogger for <a href="//www.fivethirtyeight.com/">fivethirtyeight.com.</em><br />
+</a></p>
+<p class="story-body-text" itemprop="articleBody">Wednesday night’s bleating-heart outburst from Joe Wilson will surprise nobody familiar with the history of South Carolina politics. No state boasts a tradition of shrill resistance to the Republic comparable to South Carolina’s.</p>
+<p class="story-body-text" itemprop="articleBody">Thomas Jefferson removed condemnations of slavery from the Declaration of Independence to appease South Carolinian slaveholders. State loyalists helped the British recapture the state in 1780 from the patriots. By 1828, state icon and Vice President John C. Calhoun was advocating state “nullification” of federal powers.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Mr. Wilson&#8217;s outburst was typical of politicians from a state that has resisted policy progress on most fronts.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"> In 1860, South Carolina became the first state to secede — and even threatened to secede from the Confederacy because the other southern states refused to re-open the slave trade. In 1856, on the Senate floor Congressman Preston Brooks bloodied an abolitionist senator with a cane.</p>
+<p class="story-body-text" itemprop="articleBody">Well into the 20th century, South Carolina’s black citizens observed the Fourth of July mostly alone; the vast majority of whites preferred instead to celebrate Confederate Memorial Day. In 1920, the state legislature rejected the women’s suffrage amendment, finally ratifying it a half century later. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">In 1948 &#8212; the same year the South Carolina legislature declared President Harry Truman’s civil rights commission &#8220;un-American&#8221; &#8212; segregationist Sen. Strom Thurmond was the States’ Rights Democratic Party presidential nominee. </p>
+<p class="story-body-text" itemprop="articleBody">Were it not for a facing-saving political intervention, the Clarendon County school district, not Topeka’s, would have been forever remembered as the defendant in the landmark Brown v. Board of Education case. And when Congress passed the 1965 Voting Rights Act, the Palmetto State became the first to challenge its constitutionality in court.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Wilson&#8217;s outburst was typical of politicians from a state that have resisted policy progress in the United States whether for minorities, women, the disempowered or, now, the uninsured.</p>
+</div>
+</div>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/" data-title="Over the Line in South Carolina" data-description="What does Joe Wilson&#039;s outburst say about the political culture of the Palmetto State?">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-149845">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">glh</span>
+			<span class="comment-link">
+				<a href="#comment-149845" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:19 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>At least the fool wasn&#8217;t from Tennessee.  Thank God.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149857">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">N Lewis</span>
+			<span class="comment-link">
+				<a href="#comment-149857" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:47 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Thank goodness Joe Wilson had nerve to speak from his gut!  He never should have apologized, but, then again Republicans are above Dems in that respect&#8230;&#8230;&#8230;&#8230;&#8230;.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149861">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">walt Brown</span>
+			<span class="comment-link">
+				<a href="#comment-149861" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:01 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I have never donated to a state candidate outside my own, but Miller has a donation on behalf of my wife and I to unseat this rude, anachronism  This country needs no more of his ilk.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149863">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">c in tx</span>
+			<span class="comment-link">
+				<a href="#comment-149863" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>WTH is wrong with Armstrong Williams? Wilson &#8220;called out the falsehoods of the Obama message&#8221;? Is Mr. Williams not aware that Obama&#8217;s proposal DOES NOT COVER ILLEGALS? Wilson is the liar, and I can&#8217;t believe I, lowly poster, need to point that out to a journalist! Or is Mr. Williams just another blathering talking head? </p>
+<p>Media, when will you resume your watchdog role? Obama told the truth, Wilson told the lie. Why oh why is the issue about civility? It&#8217;s about Wilson either being completely clueless or intent on destroying the Obama presidency at all costs. </p>
+<p>Oh, and PS, the President represents America. And Americans. Tearing down the President brings us all down.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149871">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Arlene Gillespie</span>
+			<span class="comment-link">
+				<a href="#comment-149871" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The Republicans look so bad to a lot of people in other countries. They are so jealous and bitter that President Obama is doing so good and working so hard for the middle and lower class unlike the GOP. You Joe Wilson and Mark Sanford are plain losers and should step down. You should RESPECT the PRESIDENT of your sad country!!!!!!!!!!!!!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149879">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ralph Dinlocker</span>
+			<span class="comment-link">
+				<a href="#comment-149879" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>You can take the Trailer Trash out of the trailer, but you can&#8217;t take the trash out of the Trailer Trash.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149887">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lloyd Levy</span>
+			<span class="comment-link">
+				<a href="#comment-149887" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>And how should we categorize Sen. Jim DeMint (R-SC), who:<br />
+&#8211;States that he will “break” Obama by defeating health care reform;<br />
+&#8211;Compares government under Obama to fascism;<br />
+&#8211;Says the U.S. is headed for a &#8220;socialist type econom[y], and totalitarianism; and<br />
+&#8211;Asserts contemporary Germany lacks freedom and suffers under “totalitarianism.”<br />
+Could be something in the water.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149891">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">John</span>
+			<span class="comment-link">
+				<a href="#comment-149891" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>My theory is that this unknown Representative spouted off to get his name in the national spotlight and headlines in the papers back home. As the old saying goes, &#8220;All publicity is good publicity,&#8221; and hailing from a religious-right state currently plagued by an adulterous Governor, well, loudmouth Joe may just have been voicing interest in his next political career move.</p>
+<p>In conservative South Carolina, how many electorate popularity points do you think &#8220;bravely standing up&#8221; and &#8220;calling out&#8221; the Demon-cratic Antichrist  is worth?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149895">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">NMS</span>
+			<span class="comment-link">
+				<a href="#comment-149895" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:27 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>As far as I&#8217;m concerned, Wilson has not apologized until he has admitted that he was wrong on the facts.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149897">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">BJ1949</span>
+			<span class="comment-link">
+				<a href="#comment-149897" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:29 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Thank goodness someone has finally had courage to tell the truth about Obama to his face!  I&#8217;m fed up with Obama and his fellow lying Socialists whining about him being a &#8220;victim&#8221;, supposedly, pulling the &#8220;race&#8221; card every single opportunity they get!  I only wish he had not apologized to Obama for telling him exactly what most of us Americans would have told him ourselves, if only we had been given the same opportunity!    </p>
+<p>Our opinion of Obama isn&#8217;t based upon race&#8211;it&#8217;s based purely upon Obama&#8217;s own voting record and based upon everything else that this Socialist Dictator and his regime have done against the will of the American people since our Presidentical elections were stolen, and he became America&#8217;s First President in history to refuse to show the full version of his Birth Certificate to those of us he claims are his &#8220;fellow Americans&#8221;!  Despite the fact Obama could have put an end to this controversy himself by doing just doing so, his refusal reveals this man has something he wants to hide from all of us! </p>
+<p>This anger didn&#8217;t originate with the Republican Party like Obama and his cronies expect the uneducated to believe.  This anger comes from our &#8220;Silent Majority&#8221; who no longer intend to remain silent, anymore!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149899">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Cherie Savage</span>
+			<span class="comment-link">
+				<a href="#comment-149899" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:29 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Joe Wilson&#8217;s rude grandstanding was inexcusable and an unpardonable offense to the office of the presidency.  Because of it&#8230;I am ashamed to be living in the South&#8230;but&#8230;Proud that I severed my relationship with the Republican Party shortly before the last election..</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149901">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Policy Hack</span>
+			<span class="comment-link">
+				<a href="#comment-149901" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Lindsay Graham has a reputation for being reasonable and moderate.  Why has he not been more vocal in his denouncement of Wilson&#8217;s conduct?  The country needs to quickly rediscover civility.  We are careening out of control.  John&#8217;s McCain&#8217;s quick and definitive denouncement was a good first step.</p>
+<p><a href="//axisofreason.com/2009/09/10/thank-you-john-mccain/" rel="nofollow">//axisofreason.com/2009/09/10/thank-you-john-mccain/</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149907">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Julia Purdy</span>
+			<span class="comment-link">
+				<a href="#comment-149907" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:39 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Yes, South Carolina is, historically, different.  South Carolina&#8217;s intransigence directly resulted in the showdown at Fort Sumter, which in turn ushered in the national catastrophe called the Civil War and ended with the South being pounded into the ground.  If the good ol&#8217; boys of South Carolina are going to start quoting Scripture, they might recall that &#8220;Pride goeth before a fall.&#8221;  The pride of the Southern cracker is truly pathetic.  It&#8217;s all they have left.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149913">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">John</span>
+			<span class="comment-link">
+				<a href="#comment-149913" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:51 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Wilson (and Sanford and DeMint) should try to bear in mind the famous observation that S. Carolina is too large to be an insane asylum.</p>
+<p>If that doesn&#8217;t bring them around, how about the words &#8220;travel boycott&#8221;?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149917">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">learned_hand</span>
+			<span class="comment-link">
+				<a href="#comment-149917" title="Comment Permalink">
+					<span class="comment-date">September 10, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:52 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>What Obama is not telling you is that illegals don’t need to be covered by an Obama plan&#8230;they receive free and unlimited healthcare under the Emergency Medical Treatment and Active Labor Act.</p>
+<p><a href="//en.wikipedia.org/wiki/Emergency_Medical_Treatment_and_Active_Labor_Act" rel="nofollow">//en.wikipedia.org/wiki/Emergency_Medical_Treatment_and_Active_Labor_Act</a></p>
+<p>The patients crowding delivery rooms in many of this country’s largest hospitals (including Parkland Memorial, the 2nd busiest) are 70% illegal immigrants dropping anchor babies&#8230; subsidized by financially strapped hospitals and the US taxpayer.  </p>
+<p><a href="//www.dallasnews.com/sharedcontent/dws/news/localnews/stories/061206dnmetmoms.d9b9669.html" rel="nofollow">//www.dallasnews.com/sharedcontent/dws/news/localnews/stories/061206dnmetmoms.d9b9669.html</a></p>
+<p>The same is true of many other non-emergency treatments such as renal dialysis (and multiple kidney transplants) which continue indefinitely, at a cost which easily reaches $1,000,000+ per illegal.</p>
+<p><a href="//seattletimes.nwsource.com/html/nationworld/2008369322_immigdialysis09.html" rel="nofollow">//seattletimes.nwsource.com/html/nationworld/2008369322_immigdialysis09.html</a>  </p>
+<p>Hospitals are never compensated for most of services that they are forced to provide to illegals under the law, while US citizens who subsidize the illegals’ free healthcare are forced to wait behind them in long lines for the exact same services. </p>
+<p>This is an outrage&#8230; and nothing in Obama’s “reform” does a thing about it.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149927">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">marik7</span>
+			<span class="comment-link">
+				<a href="#comment-149927" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:42 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>c in Tx,</p>
+<p>Excellent point.</p>
+<p>If Wilson is wrong, THAT should be the story, rather than incivility.</p>
+<p>Doesn&#8217;t dishonesty trump &#8220;incivility&#8221; in a national legislator? I hope so.</p>
+<p>On the other hand, wouldn&#8217;t it have been nice if Wilson had stood up and yelled &#8220;You lie&#8221; whenever Bush, Cheney or Powell told Congress that Iraq had WMDs. And if he had in that case, Wilson would have been the one telling the truth.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149931">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">blocky0</span>
+			<span class="comment-link">
+				<a href="#comment-149931" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:51 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>we cannot be civil if we are afraid of each other.  why are teh joe wilson&#8217;s of the world so afraid?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149939">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Okpulot Taha</span>
+			<span class="comment-link">
+				<a href="#comment-149939" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:15 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Our Congressional Research Service (CRS) previously reports illegal aliens will be covered under HR3200. This CRS is a government agency which performs research for Congress. CRS is a highly credible source.</p>
+<p>Federation for American Immigration Reform (FAIR) also reports the same; illegal aliens are covered by HR3200.</p>
+<p>Two credible sources there, both contradicting Obama. Rather clear Obama did and is lying to America, as are most left liberals.</p>
+<p>Okpulot Taha<br />
+Choctaw Nation<br />
+Puma Politics</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149945">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Elle</span>
+			<span class="comment-link">
+				<a href="#comment-149945" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:47 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I would say that I am surprised in Wilson&#8217;s behavior, but I am not.  I live in SC and have noticed increased agitation and disapproval of the President among conservatives in the area.  They know exactly what they are doing. They are not idiots or people of low intelligence.  They are lying, manipulating, and gaming their constituents who are idiots, gullible and some who just need any excuse to hate.  Their agenda is not their love for  American people or their country.  Their agenda is their love for power and supremacy.  Sarah Palin may not know the details of the issues, but she does know that there are those whom she can manipulate with lies and hate.  Wilson is cut from the same cloth.  He wanted to show his constituents that a Black man may be the President, but he doesn&#8217;t have to respect him.  </p>
+<p>I appeal to any of you out there who thinks that this was a display of freedom of speech from a man who loves his country, to really look at the the love the Republican party has shown the American people for the last 8.5 years.<br />
+They have loved us so much, we have been used to fight and die for an unnecessary war.  They have loved us so much, they wrecked the economy and sent our deficits through the roof.  They have loved us so much, they raped and plundered us with high gas prices to line their own pockets.  They loved us so much, they kept us in constant fear of terrorist attacks for their own political gain.  </p>
+<p>You get the picture.  They really love us.  That&#8217;s why they don&#8217;t want us to have a level playing field to drive down the cost of healthcare.  If you&#8217;re so gullible, for once you may need to question the quality of the love you are willing to receive.  It&#8217;s all in the action baby, not the passionate, heated words. </p>
+<p>By the way, we&#8217;re paying for immigrants to get healthcare now.  Why not give it to them upfront and let them pay a fee?  Also, corporations increase their shareholder profits by making cuts all the time.  It is believable to me that their is enough waste in healthcare to provide savings to help pay for healthcare.  When the taxes on the wealthiest Americans go back to where they were under Clinton, the rest of the money will be there?  Clinton balanced the budget in eight years.  Healthcare needs 10 years to pay for itself.  Stop fighting stimulus and jobs under the disguise of love for the country and concern for your constituents.  Wilson&#8230;..&#8221;You lie&#8221;.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149957">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Steve Singer</span>
+			<span class="comment-link">
+				<a href="#comment-149957" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:31 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Gen. Sherman didn&#8217;t burn enough of it when he had the chance &#8230; .</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-149969">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">LCE, Paris</span>
+			<span class="comment-link">
+				<a href="#comment-149969" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:00 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Is this the most accurate way the NY Times can identify Armstrong Williams, implying that he&#8217;s a benign radio personality? Let the record speak for itself. Mr. Williams long ago disqualified himself from commenting in an independent newspaper.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-149997">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ellis Knight</span>
+			<span class="comment-link">
+				<a href="#comment-149997" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:24 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I am so embarrassed for South Carolina.  This state really does have so many wonderful features.  Unfortunately, its politicians are an exception to that statement.  South Carolinians deserve better.  Shame on you Joe Wilson and Mark Sanford!  </p>
+<p>m in SC</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-150011">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Tom Jones</span>
+			<span class="comment-link">
+				<a href="#comment-150011" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:09 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>And then, there&#8217;s John Jenrette.  South Carolina, a state of mind.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-150013">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">RobW</span>
+			<span class="comment-link">
+				<a href="#comment-150013" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:09 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr. Wilson gets all worked up over illegal aliens yet his party has endorsed and promoted the wholesale export and outsourcing of American jobs. Whatever happened to all those textile mills in South and North Carolina? </p>
+<p>I have never contributed to a politician that would not directly affect me, but in this case I did make a donation to Mr. Miller&#8217;s campaign, and if it looks like he will need more money, I will do it again. I have lost all patience with Mr. Wilson&#8217;s ilk.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-150017">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Tom Degan</span>
+			<span class="comment-link">
+				<a href="#comment-150017" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:15 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Isn&#8217;t Joe Wilson an hoot and a half? It truly is an amusing thing to behold. The extreme right wing is having a collective, massive nervous breakdown. They just can&#8217;t come to terms with the nasty little fact that a black guy is the most powerful human being on the planet. It really is kind of funny &#8211; to a point.</p>
+<p>Here&#8217;s what&#8217;s happening, boys and girls: The so-called &#8220;party of Lincoln&#8221; has been forever exposed as ideologically bankrupt and they are in the process of implementing their &#8220;scorched earth policy&#8221;. In other words, if they have to go down (and down they are going) they&#8217;re going to bring the rest of the country down with them. That is what is happening. If you think the right wing has lost its collected marbles, as Al Jolson used to say, &#8220;You ain&#8217;t seen nothin&#8217; yet&#8221;. There is violence down the road. Count on it. </p>
+<p>Sound paranoid? Stay tuned.</p>
+<p><a href="//www.tomdegan.blogspot.com" rel="nofollow">//www.tomdegan.blogspot.com</a></p>
+<p>Tom Degan<br />
+Goshen, NY</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2009/09/10/what-was-missing-in-obamas-speech/" title="What Was Missing in Obama&#039;s Speech">
+				What Was Missing in Obama&#8217;s Speech			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/" title="Why Wall Street Reforms Have Stalled">
+				Why Wall Street Reforms Have Stalled			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//roomfordebate.blogs.nytimes.com/2010/07/'> July 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/06/'> June 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/05/'> May 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/04/'> April 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/03/'> March 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/02/'> February 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/01/'> January 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/12/'> December 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/11/'> November 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/10/'> October 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/09/'> September 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/08/'> August 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/07/'> July 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/06/'> June 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/05/'> May 2009 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" title="Read: Room for Debate Has Moved">Room for Debate Has Moved</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Visit Room for Debate&#8217;s new home on The New York Times Web site.<a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" title="Read: Should More Veterans Get P.T.S.D. Benefits?">Should More Veterans Get P.T.S.D. Benefits?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/"></a>
+				</span>			</h5>
+			<p class="summary">
+			What does the latest research tell us about the extent of combat trauma?<a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" title="Read: Do U.S. Donors Drive Israeli Politics?">Do U.S. Donors Drive Israeli Politics?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are American citizens&#8217; contributions to West Bank settlements helping or hurting the peace process?<a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" title="Read: What We Still Don&#8217;t Know About Sunscreens">What We Still Don&#8217;t Know About Sunscreens</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Why has the F.D.A. stalled in requiring better labels and safer ingredients in sunscreens?<a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" title="Read: The Pitfalls in Identifying a Gifted Child">The Pitfalls in Identifying a Gifted Child</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are New York City&#8217;s plans to revamp testing of preschoolers for gifted programs a step backward? <a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">Room for Debate on</span></span>
+</h4>
+<ul>
+</ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-74',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":54,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

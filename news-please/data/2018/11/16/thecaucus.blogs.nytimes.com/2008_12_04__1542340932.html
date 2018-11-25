@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-thecaucus section-us"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-thecaucus section-us" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-thecaucus section-us" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-thecaucus section-us" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000005206109"><meta name="author" content="Sarah Wheaton" />
+<meta name="CLMST" content="Sarah Wheaton" />
+<meta name="byl" content="Sarah Wheaton" />
+<meta name="GBLC" content="The Caucus">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1228428220" />
+<meta name="PUD" content="20081204" />
+<meta name="pdate" content="20081204" />
+<meta name="ptime" content="20081204170340" />
+<meta name="utime" content="20170701140852" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-07-01T14:08:52-04:00" />
+<meta name="DISPLAYDATE" content="December 4, 2008" />
+<meta name="dat" content="December 4, 2008" />
+<meta itemprop="articleSection" property="article:section" content="Politics" />
+<meta name="CG" content="Politics" />
+<meta name="SCG" content="thecaucus" />
+<meta name="BN" content="thecaucus" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="The Caucus" />
+<meta property="article:tag" content="_featured" />
+<meta name="keywords" content="The Caucus,_featured" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fthecaucus.blogs.nytimes.com%2F2008%2F12%2F04%2Fblogtalk-rendell-on-nepolitanos-no-life%2F" title="Blogtalk: Rendell on Napolitano&#8217;s &#8216;No Life&#8217;" />
+<meta name="description" content="Ed Rendell&#8217;s comments about Janet Napolitano, caught by an open mike, were just vague enough to offend, well, just about everyone." />
+<meta name="hdl" content="Blogtalk: Rendell on Napolitano&#039;s &#039;No Life&#039;" />
+<meta property="og:title" content="Blogtalk: Rendell on Napolitano&#039;s &#039;No Life&#039;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//thecaucus.blogs.nytimes.com/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/" />
+<meta property="og:site_name" content="The Caucus" />
+<meta property="og:description" content="Ed Rendell&#8217;s comments about Janet Napolitano, caught by an open mike, were just vague enough to offend, well, just about everyone." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Blogtalk: Rendell on Napolitano&#039;s &#039;No Life&#039;" />
+<meta name="twitter:url" content="//thecaucus.blogs.nytimes.com/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/" />
+<meta name="twitter:description" content="Ed Rendell&#8217;s comments about Janet Napolitano, caught by an open mike, were just vague enough to offend, well, just about everyone." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTPolitics">
+<link rel='prev' title='Foodies Make a Pitch to Obama' href='//thecaucus.blogs.nytimes.com/2008/12/04/foodies-make-a-pitch-to-obama/' />
+<link rel='next' title='The Three Amigos, in Bhutan' href='//thecaucus.blogs.nytimes.com/2008/12/04/the-three-amigos-in-bhutan/' />
+<link rel='canonical' href='//thecaucus.blogs.nytimes.com/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/' />
+<link rel='shortlink' href='https://nyti.ms/2owq368' />
+<link rel='https://github.com/WP-API/WP-API' href='//thecaucus.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/thecaucus/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//thecaucus.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/politics/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/thecaucus/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/" />
+<meta name="dfp-ad-unit-path" content="politics/thecaucus" />			<title>Blogtalk: Rendell on Napolitano&#039;s &#039;No Life&#039; - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-7727 blog-universal nyt-blog-thecaucus" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Politics', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//thecaucus.blogs.nytimes.com">
+                The Caucus            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Blogtalk: Rendell on Napolitano&#8217;s &#8216;No Life&#8217;        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//thecaucus.blogs.nytimes.com/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/"
+	 data-title="Blogtalk: Rendell on Napolitano&#8217;s &#8216;No Life&#8217;"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Ed Rendell&#039;s comments about Janet Napolitano, caught by an open mike, were just vague enough to offend, well, just about everyone.&lt;/span&gt;&lt;a href=&quot;//thecaucus.blogs.nytimes.com/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="December 4, 2008 5:03 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="thecaucus" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//thecaucus.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Politics" title="Go to The Caucus Home"><img src="https://static01.nyt.com/images/blogs_v5/thecaucus/thecaucus_post.png" alt="The Caucus - The Politics and Government blog of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//thecaucus.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Caucus">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-7727 post type-post status-publish hentry category-the_caucus tag-blogtalk tag-edward-rendell tag-janet-napolitano" id="post-7727">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Blogtalk: Rendell on Napolitano&#8217;s &#8216;No Life&#8217;</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Sarah Wheaton			</address>
+			<!-- date published --><time class="dateline " datetime="2008-12-04T22:03:40+00:00" itemprop="datePublished">December 4, 2008 5:03 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">December 4, 2008 5:03 pm</span>		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">Gov. Edward G. Rendell of Pennsylvania is among the most seasoned of politicians. So when he commits a gaffe, it is often a powerful one. </p>
+<p class="story-body-text" itemprop="articleBody">His comments about Gov. Janet Napolitano of Arizona, caught by an open microphone, were just vague enough to offend, well, just about everyone. We’ve found at least four different groups so far. </p>
+<p class="story-body-text" itemprop="articleBody">Apparently not realizing the microphone was live, Mr. Rendell said Tuesday of Ms. Napolitano&#8217;s being nominated by President-elect Barack Obama as homeland security secretary: “Janet&#8217;s perfect for that job. Because for that job, you have to have no life. Janet has no family. Perfect. She can devote, literally, 19, 20 hours a day to it.”</p>
+<p class="story-body-text" itemprop="articleBody">And that set a number of people off. </p>
+<p class="story-body-text" itemprop="articleBody">Campbell Brown, a CNN host, <a href="//www.cnn.com/2008/POLITICS/12/02/campbell.brown.rendell/index.html#cnnSTCText">commented on her show</a>, “No Bias, No Bull,” that moms or potential moms should feel rankled:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">As a woman, hearing this, it is hard not to wonder <span id="more-7727"></span>if we are counted out for certain jobs, certain opportunities, because we do have a family or because we are in our child-bearing years. Are we? It is a fair question.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">And so, Ms. Campbell added, should women like Ms. Napolitano:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">If you are a childless, single woman with suspicions that you get stuck working holidays, weekends and the more burdensome shifts more often than your colleagues with families, are those suspicions well-founded? Probably so. Is there an assumption that if you&#8217;re family-free then you have no life? By some, yes.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Oh, but wait, says <a href="//www.americablog.com/2008/12/is-this-sexism-or-something-else.html">Chris in Paris of AmericaBlog</a>. “There is an enormous double standard when it comes to couples without kids versus couples with kids, straight and gay, as many of us notice especially over the holidays,” he writes, adding, “It’s not right, but it’s also not sexism.”</p>
+<p class="story-body-text" itemprop="articleBody">No, it’s not sexism. It’s … singlism! Gail Collins, a columnist for The Times, <a href="//www.nytimes.com/2008/12/04/opinion/04collins.html">introduced us this morning</a> to Bella DePaulo, a psychology professor and author of “Singled Out: How Singles Are Stereotyped, Stigmatized, Ignored and Still Live Happily Ever After.” She writes in her <a href="//blogs.psychologytoday.com/blog/living-single/200812/ed-rendell-says-janet-napolitano-has-no-life-because-she-is-single">blog at Psychology Today</a>:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">In the year 2008, a state governor says of another state governor that she has no life because she is single. When I used nearly exactly those words in a Singled Out chapter subtitle, &#8220;You don&#8217;t have anyone and you don&#8217;t have a life,&#8221; I was making fun of that belief! I was calling it a myth.</p>
+<p class="story-body-text" itemprop="articleBody">Some have mentioned that Rendell did not realize there was a live microphone beside him when he committed his act of singlism. I&#8217;m not sure it mattered. Too often, people who say these sorts of things do not even realize that they have said anything boorish. Singlism slips under the radar of our Prejudice Alert System. We really do need some consciousness-raising. Lots of it.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">So, at this point, Mr. Rendell has irked women with children, women without children, couples without children and the uncoupled. Can’t do much worse, right?</p>
+<p class="story-body-text" itemprop="articleBody">In clarifying and apologizing for his remarks, Mr. Rendell cited a conversation with former Gov. Tom Ridge of Pennsylvania, who served as the first homeland security secretary. He told Mr. Rendell that “you have to live that job every minute.”</p>
+<p class="story-body-text" itemprop="articleBody">“I think it&#8217;s clear, to do that job you have to be ready to work 24-7,” Mr. Rendell continued. “You can&#8217;t have another job, you can&#8217;t have an avocation you&#8217;re addicted to like golf or anything like that.”</p>
+<p class="story-body-text" itemprop="articleBody">Golf addicts: Consider yourselves disqualified from the cabinet.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//thecaucus.blogs.nytimes.com/2008/12/04/blogtalk-rendell-on-nepolitanos-no-life/" data-title="Blogtalk: Rendell on Napolitano&#8217;s &#8216;No Life&#8217;" data-description="Ed Rendell&#039;s comments about Janet Napolitano, caught by an open mike, were just vague enough to offend, well, just about everyone.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-883417">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">lordvoldemort</span>
+			<span class="comment-link">
+				<a href="#comment-883417" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:16 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>When I heard this on Anderson Cooper or whatever showed it first, I actually laughed. It&#8217;s mean, but still, can&#8217;t deny it&#8217;s funny.</p>
+<p>I remember around winter of 2001, a couple months after 9/11, Bill Maher still had his Politically Incorrect show. And he went after this one guy who was really high ranking in the national security apparatus who took off like two days when hs pregnant wife gave birth at the hospital. And Maher was like &#8220;Dude, you&#8217;re not giving birth, you&#8217;re wife is. Plant your ass at your desk and protect us from terrorists!!&#8221;</p>
+<p>I do think although mothers may be biased against, it&#8217;s soon becoming that fathers will be too. Kids can be an intermittent distraction at the very least, and a wholesale distraction at worst. This coming from a guy who plans to be a father one of these days.</p>
+<p>But&#8230; at least we won&#8217;t have to work Christmases. Does anyone else remember the movie &#8220;While You Were SLeeping&#8221; where Sandra Bullock got stuck working a holiday because she had &#8220;no life.&#8221; It turned out okay for her, she lived happily ever after.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883431">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ryan</span>
+			<span class="comment-link">
+				<a href="#comment-883431" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I&#8217;m not offended, though I can see why some may be, though it seems a bit of a waste of time to care too much about such things in these times.  Anyhoo, the reason I&#8217;m commenting is because I would like to note that the more I see of her the more I dislike Campbell Brown.  She&#8217;s that kid you went to school with who was never happy about anything and always whined about how unhappy he was everything.  Her having a show = :-(</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883437">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ryan</span>
+			<span class="comment-link">
+				<a href="#comment-883437" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>And now I see I left out an &#8220;about.&#8221;  That also = :-(</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883441">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Samuel</span>
+			<span class="comment-link">
+				<a href="#comment-883441" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr Rendell, stop digging :-)</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883505">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Roz</span>
+			<span class="comment-link">
+				<a href="#comment-883505" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This may have been a little green-eyed tinged remarked but I don&#8217;t think it was malicious.  It appears  that he was only saying that Napolitano has no outside obligations that would be considered as &#8220;no contest&#8221; to her job like children and a husband.  I&#8217;m sure women can work long, strenous hours as like any man &#8211; but being a woman, myself &#8211; I can see where there could be minor conflicts with raising a family and maintaining a marriage.  Anything is possible.</p>
+<p>As far as Campbell Brown making a big deal of the comment over on CNN &#8211; she needs to just chill out.  I&#8217;m for feminist rights but come on.  It is not against women to even think that a woman will act like&#8230;well, ur a woman.  More than anything, I just wish the idealism of being a woman is embraced.  We do have our own needs, ya know.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883517">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Oliver</span>
+			<span class="comment-link">
+				<a href="#comment-883517" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:41 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think saying those remarks are &#8220;sexist&#8221; is a bit of a stretch, so I&#8217;m glad to see this post inject a bit of reality into the discussion without grandstanding.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883535">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">CB</span>
+			<span class="comment-link">
+				<a href="#comment-883535" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:43 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It sounds like a comment that should really only offend Ms. Napolitano rather than all women or singles. </p>
+<p>It&#8217;s a statement that could be linked to the issue of sexism &#8211; but I don&#8217;t think it automatically makes a gender-based assumption. In my experience, I&#8217;ve heard the exact same comment made more about men.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883605">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Reality</span>
+			<span class="comment-link">
+				<a href="#comment-883605" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:58 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;So, at this point, Mr. Rendell has irked women with children, women without children, couples without children and the uncoupled. Can’t do much worse, right?&#8221;</p>
+<p>Look whose talking. </p>
+<p>Compared to the irksome, bothersome, really pesky and ithchy way you liberal peons of NYT have been through out the election cycle against Rs (Palin anyone), this pales in comperison.</p>
+<p>Get real, Sarah Wheaton and dont just type what U are aksed to by you WHITE Male Superiors. Think a little, rank and file.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883609">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">RB</span>
+			<span class="comment-link">
+				<a href="#comment-883609" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:59 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Does it matter if Mr. Rendell thinks Ms. Napolitano has a life or not? More important, does Ms. Napolitano care? I would doubt it, and I would bet she laughed when she heard about it. As a single with grown children, I&#8217;m not the least bit offended. It&#8217;s rather funny. Sensible people know what he meant. It&#8217;s only people who are insecure in their own choices who get all huffy about this kind of thing. Validation comes from within. Or it should, anyway.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883635">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">James</span>
+			<span class="comment-link">
+				<a href="#comment-883635" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>From what I can tell from the comment above, there is nothing terrible wrong with what Rendell said.  Sure, it wasn&#8217;t a suave thing to say as a Governor (or as any politician), but I fail to see anything insulting in it.</p>
+<p>From what I gather, he isn&#8217;t incorrect about the demanding nature of the Homeland Security position, and his statement, while certainly offending to Ms. Napolitano, could hardly be seen as offensive to anyone besides her specifically.</p>
+<p>The fact that people get up in arms about this is just ridiculous.  Why should we pretend that a demanding job is just as easily filled by anyone?  If she doesn&#8217;t have to maintain a marriage, or keep close to her children, she does have potentially more time to spend in this demanding cabinet post; the same would be true with any man selected for this position.  Can she be offended personally?  Certainly.  Can we be offended collectively?  Absolutely not.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883637">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Duckley</span>
+			<span class="comment-link">
+				<a href="#comment-883637" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Superficial &#8220;-isms&#8221; galore here, scraping the bottom of whichever lake seems opportune.</p>
+<p>Good work, media.</p>
+<p>And, please, don&#8217;t ever discuss what kind of job she&#8217;ll do, or how she&#8217;s likely to change the department, or what her opinions are on the current state of the country&#8230;</p>
+<p>Face it, Wheaton is just another Lazy Hack, taking advantage of the NY Times for a paycheck.</p>
+<p>Hey, Wheaton, do some WORK for a change.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883647">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Abby, Tucson, AZ</span>
+			<span class="comment-link">
+				<a href="#comment-883647" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:12 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Off topic but man have i got an idea for you.  I just got off email from two dear friends.  One is an artificial intelligence designer in Boston, the other a talented musician making $150K driving acts around in those big buses.  They&#8217;re both smart in their own ways, but the musician has a bigotted streak going way back in his Southern family.</p>
+<p>He forwards all the nasty, bigoted Obama stuff he gets to me, and tolerates my lecturers/replies about them.  I asked him to keep it up so I have a handle on this ugly stuff.  He predicts it will grow.  I&#8217;m hoping it will fall off after a while.</p>
+<p>The AI guy sent him a lecture and then forwarded his comment to me as well.  I hadn&#8217;t include the AI guy in my replies, because I don&#8217;t want to spook the musician from feeding me this evil stuff.</p>
+<p>This is more constructive than any opinion or lecture from a paper or TV talk show pundit.</p>
+<p>I just thought up this phrase, and I don&#8217;t want it used by guys like Rush or Bill before we have a chance to ruin it for them.</p>
+<p>What if we call all the vile racist &#8220;humor&#8221; going around the internet &#8220;Obamanation.&#8221;  It&#8217;s got a great ring to it.  I hope Rush and Bill haven&#8217;t used it yet.</p>
+<p>Any chance you or the Lede might be able to &#8220;coin&#8221; the phrase for us?  As in ,&#8221;Obamanation&#8221; on the web draws friends to examine the line between humor and hate&#8230;&#8221;</p>
+<p>I&#8217;ll just kick myself if this one&#8217;s slipped through our fingers.<br />
+Any takers?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883669">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mike A.</span>
+			<span class="comment-link">
+				<a href="#comment-883669" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:19 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Another home run for the Cult of The Offhand Comment. If Ms. Napolitano is not out there saying she&#8217;s offended, who really cares about this? Campbell Brown and Gail Collins are both hacks who obsess over issues of absolutely zero importance. Reading Gail Collins is like reading the Letter From The Editor section of Cosmo. Does it get any dumber? </p>
+<p>These two loons and some bloggers getting up in arms constitutes a media firestorm. As the comments above show, most people have more to be concerned with than Rendell&#8217;s person feelings. Maybe the NYT should stick to issues of import.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883671">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JP, milltown, nj</span>
+			<span class="comment-link">
+				<a href="#comment-883671" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>geez, everybody in america, get over it.</p>
+<p>&#8230;and while you&#8217;re at it, get over the political correctness that allows people in glass houses to throw stones.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883687">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Arun Mehta</span>
+			<span class="comment-link">
+				<a href="#comment-883687" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:28 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;Truth&#8221; hurts many times to those for whom the cap fits, even when expressed in a  not so subtle way.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883695">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Abby, Tucson, AZ</span>
+			<span class="comment-link">
+				<a href="#comment-883695" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:28 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Janet is fabulous!  Smart, focused, effective.  She didn&#8217;t stoop to conquer when she had the chance to prosecute that drug theft case against Cindy McCain.  She&#8217;s going to be sorely missed in AZ.</p>
+<p>What this whole topic reeks of is the inevitable Q we ask occasionally in AZ.  Is she gay?  Then we all agree no one cares and move on.  It&#8217;s always been that way in AZ . Kolbe was openly gay and no one EVER used it against him politically.</p>
+<p>If you catch a wiff of it, just remember the whisper campaign about  Ann Richards.  We&#8217;ll know Karl&#8217;s still trying to set off sink bombs at the school dance.</p>
+<p>After more than ten years, I don&#8217;t know and I don&#8217;t care.  It&#8217;s irrelevant.  Isn&#8217;t it was worth saying it an moving on?  Gay folk at the main page posts have said the same thing, and some singles are pointing out that they&#8217;re stratight.  </p>
+<p>Just calling it the way I see it.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883699">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">ny independent</span>
+			<span class="comment-link">
+				<a href="#comment-883699" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:34 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Now we know why Gov. Napolitano was chosen for a high- level and important cabinet position and Gov. Rendell was not. She knows when it&#8217;s best not to say anything, and he can&#8217;t seem to keep his mouth shut.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883721">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Michael a.</span>
+			<span class="comment-link">
+				<a href="#comment-883721" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:43 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Oh well, more ignorance and certainly more than a little green eyedness on the part of his honor Rendel&#8230;. It is unfortunate that the mic was open and the real Rendel raised his less than  PC head. The reference to the former Gov. Ridge further brings the green eyed aspect to the comment, so, I suppose that Gov. Rendel should not plan on any invitations to the Cabinet, and good riddence.<br />
+                                       So, you thought about Labor Sec.,<br />
+                                                  Michael A.<br />
+                                                  Buffalo, NY</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883803">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">ABH</span>
+			<span class="comment-link">
+				<a href="#comment-883803" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Lets be real, some jobs are not suited to having a family. It’s a double edge sword. When there is extra work in an office and someone has to stay overtime, it falls on a single person. When there is an opportunity for a promotion it goes to a single person. Having a family and children, forces parents to make sacrifices in their careers. If you know a job is 15 hours a day with few vacations, why would you hire a man or a woman that has children and needs to take time off?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883811">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Abby, Tucson, AZ</span>
+			<span class="comment-link">
+				<a href="#comment-883811" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I was serious.  Now those bums are gonna take this and use it to Uncle Tom Uncle Tom.  (Tom was the hero of the story: viral, protective, and self sacrificing.  The term is STILL used to describe its opposite.</p>
+<p>Here&#8217;s some background and you can quote me.  I got to make dinner, so I&#8217;ll do a lousy job of editing.</p>
+<p>As the theme song to the Jefferson&#8217;s starts up, African dancers perform a ceremony in what must have been a documentary before it was twisted to the purpose of the creator.</p>
+<p>&#8220;More like &#8220;cretin,&#8221; says Abby Tucson, AZ.  She forces  herself to open what she knows will be ugly, racist e-mails forwarded by her friend driving performing artists around the country.</p>
+<p>&#8220;I call this stuff &#8216;Obamanation,&#8217; she says.  &#8220;It&#8217;s like collecting folk art by exploitive makers, you know watermelons, exaggerated features; not real folk art by early African Americans.&#8221;</p>
+<p>Abby Tucson AZ doesn&#8217;t know quite where she stands herself.  &#8220;I always feel weird saying African American, bacause I thought I was bad stuff using &#8220;Black.&#8221; back in the sixties.&#8221;  We all could offer a lot on our changing awareness of race, humor and hate.</p>
+<p>&#8220;Hey, I don&#8217;t make the stuff, I just forward it&#8221; replied the sender when she finally had the courage to inquire where he stood on these emails.</p>
+<p>&#8220;Do you think this will eventually die down?&#8221; she asked him.</p>
+<p>&#8220;I think it&#8217;s gonna get a lot worse.&#8221;</p>
+<p>Then, Abby Tucson got a reply to the musician from their mutual friend who had also received the same forwards.  He&#8217;s an Artificial Intelligence designer in Boston.</p>
+<p>AI had his own ideas about it and had sent them to her as well.  She had held off sending her replies to all, but now that the discourse had begun it has demonstrated itself to be a great social way of discussing this sore subject.</p>
+<p>&#8220;We&#8217;re discussing history, perception, hyperboly, humor, race and hate.  I&#8217;m learning to appreciate this conversaton without fear.  I&#8217;ve always had a sick sense of humor.  i love Sarah Silverman and the vintage work of Odenkirk and Cross on Mr. Show.&#8221;  Gilmore goofs a character of a fat, angry CEO from the 1990&#8217;s show.  &#8220;My family built this company the old fashioned way&#8230;Selling people&#8230; to people!&#8221;</p>
+<p>&#8220;I&#8217;m not sure where I stand on the continuim of bigotry,&#8221; Abby admits.   I have friends who are offended by this humor as much as I am about &#8220;Obamanation.&#8221;</p>
+<p>&#8220;That&#8217;s what it is.  The abombinable racist humor on the internet trying to ridicule our President Elect.  Even Jackson got McCained.  You know, the secret black child story.  But it was true for Thurman.  And his daughter seemed to be a very graceful woman.  I guess Thurman can&#8217;t be all bad, and neither can my friend who forwards this &#8216;Obamanation.&#8221;</p>
+<p>Got to start dinner.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883813">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">John</span>
+			<span class="comment-link">
+				<a href="#comment-883813" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:23 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>How many more times will &#8220;Fast Eddie&#8221; Rendell have to apologize for his &#8220;off the cuff &#8221; remarks?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883827">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">jay</span>
+			<span class="comment-link">
+				<a href="#comment-883827" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:28 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I&#8217;m so tired with &#8220;isms&#8221; enough already. People get so offended over the most ridiculous stuff.  Maybe Rendell  shouldn&#8217;t have assumed that because this woman is single and childless that she does not have a life, but really, who gives a sh#t? really? People are that offended by this? Really?</p>
+<p>Not to mention, it is a somewhat valid point. Would you rather have someone that has no, or little, responsibilities outside of the appointed position, or someone that has to do that, and raise three kids and be a husband/wife&#8230;</p>
+<p>Singleism? Really? Absurd&#8230; </p>
+<p>absolutely insane&#8230;when real &#8220;isms&#8221; occur, the anger is understood, but this is just getting ridiculous and these people need to grow some tougher skin&#8230;</p>
+<p>oh I&#8217;m sorry, I didn&#8217;t mean to offend anyone out there that has dry, cracked, rough skin&#8230;excuse me for my skinism</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883835">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Nathan, 17</span>
+			<span class="comment-link">
+				<a href="#comment-883835" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>_Obama Nation_ is a book by Jerome R. Corsi.<br />
+Sorry Abby! ^^ I wish it hadn&#8217;t been written either.</p>
+<p>Yes, the same esteemed Corsi from the universally criticized yet hugely effective Swift Boat campaign.</p>
+<p>God Bless America.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-883869">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">J from GA</span>
+			<span class="comment-link">
+				<a href="#comment-883869" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:44 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Sexist?  No.  But it does reveal a perception among married people that sngle people have tons of free time.  It happens at work all the time-it&#8217;s assumed that people with spouses &#038; spawn aren&#8217;t nearly as available for extra work as their single colleagues.</p>
+<p>For anyone interested, there&#8217;s a great book about this issue-&#8220;Singled Out.&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-883917">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">John Bailo</span>
+			<span class="comment-link">
+				<a href="#comment-883917" title="Comment Permalink">
+					<span class="comment-date">December 4, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The only people who Democrats hate more than Republicans &#8212; are each other!</p>
+<p>I give this whole Left-Center coalition about 18 months before they&#8217;re at each other&#8217;s throats and asking for recall.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thecaucus.blogs.nytimes.com/2008/12/04/foodies-make-a-pitch-to-obama/" title="Foodies Make a Pitch to Obama">
+				Foodies Make a Pitch to Obama			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thecaucus.blogs.nytimes.com/2008/12/04/the-three-amigos-in-bhutan/" title="The Three Amigos, in Bhutan">
+				The Three Amigos, in Bhutan			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">The latest on President Obama, Congress and other political news from Washington -- and around the nation -- from the staff of The New York Times. </p>
+<ul class="refer">
+<li class="free"><a href="//thecaucus.blogs.nytimes.com/2007/06/29/caucus-chatter-2/">Caucus Chatter: A Q&A on reader comments.</a></li>
+</ul></div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//thecaucus.blogs.nytimes.com/2014/09/'> September 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/08/'> August 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/07/'> July 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/06/'> June 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/05/'> May 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/04/'> April 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/03/'> March 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/02/'> February 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2014/01/'> January 2014 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2013/12/'> December 2013 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2013/11/'> November 2013 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2013/10/'> October 2013 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2013/09/'> September 2013 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2013/08/'> August 2013 </option>
+	<option value='//thecaucus.blogs.nytimes.com/2013/07/'> July 2013 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//thecaucus.blogs.nytimes.com/2014/09/22/the-caucus-ends-its-campaign/" title="Read: The Caucus Ends Its Campaign">The Caucus Ends Its Campaign</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thecaucus.blogs.nytimes.com/2014/09/22/the-caucus-ends-its-campaign/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Caucus on Monday suspended its campaign. Follow First Draft, a fast-paced political briefing on all things Washington and elections. <a href="//thecaucus.blogs.nytimes.com/2014/09/22/the-caucus-ends-its-campaign/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thecaucus.blogs.nytimes.com/2014/09/20/sunday-breakfast-menu-sept-21/" title="Read: Sunday Breakfast Menu, Sept. 21">Sunday Breakfast Menu, Sept. 21</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thecaucus.blogs.nytimes.com/2014/09/20/sunday-breakfast-menu-sept-21/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Congress approved funding for equipping Syrian rebels against Islamic States and lawmakers will discuss their votes on several of the Sunday shows.<a href="//thecaucus.blogs.nytimes.com/2014/09/20/sunday-breakfast-menu-sept-21/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thecaucus.blogs.nytimes.com/2014/09/13/sunday-breakfast-menu-sept-14/" title="Read: Sunday Breakfast Menu, Sept. 14">Sunday Breakfast Menu, Sept. 14</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thecaucus.blogs.nytimes.com/2014/09/13/sunday-breakfast-menu-sept-14/"></a>
+				</span>			</h5>
+			<p class="summary">
+			President Obama vowed to &#8220;degrade and ultimately destroy&#8221; ISIS in a speech he gave on Wednesday. Lawmakers and analysts will discuss his strategy on the Sunday shows. <a href="//thecaucus.blogs.nytimes.com/2014/09/13/sunday-breakfast-menu-sept-14/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thecaucus.blogs.nytimes.com/2014/09/06/sunday-breakfast-menu-sept-7-2/" title="Read: Sunday Breakfast Menu, Sept. 7">Sunday Breakfast Menu, Sept. 7</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thecaucus.blogs.nytimes.com/2014/09/06/sunday-breakfast-menu-sept-7-2/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Lawmakers will weigh in on President Obama&#8217;s international coalition to fight Islamist militants.<a href="//thecaucus.blogs.nytimes.com/2014/09/06/sunday-breakfast-menu-sept-7-2/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thecaucus.blogs.nytimes.com/2014/08/30/sunday-breakfast-menu-aug-31/" title="Read: Sunday Breakfast Menu, Aug. 31">Sunday Breakfast Menu, Aug. 31</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thecaucus.blogs.nytimes.com/2014/08/30/sunday-breakfast-menu-aug-31/"></a>
+				</span>			</h5>
+			<p class="summary">
+			President Obama drew criticism on Thursday when he said, &#8220;we don&#8217;t have a strategy yet,&#8221; for military action against ISIS in Syria. Lawmakers will weigh in on Mr. Obama&#8217;s comments on the Sunday shows.<a href="//thecaucus.blogs.nytimes.com/2014/08/30/sunday-breakfast-menu-aug-31/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/NYTPolitics" title="Follow @NYTPolitics on twitter">@NYTPolitics</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTPolitics" title="Follow NYTPolitics on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/NYTPolitics" title="Follow @NYTPolitics on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-4',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":68,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

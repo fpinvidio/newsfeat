@@ -1,0 +1,2954 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Basil Recipes - NYT Cooking</title>
+
+    <script>
+      window.googletag = window.googletag || {};
+      window.googletag.cmd = window.googletag.cmd || [];
+    </script>
+
+    <script>
+      // nyt-a cookie required for Abra
+      document.cookie="nyt-a="+(document.cookie.match(/(?:^|;) *nyt-a=([^;]+)/)||[,btoa(String.fromCharCode.apply(String,(window.crypto||msCrypto).getRandomValues(new Uint8Array(18)))).replace(/\+/g,"-").replace(/\//g,"_")])[1]+";domain=.nytimes.com;path=/;expires="+new Date(+new Date+31536e6).toUTCString();
+
+      var NYTD=NYTD||{};NYTD.Abra=function(t){"use strict";function n(t){var n=i[t];return n&&n[1]||null}function e(t,n){if(t){var e,o,r=n[0],i=n[1],u=0,c=0;if(1!==i.length||4294967296!==i[0])for(e=a(t+" "+r)>>>0,u=0,c=0;o=i[u++];)if(e<(c+=o[0]))return o}}function o(n,e,o,a){s+="subject="+n+"&test="+encodeURIComponent(e)+"&variant="+encodeURIComponent(o||0)+"&url="+encodeURIComponent(t.location.href)+"&instant=1&skipAugment=true\n",a&&f.push(a),c||(c=t.setTimeout(r,0))}function r(){var n=new t.XMLHttpRequest,e=f;n.withCredentials=!0,n.open("POST",u),n.onreadystatechange=function(){var t,o;if(4==n.readyState)for(t=200==n.status?null:new Error(n.statusText);o=e.shift();)o(t)},n.send(s),s="",f=[],c=null}function a(t){for(var n,e,o,r,a,i,u,c=0,s=0,f=[],l=[n=1732584193,e=4023233417,~n,~e,3285377520],h=[],p=t.length;s<=p;)h[s>>2]|=(s<p?t.charCodeAt(s):128)<<8*(3-s++%4);for(h[u=p+8>>2|15]=p<<3;c<=u;c+=16){for(n=l,s=0;s<80;n=[0|[(i=((t=n[0])<<5|t>>>27)+n[4]+(f[s]=s<16?~~h[c+s]:i<<1|i>>>31)+1518500249)+((e=n[1])&(o=n[2])|~e&(r=n[3])),a=i+(e^o^r)+341275144,i+(e&o|e&r|o&r)+882459459,a+1535694389][0|s++/20],t,e<<30|e>>>2,o,r])i=f[s-3]^f[s-8]^f[s-14]^f[s-16];for(s=5;s;)l[--s]=l[s]+n[s]|0}return l[0]}var i,u,c,s="",f=[];return n.init=function(n,r){var a,c,s,f,l,h=[],p=(t.document.cookie.match(/(^|;) *nyt-a=([^;]*)/)||[])[2],d=(t.document.cookie.match(/(^|;) *ab7=([^;]*)/)||[])[2],m=new RegExp("[?&]abra(=([^&#]*))"),g=m.exec(t.location.search);if(g&&g[2]&&(d=d?g[2]+"&"+d:g[2]),i)throw new Error("can't init twice");if(u=r,i={},d)for(d=decodeURIComponent(d).split("&"),a=0;a<d.length;a++)l=d[a].split("="),l[0]in i||(i[l[0]]=[,l[1],1],o("ab-alloc",l[0],l[1]),l[1]&&h.push(l[0]+"="+l[1]));for(a=0;a<n.length;a++)s=n[a],(c=s[0])in i||(f=e(p,s)||[],i[c]=f,f[1]&&h.push(c.replace(/[^\w-]/g)+"="+(""+f[1]).replace(/[^\w-]/g)),f[2]&&o("ab-alloc",c,f[1]));h.length&&t.document.documentElement.setAttribute("data-nyt-ab",h.join(" "))},n.reportExposure=function(n,e){var r=i[n];r&&r[2]?o("ab-expose",n,r[1],e):e&&t.setTimeout(function(){e(null)},0)},n}(this);
+
+        NYTD.Abra.init([
+  [
+    "COOK_TP3_FreePayBalance",
+    [
+      [
+        429496730,
+        "0_control",
+        1
+      ],
+      [
+        429496730,
+        "1_paid",
+        1
+      ],
+      [
+        3435973836,
+        "holdout",
+        0
+      ]
+    ]
+  ]
+], '//et.nytimes.com');
+    </script>
+
+    <meta charset="UTF-8">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dea65dec80","applicationID":"38387186","transactionName":"cAleTBBWWVVRRBtDVlFJQ10DS1ZRG0JVUw==","queueTime":0,"applicationTime":101,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="sourceApp" content="nytcooking" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+<meta name="CG" content="npv">
+<meta name="SCG" content="cooking">
+<meta name="PT" content="tag">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="apple-itunes-app"
+      content="app-id=911422904">
+
+
+  <meta property="og:url" content="https://cooking.nytimes.com/tag/basil"/>
+  <link rel="canonical" href="https://cooking.nytimes.com/tag/basil" />
+
+  <meta property="og:title" content="Basil Recipes" />
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="NYT Cooking"/>
+<meta property="article:publisher" content="https://www.facebook.com/nytcooking"/>
+<meta property="fb:app_id" content="422306974586348" />
+
+  <meta property="og:image" content="https://int.nyt.com/applications/cooking/static/images/NYTCookingLogo.png"/>
+
+  <meta property="og:description" content="Browse and save the best basil recipes on New York Times Cooking."/>
+
+    <meta name="description" content="Browse and save the best basil recipes on New York Times Cooking."/>
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nytfood"/>
+
+
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+  <script async src="//typeface.nytimes.com/plw8kql.js"></script>
+
+
+      <script>
+   dataLayer = [{
+     'pageCategory': 'tagLanding',
+   }];
+  </script>
+
+
+      <link rel="stylesheet" media="all" href="//int.nyt.com/applications/cooking/b6a7ace/assets/core.min.css" />
+
+    <meta name="apple-mobile-web-app-title" content="NYT Cooking">
+<meta name="application-name" content="NYT Cooking">
+
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+
+  </head>
+
+  <body class="tag-landing-page logged-out    ">
+      <div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://cooking.nytimes.com/tag/basil&quot;,&quot;location&quot;:&quot;/tag/basil&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;cooking.nytimes.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/tag/basil&quot;,&quot;search&quot;:null,&quot;httpAcceptLanguage&quot;:&quot;en&quot;,&quot;serverSide&quot;:false}"></div>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="SiteNavWrapped" data-props="{&quot;user&quot;:null,&quot;modalState&quot;:{&quot;isOpen&quot;:false},&quot;popover&quot;:{&quot;dragToFolderPopover&quot;:{&quot;isDisplayed&quot;:false},&quot;savePopover&quot;:{&quot;isDisplayed&quot;:false,&quot;saveType&quot;:&quot;&quot;},&quot;signUpPopover&quot;:{&quot;isShown&quot;:false},&quot;subscribePopover&quot;:{&quot;isDisplayed&quot;:false}},&quot;app&quot;:{&quot;consumerMarketingURL&quot;:&quot;https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?return_url=https://cooking.nytimes.com&quot;,&quot;env&quot;:&quot;production&quot;,&quot;saveRecapURL&quot;:&quot;https://ckg-user-recommendations-dot-nyt-ckg-prd.appspot.com/recommendations/users&quot;,&quot;staticAssetHost&quot;:&quot;//int.nyt.com/applications/cooking/static&quot;},&quot;page&quot;:{&quot;type&quot;:&quot;tag-landing-page&quot;,&quot;id&quot;:null,&quot;viewableType&quot;:null},&quot;editorsCollections&quot;:{},&quot;promos&quot;:{&quot;homepage&quot;:null,&quot;recipeDetails&quot;:null,&quot;isFetchingPromos&quot;:false},&quot;recirculationBand&quot;:{&quot;suggestionsData&quot;:[],&quot;isTablet&quot;:false,&quot;promo&quot;:null},&quot;searchBarIsOpen&quot;:false,&quot;sidebarIsOpen&quot;:false,&quot;siteSearch&quot;:{&quot;query&quot;:&quot;&quot;,&quot;isFocused&quot;:false,&quot;autocomplete&quot;:{&quot;tags&quot;:null,&quot;recipes&quot;:null,&quot;guides&quot;:null}},&quot;topNav&quot;:{&quot;label&quot;:&quot;Thanksgiving&quot;,&quot;path&quot;:&quot;/topics/thanksgiving&quot;}}" data-trace="true" data-dom-id="siteNavMount"></div>
+    <div id="siteNavMount"><div data-reactroot="" data-reactid="1" data-react-checksum="492260466"><div class="nytc---sitenav---siteNav" data-reactid="2"><div class="nytc---sitenav---siteNavWrap" data-reactid="3"><div class="nytc---maintenancemodebanner---maintenance-mode-banner" data-reactid="4"><span data-reactid="5">Sorry! We&#x27;re currently performing maintenance on the site. Certain actions are not working at this time. Check back later.</span></div><div class="nytc---hamburgerbtn---hamburgerWrapper" data-reactid="6"><a class="nytc---hamburgerbtn---hamburger" data-reactid="7"><span data-reactid="8">Menu</span></a></div><a href="/?action=click&amp;module=nav&amp;region=logo&amp;pgType=tag-landing-page" class="nytc---sitelogo---logoWrapper" alt="Cooking with The New York Times" data-reactid="9"><div class="nytc---sitelogo---logo" data-reactid="10"></div></a><a class="nytc---mobileSearchIcon---iconWrapper nytc---mobileSearchIcon---position" data-reactid="11"><span class="nytc---mobileSearchIcon---icon" data-reactid="12"></span></a><div class="nytc---mask---hidden nytc---mask---showNavBlackBG" data-reactid="13"></div></div></div><div class="nytc---sitesearch---siteSearch nytc---sitesearch---isNotLoggedIn nytc---sitesearch---isNotSubscribed" data-reactid="14"><div class="nytc---sitesearchbar---inputWrap" data-reactid="15"><form class="nytc---sitesearchbar---searchForm" action="/" data-reactid="16"><span class="nytc---sitesearchbar---clearQuery" data-reactid="17">X</span><input type="search" aria-label="Search NYT Cooking" class="nytc---sitesearchbar---searchInput" placeholder="What would you like to cook?" value="" data-reactid="18"/><span class="nytc---sitesearchbar---searchBTN" data-reactid="19">Search</span></form></div></div></div></div>
+    
+<script id="consoleReplayLog">
+console.log.apply(console, ["[SERVER] RENDERED SiteNavWrapped to dom node with id: siteNavMount with railsContext:","{\"inMailer\":false,\"i18nLocale\":\"en\",\"i18nDefaultLocale\":\"en\",\"href\":\"https://cooking.nytimes.com/tag/basil\",\"location\":\"/tag/basil\",\"scheme\":\"https\",\"host\":\"cooking.nytimes.com\",\"port\":null,\"pathname\":\"/tag/basil\",\"search\":null,\"httpAcceptLanguage\":\"en\",\"serverSide\":true}"]);
+</script>
+
+
+    <div id="appContainer"></div>
+    <div id="alertBannerMount"></div>
+
+
+
+    <div id="container">
+      
+
+  <div id="content" class="landing-content">
+    <section id="latest-recipes">
+      <div class="latest-container grid-wrap">
+        <h1 id="tag-title">Basil Recipes</h1>
+        <section class="recipe-card-list track-card-params"
+                 data-layout="grid"
+                 data-analytics-category="Tag | basil"
+                 data-tracker-module="Tag Page Recipe Card"
+                 data-tracker-region="basil"
+                 data-page-type="tag"
+                 >
+          
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019719"
+           data-url="/recipes/1019719-basil-pesto"
+           data-seo-image-url="https://static01.nyt.com/images/2018/11/11/magazine/11mag-eat-slide-S92W/11mag-eat-slide-S92W-threeByTwoMediumAt2X.png"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019719-basil-pesto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/11/11/magazine/11mag-eat-slide-S92W/11mag-eat-slide-S92W-mediumThreeByTwo252.png' data-pin-media='https://static01.nyt.com/images/2018/11/11/magazine/11mag-eat-slide-S92W/11mag-eat-slide-S92W-verticalTwoByThree735.png' alt='Image for Basil Pesto'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019719-basil-pesto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Basil Pesto"
+          data-share-title="Basil+Pesto+by+Samin+Nosrat">
+        Basil Pesto
+      </h3>
+
+
+        <p class="card-byline">By Samin Nosrat</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019604"
+           data-url="/recipes/1019604-spicy-spaghetti-with-caramelized-onions-and-herbs"
+           data-seo-image-url="https://static01.nyt.com/images/2018/10/03/dining/03Appe1/merlin_143727540_b02861fe-df6f-4fc4-8cb4-441940147547-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019604-spicy-spaghetti-with-caramelized-onions-and-herbs"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/10/03/dining/03Appe1/merlin_143727540_b02861fe-df6f-4fc4-8cb4-441940147547-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/10/03/dining/03Appe1/03Appe1-verticalTwoByThree735.jpg' alt='Image for Spicy Spaghetti With Caramelized Onions and Herbs'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019604-spicy-spaghetti-with-caramelized-onions-and-herbs"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spicy Spaghetti With Caramelized Onions and Herbs"
+          data-share-title="Spicy+Spaghetti+With+Caramelized+Onions+and+Herbs+by+Melissa+Clark">
+        Spicy Spaghetti With Caramelized Onions and Herbs
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019582"
+           data-url="/recipes/1019582-cold-pork-rice-noodles-with-cucumber-and-peanuts"
+           data-seo-image-url="https://static01.nyt.com/images/2018/09/16/dining/sc-pork-noodles/sc-pork-noodles-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019582-cold-pork-rice-noodles-with-cucumber-and-peanuts"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/09/16/dining/sc-pork-noodles/sc-pork-noodles-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/09/16/dining/sc-pork-noodles/sc-pork-noodles-verticalTwoByThree735.jpg' alt='Image for Cold Pork Rice Noodles With Cucumber and Peanuts'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019582-cold-pork-rice-noodles-with-cucumber-and-peanuts"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Cold Pork Rice Noodles With Cucumber and Peanuts"
+          data-share-title="Cold+Pork+Rice+Noodles+With+Cucumber+and+Peanuts+by+Sarah+Copeland">
+        Cold Pork Rice Noodles With Cucumber and Peanuts
+      </h3>
+
+
+        <p class="card-byline">By Sarah Copeland</p>
+    </div>
+
+      <p class="cooking-time">25 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019461"
+           data-url="/recipes/1019461-spicy-rice-noodles-with-crispy-tofu-and-spinach"
+           data-seo-image-url="https://static01.nyt.com/images/2018/08/08/dining/rice-noodles/rice-noodles-threeByTwoMediumAt2X-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019461-spicy-rice-noodles-with-crispy-tofu-and-spinach"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/08/08/dining/rice-noodles/rice-noodles-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2018/08/08/dining/rice-noodles/rice-noodles-verticalTwoByThree735-v3.jpg' alt='Image for Spicy Rice Noodles With Crispy Tofu and Spinach'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019461-spicy-rice-noodles-with-crispy-tofu-and-spinach"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spicy Rice Noodles With Crispy Tofu and Spinach"
+          data-share-title="Spicy+Rice+Noodles+With+Crispy+Tofu+and+Spinach+by+Sarah+Jampel">
+        Spicy Rice Noodles With Crispy Tofu and Spinach
+      </h3>
+
+
+        <p class="card-byline">By Sarah Jampel</p>
+    </div>
+
+      <p class="cooking-time">50 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019436"
+           data-url="/recipes/1019436-roasted-eggplant-and-buffalo-mozzarella-pizza"
+           data-seo-image-url="https://static01.nyt.com/images/2018/08/01/dining/01Apperex/merlin_141638667_cacfad71-c247-42b0-958d-74c0a60b1331-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019436-roasted-eggplant-and-buffalo-mozzarella-pizza"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/08/01/dining/01Apperex/merlin_141638667_cacfad71-c247-42b0-958d-74c0a60b1331-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/08/01/dining/01Apperex/01Apperex-verticalTwoByThree735.jpg' alt='Image for Roasted Eggplant and Buffalo Mozzarella Pizza'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019436-roasted-eggplant-and-buffalo-mozzarella-pizza"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Roasted Eggplant and Buffalo Mozzarella Pizza"
+          data-share-title="Roasted+Eggplant+and+Buffalo+Mozzarella+Pizza+by+Melissa+Clark">
+        Roasted Eggplant and Buffalo Mozzarella Pizza
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 1/2 hours, plus rising</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019423"
+           data-url="/recipes/1019423-garlicky-tomato-toast-pan-con-tomate"
+           data-seo-image-url="https://static01.nyt.com/images/2018/07/25/dining/25Kitchrex/merlin_140281260_8ed91524-a231-443c-88ba-bed9b26a7448-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019423-garlicky-tomato-toast-pan-con-tomate"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/07/25/dining/25Kitchrex/merlin_140281260_8ed91524-a231-443c-88ba-bed9b26a7448-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/07/25/dining/25Kitchrex/25Kitchrex-verticalTwoByThree735.jpg' alt='Image for Garlicky Tomato Toast (Pan Con Tomate)'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019423-garlicky-tomato-toast-pan-con-tomate"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Garlicky Tomato Toast (Pan Con Tomate)"
+          data-share-title="Garlicky+Tomato+Toast+%28Pan+Con+Tomate%29+by+David+Tanis">
+        Garlicky Tomato Toast (Pan Con Tomate)
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019322"
+           data-url="/recipes/1019322-grilled-summer-beans-with-garlic-and-herbs"
+           data-seo-image-url="https://static01.nyt.com/images/2018/07/04/dining/04woodrex2/04woodrex2-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019322-grilled-summer-beans-with-garlic-and-herbs"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/07/04/dining/04woodrex2/04woodrex2-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/07/04/dining/04woodrex2/04woodrex2-verticalTwoByThree735.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019322-grilled-summer-beans-with-garlic-and-herbs"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Grilled Summer Beans With Garlic and Herbs"
+          data-share-title="Grilled+Summer+Beans+With+Garlic+and+Herbs+by+Steven+Raichlen">
+        Grilled Summer Beans With Garlic and Herbs
+      </h3>
+
+
+        <p class="card-byline">By Steven Raichlen</p>
+    </div>
+
+      <p class="cooking-time">20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019373"
+           data-url="/recipes/1019373-ricotta-stuffed-shells-with-pesto"
+           data-seo-image-url="https://static01.nyt.com/images/2018/06/27/dining/27kitchrex/merlin_139481913_9caf8a67-39b0-410a-a330-36f7624d6d8f-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019373-ricotta-stuffed-shells-with-pesto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/06/27/dining/27kitchrex/merlin_139481913_9caf8a67-39b0-410a-a330-36f7624d6d8f-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/06/27/dining/27kitchrex/27kitchrex-verticalTwoByThree735.jpg' alt='Image for Ricotta-Stuffed Shells With Pesto'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019373-ricotta-stuffed-shells-with-pesto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Ricotta-Stuffed Shells With Pesto"
+          data-share-title="Ricotta-Stuffed+Shells+With+Pesto+by+David+Tanis">
+        Ricotta-Stuffed Shells With Pesto
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">1 1/2 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019385"
+           data-url="/recipes/1019385-creamy-white-beans-with-herb-oil"
+           data-seo-image-url="https://static01.nyt.com/images/2018/07/11/dining/colu-creamy-beans-horizontal/colu-creamy-beans-horizontal-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019385-creamy-white-beans-with-herb-oil"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/07/11/dining/colu-creamy-beans-horizontal/colu-creamy-beans-horizontal-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/07/11/dining/colu-creamy-beans-horizontal/colu-creamy-beans-horizontal-verticalTwoByThree735.jpg' alt='Image for Creamy White Beans With Herb Oil'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019385-creamy-white-beans-with-herb-oil"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Creamy White Beans With Herb Oil"
+          data-share-title="Creamy+White+Beans+With+Herb+Oil+by+Colu+Henry">
+        Creamy White Beans With Herb Oil
+      </h3>
+
+
+        <p class="card-byline">By Colu Henry</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019346"
+           data-url="/recipes/1019346-chicken-milanese-with-tomato-mozzarella-and-basil-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2018/06/13/dining/13apperex/13apperex-threeByTwoMediumAt2X-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019346-chicken-milanese-with-tomato-mozzarella-and-basil-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/06/13/dining/13apperex/13apperex-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2018/06/13/dining/13apperex/13apperex-verticalTwoByThree735.jpg' alt='Image for Chicken Milanese With Tomato, Mozzarella and Basil Salad'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019346-chicken-milanese-with-tomato-mozzarella-and-basil-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chicken Milanese With Tomato, Mozzarella and Basil Salad"
+          data-share-title="Chicken+Milanese+With+Tomato%2C+Mozzarella+and+Basil+Salad+by+Melissa+Clark">
+        Chicken Milanese With Tomato, Mozzarella and Basil Salad
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019285"
+           data-url="/recipes/1019285-asparagus-frittata-with-burrata-and-herb-pesto"
+           data-seo-image-url="https://static01.nyt.com/images/2018/05/02/dining/02kitchen1/02kitchen1-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019285-asparagus-frittata-with-burrata-and-herb-pesto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/05/02/dining/02kitchen1/02kitchen1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/05/02/dining/02kitchen1/02kitchen1-verticalTwoByThree735.jpg' alt='Image for Asparagus Frittata With Burrata and Herb Pesto'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019285-asparagus-frittata-with-burrata-and-herb-pesto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Asparagus Frittata With Burrata and Herb Pesto"
+          data-share-title="Asparagus+Frittata+With+Burrata+and+Herb+Pesto+by+David+Tanis">
+        Asparagus Frittata With Burrata and Herb Pesto
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019286"
+           data-url="/recipes/1019286-green-goddess-dressing"
+           data-seo-image-url="https://static01.nyt.com/images/2018/04/29/magazine/29mag-eat3/29mag-eat3-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019286-green-goddess-dressing"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/04/29/magazine/29mag-eat3/29mag-eat3-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/04/29/magazine/29mag-eat3/29mag-eat3-verticalTwoByThree735.jpg' alt='Image for Green Goddess Dressing'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019286-green-goddess-dressing"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Green Goddess Dressing"
+          data-share-title="Green+Goddess+Dressing+by+Samin+Nosrat">
+        Green Goddess Dressing
+      </h3>
+
+
+        <p class="card-byline">By Samin Nosrat</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019272"
+           data-url="/recipes/1019272-lemon-herb-buttermilk-dressing"
+           data-seo-image-url="https://static01.nyt.com/images/2018/04/15/magazine/15mag-eat1/15mag-eat1-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019272-lemon-herb-buttermilk-dressing"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/04/15/magazine/15mag-eat1/15mag-eat1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/04/15/magazine/15mag-eat1/15mag-eat1-verticalTwoByThree735.jpg' alt='Image for Lemon-Herb Buttermilk Dressing'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019272-lemon-herb-buttermilk-dressing"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Lemon-Herb Buttermilk Dressing"
+          data-share-title="Lemon-Herb+Buttermilk+Dressing+by+Francis+Lam">
+        Lemon-Herb Buttermilk Dressing
+      </h3>
+
+
+        <p class="card-byline">By Francis Lam</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019084"
+           data-url="/recipes/1019084-spinach-lasagna-with-fennel-sausage"
+           data-seo-image-url="https://static01.nyt.com/images/2018/01/13/dining/13kitchen-sub/merlin_130382348_b8e4f5e4-c731-43f9-a9ac-335d1a351163-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019084-spinach-lasagna-with-fennel-sausage"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/01/13/dining/13kitchen-sub/merlin_130382348_b8e4f5e4-c731-43f9-a9ac-335d1a351163-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/01/13/dining/13kitchen-sub/13kitchen-sub-verticalTwoByThree735.jpg' alt='Image for Spinach Lasagna With Fennel Sausage'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019084-spinach-lasagna-with-fennel-sausage"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spinach Lasagna With Fennel Sausage"
+          data-share-title="Spinach+Lasagna+With+Fennel+Sausage+by+David+Tanis">
+        Spinach Lasagna With Fennel Sausage
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">3 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018946"
+           data-url="/recipes/1018946-herbed-garlic-bread"
+           data-seo-image-url="https://static01.nyt.com/images/2017/10/01/magazine/01eat1/01eat1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018946-herbed-garlic-bread"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/10/01/magazine/01eat1/01eat1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/10/01/magazine/01eat1/01eat1-verticalTwoByThree735.jpg' alt='Image for Herbed Garlic Bread'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018946-herbed-garlic-bread"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Herbed Garlic Bread"
+          data-share-title="Herbed+Garlic+Bread+by+Samin+Nosrat">
+        Herbed Garlic Bread
+      </h3>
+
+
+        <p class="card-byline">By Samin Nosrat</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018900"
+           data-url="/recipes/1018900-grilled-pork-loin-with-herbs-cumin-and-garlic"
+           data-seo-image-url="https://static01.nyt.com/images/2017/08/30/dining/30APPE1/30APPE1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018900-grilled-pork-loin-with-herbs-cumin-and-garlic"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/08/30/dining/30APPE1/30APPE1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/08/30/dining/30APPE1/30APPE1-verticalTwoByThree735.jpg' alt='Image for Grilled Pork Loin With Herbs, Cumin and Garlic'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018900-grilled-pork-loin-with-herbs-cumin-and-garlic"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Grilled Pork Loin With Herbs, Cumin and Garlic"
+          data-share-title="Grilled+Pork+Loin+With+Herbs%2C+Cumin+and+Garlic+by+Melissa+Clark">
+        Grilled Pork Loin With Herbs, Cumin and Garlic
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">40 minutes, plus 8 hours&#39; marinating</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018907"
+           data-url="/recipes/1018907-long-cooked-vegetables"
+           data-seo-image-url="https://static01.nyt.com/images/2017/08/27/magazine/27eat1/27eat1-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018907-long-cooked-vegetables"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/08/27/magazine/27eat1/27eat1-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2017/08/27/magazine/27eat1/27eat1-superJumbo-v2.jpg' alt='Image for Long-Cooked Vegetables'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018907-long-cooked-vegetables"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Long-Cooked Vegetables"
+          data-share-title="Long-Cooked+Vegetables+by+Samin+Nosrat">
+        Long-Cooked Vegetables
+      </h3>
+
+
+        <p class="card-byline">By Samin Nosrat</p>
+    </div>
+
+      <p class="cooking-time">2 hours 20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018878"
+           data-url="/recipes/1018878-tomatoes-with-basil-and-anchovies"
+           data-seo-image-url="https://static01.nyt.com/images/2017/08/09/dining/09KITCHEN1/09KITCHEN1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018878-tomatoes-with-basil-and-anchovies"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/08/09/dining/09KITCHEN1/09KITCHEN1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/08/09/dining/09KITCHEN1/09KITCHEN1-verticalTwoByThree735.jpg' alt='Image for Tomatoes With Basil and Anchovies'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018878-tomatoes-with-basil-and-anchovies"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Tomatoes With Basil and Anchovies"
+          data-share-title="Tomatoes+With+Basil+and+Anchovies+by+David+Tanis">
+        Tomatoes With Basil and Anchovies
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">20 minutes  </p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018871"
+           data-url="/recipes/1018871-chilled-watermelon-soup"
+           data-seo-image-url="https://static01.nyt.com/images/2017/08/02/dining/02KITCHEN1/02KITCHEN1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018871-chilled-watermelon-soup"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/08/02/dining/02KITCHEN1/02KITCHEN1-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2017/08/02/dining/02KITCHEN1/02KITCHEN1-verticalTwoByThree735-v2.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018871-chilled-watermelon-soup"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chilled Watermelon Soup"
+          data-share-title="Chilled+Watermelon+Soup+by+David+Tanis">
+        Chilled Watermelon Soup
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">30 minutes, plus chilling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018835"
+           data-url="/recipes/1018835-pasta-with-mint-basil-and-fresh-mozzarella"
+           data-seo-image-url="https://static01.nyt.com/images/2017/07/19/dining/19APPE1/19APPE1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018835-pasta-with-mint-basil-and-fresh-mozzarella"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/07/19/dining/19APPE1/19APPE1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/07/19/dining/19APPE1/19APPE1-verticalTwoByThree735.jpg' alt='Image for Pasta With Mint, Basil and Fresh Mozzarella'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018835-pasta-with-mint-basil-and-fresh-mozzarella"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pasta With Mint, Basil and Fresh Mozzarella"
+          data-share-title="Pasta+With+Mint%2C+Basil+and+Fresh+Mozzarella+by+Melissa+Clark">
+        Pasta With Mint, Basil and Fresh Mozzarella
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018849"
+           data-url="/recipes/1018849-classic-caprese-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2017/07/21/dining/21COOKING-CAPRESE-SALAD2/21COOKING-CAPRESE-SALAD2-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018849-classic-caprese-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/07/21/dining/21COOKING-CAPRESE-SALAD2/21COOKING-CAPRESE-SALAD2-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/07/21/dining/21COOKING-CAPRESE-SALAD2/21COOKING-CAPRESE-SALAD2-verticalTwoByThree735.jpg' alt='Image for Classic Caprese Salad'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018849-classic-caprese-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Classic Caprese Salad"
+          data-share-title="Classic+Caprese+Salad+by+Melissa+Clark">
+        Classic Caprese Salad
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018830"
+           data-url="/recipes/1018830-chicken-and-tomato-salad-with-sumac-and-herbs"
+           data-seo-image-url="https://static01.nyt.com/images/2017/07/12/dining/12CHEF2/12CHEF2-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018830-chicken-and-tomato-salad-with-sumac-and-herbs"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/07/12/dining/12CHEF2/12CHEF2-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/07/12/dining/12CHEF2/12CHEF2-verticalTwoByThree735.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018830-chicken-and-tomato-salad-with-sumac-and-herbs"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chicken and Tomato Salad With Sumac and Herbs"
+          data-share-title="Chicken+and+Tomato+Salad+With+Sumac+and+Herbs+by+Oliver+Strand">
+        Chicken and Tomato Salad With Sumac and Herbs
+      </h3>
+
+
+        <p class="card-byline">By Oliver Strand</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018822"
+           data-url="/recipes/1018822-classic-pasta-alla-norma"
+           data-seo-image-url="https://static01.nyt.com/images/2017/07/05/dining/05KITCHEN1/05KITCHEN1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018822-classic-pasta-alla-norma"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/07/05/dining/05KITCHEN1/05KITCHEN1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/07/05/dining/05KITCHEN1/05KITCHEN1-verticalTwoByThree735.jpg' alt='Image for Classic Pasta alla Norma'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018822-classic-pasta-alla-norma"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Classic Pasta alla Norma"
+          data-share-title="Classic+Pasta+alla+Norma+by+David+Tanis">
+        Classic Pasta alla Norma
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018792"
+           data-url="/recipes/1018792-beef-tenderloin-stuffed-with-herb-pesto"
+           data-seo-image-url="https://static01.nyt.com/images/2017/06/14/dining/14KITCHEN1/14KITCHEN1-videoSixteenByNineJumbo1600-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018792-beef-tenderloin-stuffed-with-herb-pesto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/06/14/dining/14KITCHEN1/14KITCHEN1-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2017/06/14/dining/14KITCHEN1/14KITCHEN1-verticalTwoByThree735-v3.jpg' alt='Image for Beef Tenderloin Stuffed With Herb Pesto'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018792-beef-tenderloin-stuffed-with-herb-pesto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Beef Tenderloin Stuffed With Herb Pesto"
+          data-share-title="Beef+Tenderloin+Stuffed+With+Herb+Pesto+by+David+Tanis">
+        Beef Tenderloin Stuffed With Herb Pesto
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">1 1/2 hours, plus 30 minutes&#39; seasoning</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018747"
+           data-url="/recipes/1018747-soupe-au-pistou-vegetable-soup-with-pesto"
+           data-seo-image-url="https://static01.nyt.com/images/2017/04/30/magazine/30eat/30eat-videoSixteenByNineJumbo1600-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018747-soupe-au-pistou-vegetable-soup-with-pesto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/04/30/magazine/30eat/30eat-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2017/04/30/magazine/30eat/30eat-verticalTwoByThree735-v2.jpg' alt='Image for Soupe au Pistou (Vegetable Soup With Pesto)'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018747-soupe-au-pistou-vegetable-soup-with-pesto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Soupe au Pistou (Vegetable Soup With Pesto)"
+          data-share-title="Soupe+au+Pistou+%28Vegetable+Soup+With+Pesto%29+by+Tejal+Rao">
+        Soupe au Pistou (Vegetable Soup With Pesto)
+      </h3>
+
+
+        <p class="card-byline">By Tejal Rao</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018674"
+           data-url="/recipes/1018674-neapolitan-easter-bread-casatiello"
+           data-seo-image-url="https://static01.nyt.com/images/2017/04/05/dining/05BAKING1/05BAKING1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018674-neapolitan-easter-bread-casatiello"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/04/05/dining/05BAKING1/05BAKING1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/04/05/dining/05BAKING1/05BAKING1-verticalTwoByThree735.jpg' alt='Image for Neapolitan Easter Bread (Casatiello)'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018674-neapolitan-easter-bread-casatiello"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Neapolitan Easter Bread (Casatiello)"
+          data-share-title="Neapolitan+Easter+Bread+%28Casatiello%29+by+Yotam+Ottolenghi">
+        Neapolitan Easter Bread (Casatiello)
+      </h3>
+
+
+        <p class="card-byline">By Yotam Ottolenghi</p>
+    </div>
+
+      <p class="cooking-time">1 1/2 hours, plus 1 hour rising</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018703"
+           data-url="/recipes/1018703-classic-meat-tortellini-with-tomato-sauce"
+           data-seo-image-url="https://static01.nyt.com/images/2017/04/07/dining/07PASTAGUIDE4/07PASTAGUIDE4-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018703-classic-meat-tortellini-with-tomato-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/04/07/dining/07PASTAGUIDE4/07PASTAGUIDE4-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/04/07/dining/07PASTAGUIDE4/07PASTAGUIDE4-verticalTwoByThree735.jpg' alt='Image for Classic Meat Tortellini With Tomato Sauce'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018703-classic-meat-tortellini-with-tomato-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Classic Meat Tortellini With Tomato Sauce"
+          data-share-title="Classic+Meat+Tortellini+With+Tomato+Sauce+by+Samin+Nosrat">
+        Classic Meat Tortellini With Tomato Sauce
+      </h3>
+
+
+        <p class="card-byline">By Samin Nosrat</p>
+    </div>
+
+      <p class="cooking-time">1 hour 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018627"
+           data-url="/recipes/1018627-spicy-calamari-with-fregola"
+           data-seo-image-url="https://static01.nyt.com/images/2017/03/08/dining/08KITCH1/08KITCH1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018627-spicy-calamari-with-fregola"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/03/08/dining/08KITCH1/08KITCH1-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2017/03/08/dining/08KITCH1/08KITCH1-verticalTwoByThree735.jpg' alt='Image for Spicy Calamari With Fregola'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018627-spicy-calamari-with-fregola"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spicy Calamari With Fregola"
+          data-share-title="Spicy+Calamari+With+Fregola+by+David+Tanis">
+        Spicy Calamari With Fregola
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018257"
+           data-url="/recipes/1018257-burrata-with-romano-beans-and-roasted-eggplant"
+           data-seo-image-url="https://static01.nyt.com/images/2016/08/18/multimedia/clark-romano-beans/clark-romano-beans-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018257-burrata-with-romano-beans-and-roasted-eggplant"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/08/18/multimedia/clark-romano-beans/clark-romano-beans-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/08/18/multimedia/clark-romano-beans/clark-romano-beans-verticalTwoByThree735.jpg' alt='Image for Burrata With Romano Beans and Roasted Eggplant'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018257-burrata-with-romano-beans-and-roasted-eggplant"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Burrata With Romano Beans and Roasted Eggplant"
+          data-share-title="Burrata+With+Romano+Beans+and+Roasted+Eggplant+by+Melissa+Clark">
+        Burrata With Romano Beans and Roasted Eggplant
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018255"
+           data-url="/recipes/1018255-pineapple-rhubarb-salad-with-basil-cream"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/6.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018255-pineapple-rhubarb-salad-with-basil-cream"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-6 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/6.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018255-pineapple-rhubarb-salad-with-basil-cream"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pineapple-Rhubarb &#39;Salad&#39; With Basil Cream"
+          data-share-title="Pineapple-Rhubarb+%27Salad%27+With+Basil+Cream+by+Michel+Richard">
+        Pineapple-Rhubarb &#39;Salad&#39; With Basil Cream
+      </h3>
+
+
+        <p class="card-byline">By Michel Richard</p>
+    </div>
+
+      <p class="cooking-time">20 minutes, plus additional time for freezing, if necessary</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018253"
+           data-url="/recipes/1018253-lamb-loin-with-basil-crust-and-fennel"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/4.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018253-lamb-loin-with-basil-crust-and-fennel"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-4 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/4.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018253-lamb-loin-with-basil-crust-and-fennel"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Lamb Loin With Basil Crust and Fennel"
+          data-share-title="Lamb+Loin+With+Basil+Crust+and+Fennel+by+Michel+Richard">
+        Lamb Loin With Basil Crust and Fennel
+      </h3>
+
+
+        <p class="card-byline">By Michel Richard</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018237"
+           data-url="/recipes/1018237-charred-tomatoes-with-egg-anchovies-and-bread-crumbs"
+           data-seo-image-url="https://static01.nyt.com/images/2016/08/10/dining/10KITCH-WEB1/10KITCH-WEB1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018237-charred-tomatoes-with-egg-anchovies-and-bread-crumbs"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/08/10/dining/10KITCH-WEB1/10KITCH-WEB1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/08/10/dining/10KITCH-WEB1/10KITCH-WEB1-verticalTwoByThree735.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018237-charred-tomatoes-with-egg-anchovies-and-bread-crumbs"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Charred Tomatoes With Egg, Anchovies and Bread Crumbs"
+          data-share-title="Charred+Tomatoes+With+Egg%2C+Anchovies+and+Bread+Crumbs+by+David+Tanis">
+        Charred Tomatoes With Egg, Anchovies and Bread Crumbs
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018235"
+           data-url="/recipes/1018235-basic-pesto-sauce"
+           data-seo-image-url="https://static01.nyt.com/images/2016/08/03/dining/03SauceSUB3/03SauceSUB3-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018235-basic-pesto-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/08/03/dining/03SauceSUB3/03SauceSUB3-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/08/03/dining/03SauceSUB3/03SauceSUB3-verticalTwoByThree735.jpg' alt='Image for Basic Pesto Sauce'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018235-basic-pesto-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Basic Pesto Sauce"
+          data-share-title="Basic+Pesto+Sauce+by+Samin+Nosrat">
+        Basic Pesto Sauce
+      </h3>
+
+
+        <p class="card-byline">By Samin Nosrat</p>
+    </div>
+
+      <p class="cooking-time">20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018212"
+           data-url="/recipes/1018212-creamy-corn-pasta-with-basil"
+           data-seo-image-url="https://static01.nyt.com/images/2016/07/13/multimedia/clark-corn-pasta/clark-corn-pasta-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018212-creamy-corn-pasta-with-basil"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/07/13/multimedia/clark-corn-pasta/clark-corn-pasta-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/07/13/multimedia/clark-corn-pasta/clark-corn-pasta-verticalTwoByThree735.jpg' alt='Image for Creamy Corn Pasta With Basil'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018212-creamy-corn-pasta-with-basil"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Creamy Corn Pasta With Basil"
+          data-share-title="Creamy+Corn+Pasta+With+Basil+by+Melissa+Clark">
+        Creamy Corn Pasta With Basil
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018091"
+           data-url="/recipes/1018091-marinated-celery-salad-with-chickpeas-and-parmesan"
+           data-seo-image-url="https://static01.nyt.com/images/2016/05/04/dining/04KNIVES-SALAD1SUB1/04KNIVES-SALAD1SUB1-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018091-marinated-celery-salad-with-chickpeas-and-parmesan"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/05/04/dining/04KNIVES-SALAD1SUB1/04KNIVES-SALAD1SUB1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/05/04/dining/04KNIVES-SALAD1SUB1/04KNIVES-SALAD1SUB1-verticalTwoByThree735.jpg' alt='Image for Marinated Celery Salad With Chickpeas and Parmesan'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018091-marinated-celery-salad-with-chickpeas-and-parmesan"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Marinated Celery Salad With Chickpeas and Parmesan"
+          data-share-title="Marinated+Celery+Salad+With+Chickpeas+and+Parmesan+by+Julia+Moskin">
+        Marinated Celery Salad With Chickpeas and Parmesan
+      </h3>
+
+
+        <p class="card-byline">By Julia Moskin</p>
+    </div>
+
+      <p class="cooking-time">30 to 40 minutes, plus marinating</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018064"
+           data-url="/recipes/1018064-persian-herbed-rice"
+           data-seo-image-url="https://static01.nyt.com/images/2016/04/20/dining/20JPAPPE5/20JPAPPE5-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018064-persian-herbed-rice"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/04/20/dining/20JPAPPE5/20JPAPPE5-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2016/04/20/dining/20JPAPPE5/20JPAPPE5-verticalTwoByThree735-v2.jpg' alt='Image for Persian Herbed Rice'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018064-persian-herbed-rice"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Persian Herbed Rice"
+          data-share-title="Persian+Herbed+Rice+by+Melissa+Clark">
+        Persian Herbed Rice
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 1/2 hours, plus 1 hour soaking</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017768"
+           data-url="/recipes/1017768-soft-herb-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2015/10/26/dining/26COOKING_HERBSALAD1/26COOKING_HERBSALAD1-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017768-soft-herb-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2015/10/26/dining/26COOKING_HERBSALAD1/26COOKING_HERBSALAD1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2015/10/26/dining/26COOKING_HERBSALAD1/26COOKING_HERBSALAD1-verticalTwoByThree735.jpg' alt='Image for Soft Herb Salad'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017768-soft-herb-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Soft Herb Salad"
+          data-share-title="Soft+Herb+Salad+by+Julia+Moskin">
+        Soft Herb Salad
+      </h3>
+
+
+        <p class="card-byline">By Julia Moskin</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017537"
+           data-url="/recipes/1017537-pecan-pesto"
+           data-seo-image-url="https://static01.nyt.com/images/2015/07/27/dining/27PECANPESTO/27PECANPESTO-superJumbo-v4.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017537-pecan-pesto"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2015/07/27/dining/27PECANPESTO/27PECANPESTO-mediumThreeByTwo252-v5.jpg' data-pin-media='https://static01.nyt.com/images/2015/07/27/dining/27PECANPESTO/27PECANPESTO-verticalTwoByThree735-v2.jpg' alt='Image for Pecan Pesto'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017537-pecan-pesto"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pecan Pesto"
+          data-share-title="Pecan+Pesto+by+The+New+York+Times">
+        Pecan Pesto
+      </h3>
+
+
+        <p class="card-byline">By The New York Times</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017575"
+           data-url="/recipes/1017575-spicy-thai-pork-tenderloin-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2015/07/29/dining/29APPE_web/29APPE_web-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017575-spicy-thai-pork-tenderloin-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2015/07/29/dining/29APPE_web/29APPE_web-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2015/07/29/dining/29APPE_web/29APPE_web-verticalTwoByThree735-v2.jpg' alt='Image for Spicy Thai Pork Tenderloin Salad'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017575-spicy-thai-pork-tenderloin-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spicy Thai Pork Tenderloin Salad"
+          data-share-title="Spicy+Thai+Pork+Tenderloin+Salad+by+Melissa+Clark">
+        Spicy Thai Pork Tenderloin Salad
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">40 minutes, plus marinating time</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017457"
+           data-url="/recipes/1017457-jiwons-blueberry-basil-soju"
+           data-seo-image-url="https://static01.nyt.com/images/2015/06/14/magazine/14drink2/14mag-14drink-t_CA0-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017457-jiwons-blueberry-basil-soju"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2015/06/14/magazine/14drink2/14drink2-mediumThreeByTwo252-v4.jpg' data-pin-media='https://static01.nyt.com/images/2015/06/14/magazine/14drink2/14drink2-verticalTwoByThree735-v2.jpg' alt='Image for Jiwon’s Blueberry-Basil Soju'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017457-jiwons-blueberry-basil-soju"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Jiwon’s Blueberry-Basil Soju"
+          data-share-title="Jiwon%E2%80%99s+Blueberry-Basil+Soju+by+Rosie+Schaap">
+        Jiwon’s Blueberry-Basil Soju
+      </h3>
+
+
+        <p class="card-byline">By Rosie Schaap</p>
+    </div>
+
+      <p class="cooking-time">7 days</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016763"
+           data-url="/recipes/1016763-roasted-okra-and-onions"
+           data-seo-image-url="https://static01.nyt.com/images/2014/07/24/multimedia/severson-okra/severson-okra-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016763-roasted-okra-and-onions"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/07/24/multimedia/severson-okra/severson-okra-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/07/24/multimedia/severson-okra/severson-okra-superJumbo.jpg' alt='Image for Roasted Okra and Onions'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016763-roasted-okra-and-onions"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Roasted Okra and Onions"
+          data-share-title="Roasted+Okra+and+Onions+by+Kim+Severson">
+        Roasted Okra and Onions
+      </h3>
+
+
+        <p class="card-byline">By Kim Severson</p>
+    </div>
+
+      <p class="cooking-time">20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016750"
+           data-url="/recipes/1016750-garlic-shrimp-brochettes"
+           data-seo-image-url="https://static01.nyt.com/images/2014/08/19/dining/shrimpbrochette/shrimpbrochette-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016750-garlic-shrimp-brochettes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/08/19/dining/shrimpbrochette/shrimpbrochette-mediumThreeByTwo252-v2.jpg' data-pin-media='https://static01.nyt.com/images/2014/08/19/dining/shrimpbrochette/shrimpbrochette-verticalTwoByThree735-v2.jpg' alt='Image for Garlic Shrimp Brochettes'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016750-garlic-shrimp-brochettes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Garlic Shrimp Brochettes"
+          data-share-title="Garlic+Shrimp+Brochettes+by+David+Tanis">
+        Garlic Shrimp Brochettes
+      </h3>
+
+
+        <p class="card-byline">By David Tanis</p>
+    </div>
+
+      <p class="cooking-time">45 minutes, plus at least 1 hour marinating</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016749"
+           data-url="/recipes/1016749-feta-stuffed-grilled-flatbread"
+           data-seo-image-url="https://static01.nyt.com/images/2014/08/14/multimedia/clark-flatbread/clark-flatbread-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016749-feta-stuffed-grilled-flatbread"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/08/14/multimedia/clark-flatbread/clark-flatbread-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/08/14/multimedia/clark-flatbread/clark-flatbread-superJumbo.jpg' alt='Image for Feta-Stuffed Grilled Flatbread'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016749-feta-stuffed-grilled-flatbread"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Feta-Stuffed Grilled Flatbread"
+          data-share-title="Feta-Stuffed+Grilled+Flatbread+by+Melissa+Clark">
+        Feta-Stuffed Grilled Flatbread
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 1/2 hours, plus rising time</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016728"
+           data-url="/recipes/1016728-grilled-skirt-steak-with-garlic-and-herbs"
+           data-seo-image-url="https://static01.nyt.com/images/2014/08/05/multimedia/clark-skirt-steak/clark-skirt-steak-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016728-grilled-skirt-steak-with-garlic-and-herbs"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/08/05/multimedia/clark-skirt-steak/clark-skirt-steak-videoSixteenByNine310-v2.jpg' data-pin-media='https://static01.nyt.com/images/2014/08/05/multimedia/clark-skirt-steak/clark-skirt-steak-superJumbo-v2.jpg' alt='Image for Grilled Skirt Steak With Garlic and Herbs'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016728-grilled-skirt-steak-with-garlic-and-herbs"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Grilled Skirt Steak With Garlic and Herbs"
+          data-share-title="Grilled+Skirt+Steak+With+Garlic+and+Herbs+by+Melissa+Clark">
+        Grilled Skirt Steak With Garlic and Herbs
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">25 minutes, plus at least 30 minutes’ marinating</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016659"
+           data-url="/recipes/1016659-chilled-corn-soup-with-basil"
+           data-seo-image-url="https://static01.nyt.com/images/2014/07/09/multimedia/clark-corn-soup/clark-corn-soup-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016659-chilled-corn-soup-with-basil"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/07/09/multimedia/clark-corn-soup/clark-corn-soup-videoSixteenByNine310-v2.jpg' data-pin-media='https://static01.nyt.com/images/2014/07/09/multimedia/clark-corn-soup/clark-corn-soup-verticalTwoByThree735-v2.jpg'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016659-chilled-corn-soup-with-basil"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Chilled Corn Soup With Basil"
+          data-share-title="Chilled+Corn+Soup+With+Basil+by+Melissa+Clark">
+        Chilled Corn Soup With Basil
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016617"
+           data-url="/recipes/1016617-mint-or-basil-ice-cream"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/18.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016617-mint-or-basil-ice-cream"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-18 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/18.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016617-mint-or-basil-ice-cream"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Mint or Basil Ice Cream"
+          data-share-title="Mint+or+Basil+Ice+Cream+by+Melissa+Clark">
+        Mint or Basil Ice Cream
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">25 minutes, plus several hours’ cooling, chilling and freezing</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015232"
+           data-url="/recipes/1015232-green-goddess-roasted-chicken"
+           data-seo-image-url="https://static01.nyt.com/images/2013/08/23/dining/video-clark-greengoddess/video-clark-greengoddess-articleLarge.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015232-green-goddess-roasted-chicken"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2013/08/23/dining/video-clark-greengoddess/video-clark-greengoddess-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2013/08/23/dining/video-clark-greengoddess/video-clark-greengoddess-articleLarge.jpg' alt='Image for Green Goddess Roasted Chicken'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015232-green-goddess-roasted-chicken"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Green Goddess Roasted Chicken"
+          data-share-title="Green+Goddess+Roasted+Chicken+by+Melissa+Clark">
+        Green Goddess Roasted Chicken
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 1/4 hours plus at least 6 hours marinating</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015170"
+           data-url="/recipes/1015170-lasagna-with-pistou-and-mushrooms"
+           data-seo-image-url="https://static01.nyt.com/images/2013/10/01/science/04recipehealth/04recipehealth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015170-lasagna-with-pistou-and-mushrooms"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2013/10/01/science/04recipehealth/04recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2013/10/01/science/04recipehealth/04recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Lasagna With Pistou and Mushrooms'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015170-lasagna-with-pistou-and-mushrooms"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Lasagna With Pistou and Mushrooms"
+          data-share-title="Lasagna+With+Pistou+and+Mushrooms+by+Martha+Rose+Shulman">
+        Lasagna With Pistou and Mushrooms
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">1 hour 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+        </section>
+
+        <div id="show-more-recipes" class="show-more-with-popular">
+
+  <div class="btn-group">
+    <button class="btn-std btn-default btn-large show-more-btn ladda-button grey-spinner" data-style="normal" data-spinner-size="36">Show More Recipes</button>
+  </div>
+
+    <div class="popular-searches">
+      <h3>Or try our popular searches</h3>
+      <div class="popular-searches-btn-group">
+  <a href="/search?q=&filters[meal_types][]=easy" class="btn-std btn-flat-rounded btn-flat-easy">Easy</a>
+  <a href="/search?q=&filters[special_diets][]=vegetarian" class="btn-std btn-flat-rounded btn-flat-vegetarian">Vegetarian</a>
+  <a href="/search?q=&filters[dish_types][]=project" class="btn-std btn-flat-rounded btn-flat-weekend-projects">Weekend Projects</a>
+  <a href="/search?q=&filters[dish_types][]=times classics" class="btn-std btn-flat-rounded btn-flat-classic">Classic</a>
+  <a href="/search?q=&filters[meal_types][]=quick" class="btn-std btn-flat-rounded btn-flat-quick">Quick</a>
+  <a href="/search?q=&filters[special_diets][]=healthy" class="btn-std btn-flat-rounded btn-flat-healthy">Healthy</a>
+</div>
+
+    </div>
+</div>
+
+      </div>
+    </section>
+  </div>
+
+
+      <footer id="footer">
+  <div class="footer-wrap">
+      <div class="footer-body clearfix">
+  <div class="container">
+    
+<div class="newsletter-container">
+  <form id="footer-newsletter-email" class="newsletter-form" method="POST" novalidate>
+      <h3 class="title">Get Our Newsletter</h3>
+      <span class="description">Get recipes, tips and NYT special offers delivered straight to your inbox. Opt out or <a class="contact-us-link" href="http://www.nytimes.com/help/index.html">contact us</a> anytime.</span>
+      <input class="newsletter-input genericInputField" type="email" name="email" placeholder="Add Your Email" />
+      <button type="submit" class="red-button button">Sign Up</button>
+      <div class="error-msg">Please enter a valid email address.</div>
+  </form>
+</div>
+
+
+    <div class="promo-container">
+      <div class="share-links">
+        <span class="blurb">Follow Cooking</span>
+        <a class="pinterest" target="_blank" rel="noreferrer noopener" href="https://www.pinterest.com/nytcooking/" alt="Visit NYT Cooking on Pinterest"></a>
+        <a class="fb" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/nytcooking" alt="Visit NYT Cooking on Facebook"></a>
+        <a class="twitter" target="_blank" rel="noreferrer noopener" href="https://twitter.com/nytfood" alt="Visit NYT Cooking on Twitter"></a>
+      </div>
+      <div class="ios">
+        <span class="blurb">Cooking For iPad &amp; iPhone</span>
+        <a class="icon-appstore-gray" target="_blank" rel="noreferrer noopener" href="http://appstore.com/nytcooking" alt="Download the iOS NYT Cooking app"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer-links">
+      <div class="container">
+        <div class="product-info">
+          <section class="about-us">
+            <h3 class="sub-heading">About Us</h3>
+              <p class="description">NYT Cooking is a subscription service of The New York Times. It is a digital cookbook and cooking guide alike, available on all platforms, that helps home cooks of every level discover, save and organize the world’s best recipes, while also helping them become better, more competent cooks. <a target="_blank" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?campaignId=79RLU" rel="noreferrer noopener" class="subscribe">Subscribe now</a> for full access.</p>
+          </section>
+          <section class="more">
+            <div class="learn-more">
+              <h3 class="sub-heading learn-shop">Learn More</h3>
+              <ul>
+                <li><a href="/ourcooks" class="footer-link">Our Cooks</a></li>
+                <li><a href="/see-our-features" class="footer-link">See Our Features</a></li>
+                <li><a href="/frequently-asked-questions" class="footer-link">FAQ</a></li>
+                <li><a href="/tools" class="footer-link">Tools for Saving</a></li>
+                <li><a target="_blank" href="https://www.nytimes.com/food" rel="noreferrer noopener" class="footer-link">NYTimes.com/food</a></li>
+                <li><a href="mailto:cookingcare@nytimes.com" class="footer-link send-feedback" id="customer-care-email">Send Us Feedback</a></li>
+              </ul>
+            </div>
+            <div class="shop">
+              <h3 class="sub-heading learn-shop">Shop</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.nytimes.com/subscriptions/Multiproduct/cooking_gift.html?campaignId=7HYRF" rel="noreferrer noopener" class="footer-link">Gift Subscription</a></li>
+                <h4 class="cookbooks">Cookbooks</h4>
+                <li><a href="https://store.nytimes.com/products/new-essentials-of-french-cooking?utm_source=NYT_Cooking_Website&utm_medium=referral&utm_campaign=French_Cookbook&utm_content=footer"  target="_blank" rel="noreferrer noopener" class="footer-link">“The New Essentials of French Cooking”</a></li>
+                <li><a target="_blank" href="https://store.nytimes.com/products/personalized-cookbook?utm_source=NYT_Cooking_Website&utm_medium=referral&utm_campaign=MYO_Cookbook&utm_content=footer" rel="noreferrer noopener" class="footer-link">“Make-Your-Own Cookbook: Dinner”</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <section class="legal">
+          <ul>
+            <li>
+              <a href="http://www.nytco.com" itemprop="copyrightNotice" class="legal-info">
+                &copy;
+                <span itemprop="copyrightHolder provider sourceOrganization" itemscope itemtype="http://schema.org/Corporation" itemid="http://www.nytimes.com">
+                  <span itemprop="name">The New York Times Company</span>
+                  <meta itemprop="tickerSymbol" content="NYSE NYT"/>
+                </span>
+              </a>
+            </li>
+            <li><a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html" class="legal-info">Privacy Policy</a></li>
+            <li><a href="http://www.nytimes.com/content/help/rights/terms/terms-of-service.html" class="legal-info">Terms of Service</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        Sorry, your changes didn&#8217;t save.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="icon-close-grey"></div>
+      <div class="modal-body"></div>
+      <div class="modal-footer btn-group">
+        <button type="button" class="btn-std btn-default cancel-btn">NO</button>
+        <button type="button" class="btn-std btn-primary ok-btn">YES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<script id="card-organize-tooltip" type="template">
+  <div class="collections-container">
+    <% if (!collections || !collections.length) { %>
+      <div class="no-collection-message">
+        <div class="no-collection-headline">Organize Your Recipes</div>
+        <div class="no-collection-body">Keep your Recipe Box organized by adding this recipe to a collection.</div>
+      </div>
+    <% } else {%>
+      <div class="header">Add to an Existing Collection:</div>
+      <ul>
+        <% collections.forEach(function(collection) { %>
+        <% var containsRecipe = _.contains(savedCollections, collection.id) ? 'contains-recipe' : ''; %>
+        <li class="<%= containsRecipe %>" data-id="<%= collection.id %>">
+        <span class="name"><%= _.escape(collection.name) %></span>
+        <span class="check-mark"></span>
+        </li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <div class="create-collection">
+      <form class="new-collection-form">
+        <input class="new-collection-input" autocomplete="off" placeholder='<%= (!collections || !collections.length) ? 'e.g., "Dinner Party Ideas"' : 'Create New Collection'%>'>
+        <div class="btn-primary new-collection-form-spinner hide" data-spinner-size="24"></div>
+        <button class="btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</script>
+
+<script id="card-organize-tooltip-second-save" type="template">
+  <div class="collections-container">
+    <% if (!collections || !collections.length) { %>
+      <div class="no-collection-message">
+        <div class="no-collection-headline">Success!</div>
+        <div class="no-collection-body">This recipe has been saved to your Recipe Box.</div>
+      </div>
+    <% } else {%>
+      <div class="header">Add to an Existing Collection:</div>
+      <ul>
+        <% collections.forEach(function(collection) { %>
+        <% var containsRecipe = _.contains(savedCollections, collection.id) ? 'contains-recipe' : ''; %>
+        <li class="<%= containsRecipe %>" data-id="<%= collection.id %>">
+        <span class="name"><%= _.escape(collection.name) %></span>
+        <span class="check-mark"></span>
+        </li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <div class="create-collection">
+      <form class="new-collection-form">
+        <input class="new-collection-input" autocomplete="off" placeholder='<%= (!collections || !collections.length) ? 'e.g., "Dinner Party Ideas"' : 'Create New Collection'%>'>
+        <div class="btn-primary new-collection-form-spinner hide" data-spinner-size="24"></div>
+        <button class="btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</script>
+
+<script id="remove-recipe-confirmation" type="template">
+  Are you sure you want to remove <b><%= _.escape(recipeName) %></b> from <%= collectionName ? '<b>' + _.escape(collectionName) + '</b>' : 'your recipe box' %>?
+</script>
+
+<script id="collection-item" type="template">
+
+  <li class="collection removable" data-collection-id="" data-collection-slug="-">
+  <a class="details needsclick" href="#">
+    <span class="name"></span>
+    <span class="count">0</span>
+    <span class="remove-icon"></span>
+  </a>
+  <span class="selected-arrow"></span>
+  <form class="inline-edit-form">
+    <input class="inline-edit">
+  </form>
+</li>
+
+</script>
+
+
+<script id="collection-delete-confirmation" type="template">
+  Are you sure you want to delete your folder <b><%= _.escape(name) %></b>?
+  <% if (extraDescription) { %>
+    Your recipes will still be saved under &ldquo;Saved Recipes.&rdquo;
+  <% } %>
+</script>
+
+<script id="regi-tooltip-content" type="template">
+  <a href="" class="regitip-login">Log in</a> or <a href="" class="regitip-regi">Sign up</a> <%= action %>.
+</script>
+
+<script id="tooltip-template" type="template">
+  <div class="popover <%= type %>" role="tooltip">
+    <div class="arrow"></div>
+    <div class="icon-close-grey <%= showCloseBtn ? '' : 'hidden' %>"></div>
+    <h3 class="popover-title"></h3>
+    <% if (body) { %>
+      <div class="popover-body"><%= body %></div>
+    <% } %>
+    <div class="popover-content"></div>
+  </div>
+</script>
+
+<script id="parse-msg-tmpl" type="template">
+  <div class="parse-message"><%= parse_msg %></div>
+</script>
+
+<script id="show-more-btn-tmpl" type="template">
+  <div class="btn-group">
+    <button class="btn-std btn-default show-more-<%= isReplies ? 'replies' : 'notes' %>-btn ladda-button grey-spinner" data-style="normal" data-spinner-size="17">Show More<%= isReplies ? ' Replies' : ' Notes' %></button>
+  </div>
+</script>
+
+<script id="onboarding-popover-template" type="template">
+  <button class="feature-onboarding-close onboarding-dismiss icon icon-close">Close</button>
+  <h3 class="feature-onboarding-title"><%= title %></h3>
+  <span class="icon onboarding-logo-icon <%= icon %>"></span>
+  <p class="feature-onboarding-content"><%= content %></p>
+  <button class="feature-onboarding-btn onboarding-dismiss">Got It</button>
+</script>
+
+
+    
+<script>
+  try {
+    bootstrap = window.bootstrap || {};
+    bootstrap.initialState = window.bootstrap.initialState || {};
+    bootstrap.initialState.features= {"promos_enabled":true,"optimizely_snippet":false,"tagx":true,"maintenance_mode":false,"disable_search":false,"chunk_search_populate_job":false,"publish_versioned_event_page_versions":false,"elasticsearch_live_updates_enabled":true,"paywall":true,"paywall_frontend":true,"paywall_debug":false,"hide_third_party_images":true,"all_guides_are_free":false,"subscription_info_service":true,"enroll_all_users_in_free_trial":true,"new_newsletter_subscribe_module":true,"paid_post":false,"recently_viewed_api":true,"recently_viewed_frontend":true,"abra_snippet":false,"features_onboarding":true,"sync_saves_for_recently_saved_service":true,"recently_viewed_jobs":true,"send_to_grocery_list":true,"json_kidd":true,"restrict_api_access":true,"grandfathering":true,"app_association_file":true,"include_promo_in_homepage_api":true,"save_recap":true,"react_notes":false,"sync_updated_recipes_on_gcp":true,"recently_viewed_band":true,"disable_newsletter_subscription_job":false,"disable_subscribe_email_job":false,"disable_cookie_refresh_call":false,"disable_recently_viewed_archive":true,"free_content_dashboard":true,"helix_api":true,"editors_collections_carousel":true,"editors_collections_new_cards":false,"new_listy":true,"gdpr_cookie_banner":true,"recently_viewed_sidekiq":true,"dfp_rules_logic":true,"check_third_party_tracker":true,"saved_recap_sidekiq":true,"weekly_planning":true,"weekly_planning_api":true,"test_paywall_5755":false,"baking_jobs":false,"survey_bucket1":false,"survey_bucket2":false,"survey_bucket3":false,"survey_bucket4":false,"survey_bucket5":false,"defer_css":false,"modal_window_api":true,"paywall_updates_2018":true,"thanksgiving_2018":true};
+    bootstrap.initialState.growler = {
+      type: null,
+      msg: null,
+    };
+    bootstrap.initialState.app = {
+      env:               'production',
+      debug:             false,
+      consumerMarketingURL: 'https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?return_url=https://cooking.nytimes.com',
+      saveRecapURL: 'https://ckg-user-recommendations-dot-nyt-ckg-prd.appspot.com/recommendations/users',
+    };
+    bootstrap.initialState.topNav = {
+      // TODO: Remove this and actually fix broken tests
+      label: "Thanksgiving",
+      path: "/topics/thanksgiving",
+    };
+    bootstrap.initialState.page = {
+      hasAccessState: false,
+      isFree: true,
+      type: 'tag-landing-page',
+      id: null,
+      viewableType: '',
+    };
+    bootstrap.initialState.popover = {
+      dragPopover: {
+        isDisplayed: true,
+      },
+      dragToFolderPopover: {
+        isDisplayed: false,
+      },
+      savePopover: {
+        isDisplayed: false,
+        saveType: '',
+      },
+      signUpPopover: {
+        isShown: false
+      },
+      subscribePopover: {
+        isDisplayed: false,
+      },
+    };
+    bootstrap.initialState.siteSearch = {
+      query: "",
+      isFocused: false,
+      autocomplete: {
+        tags: null,
+        recipes: null,
+        guides: null,
+      },
+    };
+    bootstrap.initialState.searchBarIsOpen = false;
+    bootstrap.initialState.sidebarIsOpen = false;
+    bootstrap.initialState.recirculationBand = {"suggestionsData":[],"isTablet":false,"promo":null}
+    bootstrap.initialState.editorsCollections = {}
+    bootstrap.release = "b6a7ace";
+  } catch(e) {}
+</script>
+
+
+    <script>
+      bootstrap = window.bootstrap || {};
+      bootstrap.page = {
+        env:               'production',
+        debug:             false,
+        name:              'tag-landing-page',
+        smartFoldersEnum:  [{"term":"all","uri_name":"all","key":"","display":"Saved Recipes","recipe_tag_ids":null,"fallback_image":null},{"term":"breakfast","uri_name":"breakfast","key":"meal_types","display":"Breakfast","recipe_tag_ids":[129],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/breakfast.jpg"},{"term":"brunch","uri_name":"brunch","key":"meal_types","display":"Brunch","recipe_tag_ids":[130],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/brunch.jpg"},{"term":"lunch","uri_name":"lunch","key":"meal_types","display":"Lunch","recipe_tag_ids":[131],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/lunch.jpg"},{"term":"snack","uri_name":"snack","key":"meal_types","display":"Snack","recipe_tag_ids":[136],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/snack.jpg"},{"term":"appetizer","uri_name":"appetizer","key":"meal_types","display":"Appetizer","recipe_tag_ids":[4],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/appetizer.jpg"},{"term":"soups","uri_name":"soups","key":"dish_types","display":"Soups","recipe_tag_ids":[63],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/soups.jpg"},{"term":"sides","uri_name":"sides","key":"courses","display":"Sides","recipe_tag_ids":[3],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/sides.jpg"},{"term":"dinner","uri_name":"dinner","key":"meal_types","display":"Dinner","recipe_tag_ids":[128],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/dinner.jpg"},{"term":"drinks","uri_name":"drinks","key":"dish_types","display":"Drinks","recipe_tag_ids":[66,67,68,88],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/drinks.jpg"},{"term":"dessert","uri_name":"dessert","key":"courses","display":"Dessert","recipe_tag_ids":[2],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/dessert.jpg"},{"term":"vegetarian","uri_name":"vegetarian","key":"diet_types","display":"Vegetarian","recipe_tag_ids":[225],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/vegetarian.jpg"}],
+        staticAssetHost:         '//int.nyt.com/applications/cooking/static',
+      };
+    </script>
+
+    
+
+    <script src="https://a1.nyt.com/analytics/json-kidd.min.js"></script>
+
+    <script src="//int.nyt.com/applications/cooking/b6a7ace/assets/core.bundle.js"></script>
+  </body>
+</html>

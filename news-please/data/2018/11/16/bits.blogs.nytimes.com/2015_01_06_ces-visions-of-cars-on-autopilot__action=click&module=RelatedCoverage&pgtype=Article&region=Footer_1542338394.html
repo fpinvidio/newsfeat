@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-bits section-technology"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-bits section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-bits section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-bits section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="channels" content="NytNow" />
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/bits/CES: Visions of Cars on Autopilot ( 20150106 )" />
+<meta name="communityAssetURL" content="//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003433619"><meta name="author" content="Molly Wood" />
+<meta name="CLMST" content="Molly Wood" />
+<meta name="byl" content="Molly Wood" />
+<meta name="GBLC" content="C.E.S.;CES 2015">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1420578655" />
+<meta name="PUD" content="20150106" />
+<meta name="pdate" content="20150106" />
+<meta name="ptime" content="20150106161055" />
+<meta name="utime" content="20150108211133" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-01-08T21:11:33-05:00" />
+<meta name="DISPLAYDATE" content="January 6, 2015" />
+<meta name="dat" content="January 6, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Technology" />
+<meta name="CG" content="Technology" />
+<meta name="SCG" content="bits" />
+<meta name="BN" content="bits" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Automobiles;Driverless and Semiautonomous Vehicles;International Consumer Electronics Show">
+<meta property="article:tag" content="Automobiles" />
+<meta property="article:tag" content="Driverless and Semiautonomous Vehicles" />
+<meta property="article:tag" content="International Consumer Electronics Show" />
+<meta property="article:tag" content="C.E.S." />
+<meta property="article:tag" content="CES 2015" />
+<meta property="article:tag" content="CES 2015" />
+<meta name="keywords" content="Automobiles,Driverless and Semiautonomous Vehicles,International Consumer Electronics Show,C.E.S.,CES 2015,CES 2015" />
+<meta name="news_keywords" content="Cars,Driverless Cars,International CES" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fbits.blogs.nytimes.com%2F2015%2F01%2F06%2Fces-visions-of-cars-on-autopilot%2F" title="CES: Visions of Cars on Autopilot" />
+<meta name="description" content="A number of automakers at CES were touting their plans for self-driving cars, with some executives predicting that a completely autonomous vehicle would be manufactured within five years." />
+<meta name="hdl" content="CES: Visions of Cars on Autopilot" />
+<meta property="og:title" content="CES: Visions of Cars on Autopilot" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/" />
+<meta property="og:site_name" content="Bits Blog" />
+<meta property="og:description" content="A number of automakers at CES were touting their plans for self-driving cars, with some executives predicting that a completely autonomous vehicle would be manufactured within five years." />
+<meta property="og:image" content="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="CES: Visions of Cars on Autopilot" />
+<meta name="twitter:url" content="//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/" />
+<meta name="twitter:description" content="A number of automakers at CES were touting their plans for self-driving cars, with some executives predicting that a completely autonomous vehicle would be manufactured within five years." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@nytimesbits">
+<link rel='prev' title='CES: F.T.C. Chairwoman Notes Concerns Raised by Connected Devices' href='//bits.blogs.nytimes.com/2015/01/06/ces-f-t-c-chairwoman-notes-concerns-raised-by-connected-devices/' />
+<link rel='next' title='Daily Report: Intel Pledges $300 Million to Increase Diversity in Tech Industry' href='//bits.blogs.nytimes.com/2015/01/07/daily-report-intel-pledges-300-million-to-increase-diversity-in-tech-industry/' />
+<link rel='canonical' href='//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/' />
+<link rel='shortlink' href='//nyti.ms/1wSAut4' />
+<link rel='https://github.com/WP-API/WP-API' href='//bits.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/bits/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//bits.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/technology/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/bits/2015/01/06/ces-visions-of-cars-on-autopilot/" />
+<meta name="dfp-ad-unit-path" content="technology/bits" />			<title>CES: Visions of Cars on Autopilot - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/bits.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-168348 blog-universal nyt-blog-bits" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Technology', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//bits.blogs.nytimes.com">
+                Bits            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        CES: Visions of Cars on Autopilot        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/"
+	 data-title="CES: Visions of Cars on Autopilot"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;A number of automakers at CES were touting their plans for self-driving cars, with some executives predicting that a completely autonomous vehicle would be manufactured within five years.&lt;/span&gt;&lt;a href=&quot;//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="January 6, 2015 4:10 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="bits" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//bits.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Technology"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/bits/bits75.gif" alt="Bits"/></div><div class="site-title">Bits</div><div class="site-description">Business, Innovation, Technology, Society</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//bits.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Bits">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-168348 post type-post status-publish hentry category-consumer-electronics-show category-ces-2015 category-ces-2015-2 tag-automobiles-2 tag-driverless-and-semiautonomous-vehicles tag-international-consumer-electronics-show des-automobiles des-driverless-and-semiautonomous-vehicles des-international-consumer-electronics-show news_keywords-cars-2 news_keywords-driverless-cars-2 news_keywords-international-ces splitPostView" id="post-168348">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="//bits.blogs.nytimes.com/category/consumer-electronics-show/ces-2015/?module=BlogCategory&version=Blog Post&action=Click&contentCollection=Technology&pgtype=Blogs&region=Header">CES 2015</a></span>
+		</div>
+				<h1 itemprop="headline" class="entry-title">CES: Visions of Cars on Autopilot</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Molly Wood			</address>
+			<!-- date published --><time class="dateline " datetime="2015-01-06T21:10:55+00:00" itemprop="datePublished">January 6, 2015 4:10 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">January 6, 2015 4:10 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-tmagArticle.jpg" src="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes2/06bits-mercedes2-tmagArticle.jpg" id="100000003433385" width="592" height="395" alt="Dieter Zetsche, head of Mercedes-Benz cars, introduced the company&#039;s fully autonomous prototype vehicle at the CES show in Las Vegas."   /><meta itemprop="height" content="395"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Dieter Zetsche, head of Mercedes-Benz cars, introduced the company's fully autonomous prototype vehicle at the CES show in Las Vegas.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Steve Marcus/Reuters</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/" data-title="CES: Visions of Cars on Autopilot" data-description="A number of automakers at CES were touting their plans for self-driving cars, with some executives predicting that a completely autonomous vehicle would be manufactured within five years.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody">No more dancing around it: The major automakers now see a world of completely self-driving cars.   </p>
+<p class="story-body-text" itemprop="articleBody">On Monday at the <a href="//topics.nytimes.com/top/reference/timestopics/subjects/i/international_consumer_electronics_show_ces/index.html?inline=nyt-classifier" class="tickerized" title="More articles about the International Consumer Electronics Show.">International Consumer Electronics Show</a>, the huge technology industry event in Las Vegas, Dieter Zetsche, the head of Mercedes-Benz cars and chairman of of Daimler AG, focused most of his keynote address on unveiling a fully autonomous prototype vehicle. </p>
+<p class="story-body-text" itemprop="articleBody">Dr. Zetsche described the autonomous car of the future as a sort of luxury “carriage” that could provide a peaceful, relaxing oasis for riders. It was festooned with touch screens and featured a sort of floating control panel that would let any rider take control of the car. </p>
+<p class="story-body-text" itemprop="articleBody">Raj Nair, the chief technical officer and global product chief at <a href="//topics.nytimes.com/top/news/business/companies/ford_motor_company/index.html?inline=nyt-org" class="tickerized" title="More information about Ford Motor Company">Ford</a>, said at the International CES that he expected some manufacturer to introduce a completely autonomous vehicle — one that requires zero human intervention — within five years. </p>
+<p class="story-body-text" itemprop="articleBody">And at Ford’s keynote address at CES on Tuesday, Mr. Nair sketched out a vision of rolling out self-driving cars gradually, and focusing early efforts on specific areas where, he said, there was already “high-definition mapping along with favorable environments for sensors.” </p>
+<p class="story-body-text" itemprop="articleBody">Those are fairly restrictive requirements. San Francisco and New York would presumably be less than favorable environments, given the number of pedestrians and other obstacles. But Mr. Nair said drivers would continue to benefit from semi-autonomous features that companies develop on the way to self-driving cars, like self-parking cars, adaptive cruise control and vehicle-to-vehicle communication. </p>
+<p class="story-body-text" itemprop="articleBody">And although Mark Fields, Ford&#8217;s new chief executive, said “there absolutely will be a Ford autonomous vehicle in the future,” he also stressed the company was not scrambling to be first.  </p>
+<p class="story-body-text" itemprop="articleBody">There has <a href="//www.theatlantic.com/business/archive/2014/03/if-cars-really-could-drive-themselves-how-many-would-we-need/284549/">been speculation</a> that if all cars become self-driving, many fewer cars would actually be required. So while Mercedes-Benz focused primarily on creating luxurious private spaces in self-driving cars, Ford discussed urban programs where many drivers could share <a href="//topics.nytimes.com/top/reference/timestopics/subjects/e/electric_vehicles/index.html?inline=nyt-classifier" class="tickerized" title="More articles about electric vehicles.">electric cars</a> or even the self-driving cars of the future. But Mr. Fields brushed off concerns that the push toward autonomous cars would cannibalize the car business over all. </p>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes/06bits-mercedes-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes/06bits-mercedes-blog480.jpg" src="https://static01.nyt.com/images/2015/01/06/technology/06bits-mercedes/06bits-mercedes-blog480.jpg" id="100000003433339" width="480" height="251" alt="Dieter Zetsche of Daimler described the company’s autonomous car as a sort of luxury “carriage” that provides a relaxing oasis for riders."   /><meta itemprop="height" content="251"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Dieter Zetsche of Daimler described the company’s autonomous car as a sort of luxury “carriage” that provides a relaxing oasis for riders.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Andrej Sokolow/European Pressphoto Agency</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">Automobiles, he said, would remain a growth business, and higher-tech, self-driving and electric cars are just new opportunities, even if they end up being shared among multiple people, he said. </p>
+<p class="story-body-text" itemprop="articleBody">This year&#8217;s International CES displayed an almost relentless focus on making cars smarter and more connected. Gary Shapiro, chief executive of the Consumer Electronics Association, the trade group that puts on the event, said 10 automakers were exhibiting or presenting at the show in some way, including Audi, <a href="//topics.nytimes.com/top/news/business/companies/volkswagen-ag/index.html?inline=nyt-org" class="tickerized" title="More information about Volkswagen A.G">Volkswagen</a>, <a href="//topics.nytimes.com/top/news/business/companies/toyota_motor_corporation/index.html?inline=nyt-org" class="tickerized" title="More information about Toyota Motor Corporation">Toyota</a>, <a href="//topics.nytimes.com/top/news/business/companies/general_motors_corporation/index.html?inline=nyt-org" class="tickerized" title="More information about General Motors">General Motors</a> and <a href="//topics.nytimes.com/top/news/business/companies/bayerische_motoren_werke_ag/index.html?inline=nyt-org" class="tickerized" title="More articles about BMW.">BMW</a>. </p>
+<p class="story-body-text" itemprop="articleBody">And tech companies of all sizes were rushing to get in on the high-tech car trend. </p>
+<p class="story-body-text" itemprop="articleBody">Scott Ahn, chief technology officer of LG Electronics, said during that company’s CES news conference that LG was hard at work developing methods to connect devices like phones, tablets and wearables to cars in a seamless way. </p>
+<p class="story-body-text" itemprop="articleBody">“Just like our phones, cars are getting much smarter,” Mr. Ahn said in an email. “We’re seeing an increasing need to connect our smart devices to cars. LG has developed a solution that can not only connect multiple kinds of devices like Android and iOS, but it is also highly customizable.” </p>
+<p class="story-body-text" itemprop="articleBody">Meanwhile, <a href="//topics.nytimes.com/top/news/business/companies/at_and_t/index.html?inline=nyt-org" class="tickerized" title="More information about AT&#038;T Inc.">AT&#038;T</a> <a href="//www.cnet.com/news/samsung-hops-aboard-at-ts-connected-car-program/">announced at the show</a> that it had signed up Samsung as a sponsor and technology partner for its <a href="https://www.att.com/gen/press-room?pid=25186&#038;cdvn=news&#038;newsarticleid=37369">Drive Studio</a>, a connected-car development laboratory. </p>
+<p class="story-body-text" itemprop="articleBody">And at Panasonic’s CES news conference, the company touted its position as the biggest supplier of in-dash infotainment systems in the world, including Ford’s new Sync 3 system (formerly powered by <a href="//topics.nytimes.com/top/news/business/companies/microsoft_corporation/index.html?inline=nyt-org" class="tickerized" title="More information about Microsoft Corporation">Microsoft</a>). </p>
+<p class="story-body-text" itemprop="articleBody">Panasonic also delivers the most batteries for electric cars in the world. The company has a partnership with <a href="//topics.nytimes.com/top/news/business/companies/tesla-motors-inc/index.html?inline=nyt-org" class="tickerized" title="More information about Tesla Motors Inc">Tesla</a> to create a <a href="//www.teslamotors.com/about/press/releases/panasonic-and-tesla-sign-agreement-gigafactory">huge battery manufacturing plant</a> in the United States, and reminded CES attendees of that fact by displaying a Tesla Model X in its booth. </p>
+<p class="story-body-text" itemprop="articleBody">More incremental car technology innovations also abounded at CES. Hyundai <a href="//www.autoworldnews.com/articles/11643/20141230/2015-ces-hyundai-smartwatch-will-start-your-car.htm">showed integration</a> with Android Wear-based smart watches that would let you unlock or even start a Hyundai Genesis using your watch. </p>
+<p class="story-body-text" itemprop="articleBody">And BMW was set to demonstrate <a href="//www.slashgear.com/bmw-to-demo-automated-multi-car-parking-tech-at-ces-2015-17359732/">cars that can park themselves</a> when instructed to do so using a smartwatch app. </p>
+<p class="story-body-text" itemprop="articleBody">So despite the focus on cars that drive themselves completely, the years in between should be pretty interesting, too. </p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//bits.blogs.nytimes.com/2015/01/06/ces-visions-of-cars-on-autopilot/" data-title="CES: Visions of Cars on Autopilot" data-description="A number of automakers at CES were touting their plans for self-driving cars, with some executives predicting that a completely autonomous vehicle would be manufactured within five years.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//bits.blogs.nytimes.com/2015/01/06/ces-f-t-c-chairwoman-notes-concerns-raised-by-connected-devices/" title="CES: F.T.C. Chairwoman Notes Concerns Raised by Connected Devices">
+				CES: F.T.C. Chairwoman Notes Concerns Raised by Connected Devices			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//bits.blogs.nytimes.com/2015/01/07/daily-report-intel-pledges-300-million-to-increase-diversity-in-tech-industry/" title="Daily Report: Intel Pledges $300 Million to Increase Diversity in Tech Industry">
+				Daily Report: Intel Pledges $300 Million to Increase Diversity in Tech Industry			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-10" class="module nocontent widget_nyt_promo_widget"><div style="font-family: nyt-franklin, arial, sans-serif; padding-top: 12px; font-size: 14px; line-height: 17px;">
+Visit the <a href="//nytimes.com/technology" style="font-weight: 600;">Technology section</a> for complete coverage of the industry. <a href="//nytimes.com/technology" style="font-family: nyt-franklin, arial, sans-serif; font-weight: 600;">»</a>
+</div></div>		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module ad" id="Box3"></div>
+        		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-5" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytimesbits" title="Follow @nytimesbits on twitter">@nytimesbits</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytimesbits" title="Follow nytimesbits on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytimesbits" title="Follow @nytimesbits on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-9',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":63,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

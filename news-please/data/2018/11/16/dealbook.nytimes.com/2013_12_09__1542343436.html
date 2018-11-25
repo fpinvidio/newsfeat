@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dealbook/For Bitcoin, Square Peg Meets Round Hole Under the Law  ( 20131209 )" />
+<meta name="communityAssetURL" content="https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002592843"><meta name="author" content="Peter J. Henning" />
+<meta name="CLMST" content="Peter J. Henning" />
+<meta name="byl" content="Peter J. Henning" />
+<meta name="GBLC" content="Legal/Regulatory;Top Headline 1;White Collar Watch">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1386607388" />
+<meta name="PUD" content="20131209" />
+<meta name="pdate" content="20131209" />
+<meta name="ptime" content="20131209114308" />
+<meta name="utime" content="20131210203832" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-12-10T20:38:32-05:00" />
+<meta name="DISPLAYDATE" content="December 9, 2013" />
+<meta name="dat" content="December 9, 2013" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Bitcoin (Currency);Frauds and Swindling;Regulation and Deregulation of Industry">
+<meta property="article:tag" content="Bitcoin (Currency)" />
+<meta property="article:tag" content="Frauds and Swindling" />
+<meta property="article:tag" content="Regulation and Deregulation of Industry" />
+<meta property="article:tag" content="Legal/Regulatory" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta property="article:tag" content="Uncategorized" />
+<meta property="article:tag" content="White Collar Watch" />
+<meta name="keywords" content="Bitcoin (Currency),Frauds and Swindling,Regulation and Deregulation of Industry,Legal/Regulatory,Top Headline 1,Uncategorized,White Collar Watch" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2013%2F12%2F09%2Ffor-bitcoin-square-peg-meets-round-hole-under-the-law%2F" title="For Bitcoin, Square Peg Meets Round Hole Under the Law" />
+<meta name="description" content="The development of Bitcoin, the virtual currency that is not issued by any government, presents challenges for the authorities to use laws that were not designed for the digital world to combat illegal conduct, Peter J. Henning writes in the White Collar Watch column." />
+<meta name="hdl" content="For Bitcoin, Square Peg Meets Round Hole Under the Law " />
+<meta property="og:title" content="For Bitcoin, Square Peg Meets Round Hole Under the Law " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="The development of Bitcoin, the virtual currency that is not issued by any government, presents challenges for the authorities to use laws that were not designed for the digital world to combat illegal conduct, Peter J. Henning writes in the White Collar Watch column." />
+<meta property="og:image" content="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-videoSixteenByNine600.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="For Bitcoin, Square Peg Meets Round Hole Under the Law " />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/" />
+<meta name="twitter:description" content="The development of Bitcoin, the virtual currency that is not issued by any government, presents challenges for the authorities to use laws that were not designed for the digital world to combat illegal conduct, Peter J. Henning writes in the White Collar Watch column." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Why Federal Reserve Support Is Really a Bailout' href='https://dealbook.nytimes.com/2013/12/09/why-federal-reserve-support-is-really-a-bailout/' />
+<link rel='next' title='Abercrombie Renews Chief&#8217;s Contract and Revamps His Pay' href='https://dealbook.nytimes.com/2013/12/09/abercrombie-renews-chiefs-contract-and-revamps-his-pay/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/' />
+<link rel='shortlink' href='//nyti.ms/1hInnsa' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>For Bitcoin, Square Peg Meets Round Hole Under the Law  - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-587819 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        For Bitcoin, Square Peg Meets Round Hole Under the Law        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/"
+	 data-title="For Bitcoin, Square Peg Meets Round Hole Under the Law"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;The development of Bitcoin, the virtual currency that is not issued by any government, presents challenges for the authorities to use laws that were not designed for the digital world to combat illegal conduct, Peter J. Henning writes in the White Collar Watch column.&lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="December 9, 2013 11:43 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-587819 post type-post status-publish hentry category-legal category-white-collar-watch tag-bitcoin-currency tag-frauds-and-swindling tag-regulation-and-deregulation-of-industry des-bitcoin-currency des-frauds-and-swindling des-regulation-and-deregulation-of-industry" id="post-587819">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a> | <a href="https://dealbook.nytimes.com/category/columnists/white-collar-watch/">White Collar Watch</a></span>		</div>
+				<h1 itemprop="headline" class="entry-title">For Bitcoin, Square Peg Meets Round Hole Under the Law</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Peter J. Henning			</address>
+			<!-- date published --><time class="dateline " datetime="2013-12-09T16:43:08+00:00" itemprop="datePublished">December 9, 2013 11:43 am</time>
+			<!-- date updated --><span class="visually-hidden updated">December 9, 2013 11:43 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content">
+	<div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-tmagArticle.jpg" src="https://static01.nyt.com/images/2013/12/09/business/dealbook/dbpix-bitcoin/dbpix-bitcoin-tmagArticle.jpg" id="100000002592830" width="592" height="395" alt="Bitcoin is becoming another means for conducting transactions."   /><meta itemprop="height" content="395"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Bitcoin is becoming another means for conducting transactions.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Stephen Lam/Reuters</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">The advent of a new medium to conduct business inevitably means avenues for criminals to swoop in to take advantage. The development of Bitcoin, the virtual currency that is not issued by any government, presents challenges for the authorities to use laws that were not designed for the digital world to combat illegal conduct.</p>
+<p class="story-body-text" itemprop="articleBody">DealBook <a href="//dealbook.nytimes.com/2013/12/05/in-the-murky-world-of-bitcoin-fraud-is-quicker-than-the-law/?_r=1" title="DealBook article">reported on “fraud, hacking and outright theft</a> that have become an increasingly regular part of the virtual currency world.” Bitcoin itself is neither good nor bad, just a new means to conduct business, but virtual currency operates in ways that make it harder to prosecute violations.</p>
+<p class="story-body-text" itemprop="articleBody">The value of the Bitcoins available now is quite small, totaling approximately $12 billion. Yet the perception that growing acceptance of virtual currencies will change the way business operates means governments will have to figure out how to deal with new forms of crime.</p>
+<div class="entry entry-section"><div class="w60"><a href="https://dealbook.nytimes.com/category/columnists/white-collar-watch/"><img src="https://static01.nyt.com/images/blogs_v3/dealbook/icons/white50.gif" /></a></div><h5><a href="https://dealbook.nytimes.com/category/columnists/white-collar-watch/">White Collar Watch</a></h5><h6><a href="https://dealbook.nytimes.com/category/columnists/white-collar-watch/">View all posts</a></h6></div><!-- end .entry-section -->
+<p class="story-body-text" itemprop="articleBody">There is a Wild West quality to Bitcoin, created out of a libertarian bent that connotes a world beyond government regulation. Like any currency, it carries with it a degree of anonymity, much as the phrase “cash is an orphan” signals that money can be largely untraceable once put into circulation. More than ordinary cash, though, Bitcoin operates largely outside the current banking system, making it even more difficult to trace transactions.</p>
+<p class="story-body-text" itemprop="articleBody">Reports of Bitcoins being stolen from the “wallets” of users look much like those concerning any other type of theft. Under the traditional common law of larceny, however, stealing virtual currency would not be the subject of a prosecution because the law applies only to the removal of physical items.</p>
+<p class="story-body-text" itemprop="articleBody">Modern theft statutes allow for prosecution for the taking of intangible property, so the greater challenge is pursuing thefts that occur in cyberspace. State authorities often do not have the resources to pursue crimes on the Internet nor the ability to coordinate investigations with foreign governments when the misconduct occurs outside the United States.  </p>
+<p class="story-body-text" itemprop="articleBody">The Justice Department is often better equipped to pursue global crimes, but the statutes available to pursue the theft of Bitcoins are more limited. Unlike the states, there is no general federal theft statute, so prosecutors have to be more creative in pursing misconduct.</p>
+<p class="story-body-text" itemprop="articleBody">There is <a href="//www.law.cornell.edu/uscode/text/18/2314" title="Transportation statute">a federal law</a> used to prosecute the interstate transportation of stolen property, but it applies only to cases involving “goods, wares and merchandise.” In <a href="//caselaw.lp.findlaw.com/scripts/getcase.pl?court=US&#038;vol=473&#038;invol=207" title="Supreme Court ruling">Dowling v. United States</a>, the Supreme Court limited the reach of this law to the theft of physical items and not intangible property like virtual currency. The statute also covers transporting “money,” but that would not appear to cover a virtual currency sponsored by private issuers.</p>
+<p class="story-body-text" itemprop="articleBody">Another law that could be used is a provision in the <a href="//www.law.cornell.edu/uscode/text/18/1030" title="Computer fraud statute">Computer Fraud and Abuse Act</a>, which makes it a crime to use a computer with the intent to defraud in obtaining anything of value from the victim. Whether stealing Bitcoins from an owner’s account would constitute fraud is unclear.</p>
+<p class="story-body-text" itemprop="articleBody">If there is a scheme to mislead an owner of Bitcoins to part with them, then the broad federal <a href="//www.law.cornell.edu/uscode/text/18/1343" title="Wire fraud statute">wire fraud statute</a> can be easier to use because it does not require proving misuse of a computer. And unlike the stolen property provision, this law covers both tangible and intangible property, so virtual currency would fit comfortably within it.</p>
+<p class="story-body-text" itemprop="articleBody">A greater challenge to law enforcement is the lack of transparency in Bitcoin transactions, which can allow virtual currency to facilitate money laundering. Federal prosecutors <a href="//www.justice.gov/usao/md/news/2013/AdministratorOfSilkRoadWebsiteAndDrugVendorPleadGuiltyToDrugConspiracy.html" title="Justice Department press release">convicted the administrator</a> of the website Silk Road, which was used to distribute narcotics bought with virtual currency. The government seized nearly 175,000 Bitcoins, so clearly virtual currency can be used to buy drugs as if it were cash on a street corner.</p>
+<p class="story-body-text" itemprop="articleBody">One potential challenge to pursuing money-laundering charges involving Bitcoin is the definition of the transactions subject to prosecution.  </p>
+<p class="story-body-text" itemprop="articleBody">The <a href="//www.law.cornell.edu/uscode/text/18/1956" title="Money-laundering statute">statute</a> applies to a “financial transaction” involving a “monetary instrument,” which includes “coin or currency of the United States or of any other country.” That definition would appear to exclude Bitcoin because it does not have any connection to a government. </p>
+<p class="story-body-text" itemprop="articleBody">Another provision applies to transactions in which a “financial institution” is involved, which includes banks and brokerage firms along with money services businesses that transmit money. Transactions in virtual currency take place largely outside typical financial firms, so trading may fall beyond the reach of the money-laundering laws unless providers qualify as a money services business.</p>
+<p class="story-body-text" itemprop="articleBody">To extend the scope of the financial disclosure laws, the Financial Crimes Enforcement Network, a bureau of the Treasury Department, issued <a href="//www.fincen.gov/statutes_regs/guidance/html/FIN-2013-G001.html" title="FinCen guidance">guidance</a> in March requiring administrators and exchangers of virtual currencies to report transactions, including the identity of Bitcoin traders. That means those involved in “mining” Bitcoins for sale or operating a trading venue are considered a money transmitter, which could qualify them as a financial institution for purposes of the money-laundering laws.</p>
+<p class="story-body-text" itemprop="articleBody">Currency, even the virtual type, is usually not understood to be a security or a commodity subject to regulation by the Securities and Exchange Commission or the Commodity Futures Trading Commission.  But when packaged for investors, Bitcoins could fall under the jurisdiction of those agencies.</p>
+<p class="story-body-text" itemprop="articleBody">Whenever something rises substantially in value, like Bitcoin’s increase of nearly 1,000 percent over the last month, investment offers will crop up to tap into the potential riches. The S.E.C.<a href="//www.sec.gov/News/PressRelease/Detail/PressRelease/1370539730583#.UqXwiaXIXTQ" title="S.E.C. press release"> filed a lawsuit</a> in July accusing a Texas man of engaging in a Ponzi scheme by offering Bitcoin-denominated investments.</p>
+<p class="story-body-text" itemprop="articleBody">The definition of a security includes an “investment contract,” which can be almost anything as long as it involves a commitment of money to others to generate profits from their efforts. The Supreme Court has found that investments in <a href="//www.law.cornell.edu/supremecourt/text/328/293" title="Supreme Court ruling">orange groves</a> and <a href="//www.law.cornell.edu/supct/html/02-1196.ZO.html" title="Supreme Court ruling">pay telephones</a> can qualify as securities subject to the S.E.C.’s jurisdiction, so investments in virtual currency could fall under the agency’s purview.</p>
+<p class="story-body-text" itemprop="articleBody">Packaging Bitcoins together for future delivery could also qualify as a commodity subject to regulation by the C.F.T.C. As <a href="//www.nytimes.com/2013/12/06/business/international/china-bars-banks-from-using-bitcoin.html" title="DealBook article">The New York Times reported</a>, the People’s Bank of China and four other Chinese agencies issued a notice that Bitcoin is a “virtual commodity that does not share the same legal status of a currency.”</p>
+<p class="story-body-text" itemprop="articleBody">As Bitcoin gains wider acceptance, the tax collector will most likely seek the government’s cut of transactions. For those paid in virtual currency, the <a href="//www.law.cornell.edu/uscode/text/26/61" title="Definition of gross income">federal tax law</a> provides that “gross income means all income from whatever source derived,” about as broad a definition as possible. </p>
+<p class="story-body-text" itemprop="articleBody">For those who mine Bitcoins, they can be considered a <a href="//www.law.cornell.edu/uscode/text/26/1221" title="Definition of capital asset">capital asset</a> generating capital gains when sold that must be reported. Any failure to pay taxes can bring about both civil and criminal penalties, which are not yet payable in Bitcoin.</p>
+<p class="story-body-text" itemprop="articleBody">The rise of virtual currencies may have started out as an effort to avoid government scrutiny. But with greater acceptance comes increased regulation, including the application of criminal laws to this new medium for conducting business.</p>
+<footer class="story-footer">
+    <div class="story-meta">
+	    </div>
+</footer>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2013/12/09/for-bitcoin-square-peg-meets-round-hole-under-the-law/" data-title="For Bitcoin, Square Peg Meets Round Hole Under the Law" data-description="The development of Bitcoin, the virtual currency that is not issued by any government, presents challenges for the authorities to use laws that were not designed for the digital world to combat illegal conduct, Peter J. Henning writes in the White Collar Watch column.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2013/12/09/why-federal-reserve-support-is-really-a-bailout/" title="Why Federal Reserve Support Is Really a Bailout">
+				Why Federal Reserve Support Is Really a Bailout			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2013/12/09/abercrombie-renews-chiefs-contract-and-revamps-his-pay/" title="Abercrombie Renews Chief&#039;s Contract and Revamps His Pay">
+				Abercrombie Renews Chief&#8217;s Contract and Revamps His Pay			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":111,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

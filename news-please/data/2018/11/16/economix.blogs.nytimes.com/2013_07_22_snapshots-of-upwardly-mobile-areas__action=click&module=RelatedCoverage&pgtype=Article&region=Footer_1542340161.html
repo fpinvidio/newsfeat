@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-economix section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-economix section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-economix section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-economix section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/economix/Snapshots of Upwardly Mobile Areas " />
+<meta name="communityAssetURL" content="//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002349269"><meta name="author" content="Andrew Siddons" />
+<meta name="CLMST" content="Andrew Siddons" />
+<meta name="byl" content="Andrew Siddons" />
+<meta name="GBLC" content="Economix">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1374466529" />
+<meta name="PUD" content="20130722" />
+<meta name="pdate" content="20130722" />
+<meta name="ptime" content="20130722001529" />
+<meta name="utime" content="20130722190321" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-07-22T19:03:21-04:00" />
+<meta name="DISPLAYDATE" content="July 22, 2013" />
+<meta name="dat" content="July 22, 2013" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Economy" />
+<meta name="BN" content="economix" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Income;Income Inequality;Labor and Jobs;Minimum Wage;Poverty;United States Economy;Wages and Salaries">
+<meta name="geo" content="Pennsylvania;United States">
+<meta property="article:tag" content="Income" />
+<meta property="article:tag" content="Income Inequality" />
+<meta property="article:tag" content="Labor and Jobs" />
+<meta property="article:tag" content="Minimum Wage" />
+<meta property="article:tag" content="Poverty" />
+<meta property="article:tag" content="United States Economy" />
+<meta property="article:tag" content="Wages and Salaries" />
+<meta property="article:tag" content="Pennsylvania" />
+<meta property="article:tag" content="United States" />
+<meta property="article:tag" content="Economix" />
+<meta name="keywords" content="Income,Income Inequality,Labor and Jobs,Minimum Wage,Poverty,United States Economy,Wages and Salaries,Pennsylvania,United States,Economix" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Feconomix.blogs.nytimes.com%2F2013%2F07%2F22%2Fsnapshots-of-upwardly-mobile-areas%2F" title="Snapshots of Upwardly Mobile Areas" />
+<meta name="description" content="Scranton still stands out as one of the American cities where poor people have among the best odds of climbing into the middle class, according to a large new study." />
+<meta name="hdl" content="Snapshots of Upwardly Mobile Areas " />
+<meta property="og:title" content="Snapshots of Upwardly Mobile Areas " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/" />
+<meta property="og:site_name" content="Economix Blog" />
+<meta property="og:description" content="Scranton still stands out as one of the American cities where poor people have among the best odds of climbing into the middle class, according to a large new study." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Snapshots of Upwardly Mobile Areas " />
+<meta name="twitter:url" content="//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/" />
+<meta name="twitter:description" content="Scranton still stands out as one of the American cities where poor people have among the best odds of climbing into the middle class, according to a large new study." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nyteconomix">
+<link rel='prev' title='What Went Wrong in Detroit, and the Road Ahead' href='//economix.blogs.nytimes.com/2013/07/19/what-went-wrong-in-detroit-and-the-road-ahead/' />
+<link rel='next' title='A Steeper Climb for Single Parents' href='//economix.blogs.nytimes.com/2013/07/22/a-steeper-climb-for-single-parents/' />
+<link rel='canonical' href='//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/' />
+<link rel='shortlink' href='//nyti.ms/19cE2Ak' />
+<link rel='https://github.com/WP-API/WP-API' href='//economix.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/economix/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//economix.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/economix/2013/07/22/snapshots-of-upwardly-mobile-areas/" />
+<meta name="dfp-ad-unit-path" content="businessday/economix" />			<title>Snapshots of Upwardly Mobile Areas  - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-165932 blog-universal nyt-blog-economix" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//economix.blogs.nytimes.com">
+                Economix            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Snapshots of Upwardly Mobile Areas        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/"
+	 data-title="Snapshots of Upwardly Mobile Areas"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt; Scranton still stands out as one of the American cities where poor people have among the best odds of climbing into the middle class, according to a large new study.&lt;/span&gt;&lt;a href=&quot;//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="July 22, 2013 12:15 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="economix" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//economix.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to Economix Home"><img src="https://static01.nyt.com/images/blogs_v5/economix/economix_post.png" alt="Economix - Explaining the Science of Everyday Life"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//economix.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Economix">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-165932 post type-post status-publish hentry category-economix tag-income tag-income-inequality tag-labor-and-jobs tag-minimum-wage tag-pennsylvania tag-poverty tag-united-states tag-united-states-economy tag-wages-and-salaries des-income des-income-inequality des-labor-and-jobs des-minimum-wage des-poverty des-united-states-economy des-wages-and-salaries geo-pennsylvania geo-united-states" id="post-165932">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Snapshots of Upwardly Mobile Areas</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Andrew Siddons			</address>
+			<!-- date published --><time class="dateline " datetime="2013-07-22T04:15:29+00:00" itemprop="datePublished">July 22, 2013 12:15 am</time>
+			<!-- date updated --><span class="visually-hidden updated">July 22, 2013 12:15 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">Scranton, Pa., may not be anybody’s idea of a boom town. A year ago, with the industrial city in northeastern Pennsylvania on the verge of bankruptcy, the mayor cut city workers’ pay to the minimum wage.</p>
+<p class="story-body-text" itemprop="articleBody">But Scranton still stands out as one of the American cities where poor people have among the best odds of climbing into the middle class, according to a large new study. A poor person from Scranton is almost twice as likely to rise into a higher income bracket than a poor person from Toledo, Ohio, or South Bend, Ind. By the measurements of the professors who did the research &#8212; four economists, at Harvard and the University of California, Berkeley &#8212; <a href="//www.nytimes.com/2013/07/22/business/in-climbing-income-ladder-location-matters.html">rates of upward mobility</a> in Scranton are similar to those in Seattle, Boston and New York.</p>
+<p class="story-body-text" itemprop="articleBody">“I was one of those kids who quite honestly probably should have never went to college because I never had the money,” said Peter Danchack, who grew up in Scranton. His father repaired laundromat equipment, and before Mr. Danchack and his three sisters were born his mother worked in a dress factory.</p>
+<p class="story-body-text" itemprop="articleBody">At the University of Scranton, Mr. Danchack worked 35 hours a week while studying accounting full time and paid his way through college. One of his jobs was at a PNC bank branch. He’s now a regional president for PNC and lives in one of Scranton’s wealthier suburbs. </p>
+<p class="story-body-text" itemprop="articleBody">The authors of the new study found four factors that areas with more upward mobility tend to have in common: a large and geographically dispersed middle class; better than average schools; a high share of two-parent households; and populations engaged with religious and community organizations. <span id="more-165932"></span></p>
+<p class="story-body-text" itemprop="articleBody">“Our neighborhood was very strong and supportive &#8212; everybody knew what everybody else was doing, but in a nice way,” said Ann L.  Pipinski, a Scranton native who is now the president at Johnson College of Technology in Scranton. Dr. Pipinski and her sister were the first in their family to go to college, after having been raised by their mother and grandfather and mainly supported by welfare and their late father’s veteran’s benefits.</p>
+<p class="story-body-text" itemprop="articleBody">Another  factor that sets upwardly mobile cities apart is that lower-class people live among the middle and upper classes: according to the study, there is a correlation between upward social mobility and income diversity.</p>
+<p class="story-body-text" itemprop="articleBody">James Mirabelli said that this economic integration was inspiring. He was born and raised in Factoryville, Pa., a borough of about 1,100 people 15 miles north of Scranton. His father was a truck driver and his mother worked at home. His family lived in a trailer park until Mr. Mirabelli was in fifth grade. </p>
+<p class="story-body-text" itemprop="articleBody">&#8220;You see what everyone else has and you say, &#8216;I want that, too,’” he said.  “I got a little hungry by seeing what other people had or did.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Mirabelli, who is 30, studied accounting at nearby Keystone College, and is now the financial administrator of the Abington Heights School District, which serves some of Scranton&#8217;s more affluent suburbs.  </p>
+<p class="story-body-text" itemprop="articleBody">The study, based on millions of anonymous records, tracked people over the course of their lives to compare their family income as children with their family income as adults. About 26 percent of children who grew up in the 1980s and 1990s in Seattle families from the poorest fifth of the national income distribution have ended up in the top two-fifths today, for instance.</p>
+<p class="story-body-text" itemprop="articleBody">On the other end of the spectrum, the equivalent figure was 9 percent for Memphis natives, 13 percent for Atlanta natives and 15 percent for Indianapolis natives.</p>
+<p class="story-body-text" itemprop="articleBody">The figure was 27 percent for Scranton and 25 percent for Harrisburg, Pa., the state’s capital. </p>
+<p class="story-body-text" itemprop="articleBody">Harrisburg, like Scranton, has seen its share of financial difficulty, filing for bankruptcy in 2011. It also has an above-average rate of upward mobility.</p>
+<p class="story-body-text" itemprop="articleBody">Juanita Edrington-Grant, 59, spent most of the 1980s in and out of prison for dealing drugs. During her last stint in the state penitentiary, Ms. Edrington-Grant was able to take classes with professors from Pennsylvania State University, who taught courses toward earning certification as a paralegal. She left prison in 1992 and  nine months later earned her associate’s degree from Penn State. </p>
+<p class="story-body-text" itemprop="articleBody">“It’s not easy trying to get help for ex-offenders,” she said. “It’s not easy working with them or getting help for them, because most people won’t give them a chance.” </p>
+<p class="story-body-text" itemprop="articleBody">She went to work for the Pennsylvania Department of Labor and Industry as a clerk and earned regular promotions. She retired this year from the Pennsylvania Department of State, where she worked as a paralegal, earning $50,000 a year.</p>
+<p class="story-body-text" itemprop="articleBody">Now, Ms. Edrington-Grant runs the Christian Recovery Aftercare Ministry, which provides services to ex-offenders and prisoners when they are about to be released and  re-enter society.</p>
+<p class="story-body-text" itemprop="articleBody">Others who have overcome economic hardship also emphasize the assistance they received along the way.</p>
+<p class="story-body-text" itemprop="articleBody">Kristelle Coney, a 40-year-old single mother of three, worked at Washington Mutual for six years; she had never been to college. When her employer went bankrupt and was absorbed by JPMorgan Chase in 2009, she was laid off. She used her severance to pay for her first year of college at Lake Washington Institute of Technology in Kirkland, Wash., studying for a pair of associate’s degrees, one for premedicine and one to be a medical assistant.</p>
+<p class="story-body-text" itemprop="articleBody">“Once that year was up, I was able to use opportunity grants and Pell grants and student loans and focus on school,” she recalled, adding that food stamps also helped her juggle kids and school without working full time.</p>
+<p class="story-body-text" itemprop="articleBody">Ms. Coney, who graduated this year, works as a medical assistant at an obstetrics and gynecology practice in Bellevue, Wash., not far from her home in Redmond, where she pays higher rent to send her children to better schools.</p>
+<p class="story-body-text" itemprop="articleBody">Houston is one of the few Southern cities where upward social mobility is as high as cities in the Northeast and West, exceeding the rates of cities like Charlotte and Las Vegas. Roughly 22 percent of Houston children who grew up in the poorest fifth of the national income distribution have ended up in the top two-fifths today, according to the study.</p>
+<p class="story-body-text" itemprop="articleBody">In Houston, programs like Capital IDEA assist underemployed individuals who have obstacles in the way of furthering their education. In addition to helping pay tuition, Capital IDEA fast-tracks students through the remedial courses that can otherwise divert them from finishing their degree. </p>
+<p class="story-body-text" itemprop="articleBody">Adeline Garza, 25, was raised by her grandmother after her parents died. She dropped out of Texas A&#038;M when she could no longer afford it. After struggling to find work, she took advantage of assistance from Capital IDEA, where she was encouraged by others in the same situation. </p>
+<p class="story-body-text" itemprop="articleBody">“We would always have weekly meetings to discuss our hardships, trouble with class, and help each other out. It’s a really great social support group,” she said. She’s about to  start as a radiology technologist at St. Luke’s Episcopal Hospital in Houston, with a starting salary of $45,000.</p>
+<div id="addendums" class="addendums"><div class="story-addendum theme-correction"><strong>Correction: July 22, 2013</strong> <br>An earlier version of this post misstated the length of time that Kristelle Coney, now a medical assistant, worked at Washington Mutual. She was there for six years, not 16.</div></div>	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//economix.blogs.nytimes.com/2013/07/22/snapshots-of-upwardly-mobile-areas/" data-title="Snapshots of Upwardly Mobile Areas" data-description=" Scranton still stands out as one of the American cities where poor people have among the best odds of climbing into the middle class, according to a large new study.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//economix.blogs.nytimes.com/2013/07/19/what-went-wrong-in-detroit-and-the-road-ahead/" title="What Went Wrong in Detroit, and the Road Ahead">
+				What Went Wrong in Detroit, and the Road Ahead			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//economix.blogs.nytimes.com/2013/07/22/a-steeper-climb-for-single-parents/" title="A Steeper Climb for Single Parents ">
+				A Steeper Climb for Single Parents 			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_promo_widget-9" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Featured Contributors</h4><div class="entry author first">
+  <img alt="Floyd Norris" src="https://static01.nyt.com/images/blogs_v3/economix/norris60.jpg" class="right w50"/>
+  <p class="summary"><a href="/author/floyd-norris/"><strong>Floyd Norris</strong></a>, the chief financial correspondent of The New York Times, covers the world of finance and  economics.</p>
+  <ul class="refer">
+    <li><a title="Posts" href="/author/floyd-norris/">Posts</a> | <a title="Profile" href="//topics.nytimes.com/top/reference/timestopics/people/n/floyd_norris/index.html"> Profile</a> | <a href="mailto:norris@nytimes.com?subject=Economix:">E-mail</a></li>
+  </ul>
+</div>
+
+<div class="entry author">
+<img alt="Binyamin Appelbaum" src="https://static01.nyt.com/images/2012/02/29/business/binyamin-appelbaum/binyamin-appelbaum-custom1.jpg" class="right w50"/><p class="summary"><a href="/author/binyamin-appelbaum/"><strong>Binyamin Appelbaum</strong></a> covers business and economic topics for the Washington bureau of The New York Times.</p>
+<ul class="refer">
+<li><a href="//economix.blogs.nytimes.com/author/binyamin-appelbaum/">Posts</a> | <a href="//topics.nytimes.com/top/reference/timestopics/people/a/binyamin_appelbaum/index.html">Profile</a> | <a href="mailto:binyamin.appelbaum@nytimes.com?subject=Economix:">E-Mail</a> | <a href="https://twitter.com/#!/BCAppelbaum">Twitter</a></li>
+</ul>
+</div>
+
+<div class="entry author">
+  <img alt="Shaila Dewan" src="https://static01.nyt.com/images/2013/07/23/business/economy/economix-shaila-dewan/economix-shaila-dewan-blogSmallThumb.jpg" class="right w50"/>
+  <p class="summary"><a href="//economix.blogs.nytimes.com/author/shaila-dewan/"><strong>Shaila Dewan</strong></a> is an economics reporter for The New York Times. 
+ </p>
+  <ul class="refer">
+    <li><a title="Posts" href="//economix.blogs.nytimes.com/author/shaila-dewan/">Posts</a> | <a href="mailto:dewan@nytimes.com?subject=Economix:">E-mail</a> | <a href="https://twitter.com/#!/shailadewan">Twitter</a></li>
+  </ul>
+</div>
+
+<div class="entry author">
+<img alt="Annie Lowrey" src="https://static01.nyt.com/images/2012/02/29/business/annie-lowrey/annie-lowrey-thumbStandard.jpg" class="right w50"/><p class="summary"><a href="/author/annie-lowrey/"><strong>Annie Lowrey</strong></a> covers economic policy for the Washington bureau of The New York Times. </p>
+<ul class="refer">
+<li><a href="//economix.blogs.nytimes.com/author/annie-lowrey/">Posts</a> | <a href="//topics.nytimes.com/top/reference/timestopics/people/l/annie_lowrey/index.html">Profile</a> | <a href="mailto:annie.lowrey@nytimes.com?subject=Economix">E-mail</a> | <a href="https://twitter.com/#!/AnnieLowrey">Twitter</a></li>
+</ul>
+</div>
+<div class="entry author">
+<img alt="Eduardo Porter" src=" https://static01.nyt.com/images/2012/02/29/business/eduardo-porter/eduardo-porter-blogSmallThumb-v4.jpg " class="right w50"/><p class="summary"><a href="/author/eduardo-porter/"><strong> Eduardo Porter</strong></a>  is the Economic Scene columnist for The New York Times.</p>
+<ul class="refer">
+<li><a href="//economix.blogs.nytimes.com/author/eduardo-porter/">Posts </a> | <a href="//topics.nytimes.com/top/reference/timestopics/people/p/eduardo_porter/index.html">Profile</a> | <a href="mailto:eporter@nytimes.com?subject=Economix:">E-Mail</a> | <a href="https://twitter.com/#!/portereduardo">Twitter</a></li>
+</ul>
+</div>
+<div class="entry author">
+<img alt="Nelson Schwartz" src="https://static01.nyt.com/images/2013/06/20/business/economy/economix-reporter-nelson-schwartz/economix-reporter-nelson-schwartz-blogSmallThumb-v3.jpg" class="right w50"/><p class="summary"><a href="/author/nelson-d-schwartz/"><strong> Nelson D. Schwartz</strong></a> is an economics reporter for The New York Times.</p>
+<ul class="refer">
+<li><a href="//economix.blogs.nytimes.com/author/nelson-d-schwartz/">Posts </a> | <a href="//topics.nytimes.com/top/reference/timestopics/people/s/nelson_d_schwartz/index.html">Profile</a> | <a href="mailto:nschwartz@nytimes.com?subject=Economix:">E-Mail</a> | <a href="https://twitter.com/#!/NelsonSchwartz">Twitter</a></li>
+</ul>
+</div></div><div id="nyt_promo_widget-10" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Daily Economists</h4><div class="subColumn-2">
+	<div class="column">
+	  <div class="entry">
+	  	<p class="summary">Each day, Economix offers perspectives from expert contributors.</p>
+	  </div>
+	 <div class="entry">
+	  	<h5>Bruce Bartlett</h5>
+	  	<h6 class="kicker">Former Treasury Official</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/ref/business/economy/bruce-bartlett-bio.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/bruce-bartlett/">Posts</a> | <a href="https://twitter.com/BruceBartlett">Twitter</a></li>
+	  	</ul>
+	  </div>
+	 <div class="entry">
+	  	<h5>Jared Bernstein</h5>
+	  	<h6 class="kicker">Center on Budget and Policy Priorities</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/ref/business/economy/jared-bernstein-bio.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/jared-bernstein/">Posts</a></li>
+	  	</ul>
+	  </div>
+	  <div class="entry">
+	  	<h5>Nancy Folbre</h5>
+	  	<h6 class="kicker">University of Massachusetts-Amherst</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/2009/03/11/business/economy/Folbre.ready.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/nancy-folbre/">Posts</a></li>
+	    </ul>
+	  </div>
+
+	  <div class="entry">
+	  	<h5>Simon Johnson</h5>
+	  	<h6 class="kicker">M.I.T./Peterson Institute</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/2009/04/03/business/economy/simonjohnson.ready.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/simon-johnson/">Posts</a></li>
+	  	</ul>
+	  </div>
+	</div>
+
+	<div class="column lastColumn">
+	  <div class="entry">
+	  	<h5>Casey B. Mulligan</h5>
+	  	<h6 class="kicker">University of Chicago</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/ref/business/economy/casey.ready.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/casey-b-mulligan/">Posts</a></li>
+	  	</ul>
+	  </div>
+
+	  <div class="entry">
+	  	<h5>Uwe E. Reinhardt</h5>
+	  	<h6 class="kicker">Princeton University</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/ref/business/economy/reinhardt.ready.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/uwe-e-reinhardt/">Posts</a></li>
+	  	</ul>
+	  </div>
+	 <div class="entry">
+	  	<h5>Phillip Swagel</h5>
+	  	<h6 class="kicker">University of Maryland</h6>
+	  	<ul class="refer">
+	  		<li><a href="//www.nytimes.com/ref/business/economy/phillip-swagel.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/phillip-swagel/">Posts</a></li>
+	  	</ul>
+	  </div>
+	 <div class="entry">
+	    <h5>Laura D'Andrea Tyson</h5>
+	    <h6 class="kicker">University of California, Berkeley</h6>
+	    <ul class="refer">
+	      <li><a href="//www.nytimes.com/ref/business/economy/laura-dandrea-tyson-bio.html">Bio</a> | <a href="//economix.blogs.nytimes.com/author/laura-dandrea-tyson//">Posts</a></li>
+	    </ul>
+	  </div>
+	</div>
+</div></div><div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//economix.blogs.nytimes.com/2014/04/22/economix-meets-the-gales-of-change/" title="Read: Economix Meets the Gales of Change">Economix Meets the Gales of Change</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//economix.blogs.nytimes.com/2014/04/22/economix-meets-the-gales-of-change/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Economix is coming to an end, but it will be succeeded by The Upshot, a new politics, policy and economics site. <a href="//economix.blogs.nytimes.com/2014/04/22/economix-meets-the-gales-of-change/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//economix.blogs.nytimes.com/2014/04/18/mortgage-reform-is-worth-the-small-extra-cost-to-borrowers/" title="Read: Mortgage Reform Is Worth the Small Extra Cost to Borrowers">Mortgage Reform Is Worth the Small Extra Cost to Borrowers</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//economix.blogs.nytimes.com/2014/04/18/mortgage-reform-is-worth-the-small-extra-cost-to-borrowers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The higher cost for borrowers in a Senate bill reforming Fannie Mae and Freddie Mac corresponds to the protection for taxpayers that was missing in the old system, writes an economist. <a href="//economix.blogs.nytimes.com/2014/04/18/mortgage-reform-is-worth-the-small-extra-cost-to-borrowers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//economix.blogs.nytimes.com/2014/04/17/in-europe-auto-sales-are-still-low-but-they-are-rising/" title="Read: In Europe, Auto Sales Are Still Low, But They Are Rising">In Europe, Auto Sales Are Still Low, But They Are Rising</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//economix.blogs.nytimes.com/2014/04/17/in-europe-auto-sales-are-still-low-but-they-are-rising/"></a>
+				</span>			</h5>
+			<p class="summary">
+			New car sales are up by more than 10 percent in Ireland, Greece, Spain and Portugal, which signals stronger economic growth there, even if sales are still far below 2007 levels.<a href="//economix.blogs.nytimes.com/2014/04/17/in-europe-auto-sales-are-still-low-but-they-are-rising/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//economix.blogs.nytimes.com/2014/04/17/the-end-of-our-financial-illusions/" title="Read: The End of Our Financial Illusions">The End of Our Financial Illusions</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//economix.blogs.nytimes.com/2014/04/17/the-end-of-our-financial-illusions/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Much progress has been made on overseeing the largest banks, but a good deal more must be done to toughen standards and end government subsidies, an economist writes. <a href="//economix.blogs.nytimes.com/2014/04/17/the-end-of-our-financial-illusions/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//economix.blogs.nytimes.com/2014/04/16/stealth-taxes/" title="Read: Stealth Taxes Are Still Income Taxes">Stealth Taxes Are Still Income Taxes</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//economix.blogs.nytimes.com/2014/04/16/stealth-taxes/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Affordable Care Act imposes economic burdens that are the equivalent of taxes, an economist writes. <a href="//economix.blogs.nytimes.com/2014/04/16/stealth-taxes/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">Economics doesn't have to be complicated. It is the study of our lives — our jobs, our homes, our families and the little decisions we face every day. Here at Economix, journalists and economists analyze the news and use economics as a framework for thinking about the world. We welcome feedback, at <a href="mailto:economix@nytimes.com">economix@nytimes.com</a>.</p>
+<ul class="refer">
+<li><a href="//economix.blogs.nytimes.com/2008/09/23/a-note-on-comments/">Our Policy on Comments</a></li>
+</ul>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//economix.blogs.nytimes.com/2014/04/'> April 2014 </option>
+	<option value='//economix.blogs.nytimes.com/2014/03/'> March 2014 </option>
+	<option value='//economix.blogs.nytimes.com/2014/02/'> February 2014 </option>
+	<option value='//economix.blogs.nytimes.com/2014/01/'> January 2014 </option>
+	<option value='//economix.blogs.nytimes.com/2013/12/'> December 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/11/'> November 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/10/'> October 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/09/'> September 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/08/'> August 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//economix.blogs.nytimes.com/2013/02/'> February 2013 </option>
+			</select>
+		</div>
+        		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nyteconomix" title="Follow @nyteconomix on twitter">@nyteconomix</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nyteconomix" title="Follow nyteconomix on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nyteconomix" title="Follow @nyteconomix on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-67',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":61,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

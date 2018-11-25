@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dinersjournal section-dining"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002308316"><meta name="author" content="Eric Asimov" />
+<meta name="CLMST" content="Eric Asimov" />
+<meta name="byl" content="Eric Asimov" />
+<meta name="GBLC" content="Drinking">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1372436394" />
+<meta name="PUD" content="20130628" />
+<meta name="pdate" content="20130628" />
+<meta name="ptime" content="20130628121954" />
+<meta name="utime" content="20130628162957" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-06-28T16:29:57-04:00" />
+<meta name="DISPLAYDATE" content="June 28, 2013" />
+<meta name="dat" content="June 28, 2013" />
+<meta itemprop="articleSection" property="article:section" content="Style" />
+<meta name="CG" content="Style" />
+<meta name="SCG" content="Dining" />
+<meta name="BN" content="dinersjournal" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Drinking" />
+<meta name="keywords" content="Drinking" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2013%2F06%2F28%2Fa-cocktail-to-cap-a-hot-summer-week%2F" title="A Cocktail to Cap a Hot Summer Week" />
+<meta name="description" content="Take two, say ahh, and don&#8217;t call me until Monday." />
+<meta name="hdl" content="A Cocktail to Cap a Hot Summer Week" />
+<meta property="og:title" content="A Cocktail to Cap a Hot Summer Week" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dinersjournal.blogs.nytimes.com/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/" />
+<meta property="og:site_name" content="Diner’s Journal Blog" />
+<meta property="og:description" content="Take two, say ahh, and don&#8217;t call me until Monday." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="A Cocktail to Cap a Hot Summer Week" />
+<meta name="twitter:url" content="//dinersjournal.blogs.nytimes.com/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/" />
+<meta name="twitter:description" content="Take two, say ahh, and don&#8217;t call me until Monday." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nytdining">
+<link rel='prev' title='What We&#8217;re Reading' href='//dinersjournal.blogs.nytimes.com/2013/06/28/what-were-reading-725/' />
+<link rel='next' title='Weekend Fare' href='//dinersjournal.blogs.nytimes.com/2013/06/28/weekend-fare-148/' />
+<link rel='canonical' href='//dinersjournal.blogs.nytimes.com/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/' />
+<link rel='shortlink' href='//nyti.ms/10pAci0' />
+<link rel='https://github.com/WP-API/WP-API' href='//dinersjournal.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dinersjournal/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dinersjournal.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/dining/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dinersjournal/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/" />
+<meta name="dfp-ad-unit-path" content="style/dinersjournal" />			<title>A Cocktail to Cap a Hot Summer Week - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-104055 blog-universal nyt-blog-dinersjournal" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Style', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dinersjournal.blogs.nytimes.com">
+                Diner&#039;s Journal            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        A Cocktail to Cap a Hot Summer Week        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dinersjournal.blogs.nytimes.com/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/"
+	 data-title="A Cocktail to Cap a Hot Summer Week"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Take two, say ahh, and don’t call me until Monday. &lt;/span&gt;&lt;a href=&quot;//dinersjournal.blogs.nytimes.com/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="June 28, 2013 12:19 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dinersjournal" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//dinersjournal.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Style" title="Go to Diner&#039;s Journal Home"><img src="https://static01.nyt.com/images/blogs_v5/dinersjournal/dinersjournal_post.png" alt="Diner&#039;s Journal - The New York Times Blog on Dining Out"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dinersjournal.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Diner&#039;s Journal">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-104055 post type-post status-publish hentry category-drinking" id="post-104055">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="//dinersjournal.blogs.nytimes.com/category/drinking/?module=BlogCategory&version=Blog Post&action=Click&contentCollection=Style&pgtype=Blogs&region=Header">Drinking</a></span>
+		</div>
+				<h1 itemprop="headline" class="entry-title">A Cocktail to Cap a Hot Summer Week</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Eric Asimov			</address>
+			<!-- date published --><time class="dateline " datetime="2013-06-28T16:19:54+00:00" itemprop="datePublished">June 28, 2013 12:19 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">June 28, 2013 12:19 pm</span>		</div>
+			</header>
+		<div class="entry-content"><form method="post" name="emailThis_104055" id="emailThis_104055" style="display: inline;" enctype="application/x-www-form-urlencoded" action="//www.nytimes.com/mem/emailthis.html">
+<input type="hidden" name="type" value="1" />
+<input type="hidden" name="url" value="http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2013%2F06%2F28%2Fa-cocktail-to-cap-a-hot-summer-week%2F" />
+<input type="hidden" name="title" value="Diner%26%23039%3Bs%20Journal%3A%20A%20Cocktail%20to%20Cap%20a%20Hot%20Summer%20Week" />
+<input type="hidden" name="description" value="%3Cspan%20class%3D%22excerpt-inner%22%3ETake%20two%2C%20say%20ahh%2C%20and%20don%E2%80%99t%20call%20me%20until%20Monday.%20%3C%2Fspan%3E%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2013%2F06%2F28%2Fa-cocktail-to-cap-a-hot-summer-week%2F%22%20class%3D%22more-link%22%3ERead%26nbsp%3Bmore...%3C%2Fa%3E" />
+<input type="hidden" name="author" value="By%20Eric%20Asimov" />
+<input type="hidden" name="section" value="Style" />
+<input type="hidden" name="full_text" value="%5Bnytmedia%20id%3D%22100000002306674%22%20crop%3D%22190%22%20type%3D%22image%22%20first_child%3D%22true%22%5D%0A%3Cp%3EI%20don%E2%80%99t%20drink%20cocktails%20frequently.%20But%20it%E2%80%99s%20been%20a%20long%2C%20hot%20week%2C%20and%20I%20can%E2%80%99t%20think%20of%20anything%20more%20refreshing%20and%20relaxing%20right%20now%20than%20this%20bracing%20drink%20I%20tried%20recently%20at%20ABC%20Cocina%2C%20the%20new%20pan-Latin-tinged%20small-plates%20restaurant%20from%20the%20Jean-Georges%20Vongerichten%20team.%20%3C%2Fp%3E%0A%3Cp%3EIn%20a%20cocktail%20world%20where%20drinks%20are%20named%20either%20with%20historic%20rigor%20%E2%80%93%20a%20%3Ca%20href%3D%22http%3A%2F%2Fsummitsips.com%2F2011%2F01%2Fdrink-of-the-week-mamie-taylor%2F%22%3EMamie%20Taylor%2C%3C%2Fa%3E%20%20%20anybody%3F%20%E2%80%93%20or%20to%20flex%20modern%20creative%20license%20%E2%80%93%20%3Ca%20href%3D%22http%3A%2F%2Fbullettmedia.com%2Farticle%2Fdrink-and-movie-death-co-s-jillian-vose-mixes-the-dai-dai-my-darling%2F%22%3EDai%20Dai%20My%20Darling%3C%2Fa%3E%3F%20%E2%80%93%20this%20one%20stays%20foursquare%3A%20it%E2%80%99s%20called%20Gin%20and%20Coconut%20Water.%20%3C%2Fp%3E%0A%3Cp%3EI%E2%80%99ve%20become%20a%20big%20fan%20of%20%3Ca%20href%3D%22http%3A%2F%2Fwww.webmd.com%2Ffood-recipes%2Ffeatures%2Ftruth-about-coconut-water%22%3Epure%20coconut%20water%3C%2Fa%3E%20for%20postworkout%20rehydration.%20It%E2%80%99s%20got%20less%20sugar%2C%20fewer%20calories%20and%20more%20potassium%20than%2C%20say%2C%20Gatorade.%20But%20I%20hadn%E2%80%99t%20imagined%20it%20in%20cocktails%2C%20or%20maybe%20I%20haven%E2%80%99t%20been%20paying%20attention.%20In%20any%20case%2C%20I%20was%20immediately%20intrigued%20with%20this%20when%20I%20saw%20it%20on%20the%20menu.%3C%2Fp%3E%0A%3Cp%3E%3Cspan%20id%3D%22more-104055%22%3E%3C%2Fspan%3EYou%20can%20imagine%20using%20coconut%20water%2C%20which%20has%20an%20earthy%2C%20nutty%20flavor%20and%20a%20light%2C%20natural%20sweetness%2C%20to%20replace%20thick%2C%20sweet%20coconut%20milk%20in%20a%20pi%C3%B1a%20colada%20or%20some%20other%20imitation%20tropical%2C%20umbrella-wearing%20drink.%20But%20this%20is%20different.%20Instead%2C%20Gin%20and%20Coconut%20Water%20arcs%20directly%20into%20the%20more%20refreshing%20category%20of%20sours%20with%20the%20addition%20of%20fresh%20lime%20juice%20and%20a%20dash%20of%20ginger%20juice.%3C%2Fp%3E%0A%3Cp%3EFor%20the%20cocktail%2C%20ABC%2C%20which%20looks%20to%20use%20local%20ingredients%2C%20prefers%20Warwick%20Rustic%20Gin%20from%20the%20Hudson%20Valley%2C%20but%20any%20traditional%20dry%20gin%20will%20work.%20It%20gets%20its%20coconut%20water%20from%20Exotic%20Superfoods%2C%20which%20is%20based%20in%20Queens%2C%20but%20pure%20commercial%20coconut%20waters%20like%20Zico%20are%20fine.%20The%20ginger%20juice%20comes%20from%20Organic%20Avenue%2C%20but%20you%20can%20squeeze%20a%20few%20drops%20at%20home%20with%20a%20ginger%20press.%20%3C%2Fp%3E%0A%3Cp%3EThe%20result%20is%20a%20beautifully%20balanced%20expression%20of%20sweet%2C%20sour%20and%20spicy.%20Take%20two%2C%20say%20ahh%2C%20and%20don%E2%80%99t%20call%20me%20until%20Monday.%3Cbr%20%2F%3E%0A%3Cdiv%20class%3D%22recipe-wrap%22%3E%3Cdiv%20class%3D%22hrecipe%22%3E%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Ca%20class%3D%22recipe-print%22%20href%3D%22javascript%3AblogPostPrint%28%27%27%2C%20%27June%2028%2C%202013%27%2C%20%27104055%27%2C%20%27http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2FprintThis.html%27%2C%20%27https%3A%2F%2Fstatic01.nyt.com%2Fimages%2Fblogs_v3%2Fdinersjournal%2Fdinersjournal_print.png%27%20%29%3B%22%3EPrint%20Recipe%3C%2Fa%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3EGin%20and%20Coconut%20Water%3C%2Fh3%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E1%201%2F2%20ounces%20dry%20gin%3C%2Fli%3E%3Cli%3E1%201%2F2%20ounces%20pure%20coconut%20water%3C%2Fli%3E%3Cli%3E3%2F4%20ounce%20fresh%20lime%20juice%3C%2Fli%3E%3Cli%3EDash%20pressed%20ginger%20juice%3C%2Fli%3E%3Cli%3ELarge%20ice%20cubes%3C%2Fli%3E%3Cli%3EFresh%20lime%20wedge%20for%20garnish%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3ECombine%20all%20ingredients%20with%20ice%20in%20a%20cocktail%20shaker%20and%20stir%20for%2020%20seconds.%20Strain%20into%20a%20chilled%20martini%20glass.%20Garnish%20with%20fresh%20lime%20wedge.%20%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20from%20ABC%20Cocina%3C%2Fp%3E%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fp%3E%0A" />
+</form>
+<div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2013/06/27/dining/dj-drink/dj-drink-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/06/27/dining/dj-drink/dj-drink-articleInline.jpg" src="https://static01.nyt.com/images/2013/06/27/dining/dj-drink/dj-drink-articleInline.jpg" id="100000002306674" width="190" height="271" alt="Gin and Coconut Water"   /><meta itemprop="height" content="271"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Gin and Coconut Water</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> ABC Cocina</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">I don’t drink cocktails frequently. But it’s been a long, hot week, and I can’t think of anything more refreshing and relaxing right now than this bracing drink I tried recently at ABC Cocina, the new pan-Latin-tinged small-plates restaurant from the Jean-Georges Vongerichten team. </p>
+<p class="story-body-text" itemprop="articleBody">In a cocktail world where drinks are named either with historic rigor – a <a href="//summitsips.com/2011/01/drink-of-the-week-mamie-taylor/">Mamie Taylor,</a>   anybody? – or to flex modern creative license – <a href="//bullettmedia.com/article/drink-and-movie-death-co-s-jillian-vose-mixes-the-dai-dai-my-darling/">Dai Dai My Darling</a>? – this one stays foursquare: it’s called Gin and Coconut Water. </p>
+<p class="story-body-text" itemprop="articleBody">I’ve become a big fan of <a href="//www.webmd.com/food-recipes/features/truth-about-coconut-water">pure coconut water</a> for postworkout rehydration. It’s got less sugar, fewer calories and more potassium than, say, Gatorade. But I hadn’t imagined it in cocktails, or maybe I haven’t been paying attention. In any case, I was immediately intrigued with this when I saw it on the menu.</p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-104055"></span>You can imagine using coconut water, which has an earthy, nutty flavor and a light, natural sweetness, to replace thick, sweet coconut milk in a piña colada or some other imitation tropical, umbrella-wearing drink. But this is different. Instead, Gin and Coconut Water arcs directly into the more refreshing category of sours with the addition of fresh lime juice and a dash of ginger juice.</p>
+<p class="story-body-text" itemprop="articleBody">For the cocktail, ABC, which looks to use local ingredients, prefers Warwick Rustic Gin from the Hudson Valley, but any traditional dry gin will work. It gets its coconut water from Exotic Superfoods, which is based in Queens, but pure commercial coconut waters like Zico are fine. The ginger juice comes from Organic Avenue, but you can squeeze a few drops at home with a ginger press. </p>
+<p class="story-body-text" itemprop="articleBody">The result is a beautifully balanced expression of sweet, sour and spicy. Take two, say ahh, and don’t call me until Monday.<br />
+<div class="recipe-wrap"><div class="hrecipe"><div class="recipe-head">
+<a class="recipe-print" href="javascript:blogPostPrint('', 'June 28, 2013', '104055', '//dinersjournal.blogs.nytimes.com/printThis.html', 'https://static01.nyt.com/images/blogs_v3/dinersjournal/dinersjournal_print.png' );">Print Recipe</a>
+<div class="recipe-meta">
+<h3>Gin and Coconut Water</h3>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg"></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>1 1/2 ounces dry gin</li><li>1 1/2 ounces pure coconut water</li><li>3/4 ounce fresh lime juice</li><li>Dash pressed ginger juice</li><li>Large ice cubes</li><li>Fresh lime wedge for garnish</li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>Combine all ingredients with ice in a cocktail shaker and stir for 20 seconds. Strain into a chilled martini glass. Garnish with fresh lime wedge. </li></ul></div><p class="recipe-source">Source: Adapted from ABC Cocina</p>
+</div></div></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dinersjournal.blogs.nytimes.com/2013/06/28/a-cocktail-to-cap-a-hot-summer-week/" data-title="A Cocktail to Cap a Hot Summer Week" data-description="Take two, say ahh, and don’t call me until Monday. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2013/06/28/what-were-reading-725/" title="What We&#039;re Reading">
+				What We&#8217;re Reading			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2013/06/28/weekend-fare-148/" title="Weekend Fare">
+				Weekend Fare			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dinersjournal.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/08/'> August 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/07/'> July 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/06/'> June 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/05/'> May 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" title="Read: A Note to Readers">A Note to Readers</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diner&#8217;s Journal is ceasing publication so that we can create a single Dining section destination: nytimes.com/dining. <a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"><img src="https://static01.nyt.com/images/2013/07/10/dining/10BURNER2/10BURNER2-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" title="Read: Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More">Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Florence Fabricant&#8217;s recommendations for the week of July 9th. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/whats-for-dinner/">What's for Dinner?</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" title="Read: Vietnamese Marinated Flank Steak">Vietnamese Marinated Flank Steak</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Vary the marinade, and you can serve flank steak in endless variation all summer. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/drinking/">Drinking</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" title="Read: Wines for Savory, Pungent Sausages">Wines for Savory, Pungent Sausages</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A list of wines to take to your summer rental.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/back-of-house/">Back of House</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" title="Read: After Midnight, She Rules the Kitchen">After Midnight, She Rules the Kitchen</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diana Bush, a baker at the NoMad, works from 8 p.m. to dawn making the restaurant&#8217;s bread.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">@nytdining</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytdining" title="Follow nytdining on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-13',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":66,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

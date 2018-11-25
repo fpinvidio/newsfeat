@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" lang="en-US" itemscope xmlns:og="//opengraphprotocol.org/schema/">
+<head profile="//gmpg.org/xfn/11"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Fabulous Dead People &#124; Alexis, Baron de Rede</title>
+<link rel="shortcut icon" href="https://static01.nyt.com/packages/images/blogs/tmagazine/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="https://static01.nyt.com/js/common.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/app/lib/NYTD/0.0.1/tabset.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/common.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/memberTools.js"></script>
+<!--[if lt IE 9]>
+<script src="https://static01.nyt.com/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://static01.nyt.com/js/common/screen/modifyNavigationDisplay.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/tabsetoverlayrevealer.js"></script>
+<!--[if lt IE 7]><script defer type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/pngfix.js"></script><![endif]-->
+<script type="text/JavaScript">
+// <![CDATA[
+var nyt_google_hints = "";
+var nyt_google_ad_channel = "bl_t-magazine";
+// ]]>
+</script>
+<script type="text/JavaScript">
+NYTD.Blogs.Ads = {};function processBlogsAds(data) { NYTD.Blogs.Ads = data.ads; }
+</script>
+<script type="text/javascript">
+if ((document.referrer).indexOf("nytimes.com") !== -1) {var nyt_doc_referrer = 'nytimes.com;';}else {var nyt_doc_referrer = '';}
+document.write( '<script id="adxScript" src="'+ '//www.nytimes.com' +'/adx/bin/adxrun.html?v=3&jsonp=processBlogsAds&page=' + 'blog.nytimes.com/tmagazine/post&positions=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&query=qstring&keywords='+ encodeURIComponent(nyt_doc_referrer) +';A-list;celebrity;chic;collections;concierge;design;designers;fashion;first+class;gossip;hotel;jet+set;luxury;models;New+York+Times;restaurant;runway;shopping;style;T+Magazine;travel;Men&#039;s+wear;Women&#039;s+wear;baron-de-rede;culture;fabulous-dead-people;jean-baptiste-lambert;jean-francois-daigre;lucius-beebe;marquis-de-cuevas;valerian-rybar;yves-saint-laurent;Culture;Uncategorized;' + '"' + '>' + '</' + 'script>');
+</script>
+<script type="text/javascript" src="https://static01.nyt.com/js/common/sharetools/2.0/shareTools.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/app/save/crossPlatformSave.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/blogscrnr.js"></script>
+<link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/blogs/3.1/screen/themes/tmagazine/style.css" media="screen" />
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/tmagazine/Fabulous Dead People | Alexis, Baron de Rede " />
+<meta name="communityAssetURL" content="//tmagazine.blogs.nytimes.com/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000765498"><meta name="author" content="Christopher Petkanas" />
+<meta name="CLMST" content="Christopher Petkanas" />
+<meta name="byl" content="Christopher Petkanas" />
+<meta name="GBLC" content="Culture">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1302267640" />
+<meta name="PUD" content="20110408" />
+<meta name="pdate" content="20110408" />
+<meta name="ptime" content="20110408090040" />
+<meta name="utime" content="20110408152519" />
+<meta property="article:modified_time" itemprop="dateModified" content="2011-04-08T15:25:19-04:00" />
+<meta name="DISPLAYDATE" content="April 8, 2011" />
+<meta name="dat" content="April 8, 2011" />
+<meta itemprop="articleSection" property="article:section" content="T:Style" />
+<meta name="CG" content="T:Style" />
+<meta name="SCG" content="tmagazine" />
+<meta name="BN" content="tmagazine" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Culture" />
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Culture,Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Ftmagazine.blogs.nytimes.com%2F2011%2F04%2F08%2Ffabulous-dead-people-alexis-baron-de-rede%2F" title="Fabulous Dead People | Alexis, Baron de Rede" />
+<meta name="description" content="Baron de Rede&#8217;s life was dedicated to manners, protocol, museum-quality collecting and entertaining on a huge and hugely imaginative scale." />
+<meta name="hdl" content="Fabulous Dead People &#124; Alexis, Baron de Rede " />
+<meta property="og:title" content="Fabulous Dead People &#124; Alexis, Baron de Rede " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//tmagazine.blogs.nytimes.com/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/" />
+<meta property="og:site_name" content="T Magazine" />
+<meta property="og:description" content="Baron de Rede&#8217;s life was dedicated to manners, protocol, museum-quality collecting and entertaining on a huge and hugely imaginative scale." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v3/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Fabulous Dead People &#124; Alexis, Baron de Rede " />
+<meta name="twitter:url" content="//tmagazine.blogs.nytimes.com/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/" />
+<meta name="twitter:description" content="Baron de Rede&#8217;s life was dedicated to manners, protocol, museum-quality collecting and entertaining on a huge and hugely imaginative scale." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@https://twitter.com/tmagazine">
+<script src="https://static01.nyt.com/js/app/lib/jquery/jquery-1.6.2.min.js" type="text/javascript"></script><script src="https://static01.nyt.com/js/EmbeddedComments/embeddedComments.js" type="text/javascript"></script>
+<link rel='prev' title='Pablo Picasso&#8217;s Blue Pajama Period' href='//tmagazine.blogs.nytimes.com/2011/04/07/pablo-picassos-blue-pajama-period/' />
+<link rel='next' title='Glass Menagerie' href='//tmagazine.blogs.nytimes.com/2011/04/08/glass-menagerie/' />
+<link rel='canonical' href='//tmagazine.blogs.nytimes.com/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/' />
+<link rel='shortlink' href='//tmagazine.blogs.nytimes.com/?p=152899' />
+<link rel='https://github.com/WP-API/WP-API' href='//tmagazine.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/tmagazine/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//tmagazine.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/t-magazine/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/tmagazine/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/" />
+<style type="text/css">
+address {font-style: normal;display: inline;}.story-meta-footer span + time {border: 0;}.story-meta-footer .kicker + time, .story-meta-footer .kicker + span {border-left: 1px solid #ccc;}.has-kicker .byline {border-left: 1px solid #ccc;padding: 0 5px 0 8px;}figure {    margin: 0px;}.credit {    display: inline;}.visually-hidden {    border: 0;    clip: rect(0 0 0 0);    height: 1px;    margin: -1px;    overflow: hidden;    padding: 0;    position: absolute;    width: 1px;}.entry-content .story-addendum {    color: #333;    font-style: italic;    font-size: 1rem;    line-height: 1.4375rem;    font-weight: 400;    font-family: georgia,"times new roman",times,serif;    margin-bottom: 1em;    max-width: 540px;}.entry-content .story-footer {    margin-top: 24px;    margin-bottom: 45px;}.entry-content .story-footer .story-notes p {    font-size: .875rem;    line-height: 1.125rem;    font-weight: 500;    font-family: "nyt-franklin", arial, helvetica, sans-serif;    margin-bottom: 14px;}.entry-content .story-footer:before {    content: "";    width: 60px;    height: 1px;    display: inline-block;    background-color: #000;    margin: 0 0 13px;}.entry-content .story-print-citation {    font-size: .6875rem;    line-height: .9375rem;    font-weight: 300;    font-family: "nyt-franklin", arial, helvetica, sans-serif;    color: #999;}body.single article.hentry {    padding: 15px 10px 0;}.fullScreenSlideShow #fullScreenWrapper {    z-index: 10000000;}figure .image {    margin-bottom: 7px;}figure .credit {    font-size: 1em;line-height: 1.2em;}.caption {    font-size: 1.2em;}body.blogHome.nyt-blog-tmagazine .hfeed .hentry:first-child,body.blogAuthor.nyt-blog-tmagazine .hfeed div:first-child+ .hentry {    margin-top: 0px!important;    padding-top: 0px!important;    background:none;}body.blogAuthor.nyt-blog-tmagazine .hfeed div:first-child+ .hentry,body.blogCategories.nyt-blog-tmagazine .hfeed div:first-child+ .hentry {    background:none;}body.blogHome.nyt-blog-tmagazine .hfeed .hentry,body.blogAuthor.nyt-blog-tmagazine .hfeed .hentry {    margin-top: 40px;    padding-top: 40px;}body.blogCategories.nyt-blog-tmagazine .resultsLabel,body.blogAuthor.nyt-blog-tmagazine .resultsLabel,body.blogTags.nyt-blog-tmagazine .resultsLabel {    margin-left: 15px;    margin-top: 15px;    border-bottom: 1px solid #e2e2e2;    padding-bottom: 15px;}body.nyt-blog-tmagazine #aCol .nav .next {    margin-left: 135px;}body.nyt-blog-tmagazine .entry-content .related-coverage {    margin-bottom: 1em;}body.nyt-blog-tmagazine .entry-content .related-coverage h6.kicker {    margin-bottom:5px;}body.nyt-blog-tmagazine .entry-content .related-coverage li {    margin-bottom: 0;}body.nyt-blog-tmagazine #cCol .nav .next {    margin-left: 45px;}body.nyt-blog-tmagazine #cCol .nav li {    max-width: 110px;}body.nyt-blog-tmagazine #aCol .nav li {    max-width: 190px;}body.nyt-blog-tmagazine .nav li a {    overflow: hidden;}body.nyt-blog-tmagazine.wideAd #aCol .nav .element1, body.nyt-blog-tmagazine.wideAd #aCol .nav .element2 {    width: 50%;}body.nyt-blog-tmagazine.wideAd #aCol .nav ul {    background: url("https://static01.nyt.com/images/layout/vertical_rule.gif") repeat-y center;}body.nyt-blog-tmagazine.wideAd #aCol .nav .next {    margin-left: 182px;}body.nyt-blog-tmagazine.wideAd #aCol .nav .w75 {    display: none;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo {    margin: 0 0 20px;    padding: 22px 22px 10px;    background: #f9f9f9;    overflow: hidden;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo .w190 {    float: right;    margin: 0 0 10px;    padding: 0;    width: auto;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo img {    width: 155px;    height: 103px;    margin: 0 0 0 10px;    padding: 0;    display: block !important;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo .nyt-article-byline {    margin-bottom: 4px;    font-size: 10px;    line-height: 13px;    font-weight: 500;    color: #808080;    font-family: arial;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo h4 {    font-size: 17px;    line-height: 21px;    font-weight: 500;    margin-bottom: 5px;    font-family: georgia;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo h4 a {    color: #000;    text-decoration: none;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo h4 a:hover {    color: #f00;    text-decoration: underline;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo .nyt-article-summary {    font-size: 13px;    line-height: 18px;    margin-bottom: 0;    font-family: georgia;    font-style: italic;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module {    border-bottom: 1px solid #000;    border-top: 1px solid #000;    padding: 10px 0 10px 0;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module .entry {    padding: 10px 0 0 0;    text-align: left;    border: none;}body.nyt-blog-tmagazine #aCol .postHeader .postSubHeader {    text-align: center;    margin-bottom: 5px;}body.nyt-blog-tmagazine #aCol .postHeader .postSubHeader .post-kicker {    text-transform: uppercase;    font-weight: bold;    font-size: 11px;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module {    border-bottom: 1px solid #000;    border-top: 1px solid #000;    padding: 10px 0 10px 0;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module .entry {    padding: 10px 0 0 0;    text-align: left;    border: none;}body.nyt-blog-tmagazine .entry-content .w190 .entry h6.kicker {    font-weight: 700;    margin-bottom: 5px;}body.nyt-blog-tmagazine .entry-content .w190 .entry h5 {    margin-bottom: 3px;}body.nyt-blog-tmagazine .entry-content .w190 .entry p.summary,body.nyt-blog-tmagazine .entry-content .w190 ul li {    font-family: arial;    font-size: 1.2em;    line-height: 1.5em;}body.nyt-blog-tmagazine .entry-content .w190 ul li a {    font-size: 0.9em;}body.nyt-blog-tmagazine .postMetaHeader .byline {    text-transform: uppercase;}body.nyt-blog-tmagazine.wideAd .w480,body.nyt-blog-tmagazine.wideAd .w592,body.nyt-blog-tmagazine.wideAd .w480 img,body.nyt-blog-tmagazine.wideAd .w592 img,body.nyt-blog-tmagazine.wideAd .videoplayerContainer,body.nyt-blog-tmagazine.wideAd .videoplayerContainer object,body.nyt-blog-tmagazine.wideAd .nytd-player-poster {height: 266px !important;}</style>
+</head>
+<body id=culture class="single postid-152899 blogPost  blog-universal nyt-blog-tmagazine" data-env="production" data-region="ewr1">
+<!-- Header1 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header1 != "undefined" ){document.write(NYTD.Blogs.Ads.Header1.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header1 != "undefined" ) { NYTD.jQuery("#Header1").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Header1"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Header1&query=qstring&keywords=?"></a></noscript>
+<!-- Header2 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header2 != "undefined" ){document.write(NYTD.Blogs.Ads.Header2.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header2 != "undefined" ) { NYTD.jQuery("#Header2").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Header2"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Header2&query=qstring&keywords=?"></a></noscript>
+<!-- Header3 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header3 != "undefined" ){document.write(NYTD.Blogs.Ads.Header3.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header3 != "undefined" ) { NYTD.jQuery("#Header3").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Header3"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Header3&query=qstring&keywords=?"></a></noscript>
+<a name="top"></a>
+<div id="shell" class="wrap">
+  <div id="PushDown" class="leaderboard ad clearfix">
+    <script type="text/javascript">
+      if ((typeof adxpos_PushDown == "undefined") || (typeof adxads[adxpos_PushDown] == "undefined") ) {
+        if ( $( "PushDown") ) {
+          $( "PushDown").hide();
+        }
+      }
+      if ((typeof adxpos_PushDown != "undefined") && (typeof adxads[adxpos_PushDown] != "undefined") ){
+        document.write(adxads[adxpos_PushDown]);
+      }
+    </script>
+  </div>
+  <div id="masthead-nav" class="wrap">
+    <div id="masthead">
+      <h2>
+        <a href="//www.nytimes.com/pages/t-magazine/index.html">
+          Go Back To Home
+        </a>
+      </h2>
+    </div>
+    <div class="navigation" id="topNav">
+      <ul id="mainNavigation" class="flush">
+        <li class="firstItem">
+          <a href="//www.nytimes.com/pages/t-magazine/womens-fashion/index.html">
+            Women's Fashion
+          </a>
+        </li>
+        <li class="secondItem">
+          <a href="//www.nytimes.com/pages/t-magazine/mens-fashion/index.html">
+            Men's Fashion
+          </a>
+        </li>
+        <li class="thirdItem">
+          <a href="//www.nytimes.com/pages/t-magazine/design/index.html">
+            Design
+          </a>
+        </li>
+        <li class="fourthItem">
+          <a href="//www.nytimes.com/pages/t-magazine/travel/index.html">
+            Travel
+          </a>
+        </li>
+        <li class="fifthItem">
+          <a href="//www.nytimes.com/pages/t-magazine/food/index.html">
+            Food
+          </a>
+        </li>
+        <li class="sixthItem">
+          <a href="//www.nytimes.com/pages/t-magazine/culture/index.html">
+            Culture
+          </a>
+        </li>
+        <li class="lastItem">
+          <a href="//www.nytimes.com/gst/tmagazine/video/index.html">
+            Video
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="masthead-nav-divider" class="singleRuleDivider">
+  </div>
+  <div class="searchModule">
+    <div class="insetV">
+      <div class="inlineSearchControl">
+        <form method="get" action="https://query.nytimes.com/search/tmagazine" enctype="application/x-www-form-urlencoded">
+          <input type="text" id="searchQuery" name="query" size="" value="SEARCH" class="text" onblur="if (this.value=='')this.value='SEARCH';" onfocus="if (this.value=='SEARCH')this.value='';">
+          <input type="image" src="//static01.nyt.com/images/tmagazine/buttons/search-button.gif" alt="Search" title="Search" id="searchSubmit">
+        </form>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+// <![CDATA[
+if ((typeof NYTD.Blogs.Ads != "undefined") && (typeof NYTD.Blogs.Ads.XXL != "undefined") ) {$(document.body).addClassName( "wideAd");}
+// ]]>
+</script><hr />
+<!-- Here is the start of everything good -->
+<div id="tmagazine" class="spanAC blog wrap">
+<div id="aCol">
+<hr />	<div id="content" class="hfeed">
+	<article class="post-152899 post type-post status-publish hentry category-culture category-uncategorized tag-baron-de-rede tag-fabulous-dead-people tag-jean-baptiste-lambert tag-jean-francois-daigre tag-lucius-beebe tag-marquis-de-cuevas tag-valerian-rybar tag-yves-saint-laurent" id="post-152899">
+<header class="postHeader">
+    <div class="postSubHeader"></div>
+	<h1 itemprop="headline" class="entry-title">Fabulous Dead People | Alexis, Baron de Rede</h1>		<div class="postMetaHeader story-meta-footer centeredText has-kicker">
+		<span class="kicker"><a href="//tmagazine.blogs.nytimes.com/category/culture/">Culture</a></span>
+				<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+			By Christopher Petkanas		</address>
+		<!-- date published --><time class="dateline " datetime="2011-04-08T13:00:40-04:00" itemprop="datePublished">April 8, 2011 9:00 am</time>
+			<!-- date updated --><span class="visually-hidden updated">April 8, 2011 9:00 am</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<a class="commentCountLink icon commentIcon" href="//tmagazine.blogs.nytimes.com/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/"></a>
+				</span>	</div>
+</header>
+<div class="entry-content">
+    <div class="w362"><img id="100000000764330" src="https://static01.nyt.com/images/2011/04/07/t-magazine/07baron-petkanas/07baron-petkanas-tmagSF.jpg" alt="A 1969 photograph of Oscar de la Renta (left) and Baron Alexis de Rede (right) at an Oriental ball in Paris." width="362" height="487" /><span class="credit">Photographs by Jack Nisberg/Roger-Viollet, via The Image Works</span><span class="caption">A 1969 photograph of Oscar de la Renta (left) and Baron Alexis de Rede (right) at an Oriental ball.</span></div>
+<p class="story-body-text" itemprop="articleBody">In the old days, a bratty and obscure pinkie-raiser like Alexis, Baron de Rede would have stopped breathing, had his estate auctioned off at Sotheby&#8217;s (for $9.5 million) and that would have been that. Save for the odd mention in social histories of Paris, he would never have been heard from again. But thanks to Mark Zuckerberg (who would have struck the baron as an utter alien), Alexis lives on.  His &#8220;Admirers Of” on Facebook number 239.</p>
+<p class="story-body-text" itemprop="articleBody">By his own reckoning, de Rede (1922-2004) was self-centered, impatient, indifferent to affection, unimpressed by royalty and always, as he famously told the wife of the mayor of Paris one night at dinner at the Elysee Palace,<em> très occupé </em>doing nothing. His life was dedicated to manners, protocol, museum-quality collecting and entertaining on a huge and hugely imaginative scale. As de Rede had the money to support his pastimes and was not shy about spending it, doing <em>rien</em> wasn’t an empty threat.<span id="more-152899"></span></p>
+<p class="story-body-text" itemprop="articleBody">In 1956 he hosted the Bal des Têtes, introducing an unknown assistant at Dior named Yves Mathieu Saint Laurent to Paris society through the decorations and confectionary headpieces of plumes and paillettes that the baron had commissioned. Thirteen years later he bested himself, by all accounts, with the Bal Oriental, designed by the brilliant but forgotten team of Valerian Rybar and Jean-Francois Daigre, complete with life-size papier-mâché elephants, a cabaret à la Turc and bare-chested bodybuilders brandishing flaming torches and costumed as Nubian slaves.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;All I want is the best of everything, and there&#8217;s very little of that left,&#8221; de Rede once said, helping himself to that marvelous line minted by Lucius Beebe, the society columnist for the New York Herald. Among his other peccadilloes, the baron was severely repulsed by men who crossed their legs to expose a sun-starved length of calf;  he pooh-poohed dining rooms (&#8220;I set up a table wherever it suits me&#8221;); he thought it bad taste to speculate as to who might or might not have good taste; and he held that nothing less than a whole rose head per finger bowl would do, petals being for concierges.</p>
+<div class="w592"><img src="https://static01.nyt.com/images/2011/04/07/t-magazine/07baron-petkanas/07baron-petkanas-custom1.jpg" alt="" /> <span class="caption">From left: Marie-Hélène de Rothschild, Baron Alexis de Rede, Elizabeth Taylor and Liza Minnelli.</span></div>
+<p class="story-body-text" itemprop="articleBody">Even more astonishing was his insistence that platters of food look the same at the close of a soiree as at the beginning. No picked-over fish frames, gouged mounds of pilaf or, heaven forbid, drooling aspics. &#8220;It does not matter if people do not eat the food at the end of the evening, as there are always people you can give it to,&#8221; he explained somewhat vaguely in <a href="//www.amazon.com/Alexis-Memoirs-Sir-Hugo-Vickers/dp/190434903X">&#8220;Alexis, the Memoirs of the Baron De Rede,&#8221; </a> an amusing if sloppy and frequently appalling album of photographs and reminiscences written the year he died. Recounting a dinner given by the South American ballet impresario Marquis de Cuevas, the baron notes the presence of a &#8220;coloured&#8221; orchestra. Elsewhere his attention is diverted by a &#8220;good-looking but boring man, remembered for a diminutive posterior.&#8221; As Alexis had a nearly negative sex drive, it must have really been something.</p>
+<p class="story-body-text" itemprop="articleBody">As always, Taki, in his Spectator obit of de Rede, was there to tell us what really went down: “Alexis did not go around grabbing people’s behinds.’’ Taki is not the first person you&#8217;d expect to defend the baron&#8217;s virtue and title, but this he does, maintaining that jealousy, homophobia and anti-Semitism gave rise to charges that Alexis was a faux baron and a &#8220;bumboy,&#8221; i.e., the gay version of a skirt chaser. De Rede&#8217;s own position, and there is no reason to disbelieve him, was that the only person he ever loved was a randy Polish classmate at his prep school Le Rosey who bedded every boy and farm girl he could lure into the hayloft. The baron never acted on his love, which seems sad, but he did keep good company. Prince Rainier and the future Shah of Persia were fellow pupils.</p>
+<p class="story-body-text" itemprop="articleBody">De Rede was born in Zurich to a Jewish father, a banker from Austria-Hungary, and a German-Jewish mother who died of leukemia when he was 9, and whose ancestors had been 50-50 owners of the Royal Bank of Wurttemberg. As Alexis, who was raised a Protestant, observed with no excess of elegance (he was not a very lyrical writer),  “to get a title you had to have a lot of land.’’ Papa was awarded his in 1916 by Emperor Franz-Joseph upon purchasing an estate in Transylvania with the name Rede. But somehow the honorific, though absolutely legit, never made it into the Almanach de Gotha, leaving Alexis vulnerable to snipers, like his embittered nemesis Nancy Mitford, who questioned his authenticity. La Mitford on de Rede: “He looks like a tie-pin, thin… &amp; correct with a weeny immovable head on a long stiff neck.”</p>
+<p class="story-body-text" itemprop="articleBody">The baron, his brother and a sister who was born crippled and &#8220;not quite normal in the head&#8221; grew up in the Dolder Grand Hotel in Zurich, attended by an army of maids, valets, nannies, waiters, grooms and porters. But as the family&#8217;s fortunes diminished so did its lodgings, from a high of 16 rooms, including one designated solely for arranging flowers, to just two. In 1939 de Rede pere took his life after learning he was bankrupt. With no one to tell him he couldn&#8217;t, Alexis, all of 17, took himself first to New York, then to Hollywood, where he worked in an antiques shop, befriending clients like Dali and his wife Gala.</p>
+<p class="story-body-text" itemprop="articleBody">It sounds almost too cheesey  to be true, but having returned to New York in 1941, de Rede was dining at the fashionable restaurant Les Bruxelles when he literally turned the head of Arturo Lopez-Wilshaw, a Chilean whose staggering wealth was derived from guano. (The irony of bird excrement enabling the lives of two of the greatest aesthetes of the 20th century is beyond the scope of this article.) The baron had been saving himself, and now he knew why. The deed was done not amid the brocade splendor of the St. Regis, where Arturo was staying with his wife Patricia, but at the &#8220;sleazy&#8221; (a breathtaking word on de Rede&#8217;s lips) hotel Winslow on East 55th Street.</p>
+<p class="story-body-text" itemprop="articleBody">Alexis, as we know, was not in love with Arturo, who was 22 years his senior, reasoning, &#8220;I needed protection and I was aware that he could provide this. I think it is hard to love someone on whom you rely financially.&#8221; Not even when, in 1946, he gives you $1 million — roughly $11 million today — to set yourself up in Paris. But the baron wasn&#8217;t entirely the toy boy he liked to portray himself as. In 1963, along with Prince Rupert Lowenstein and other investors, he bought control of Joseph Leopold &amp; Sons, the London merchant bank, retiring in 1978 as vice chairman. And when Lowenstein became the  Rolling Stones&#8217;s financial adviser, he made de Rede president of the group&#8217; s management companies. Though the Stones&#8217;s music was obviously not his cup of tea, he did go on tour with them (you can just picture him backstage in Singapore with an all-access badge around his neck) and was at  least able to talk shoes with Charlie Watts.</p>
+<p class="story-body-text" itemprop="articleBody">Alexis was prouder of nothing more than his unstinting restoration of the Hotel Lambert, the 17th-century landmark he occupied on the prow of Ile St. Louis for more than five decades starting in 1949. Commissioned by Jean-Baptiste Lambert, the private secretary to Louis XIII, the palace was built by Le Vau, with interiors by Le Brun and Le Sueur, all of whom would go on to work on Versailles. For his trouble the baron was very late in life appointed a Commandeur in the Ordre des Arts et des Lettres. &#8220;Never ask for an honor, never refuse an honor and never wear one,&#8221; he was advised by his good friend Guy De Rothschild, who acquired the Lambert in 1975. By then de Rede and Rothschild&#8217;s wife Marie-Helene, &#8220;the Queen of Paris,&#8221; had become BFF’s, so he stayed on, one third of a menage that was as curious as it was successful.</p>
+<p class="story-body-text" itemprop="articleBody">A reader of Alexis&#8217;s memoirs is left with the impression that, along with the Lambert, it was his practice of misting the flowers just before sitting down to dine — &#8220;It makes them look as though the dew is on them&#8221; — that formed the most meaningful part of his legacy. It&#8217;s hard to imagine anyone really believing that squirting a bunch of roses required special skill, or a fancy silver-plate vaporizer from Puiforcat. But the Baron was insistent. &#8220;Others have tried to copy’’ his habit, he wrote, &#8220;but usually fail.&#8221;</p>
+    </div>
+</article>
+<div class="entry-meta">
+        <div class="shareTools shareToolsThemeClassic shareToolsThemeClassicHorizontal articleShareToolsBottom " data-shares="facebook,twitter,google,email,showall|Share,print" data-url="//tmagazine.blogs.nytimes.com/2011/04/08/fabulous-dead-people-alexis-baron-de-rede/" data-title="Fabulous Dead People | Alexis, Baron de Rede " data-description="Baron de Rede&#039;s life was dedicated to manners, protocol, museum-quality collecting and entertaining on a huge and hugely imaginative scale."></div>
+    </div><!-- end .entry-meta -->		<hr />
+			<div class="module box nav">
+		<ul class="opposingFloatControl wrap">
+			<li class="element1">
+								<span class="previous">Previous Post</span>
+				<!-- date published --><time class="dateline " datetime="2011-04-07T21:30:52-04:00" itemprop="datePublished">April 7, 2011</time>
+			<!-- date updated --><span class="visually-hidden updated">April 7, 2011</span>				<a href="//tmagazine.blogs.nytimes.com/2011/04/07/pablo-picassos-blue-pajama-period/" title="Pablo Picasso&#8217;s Blue Pajama Period ">Pablo Picasso&#8217;s Blue Pajama Period </a>
+							</li>
+			<li class="element2">
+								<span class="next">Next Post</span>
+				<!-- date published --><time class="dateline " datetime="2011-04-08T15:00:04-04:00" itemprop="datePublished">April 8, 2011</time>
+			<!-- date updated --><span class="visually-hidden updated">April 8, 2011</span>				<a href="//tmagazine.blogs.nytimes.com/2011/04/08/glass-menagerie/" title="Glass Menagerie">Glass Menagerie</a>
+							</li>
+		</ul>
+	</div>
+<!-- community comments -->
+<a id="postComment"></a>
+<div id="commentsContainer" class="commentsContainer"></div>
+<script type="text/javascript">
+NYTD.jQuery(document).ready(function ($) {
+   NYTD.commentsInstance = new EmbeddedComments($, 'NYTD.commentsInstance' );
+   NYTD.commentsInstance.init({configName: 'default'});
+});
+</script>
+	</div> <!-- end content -->
+	<div id="google_ads_aCol">
+<!-- SponLink2 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink2 != "undefined" ){document.write(NYTD.Blogs.Ads.SponLink2.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink2 != "undefined" ) { NYTD.jQuery("#SponLink2").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=SponLink2"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=SponLink2&query=qstring&keywords=?"></a></noscript>
+</div>
+</div><!-- end aCol -->
+<div id="cCol">
+<div id="blog-index">
+	<a href="//www.nytimes.com/blogs/" title="Blogs - The New York Times">All NYTimes.com Blogs »</a>
+</div>
+	<div class="module box nav">
+		<ul class="opposingFloatControl wrap">
+			<li class="element1">
+								<span class="previous">Previous Post</span>
+								<a href="//tmagazine.blogs.nytimes.com/2011/04/07/pablo-picassos-blue-pajama-period/" title="Pablo Picasso&#8217;s Blue Pajama Period ">Pablo Picasso&#8217;s Blue Pajama Period </a>
+							</li>
+			<li class="element2">
+								<span class="next">Next Post</span>
+								<a href="//tmagazine.blogs.nytimes.com/2011/04/08/glass-menagerie/" title="Glass Menagerie">Glass Menagerie</a>
+							</li>
+		</ul>
+	</div>
+<div class=" module ad" id="XXL">
+	<!-- XXL position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.XXL != "undefined" ){document.write(NYTD.Blogs.Ads.XXL.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.XXL != "undefined" ) { NYTD.jQuery("#XXL").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=XXL"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=XXL&query=qstring&keywords=?"></a></noscript>
+</div>
+	    <div class='box module ad nocontent' id="MiddleRight">
+			<div class='bigAdContainer'>
+				<!-- MiddleRight position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.MiddleRight != "undefined" ){document.write(NYTD.Blogs.Ads.MiddleRight.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.MiddleRight != "undefined" ) { NYTD.jQuery("#MiddleRight").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=MiddleRight"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=MiddleRight&query=qstring&keywords=?"></a></noscript>
+			</div>
+	    </div>
+	    	<div class='box module ad nocontent' id="Box1">
+	<!-- Box1 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Box1 != "undefined" ){document.write(NYTD.Blogs.Ads.Box1.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Box1 != "undefined" ) { NYTD.jQuery("#Box1").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Box1"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Box1&query=qstring&keywords=?"></a></noscript>
+	</div>
+	<div id="google_ads" class="box module ad">
+<!-- SponLink position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink != "undefined" ){document.write(NYTD.Blogs.Ads.SponLink.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink != "undefined" ) { NYTD.jQuery("#SponLink").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=SponLink"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=SponLink&query=qstring&keywords=?"></a></noscript>
+</div>
+</div><!-- end cCol --></div><!-- end blog wrap --><div id="footer" class="singleRule">
+	<div class="opposingFloatControl wrap">
+		<div class="element1">
+			<ul id="footerNavigation" class="flush">
+				<li class="firstItem">
+					<a href="//www.nytimes.com">NYTIMES.COM</a></li>
+				<li class="secondItem">
+					<a href="//www.nytimes.com/ref/membercenter/help/infoservdirectory.html">CONTACT US</a>
+				</li>
+				<li class="thirdItem">
+					<a href="//nytmediakit.com/">MEDIA KIT</a>
+				</li>
+				<li class="fourthItem">
+					<a href="//www.nytimes.com/ref/membercenter/help/privacysummary.html">PRIVACY POLICY</a>
+				</li>
+				<li class="lastItem">
+					<a href="//www.nytco.com/">THE NEW YORK TIMES COMPANY</a>
+				</li>
+			</ul>
+		</div>
+		<div class="element2">
+			<div id="footerLogo">
+				<a href="//www.nytimes.com/pages/t-magazine/index.html">The New York Times Style Magazine</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div> <!-- end page --><!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-23',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":41,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-takingnote section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-takingnote section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-takingnote section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-takingnote section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/takingnote/What Donald Trump Gets Wrong About North Korea ( 20160520 )" />
+<meta name="communityAssetURL" content="//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000004426926"><meta name="author" content="Carol Giacomo" />
+<meta name="CLMST" content="Carol Giacomo" />
+<meta name="byl" content="Carol Giacomo" />
+<meta name="GBLC" content="Featured Posts">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1463757307" />
+<meta name="PUD" content="20160520" />
+<meta name="pdate" content="20160520" />
+<meta name="ptime" content="20160520111507" />
+<meta name="utime" content="20160520163258" />
+<meta property="article:modified_time" itemprop="dateModified" content="2016-05-20T16:32:58-04:00" />
+<meta name="DISPLAYDATE" content="May 20, 2016" />
+<meta name="dat" content="May 20, 2016" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="takingnote" />
+<meta name="BN" content="takingnote" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Carter, Jimmy;Clinton, Bill;Clinton, Hillary Rodham;Kim Jong Il;Kim Jong-un;Obama, Barack;Rouhani, Hassan;Trump, Donald J;Zarif, Mohammad Javad">
+<meta name="des" content="Embargoes and Sanctions;International Relations;Nuclear Tests;Nuclear Weapons;Presidential Election of 2016;United States International Relations;United States Politics and Government">
+<meta name="org" content="Security Council (UN);Workers&#039; Party of Korea">
+<meta name="geo" content="China;Cuba;Iran;Japan;Myanmar;North Korea;Pyongyang (North Korea);Syria;United States;Venezuela">
+<meta property="article:tag" content="Carter Jimmy" />
+<meta property="article:tag" content="Clinton Bill" />
+<meta property="article:tag" content="Clinton Hillary Rodham" />
+<meta property="article:tag" content="Kim Jong Il" />
+<meta property="article:tag" content="Kim Jong-un" />
+<meta property="article:tag" content="Obama Barack" />
+<meta property="article:tag" content="Rouhani Hassan" />
+<meta property="article:tag" content="Trump Donald J" />
+<meta property="article:tag" content="Zarif Mohammad Javad" />
+<meta property="article:tag" content="Embargoes and Sanctions" />
+<meta property="article:tag" content="International Relations" />
+<meta property="article:tag" content="Nuclear Tests" />
+<meta property="article:tag" content="Nuclear Weapons" />
+<meta property="article:tag" content="Presidential Election of 2016" />
+<meta property="article:tag" content="United States International Relations" />
+<meta property="article:tag" content="United States Politics and Government" />
+<meta property="article:tag" content="Security Council (UN)" />
+<meta property="article:tag" content="Workers&#039; Party of Korea" />
+<meta property="article:tag" content="China" />
+<meta property="article:tag" content="Cuba" />
+<meta property="article:tag" content="Iran" />
+<meta property="article:tag" content="Japan" />
+<meta property="article:tag" content="Myanmar" />
+<meta property="article:tag" content="North Korea" />
+<meta property="article:tag" content="Pyongyang (North Korea)" />
+<meta property="article:tag" content="Syria" />
+<meta property="article:tag" content="United States" />
+<meta property="article:tag" content="Venezuela" />
+<meta property="article:tag" content="Featured Posts" />
+<meta name="keywords" content="Carter Jimmy,Clinton Bill,Clinton Hillary Rodham,Kim Jong Il,Kim Jong-un,Obama Barack,Rouhani Hassan,Trump Donald J,Zarif Mohammad Javad,Embargoes and Sanctions,International Relations,Nuclear Tests,Nuclear Weapons,Presidential Election of 2016,United States International Relations,United States Politics and Government,Security Council (UN),Workers&#039; Party of Korea,China,Cuba,Iran,Japan,Myanmar,North Korea,Pyongyang (North Korea),Syria,United States,Venezuela,Featured Posts" />
+<meta name="news_keywords" content="China,Cuba,Iran,Japan,Myanmar;Burma,Syria,Venezuela" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Ftakingnote.blogs.nytimes.com%2F2016%2F05%2F20%2Fwhat-donald-trump-gets-wrong-about-north-korea%2F" title="What Donald Trump Gets Wrong About North Korea" />
+<meta name="description" content="Mr. Trump says he&#8217;d meet with Kim Jong-un, but he has no understanding of how to use such a meeting to advance American interests." />
+<meta name="hdl" content="What Donald Trump Gets Wrong About North Korea" />
+<meta property="og:title" content="What Donald Trump Gets Wrong About North Korea" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/" />
+<meta property="og:site_name" content="Taking Note" />
+<meta property="og:description" content="Mr. Trump says he&#8217;d meet with Kim Jong-un, but he has no understanding of how to use such a meeting to advance American interests." />
+<meta property="og:image" content="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="What Donald Trump Gets Wrong About North Korea" />
+<meta name="twitter:url" content="//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/" />
+<meta name="twitter:description" content="Mr. Trump says he&#8217;d meet with Kim Jong-un, but he has no understanding of how to use such a meeting to advance American interests." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-thumbLarge.jpg" name="thumbnail" />
+<link rel='prev' title='How Doctors Can Fight Gun Violence' href='//takingnote.blogs.nytimes.com/2016/05/19/how-doctors-can-fight-gun-violence/' />
+<link rel='next' title='The Republicans’ Obsession With Voter Suppression' href='//takingnote.blogs.nytimes.com/2016/05/20/the-republicans-obsession-with-voter-suppression/' />
+<link rel='canonical' href='//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/' />
+<link rel='shortlink' href='//nyti.ms/1TrQaSU' />
+<link rel='https://github.com/WP-API/WP-API' href='//takingnote.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/takingnote/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//takingnote.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/takingnote/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/" />
+<meta name="dfp-ad-unit-path" content="takingnote" />			<title>What Donald Trump Gets Wrong About North Korea - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-22833 blog-universal nyt-blog-takingnote" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//takingnote.blogs.nytimes.com">
+                Taking Note            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        What Donald Trump Gets Wrong About North Korea        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/"
+	 data-title="What Donald Trump Gets Wrong About North Korea"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Mr. Trump says he’d meet with Kim Jong-un, but he has no understanding of how to use such a meeting to advance American interests.&lt;/span&gt;&lt;a href=&quot;//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="May 20, 2016 11:15 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="takingnote" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap opinion-alternate">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//takingnote.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/takingnote/takingnote75.gif" alt="Taking Note"/></div><div class="site-title">Taking Note</div><div class="site-description">The Editorial Page Editor&#039;s Blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//takingnote.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Taking Note">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-22833 post type-post status-publish hentry category-featured-posts tag-carter-jimmy tag-china tag-clinton-bill tag-clinton-hillary-rodham tag-cuba tag-embargoes-and-sanctions tag-international-relations tag-iran tag-japan tag-kim-jong-il tag-kim-jong-un tag-myanmar tag-north-korea tag-nuclear-tests tag-nuclear-weapons-2 tag-obama-barack tag-presidential-election-of-2016 tag-pyongyang-north-korea tag-rouhani-hassan tag-security-council-un tag-syria tag-trump-donald-j tag-united-states tag-united-states-international-relations tag-united-states-politics-and-government tag-venezuela tag-workers-party-of-korea tag-zarif-mohammad-javad per-carter-jimmy per-clinton-bill per-clinton-hillary-rodham per-kim-jong-il per-kim-jong-un per-obama-barack per-rouhani-hassan per-trump-donald-j per-zarif-mohammad-javad des-embargoes-and-sanctions des-international-relations des-nuclear-tests des-nuclear-weapons des-presidential-election-of-2016 des-united-states-international-relations des-united-states-politics-and-government org-security-council-un org-workers-party-of-korea geo-china geo-cuba geo-iran geo-japan geo-myanmar geo-north-korea geo-pyongyang-north-korea geo-syria geo-united-states geo-venezuela news_keywords-china news_keywords-cuba news_keywords-iran news_keywords-japan news_keywords-myanmarburma news_keywords-syria news_keywords-venezuela" id="post-22833">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">What Donald Trump Gets Wrong About North Korea</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Carol Giacomo			</address>
+			<!-- date published --><time class="dateline " datetime="2016-05-20T15:15:07+00:00" itemprop="datePublished">May 20, 2016 11:15 am</time>
+			<!-- date updated --><span class="visually-hidden updated">May 20, 2016 11:15 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/" data-title="What Donald Trump Gets Wrong About North Korea" data-description="Mr. Trump says he’d meet with Kim Jong-un, but he has no understanding of how to use such a meeting to advance American interests.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><div class="w480"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-blog480.jpg" src="https://static01.nyt.com/images/2016/05/20/opinion/20giacomoWEB/20giacomoWEB-blog480.jpg" id="100000004424979" width="480" height="490" alt="Donald Trump."   /><meta itemprop="height" content="490"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Donald Trump.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Eric Thayer for The New York Times</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">One of Donald Trump’s latest contributions to the 2016 presidential contest is an offer to talk with Kim Jong-un, the North Korean dictator who keeps 25 million people enslaved and commands an arsenal that some experts say could have more than <a href="//www.nytimes.com/2016/01/07/world/asia/north-korea-nuclear-test.html">20 nuclear</a> weapons by the end of this year. “I would speak to him,” the presumed Republican nominee told <a href="//www.reuters.com/article/us-usa-election-trump-exclusive-idUSKCN0Y82JO">Reuters</a> in an interview. “I would have no problem speaking to him.”</p>
+<p class="story-body-text" itemprop="articleBody">Such an overture would be a major shift in American policy. No sitting American president has ever met a North Korean leader. Secretary of State Madeleine <a href="https://www.google.com/search?q=north+korea+albright+kim+2000&amp;espv=2&amp;biw=1276&amp;bih=864&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ved=0ahUKEwjpr57X5ubMAhWKNT4KHVU6AbcQsAQILw">Albright</a> met Mr. Kim’s father, Kim Jong-il, on a trip to Pyongyang in 2000; after leaving office, President Jimmy Carter and President Bill Clinton went to the capital separately on envoy missions.</p>
+<p class="story-body-text" itemprop="articleBody">Since 2012, the administration has not had sustained talks with the North Koreans at any level. Pyongyang has refused to eliminate its nuclear program, and in fact <a href="//www.nytimes.com/2016/05/02/opinion/north-koreas-brazen-nuclear-moves.html">accelerated</a> its nuclear activities this year by testing a fourth nuclear device and attempting to launch several missiles. That caused the United Nations Security Council to impose tough new sanctions.</p>
+<p class="story-body-text" itemprop="articleBody">That said, it’s not Mr. Trump’s offer to talk, per se, with a difficult leader that is the problem. During the 2008 presidential campaign, Mr. Obama declared his willingness to meet, without preconditions, the leaders of Iran, Syria, Venezuela, Cuba and North Korea in an effort to bridge gaps.</p>
+<p class="story-body-text" itemprop="articleBody">His opponent for the Democratic nomination, Hillary Clinton, didn’t rule out talking with them but said it wouldn’t happen during her first year in office while she pursued a vigorous diplomatic effort to learn “what the intentions are.”</p>
+<p class="story-body-text" itemprop="articleBody">Later, as secretary of state under Mr. Obama, she appointed a <a href="//www.nytimes.com/2016/05/19/us/politics/donald-trump-hillary-clinton-north-korea.html">negotiator</a> for North Korea. This step led to a 2012 agreement under which Pyongyang promised to stop nuclear and long-range missile tests in return for a resumption of food aid. But the deal soon fell apart.</p>
+<p class="story-body-text" itemprop="articleBody">In significant ways, Mr. Obama has made good on his commitment to reach out to adversaries, as many of his predecessors have done. He wisely forged new relationships with Cuba and Myanmar, visited those countries and met their leaders. He reached an important nuclear deal with Iran, spoke with President <a href="//www.reuters.com/article/us-un-assembly-iran-idUSBRE98Q16S20130928">Hassan Rouhani</a> by telephone and <a href="https://www.google.com/search?q=obama+zarif+handshake&amp;espv=2&amp;biw=1276&amp;bih=864&amp;tbm=isch&amp;imgil=etm6jd3rRTtZhM%3A%3B3vah7ibHlKLMfM%3Bhttp%3A%2F%2Fwww.india.com%2Fnews%2Fworld%2Firan-mp-hits-out-at-barack-obama-javad-zarif-handshake-588340%2F&amp;source=iu&amp;pf=m&amp;fir=etm6jd3rRTtZhM%3A%2C3vah7ibHlKLMfM%2C_&amp;usg=__EDhjpR83Zjv-vT5qfAcxG5l9Txc%3D&amp;ved=0ahUKEwjNh5O77-bMAhXDbT4KHREKAKcQyjcIJw&amp;ei=pxM-V42YF8Pb-QGRlIC4Cg#imgrc=etm6jd3rRTtZhM%3A">shook</a> hands with Mohammad Javad Zarif, the foreign minister. But since 2012, Mr. Obama has not tried hard enough to find an opening with North Korea.</p>
+<p class="story-body-text" itemprop="articleBody">The problem with Mr. Trump is that there is no evidence that he understands how to use a meeting with Mr. Kim to advance American interests. Just showing up in Pyongyang is not the answer. Mr. Kim would stage a gala celebration in a big public square and Mr. Trump would become a prop for legitimizing the North Korean leader and his nuclear program.</p>
+<p class="story-body-text" itemprop="articleBody">Any thought that Mr. Trump could just browbeat Mr. Kim into giving up the nuclear program is dubious. The North Koreans have been demanding recognition as a nuclear weapons state. At the recent Korean Workers’ Party Congress, Mr. Kim reaffirmed a determination to plow ahead with the nuclear weapons and missile programs, regardless of the cost, saying they brought the country “dignity and national power.”</p>
+<p class="story-body-text" itemprop="articleBody">To the extent he has any ideas for dealing with the nuclear program, Mr. Trump has talked often about getting China, North Korea’s main source of food and fuel, to pressure Pyongyang. If China refuses, Mr. Trump has said he would impose a 45 percent tariff on Chinese imports.</p>
+<p class="story-body-text" itemprop="articleBody">Those are tactical moves, not a comprehensive plan to mitigate a serious threat. And the United States, Japan and South Korea have already been pushing China to weigh in more robustly with the North. The new Security Council sanctions are one result.</p>
+<p class="story-body-text" itemprop="articleBody">Obviously, the next president needs to confront this challenge. There is a successful model for negotiating with Pyongyang: a 1994 agreement that froze the North’s plutonium program for nearly a decade. However, the nuclear program today is much larger and more sophisticated and the current North Korean leader, less experienced and less predictable than his father. Finding a solution grows harder with every passing day.</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//takingnote.blogs.nytimes.com/2016/05/20/what-donald-trump-gets-wrong-about-north-korea/" data-title="What Donald Trump Gets Wrong About North Korea" data-description="Mr. Trump says he’d meet with Kim Jong-un, but he has no understanding of how to use such a meeting to advance American interests.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+							<span class="categories"><a href="//takingnote.blogs.nytimes.com/category/featured-posts/" rel="category tag">Featured Posts</a>, </span>
+							<span class="tags"><a href="//takingnote.blogs.nytimes.com/tag/carter-jimmy/" rel="tag">Carter, Jimmy</a>, <a href="//takingnote.blogs.nytimes.com/tag/china/" rel="tag">China</a>, <a href="//takingnote.blogs.nytimes.com/tag/clinton-bill/" rel="tag">Clinton, Bill</a>, <a href="//takingnote.blogs.nytimes.com/tag/clinton-hillary-rodham/" rel="tag">Clinton, Hillary Rodham</a>, <a href="//takingnote.blogs.nytimes.com/tag/cuba/" rel="tag">Cuba</a>, <a href="//takingnote.blogs.nytimes.com/tag/embargoes-and-sanctions/" rel="tag">Embargoes and Sanctions</a>, <a href="//takingnote.blogs.nytimes.com/tag/international-relations/" rel="tag">International Relations</a>, <a href="//takingnote.blogs.nytimes.com/tag/iran/" rel="tag">Iran</a>, <a href="//takingnote.blogs.nytimes.com/tag/japan/" rel="tag">Japan</a>, <a href="//takingnote.blogs.nytimes.com/tag/kim-jong-il/" rel="tag">Kim Jong Il</a>, <a href="//takingnote.blogs.nytimes.com/tag/kim-jong-un/" rel="tag">Kim Jong-un</a>, <a href="//takingnote.blogs.nytimes.com/tag/myanmar/" rel="tag">Myanmar</a>, <a href="//takingnote.blogs.nytimes.com/tag/north-korea/" rel="tag">North Korea</a>, <a href="//takingnote.blogs.nytimes.com/tag/nuclear-tests/" rel="tag">Nuclear Tests</a>, <a href="//takingnote.blogs.nytimes.com/tag/nuclear-weapons-2/" rel="tag">nuclear weapons</a>, <a href="//takingnote.blogs.nytimes.com/tag/obama-barack/" rel="tag">Obama, Barack</a>, <a href="//takingnote.blogs.nytimes.com/tag/presidential-election-of-2016/" rel="tag">Presidential Election of 2016</a>, <a href="//takingnote.blogs.nytimes.com/tag/pyongyang-north-korea/" rel="tag">Pyongyang (North Korea)</a>, <a href="//takingnote.blogs.nytimes.com/tag/rouhani-hassan/" rel="tag">Rouhani, Hassan</a>, <a href="//takingnote.blogs.nytimes.com/tag/security-council-un/" rel="tag">Security Council (UN)</a>, <a href="//takingnote.blogs.nytimes.com/tag/syria/" rel="tag">Syria</a>, <a href="//takingnote.blogs.nytimes.com/tag/trump-donald-j/" rel="tag">Trump, Donald J</a>, <a href="//takingnote.blogs.nytimes.com/tag/united-states/" rel="tag">United States</a>, <a href="//takingnote.blogs.nytimes.com/tag/united-states-international-relations/" rel="tag">United States International Relations</a>, <a href="//takingnote.blogs.nytimes.com/tag/united-states-politics-and-government/" rel="tag">United States Politics and Government</a>, <a href="//takingnote.blogs.nytimes.com/tag/venezuela/" rel="tag">Venezuela</a>, <a href="//takingnote.blogs.nytimes.com/tag/workers-party-of-korea/" rel="tag">Workers' Party of Korea</a>, <a href="//takingnote.blogs.nytimes.com/tag/zarif-mohammad-javad/" rel="tag">Zarif, Mohammad Javad</a> </span>
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//takingnote.blogs.nytimes.com/2016/05/19/how-doctors-can-fight-gun-violence/" title="How Doctors Can Fight Gun Violence">
+				How Doctors Can Fight Gun Violence			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//takingnote.blogs.nytimes.com/2016/05/20/the-republicans-obsession-with-voter-suppression/" title="The Republicans’ Obsession With Voter Suppression">
+				The Republicans’ Obsession With Voter Suppression			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module ad" id="Box1"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-121',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":50,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

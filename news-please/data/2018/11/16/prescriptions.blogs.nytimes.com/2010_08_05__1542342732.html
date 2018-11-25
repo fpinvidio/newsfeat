@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-prescriptions section-health"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-prescriptions section-health" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-prescriptions section-health" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-prescriptions section-health" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/prescriptions/Senate Passes Child Nutrition Act" />
+<meta name="communityAssetURL" content="//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000306085"><meta name="author" content="Andrew Martin" />
+<meta name="CLMST" content="Andrew Martin" />
+<meta name="byl" content="Andrew Martin" />
+<meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1281052557" />
+<meta name="PUD" content="20100805" />
+<meta name="pdate" content="20100805" />
+<meta name="ptime" content="20100805195557" />
+<meta name="utime" content="20170809222208" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-08-09T22:22:08-04:00" />
+<meta name="DISPLAYDATE" content="August 5, 2010" />
+<meta name="dat" content="August 5, 2010" />
+<meta itemprop="articleSection" property="article:section" content="Health" />
+<meta name="CG" content="Health" />
+<meta name="SCG" content="Money and Policy" />
+<meta name="BN" content="prescriptions" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Obama, Michelle">
+<meta name="des" content="Food">
+<meta name="org" content="Senate">
+<meta property="article:tag" content="Obama Michelle" />
+<meta property="article:tag" content="Food" />
+<meta property="article:tag" content="Senate" />
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Obama Michelle,Food,Senate,Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fprescriptions.blogs.nytimes.com%2F2010%2F08%2F05%2Fsenate-passes-child-nutrition-act%2F" title="Senate Passes Child Nutrition Act" />
+<meta name="description" content="The legislation would require new guidelines for healthier foods to be sold in school lunch lines or in school vending machines." />
+<meta name="hdl" content="Senate Passes Child Nutrition Act" />
+<meta property="og:title" content="Senate Passes Child Nutrition Act" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/" />
+<meta property="og:site_name" content="Prescriptions Blog" />
+<meta property="og:description" content="The legislation would require new guidelines for healthier foods to be sold in school lunch lines or in school vending machines." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Senate Passes Child Nutrition Act" />
+<meta name="twitter:url" content="//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/" />
+<meta name="twitter:description" content="The legislation would require new guidelines for healthier foods to be sold in school lunch lines or in school vending machines." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTPrescription">
+<link rel='prev' title='New Law Extends Medicare Fund' href='//prescriptions.blogs.nytimes.com/2010/08/05/new-law-extends-medicare-fund/' />
+<link rel='next' title='Weekend Reading: Dietary Supplements' href='//prescriptions.blogs.nytimes.com/2010/08/06/weekend-reading-dietary-supplements/' />
+<link rel='canonical' href='//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/' />
+<link rel='shortlink' href='https://nyti.ms/2nSzdaj' />
+<link rel='https://github.com/WP-API/WP-API' href='//prescriptions.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/prescriptions/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//prescriptions.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/health/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/prescriptions/2010/08/05/senate-passes-child-nutrition-act/" />
+<meta name="dfp-ad-unit-path" content="health/prescriptions" />			<title>Senate Passes Child Nutrition Act - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt","jkiddScript"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-27797 blog-universal nyt-blog-prescriptions" id="" data-env="production" data-region="sea1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Health', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//prescriptions.blogs.nytimes.com">
+                Prescriptions            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Senate Passes Child Nutrition Act        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+<div id="liftoff-nyt5-bar1" class="hidden"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/"
+	 data-title="Senate Passes Child Nutrition Act"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;The legislation would require new guidelines for healthier foods to be sold in school lunch lines or in school vending machines. &lt;/span&gt;&lt;a href=&quot;//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="August 5, 2010 7:55 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="prescriptions" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//prescriptions.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Health"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/prescriptions/prescriptions75.gif" alt="Prescriptions"/></div><div class="site-title">Prescriptions</div><div class="site-description">Making Sense of the Health Care Debate</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//prescriptions.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Prescriptions">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-27797 post type-post status-publish hentry tag-food-industry tag-nutrition tag-senate per-obama-michelle des-food org-senate" id="post-27797">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Senate Passes Child Nutrition Act</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Andrew Martin			</address>
+			<!-- date published --><time class="dateline " datetime="2010-08-05T23:55:57+00:00" itemprop="datePublished">August 5, 2010 7:55 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">August 5, 2010 7:55 pm</span>		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">The Senate on Thursday approved a long-awaited child <a class="tickerized" title="In-depth reference and news articles about Diet and Nutrition." href="//health.nytimes.com/health/guides/specialtopic/food-guide-pyramid/overview.html?inline=nyt-classifier">nutrition</a> act that intends to feed more hungry kids and make school food more nutritious, and it provides for $4.5 billion over the next decade to make that happen.</p>
+<p class="story-body-text" itemprop="articleBody">Called the Healthy, Hunger-Free Kids Act, it passed the Senate unanimously and now moves on to the House, where passage is also expected. National child nutrition programs are set to expire Sept. 30.</p>
+<p class="story-body-text" itemprop="articleBody">The legislation will expand the number of low-income children who are eligible for free or reduced-price school meals, largely by streamlining the paperwork required to receive the meals. And it will expand a program to provide after-school meals to at-risk children.</p>
+<p class="story-body-text" itemprop="articleBody">Food sold in schools will be required to meet new nutrition guidelines, whether sold in the school lunch lines or in vending machines. Schools still may be allowed to sell pizza and other favorites, though they may have to substitute healthier ingredients to qualify.</p>
+<p class="story-body-text" itemprop="articleBody">School vending machines and à la carte lines, however, may be prohibited from selling candy bars and high-sugar sodas that have long provided revenue for extracurricular programs.</p>
+<p class="story-body-text" itemprop="articleBody">To help schools cover the costs of healthier foods, the bill provides for the first non-inflationary increase in the reimbursement rate for federal-sponsored school meals— the amount local districts are repaid by the federal government — since 1973. The increase amounts to an additional 6 cents for every meal.</p>
+<p class="story-body-text" itemprop="articleBody">The legislation “will finally put us on a path toward improving the health of the next generation of Americans, providing common-sense solutions to tackling childhood hunger and <a class="tickerized" title="In-depth reference and news articles about Obesity." href="//www.nytimes.com/info/obesity?inline=nyt-classifier">obesity</a>,” said Senator <a class="tickerized" title="More articles about Blanche Lambert Lincoln." href="//topics.nytimes.com/top/reference/timestopics/people/l/blanche_lambert_lincoln/index.html?inline=nyt-per">Blanche Lincoln</a>, Democratic of Arkansas and the chairwoman of the Senate Agriculture Committee, in prepared remarks. “In this budget environment, with record deficits, we have been able to produce a bill that is fully paid for and will not add a dime to the deficit.”</p>
+<p class="story-body-text" itemprop="articleBody">The Senate bill was applauded by nutrition advocates, who have long complained that federally sponsored <a class="tickerized" title="In-depth reference and news articles about School lunch programs." href="//health.nytimes.com/health/guides/nutrition/school-lunch-programs/overview.html?inline=nyt-classifier">school lunch programs</a> provided food that didn’t meet the government’s own nutrition guidelines.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;The Senate bill changes the school food landscape in ways that are all positive,&#8221; said Michael F. Jacobson, executive director of the <a class="tickerized" title="More articles about Center for Science in the Public Interest" href="//topics.nytimes.com/top/reference/timestopics/organizations/c/center_for_science_in_the_public_interest/index.html?inline=nyt-org">Center for Science in the Public Interest</a>, in a press release. &#8220;Put simply, it will get junk food out of, and put more healthy food into, America&#8217;s schools. It preserves the free and reduced-cost meals that many families depend on in an economic downturn.”</p>
+<p class="story-body-text" itemprop="articleBody"><a class="tickerized" title="More articles about Michelle Obama." href="//topics.nytimes.com/top/reference/timestopics/people/o/michelle_obama/index.html?inline=nyt-per">Michelle Obama</a>, who has pushed for the bill’s passage as part of her &#8220;Let&#8217;s Move&#8221; agenda for children, also applauded the Senate’s action.</p>
+<p class="story-body-text" itemprop="articleBody">“While childhood obesity cannot be solved overnight, with everyone working together, there’s no question that it can be solved — and today’s vote moves us one step closer to reaching that goal,” the first lady said in a statement released by the White House.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//prescriptions.blogs.nytimes.com/2010/08/05/senate-passes-child-nutrition-act/" data-title="Senate Passes Child Nutrition Act" data-description="The legislation would require new guidelines for healthier foods to be sold in school lunch lines or in school vending machines. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//prescriptions.blogs.nytimes.com/2010/08/05/new-law-extends-medicare-fund/" title="New Law Extends Medicare Fund">
+				New Law Extends Medicare Fund			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//prescriptions.blogs.nytimes.com/2010/08/06/weekend-reading-dietary-supplements/" title="Weekend Reading: Dietary Supplements">
+				Weekend Reading: Dietary Supplements			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">
+Prescriptions tracked news in the health care industry, including coverage of patients, insurers, medical professionals and drug-makers. Coverage of these and related issues continues in the <a href="//www.nytimes.com/business">Business</a> and <a href="//www.nytimes.com/health">Health</a> sections, as well as on the <a href="//well.blogs.nytimes.com">Well blog</a>.</p>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//prescriptions.blogs.nytimes.com/2012/02/'> February 2012 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2012/01/'> January 2012 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/12/'> December 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/11/'> November 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/10/'> October 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/09/'> September 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/08/'> August 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/07/'> July 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/06/'> June 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/05/'> May 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/04/'> April 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/03/'> March 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/02/'> February 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2011/01/'> January 2011 </option>
+	<option value='//prescriptions.blogs.nytimes.com/2010/12/'> December 2010 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//prescriptions.blogs.nytimes.com/2012/02/24/a-note-to-readers/" title="Read: A Note to Readers of This Blog">A Note to Readers of This Blog</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//prescriptions.blogs.nytimes.com/2012/02/24/a-note-to-readers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Times is discontinuing the Prescriptions blog.<a href="//prescriptions.blogs.nytimes.com/2012/02/24/a-note-to-readers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//prescriptions.blogs.nytimes.com/2012/02/08/drug-costs-pose-smaller-financial-burden-amid-generic-boom/" title="Read: Drug Costs Pose Smaller Financial Burden Amid Generic Boom">Drug Costs Pose Smaller Financial Burden Amid Generic Boom</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//prescriptions.blogs.nytimes.com/2012/02/08/drug-costs-pose-smaller-financial-burden-amid-generic-boom/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Americans are using more prescription drugs, but the financial burden of those drugs on families is falling, according to a new study. A big reason is the rise of generics.<a href="//prescriptions.blogs.nytimes.com/2012/02/08/drug-costs-pose-smaller-financial-burden-amid-generic-boom/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//prescriptions.blogs.nytimes.com/2012/02/02/drug-makers-dial-down-tv-advertising/" title="Read: Drug Makers Dial Down TV Advertising">Drug Makers Dial Down TV Advertising</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//prescriptions.blogs.nytimes.com/2012/02/02/drug-makers-dial-down-tv-advertising/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Pharmaceutical companies have cut spending on television advertising by 20 percent over the last five years, according to a Nielsen study. Analysts expect drug advertising to continue to fall as more brand-name drugs face generic competition.<a href="//prescriptions.blogs.nytimes.com/2012/02/02/drug-makers-dial-down-tv-advertising/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//prescriptions.blogs.nytimes.com/2012/01/30/f-d-a-approves-drug-for-an-advanced-skin-cancer/" title="Read: F.D.A. Approves Drug for an Advanced Skin Cancer">F.D.A. Approves Drug for an Advanced Skin Cancer</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//prescriptions.blogs.nytimes.com/2012/01/30/f-d-a-approves-drug-for-an-advanced-skin-cancer/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The drug, Erivedge, made by Genentech, was approved for adults with basal cell carcinoma that has spread elsewhere in the body or those who are not candidates for surgery or radiation. <a href="//prescriptions.blogs.nytimes.com/2012/01/30/f-d-a-approves-drug-for-an-advanced-skin-cancer/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//prescriptions.blogs.nytimes.com/2012/01/25/despite-generic-rivals-branded-drugs-still-sell-well/" title="Read: Despite Generic Rivals, Branded Drugs Still Sell Well">Despite Generic Rivals, Branded Drugs Still Sell Well</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//prescriptions.blogs.nytimes.com/2012/01/25/despite-generic-rivals-branded-drugs-still-sell-well/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Drug companies are finding lucrative foreign markets for their brand-name drugs after patents expire in the United States and unleash generic competition. <a href="//prescriptions.blogs.nytimes.com/2012/01/25/despite-generic-rivals-branded-drugs-still-sell-well/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/NYTPrescription" title="Follow @NYTPrescription on twitter">@NYTPrescription</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTPrescription" title="Follow NYTPrescription on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/NYTPrescription" title="Follow @NYTPrescription on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-95',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2018</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+
+
+         
+
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164156","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":39,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

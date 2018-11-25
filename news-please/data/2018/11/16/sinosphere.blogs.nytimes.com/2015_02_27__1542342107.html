@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-sinosphere section-world"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-sinosphere section-world" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-sinosphere section-world" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-sinosphere section-world" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/sinosphere/Beijing Courts Address the Right to Criticize Public Figures ( 20150227 )" />
+<meta name="communityAssetURL" content="//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003539635"><meta name="author" content="Patrick Boehler" />
+<meta name="CLMST" content="Patrick Boehler" />
+<meta name="byl" content="Patrick Boehler" />
+<meta name="GBLC" content="Featured">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1425032792" />
+<meta name="PUD" content="20150227" />
+<meta name="pdate" content="20150227" />
+<meta name="ptime" content="20150227052632" />
+<meta name="utime" content="20150302084916" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-03-02T08:49:16-05:00" />
+<meta name="DISPLAYDATE" content="February 27, 2015" />
+<meta name="dat" content="February 27, 2015" />
+<meta itemprop="articleSection" property="article:section" content="World" />
+<meta name="CG" content="World" />
+<meta name="SCG" content="Asia Pacific" />
+<meta name="BN" content="sinosphere" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Bo Xilai;Confucius;Kong Qingdong">
+<meta name="des" content="Censorship;Libel and Slander;Suits and Litigation (Civil)">
+<meta name="org" content="Peking University">
+<meta name="geo" content="China">
+<meta property="article:tag" content="Bo Xilai" />
+<meta property="article:tag" content="Confucius" />
+<meta property="article:tag" content="Kong Qingdong" />
+<meta property="article:tag" content="Censorship" />
+<meta property="article:tag" content="Libel and Slander" />
+<meta property="article:tag" content="Suits and Litigation (Civil)" />
+<meta property="article:tag" content="Peking University" />
+<meta property="article:tag" content="China" />
+<meta property="article:tag" content="Featured" />
+<meta name="keywords" content="Bo Xilai,Confucius,Kong Qingdong,Censorship,Libel and Slander,Suits and Litigation (Civil),Peking University,China,Featured" />
+<meta name="news_keywords" content="Bo Xilai,Censorship,China,Confucius,Defamation,Kong Qingdong,Lawsuits,Peking University" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fsinosphere.blogs.nytimes.com%2F2015%2F02%2F27%2Fbeijing-courts-address-the-right-to-criticize-public-figures%2F" title="Beijing Courts Address the Right to Criticize Public Figures" />
+<meta name="description" content="Two recent court rulings, and Kong Qingdong&#8217;s refusal to comply with one of them, have prompted a debate about the extent to which public figures can be held accountable for their statements, and the right of ordinary citizens to criticize such figures." />
+<meta name="hdl" content="Beijing Courts Address the Right to Criticize Public Figures" />
+<meta property="og:title" content="Beijing Courts Address the Right to Criticize Public Figures" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/" />
+<meta property="og:site_name" content="Sinosphere Blog" />
+<meta property="og:description" content="Two recent court rulings, and Kong Qingdong&#8217;s refusal to comply with one of them, have prompted a debate about the extent to which public figures can be held accountable for their statements, and the right of ordinary citizens to criticize such figures." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/sinosphere/sinosphere75.gif"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Beijing Courts Address the Right to Criticize Public Figures" />
+<meta name="twitter:url" content="//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/" />
+<meta name="twitter:description" content="Two recent court rulings, and Kong Qingdong&#8217;s refusal to comply with one of them, have prompted a debate about the extent to which public figures can be held accountable for their statements, and the right of ordinary citizens to criticize such figures." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Hopeful Signs of Recovery for the World&#8217;s Rarest Big Cat' href='//sinosphere.blogs.nytimes.com/2015/02/27/hopeful-signs-of-recovery-for-the-worlds-rarest-big-cat/' />
+<link rel='next' title='Documentary on Air Pollution Grips China' href='//sinosphere.blogs.nytimes.com/2015/03/01/documentary-on-air-pollution-in-china-grips-a-nation/' />
+<link rel='canonical' href='//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/' />
+<link rel='shortlink' href='//nyti.ms/1ETZztQ' />
+<link rel='https://github.com/WP-API/WP-API' href='//sinosphere.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/sinosphere/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//sinosphere.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/world/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/sinosphere/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/" />
+<meta name="dfp-ad-unit-path" content="world/sinosphere" />			<title>Beijing Courts Address the Right to Criticize Public Figures - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-27747 blog-universal nyt-blog-sinosphere" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'World', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//sinosphere.blogs.nytimes.com">
+                Sinosphere            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Beijing Courts Address the Right to Criticize Public Figures        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/"
+	 data-title="Beijing Courts Address the Right to Criticize Public Figures"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Two recent court rulings, and Kong Qingdong&#039;s refusal to comply with one of them, have prompted a debate about the extent to which public figures can be held accountable for their statements, and the right of ordinary citizens to criticize such figures.&lt;/span&gt;&lt;a href=&quot;//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="February 27, 2015 5:26 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="sinosphere" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//sinosphere.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=World"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/sinosphere/sinosphere75.gif" alt="Sinosphere"/></div><div class="site-title">Sinosphere</div><div class="site-description">Dispatches From China</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//sinosphere.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Sinosphere">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-27747 post type-post status-publish hentry tag-bo-xilai tag-censorship tag-china tag-confucius tag-kong-qingdong tag-libel-and-slander tag-peking-university tag-suits-and-litigation-civil per-bo-xilai per-confucius per-kong-qingdong des-censorship des-libel-and-slander des-suits-and-litigation-civil org-peking-university geo-china news_keywords-bo-xilai news_keywords-censorship news_keywords-china news_keywords-confucius news_keywords-defamation news_keywords-kong-qingdong news_keywords-lawsuits news_keywords-peking-university" id="post-27747">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Beijing Courts Address the Right to Criticize Public Figures</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Patrick Boehler			</address>
+			<!-- date published --><time class="dateline " datetime="2015-02-27T10:26:32+00:00" itemprop="datePublished">February 27, 2015 5:26 am</time>
+			<!-- date updated --><span class="visually-hidden updated">February 27, 2015 5:26 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/" data-title="Beijing Courts Address the Right to Criticize Public Figures" data-description="Two recent court rulings, and Kong Qingdong&#039;s refusal to comply with one of them, have prompted a debate about the extent to which public figures can be held accountable for their statements, and the right of ordinary citizens to criticize such figures.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><blockquote class="twitter-tweet tw-hide-thread"><p class="story-body-text" itemprop="articleBody">Beijing University professor Kong Qingdong microblog curse &#8220;dog traitors&#8221;, is sentenced to compensate for 200 yuan. //t.co/DoVQCX5txD</p>
+<p class="story-body-text" itemprop="articleBody">— <a href="https://www.twitter.com/huazexiangcai">霾 (@huazexiangcai)</a> <a href="https://www.twitter.com/huazexiangcai/status/332342319384776704" data-datetime="2013-05-09T03:52:38+00:00">9 May 13</a><script async src="//platform.twitter.com/widgets.js" id="platform_twitter_js" charset="utf-8"></script></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">In a political environment where public discourse is constrained by layers of censorship and self-censorship, Kong Qingdong, a neo-Maoist literary scholar at Peking University and an avid blogger, has long attracted attention with his vociferous commentaries.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Kong, who says he is a descendant of Confucius and who gained international notice when he co-sponsored a Chinese alternative to the Nobel Peace Prize named after the ancient sage, has criticized the people of Hong Kong for being “dogs of British imperialists,&#8221; dismissed Singaporeans as “completely ignorant,&#8221; cheered the death of Steve Jobs and denounced a corruption inquiry into the disgraced politician Bo Xilai as a “counterrevolutionary coup,” each time fueling debate in China.</p>
+<p class="story-body-text" itemprop="articleBody">But two recent court rulings and Mr. Kong&#8217;s refusal to comply with one of them have prompted a different kind of discussion — about the extent to which public figures can be held accountable for their statements, and about the right of citizens to criticize such figures.</p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-27747"></span></p>
+<p class="story-body-text" itemprop="articleBody">In 2012, Guan Kaiyuan, a law student at the China Institute of Industrial Relations in Beijing, mocked the composition of a poem by Mr. Kong. Mr. Kong reacted by denouncing Mr. Guan as a “dog&#8221; and a &#8220;traitor,” in a reply shared with the more than two million people following his <a title="In Chinese. " href="//www.weibo.com/kqdpku">microblog</a>.</p>
+<p class="story-body-text" itemprop="articleBody">The student sued Mr. Kong for defamation, demanding an apology and damages. The dispute attracted widespread attention and news media coverage when, a year later, the Haidian District People&#8217;s Court <a title="In English. " href="//www.scmp.com/news/china/article/1233550/kong-qingdong-ordered-apologise-calling-beijing-student-dog-traitor">ruled in favor</a> of Mr. Guan.</p>
+<p class="story-body-text" itemprop="articleBody">The court ordered Mr. Kong to publish an apology in a national newspaper and to pay Mr. Guan 200 renminbi, about $32, in damages, and to cover 1,000 renminbi in administrative costs.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Kong appealed the ruling.</p>
+<p class="story-body-text" itemprop="articleBody">Wu Xiaoping, a Nanjing television anchor, was among the many who faulted Mr. Kong for having overreacted to Mr. Guan’s critique of his poetry.</p>
+<p class="story-body-text" itemprop="articleBody">Then Mr. Kong filed his own defamation lawsuit — against Mr. Wu.</p>
+<p class="story-body-text" itemprop="articleBody">In December, Mr. Kong lost his appeal against the defamation conviction, as well as his defamation suit against Mr. Wu. In the process, the separate court rulings drew a distinction between what could be considered fair comment about a celebrity and insults against a more private citizen.</p>
+<p class="story-body-text" itemprop="articleBody">Courts in China are not bound by precedent, so the verdicts have no legal incidence on future cases. Analysts have noted, however, that the ruling in favor of the television journalist indicated that some Chinese judges considered criticism of some public figures to be permissible.</p>
+<p class="story-body-text" itemprop="articleBody">In The Beijing News, Zhu Wei, a news media scholar at the China University of Political Science and Law, <a href="//epaper.bjnews.com.cn/html/2014-12/20/content_553020.htm?div=0">argued</a> that a journalist&#8217;s freedom to critique a public figure&#8217;s behavior was based on the principle of free speech enshrined in the Chinese Constitution.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;In a majority of cases, the news media exercise the right to comment on an issue for the public,&#8221; he wrote.</p>
+<p class="story-body-text" itemprop="articleBody">As a so-called Big V, a term used to describe widely followed microbloggers with verified accounts, Mr. Kong must accept a certain exposure to criticism, Mr. Zhu argued.</p>
+<p class="story-body-text" itemprop="articleBody">Over the past two years, the Chinese authorities have looked into the activities of many Big V&#8217;s, in what they call an effort to render online debate more civil. Critics, however, say that the crackdown, which <a href="//sinosphere.blogs.nytimes.com/2014/04/17/an-internet-big-v-opts-for-abject-contrition/">has included court cases and public shaming on television</a>, has further stifled what is already a much-censored exchange of ideas online.</p>
+<p class="story-body-text" itemprop="articleBody">A columnist in the Beijing Daily, Zhou Nanyan, <a href="//media.people.com.cn/n/2014/1219/c40606-26237064.html">praised</a> the judges for defending journalists&#8217; right to hold public figures accountable.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;As long as the media have no malicious intent,&#8221; Mr. Zhou wrote, &#8220;they have the right to criticize the speech and actions of public figures.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Yang Tao, in a <a href="//hlj.rednet.cn/c/2014/12/19/3553287.htm">column</a> carried on Rednet, a Hunan provincial news website, wrote that the ruling in favor of the Nanjing anchor had “symbolic significance.” He compared it to the landmark ruling in 1964 by the United States Supreme Court in The New York Times v. Sullivan, which set high standards for proving defamation and libel in news reports about public figures.</p>
+<p class="story-body-text" itemprop="articleBody">The ruling “provided protection for news commentary and for the supervision&#8221; of public figures &#8220;by public opinion,” Mr. Yang wrote. “It allows journalists and citizens to dare to say ‘no’ to unhealthy practices, social evils and the abuse of public power.”</p>
+<p class="story-body-text" itemprop="articleBody">For Rogier Creemers, a researcher on Chinese media law at the University of Oxford, defamation lawsuits have put China’s judges in an awkward position.</p>
+<p class="story-body-text" itemprop="articleBody">“In the absence of clear rules and mature jurisprudence, courts need to find tools to solve the problem,” Mr. Creemers wrote in an email. “You’ll find that N.Y. Times v. Sullivan is sneaking into Chinese law, essentially because it is a convenient way of dealing with a sense that someone in Kong’s position should be subject to a higher level of scrutiny.”</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Kong did not respond to a request for comment sent to his press officer, nor to a private message via Sina Weibo.</p>
+<p class="story-body-text" itemprop="articleBody">Despite the praise the court rulings have attracted in Chinese news media circles, the story is not quite over. As of Thursday, Mr. Kong had yet to comply with the court order in the defamation case brought by Mr. Guan, the law student. The court had given Mr. Kong one week to apologize and to pay damages to Mr. Guan. Two months later, Mr. Guan said, he is still waiting.</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//sinosphere.blogs.nytimes.com/2015/02/27/beijing-courts-address-the-right-to-criticize-public-figures/" data-title="Beijing Courts Address the Right to Criticize Public Figures" data-description="Two recent court rulings, and Kong Qingdong&#039;s refusal to comply with one of them, have prompted a debate about the extent to which public figures can be held accountable for their statements, and the right of ordinary citizens to criticize such figures.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//sinosphere.blogs.nytimes.com/2015/02/27/hopeful-signs-of-recovery-for-the-worlds-rarest-big-cat/" title="Hopeful Signs of Recovery for the World&#039;s Rarest Big Cat">
+				Hopeful Signs of Recovery for the World&#8217;s Rarest Big Cat			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//sinosphere.blogs.nytimes.com/2015/03/01/documentary-on-air-pollution-in-china-grips-a-nation/" title="Documentary on Air Pollution Grips China">
+				Documentary on Air Pollution Grips China			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">Sinosphere, the China blog of The New York Times, delivers intimate, authoritative coverage of the planet's most populous nation and its relationship with the rest of the world. Drawing on timely, engaging dispatches from The Times’ distinguished team of China correspondents, this blog brings readers into the debates and discussions taking place inside a fast-changing country and details the cultural, economic and political developments shaping the lives of 1.3 billion people.</p>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//sinosphere.blogs.nytimes.com/2015/11/'> November 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/10/'> October 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/09/'> September 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/08/'> August 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/07/'> July 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/06/'> June 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/05/'> May 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/04/'> April 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/03/'> March 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/02/'> February 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2015/01/'> January 2015 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2014/12/'> December 2014 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2014/11/'> November 2014 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2014/10/'> October 2014 </option>
+	<option value='//sinosphere.blogs.nytimes.com/2014/09/'> September 2014 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<div class="w50 right">
+				<a href="//sinosphere.blogs.nytimes.com/2015/11/19/china-hostage-islamic-state-fan-jinghui/"><img src="https://static01.nyt.com/images/2015/11/19/world/19sino-hostage/19sino-hostage-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//sinosphere.blogs.nytimes.com/2015/11/19/china-hostage-islamic-state-fan-jinghui/" title="Read: Chinese Debate Proper Response to Hostage&rsquo;s Killing">Chinese Debate Proper Response to Hostage&rsquo;s Killing</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//sinosphere.blogs.nytimes.com/2015/11/19/china-hostage-islamic-state-fan-jinghui/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Some called on the government to send troops to the Middle East in retaliation to an Islamic State killing, while others cautioned that such a move could invite terrorism at home.<a href="//sinosphere.blogs.nytimes.com/2015/11/19/china-hostage-islamic-state-fan-jinghui/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//sinosphere.blogs.nytimes.com/2015/11/18/fresh-doubt-over-chinas-pledge-to-amend-transplant-policy/"><img src="https://static01.nyt.com/images/2015/11/18/world/18SINO-LETTER/18SINO-LETTER-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//sinosphere.blogs.nytimes.com/2015/11/18/fresh-doubt-over-chinas-pledge-to-amend-transplant-policy/" title="Read: Fresh Doubt Over China&#8217;s Pledge to Amend Transplant Policy">Fresh Doubt Over China&#8217;s Pledge to Amend Transplant Policy</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//sinosphere.blogs.nytimes.com/2015/11/18/fresh-doubt-over-chinas-pledge-to-amend-transplant-policy/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Some disagree, saying that there has been a surge in voluntary donations as China announced it would end organ harvesting from death-row prisoners. <a href="//sinosphere.blogs.nytimes.com/2015/11/18/fresh-doubt-over-chinas-pledge-to-amend-transplant-policy/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//sinosphere.blogs.nytimes.com/2015/11/17/hong-kong-soccer-fans-celebrate-draw-with-china/"><img src="https://static01.nyt.com/images/2015/11/17/world/17sino-soccer01/17sino-soccer01-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//sinosphere.blogs.nytimes.com/2015/11/17/hong-kong-soccer-fans-celebrate-draw-with-china/" title="Read: Hong Kong Soccer Fans Celebrate Draw With China">Hong Kong Soccer Fans Celebrate Draw With China</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//sinosphere.blogs.nytimes.com/2015/11/17/hong-kong-soccer-fans-celebrate-draw-with-china/"></a>
+				</span>			</h5>
+			<p class="summary">
+			For many Hong Kong fans, the World Cup qualifier was as much a political contest as an sporting one. <a href="//sinosphere.blogs.nytimes.com/2015/11/17/hong-kong-soccer-fans-celebrate-draw-with-china/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//sinosphere.blogs.nytimes.com/2015/11/16/standing-with-france-china-complains-of-antiterror-double-standard/"><img src="https://static01.nyt.com/images/2015/11/16/world/16sino-paris01/16sino-paris01-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//sinosphere.blogs.nytimes.com/2015/11/16/standing-with-france-china-complains-of-antiterror-double-standard/" title="Read: China Responds to Paris Attacks Through a Domestic Lens">China Responds to Paris Attacks Through a Domestic Lens</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//sinosphere.blogs.nytimes.com/2015/11/16/standing-with-france-china-complains-of-antiterror-double-standard/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Along with revulsion, Chinese leaders and many citizens also voiced a more complex mix of expectations and emotions, rooted in rival views of the country&#8217;s own problems.<a href="//sinosphere.blogs.nytimes.com/2015/11/16/standing-with-france-china-complains-of-antiterror-double-standard/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//sinosphere.blogs.nytimes.com/2015/11/13/taiwan-china-ma-ying-jeou-xi-jinping/"><img src="https://static01.nyt.com/images/2015/11/13/world/13sino-taiwan01/13sino-taiwan01-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//sinosphere.blogs.nytimes.com/2015/11/13/taiwan-china-ma-ying-jeou-xi-jinping/" title="Read: Taiwan&#8217;s President Defends Meeting With Chinese Leader">Taiwan&#8217;s President Defends Meeting With Chinese Leader</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//sinosphere.blogs.nytimes.com/2015/11/13/taiwan-china-ma-ying-jeou-xi-jinping/"></a>
+				</span>			</h5>
+			<p class="summary">
+			President Ma Ying-jeou of Taiwan defended his decision to meet with President Xi Jinping of China, rejecting accusations that he had undermined Taiwan&#8217;s sovereignty. <a href="//sinosphere.blogs.nytimes.com/2015/11/13/taiwan-china-ma-ying-jeou-xi-jinping/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">Sinosphere on</span></span>
+</h4>
+<ul>
+</ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-138',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":49,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

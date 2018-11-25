@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" lang="en-US" itemscope xmlns:og="//opengraphprotocol.org/schema/">
+<head profile="//gmpg.org/xfn/11"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Asked &amp; Answered &#124; Vera Farmiga </title>
+<link rel="shortcut icon" href="https://static01.nyt.com/packages/images/blogs/tmagazine/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="https://static01.nyt.com/js/common.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/app/lib/NYTD/0.0.1/tabset.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/common.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/memberTools.js"></script>
+<!--[if lt IE 9]>
+<script src="https://static01.nyt.com/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://static01.nyt.com/js/common/screen/modifyNavigationDisplay.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/tabsetoverlayrevealer.js"></script>
+<!--[if lt IE 7]><script defer type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/pngfix.js"></script><![endif]-->
+<script type="text/JavaScript">
+// <![CDATA[
+var nyt_google_hints = "";
+var nyt_google_ad_channel = "bl_t-magazine";
+// ]]>
+</script>
+<script type="text/JavaScript">
+NYTD.Blogs.Ads = {};function processBlogsAds(data) { NYTD.Blogs.Ads = data.ads; }
+</script>
+<script type="text/javascript">
+if ((document.referrer).indexOf("nytimes.com") !== -1) {var nyt_doc_referrer = 'nytimes.com;';}else {var nyt_doc_referrer = '';}
+document.write( '<script id="adxScript" src="'+ '//www.nytimes.com' +'/adx/bin/adxrun.html?v=3&jsonp=processBlogsAds&page=' + 'blog.nytimes.com/tmagazine/post&positions=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&query=qstring&keywords='+ encodeURIComponent(nyt_doc_referrer) +';A-list;celebrity;chic;collections;concierge;design;designers;fashion;first+class;gossip;hotel;jet+set;luxury;models;New+York+Times;restaurant;runway;shopping;style;T+Magazine;travel;Men&#039;s+wear;Women&#039;s+wear;anthony-minghella;bcdf;carolyn-s-briggs;culture;deadsy;deborah-granick;deborah-granik;jason-reitman;martin-scorsese;renn-hawkey;tim-metcalfe;vera-farmiga;Culture;Uncategorized;' + '"' + '>' + '</' + 'script>');
+</script>
+<script type="text/javascript" src="https://static01.nyt.com/js/common/sharetools/2.0/shareTools.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/app/save/crossPlatformSave.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/blogscrnr.js"></script>
+<link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/blogs/3.1/screen/themes/tmagazine/style.css" media="screen" />
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/tmagazine/Asked & Answered | Vera Farmiga " />
+<meta name="communityAssetURL" content="//tmagazine.blogs.nytimes.com/2011/08/23/asked-answered-vera-farmiga/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000001012760"><meta name="author" content="Kathryn Branch" />
+<meta name="CLMST" content="Kathryn Branch" />
+<meta name="byl" content="Kathryn Branch" />
+<meta name="GBLC" content="Culture">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1314109580" />
+<meta name="PUD" content="20110823" />
+<meta name="pdate" content="20110823" />
+<meta name="ptime" content="20110823102620" />
+<meta name="utime" content="20110825200554" />
+<meta property="article:modified_time" itemprop="dateModified" content="2011-08-25T20:05:54-04:00" />
+<meta name="DISPLAYDATE" content="August 23, 2011" />
+<meta name="dat" content="August 23, 2011" />
+<meta itemprop="articleSection" property="article:section" content="T:Style" />
+<meta name="CG" content="T:Style" />
+<meta name="SCG" content="tmagazine" />
+<meta name="BN" content="tmagazine" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Culture" />
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Culture,Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Ftmagazine.blogs.nytimes.com%2F2011%2F08%2F23%2Fasked-answered-vera-farmiga%2F" title="Asked &amp; Answered | Vera Farmiga" />
+<meta name="description" content="The actress-turned-director takes hold of her career as a storyteller in her directorial debut, &#8220;Higher Ground.&#8221;" />
+<meta name="hdl" content="Asked &amp; Answered &#124; Vera Farmiga " />
+<meta property="og:title" content="Asked &amp; Answered &#124; Vera Farmiga " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//tmagazine.blogs.nytimes.com/2011/08/23/asked-answered-vera-farmiga/" />
+<meta property="og:site_name" content="T Magazine" />
+<meta property="og:description" content="The actress-turned-director takes hold of her career as a storyteller in her directorial debut, &#8220;Higher Ground.&#8221;" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v3/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Asked &amp; Answered &#124; Vera Farmiga " />
+<meta name="twitter:url" content="//tmagazine.blogs.nytimes.com/2011/08/23/asked-answered-vera-farmiga/" />
+<meta name="twitter:description" content="The actress-turned-director takes hold of her career as a storyteller in her directorial debut, &#8220;Higher Ground.&#8221;" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@https://twitter.com/tmagazine">
+<script src="https://static01.nyt.com/js/app/lib/jquery/jquery-1.6.2.min.js" type="text/javascript"></script><script src="https://static01.nyt.com/js/EmbeddedComments/embeddedComments.js" type="text/javascript"></script>
+<link rel='prev' title='Case Study | The White Peach Sgroppino' href='//tmagazine.blogs.nytimes.com/2011/08/22/case-study-the-white-peach-sgroppino/' />
+<link rel='next' title='Lighting the Way' href='//tmagazine.blogs.nytimes.com/2011/08/23/lighting-the-way/' />
+<link rel='canonical' href='//tmagazine.blogs.nytimes.com/2011/08/23/asked-answered-vera-farmiga/' />
+<link rel='shortlink' href='//tmagazine.blogs.nytimes.com/?p=175063' />
+<link rel='https://github.com/WP-API/WP-API' href='//tmagazine.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/tmagazine/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//tmagazine.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/t-magazine/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/tmagazine/2011/08/23/asked-answered-vera-farmiga/" />
+<style type="text/css">
+address {font-style: normal;display: inline;}.story-meta-footer span + time {border: 0;}.story-meta-footer .kicker + time, .story-meta-footer .kicker + span {border-left: 1px solid #ccc;}.has-kicker .byline {border-left: 1px solid #ccc;padding: 0 5px 0 8px;}figure {    margin: 0px;}.credit {    display: inline;}.visually-hidden {    border: 0;    clip: rect(0 0 0 0);    height: 1px;    margin: -1px;    overflow: hidden;    padding: 0;    position: absolute;    width: 1px;}.entry-content .story-addendum {    color: #333;    font-style: italic;    font-size: 1rem;    line-height: 1.4375rem;    font-weight: 400;    font-family: georgia,"times new roman",times,serif;    margin-bottom: 1em;    max-width: 540px;}.entry-content .story-footer {    margin-top: 24px;    margin-bottom: 45px;}.entry-content .story-footer .story-notes p {    font-size: .875rem;    line-height: 1.125rem;    font-weight: 500;    font-family: "nyt-franklin", arial, helvetica, sans-serif;    margin-bottom: 14px;}.entry-content .story-footer:before {    content: "";    width: 60px;    height: 1px;    display: inline-block;    background-color: #000;    margin: 0 0 13px;}.entry-content .story-print-citation {    font-size: .6875rem;    line-height: .9375rem;    font-weight: 300;    font-family: "nyt-franklin", arial, helvetica, sans-serif;    color: #999;}body.single article.hentry {    padding: 15px 10px 0;}.fullScreenSlideShow #fullScreenWrapper {    z-index: 10000000;}figure .image {    margin-bottom: 7px;}figure .credit {    font-size: 1em;line-height: 1.2em;}.caption {    font-size: 1.2em;}body.blogHome.nyt-blog-tmagazine .hfeed .hentry:first-child,body.blogAuthor.nyt-blog-tmagazine .hfeed div:first-child+ .hentry {    margin-top: 0px!important;    padding-top: 0px!important;    background:none;}body.blogAuthor.nyt-blog-tmagazine .hfeed div:first-child+ .hentry,body.blogCategories.nyt-blog-tmagazine .hfeed div:first-child+ .hentry {    background:none;}body.blogHome.nyt-blog-tmagazine .hfeed .hentry,body.blogAuthor.nyt-blog-tmagazine .hfeed .hentry {    margin-top: 40px;    padding-top: 40px;}body.blogCategories.nyt-blog-tmagazine .resultsLabel,body.blogAuthor.nyt-blog-tmagazine .resultsLabel,body.blogTags.nyt-blog-tmagazine .resultsLabel {    margin-left: 15px;    margin-top: 15px;    border-bottom: 1px solid #e2e2e2;    padding-bottom: 15px;}body.nyt-blog-tmagazine #aCol .nav .next {    margin-left: 135px;}body.nyt-blog-tmagazine .entry-content .related-coverage {    margin-bottom: 1em;}body.nyt-blog-tmagazine .entry-content .related-coverage h6.kicker {    margin-bottom:5px;}body.nyt-blog-tmagazine .entry-content .related-coverage li {    margin-bottom: 0;}body.nyt-blog-tmagazine #cCol .nav .next {    margin-left: 45px;}body.nyt-blog-tmagazine #cCol .nav li {    max-width: 110px;}body.nyt-blog-tmagazine #aCol .nav li {    max-width: 190px;}body.nyt-blog-tmagazine .nav li a {    overflow: hidden;}body.nyt-blog-tmagazine.wideAd #aCol .nav .element1, body.nyt-blog-tmagazine.wideAd #aCol .nav .element2 {    width: 50%;}body.nyt-blog-tmagazine.wideAd #aCol .nav ul {    background: url("https://static01.nyt.com/images/layout/vertical_rule.gif") repeat-y center;}body.nyt-blog-tmagazine.wideAd #aCol .nav .next {    margin-left: 182px;}body.nyt-blog-tmagazine.wideAd #aCol .nav .w75 {    display: none;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo {    margin: 0 0 20px;    padding: 22px 22px 10px;    background: #f9f9f9;    overflow: hidden;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo .w190 {    float: right;    margin: 0 0 10px;    padding: 0;    width: auto;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo img {    width: 155px;    height: 103px;    margin: 0 0 0 10px;    padding: 0;    display: block !important;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo .nyt-article-byline {    margin-bottom: 4px;    font-size: 10px;    line-height: 13px;    font-weight: 500;    color: #808080;    font-family: arial;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo h4 {    font-size: 17px;    line-height: 21px;    font-weight: 500;    margin-bottom: 5px;    font-family: georgia;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo h4 a {    color: #000;    text-decoration: none;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo h4 a:hover {    color: #f00;    text-decoration: underline;}body.nyt-blog-tmagazine #aCol .entry-content .nyt-article-promo .nyt-article-summary {    font-size: 13px;    line-height: 18px;    margin-bottom: 0;    font-family: georgia;    font-style: italic;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module {    border-bottom: 1px solid #000;    border-top: 1px solid #000;    padding: 10px 0 10px 0;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module .entry {    padding: 10px 0 0 0;    text-align: left;    border: none;}body.nyt-blog-tmagazine #aCol .postHeader .postSubHeader {    text-align: center;    margin-bottom: 5px;}body.nyt-blog-tmagazine #aCol .postHeader .postSubHeader .post-kicker {    text-transform: uppercase;    font-weight: bold;    font-size: 11px;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module {    border-bottom: 1px solid #000;    border-top: 1px solid #000;    padding: 10px 0 10px 0;}body.nyt-blog-tmagazine #aCol .entry-content .w190.right.module .entry {    padding: 10px 0 0 0;    text-align: left;    border: none;}body.nyt-blog-tmagazine .entry-content .w190 .entry h6.kicker {    font-weight: 700;    margin-bottom: 5px;}body.nyt-blog-tmagazine .entry-content .w190 .entry h5 {    margin-bottom: 3px;}body.nyt-blog-tmagazine .entry-content .w190 .entry p.summary,body.nyt-blog-tmagazine .entry-content .w190 ul li {    font-family: arial;    font-size: 1.2em;    line-height: 1.5em;}body.nyt-blog-tmagazine .entry-content .w190 ul li a {    font-size: 0.9em;}body.nyt-blog-tmagazine .postMetaHeader .byline {    text-transform: uppercase;}body.nyt-blog-tmagazine.wideAd .w480,body.nyt-blog-tmagazine.wideAd .w592,body.nyt-blog-tmagazine.wideAd .w480 img,body.nyt-blog-tmagazine.wideAd .w592 img,body.nyt-blog-tmagazine.wideAd .videoplayerContainer,body.nyt-blog-tmagazine.wideAd .videoplayerContainer object,body.nyt-blog-tmagazine.wideAd .nytd-player-poster {height: 266px !important;}</style>
+</head>
+<body id=culture class="single postid-175063 blogPost  blog-universal nyt-blog-tmagazine" data-env="production" data-region="ewr1">
+<!-- Header1 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header1 != "undefined" ){document.write(NYTD.Blogs.Ads.Header1.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header1 != "undefined" ) { NYTD.jQuery("#Header1").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Header1"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Header1&query=qstring&keywords=?"></a></noscript>
+<!-- Header2 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header2 != "undefined" ){document.write(NYTD.Blogs.Ads.Header2.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header2 != "undefined" ) { NYTD.jQuery("#Header2").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Header2"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Header2&query=qstring&keywords=?"></a></noscript>
+<!-- Header3 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header3 != "undefined" ){document.write(NYTD.Blogs.Ads.Header3.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Header3 != "undefined" ) { NYTD.jQuery("#Header3").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Header3"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Header3&query=qstring&keywords=?"></a></noscript>
+<a name="top"></a>
+<div id="shell" class="wrap">
+  <div id="PushDown" class="leaderboard ad clearfix">
+    <script type="text/javascript">
+      if ((typeof adxpos_PushDown == "undefined") || (typeof adxads[adxpos_PushDown] == "undefined") ) {
+        if ( $( "PushDown") ) {
+          $( "PushDown").hide();
+        }
+      }
+      if ((typeof adxpos_PushDown != "undefined") && (typeof adxads[adxpos_PushDown] != "undefined") ){
+        document.write(adxads[adxpos_PushDown]);
+      }
+    </script>
+  </div>
+  <div id="masthead-nav" class="wrap">
+    <div id="masthead">
+      <h2>
+        <a href="//www.nytimes.com/pages/t-magazine/index.html">
+          Go Back To Home
+        </a>
+      </h2>
+    </div>
+    <div class="navigation" id="topNav">
+      <ul id="mainNavigation" class="flush">
+        <li class="firstItem">
+          <a href="//www.nytimes.com/pages/t-magazine/womens-fashion/index.html">
+            Women's Fashion
+          </a>
+        </li>
+        <li class="secondItem">
+          <a href="//www.nytimes.com/pages/t-magazine/mens-fashion/index.html">
+            Men's Fashion
+          </a>
+        </li>
+        <li class="thirdItem">
+          <a href="//www.nytimes.com/pages/t-magazine/design/index.html">
+            Design
+          </a>
+        </li>
+        <li class="fourthItem">
+          <a href="//www.nytimes.com/pages/t-magazine/travel/index.html">
+            Travel
+          </a>
+        </li>
+        <li class="fifthItem">
+          <a href="//www.nytimes.com/pages/t-magazine/food/index.html">
+            Food
+          </a>
+        </li>
+        <li class="sixthItem">
+          <a href="//www.nytimes.com/pages/t-magazine/culture/index.html">
+            Culture
+          </a>
+        </li>
+        <li class="lastItem">
+          <a href="//www.nytimes.com/gst/tmagazine/video/index.html">
+            Video
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="masthead-nav-divider" class="singleRuleDivider">
+  </div>
+  <div class="searchModule">
+    <div class="insetV">
+      <div class="inlineSearchControl">
+        <form method="get" action="https://query.nytimes.com/search/tmagazine" enctype="application/x-www-form-urlencoded">
+          <input type="text" id="searchQuery" name="query" size="" value="SEARCH" class="text" onblur="if (this.value=='')this.value='SEARCH';" onfocus="if (this.value=='SEARCH')this.value='';">
+          <input type="image" src="//static01.nyt.com/images/tmagazine/buttons/search-button.gif" alt="Search" title="Search" id="searchSubmit">
+        </form>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+// <![CDATA[
+if ((typeof NYTD.Blogs.Ads != "undefined") && (typeof NYTD.Blogs.Ads.XXL != "undefined") ) {$(document.body).addClassName( "wideAd");}
+// ]]>
+</script><hr />
+<!-- Here is the start of everything good -->
+<div id="tmagazine" class="spanAC blog wrap">
+<div id="aCol">
+<hr />	<div id="content" class="hfeed">
+	<article class="post-175063 post type-post status-publish hentry category-culture category-uncategorized tag-anthony-minghella tag-bcdf tag-carolyn-s-briggs tag-deadsy tag-deborah-granick tag-deborah-granik tag-jason-reitman tag-martin-scorsese tag-renn-hawkey tag-tim-metcalfe tag-vera-farmiga" id="post-175063">
+<header class="postHeader">
+    <div class="postSubHeader"></div>
+	<h1 itemprop="headline" class="entry-title">Asked &#038; Answered | Vera Farmiga</h1>		<div class="postMetaHeader story-meta-footer centeredText has-kicker">
+		<span class="kicker"><a href="//tmagazine.blogs.nytimes.com/category/culture/">Culture</a></span>
+				<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+			By Kathryn Branch		</address>
+		<!-- date published --><time class="dateline " datetime="2011-08-23T14:26:20-04:00" itemprop="datePublished">August 23, 2011 10:26 am</time>
+			<!-- date updated --><span class="visually-hidden updated">August 23, 2011 10:26 am</span><span class="postMetaHeaderCommentCount commentCount hidden">
+					<a class="commentCountLink icon commentIcon" href="//tmagazine.blogs.nytimes.com/2011/08/23/asked-answered-vera-farmiga/"></a>
+				</span>	</div>
+</header>
+<div class="entry-content">
+    <div class="w592"><img id="100000001012686" src="https://static01.nyt.com/images/2011/08/23/t-magazine/23farmiga-branch/23farmiga-branch-tmagArticle.jpg" alt="At left, Joshua Leonard and Vera Farmiga in &quot;Higher Ground.&quot; At right, Boyd Holbrook and Farmiga's sister Tassia as the younger representations of Leonard and Farmiga's characters." width="592" height="306" /><span class="credit">Photographs by Molly Hawkey (left) and Michael McDonough, courtesy of Sony Pictures Classics</span><span class="caption">From left: Joshua Leonard and Vera Farmiga in &#8220;Higher Ground&#8221;; Boyd Holbrook and Farmiga&#8217;s sister Taissa as the younger representations of Leonard and Farmiga&#8217;s characters.</span></div>
+<div class="w190 right">
+<div class="entry">
+<h6 class="kicker">Related</h6>
+<h5><a href="//tmagazine.blogs.nytimes.com/2011/08/25/face-time-dagmara-dominczyk/?ref=t-magazine">Face Time | Dagmara Dominczyk</a></h5>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">For Vera Farmiga, a Ukrainian-American actress whose reputably selective film career includes “Down to the Bone,” “The Departed” and 2009’s “Up in the Air,” which garnered her an Academy Award nomination, the movies are a family affair. In her directorial debut, <a href="//www.sonyclassics.com/higherground/">“Higher Ground,”</a> based on the novel by <a href="//www.carolynsbriggs.com/">Carolyn S. Briggs</a> and opening on Aug. 26, Farmiga handles a solid cast of actors, which includes her younger sister Taissa Farmiga and John Hawkes (“American Gangster” and the forthcoming drama “Martha Marcy May Marlene”), as she recounts the story of a woman named Corinne Walker — a mother and wife and child of God — who struggles with doubt and disbelief as she searches for her identity, her &#8220;instrument.&#8221; “I wanted to make sure that what pervaded the film was the character of music and its capacity to unite people,” says Farmiga of her hymn-heavy picture, produced by Farmiga and her rocker husband, Renn Hawkey, of the band <a href="//www.deadsy.com/#news">Deadsy</a>. Just days before the film&#8217;s opening, Farmiga spoke to The Moment about family, how she came upon &#8220;Higher Ground&#8221; and what separates the girls from the women.<span id="more-175063"></span></p>
+<p class="story-body-text" itemprop="articleBody"><strong> I’d like to start from the beginning, with Carolyn S. Briggs’s memoir “This Dark World: A Memoir of Salvation Found and Lost.&#8221; How did this project come onto your plate?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> Tim Metcalfe, one of the writers of the initial draft, sent it to me in 2006 after he saw “Down to the Bone.&#8221; I think there were three years&#8217; worth of draft before I came onto it, and then another three years of collaborating with him and maneuvering the screenplay into different areas. We found it very difficult to tell this story — you only have an hour and 20 minutes to delve very deeply into this woman’s life. So we took it from focusing on the adult Corinne, to which I’d attached myself, to going back to the memoir and really using her youth and adolescence in it as a springboard so that the audience could develop a deep affection for her; so you don’t automatically discard her passionate beliefs as adult lunacy. Which is easy to do with any passionate belief. So we were just massaging that script for a long time. Tim wasn’t going to rest until he saw it visualized as a story.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>
+<div class="q left">Q.</div>
+<p class="story-body-text" itemprop="articleBody"> How did it come about that you would direct?</p>
+<p class="story-body-text" itemprop="articleBody"></strong><strong>
+<div class="a left">A.</div>
+<p class="story-body-text" itemprop="articleBody"></strong> He introduced me to Carolyn Briggs probably after about two years of script collaboration. During that time we peddled it around to financiers — a little nibble here and there but no one was biting. At this time, I found out I was embarking on my second pregnancy. I already had a 2-and-a-half-year-old, and I thought to myself, You’ve got to be very selective in choosing your battles and choose what to focus on. I tried to actually wiggle away and I said, ‘Listen, maybe you should attach someone with a greater fiscal value aboard and then maybe you’ll get it made.&#8217; And instead of walking away, Tim suggested that I take control.</p>
+<p class="story-body-text" itemprop="articleBody"><strong> Was it daunting to take control?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> Well, I knew my ideas and my vision for the film — starting with infusing the film with music. I wanted to make sure that what pervaded the film was the character of music and its capacity to unite people. The hymns have that; they stand the test of time. Music is what our feelings sound like. But really it was just having the courage to do it. Simple as that. You reach for a certain height, and you can only accomplish as far as you reach. It was taking the courage to stand on my tippy-toes and say, ‘Ooh, let me see if I can. …&#8217;</p>
+<p class="story-body-text" itemprop="articleBody"><strong> You’ve worked with such amazing directors: Jason Reitman in “Up in the Air,” Martin Scorsese for “The Departed” and Deborah Granik in “Down to the Bone,” to name a few. As a first-time director, did you find yourself channeling any of their techniques?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> Deborah, Anthony Minghella and Marty have all influenced me. I’ve done my best work for them, because of the kind of leadership they provided. I learned it starts with conviction — your utmost conviction — no matter what anybody says. I mean these directors, no matter what anybody said, knew that I was the one for the job. That’s the No. 1 quality of a good director. You have to have that valiant fight-to-the-death belief in the tone of your film and who you want to be a part of it. That’s the battle: picking your collaborators and then doing whatever it takes for them to do their best work, whether it’s your crew or your cast. I watched Deborah, Minghella and Marty change their directing personalities based on the needs of their actors and not based on their own needs and egos. For me, that’s what separates the boys from the men, the girls from the women.</p>
+<p class="story-body-text" itemprop="articleBody"><strong> And what did you have to do in order to keep your collaborators engaged?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> Another thing I learned from the most passionate directors that I’ve worked with is that there’s a feeding frenzy that occurs — if you have passion and you share intimately that passion with others, people feed off of it. It becomes infectious. John Hawkes was first, and then everybody followed suit. It’s good bait.</p>
+<p class="story-body-text" itemprop="articleBody"><webonly><script type="text/javascript" src="https://static01.nyt.com/js/app/lib/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/video/vhs/build/vhs-2.x.js" id="nyt-blogs-video-js"></script>
+<script type="text/javascript">$.noConflict();</script>
+		<script type="text/javascript">		jQuery(document).ready(function(){
+			(function (config) {
+				var cfg = {
+					container: config.container,
+					id: config.id,
+					autoplay: config.autoplay || false,
+					type: config.type || "blogs",
+					width: config.width || 600,
+					height: config.height || 388,
+					mode: "flash",
+					cover: true,
+					controlsOverlay: {
+						"mode": "article",
+						"url": config.shareURL,
+					},
+					endSlate: true,
+					env: "production"
+				};
+				VHS.player(cfg);
+			})({
+				container: "video-container-rnd1409965686", // id of the container OR HTMLElement
+				id: "100000001011824", // Reference ID of initial video to play
+				width: typeof NYTD.Blogs.Ads.XXL != "undefined" ? 480 : 592,
+				height: typeof NYTD.Blogs.Ads.XXL != "undefined" ? 270 : 334,
+				autoplay: false,
+				type: "blog" // web trends -- indicates type of player
+			});
+		});
+		</script>
+		<div class="w592">
+			<div class="videoplayerContainer" id="video-container-rnd1409965686" data-video-id="100000001011824" data-ads=""></div>
+			<div class="credit videoCredit"></div>
+		</div></webonly></p>
+<p class="story-body-text" itemprop="articleBody"><strong> You filmed &#8220;Higher Ground&#8221; six miles away from your home in the Hudson Valley; while doing so you were pregnant with your second child, Gytta; your husband was a producer on the film; and your doppelgänger sister, Taissa, plays the younger version of your character, the protagonist of the film. It seems like this process was truly a family affair for you.</p>
+<p class="story-body-text" itemprop="articleBody"></strong> It’s a story about family, so to me I needed to put my family in it. My mom and my mother-in-law are in the backdrop of a scene; they were extras — cheap labor for the day. My grandmother and my husband’s grandma are in the film too, in the elderly home scene. The lady’s hand I’m massaging is my grandma&#8217;s! She is in advanced stages of Alzheimer’s, and she’s speaking Ukrainian gibberish. She is someone who’s given me, by example, the gumption to persevere. What she’s come through in life: World War II and poverty and an orphan at the age of 8. It’s amazing that she started a life here in America that would give me this opportunity. I just wanted to make sure that I could capture her on camera in a beautiful way — I captured her smiling.</p>
+<p class="story-body-text" itemprop="articleBody"><strong> This film deals heavily with religion. Did growing up in a very strict Catholic home have any influence here?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> I’m not sure if it directly influences the script. People always say, &#8220;Ooh, you grew up in this insular, this weird &#8230; &#8221; and I’m like, &#8220;No, it’s not unusual at all.&#8221; I mean, I think it’s more about the importance of community. I’m a Ukrainian American, and within that diaspora is a strong sense of pride in our heritage. You grow up with a very particular identity, and yeah, I grew up Catholic. I mean, with Catholicism there are rules that did help me with reverence and respect and humility and compassion, to deal with the spiritual search and journey and sort of representing that, as I know it. So yes, there are influences; I can see how my upbringing influenced the kind of storytelling I’m interested in.</p>
+<p class="story-body-text" itemprop="articleBody"><strong> Do you feel like the current cinema is dead? And if so, as an actress, and now a director, do you feel any responsibility here to revive storytelling in Hollywood?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> Yeah, but I can only gauge by my own investment in the process. And that litmus test is inspiration. “Higher Ground” is that for me; it is my way of reviving it — my own very personal way of being engaged and shape shifting. What keeps me in the game is divine inspiration. [<em>Laughs</em>]. I haven’t felt challenged since “Down to the Bone.”</p>
+<p class="story-body-text" itemprop="articleBody"><strong> I hear you are taking on another directing project with your husband’s script?</p>
+<p class="story-body-text" itemprop="articleBody"></strong> Yes, Renn and I are working on his script, and Brice and Claude Dal Farra of the financial company BCDF have agreed to follow suit. So it’s just a matter of timing to see when it fits in the course of our lives. You know, I got into this as an actress but directing, for me, really is by necessity. If I feel like that’s the only way I can get a story told, or if I feel like I have a unique angle on the story, then yes I will direct.</p>
+    </div>
+</article>
+<div class="entry-meta">
+        <div class="shareTools shareToolsThemeClassic shareToolsThemeClassicHorizontal articleShareToolsBottom " data-shares="facebook,twitter,google,email,showall|Share,print" data-url="//tmagazine.blogs.nytimes.com/2011/08/23/asked-answered-vera-farmiga/" data-title="Asked &amp; Answered | Vera Farmiga " data-description="The actress-turned-director takes hold of her career as a storyteller in her directorial debut, &quot;Higher Ground.&quot;"></div>
+    </div><!-- end .entry-meta -->		<hr />
+			<div class="module box nav">
+		<ul class="opposingFloatControl wrap">
+			<li class="element1">
+								<span class="previous">Previous Post</span>
+				<!-- date published --><time class="dateline " datetime="2011-08-22T21:30:18-04:00" itemprop="datePublished">August 22, 2011</time>
+			<!-- date updated --><span class="visually-hidden updated">August 22, 2011</span>				<a href="//tmagazine.blogs.nytimes.com/2011/08/22/case-study-the-white-peach-sgroppino/" title="Case Study | The White Peach Sgroppino ">Case Study | The White Peach Sgroppino </a>
+							</li>
+			<li class="element2">
+								<span class="next">Next Post</span>
+				<!-- date published --><time class="dateline " datetime="2011-08-23T16:00:31-04:00" itemprop="datePublished">August 23, 2011</time>
+			<!-- date updated --><span class="visually-hidden updated">August 23, 2011</span>				<a href="//tmagazine.blogs.nytimes.com/2011/08/23/lighting-the-way/" title="Lighting the Way">Lighting the Way</a>
+							</li>
+		</ul>
+	</div>
+<!-- community comments -->
+<a id="postComment"></a>
+<div id="commentsContainer" class="commentsContainer"></div>
+<script type="text/javascript">
+NYTD.jQuery(document).ready(function ($) {
+   NYTD.commentsInstance = new EmbeddedComments($, 'NYTD.commentsInstance' );
+   NYTD.commentsInstance.init({configName: 'default'});
+});
+</script>
+	</div> <!-- end content -->
+	<div id="google_ads_aCol">
+<!-- SponLink2 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink2 != "undefined" ){document.write(NYTD.Blogs.Ads.SponLink2.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink2 != "undefined" ) { NYTD.jQuery("#SponLink2").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=SponLink2"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=SponLink2&query=qstring&keywords=?"></a></noscript>
+</div>
+</div><!-- end aCol -->
+<div id="cCol">
+<div id="blog-index">
+	<a href="//www.nytimes.com/blogs/" title="Blogs - The New York Times">All NYTimes.com Blogs »</a>
+</div>
+	<div class="module box nav">
+		<ul class="opposingFloatControl wrap">
+			<li class="element1">
+								<span class="previous">Previous Post</span>
+								<a href="//tmagazine.blogs.nytimes.com/2011/08/22/case-study-the-white-peach-sgroppino/" title="Case Study | The White Peach Sgroppino ">Case Study | The White Peach Sgroppino </a>
+							</li>
+			<li class="element2">
+								<span class="next">Next Post</span>
+								<a href="//tmagazine.blogs.nytimes.com/2011/08/23/lighting-the-way/" title="Lighting the Way">Lighting the Way</a>
+							</li>
+		</ul>
+	</div>
+<div class=" module ad" id="XXL">
+	<!-- XXL position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.XXL != "undefined" ){document.write(NYTD.Blogs.Ads.XXL.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.XXL != "undefined" ) { NYTD.jQuery("#XXL").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=XXL"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=XXL&query=qstring&keywords=?"></a></noscript>
+</div>
+	    <div class='box module ad nocontent' id="MiddleRight">
+			<div class='bigAdContainer'>
+				<!-- MiddleRight position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.MiddleRight != "undefined" ){document.write(NYTD.Blogs.Ads.MiddleRight.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.MiddleRight != "undefined" ) { NYTD.jQuery("#MiddleRight").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=MiddleRight"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=MiddleRight&query=qstring&keywords=?"></a></noscript>
+			</div>
+	    </div>
+	    	<div class='box module ad nocontent' id="Box1">
+	<!-- Box1 position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Box1 != "undefined" ){document.write(NYTD.Blogs.Ads.Box1.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.Box1 != "undefined" ) { NYTD.jQuery("#Box1").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=Box1"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=Box1&query=qstring&keywords=?"></a></noscript>
+	</div>
+	<div id="google_ads" class="box module ad">
+<!-- SponLink position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink != "undefined" ){document.write(NYTD.Blogs.Ads.SponLink.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.SponLink != "undefined" ) { NYTD.jQuery("#SponLink").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=SponLink"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/tmagazine/post&posall=XXL,AdShareData,PushDown,FixedPanel,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=SponLink&query=qstring&keywords=?"></a></noscript>
+</div>
+</div><!-- end cCol --></div><!-- end blog wrap --><div id="footer" class="singleRule">
+	<div class="opposingFloatControl wrap">
+		<div class="element1">
+			<ul id="footerNavigation" class="flush">
+				<li class="firstItem">
+					<a href="//www.nytimes.com">NYTIMES.COM</a></li>
+				<li class="secondItem">
+					<a href="//www.nytimes.com/ref/membercenter/help/infoservdirectory.html">CONTACT US</a>
+				</li>
+				<li class="thirdItem">
+					<a href="//nytmediakit.com/">MEDIA KIT</a>
+				</li>
+				<li class="fourthItem">
+					<a href="//www.nytimes.com/ref/membercenter/help/privacysummary.html">PRIVACY POLICY</a>
+				</li>
+				<li class="lastItem">
+					<a href="//www.nytco.com/">THE NEW YORK TIMES COMPANY</a>
+				</li>
+			</ul>
+		</div>
+		<div class="element2">
+			<div id="footerLogo">
+				<a href="//www.nytimes.com/pages/t-magazine/index.html">The New York Times Style Magazine</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div> <!-- end page --><!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-23',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":21,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

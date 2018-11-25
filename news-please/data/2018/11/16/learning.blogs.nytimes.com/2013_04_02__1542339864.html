@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002151048"><meta name="author" content="Michael Gonchar" />
+<meta name="CLMST" content="Michael Gonchar" />
+<meta name="byl" content="Michael Gonchar" />
+<meta name="GBLC" content="Europe;Global Conflicts;Global History;Human Rights;International Relations;Journalism;Journalistic Ethics;Journalistic Writing;Lesson Plans;Media Studies;New Media Journalism;Social Studies;The Influence of the Mass Media;The Middle East;The Print Media;Witnessing History;World War II">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1364932492" />
+<meta name="PUD" content="20130402" />
+<meta name="pdate" content="20130402" />
+<meta name="ptime" content="20130402155452" />
+<meta name="utime" content="20130403100834" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-04-03T10:08:34-04:00" />
+<meta name="DISPLAYDATE" content="April 2, 2013" />
+<meta name="dat" content="April 2, 2013" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Holocaust and the Nazi Era;News and News Media">
+<meta name="org" content="New York Times">
+<meta property="article:tag" content="Holocaust and the Nazi Era" />
+<meta property="article:tag" content="News and News Media" />
+<meta property="article:tag" content="New York Times" />
+<meta property="article:tag" content="Europe" />
+<meta property="article:tag" content="Global Conflicts" />
+<meta property="article:tag" content="Global History" />
+<meta property="article:tag" content="Human Rights" />
+<meta property="article:tag" content="International Relations" />
+<meta property="article:tag" content="Journalism" />
+<meta property="article:tag" content="Journalistic Ethics" />
+<meta property="article:tag" content="Journalistic Writing" />
+<meta property="article:tag" content="Lesson Plans" />
+<meta property="article:tag" content="Media Studies" />
+<meta property="article:tag" content="New Media Journalism" />
+<meta property="article:tag" content="Social Studies" />
+<meta property="article:tag" content="The Influence of the Mass Media" />
+<meta property="article:tag" content="The Middle East" />
+<meta property="article:tag" content="The Print Media" />
+<meta property="article:tag" content="Witnessing History" />
+<meta property="article:tag" content="World War II" />
+<meta name="keywords" content="Holocaust and the Nazi Era,News and News Media,New York Times,Europe,Global Conflicts,Global History,Human Rights,International Relations,Journalism,Journalistic Ethics,Journalistic Writing,Lesson Plans,Media Studies,New Media Journalism,Social Studies,The Influence of the Mass Media,The Middle East,The Print Media,Witnessing History,World War II" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2013%2F04%2F02%2Fthe-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust%2F" title="&#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust" />
+<meta name="description" content="In this lesson we offer one more way to teach about the Holocaust: use contemporary reporting in The New York Times as a lens for thinking about what the press was reporting at the time, and why it was reporting it that way." />
+<meta name="hdl" content="&#039;The Century&#039;s Bitterest Journalistic Failure&#039;? Considering Times Coverage of the Holocaust" />
+<meta property="og:title" content="&#039;The Century&#039;s Bitterest Journalistic Failure&#039;? Considering Times Coverage of the Holocaust" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="In this lesson we offer one more way to teach about the Holocaust: use contemporary reporting in The New York Times as a lens for thinking about what the press was reporting at the time, and why it was reporting it that way." />
+<meta property="og:image" content="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-superJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="&#039;The Century&#039;s Bitterest Journalistic Failure&#039;? Considering Times Coverage of the Holocaust" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/" />
+<meta name="twitter:description" content="In this lesson we offer one more way to teach about the Holocaust: use contemporary reporting in The New York Times as a lens for thinking about what the press was reporting at the time, and why it was reporting it that way." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='Do You Think Child Stars Have It Rough?' href='//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/' />
+<link rel='next' title='Word of the Day | hallucination' href='//learning.blogs.nytimes.com/2013/04/03/word-of-the-day-hallucination/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/' />
+<link rel='shortlink' href='//nyti.ms/XbGFLL' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Lesson Plan &#124; Investigating New York Times Coverage of the Holocaust - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-129094 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        &#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/"
+	 data-title="&#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;In this lesson we offer one more way to teach about the Holocaust: use contemporary reporting in The New York Times as a lens for thinking about what the press was reporting at the time, and why it was reporting it that way. &lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="April 2, 2013 3:54 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-129094 post type-post status-publish hentry category-europe category-global-conflicts category-global-history category-human-rights category-international-relations-social-studies category-journalism category-journalistic-ethics category-journalistic-writing category-lesson-plans category-media-studies category-new-media-journalism category-social-studies category-the-influence-of-the-mass-media category-the-middle-east category-the-print-media category-witnessing-history category-world-war-ii-global-history tag-holocaust tag-holocaust-and-the-nazi-era-des tag-journalism tag-new-york-times tag-the-new-york-times des-holocaust-and-the-nazi-era des-news-and-news-media org-new-york-times" id="post-129094">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">&#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Michael Gonchar			</address>
+			<!-- date published --><time class="dateline " datetime="2013-04-02T19:54:52+00:00" itemprop="datePublished">April 2, 2013 3:54 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">April 2, 2013 3:54 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-blog480.jpg" src="https://static01.nyt.com/images/2013/03/31/nyregion/31SPOTLI_SPAN-LN/31SPOTLI-blog480.jpg" id="100000002150414" width="480" height="320" alt="The efforts of the White Rose movement to rouse Germans against the Third Reich lasted just months, and key members, like Sophie Scholl, were captured and executed in Munich in 1943. Here, her grave. &lt;a href=&quot;//www.nytimes.com/2013/03/31/nyregion/the-young-germans-who-stood-up-to-the-nazis.html&quot;&gt;Go to related article »&lt;/a&gt;"   /><meta itemprop="height" content="320"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">The efforts of the White Rose movement to rouse Germans against the Third Reich lasted just months, and key members, like Sophie Scholl, were captured and executed in Munich in 1943. Here, her grave. <a href="//www.nytimes.com/2013/03/31/nyregion/the-young-germans-who-stood-up-to-the-nazis.html">Go to related article »</a></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Nancy Keil</span></figcaption></figure></div>
+<div class="w151 right module">
+<div class="entry"><a title="See all Lesson Plans" href="/category/lesson-plans/"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan151.png" alt="Lesson Plans - The Learning Network" /></a><a title="See all lesson plans" href="/category/lesson-plans/"><img class="w35 right" src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan35.png" alt="Lesson Plans - The Learning Network" /></a></p>
+<h6 class="kicker">Global History</h6>
+<p class="summary">Teaching ideas based on New York Times content.</p>
+<ul class="refer">
+<li><a href="//learning.blogs.nytimes.com/category/global-history/">See all in Global History »</a></li>
+<li><a title="See all Lesson Plans" href="/category/lesson-plans/">See all lesson plans »</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">April 8 is <a href="//www.ushmm.org/remembrance/dor/calendar/">Holocaust Remembrance Day</a> (Yom Hashoah), which marks the anniversary of the <a href="//www.ushmm.org/wlc/en/article.php?ModuleId=10005188">Warsaw ghetto uprising</a> on the Hebrew calendar.</p>
+<p class="story-body-text" itemprop="articleBody">Students and teachers will find many ideas for learning about the Holocaust on our special <a href="//learning.blogs.nytimes.com/2010/04/09/the-holocaust/">resource page</a>, which includes:</p>
+<ul>
+<li><a href="//learning.blogs.nytimes.com/2010/04/09/the-holocaust/#historical">Original Times reporting from the 1930s and &#8217;40s</a></li>
+<li><a href="//learning.blogs.nytimes.com/2010/04/09/the-holocaust/#legacy">Lesson plans about the Holocaust</a></li>
+<li><a href="//learning.blogs.nytimes.com/2010/04/09/the-holocaust/#genocides">Additional lesson plans about genocide, tolerance, hatred and human rights</a></li>
+<li><a href="//learning.blogs.nytimes.com/2010/04/09/the-holocaust/#recent">Selected recent Times articles and multimedia on the Holocaust</a></li>
+<li><a href="//learning.blogs.nytimes.com/2010/04/09/the-holocaust/#wiesel">Selected resources related to the popular school texts &#8220;Night,&#8221; by Elie Wiesel, and &#8220;The Diary of a Young Girl,&#8221; by Anne Frank</a></li>
+</ul>
+<p class="story-body-text" itemprop="articleBody">This year, the <a href="//www.nytimes.com/2013/02/24/nyregion/describing-the-warsaw-ghetto-uprising-with-color-and-whimsy.html">70th anniversary of the Warsaw ghetto uprising</a>, we add one more idea: to use contemporary reporting in The New York Times itself as a lens for thinking about what the press was reporting at the time and why it was reporting it that way.<br />
+<span id="more-129094"></span><br />
+Through this investigation, students can better understand the answers to some of the broader questions they so frequently ask during any study of the Holocaust: What did Americans know about the Holocaust while it was going on? And why didn&#8217;t the United States do more to end the Holocaust, or at least to rescue its victims? They can also learn about both the power and the limitations of journalism.</p>
+<hr />
+<h4>Considering Times Coverage of the Holocaust</h4>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2013/03/03/opinion/03camps-map-LN/03camps-map-blog480.png" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/03/03/opinion/03camps-map-LN/03camps-map-blog480.png" src="https://static01.nyt.com/images/2013/03/03/opinion/03camps-map-LN/03camps-map-blog480.png" id="100000002150608" width="480" height="360" alt="Source: United States Holocaust Memorial Museum. &lt;a href=&quot;//www.nytimes.com/2013/03/03/sunday-review/the-holocaust-just-got-more-shocking.html&quot;&gt;Go to related article, &quot;The Holocaust Just Got More Shocking&quot; &lt;/a&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/category/6-qs-about-the-news/&quot;&gt;»&lt;/a&gt;&lt;a href=&quot;//www.nytimes.com/2013/03/03/sunday-review/the-holocaust-just-got-more-shocking.html&quot;&gt; &lt;/a&gt;"   /><meta itemprop="height" content="360"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Source: United States Holocaust Memorial Museum. <a href="//www.nytimes.com/2013/03/03/sunday-review/the-holocaust-just-got-more-shocking.html">Go to related article, "The Holocaust Just Got More Shocking" </a><a href="//learning.blogs.nytimes.com/category/6-qs-about-the-news/">»</a><a href="//www.nytimes.com/2013/03/03/sunday-review/the-holocaust-just-got-more-shocking.html"> </a></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> The New York Times</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">Doing a search of Holocaust coverage in The Times is not an easy task. After all, the term &#8220;Holocaust&#8221; <a href="//www.ushmm.org/research/library/faq/details.php">was not used by the press until later</a>.</p>
+<p class="story-body-text" itemprop="articleBody">As an alternative, start by having students read an article by Max Frankel, the executive editor of The Times from 1986 to 1994, published prominently in the The Times&#8217;s 150th anniversary edition on Nov. 14, 2001.</p>
+<p class="story-body-text" itemprop="articleBody">In <a href="//www.nytimes.com/2001/11/14/news/150th-anniversary-1851-2001-turning-away-from-the-holocaust.html">&#8220;150th Anniversary: 1851-2001; Turning Away From the Holocaust,&#8221;</a> Mr. Frankel calls the Holocaust reporting by The Times and other media “the century&#8217;s bitterest journalistic failure.” Here is an excerpt:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">And then there was failure: none greater than the staggering, staining failure of The New York Times to depict Hitler&#8217;s methodical extermination of the Jews of Europe as a horror beyond all other horrors in World War II — a Nazi war within the war crying out for illumination.</p>
+<p class="story-body-text" itemprop="articleBody">The annihilation of six million Jews would not for many years become distinctively known as the Holocaust. But its essence became knowable fast enough, from ominous Nazi threats and undisputed eyewitness reports collected by American correspondents, agents and informants. Indeed, a large number of those reports appeared in The Times. But they were mostly buried inside its gray and stolid pages, never featured, analyzed or rendered truly comprehensible.</p>
+<p class="story-body-text" itemprop="articleBody">Yet what they printed made clear that the editors did not long mistrust the ghastly reports. They presented them as true within months of Hitler&#8217;s secret resolve in 1941 to proceed to the &#8221;final solution&#8221; of his fantasized &#8221;Jewish problem.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Why, then, were the terrifying tales almost hidden in the back pages? Like most — though not all — American media, and most of official Washington, The Times drowned its reports about the fate of Jews in the flood of wartime news. Its neglect was far from unique and its reach was not then fully national, but as the premier American source of wartime news, it surely influenced the judgment of other news purveyors.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Students should read the entire article. Then, if time allows, they should read some of the original articles that Mr. Frankel discusses, like the one headlined <a href="https://static01.nyt.com/images/blogs/learning/pdf/2013/extinctionfearedbyjewsinpolandLN.pdf">“Extinction Feared by Jews in Poland”</a> (PDF) on page 28 of the March 1, 1942, paper. After the class finishes its investigation, students should discuss the following questions:</p>
+<ul>
+<li>How did The Times cover the Holocaust as it was taking place and being learned about by journalists?</li>
+<li>A common inaccuracy about the World War II period is that <a href="//answers.yahoo.com/question/index?qid=20070419122251AA4fk5B">Americans didn’t know about the Holocaust</a> until the concentration camps were finally liberated at the end of the war in 1945. How does Mr. Frankel’s article, and a review of Times coverage from that period, shed light on this question? What Americans were most likely to know about the Holocaust taking place in Europe? What Americans were less likely to know about it? (You can read the first chapter of Peter Novick&#8217;s book, <a href="//www.nytimes.com/books/first/n/novick-holocaust.html">&#8220;The Holocaust in American Life,&#8221;</a> to learn more about this topic.)</li>
+<li>How do you think Americans&#8217; reaction to the Holocaust before the end of World War II might have been different if The New York Times and other highly regarded newspapers and magazines had featured news about the Holocaust in their major front-page headlines?</li>
+<li>In what ways do you think the American press in general, or The Times in particular, has changed since the 1930s and &#8217;40s? What evidence can you give to back up your opinion?</li>
+<li>Mr. Frankel concludes his article with this statement:<br />
+<blockquote><p class="story-body-text" itemprop="articleBody">And to this day the failure of America&#8217;s media to fasten upon Hitler&#8217;s mad atrocities stirs the conscience of succeeding generations of reporters and editors. It has made them acutely alert to ethnic barbarities in far-off places like Uganda, Rwanda, Bosnia and Kosovo. It leaves them obviously resolved that in the face of genocide, journalism shall not have failed in vain.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Do you agree with this conclusion? Do you think The Times and other media outlets are aggressively covering current human rights tragedies unfolding around the world? How do you think the decline of print newspapers and the nightly national news broadcasts, along with the rise of digital media and 24-hour news channels, might affect current and future coverage?</li>
+</ul>
+<hr />
+<p class="story-body-text" itemprop="articleBody"><strong>Going Further |</strong> If students want to study the topic of Holocaust coverage in The Times in greater depth, they can read the following two pieces:</p>
+<ul>
+<li>An <a href="//hnn.us/articles/10903.html">essay by Laurel Leff</a>, the author of &#8220;Buried by The Times: The Holocaust and America’s Most Important Newspaper,&#8221; in which she excoriates The Times for its Holocaust coverage;</li>
+<li>The Times&#8217;s <a href="//www.nytimes.com/2005/05/15/books/review/15LEITER.html">book review of</a> &#8220;Buried by The Times,&#8221; written by Robert Leiter, in which he criticizes Ms. Leff&#8217;s book as a &#8220;high-minded crusade against one newspaper.&#8221;</li>
+</ul>
+<p class="story-body-text" itemprop="articleBody">Then, students can use these two sources to contribute additional insights to the above discussion questions.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/" data-title="&#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust" data-description="In this lesson we offer one more way to teach about the Holocaust: use contemporary reporting in The New York Times as a lens for thinking about what the press was reporting at the time, and why it was reporting it that way. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-1139071">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Brenda from Flatbush</span>
+			<span class="comment-link">
+				<a href="#comment-1139071" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:43 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A much lesser-known, but just as staggering, stain on the Times&#8217; reputation: the complicity of Walter Duranty (a Pulitzer Prize winner!) in covering up the Holodomor, the Stalin-engineered Ukrainian famine:<br />
+<a href="//en.wikipedia.org/wiki/Walter_Duranty" rel="nofollow">//en.wikipedia.org/wiki/Walter_Duranty</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1139096">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">wieslawa niziol</span>
+			<span class="comment-link">
+				<a href="#comment-1139096" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:28 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Hello,</p>
+<p>Thank you for your interesting article. </p>
+<p>I just would like to point out an error. You are talking about the Warsaw Ghetto Uprising of 1943 not the Warsaw Uprising of 1944. The first one ended the killing of some 300 thousands  Jews of Warsaw (mostly) by Germans, the second &#8211;  ended in killing of some 150 thousands of the remaining population and leveled the city.</p>
+<p>With Regards,</p>
+<p>Wieslawa Niziol</p>
+<p><strong>Thank you for catching that, Mr. Niziol. I&#8217;ve clarified it in the piece. (You were referring, I believe, to our second reference in which we wrote about the 70th anniversary and inadvertently left out the word &#8220;ghetto,&#8221; right? I&#8217;ve added it.) </p>
+<p>Thank you again&#8211;Katherine Schulten</strong></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1139465">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Thorin Tritter</span>
+			<span class="comment-link">
+				<a href="#comment-1139465" title="Comment Permalink">
+					<span class="comment-date">April 3, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:27 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Thank you for this article.  I direct the Fellowships at Auschwitz for the Study of Professional Ethics (FASPE), which takes graduate students in four fields (journalism, law, medicine, and religion) to Germany and Poland where they learn about the actions of those in their profession during the Holocaust and then use that history as a launching point for an intensive course of study in contemporary professional ethics.  Each year our program looks at the material you mention and connects it to contemporary concerns for journalists today.  Thank you.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1139828">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Paul Tapp</span>
+			<span class="comment-link">
+				<a href="#comment-1139828" title="Comment Permalink">
+					<span class="comment-date">April 3, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:00 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I would be happy to make available an interview I did with Mrs Jan Gilewicz, a survivor of the concentration camps. She met her husband &#8216;behind the wire&#8217;, married him and came to Australia. Here they set up a new life only for it to be ended in tragedy much later when their son was shot and killed by Tasmanian police. I have documented the case(as a retired journalist) with interviews  for posterity. Interestingly Mrs Gilewicz and her husband had a compact NEVER to discuss their incarceration in their new home as &#8216;people would not believe it&#8217;. Also the trade unions here that controlled industry seemed averse to any criticism by survivors of the war of their experiences. Additionally an interview with a Stanislau Hanuszewicz who says he was born in a concentration camp may be of interest to students. His mother died soon after arrival, children taken from the father, Australia must not have been as welcoming as &#8216;our&#8217; media made it out to be to Holocaust refugees. Both interviews can be sent should educators feel they may have merit.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1140659">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Marta Steele</span>
+			<span class="comment-link">
+				<a href="#comment-1140659" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:46 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Before we flail ourselves too hard over this neglect of white middle-class populations to whom we can relate so well&#8211;I&#8217;m a child of the Holocaust on both sides of the family&#8211;let&#8217;s look in the mirror.<br />
+Holocausts are a fact of life on the other side of the world; so are rape and mutilation and abuse. We read about such events and shake our heads; a few religious people go over to try to help, risking their lives, and a few others send money to soothe their consciences. I admit to being part of the latter  group.<br />
+Even with true-to-life video documentation, the outcry is not loud enough to stifle the atrocities, which go on and on and on and on.<br />
+As a cultural Jew, I weep on the appointed memorial days and over the remnants of the lives of family members who died at Auschwitz. Why don&#8217;t any of us do more? Do we feel that safe?<br />
+There would be more of us out on the streets if our bank accounts were skimmed by the government as they were in Cyprus. That I promise you.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1140761">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Happy in MA</span>
+			<span class="comment-link">
+				<a href="#comment-1140761" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:10 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Today&#8217;s reporting on the Middle East by the NY Times could be used as a similar example. The Times consistently prints inaccurate anti-Israel articles and opinion pieces, ignores or misstates the policy and goals of anti-Israel  parties and people, and describes radical anti-Western and anti-semitic  organizations as &#8220;moderate&#8221;.   </p>
+<p>Hamas, the Palestinian Authority, and other organizations state clearly that their goal is the elimination of the world&#8217;s only Jewish state. This can only happen if the 6 million Jews living in that nation are murdered or expelled. </p>
+<p>Hamas and other organizations clearly state that their goal is the genocide of the entire Jewish people (the P.A. &#8216;only&#8217; wants to murder or expel those Jews who live in Israel).<br />
+None of this is stated in laudatory articles about &#8216;moderate&#8217; Hamas or Muslim Brotherhood leaders, or in opinion pieces excoriating Israel for not taking actions which would allow or hasten its own destruction.</p>
+<p>Unfortunately, not much has changed over the past 70 years.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1140770">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jim Doherty</span>
+			<span class="comment-link">
+				<a href="#comment-1140770" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:18 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I salute everyone associated with this project. It should be part of the curriculum in every school and at every level where appropriate.  Thank you.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1140901">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Richard Naylor</span>
+			<span class="comment-link">
+				<a href="#comment-1140901" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:46 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I find it interesting that these articles appear more than sixty years after the events. I find it ironic that they appear during a time when American journalism is failing another persecuted group of people: Muslim communities in America and throughout the world. In fact, our media chose to give precedence to the loud, violent Muslims who use Islam as a rationalization for their political agendas. </p>
+<p>Ever since 9/11 American media have failed to give voice to the American Muslim leaders and organizations who immediately condemned the attacks and continue to condemn ongoing violent acts by extremists. </p>
+<p>Worse, our media failed to educate us about Islam, focusing instead upon the violence of a small percentage of Muslims, a practice that also spread fear and hatred of Muslims. </p>
+<p>I know I will be criticized for implying a comparison of the Holocaust with the current level of anti-Muslim prejudice.<br />
+Although I also know that vilifying the Other was one of the first<br />
+steps to the Camps, that is not my point. My point is the consistent failure of our media to provide us with information that will help us to live with one another instead of a steady stream of celebrity sound bytes and mindless chat fests.</p>
+<p>Will we have to wait six more decades for another journalistic mea culpa?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1141084">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Richard Mason</span>
+			<span class="comment-link">
+				<a href="#comment-1141084" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:19 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Naylor brings up an issue we have miserably failed to address, much in keeping with our failure to address the HolocaustMr &#8211; the despicable bigotry and attacks on Muslims and Islam. We talk about religious tolerance and then debase this religion and its faithful, in full American hypocrisy. This not only confirms our disregard for other nations and cultures but it also spurs domestic Muslims to lash out in rage and attempt domestic acts of violence at home.</p>
+<p>But let us not pass over the Evian Conference that took place early in the war, whereby the USA and other western countries refused to take in thousands of Jewish children and allowed them to be turned back and killed in concentration camps. How cravenly despicable, un-American, un-Christian and unforgivable was that. Shame forever on us, Australia, even Canada, and all but one of the western hemisphere countries. Was this ever reported, during or since the war? The Germans face up to and study their Nazi past so that it will be less likely to occur again, but we slink off and bury our worst deeds in revisionist history and flag waving patriotism. Deplorable.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1141233">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jeffrey Gross</span>
+			<span class="comment-link">
+				<a href="#comment-1141233" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:44 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr. Naylor states that he &#8220;will be criticized for implying a comparison of the Holocaust with the current level of anti-Muslim prejudice.&#8221;  As well he should be.  The idea that Muslims are in a state of danger comparable to that faced by European Jewry in the 1930s is ludicrous.  Moreover, it&#8217;s not primarily the job of the news media to &#8220;educate&#8221; us about Islam.  When a story is news, it should be reported.  When a bomb goes off &#8211; no matter who planted it &#8211; that&#8217;s news.  And yet it seems to me the Times &#8211; a paper intimately associated with German Jews &#8211; has done a much better job of reporting anti-Muslim incidents than it did in addressing the largest genocide in human history.  If people want to flagellate themselves over the supposedly ghastly treatment of Muslims in the US, fine, but I question their knowledge of the religion and its political manifestations and ambitions.  In short, there&#8217;s plenty of irony here to go around.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1141365">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Michael Jaliman</span>
+			<span class="comment-link">
+				<a href="#comment-1141365" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:32 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The Times through accepting and publishing accounts of its own mistakes in coverage of the Holocaust,  deepens its integrity and enhances its credibility as an organization with a commitment to uncovering and presenting truths that are important to our collective human experience. The willingness to acknowledge  falibility is an important element of  an inquiry into the truth.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1141461">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Shalom Freedman</span>
+			<span class="comment-link">
+				<a href="#comment-1141461" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:25 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>There is no way of considering &#8216;The Times&#8217; shameful conduct in undercovering the Holocaust (Shoah) without examining its overall policy to the Jewish situation and today especially to the Jewish state. The &#8216;Times&#8217;  has consistently done disservice to the Jewish people and today to Israel.<br />
+During the &#8216;Holocaust&#8217; it undercovered Israel and now it does the opposite. It undercovers horrors all over the world while endlessly criticizing Israel and in fact  distorting the truth about Israel&#8217;s enemies.<br />
+The &#8216;conscience&#8217; of the &#8216;Times&#8217; should be working on its present policies towards Israel and not just on its moral failures of the past.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1142287">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ruby Sinreich</span>
+			<span class="comment-link">
+				<a href="#comment-1142287" title="Comment Permalink">
+					<span class="comment-date">April 5, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This is great. Another interesting question to study would be how media coverage of more recent wars impacted public opinion (or failed to do so).  We all know how important images from Vietnam were to turning public opinion against that debacle. What our invasions of Iraq and Afghanistan?</p>
+<p>If more Americans knew the impact would they be as supportive of the policies? Do we lack empathy for Taliban victims in the way way that we couldn&#8217;t see the whole picture of what was happening to Jews? </p>
+<p>And of course we can reflect on the role of the Times in the run-up to the Iraq invasion. What might the political environment have been like had the claims of the Pentagon and White House been properly investigated by journalists?</p>
+<p>How can we learn from our past to ensure we don&#8217;t turn a blind eye to potential future holocausts within our outside the U.S.?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1284000">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">angellike</span>
+			<span class="comment-link">
+				<a href="#comment-1284000" title="Comment Permalink">
+					<span class="comment-date">September 1, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>One must look no further than &#8220;The Generals Son&#8221; a Journey of an Israeli to Palestine&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/" title="Do You Think Child Stars Have It Rough?">
+				Do You Think Child Stars Have It Rough?			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2013/04/03/word-of-the-day-hallucination/" title="Word of the Day | hallucination">
+				Word of the Day | hallucination			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":57,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

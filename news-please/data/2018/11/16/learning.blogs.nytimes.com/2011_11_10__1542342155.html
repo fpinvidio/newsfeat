@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000001164479"><meta name="author" content="Shannon Doyne and Katherine Schulten" />
+<meta name="CLMST" content="Shannon Doyne and Katherine Schulten" />
+<meta name="byl" content="Shannon Doyne and Katherine Schulten" />
+<meta name="GBLC" content="Academic Skills;Biographies;Creative Writing;English Language Learning;Expository Writing;Fiction;Language Arts;Lesson Plans;Literacy Skills;Literature;Multimedia;Nonfiction;Persuasive Writing;Reader Response">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1320953215" />
+<meta name="PUD" content="20111110" />
+<meta name="pdate" content="20111110" />
+<meta name="ptime" content="20111110142655" />
+<meta name="utime" content="20111214044440" />
+<meta property="article:modified_time" itemprop="dateModified" content="2011-12-14T04:44:40-05:00" />
+<meta name="DISPLAYDATE" content="November 10, 2011" />
+<meta name="dat" content="November 10, 2011" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Academic Skills" />
+<meta property="article:tag" content="Biographies" />
+<meta property="article:tag" content="Creative Writing" />
+<meta property="article:tag" content="English Language Learning" />
+<meta property="article:tag" content="Expository Writing" />
+<meta property="article:tag" content="Fiction" />
+<meta property="article:tag" content="Language Arts" />
+<meta property="article:tag" content="Lesson Plans" />
+<meta property="article:tag" content="Literacy Skills" />
+<meta property="article:tag" content="Literature" />
+<meta property="article:tag" content="Multimedia" />
+<meta property="article:tag" content="Nonfiction" />
+<meta property="article:tag" content="Persuasive Writing" />
+<meta property="article:tag" content="Reader Response" />
+<meta name="keywords" content="Academic Skills,Biographies,Creative Writing,English Language Learning,Expository Writing,Fiction,Language Arts,Lesson Plans,Literacy Skills,Literature,Multimedia,Nonfiction,Persuasive Writing,Reader Response" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2011%2F11%2F10%2Fbeyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models%2F" title="Beyond the Book Report: Ways to Respond to Literature Using New York Times Models" />
+<meta name="description" content="Some alternatives to that classic classroom assignment, the book report, all inspired by an article, essay, blog post, illustration, interview or work of multimedia in The New York Times." />
+<meta name="hdl" content="Beyond the Book Report: Ways to Respond to Literature Using New York Times Models" />
+<meta property="og:title" content="Beyond the Book Report: Ways to Respond to Literature Using New York Times Models" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="Some alternatives to that classic classroom assignment, the book report, all inspired by an article, essay, blog post, illustration, interview or work of multimedia in The New York Times." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Beyond the Book Report: Ways to Respond to Literature Using New York Times Models" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/" />
+<meta name="twitter:description" content="Some alternatives to that classic classroom assignment, the book report, all inspired by an article, essay, blog post, illustration, interview or work of multimedia in The New York Times." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='Poetry Pairing | &#8216;The Woman With a Tumor in Her Neck&#8217;' href='//learning.blogs.nytimes.com/2011/11/10/poetry-pairing-the-woman-with-a-tumor-in-her-neck/' />
+<link rel='next' title='Word of the Day | caprice' href='//learning.blogs.nytimes.com/2011/11/11/word-of-the-day-caprice/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/' />
+<link rel='shortlink' href='//nyti.ms/vPKcHN' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Beyond the Book Report: Ways to Respond to Literature Using New York Times Models - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-87879 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Beyond the Book Report: Ways to Respond to Literature Using New York Times Models        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/"
+	 data-title="Beyond the Book Report: Ways to Respond to Literature Using New York Times Models"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Some alternatives to that classic classroom assignment, the book report, all inspired by an article, essay, blog post, illustration, interview or work of multimedia in The New York Times.&lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="November 10, 2011 2:26 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-87879 post type-post status-publish hentry category-academic-skills category-biographies category-creative-writing category-english-language-learning category-expository-writing category-fiction category-language-arts category-lesson-plans category-literacy-skills category-literature category-multimedia-lesson-plans category-nonfiction category-persuasive-writing category-reader-response tag-book-lists tag-book-report tag-books tag-reading tag-reluctant-readers" id="post-87879">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Beyond the Book Report: Ways to Respond to Literature Using New York Times Models</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Shannon Doyne and Katherine Schulten			</address>
+			<!-- date published --><time class="dateline " datetime="2011-11-10T19:26:55+00:00" itemprop="datePublished">November 10, 2011 2:26 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">November 10, 2011 2:26 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="//www.nytimes.com/images/2011/10/23/nyregion/20111123JOINTss-slide-TXPY/20111123JOINTss-slide-TXPY-blog480-v2.jpg" id="100000001121938" width="480" height="360" alt="" /><span class="credit">Victor J. Blue for The New York Times</span><span class="caption">Word, a bookstore in Greenpoint, Brooklyn, provides guidance to browsers with irreverent “shelf talkers,” like this one for “The Book of Night Women,” by Marlon James.<br />
+<a href="//www.nytimes.com/2011/10/23/nyregion/word-in-greenpoint-is-bookstore-and-hub-for-readers.html">Go to related article  »</a> | <a href="//www.nytimes.com/slideshow/2011/10/23/nyregion/20111123JOINTss.html">Go to related slide show  »</a> </span></div>
+<div class="w151 right module">
+<div class="entry"><a href="/category/lesson-plans/" title="See all Lesson Plans"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan151.png" alt="Lesson Plans - The Learning Network"/></a><a href="/category/lesson-plans/" title="See all lesson plans"><img alt="Lesson Plans - The Learning Network" src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan35.png" class="w35 right"/></a><br />
+<h6 class="kicker">ELA</h6>
+<p class="summary">Teaching ideas based on New York Times content.</p>
+<ul class="refer">
+<li><a href="/category/language-arts/">See all in ELA »</a></li>
+<li><a href="/category/lesson-plans/" title="See all Lesson Plans">See all lesson plans »</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Below, we present some alternatives to that classic classroom assignment, the book report. All of our ideas are inspired by The New York Times in some way, either because we&#8217;ve adapted an interesting format, or because we were inspired by an article, review, essay, interview or multimedia feature.</p>
+<p class="story-body-text" itemprop="articleBody">Do you assign book reports, in any format, to your students? What do they look like? Join the conversation!</p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-87879"></span></p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><em>A Times-Style Book Review</em> </p>
+<p class="story-body-text" itemprop="articleBody">Read The Times&#8217;s <a href="//www.nytimes.com/pages/books/index.html">Books section</a> to scan several current book reviews of novels, story collections and poetry, and to use the search feature to find reviews of older books. Next, make a list of common elements. These might include a summary of the plot or main points or themes, comparisons or references to the writer&#8217;s earlier works, discussion of the writer&#8217;s contemporaries or influences, how the reviewer assesses the work&#8217;s quality; connections (if any) the reviewer has to the subject matter; and the like. </p>
+<p class="story-body-text" itemprop="articleBody">Next, write your own Times-style review of a book, incorporating many of these elements. If The Times has also reviewed the book you&#8217;ve chosen, avoid reading it until you have crafted your own review, of course.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Book Talk, With You as Host</em> </p>
+<p class="story-body-text" itemprop="articleBody">Create a podcast around a book or author, perhaps inspired by the format of those found in the <a href="//www.nytimes.com/ref/books/books-podcast-archive.html">Times&#8217; Book Review.</a> You might act as host and introduce several different segments, such as a mock interview with the author or an expert on the topic, or a discussion of how a classic book is suddenly timely.</p>
+<p class="story-body-text" itemprop="articleBody">You might also include free-form segments like &#8220;The Book That Changed My Life,&#8221; &#8220;What We&#8217;re Reading,&#8221; or &#8220;My First-Ever Favorite Book.&#8221; You could vary these with &#8220;advertisements&#8221; for books, top-10 lists of favorite authors or characters, or news about book-related events, such as <a href="//cityroom.blogs.nytimes.com/category/big-city-book-club/">online book discussions</a> or local events such as readings given by authors.</p>
+<p class="story-body-text" itemprop="articleBody">For classic works, you might set the podcast in the time of its publication, considering other works popular at the time, the issues of the day and so on. Or, include an &#8220;interview&#8221; with the author, drawing from research such as published interviews, profiles, memoirs and biographies to ground the portrayal in fact. Another idea? Role-play a conversation of writers from the past or present sitting down together to talk about one another&#8217;s work, or their own works in progress, with the podcast acting as the &#8220;tape recorder&#8221; that captures the whole thing.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Judging the Book by Its Cover</em> </p>
+<p class="story-body-text" itemprop="articleBody">Start by considering how a cover &#8220;sells&#8221; a book and serves as a quick visual reference, and make a quick list of favorite or most memorable covers. Then view <a href="//www.nytimes.com/interactive/2011/05/15/books/review/15covers-gallery.html">this slide show of rejected cover designs</a> and compare them with the covers that were ultimately chosen. Are the final ones better? Why?</p>
+<p class="story-body-text" itemprop="articleBody">Next, create paintings or other illustrations to honor a book you&#8217;re reading. You might do this in homage to <a href="//www.nytimes.com/slideshow/2011/11/06/books/20011106-DYER.html">the covers of favorite books,</a> or you might create a cover for a work that doesn&#8217;t have its own cover, such as a piece you read in an anthology or story collection. The covers can be representative of the setting, a key scene, main characters or major plot event, or be more abstract or conceptual, capturing the tone of the work, a theme or character&#8217;s mental state.Or, you might want to create covers in the style of <a href="//www.nytimes.com/2011/11/06/books/review/the-oldest-new-experiences.html">a favorite artist.</a> </p>
+<p class="story-body-text" itemprop="articleBody"><em>Shot on Location</em> </p>
+<p class="story-body-text" itemprop="articleBody">Choose key scenes from a novel that is set in a real place and find photos or illustrations online that show the locations described by the author. (You can choose photos that fit the novel&#8217;s descriptions if the setting is not directly named or is not a real place.) </p>
+<p class="story-body-text" itemprop="articleBody">Another option is to choose an author and show the places from a variety of his or her works, such as this <a href="//www.nytimes.com/interactive/2011/10/23/magazine/20Mag-Murakami-Tokyo.html">feature about novelist Haruki Murakami</a>, which includes a photo, related excerpt and voice recording of the person who chose them. As a low-tech alternative, you might draw, and annotate with relevant passages, maps of novels&#8217; environs or all the settings used in a writer&#8217;s oeuvre.</p>
+<p class="story-body-text" itemprop="articleBody">For a longer-term project, visit the <a href="//www.nytimes.com/interactive/2010/01/28/nyregion/20100128-salinger-map.html">real life &#8220;stomping grounds&#8221;</a> of a fictional character or <a href="https://static01.nyt.com/packages/khtml/2005/06/05/books/20050605_BOOKMAP_GRAPHIC.html">visit places with a rich literary history</a> and create a blog or podcast about them. You might record yourself reading relevant passages or discussing the works in the very spot the author(s) wrote about.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Bring the Beat</em></p>
+<p class="story-body-text" itemprop="articleBody">Create (and record, and add liner notes explaining) a <a href="//www.nytimes.com/2011/08/24/books/booktrack-introduces-e-books-with-soundtracks.html">soundtrack</a> for a book you&#8217;re reading, or invent a rap about it, as <a href="//tierneylab.blogs.nytimes.com/2010/02/19/science-rappers-return/">these Stanford students did</a> about the biology of how the body converts food into energy. </p>
+<p class="story-body-text" itemprop="articleBody"><em>Making Lists of Favorites</em> </p>
+<p class="story-body-text" itemprop="articleBody">Check out the <a href="//www.nytimes.com/best-sellers-books/2011-11-13/overview.html">New York Times Best Seller List</a> from weeks past and present, noting the categories found there. Use or tweak the categories to take a poll of classmates, teachers, parents, school and public librarians and other readers to learn what books they are currently reading or have recently read. Then, work with others to make your own lists &#8212; whether of local favorites; of books read in school over the years; or, perhaps, of genre suggestions along the lines of &#8220;If you liked the <a href="//learning.blogs.nytimes.com/2011/07/12/teaching-harry-potter-with-the-new-york-times/">&#8216;Harry Potter&#8217; books</a>, you&#8217;ll love&#8230;&#8221;.</p>
+<p class="story-body-text" itemprop="articleBody">You and your classmates might then each choose one book to write up in the style of an <a href="//www.nytimes.com/2011/11/13/books/review/inside-the-list.html">Inside the List</a> blurb that tells about the book, its author, its audience or all of these. Or, create &#8220;shelf talkers&#8221; about some of these books for your school library modeled after <a href="//www.nytimes.com/slideshow/2011/10/23/nyregion/20111123JOINTss-9.html">those in this bookstore</a>. </p>
+<p class="story-body-text" itemprop="articleBody"><em>Annotate Lists on One Topic</em> </p>
+<p class="story-body-text" itemprop="articleBody">Choose an author, genre, time period, historical event, place or other relatively general topic and research books by or about the subject, perhaps starting with the Times&#8217; <a href="//www.nytimes.com/pages/books/review/index.html">Sunday Book Review</a> or <a href="//www.nytimes.com/pages/books/index.html">Book News and Reviews</a>. </p>
+<p class="story-body-text" itemprop="articleBody">Create annotated lists of published works about it, like <a href="//www.nytimes.com/ref/opinion/civilwar-booklist.html">this one on the Civil War</a>, organized by category, chronology or other technique. You might then create brochure or Web pages, or a library display, as part of a class collection called &#8220;So You Want to Know About&#8230;&#8221; </p>
+<p class="story-body-text" itemprop="articleBody"><em>Rate and Debate</em> </p>
+<p class="story-body-text" itemprop="articleBody">Brainstorm thought-provoking questions about a common text, such as what might have happened five years before the events in a novel begin, 25 years after they end, or what would happen if a key plot point was changed. Then, ask several people to weigh in and give short answers in order to create a <a href="//www.nytimes.com/roomfordebate">Room for Debate-</a> style response. </p>
+<p class="story-body-text" itemprop="articleBody"><em>Book Report by Video </em> </p>
+<p class="story-body-text" itemprop="articleBody">Work with others in small groups to create short videos about a book or author you have read. You might voice-over narration and and include interviews, as in <a href="//video.nytimes.com/video/2011/08/12/books/review/100000000995072/babar-at-80.html">this example</a> which is about the &#8220;Babar&#8221; series of children&#8217;s books. </p>
+<p class="story-body-text" itemprop="articleBody">Be creative about your interviewees. For instance, you might talk to fans of a book series waiting until midnight for the release of the next installment; people of the same generation about what a seminal book meant to them as children; or experts like teachers, professors and historians who can weigh in on the significance of a often-taught book, or on a <a href="//learning.blogs.nytimes.com/2011/01/06/should-the-racial-epithets-be-removed-from-huck-finn/">book controversy</a>.</p>
+<p class="story-body-text" itemprop="articleBody">Another approach to the video is to stage key scenes from novels or stories, or record dramatic readings, with sound effects. Or, make an author and his or her works the subject of a video, with an actor portraying him or her and reenacting important career and life events.</p>
+<p class="story-body-text" itemprop="articleBody"><em>The Graphic Novel Version</em></p>
+<p class="story-body-text" itemprop="articleBody">Everything from<a href="//www.nytimes.com/2008/02/10/us/10manga.html"> the Bible</a> to <a href="//www.nytimes.com/2010/02/09/books/09twilight.html">&#8220;Twilight&#8221;</a> to <a href="//www.nytimes.com/2011/03/21/books/the-art-of-war-in-graphic-detail.html">&#8220;The Art of War&#8221;</a> is being turned into a graphic novel. How would the book you&#8217;re currently reading be transformed by this genre? You might adapt our simple <a href="https://static01.nyt.com/images/blogs/learning/pdf/activities/Storyboard_NYTLN.pdf">storyboarding graphic organizer</a> (PDF) to get started with a scene or two.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Book Blurbs on Blogs</em> </p>
+<p class="story-body-text" itemprop="articleBody">Read the &#8220;books&#8221; category of the <a href="//artsbeat.blogs.nytimes.com/category/books/">ArtsBeat blog</a> for a week or more, researching the topics mentioned there. Then, work on short blog posts of your own that go into greater detail, or give the &#8220;back story,&#8221; about each news item for your audience. For example, a recent post about <a href="//artsbeat.blogs.nytimes.com/2011/11/04/graphic-books-best-sellers-manga-mania-2/">new and ongoing manga series</a> might inspire a segment on manga in general. </p>
+<p class="story-body-text" itemprop="articleBody"><em> Why Your Favorite Author Matters</em> </p>
+<p class="story-body-text" itemprop="articleBody">Write persuasive essays that combine research, critical analysis of major works and personal accounts that raise and answer the question &#8220;Why does this author matter?&#8221; </p>
+<p class="story-body-text" itemprop="articleBody">You might begin by reading Sunday Book Review essays with similar aims, such as this one about <a href="//www.nytimes.com/2011/11/06/books/review/the-life-of-the-mind.html">Lionel Trilling,</a> this <a href="//www.nytimes.com/2011/11/06/magazine/riff-joan-didion-blue-nights.html">&#8220;Riff&#8221; column about Joan Didion,</a> or by reading  the <a href="//www.nytimes.com/ref/books/review/br-back-issues.html">back issues of the review</a>. </p>
+<p class="story-body-text" itemprop="articleBody">You can also search <a href="//www.nytimes.com/pages/topics/">Times Topics pages</a> which collect all the news, reference and archival information, photos, graphics, audio and video files published on topic, and find nearly any published author &#8212; whether <a href="//topics.nytimes.com/top/reference/timestopics/people/k/stephen_king/index.html">Stephen King</a> or <a href="//topics.nytimes.com/top/reference/timestopics/people/s/william_shakespeare/index.html">Shakespeare</a> &#8212;. Use them as a starting point for research.</p>
+<p class="story-body-text" itemprop="articleBody">Alternatively, the essay can be about why a particular work, genre or literary era matters, using the same guidelines.  </p>
+<p class="story-body-text" itemprop="articleBody"><em>The Book Report of the Future</em></p>
+<p class="story-body-text" itemprop="articleBody">Has the format of the book report assignment in your school morphed over time? If so, how? What do you imagine a &#8220;book report&#8221; in 2025 might look like? Use our post on the <a href="//learning.blogs.nytimes.com/2011/11/03/considering-the-future-of-reading-lessons-links-and-thought-experiments/">the &#8220;future of reading&#8221;</a> that examines how technology is changing reading, readers and books to propose new formats for presenting reader responses to literature.For instance, perhaps you and your classmates can join or create an online book sharing and reviewing community, design a book app, or write about <a href="//gadgetwise.blogs.nytimes.com/2011/11/02/digital-diary-a-kindle-disconnect/">the difference between reading a paper-and-ink book and an e-book</a> or some other digital format.</p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><strong>Related Lessons from The Learning Network</strong></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2010/08/06/10-ways-to-use-the-new-york-times-for-teaching-literature/">10 Ways to Use The New York Times for Teaching Literature</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2009/11/05/going-beyond-the-book-report-with-literature-exhibits/">&#8220;Going Beyond the Book Report With Literature Exhibits&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2010/03/18/our-computers-ourselves-imagining-the-digital-lives-of-authors-and-characters/">&#8220;Our Computers, Ourselves: Imagining the Digital Lives of Authors and Characters&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2010/01/28/join-the-club-supporting-independent-reading-with-book-groups/">&#8220;Join the Club: Supporting Independent Reading with Book Groups&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2010/09/16/short-and-sweet-deconstructing-and-crafting-brief-arts-reviews/">&#8220;Short and Sweet: Deconstructing and Crafting Brief Arts Reviews</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2007/12/14/were-booked/">&#8220;We&#8217;re Booked&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2005/06/30/reviews-revealed/">&#8220;Reviews Revealed&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Other Learning Network Resources</strong></p>
+<p class="story-body-text" itemprop="articleBody">Fill-In | <a href="//learning.blogs.nytimes.com/2011/07/11/fill-in-the-first-times-review-of-the-first-harry-potter-novel/">The First Times&#8217; Review of the First Harry Potter Novel</a></p>
+<p class="story-body-text" itemprop="articleBody">Resource | <a href="//learning.blogs.nytimes.com/2010/09/23/10-ways-to-celebrate-banned-books-week/">Ten Ways to Celebrate Banned Books Week</a></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2011/11/10/beyond-the-book-report-ways-to-respond-to-literature-using-new-york-times-models/" data-title="Beyond the Book Report: Ways to Respond to Literature Using New York Times Models" data-description="Some alternatives to that classic classroom assignment, the book report, all inspired by an article, essay, blog post, illustration, interview or work of multimedia in The New York Times.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-307585">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Tracee Orman</span>
+			<span class="comment-link">
+				<a href="#comment-307585" title="Comment Permalink">
+					<span class="comment-date">November 10, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Excellent ideas! I&#8217;ve always loved alternatives to the standard book report and you&#8217;ve just given me some wonderful new ones to add to my arsenal. </p>
+<p>Assignments like these are more meaningful to the student, deter cheating (aka copying/pasting), promote creative thinking, and are much more interesting for the teacher (or any audience) to read and/or engage in. Thank you for sharing!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-307893">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Rachel</span>
+			<span class="comment-link">
+				<a href="#comment-307893" title="Comment Permalink">
+					<span class="comment-date">November 11, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:45 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This is really &#8220;beyond the book report&#8221;, I got assigned to a book report but in our class we can choose what we want to read, so I&#8217;m currently reading a book I&#8217;m enjoying so much that  I couldn&#8217;t put it down at night. </p>
+<p>But the bad thing is we have assigned tasks to complete, and they&#8217;re  boring; if every teacher used this in America I&#8217;m sure reading will turn into a enjoyable thing for reluctant readers or bookworms like me.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-309653">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Donna B</span>
+			<span class="comment-link">
+				<a href="#comment-309653" title="Comment Permalink">
+					<span class="comment-date">November 12, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:37 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>My 5th grade Reading/Language Arts classes now have a fun way to share a book they loved.  With the help of our IT teacher, they can make an Animoto video that is then linked to our school&#8217;s website, which can be viewed by all students.  Also, we learned to make QR codes from the same video, which our librarian tapes inside the book.  Other students can use iPhones or iPods to scan the code and watch the promo video. This is a great way to integrate technology skills with language arts skills!  Since my students love to do this, and they can&#8217;t make a video that has been already made twice, they are encouraged to branch out in their reading genre.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-312269">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Toni D (@technologytoni)</span>
+			<span class="comment-link">
+				<a href="#comment-312269" title="Comment Permalink">
+					<span class="comment-date">November 14, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:00 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I&#8217;ve enjoyed working on these Animoto book trailers with Donna B.  Check them out: <a href="//tinyurl.com/wilsonbooktrailers" rel="nofollow">//tinyurl.com/wilsonbooktrailers</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2011/11/10/poetry-pairing-the-woman-with-a-tumor-in-her-neck/" title="Poetry Pairing | &#039;The Woman With a Tumor in Her Neck&#039;">
+				Poetry Pairing | &#8216;The Woman With a Tumor in Her Neck&#8217;			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2011/11/11/word-of-the-day-caprice/" title="Word of the Day | caprice">
+				Word of the Day | caprice			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":51,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

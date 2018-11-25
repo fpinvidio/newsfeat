@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dinersjournal section-dining"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000491214"><meta name="author" content="Elaine Louie" />
+<meta name="CLMST" content="Elaine Louie" />
+<meta name="byl" content="Elaine Louie" />
+<meta name="GBLC" content="American;cooking;Dinner;Side Dish;vegetarian">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1292245224" />
+<meta name="PUD" content="20101213" />
+<meta name="pdate" content="20101213" />
+<meta name="ptime" content="20101213080024" />
+<meta name="utime" content="20101213130024" />
+<meta property="article:modified_time" itemprop="dateModified" content="2010-12-13T13:00:24-05:00" />
+<meta name="DISPLAYDATE" content="December 13, 2010" />
+<meta name="dat" content="December 13, 2010" />
+<meta itemprop="articleSection" property="article:section" content="Style" />
+<meta name="CG" content="Style" />
+<meta name="SCG" content="Dining" />
+<meta name="BN" content="dinersjournal" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="American" />
+<meta property="article:tag" content="cooking" />
+<meta property="article:tag" content="Dinner" />
+<meta property="article:tag" content="General" />
+<meta property="article:tag" content="Side Dish" />
+<meta property="article:tag" content="vegetarian" />
+<meta name="keywords" content="American,cooking,Dinner,General,Side Dish,vegetarian" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F12%2F13%2Fthe-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives%2F" title="The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives" />
+<meta name="description" content="A very rich and nicely textured version of that holiday basic: mashed sweet potatoes." />
+<meta name="hdl" content="The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives " />
+<meta property="og:title" content="The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dinersjournal.blogs.nytimes.com/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/" />
+<meta property="og:site_name" content="Diner’s Journal Blog" />
+<meta property="og:description" content="A very rich and nicely textured version of that holiday basic: mashed sweet potatoes." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives " />
+<meta name="twitter:url" content="//dinersjournal.blogs.nytimes.com/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/" />
+<meta name="twitter:description" content="A very rich and nicely textured version of that holiday basic: mashed sweet potatoes." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nytdining">
+<link rel='prev' title='Expanding Bacon&#8217;s Horizons' href='//dinersjournal.blogs.nytimes.com/2010/12/10/expanding-bacons-horizons/' />
+<link rel='next' title='Red Rooster Is Ready' href='//dinersjournal.blogs.nytimes.com/2010/12/13/red-rooster-is-ready/' />
+<link rel='canonical' href='//dinersjournal.blogs.nytimes.com/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/' />
+<link rel='shortlink' href='//nyti.ms/hxZyXf' />
+<link rel='https://github.com/WP-API/WP-API' href='//dinersjournal.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dinersjournal/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dinersjournal.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/dining/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dinersjournal/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/" />
+<meta name="dfp-ad-unit-path" content="style/dinersjournal" />			<title>Vegetarian Recipe: Sweet Potato Gratin - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-42819 blog-universal nyt-blog-dinersjournal" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Style', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dinersjournal.blogs.nytimes.com">
+                Diner&#039;s Journal            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dinersjournal.blogs.nytimes.com/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/"
+	 data-title="The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;A very rich and nicely textured version of that holiday basic: mashed sweet potatoes. &lt;/span&gt;&lt;a href=&quot;//dinersjournal.blogs.nytimes.com/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="December 13, 2010 8:00 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dinersjournal" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//dinersjournal.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Style" title="Go to Diner&#039;s Journal Home"><img src="https://static01.nyt.com/images/blogs_v5/dinersjournal/dinersjournal_post.png" alt="Diner&#039;s Journal - The New York Times Blog on Dining Out"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dinersjournal.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Diner&#039;s Journal">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-42819 post type-post status-publish hentry category-american category-cooking category-dinner category-side-dish category-vegetarian tag-gratin tag-home-cooking tag-sweet-potatoes tag-the-temporary-vegetarian tag-vegetarian" id="post-42819">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Elaine Louie			</address>
+			<!-- date published --><time class="dateline " datetime="2010-12-13T13:00:24+00:00" itemprop="datePublished">December 13, 2010 8:00 am</time>
+			<!-- date updated --><span class="visually-hidden updated">December 13, 2010 8:00 am</span>		</div>
+			</header>
+		<div class="entry-content"><form method="post" name="emailThis_42819" id="emailThis_42819" style="display: inline;" enctype="application/x-www-form-urlencoded" action="//www.nytimes.com/mem/emailthis.html">
+<input type="hidden" name="type" value="1" />
+<input type="hidden" name="url" value="http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F12%2F13%2Fthe-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives%2F" />
+<input type="hidden" name="title" value="Diner%26%23039%3Bs%20Journal%3A%20The%20Temporary%20Vegetarian%3A%20Sweet%20Potato%20and%20Goat%20Cheese%20Gratin%20With%20Black%20Olives" />
+<input type="hidden" name="description" value="%3Cspan%20class%3D%22excerpt-inner%22%3EA%20very%20rich%20and%20nicely%20textured%20version%20of%20that%20holiday%20basic%3A%20mashed%20sweet%20potatoes.%20%3C%2Fspan%3E%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F12%2F13%2Fthe-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives%2F%22%20class%3D%22more-link%22%3ERead%26nbsp%3Bmore...%3C%2Fa%3E" />
+<input type="hidden" name="author" value="By%20Elaine%20Louie" />
+<input type="hidden" name="section" value="Style" />
+<input type="hidden" name="full_text" value="%3Cdiv%20class%3D%22w480%22%3E%3Cimg%20src%3D%22https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2010%2F12%2F10%2Fdining%2Fdj-vege%2Fdj-vege-blog480.jpg%22%20id%3D%22100000000488577%22%20width%3D%22480%22%20height%3D%22314%22%20alt%3D%22%22%2F%3E%3Cspan%20class%3D%22credit%22%3ERachel%20Shapiro%3C%2Fspan%3E%20%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cp%3EThis%20sweet%20potato%20and%20goat%20cheese%20gratin%2C%20sprinkled%20with%20crispy%20black%20olives%2C%20started%20life%20in%20a%20slightly%20different%20variation%2C%20as%20a%20sandwich%2C%20said%20Sisha%20Ortuzar%2C%20the%20chef%20at%20Riverpark%20and%20a%20partner%20with%20Tom%20Colicchio%20at%20%26%238216%3BWichcraft.%20%E2%80%9CI%20introduced%20it%20in%202008%20as%20a%20sandwich%20with%20pumpkin%2C%20mozzarella%2C%20hazelnuts%20and%20brown%20butter.%E2%80%9D%3C%2Fp%3E%0A%3Cp%3EIt%20is%20a%20very%20rich%20and%20nicely%20textured%20version%20of%20that%20holiday%20basic%3A%20mashed%20sweet%20potatoes.%3C%2Fp%3E%0A%3Cp%3EThe%20small%20culinary%20revelation%20is%20that%20if%20you%20bake%20the%20Ni%C3%A7oise%20olives%20in%20a%20little%20bit%20of%20olive%20oil%2C%20%20they%20will%20become%20brittle.%20%E2%80%9CYou%E2%80%99ve%20taken%20the%20water%20out%2C%E2%80%9D%20Mr.%20Ortuzar%20said.%20%3Cspan%20id%3D%22more-42819%22%3E%3C%2Fspan%3E%20%3Cdiv%20class%3D%22recipe-wrap%22%3E%3Cdiv%20class%3D%22hrecipe%22%3E%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Ca%20class%3D%22recipe-print%22%20href%3D%22javascript%3AblogPostPrint%28%27gratin%2Chome%20cooking%2CSweet%20Potatoes%2CThe%20Temporary%20Vegetarian%2Cvegetarian%27%2C%20%27December%2013%2C%202010%27%2C%20%2742819%27%2C%20%27http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2FprintThis.html%27%2C%20%27https%3A%2F%2Fstatic01.nyt.com%2Fimages%2Fblogs_v3%2Fdinersjournal%2Fdinersjournal_print.png%27%20%29%3B%22%3EPrint%20Recipe%3C%2Fa%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3ESweet%20Potato%20and%20Goat%20Cheese%20Gratin%20With%20Black%20Olives%20%3C%2Fh3%3E%0A%3Cp%20class%3D%22recipe-yield%22%3E%3Ci%3EYield%3C%2Fi%3E%204%20servings%20as%20a%20side%20dish%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-time%22%3E%3Ci%3ETime%3C%2Fi%3E%20One%20hour%20and%2045%20minutes%20%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-author%22%3EAdapted%20from%20Sisha%20Ortuzar%2C%20Chef%2C%20Riverpark%20%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E2%20pounds%20%20sweet%20potatoes%20or%20yams%3C%2Fli%3E%3Cli%3E3%20ounces%20%20%20butter%2C%20unsalted%3C%2Fli%3E%3Cli%3E1%20%20large%20shallot%2C%20finely%20chopped%3C%2Fli%3E%3Cli%3E3%20%20ounces%20%20creamy%20fresh%20goat%20cheese%20%3C%2Fli%3E%3Cli%3EKosher%20salt%20and%20black%20pepper%20to%20taste%3C%2Fli%3E%3Cli%3E1%2F4%20%20cup%20%20Ni%C3%A7oise%20olives%2C%20pitted%3C%2Fli%3E%3Cli%3E2%20%20tablespoons%20%20olive%20oil%3C%2Fli%3E%3Cli%3E4-5%20%20basil%20leaves%2C%20finely%20chopped%20%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3E1.%20Preheat%20the%20oven%20to%20350%20degrees.%20If%20you%20are%20using%20an%20aluminum%20baking%20sheet%2C%20cover%20the%20bottom%20with%20parchment%20paper%20or%20Silpat%2C%20so%20that%20the%20potatoes%20won%E2%80%99t%20discolor%20and%20turn%20brown%20while%20baking.%20If%20you%20are%20using%20a%20ceramic%20or%20stainless-steel%20baking%20sheet%2C%20you%20don%E2%80%99t%20need%20to%20cover%20the%20bottom.%20Slice%20each%20sweet%20potato%20in%20half%2C%20lengthwise%2C%20and%20place%20face%20down%20on%20the%20tray.%20Bake%20until%20they%20are%20soft%2C%20about%2035%20to%2045%20minutes.%20Remove%20and%20allow%20to%20cool.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E2.%20Increase%20the%20heat%20in%20the%20oven%20to%20400%20degrees%2C%20place%20the%20pitted%20olives%20on%20a%20small%20baking%20sheet%2C%20and%20bake%20until%20they%20become%20hard%20and%20brittle%2C%20about%2020%20to%2025%20minutes.%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E3.%20While%20the%20olives%20are%20baking%2C%20place%20a%20medium-size%20saut%C3%A9%20pan%20with%20a%20heavy%20bottom%20over%20medium%20heat.%20Add%20the%20butter%20and%20brown%20it%20until%20it%20turns%20a%20hazelnut%20color%20and%20has%20a%20nutty%20fragrance%2C%20about%205%20to%206%20minutes.%20%20Add%20the%20chopped%20shallots%20and%20allow%20to%20cook%20for%20about%203%20minutes%20until%20translucent.%20Be%20careful%20not%20to%20burn%20the%20butter.%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E4.%20When%20the%20sweet%20potatoes%20are%20cool%2C%20scoop%20out%20the%20insides%20and%20place%20in%20a%20bowl.%20Pour%20the%20butter%20and%20shallot%20mixture%20over%20the%20sweet%20potatoes%2C%20and%20mix.%20Season%20with%20salt%20and%20pepper%2C%20to%20taste%2C%20going%20lightly%20on%20the%20salt%20since%20the%20olives%2C%20which%20are%20added%20at%20the%20end%2C%20are%20salty.%20Place%20the%20sweet%20potato%20mix%20in%20a%20baking%20dish%20so%20that%20the%20sweet%20potatoes%20are%20one-inch%20thick.%20Spread%20the%20creamy%20goat%20cheese%2C%20in%20shallow%20dollops%2C%20over%20the%20sweet%20potatoes%20so%20that%20the%20sweet%20potatoes%20are%20clearly%20visible%2C%20at%20the%20edges%20and%20elsewhere.%20Bake%20at%20400%20degrees%20until%20the%20cheese%20and%20potatoes%20start%20to%20brown%20in%20some%20spots%2C%20about%2015%20minutes.%20The%20gratin%20won%E2%80%99t%20brown%20like%20a%20traditional%20potato%20gratin%3B%20the%20colors%20of%20the%20sweet%20potatoes%20and%20the%20goat%20cheese%20will%20still%20be%20very%20present%2C%20but%20the%20goat%20cheese%20will%20turn%20beige%2C%20and%20the%20potatoes%20will%20begin%20to%20brown%20a%20bit.%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E5.%20Once%20the%20olives%20are%20cool%2C%20chop%20them%20finely%2C%20and%20mix%20with%20the%20olive%20oil%20and%20the%20chopped%20basil.%20Spoon%20the%20olive%20mixture%20over%20the%20sweet%20potatoes%20and%20serve.%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20from%20Sisha%20Ortuzar%2C%20Chef%2C%20Riverpark%20%3C%2Fp%3E%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fp%3E%0A" />
+</form>
+<div class="w480"><img src="https://static01.nyt.com/images/2010/12/10/dining/dj-vege/dj-vege-blog480.jpg" id="100000000488577" width="480" height="314" alt=""/><span class="credit">Rachel Shapiro</span> <span class="caption"></span></div>
+<p class="story-body-text" itemprop="articleBody">This sweet potato and goat cheese gratin, sprinkled with crispy black olives, started life in a slightly different variation, as a sandwich, said Sisha Ortuzar, the chef at Riverpark and a partner with Tom Colicchio at &#8216;Wichcraft. “I introduced it in 2008 as a sandwich with pumpkin, mozzarella, hazelnuts and brown butter.”</p>
+<p class="story-body-text" itemprop="articleBody">It is a very rich and nicely textured version of that holiday basic: mashed sweet potatoes.</p>
+<p class="story-body-text" itemprop="articleBody">The small culinary revelation is that if you bake the Niçoise olives in a little bit of olive oil,  they will become brittle. “You’ve taken the water out,” Mr. Ortuzar said. <span id="more-42819"></span> <div class="recipe-wrap"><div class="hrecipe"><div class="recipe-head">
+<a class="recipe-print" href="javascript:blogPostPrint('gratin,home cooking,Sweet Potatoes,The Temporary Vegetarian,vegetarian', 'December 13, 2010', '42819', '//dinersjournal.blogs.nytimes.com/printThis.html', 'https://static01.nyt.com/images/blogs_v3/dinersjournal/dinersjournal_print.png' );">Print Recipe</a>
+<div class="recipe-meta">
+<h3>Sweet Potato and Goat Cheese Gratin With Black Olives </h3>
+<p class="recipe-yield"><i>Yield</i> 4 servings as a side dish</p>
+<p class="recipe-time"><i>Time</i> One hour and 45 minutes </p>
+<p class="recipe-author">Adapted from Sisha Ortuzar, Chef, Riverpark </p>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg"></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>2 pounds  sweet potatoes or yams</li><li>3 ounces   butter, unsalted</li><li>1  large shallot, finely chopped</li><li>3  ounces  creamy fresh goat cheese </li><li>Kosher salt and black pepper to taste</li><li>1/4  cup  Niçoise olives, pitted</li><li>2  tablespoons  olive oil</li><li>4-5  basil leaves, finely chopped </li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>1. Preheat the oven to 350 degrees. If you are using an aluminum baking sheet, cover the bottom with parchment paper or Silpat, so that the potatoes won’t discolor and turn brown while baking. If you are using a ceramic or stainless-steel baking sheet, you don’t need to cover the bottom. Slice each sweet potato in half, lengthwise, and place face down on the tray. Bake until they are soft, about 35 to 45 minutes. Remove and allow to cool.</li>
+
+
+<li>2. Increase the heat in the oven to 400 degrees, place the pitted olives on a small baking sheet, and bake until they become hard and brittle, about 20 to 25 minutes. </li>
+
+
+<li>3. While the olives are baking, place a medium-size sauté pan with a heavy bottom over medium heat. Add the butter and brown it until it turns a hazelnut color and has a nutty fragrance, about 5 to 6 minutes.  Add the chopped shallots and allow to cook for about 3 minutes until translucent. Be careful not to burn the butter. </li>
+
+
+<li>4. When the sweet potatoes are cool, scoop out the insides and place in a bowl. Pour the butter and shallot mixture over the sweet potatoes, and mix. Season with salt and pepper, to taste, going lightly on the salt since the olives, which are added at the end, are salty. Place the sweet potato mix in a baking dish so that the sweet potatoes are one-inch thick. Spread the creamy goat cheese, in shallow dollops, over the sweet potatoes so that the sweet potatoes are clearly visible, at the edges and elsewhere. Bake at 400 degrees until the cheese and potatoes start to brown in some spots, about 15 minutes. The gratin won’t brown like a traditional potato gratin; the colors of the sweet potatoes and the goat cheese will still be very present, but the goat cheese will turn beige, and the potatoes will begin to brown a bit. </li>
+
+
+<li>5. Once the olives are cool, chop them finely, and mix with the olive oil and the chopped basil. Spoon the olive mixture over the sweet potatoes and serve.</li></ul></div><p class="recipe-source">Source: Adapted from Sisha Ortuzar, Chef, Riverpark </p>
+</div></div></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dinersjournal.blogs.nytimes.com/2010/12/13/the-temporary-vegetarian-sweet-potato-and-goat-cheese-gratin-with-black-olives/" data-title="The Temporary Vegetarian: Sweet Potato and Goat Cheese Gratin With Black Olives" data-description="A very rich and nicely textured version of that holiday basic: mashed sweet potatoes. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2010/12/10/expanding-bacons-horizons/" title="Expanding Bacon&#039;s Horizons ">
+				Expanding Bacon&#8217;s Horizons 			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2010/12/13/red-rooster-is-ready/" title="Red Rooster Is Ready ">
+				Red Rooster Is Ready 			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dinersjournal.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/08/'> August 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/07/'> July 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/06/'> June 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/05/'> May 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" title="Read: A Note to Readers">A Note to Readers</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diner&#8217;s Journal is ceasing publication so that we can create a single Dining section destination: nytimes.com/dining. <a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"><img src="https://static01.nyt.com/images/2013/07/10/dining/10BURNER2/10BURNER2-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" title="Read: Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More">Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Florence Fabricant&#8217;s recommendations for the week of July 9th. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/whats-for-dinner/">What's for Dinner?</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" title="Read: Vietnamese Marinated Flank Steak">Vietnamese Marinated Flank Steak</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Vary the marinade, and you can serve flank steak in endless variation all summer. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/drinking/">Drinking</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" title="Read: Wines for Savory, Pungent Sausages">Wines for Savory, Pungent Sausages</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A list of wines to take to your summer rental.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/back-of-house/">Back of House</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" title="Read: After Midnight, She Rules the Kitchen">After Midnight, She Rules the Kitchen</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diana Bush, a baker at the NoMad, works from 8 p.m. to dawn making the restaurant&#8217;s bread.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">@nytdining</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytdining" title="Follow nytdining on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-13',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":58,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

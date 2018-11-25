@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-thechoice section-us"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-thechoice section-us" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-thechoice section-us" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-thechoice section-us" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000242142"><meta name="author" content="Jacques Steinberg" />
+<meta name="CLMST" content="Jacques Steinberg" />
+<meta name="byl" content="Jacques Steinberg" />
+<meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1274282021" />
+<meta name="PUD" content="20100519" />
+<meta name="pdate" content="20100519" />
+<meta name="ptime" content="20100519111341" />
+<meta name="utime" content="20170809193203" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-08-09T19:32:03-04:00" />
+<meta name="DISPLAYDATE" content="May 19, 2010" />
+<meta name="dat" content="May 19, 2010" />
+<meta itemprop="articleSection" property="article:section" content="U.S." />
+<meta name="CG" content="U.S." />
+<meta name="SCG" content="Education" />
+<meta name="BN" content="thechoice" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fthechoice.blogs.nytimes.com%2F2010%2F05%2F19%2Fharvard-3%2F" title="Lingering Questions Over Deception at Harvard" />
+<meta name="description" content="An audacious breach of the admissions process at Harvard yields more questions than answers." />
+<meta name="hdl" content="Lingering Questions Over Deception at Harvard" />
+<meta property="og:title" content="Lingering Questions Over Deception at Harvard" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/" />
+<meta property="og:site_name" content="The Choice Blog" />
+<meta property="og:description" content="An audacious breach of the admissions process at Harvard yields more questions than answers." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Lingering Questions Over Deception at Harvard" />
+<meta name="twitter:url" content="//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/" />
+<meta name="twitter:description" content="An audacious breach of the admissions process at Harvard yields more questions than answers." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesCollege">
+<link rel='prev' title='Mother, Daughter and the Delicate Dance of Decision-making' href='//thechoice.blogs.nytimes.com/2010/05/18/momu18/' />
+<link rel='next' title='Fact-Checking the Résumé of a Student Accused of Lying' href='//thechoice.blogs.nytimes.com/2010/05/20/fact-check/' />
+<link rel='canonical' href='//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/' />
+<link rel='shortlink' href='https://nyti.ms/2owN60I' />
+<link rel='https://github.com/WP-API/WP-API' href='//thechoice.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/thechoice/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//thechoice.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/us/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/thechoice/2010/05/19/harvard-3/" />
+<meta name="dfp-ad-unit-path" content="us/thechoice" />			<title>Lingering Questions Over Deception at Harvard - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-20335 blog-universal nyt-blog-thechoice" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'U.S.', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//thechoice.blogs.nytimes.com">
+                The Choice            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Lingering Questions Over Deception at Harvard        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/"
+	 data-title="Lingering Questions Over Deception at Harvard"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;An audacious breach of the admissions process at Harvard yields more questions than answers.&lt;/span&gt;&lt;a href=&quot;//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="May 19, 2010 11:13 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="thechoice" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//thechoice.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=U.S."><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/thechoice/thechoice75.gif" alt="The Choice"/></div><div class="site-title">The Choice</div><div class="site-description">Getting into College and Paying for it</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//thechoice.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Choice">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-20335 post type-post status-publish hentry tag-adam-wheeler tag-bowdoin-college tag-harvard-university tag-mit tag-peddie-school tag-ted-de-villafranca tag-yale-university" id="post-20335">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Lingering Questions Over Deception at Harvard</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Jacques Steinberg			</address>
+			<!-- date published --><time class="dateline " datetime="2010-05-19T15:13:41+00:00" itemprop="datePublished">May 19, 2010 11:13 am</time>
+			<!-- date updated --><span class="visually-hidden updated">May 19, 2010 11:13 am</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2010/05/18/blogs/20100518/20100518-blogSpan.jpg" alt="Adam Wheeler, of Milton, Del., has been charged with faking his way into Harvard and duping the university out of $45,000 in financial aid, grants and scholarships." /><span class="credit">Josh Reynolds/Associated Press</span> <span class="caption">Adam Wheeler, of Milton, Del., has been charged with faking his way into Harvard and duping the university out of $45,000 in financial aid, grants and scholarships.</span></div>
+<p class="story-body-text" itemprop="articleBody">The case of Adam Wheeler, the Delaware man accused by Massachusetts authorities of fabricating much of the transfer application that earned him acceptance to <a href="//www.harvard.edu">Harvard</a> in 2007, is sure to reverberate through admissions and guidance offices over the next few weeks and months.</p>
+<p class="story-body-text" itemprop="articleBody">As my colleague Katie Zezima and I report in <a href="//www.nytimes.com/2010/05/19/education/19harvard.html">an article in today&#8217;s Times</a>, Mr. Wheeler, 23, duped the Harvard admissions office with fake, straight-A transcripts from <a href="//www.mit.edu">M.I.T.</a> (he&#8217;d actually been suspended from <a href="//www.bowdoin.edu">Bowdoin College</a>) and <a href="//www.andover.edu/Admission/Pages/default.aspx">Phillips Andover</a> (he was a graduate of a public high school in Delaware), according to prosecutors.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Wheeler has pleaded not guilty to 20 counts, including larceny (he received nearly $50,000 in scholarships and prizes from Harvard) and identity fraud.</p>
+<p class="story-body-text" itemprop="articleBody">With Harvard officials refusing to comment on the case &#8212; they have cited the ongoing criminal inquiry and federal safeguards on student privacy &#8212; readers of <a href="//www.nytimes.com/thechoice">The Choice</a> are left to ponder a central question: how could someone tell such brazen lies to the admissions office of one of the nation&#8217;s most prestigious colleges, and get away with it?</p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-20335"></span></p>
+<p class="story-body-text" itemprop="articleBody">Those of us who were working at The Times in 2003 can&#8217;t help but be reminded of <a href="//www.nytimes.com/2003/05/11/us/correcting-the-record-times-reporter-who-resigned-leaves-long-trail-of-deception.html">our own experience with Jayson Blair</a>, a reporter who deceived editors and readers by inserting fabrications and other falsehoods in several dozen articles before being caught.</p>
+<p class="story-body-text" itemprop="articleBody">Admissions and financial aid officers at Yale and Princeton have been similarly duped in recent years, as Ms. Zezima and I report.</p>
+<p class="story-body-text" itemprop="articleBody">The relationship between an applicant and an admissions officer, like that between a reporter and an editor, is ultimately based on trust. For all the checks and balances intended to safeguard both endeavors, someone who sets out to deliberately and elaborately deceive may well succeed, at least in the short run.</p>
+<p class="story-body-text" itemprop="articleBody">That was a point made to me yesterday by Ted de Villafranca, a former admissions officer at Manhattanville College and the University of Richmond who is dean of college counseling at the <a href="//www.peddie.org">Peddie School</a> in Hightstown, N.J.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;There is an expectation that students in this situation act honorably and truthfully,&#8221; he said. &#8220;You&#8217;re actually signing that you have done that &#8212; that the application is a true and accurate representation of who you are and what you&#8217;ve accomplished.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;It is not in our inherent nature in our industry to be suspicious,&#8221; he added. &#8220;This is not &#8216;C.S.I. Harvard.&#8217; &#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Moreover, the Harvard admissions office must screen nearly 30,000 undergraduate applications a year.</p>
+<p class="story-body-text" itemprop="articleBody">That said, Mr. Wheeler appears to have exposed at least one potential weakness in the Harvard process: as a transfer applicant several years removed from high school, his counselor &#8212; ostensibly from Phillips Andover &#8212; might not have been contacted by Harvard about his application.</p>
+<p class="story-body-text" itemprop="articleBody">And yet, one reason Mr. Wheeler&#8217;s apparent falsehoods came to light was the due diligence of the admissions office at a competing institution, <a href="//www.yale.edu">Yale</a>.</p>
+<p class="story-body-text" itemprop="articleBody">After leaving Harvard in September, over allegations of plagiarism involving his Rhodes Scholarship application, Mr. Wheeler applied as a transfer student to Yale and Brown. (After a Harvard English professor discovered the apparent Rhodes Scholarship plagiarism, officials there revisited Mr. Wheeler&#8217;s original transfer application from 2007, and determined that his credentials from M.I.T. and Phillips Andover were false, according to prosecutors.)</p>
+<p class="story-body-text" itemprop="articleBody">Kevin Fitzgerald, the former principal of Mr. Wheeler&#8217;s high school in Delaware, told my colleague Rita Farrell on Tuesday that a Yale admissions official called the school in April to fact-check aspects of Mr. Wheeler&#8217;s transfer application.</p>
+<p class="story-body-text" itemprop="articleBody">A guidance counselor was alarmed to learn from Yale that Mr. Wheeler had represented himself as a class valedictorian (he was not, though he was ranked in the top 10 percent), that he had perfect SAT scores (he did no better than 1220 out of 1600, according to prosecutors) and that he had taken more Advanced Placement classes than he did.</p>
+<p class="story-body-text" itemprop="articleBody">Yale then shared its concerns with Mr. Wheeler&#8217;s parents, who in turn urged him to tell the truth to Yale. &#8220;That conversation between our guidance office and the Yale admissions officer sent up the red flags,&#8221; Mr. Fitzgerald said.</p>
+<p class="story-body-text" itemprop="articleBody">I hope the admissions officers and guidance counselor who are readers of The Choice will use <a href="//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/#respond">the comment box below</a> to write to us with their perspective on this complicated and, ultimately, sad case. I would also like to hear from applicants, students and their parents.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//thechoice.blogs.nytimes.com/2010/05/19/harvard-3/" data-title="Lingering Questions Over Deception at Harvard" data-description="An audacious breach of the admissions process at Harvard yields more questions than answers.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-52559">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Kevin</span>
+			<span class="comment-link">
+				<a href="#comment-52559" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:48 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Sad to say, Mr. Wheeler probably fit in well at Harvard, where the Business school teaches that commerce is rooted in greed rather than mutual advantage, and Medical school professors are regularly paid off by pharmaceutical companies to promote their drugs to med students.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52571">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Robert Wagner</span>
+			<span class="comment-link">
+				<a href="#comment-52571" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This chap has a brilliant future as a politician.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52573">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Joan Staples</span>
+			<span class="comment-link">
+				<a href="#comment-52573" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I am puzzled by the extent to which Adam Wheeler deceived so many people.  It seems likely that his deceptions did not start so recently.  Where have his parents been all these years?  If, in fact, his problems have occurred since he graduated from high school, why have they happened and escalated?  Of course, the colleges and universities he has been associated with are at fault, but why wasn&#8217;t his resume and references checked more carefully?  There have been many other imposters in history, and people who have been taken in by these folks, but it would appear that basic checking by supposedly high-class institutions and their staffs would have determined the truth quite quickly.  Obviously, Mr. Wheeler was able to succeed in his classes at Harvard, so he is intelligent, but &#8220;con men&#8221; are the hardest to &#8220;cure.&#8221;  They have used their natural ability in fraudulent ways, ways that are, sadly, valued in many of our ordinary activities.  I hope this incident is a &#8220;wake up&#8221; call to us all, but suspect it may not dissuade others from trying to be what they aren&#8217;t and allowing those of us who know better to be careless.  It is harder, these days, even with the gossip that muddies the truth, to hide the truth that will eventually come out.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52575">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Maryam</span>
+			<span class="comment-link">
+				<a href="#comment-52575" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:12 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>No comment at this time.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52577">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">SH</span>
+			<span class="comment-link">
+				<a href="#comment-52577" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Think about it &#8211; he&#8217;s only the first. And he was caught only because he got greedy and was telling huge &#038; massive lies.</p>
+<p>There&#8217;s probably tons of kids at these institutions who lied on their application, though probably nothing to the degree of Mr. Wheeler. That said, it teaches high schoolers a horrible lesson: as long as you don&#8217;t lie too much, you probably won&#8217;t get caught.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52579">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Deltau</span>
+			<span class="comment-link">
+				<a href="#comment-52579" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:19 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Why all the fuss about this young man from Delaware? Could we not regard his errata as  &#8220;Blumenthalian misspeak&#8221;?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52583">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">c.milford</span>
+			<span class="comment-link">
+				<a href="#comment-52583" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>He&#8217;s an &#8220;entitled&#8221; PLAGIARIST! Soon he&#8217;ll be a convicted felon. The real issue is his PLAGIARISM, which not only means that he cheated his way into Harvard, but also that he attempted to cheat his way through Harvard as well. AT HIS AGE (as a full-grown adult), HE SHOULD&#8217;VE KNOWN BETTER.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52585">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ben</span>
+			<span class="comment-link">
+				<a href="#comment-52585" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Despite his deception, Mr. Wheeler was weeks away from receiving his Harvard degree.  Although there are allegations of plagiarism along the way, it seems his time at Harvard was academically successful.  For all of us who never went to Phillips Andover, never scored a perfect SAT, and never got into Harvard, but knew we could succeed if given the chance, I&#8217;d say the school got what it deserved.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52593">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Benjamin Russack</span>
+			<span class="comment-link">
+				<a href="#comment-52593" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>As the economy worsens and job prospects decrease, America&#8217;s up and coming will do what they can to survive. In this day and age you no longer lie to get ahead, you lie to barely keep your head above water.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52595">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">-jm</span>
+			<span class="comment-link">
+				<a href="#comment-52595" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:26 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>College applications are full of deceptions. </p>
+<p>They start with essays that have been partially re-written by college counselors and parents, inflated grades, skewed test scores that offer only limited measures of intellectual abilities, lies about extracurricular activities, hyperbolic letters of recommendation, and an applicant&#8217;s deluded sense of his or herself.  </p>
+<p>Many admission officers know how to read through this, but its a grotesque spectacle of appearance over substance&#8211;perhaps a mirror of culture at large.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52601">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">LJ</span>
+			<span class="comment-link">
+				<a href="#comment-52601" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This guy shows GREAT TALENT for WALL STREET!!! I&#8217;m sure the recruiters are beating a path to his door&#8230;.now If Harvard will just give him a garden leave&#8230;..</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52613">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Kevin O&#8217;Shea</span>
+			<span class="comment-link">
+				<a href="#comment-52613" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This goes on much more often than colleges and graduate schools admit. Federal law protecting student privacy allows them to entirely cover up most embarrassing incidents. When I attended Harvard Law School in the mid eighties we had an incident involving a &#8220;student&#8221; who (it was finally discovered) had never even been admitted to the school. He attended classes for months and fully participated in student life before being found out. Like much of what isn&#8217;t going right at elite institutions, student fraud is swept under the rug.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52603">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Michael in Vermont</span>
+			<span class="comment-link">
+				<a href="#comment-52603" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>When I was a high school guidance director, I had this happen only once. The admissions office at the University of Vermont called me to verify the transcript of one of my students. According to the transcript, he was one of our best students (far from the truth). All it took was a simple phone call to verify the transcript.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52619">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Nigel</span>
+			<span class="comment-link">
+				<a href="#comment-52619" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:32 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Yes, &#8220;the Harvard admissions office must screen nearly 30,000 undergraduate applications a year,&#8221; but only the 1,600-1,700 who are offered &#8211; and accept &#8211; places need to be examined in detail. That should be possible.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52607">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Brian</span>
+			<span class="comment-link">
+				<a href="#comment-52607" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:33 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>If your readers might recall, the folks over at MIT don&#8217;t even check the credentials of their admissions&#8217; officers (Marilee Jones), so why are we surprised. As for the fallout, after being exposed  as a fraud, Ms. Jones has a consulting business with two excerpts from (guess who?), the New York Times.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52609">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Carol</span>
+			<span class="comment-link">
+				<a href="#comment-52609" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:34 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I don&#8217;t quite understand how he managed to do this, especially how he got away with claims of perfect SAT scores and being class valedictorian.  Even if he applied as a transfer student from another college, doesn&#8217;t the admissions committee ask for a high school transcript to be sent directly from the student&#8217;s high school, which would include his class standing and SAT score?  What&#8217;s so confusing is how he could lie about things that are part of official documents.  Also, isn&#8217;t there usually an interview? If someone had put down &#8212; and I&#8217;m not sure he claimed this for admission to Harvard, but he claimed it somewhere &#8212; that he was an expert in Old English and Old Persian, I would be so impressed that I&#8217;d make sure an interviewer shared the same skills, even if just to have an enjoyable interview. How hard could it be to find someone at the best academic institutions who speaks/reads Old English?  Find a Chaucer expert!  I know there are lots of students applying, but those skills are so unusual they should stand out, and the interview should be designed around them.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52611">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Big Bob O&#8217;Halloran</span>
+			<span class="comment-link">
+				<a href="#comment-52611" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:34 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Lesson: Take all the applications you receive, weed out the true dummies and lunatics and throw the rest down a flight of stairs.  The ones that go the farthest get admission, and ones at bottom are scholarship offers.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52617">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Middle school teacher with an ivy league degree</span>
+			<span class="comment-link">
+				<a href="#comment-52617" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:35 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>SmartMoney took a hard look at the expense of education alongside earnings of graduates from these same schools. Surprisingly, the state schools, which cost much less to attend, provided graduates with an education that helps them earn more money per the expense than graduates from Ivy-League schools. According to the study, Texas A&#038;M graduates enjoy two and a half times the return on their investment than do Harvard graduates. Attending an Ivy-League school may provide connections and the opportunity for promising employment, but the return on the investment may not be worth the other gains.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52621">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Abhas Gupta</span>
+			<span class="comment-link">
+				<a href="#comment-52621" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A Madoff in the making. I hope this wake-up call allows him to rehabilitate, but my guess is lying like this is too deeply ingrained.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52623">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victor from Denver</span>
+			<span class="comment-link">
+				<a href="#comment-52623" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Sad but increasingly true.  I&#8217;ve had a chance to review and help with B-School applications over the last several years.  Cookie cutter stories of helping communities, top 10% in class and similar aims of helping the world &#8211; going to Wharton (for example).  If you put together all the help that the applicants offered for alleviating poverty in India(one example), several millions must be living above poverty levels now. Same patterns in profiles and you wonder why the admissions counselors don&#8217;t see that.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52625">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JW</span>
+			<span class="comment-link">
+				<a href="#comment-52625" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Fact-checking all college applications would be unrealistic, both for colleges and for the high schools that would have to outsource to a telecommunications company to handle all the requests for information from college admissions offices.  Fortunately, once fabricators start fabricating they always go too far.  This guy apparently claimed to have written a book that was in fact written by someone else.  A simple Google search could have found this guy out.</p>
+<p>It might be a good idea, however, if centralized application standards like the SAT offer a database for access by college admissions offices, rather than relying on intermediate documents that can easily be forged.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52627">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Bill</span>
+			<span class="comment-link">
+				<a href="#comment-52627" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:39 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>As a parent, it is sobering to me that  such young people exist and that my daughters, generous and hard-working to a fault, must co-exist with those who commit fraud and deception.    However, I suspect that the roots of such dishonesty  &#8211; in academia at least &#8211; are in the commodification and branding of university degrees &#8211; a Harvard BA is akin to a Mercedes hood ornament &#8211; and much of our society is obsessed with possessing the &#8220;superior&#8221; brands, independent of whether they receive a better education, become deeper thinkers, or more productive contributors to society.  It is unfortunate because the more Mr. Wheelers we breed, the harder it is to motivate our children to aspire to loftier ideals.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52629">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JR</span>
+			<span class="comment-link">
+				<a href="#comment-52629" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:39 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Nice work by Yale.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-52631">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">James Robert</span>
+			<span class="comment-link">
+				<a href="#comment-52631" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:41 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>College is a lie.  It teaches you nothing, causes you enormous mental suffering and leaves you drained.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-52633">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JB</span>
+			<span class="comment-link">
+				<a href="#comment-52633" title="Comment Permalink">
+					<span class="comment-date">May 19, 2010</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:41 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Perhaps I move in circles that are too limited, but in the past couple of decades I&#8217;ve rarely met an Ivy League graduate who wasn&#8217;t compromised morally, who didn&#8217;t value money and power above everything else, and who wasn&#8217;t, quite frankly, so self-involved as to be freakish. Mr. Wheeler is absolutely perfect for Harvard!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thechoice.blogs.nytimes.com/2010/05/18/momu18/" title="Mother, Daughter and the Delicate Dance of Decision-making">
+				Mother, Daughter and the Delicate Dance of Decision-making			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thechoice.blogs.nytimes.com/2010/05/20/fact-check/" title="Fact-Checking the Résumé of a Student Accused of Lying">
+				Fact-Checking the Résumé of a Student Accused of Lying			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//thechoice.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//thechoice.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//thechoice.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//thechoice.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//thechoice.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//thechoice.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/08/'> August 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/07/'> July 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/06/'> June 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/05/'> May 2012 </option>
+	<option value='//thechoice.blogs.nytimes.com/2012/04/'> April 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//thechoice.blogs.nytimes.com/2013/06/14/the-choice-blogs-valediction/" title="Read: The Choice Blog&#8217;s Valediction">The Choice Blog&#8217;s Valediction</a>
+								<span class="postMetaHeaderCommentCount commentCount">
+					<i class="icon"></i>
+					<a href="//thechoice.blogs.nytimes.com/2013/06/14/the-choice-blogs-valediction/#comments"
+					   class="commentCountLink commentCountNumberOnly"
+					   title="The Choice Blog&#8217;s Valediction">(98)</a>
+					</span>
+							</h5>
+			<p class="summary">
+			The Times has discontinued The Choice blog, which was created in 2009 to help students demystify college admissions and financial aid.<a href="//thechoice.blogs.nytimes.com/2013/06/14/the-choice-blogs-valediction/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//thechoice.blogs.nytimes.com/2013/06/14/summer-reading-college-admissions/"><img src="https://static01.nyt.com/images/2010/10/26/blogs/26choice-Im-going/26choice-Im-going-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//thechoice.blogs.nytimes.com/category/book-report/">Book Report</a>
+				</h6>
+							<h5><a href="//thechoice.blogs.nytimes.com/2013/06/14/summer-reading-college-admissions/" title="Read: 28 Summer Reading Suggestions From College Admission Experts">28 Summer Reading Suggestions From College Admission Experts</a>
+								<span class="postMetaHeaderCommentCount commentCount">
+					<i class="icon"></i>
+					<a href="//thechoice.blogs.nytimes.com/2013/06/14/summer-reading-college-admissions/#comments"
+					   class="commentCountLink commentCountNumberOnly"
+					   title="28 Summer Reading Suggestions From College Admission Experts">(7)</a>
+					</span>
+							</h5>
+			<p class="summary">
+			Admission deans and college counselors suggest summertime reads for college-bound students, their parents and anyone who enjoys reading for pleasure.<a href="//thechoice.blogs.nytimes.com/2013/06/14/summer-reading-college-admissions/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//thechoice.blogs.nytimes.com/2013/06/12/tip-sheet-determining-college-fit-and-value/"><img src="https://static01.nyt.com/images/2012/09/17/education/choice-tipsheet-75/choice-tipsheet-75-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//thechoice.blogs.nytimes.com/category/choosing-a-college/">Choosing a College</a>
+				</h6>
+							<h5><a href="//thechoice.blogs.nytimes.com/2013/06/12/tip-sheet-determining-college-fit-and-value/" title="Read: Tip Sheet: Determining College Fit and Value">Tip Sheet: Determining College Fit and Value</a>
+								<span class="postMetaHeaderCommentCount commentCount">
+					<i class="icon"></i>
+					<a href="//thechoice.blogs.nytimes.com/2013/06/12/tip-sheet-determining-college-fit-and-value/#comments"
+					   class="commentCountLink commentCountNumberOnly"
+					   title="Tip Sheet: Determining College Fit and Value">(5)</a>
+					</span>
+							</h5>
+			<p class="summary">
+			Gloria Cordes Larson, the president of Bentley University, suggests questions that prospective students might ask to determine if they have found a college that is worth the investment.<a href="//thechoice.blogs.nytimes.com/2013/06/12/tip-sheet-determining-college-fit-and-value/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//thechoice.blogs.nytimes.com/2013/06/12/7-things-graduating-seniors-should-know-about-college-2/"><img src="https://static01.nyt.com/images/2012/09/17/education/choice-tipsheet-75/choice-tipsheet-75-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//thechoice.blogs.nytimes.com/category/for-seniors/">For Seniors</a>
+				</h6>
+							<h5><a href="//thechoice.blogs.nytimes.com/2013/06/12/7-things-graduating-seniors-should-know-about-college-2/" title="Read: 7 Things Graduating Seniors Should Know About College">7 Things Graduating Seniors Should Know About College</a>
+								<span class="postMetaHeaderCommentCount commentCount">
+					<i class="icon"></i>
+					<a href="//thechoice.blogs.nytimes.com/2013/06/12/7-things-graduating-seniors-should-know-about-college-2/#comments"
+					   class="commentCountLink commentCountNumberOnly"
+					   title="7 Things Graduating Seniors Should Know About College">(27)</a>
+					</span>
+							</h5>
+			<p class="summary">
+			Two authors share advice for incoming college freshmen, including what is expected of college papers and when a student should declare a major.<a href="//thechoice.blogs.nytimes.com/2013/06/12/7-things-graduating-seniors-should-know-about-college-2/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//thechoice.blogs.nytimes.com/2013/06/11/envelope-please-bryan-stromer-8/"><img src="https://static01.nyt.com/images/2012/09/03/education/envpls13-bryan-stromer/envpls13-bryan-stromer-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//thechoice.blogs.nytimes.com/category/the-envelope-please/">The Envelope, Please</a>
+				</h6>
+							<h5><a href="//thechoice.blogs.nytimes.com/2013/06/11/envelope-please-bryan-stromer-8/" title="Read: College-Bound Advocate Finds a Voice Beyond His Disability">College-Bound Advocate Finds a Voice Beyond His Disability</a>
+								<span class="postMetaHeaderCommentCount commentCount">
+					<i class="icon"></i>
+					<a href="//thechoice.blogs.nytimes.com/2013/06/11/envelope-please-bryan-stromer-8/#comments"
+					   class="commentCountLink commentCountNumberOnly"
+					   title="College-Bound Advocate Finds a Voice Beyond His Disability">(8)</a>
+					</span>
+							</h5>
+			<p class="summary">
+			Only after fully and publicly owning my disability have I been able to move past it and realize that I am so much more than just that boy whose walk was once confused with a drunk&#8217;s.<a href="//thechoice.blogs.nytimes.com/2013/06/11/envelope-please-bryan-stromer-8/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/NYTimesCollege" title="Follow @NYTimesCollege on twitter">@NYTimesCollege</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesCollege" title="Follow NYTimesCollege on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/NYTimesCollege" title="Follow @NYTimesCollege on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-87',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":56,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

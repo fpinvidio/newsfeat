@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-dinersjournal section-dining"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000005358994"><meta name="author" content="Emily Weinstein" />
+<meta name="CLMST" content="Emily Weinstein" />
+<meta name="byl" content="Emily Weinstein" />
+<meta name="GBLC" content="cooking;Main Ingredient">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1244232926" />
+<meta name="PUD" content="20090605" />
+<meta name="pdate" content="20090605" />
+<meta name="ptime" content="20090605161526" />
+<meta name="utime" content="20170811201422" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-08-11T20:14:22-04:00" />
+<meta name="DISPLAYDATE" content="June 5, 2009" />
+<meta name="dat" content="June 5, 2009" />
+<meta itemprop="articleSection" property="article:section" content="Style" />
+<meta name="CG" content="Style" />
+<meta name="SCG" content="Dining" />
+<meta name="BN" content="dinersjournal" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="cooking" />
+<meta property="article:tag" content="Main Ingredient" />
+<meta name="keywords" content="cooking,Main Ingredient" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2009%2F06%2F05%2Fenter-asparagus-and-homemade-chili-oil%2F" title="Enter Asparagus (and Homemade Chili Oil)" />
+<meta name="description" content="A memorable photograph of asparagus that had been cooked over a wood fire, topped with a chili oil that resembled a chimichurri and an egg poached in oil inspired me to cook." />
+<meta name="hdl" content="Enter Asparagus (and Homemade Chili Oil)" />
+<meta property="og:title" content="Enter Asparagus (and Homemade Chili Oil)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dinersjournal.blogs.nytimes.com/2009/06/05/enter-asparagus-and-homemade-chili-oil/" />
+<meta property="og:site_name" content="Diner’s Journal Blog" />
+<meta property="og:description" content="A memorable photograph of asparagus that had been cooked over a wood fire, topped with a chili oil that resembled a chimichurri and an egg poached in oil inspired me to cook." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Enter Asparagus (and Homemade Chili Oil)" />
+<meta name="twitter:url" content="//dinersjournal.blogs.nytimes.com/2009/06/05/enter-asparagus-and-homemade-chili-oil/" />
+<meta name="twitter:description" content="A memorable photograph of asparagus that had been cooked over a wood fire, topped with a chili oil that resembled a chimichurri and an egg poached in oil inspired me to cook." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nytdining">
+<link rel='prev' title='A Barbecue Sauce That Transforms Chicken' href='//dinersjournal.blogs.nytimes.com/2009/06/05/a-barbecue-sauce-that-transforms-chicken/' />
+<link rel='next' title='Red Fish, Red Wine' href='//dinersjournal.blogs.nytimes.com/2009/06/08/red-fish-red-wine/' />
+<link rel='canonical' href='//dinersjournal.blogs.nytimes.com/2009/06/05/enter-asparagus-and-homemade-chili-oil/' />
+<link rel='shortlink' href='https://nyti.ms/2nRPRXT' />
+<link rel='https://github.com/WP-API/WP-API' href='//dinersjournal.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dinersjournal/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dinersjournal.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/dining/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dinersjournal/2009/06/05/enter-asparagus-and-homemade-chili-oil/" />
+<meta name="dfp-ad-unit-path" content="style/dinersjournal" />			<title>Enter Asparagus (and Homemade Chili Oil) - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-18007 blog-universal nyt-blog-dinersjournal" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Style', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dinersjournal.blogs.nytimes.com">
+                Diner&#039;s Journal            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Enter Asparagus (and Homemade Chili Oil)        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dinersjournal.blogs.nytimes.com/2009/06/05/enter-asparagus-and-homemade-chili-oil/"
+	 data-title="Enter Asparagus (and Homemade Chili Oil)"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;A memorable photograph of asparagus that had been cooked over a wood fire, topped with a chili oil that resembled a chimichurri and an egg poached in oil inspired me to cook. &lt;/span&gt;&lt;a href=&quot;//dinersjournal.blogs.nytimes.com/2009/06/05/enter-asparagus-and-homemade-chili-oil/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="June 5, 2009 4:15 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dinersjournal" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//dinersjournal.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Style" title="Go to Diner&#039;s Journal Home"><img src="https://static01.nyt.com/images/blogs_v5/dinersjournal/dinersjournal_post.png" alt="Diner&#039;s Journal - The New York Times Blog on Dining Out"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dinersjournal.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Diner&#039;s Journal">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-18007 post type-post status-publish hentry category-cooking category-main-ingredient tag-asparagus tag-eggs tag-grilling tag-poaching" id="post-18007">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Enter Asparagus (and Homemade Chili Oil)</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Emily Weinstein			</address>
+			<!-- date published --><time class="dateline " datetime="2009-06-05T20:15:26+00:00" itemprop="datePublished">June 5, 2009 4:15 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">June 5, 2009 4:15 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2009/06/05/dining/asparagus.jpg" alt="asparagus with poached egg and chili oil" /><span class="credit">Emily Weinstein/The New York Times</span> <span class="caption"></span></div>
+<p class="story-body-text" itemprop="articleBody">Part of my job at The Times is to figure out the best way to present our food photography online. When a photo from the Dining section sticks in my mind, it really sticks, joining a mental slide show of dishes I’d like to try to make.</p>
+<p class="story-body-text" itemprop="articleBody">Most recently, the memorable photograph was of asparagus, and it accompanied <a href="//www.nytimes.com/2009/05/20/dining/20fire.html?scp=1&#038;sq=wood%20grilling&#038;st=cse">an article by Oliver Schwaner-Albright</a> that brimmed with <a href="//www.nytimes.com/interactive/2009/05/19/dining/20090520-fire-interactive.html ">gorgeous pictures shot by Jennifer May and Evan Sung</a>, inviting the reader to cook. It showed asparagus that had been grilled over a wood fire, topped with <a href="//www.nytimes.com/2009/05/20/dining/203frex.html">a chili oil</a> that resembled a chimichurri and an egg poached in oil &#8212; a variation of a dish I&#8217;d seen on the menu at a few restaurants around town. My affection for <a href="//bitten.blogs.nytimes.com/2009/05/08/burgers-the-australian-way/">topping dishes with a single fried or poached egg</a> aside, it looked fantastic &#8212; the bits of pepper atop the bright green asparagus. And the egg on top was just . . . well, the egg on top.  </p>
+<p class="story-body-text" itemprop="articleBody">I’ve wanted to become more proficient with vegetables because I joined a CSA &#8211;the acronym stands for community-supported agriculture &#8212; group for the first time this spring. I’ve paid a farm in the Hudson Valley a preset amount for 22 weeks’ worth of fruit and vegetable deliveries, a sort of investment. Every Saturday I’ll pick up my share, which will consist of whatever the farm has harvested that week. I’m hoping for great tomatoes, cherries and salad greens. I’m expecting lots of onions, turnips and vegetables I won’t be able to identify and won’t know how to cook. Quantity is also an issue, as I will almost certainly have more vegetables than I can eat in a week, which means <a href="//www.nytimes.com/2009/05/06/dining/06mini.html?scp=6&#038;sq=freezing%20bittman&#038;st=cse">freezing</a>, <a href="//www.nytimes.com/2009/05/27/dining/27cann.html?scp=8&#038;sq=canning%20moskin&#038;st=cse">canning</a> and soup-making. Crumbles and cobblers may also enter the picture, and don’t discount sorbet.  </p>
+<p class="story-body-text" itemprop="articleBody">Enter the asparagus, though really the star of this dish was the <a href="//www.nytimes.com/2009/05/20/dining/203frex.html">chili oil</a>, which would work on any grilled vegetable. I’d gone out to <a href="//bitten.blogs.nytimes.com/author/annemarie-conte/">Annemarie’s</a> house for a barbecue, where she would be making <a href="//bitten.blogs.nytimes.com/2009/06/05/a-barbecue-sauce-that-transforms-chicken/">this chicken with white sauce</a> and I’d try the asparagus dish. Annemarie, her husband Andy and I sat in the yard while they plotted the order in which they’d cook the meat and all the vegetables they had laid out inside: portobello mushrooms, zucchini, corn, scallions and the asparagus. <span id="more-18007"></span></p>
+<p class="story-body-text" itemprop="articleBody">I’d never worked with chilies before, or poached eggs in oil. Annemarie and Andy had a stash of several different types of dried chili peppers in a Ziploc bag, and from that I picked chipotles, figuring they were the hottest of the bunch. They were too leathery to pull apart, as the recipe suggested, so I chopped them into very small pieces and set them aside to soak in the hot water. Note: wash your hands right after you work with the chilies. I didn’t and was punished with a burning sensation.  </p>
+<p class="story-body-text" itemprop="articleBody">After about 10 or 15 minutes I drained them, combined them with the other ingredients, and had my hosts taste. The olive oil flavor overpowered everything, even the chilies. Andy suggested adding a bit of lemon juice to brighten it up, the perfect touch, as it turned out. We left the chili oil in the fridge to let the flavors set.  </p>
+<p class="story-body-text" itemprop="articleBody">About an hour later, the asparagus hit the grill and I went back into the kitchen to poach the eggs. I poach in water all the time; by comparison olive oil seemed decadent, both in richness and cost. I poured enough oil to cover a single egg into a small saucepan and cracked the first one into a small bowl, lowering it into the oil once it had heated to a gentle boil.  </p>
+<p class="story-body-text" itemprop="articleBody">“Am I deep-frying this egg?” I wondered as the oil immediately became cloudy and foamy. The egg had disappeared below its surface, sunk, possibly poaching, possibly frying. My sources at work tell me that deep-frying requires a much higher cooking temperature, so I was in fact poaching. But who cares, anyway, when the egg turns out so well &#8212; rich-yolked, with a buttery texture.</p>
+<p class="story-body-text" itemprop="articleBody">In assembling, I just basically tried to replicate the photo that appeared with Oliver’s story. No need to mess with perfection. And about that CSA share &#8212; I also bought eggs, a half-dozen a week. More poaching to come. </p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dinersjournal.blogs.nytimes.com/2009/06/05/enter-asparagus-and-homemade-chili-oil/" data-title="Enter Asparagus (and Homemade Chili Oil)" data-description="A memorable photograph of asparagus that had been cooked over a wood fire, topped with a chili oil that resembled a chimichurri and an egg poached in oil inspired me to cook. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-85595">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Banu</span>
+			<span class="comment-link">
+				<a href="#comment-85595" title="Comment Permalink">
+					<span class="comment-date">June 5, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This looks and sounds fantastic. I, too, am a fan of poached eggs in food, and recently made a sorrel and nettle soup and served it with one floating on top. Thanks for this recipe.  </p>
+<p>Banu</p>
+<p><a href="//ahungrybearwontdance.blogspot.com/" rel="nofollow">//ahungrybearwontdance.blogspot.com/</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-85597">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Rosemary</span>
+			<span class="comment-link">
+				<a href="#comment-85597" title="Comment Permalink">
+					<span class="comment-date">June 5, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:13 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Hooray for CSA! We love our membership; and yes, you probably will get lots of unidentifiable things in your box! I find that those are my favorite weeks. <img src="//dinersjournal-admin.em.nytimes.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> I love searching for recipes and cooking with new ingredients that I probably would have just passed over if I had been shopping in the produce section.</p>
+<p>And now I am inspired to poach eggs as well&#8230;</p>
+<p><a href="//www.chakulablog.com" rel="nofollow">//www.chakulablog.com</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-85599">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Michelle</span>
+			<span class="comment-link">
+				<a href="#comment-85599" title="Comment Permalink">
+					<span class="comment-date">June 6, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:40 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Looks incredible!  Maybe you (or anyone else on this thread) can offer some advice for our vegan chili recipe?  We&#8217;re inclined towards the Tierra Vegetable chipotles (<a href="//www.tierravegetables.com" rel="nofollow">//www.tierravegetables.com</a>) as a cornerstone.</p>
+<p>Recipes in the works here &#8212; search on &#8220;chili&#8221;: <a href="//michellefleury-csa.blogspot.com/" rel="nofollow">//michellefleury-csa.blogspot.com/</a></p>
+<p>We&#8217;re participating in the 28th Annual Palo Alto Chili Cook-off in the vegetarian category under the team name &#8220;Yes VeGan!&#8221;.  See: <a href="//www.cityofpaloalto.org/recreation/news/details.asp?NewsID=951&#038;TargetID=7" rel="nofollow">//www.cityofpaloalto.org/recreation/news/details.asp?NewsID=951&#038;TargetID=7</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-85601">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Larry Eisenberg</span>
+			<span class="comment-link">
+				<a href="#comment-85601" title="Comment Permalink">
+					<span class="comment-date">June 6, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:56 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A mouth-watering lovely dish,<br />
+Asparagus, chili oilish,<br />
+And the oil-poached egg top,<br />
+One can broach and then sop,<br />
+Is so devilish cleverish.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-85603">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lynn Guinni</span>
+			<span class="comment-link">
+				<a href="#comment-85603" title="Comment Permalink">
+					<span class="comment-date">June 7, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:25 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Amusing story on a major cable news site that reports on<br />
+&#8220;Japan&#8217;s Herbivore Men&#8221;. Sounds like Japan has created a new stereotype at the expense of vegetarians.</p>
+<p>Not sure if a link would get past the moderator so use your mostest favorite search engine.</p>
+<p>The big question is how am I going to get my A-C aspargus steamer out to the trash without anybody spotting me?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-85605">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mahsa</span>
+			<span class="comment-link">
+				<a href="#comment-85605" title="Comment Permalink">
+					<span class="comment-date">June 7, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:53 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I&#8217;ve always had a battle photographing food that tastes delicious but may not be as photogenic as it is tasty. It&#8217;s true that the simplest always taste, and in this case, look the best. Thanks for the post!</p>
+<p><a href="//mahsamunchesyum.blogspot.com/" rel="nofollow">//mahsamunchesyum.blogspot.com/</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-85607">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Guy who forgot his login ID</span>
+			<span class="comment-link">
+				<a href="#comment-85607" title="Comment Permalink">
+					<span class="comment-date">June 7, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:57 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Attn : 1-3 above.</p>
+<p>Nobody cares about your stupid blogs.   Stop trying to work in cutesy comments, to drive traffic there.  </p>
+<p>Seriously, nobody cares and nobody goes there more than once.  Go troll on epicurious or cold-call Giada on your copious down-time.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-85609">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">chigal</span>
+			<span class="comment-link">
+				<a href="#comment-85609" title="Comment Permalink">
+					<span class="comment-date">June 8, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:35 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Good luck with your CSA. I hope they don&#8217;t stick you with a lot of unwashed (kale that smells like sweat socks by the time the truck gets to your dropoff), overgrown (cukes the size of baseball bats, which have gone to seed), not worth the investment (15 acorn squash) veg.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-85611">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">TJ</span>
+			<span class="comment-link">
+				<a href="#comment-85611" title="Comment Permalink">
+					<span class="comment-date">June 9, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:25 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Emily,<br />
+It&#8217;s a beautiful photo. I can see why you were so taken with the dish.<br />
+Keep up the good work.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-85613">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Robert Rothman</span>
+			<span class="comment-link">
+				<a href="#comment-85613" title="Comment Permalink">
+					<span class="comment-date">June 9, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:59 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mahsa (#6):  A number of years ago, I dabbled a bit in food photography; like you, I had a lot of trouble producing pictures which looked as good as those one sees in magazines.</p>
+<p>Eventually, I learned that in professional work, it is quite common to use various techniques to make the food look better in the photo, including brushing it with oil to make selected parts shine, enhancing the color with dyes, and sometimes using other chemical treatments to make the food look fresher.  As a personal matter, I am not willing to do anything to food which renders it inedible, so ultimately I switched to other photographic subjects rather than using these techniques for my own work.</p>
+<p>I do not know what the NY Times policy is for food photos for editorial use, nor do I know whether this particular photo (which I like, by the way) has been the subject of any of these &#8220;enhancement&#8221; techniques.  However, I would not assume that the photo looks good just because it is a &#8220;straight&#8221; picture of simple ingredients.  It is at least possible that the photographer may have resorted to techniques which are standard practice in the industry.  (If it is a straight picture, then I salute the photographer &#8212; the egg yolk, in particular, strikes me as something that would be particularly difficult to make look good just by careful lighting.)</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-85615">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jen in Astoria</span>
+			<span class="comment-link">
+				<a href="#comment-85615" title="Comment Permalink">
+					<span class="comment-date">June 9, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:15 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>What a timely article!  My CSA (Hellgate) starts tonight.</p>
+<p>On the list:</p>
+<p>1 qt strawberries<br />
+asparagus<br />
+black beans (in the shell, dried)<br />
+kale<br />
+lettuce</p>
+<p>Last year our strawberries got rained out; hoping for better luck this year.  Also got a fruit share, a basil share, an herb share, and a dried bean share (not represented here; this is just our first &#8220;vegetable share&#8221;).  </p>
+<p>We also can order all kinds of meat, cheeses, eggs, honey, and sauces for an additional fee.  Last night I cooked up some organic beef kidneys that I had in deep freeze (sauce with onions, ceps, red wine, Dijon mustard, and sour cream) and it was fantastic.  Looking forward to more tonight with the fresh asparagus.  Last week I made chicken breasts with the last of the home-made salsa in my freezer (from CSA tomatillas, chiles, and cilantro).  The last of my pesto (from CSA basil) went a few weeks ago, as did the last of my home-made CSA grape jam and spicy tomato jam.</p>
+<p>RE Kale&#8211;even the funkiest old kale can benefit greatly from a thorough wash and a good blanching with a pinch of salt, try it!</p>
+<p>To everyone who is just getting their feet wet in a CSA, take note:  The Internet is your friend.  When faced with a Mystery Ingredient, there are literally thousands of places to go to find out what it is, what to do with it, and how to store it.  Enjoy!  Hopefully this will be a bountiful and diverse season.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-85617">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Robert Scott</span>
+			<span class="comment-link">
+				<a href="#comment-85617" title="Comment Permalink">
+					<span class="comment-date">June 9, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:48 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>That looks good&#8230;lately we have been cooking asparagus a lot&#8230;..</p>
+<p><a href="//www.mixngbowlkids.ca" rel="nofollow">//www.mixngbowlkids.ca</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-85619">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">veg club member</span>
+			<span class="comment-link">
+				<a href="#comment-85619" title="Comment Permalink">
+					<span class="comment-date">June 9, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:23 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>RE sad leafy greens: just soak in a sinkful of warmish water. It rehydrates beautifully.  </p>
+<p>My vegetables only get sad when I am lazy.  My CSA in Virginia is amazing and everything &#8211; even lettuce mix lasts 2 wks if I let it.  Today:  beets and turnips and kale and fresh garlic and spring onions and lettuce mix and zucchini and cukes and mint.  Crazy.  The neighbor&#8217;s coming over to get the bread I bought for him and he&#8217;s getting some stuff.  Do I give him this weeks zucchini? or the leftover from last week?  He does give me fresh fish he catches&#8230;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2009/06/05/a-barbecue-sauce-that-transforms-chicken/" title="A Barbecue Sauce That Transforms Chicken">
+				A Barbecue Sauce That Transforms Chicken			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2009/06/08/red-fish-red-wine/" title="Red Fish, Red Wine">
+				Red Fish, Red Wine			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dinersjournal.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/08/'> August 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/07/'> July 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/06/'> June 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/05/'> May 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" title="Read: A Note to Readers">A Note to Readers</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diner&#8217;s Journal is ceasing publication so that we can create a single Dining section destination: nytimes.com/dining. <a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"><img src="https://static01.nyt.com/images/2013/07/10/dining/10BURNER2/10BURNER2-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" title="Read: Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More">Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Florence Fabricant&#8217;s recommendations for the week of July 9th. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/whats-for-dinner/">What's for Dinner?</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" title="Read: Vietnamese Marinated Flank Steak">Vietnamese Marinated Flank Steak</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Vary the marinade, and you can serve flank steak in endless variation all summer. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/drinking/">Drinking</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" title="Read: Wines for Savory, Pungent Sausages">Wines for Savory, Pungent Sausages</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A list of wines to take to your summer rental.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/back-of-house/">Back of House</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" title="Read: After Midnight, She Rules the Kitchen">After Midnight, She Rules the Kitchen</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diana Bush, a baker at the NoMad, works from 8 p.m. to dawn making the restaurant&#8217;s bread.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">@nytdining</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytdining" title="Follow nytdining on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-13',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":57,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

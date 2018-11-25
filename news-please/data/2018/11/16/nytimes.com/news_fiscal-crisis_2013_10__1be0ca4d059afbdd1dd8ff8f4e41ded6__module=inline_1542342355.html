@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml" lang="en-US">
+    <head profile="//gmpg.org/xfn/11"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <title>Mick Mulvaney&#039;s Shutdown Message, Annotated</title>
+<script type="text/javascript" src="https://static01.nyt.com/js/common.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/app/lib/NYTD/0.0.1/tabset.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/common.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/memberTools.js"></script>
+<!--[if lt IE 9]>
+<script src="https://static01.nyt.com/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://static01.nyt.com/js/common/screen/modifyNavigationDisplay.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/tabsetoverlayrevealer.js"></script>
+<!--[if lt IE 7]><script defer type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/pngfix.js"></script><![endif]-->
+<script type="text/JavaScript">
+// <![CDATA[
+var nyt_google_hints = "";
+var nyt_google_ad_channel = "bl_us";
+// ]]>
+</script>
+<script type="text/JavaScript">
+NYTD.Blogs.Ads = {};function processBlogsAds(data) { NYTD.Blogs.Ads = data.ads; }
+</script>
+<script type="text/javascript">
+if ((document.referrer).indexOf("nytimes.com") !== -1) {var nyt_doc_referrer = 'nytimes.com;';}else {var nyt_doc_referrer = '';}
+document.write( '<script id="adxScript" src="'+ '//www.nytimes.com' +'/adx/bin/adxrun.html?v=3&jsonp=processBlogsAds&page=' + 'blog.nytimes.com/fiscal-crisis/post&positions=XXL,AdShareData,PushDown,FixedPanel,TopAd,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&query=qstring&keywords='+ encodeURIComponent(nyt_doc_referrer) +';Uncategorized;' + '"' + '>' + '</' + 'script>');
+</script>
+<script type="text/javascript" src="https://static01.nyt.com/js/common/sharetools/2.0/shareTools.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/app/save/crossPlatformSave.js"></script>
+<script type="text/javascript" src="https://static01.nyt.com/js/blogs_v3/nyt_universal/js/blogscrnr.js"></script>
+<link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/blogs/3.1/screen/themes/universal/style.css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/blogs/3.1/screen/themes/universal/ie.css" media="screen" />
+<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="https://static01.nyt.com/css/blogs/3.1/screen/themes/universal/ie6.css" media="screen" />
+<![endif]-->
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/fiscal-crisis/Mick Mulvaney's Shutdown Message, Annotated ( 20131002 )" />
+<meta name="communityAssetURL" content="//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002478256"><meta name="author" content="Jonathan Weisman" />
+<meta name="CLMST" content="Jonathan Weisman" />
+<meta name="byl" content="Jonathan Weisman" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/w/jonathan_weisman/index.html" /><meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1380730695" />
+<meta name="PUD" content="20131002" />
+<meta name="pdate" content="20131002" />
+<meta name="ptime" content="20131002121815" />
+<meta name="utime" content="20131007220429" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-10-07T22:04:29-04:00" />
+<meta name="DISPLAYDATE" content="October 2, 2013" />
+<meta name="dat" content="October 2, 2013" />
+<meta itemprop="articleSection" property="article:section" content="U.S." />
+<meta name="CG" content="U.S." />
+<meta name="SCG" content="fiscal-crisis" />
+<meta name="BN" content="fiscal-crisis" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fwww.nytimes.com%2Fnews%2Ffiscal-crisis%2F2013%2F10%2F02%2Fmick-mulvaneys-shutdown-message-annotated%2F" title="Mick Mulvaney&#8217;s Shutdown Message, Annotated" />
+<meta name="description" content="Cutting through the Washington clutter of a staunch House conservative&#8217;s message to constituents." />
+<meta name="hdl" content="Mick Mulvaney&#039;s Shutdown Message, Annotated" />
+<meta property="og:title" content="Mick Mulvaney&#039;s Shutdown Message, Annotated" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/" />
+<meta property="og:site_name" content="Fiscal Crisis" />
+<meta property="og:description" content="Cutting through the Washington clutter of a staunch House conservative&#8217;s message to constituents." />
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Mick Mulvaney&#039;s Shutdown Message, Annotated" />
+<meta name="twitter:url" content="//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/" />
+<meta name="twitter:description" content="Cutting through the Washington clutter of a staunch House conservative&#8217;s message to constituents." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Some Head Start Programs Close, and Others May Soon' href='//www.nytimes.com/news/fiscal-crisis/2013/10/02/some-head-start-programs-close-and-others-may-soon/' />
+<link rel='next' title='White House Enlists Business Leaders to Pressure Republicans' href='//www.nytimes.com/news/fiscal-crisis/2013/10/02/white-house-enlists-business-leaders-to-pressure-republicans/' />
+<link rel='canonical' href='//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/' />
+<link rel='shortlink' href='//www.nytimes.com/news/fiscal-crisis/?p=589' />
+<link rel='https://github.com/WP-API/WP-API' href='//www.nytimes.com/news/fiscal-crisis/json' />
+<meta name="adxPage" content="blog.nytimes.com/fiscal-crisis/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//www.nytimes.com/news/fiscal-crisis/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/us/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/" />
+<!-- REQUIRED TYPEKIT -->
+<script type="text/javascript" src="https://typeface.nytimes.com/gwa7ain.js"></script>
+<script type="text/javascript">Typekit.load()</script>
+<!-- REQUIRED STYLES -->
+<link rel="stylesheet" type="text/css" href="https://int.nyt.com/applications/dashblog/assets/fiscal.css">
+<!-- REQUIRED JS -->
+<script type="text/javascript" src="https://int.nyt.com/applications/dashblog/assets/fiscal.js"></script>
+<!-- Google Analytics -->
+<script type='text/javascript'>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)}
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4406282-136', 'nytimes.com');
+  ga('send', 'pageview');
+</script>		<style type="text/css">
+		.visually-hidden {position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);overflow: hidden;}.photo {padding: 0;background: none;text-transform: none;font-size: 1em;margin: 0;}figcaption .credit {display: inline-block;margin-left: 2px;}		</style>
+    </head>
+        <!--[if IE 6]>
+      <body class="nytint-ie6  single-post-page ">
+      <![endif]-->
+    <!--[if IE 7]>
+    <body class="nytint-ie7  single-post-page ">
+    <![endif]-->
+    <!--[if IE 8]>
+    <body class="nytint-ie8  single-post-page ">
+    <![endif]-->
+    <!--[if IE 9]>
+    <body class="nytint-ie9  single-post-page ">
+    <![endif]-->
+    <![if !IE]><body class=" single-post-page "><![endif]>
+        <script type="text/javascript">
+// <![CDATA[
+if ((typeof NYTD.Blogs.Ads != "undefined") && (typeof NYTD.Blogs.Ads.XXL != "undefined") ) {$(document.body).addClassName( "wideAd");}
+// ]]>
+</script>        <div id="TopAd" class="leaderboard ad clearfix"><!-- TopAd position -->
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.TopAd != "undefined" ){document.write(NYTD.Blogs.Ads.TopAd.creative);}
+</script><script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.TopAd != "undefined" && NYTD.Blogs.Ads.TopAd.creative.indexOf("blank.gif") != -1 ) { NYTD.jQuery("#TopAd").hide(); }
+</script>
+<script type="text/javascript">
+if ( typeof NYTD.Blogs.Ads != "undefined" && typeof NYTD.Blogs.Ads.TopAd != "undefined" ) { NYTD.jQuery("#TopAd").hide(); }
+</script>
+<noscript><a href="//www.nytimes.com/adx/bin/adx_click.html?type=cookie&pos=TopAd"><img src="//www.nytimes.com/adx/bin/adx_remote.html?type=noscript&page=blog.nytimes.com//blog.nytimes.com/fiscal-crisis/post&posall=XXL,AdShareData,PushDown,FixedPanel,TopAd,Bar1,Position1,Position1B,Top5,SponLink,MiddleRight,Box1,Box3,Box3A,Bottom3,Right5A,Right6A,Right7A,Right8A,Middle1C,Bottom7,Bottom8,Bottom9,Header1,Header2,Header3,Inv1,Inv2,CcolumnSS,Middle4,Left1B,Frame6A,Left2,Left3,Left4,Left5,Left6,Left7,Left8,Left9,JMNow1,JMNow2,JMNow3,JMNow4,JMNow5,JMNow6,Feature1,Spon3,ADX_CLIENTSIDE,SponLink2&pos=TopAd&query=qstring&keywords=?"></a></noscript>
+</div><!-- end #TopAd -->
+        <div id="main" class="clearfix"><div id="dashboard-pre-lede"></div><!-- end #dashboard-pre-lede -->
+<h1 class="nytint-developing"><a href="//www.nytimes.com/news/fiscal-crisis/"><strong>Fiscal Crisis</strong>&nbsp;&nbsp;&nbsp;Continuing Coverage of the Budget Debates</a></h1>
+<div id="dashboard-intro">
+    <p><a href="//www.nytimes.com/news/fiscal-crisis/" class="nytint-view-all">View All Posts &raquo;</a></p>
+</div> <!-- end .dashboard-intro -->
+<div id="acol">
+        <!-- entries -->
+    <ul id="nytint-dashboard-stream" class="stream single-post-page">
+        <li id="post-589" class="stream-item  live-blog-post clearfix">
+    <div class="title">
+        <a href="//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/">Mick Mulvaney&#8217;s Shutdown Message, Annotated</a>
+    </div>
+    <div class="single-post-wrapper">
+        <div class="left">
+                            <div class="date">
+                    <time datetime="2013-10-02T16:18:15-04:00">Oct 2</time>
+                </div><!-- end .date -->
+                        <div class="time">
+                <a href="//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/">
+                    <time datetime="2013-10-02T16:18:15-04:00">12:18 pm</time>
+                </a>
+            </div><!-- end .time -->
+            <div class="nyt-logo">
+				<img src="https://int.nyt.com/applications/dashblog/assets/nyt-light.png" width="45" height="45" />
+			</div>            <div class="name">By Jonathan Weisman</div><!-- end .name -->
+        </div>
+        <div class="right">
+            <!-- end .title -->
+            <div class="content">
+                <div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2013/10/03/us/03mulvaney_inline/03mulvaney_inline-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/10/03/us/03mulvaney_inline/03mulvaney_inline-articleInline.jpg" src="https://static01.nyt.com/images/2013/10/03/us/03mulvaney_inline/03mulvaney_inline-articleInline.jpg" id="100000002478229" width="190" height="238" alt="Representative Mick Mulvaney"   /><meta itemprop="height" content="238"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Representative Mick Mulvaney</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Manuel Balce Ceneta/Associated Press</span></figcaption></figure></div><p class="story-body-text" itemprop="articleBody">
+WASHINGTON  — Representative Mick Mulvaney, Republican of South Carolina and one of the House&#8217;s most ardent conservatives, released a statement to his constituents this morning. Cutting through the Washington clutter, we offer an annotated version:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>“I’ve received a good many calls and emails this week from folks expressing their opinions about the government shutdown.&#8221; </em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">&#8220;Folks&#8221; are very angry at Representative Mulvaney.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>&#8220;I’m grateful for the feedback and I am listening to your concerns. The House of Representatives is doing everything we can to reopen the government. Indeed — and this unfortunately doesn&#8217;t get reported much in the national media — we have sent four different options to the Senate, all of which were immediately rejected (without even debating them).&#8221;</em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s not our fault. It&#8217;s the liberal media&#8217;s.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>&#8220;The last offer we made was simply an invitation to sit down and try to work through a compromise. Honestly, I was surprised they rejected that one, as it is exactly what many Democrats say they wanted.&#8221;</em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">The &#8220;last offer&#8221; was a bill that linked further funding of the government with a one-year delay in the health care law&#8217;s mandate that individuals purchase health insurance, plus a denial of subsidies for a defined set of government employees who must purchase insurance on the new law&#8217;s health care exchanges: members of Congress and their staff, the president, vice president, White House staff and executive branch political appointees. The bill also formally appointed House negotiators to a negotiating &#8220;conference&#8221; with the Senate. So &#8220;simply an invitation&#8221; is an interesting interpretation.<span id="more-589"></span></p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>&#8220;I am hopeful we can resolve the shutdown as soon as the Senate agrees to engage in a conversation. In the meantime, you should know that our troops are still being paid and social security checks are going out. In fact, about 75% of the government is open for business.&#8221;</em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Don&#8217;t worry, angry seniors, you&#8217;ll get your checks. Stop yelling.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>&#8220;In many ways, then, this is a government &#8216;slowdown&#8217; more than it is a &#8216;shutdown.&#8217; I know that is not much consolation for folks who are personally affected by the 25% of government that is closed, but again, the House is working to fix that.&#8221;</em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Again, you&#8217;re probably not affected. Really, back off.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>&#8220;Finally, many of you have asked how it is that I can continue to receive my paycheck while so many federal employees are furloughed. I happen to agree that it’s wrong for Members of Congress to receive pay while other federal workers are not. To that end, I have sent a letter to the Chief Administrative Officer asking that my pay be withheld until the shutdown is resolved.&#8221;</em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s not my fault I&#8217;m being paid. That&#8217;s just the way it is. But I&#8217;ll wait awhile to cash the checks.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><em>&#8220;As always, thank you for the input, and for taking the time to let your opinions be heard. If more people did that, I am convinced our government would run much more effectively than it does.&#8221;</em></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Vote for me in 2014.</p>
+            </div><!-- end .content -->
+            <div class="share"><div class="shareTools shareToolsThemeClassic shareToolsThemeClassicHorizontal articleShareToolsBottom"
+	data-shares="facebook|,twitter|,google|"
+	data-url="//www.nytimes.com/news/fiscal-crisis/2013/10/02/mick-mulvaneys-shutdown-message-annotated/"
+	data-title="Mick Mulvaney&#039;s Shutdown Message, Annotated"
+	data-description="Cutting through the Washington clutter of a staunch House conservative&#039;s message to constituents."></div></div><!-- end .share -->
+        </div>
+        <!-- end .left -->
+        <!-- end .right -->
+    </div>
+</li>
+        <div class="nav-links">
+            
+                    </div><!-- .nav-links -->
+    </ul>
+    </div><!-- end #acol -->
+
+<!--entries end--><div id="ccol"></div>
+<div id="footer">
+    <ul class="first">
+        <li class="first"><a href="//www.nytimes.com">Home</a></li>
+        <li>
+            <a href="//www.nytimes.com/pages/world/index.html">World</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/national/index.html">U.S.</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/nyregion/index.html">N.Y. / Region</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/business/index.html">Business</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/technology/index.html">Technology</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/science/index.html">Science</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/health/index.html">Health</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/sports/index.html">Sports</a>
+        </li>
+        <li>
+            <a href="https://www.nytimes.com/pages/opinion/index.html">Opinion</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/arts/index.html">Arts</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/style/index.html">Style</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/travel/index.html">Travel</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/jobs/index.html">Jobs</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/realestate/index.html">Real Estate</a>
+        </li>
+        <li>
+            <a href="//www.nytimes.com/pages/automobiles/index.html">Autos</a>
+        </li>
+        <li><a href="#top">Back to Top</a></li>
+    </ul>		<ul>
+        <li class="first">
+			<a href="//www.nytimes.com/ref/membercenter/help/copyright.html">
+				&copy; 2017</a> <a href="//www.nytco.com/">The New York Times Co.</a>
+		</li>
+        <li><a href="//www.nytimes.com/privacy">Privacy</a></li>
+        <li><a href="//www.nytimes.com/ref/membercenter/help/privacy.html#pp">Your Ad Choices</a></li>
+        <li><a href="//www.nytimes.com/ref/membercenter/help/agree.html">Terms of Service</a></li>
+        <li><a href="//www.nytimes.com/corrections.html">Corrections</a></li>
+        <li><a class="rssButton" href="//www.nytimes.com/rss">RSS</a></li>
+        <li><a href="//firstlook.blogs.nytimes.com">First Look</a></li>
+        <li><a href="//www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+        <li><a href="//www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+        <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+        <li><a href="//nytmediakit.com/">Advertise</a></li>
+        <li><a href="//spiderbites.nytimes.com/">Site Map</a></li>
+    </ul>
+</div><!-- end #footer -->
+</div><!-- end #main -->
+</div><!-- end #page -->
+</div><!-- end #shell -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":23,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

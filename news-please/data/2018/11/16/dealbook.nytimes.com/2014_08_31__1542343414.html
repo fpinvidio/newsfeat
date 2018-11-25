@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dealbook/Start-Ups Accrue Funding in Case of Leaner Times ( 20140831 )" />
+<meta name="communityAssetURL" content="https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003084913"><meta name="author" content="William Alden" />
+<meta name="CLMST" content="William Alden" />
+<meta name="byl" content="William Alden" />
+<meta name="GBLC" content="Investment Banking;Technology;Top Headline 1;Venture Capital">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1409533986" />
+<meta name="PUD" content="20140831" />
+<meta name="pdate" content="20140831" />
+<meta name="ptime" content="20140831211306" />
+<meta name="utime" content="20140902153408" />
+<meta property="article:modified_time" itemprop="dateModified" content="2014-09-02T15:34:08-04:00" />
+<meta name="DISPLAYDATE" content="August 31, 2014" />
+<meta name="dat" content="August 31, 2014" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Coburn, Lawrence (1969- );Zachary, George">
+<meta name="des" content="Computers and the Internet;Start-ups;Venture Capital">
+<meta name="org" content="DoubleDutch Inc;Eventbrite;Netflix Inc;Xoom Corporation">
+<meta name="ticker" content="Netflix Inc|NFLX|NASDAQ;Xoom Corporation|XOOM|NASDAQ" />
+<meta property="article:tag" content="Coburn Lawrence (1969- )" />
+<meta property="article:tag" content="Zachary George" />
+<meta property="article:tag" content="Computers and the Internet" />
+<meta property="article:tag" content="Start-ups" />
+<meta property="article:tag" content="Venture Capital" />
+<meta property="article:tag" content="DoubleDutch Inc" />
+<meta property="article:tag" content="Eventbrite" />
+<meta property="article:tag" content="Netflix Inc" />
+<meta property="article:tag" content="Xoom Corporation" />
+<meta property="article:tag" content="Investment Banking" />
+<meta property="article:tag" content="Technology" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta property="article:tag" content="Venture Capital" />
+<meta name="keywords" content="Coburn Lawrence (1969- ),Zachary George,Computers and the Internet,Start-ups,Venture Capital,DoubleDutch Inc,Eventbrite,Netflix Inc,Xoom Corporation,Investment Banking,Technology,Top Headline 1,Venture Capital" />
+<meta name="news_keywords" content="Computers and the Internet,DoubleDutch,Eventbrite,George Zachary,Lawrence Coburn,Startup,Venture capital" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2014%2F08%2F31%2Fstart-ups-accrue-funding-in-case-of-leaner-times%2F" title="Start-Ups Accrue Funding in Case of Leaner Times" />
+<meta name="description" content="Some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of harder days ahead." />
+<meta name="hdl_p" content="Start-Ups Accrue Funding in Case of Leaner Times" />
+<meta name="hdl" content="Start-Ups Accrue Funding in Case of Leaner Times" />
+<meta property="og:title" content="Start-Ups Accrue Funding in Case of Leaner Times" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="Some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of harder days ahead." />
+<meta property="og:image" content="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-videoSixteenByNine600.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Start-Ups Accrue Funding in Case of Leaner Times" />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/" />
+<meta name="twitter:description" content="Some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of harder days ahead." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Top Bitcoin Proponent to Plead Guilty to Federal Charge' href='https://dealbook.nytimes.com/2014/08/30/top-bitcoin-proponent-to-plead-guilty-to-federal-charge/' />
+<link rel='next' title='Barclays Sells Some Spanish Assets to CaixaBank' href='https://dealbook.nytimes.com/2014/08/31/barclays-to-sell-retail-and-corporate-bank-units-to-caixabank-of-spain/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/' />
+<link rel='shortlink' href='//nyti.ms/1tmS6RM' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>Start-Ups Accrue Funding in Case of Leaner Times - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-626635 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Start-Ups Accrue Funding in Case of Leaner Times        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/"
+	 data-title="Start-Ups Accrue Funding in Case of Leaner Times"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of harder days ahead.&lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="August 31, 2014 9:13 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-626635 post type-post status-publish hentry category-investment-banking category-technology category-venture-capital tag-coburn-lawrence-1969 tag-computers-and-the-internet tag-doubledutch-inc tag-eventbrite tag-netflix-inc tag-start-ups tag-venture-capital tag-xoom-corporation tag-zachary-george per-coburn-lawrence-1969 per-zachary-george des-computers-and-the-internet des-start-ups des-venture-capital org-doubledutch-inc org-eventbrite org-netflix-inc org-xoom-corporation news_keywords-computers-and-the-internet news_keywords-doubledutch news_keywords-eventbrite news_keywords-george-zachary news_keywords-lawrence-coburn news_keywords-startup news_keywords-venture-capital-2" id="post-626635">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a> | <a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></span>		</div>
+				<h1 itemprop="headline" class="entry-title">Start-Ups Accrue Funding in Case of Leaner Times</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By William Alden			</address>
+			<!-- date published --><time class="dateline " datetime="2014-09-01T01:13:06+00:00" itemprop="datePublished">August 31, 2014 9:13 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">August 31, 2014 9:13 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content">
+	<div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-tmagArticle.jpg" src="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-1/dbpix-venture-1-tmagArticle.jpg" id="100000003082226" width="592" height="394" alt="Lawrence Coburn said concerns about a possible downturn were a factor in his decision to raise $19 million of equity and debt financing for his events app, DoubleDutch."   /><meta itemprop="height" content="394"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Lawrence Coburn said concerns about a possible downturn were a factor in his decision to raise $19 million of equity and debt financing for his events app, DoubleDutch.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Jessica Lifland for The New York Times</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/" data-title="Start-Ups Accrue Funding in Case of Leaner Times" data-description="Some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of harder days ahead.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody">In 1999, right before the dot-com bubble popped, Lawrence Coburn quit his corporate job and dove into the Internet gold rush, raising $600,000 from friends and family — including his grandmother — for a consumer ratings site he founded called RateItAll. At the time, virtually any idea, no matter how far-fetched, seemed to hold the promise of a high-flying initial public offering, making it easy to attract financial backing.</p>
+<p class="story-body-text" itemprop="articleBody">But when technology stocks collapsed and venture capital dried up, RateItAll ran out of cash by 2001.</p>
+<p class="story-body-text" itemprop="articleBody">Today, Mr. Coburn, 45, who now runs a start-up in San Francisco called DoubleDutch (and who only managed to pay back his grandmother after her death — returning the money to her estate), fears that history may repeat itself. Without an immediate need for the money, he said concerns about a possible downturn factored into his decision to raise $19 million of equity and debt financing last month for DoubleDutch, which makes an app for organizing events. He readily received the money from some leading Silicon Valley investors, including Peter Thiel.</p>
+<p class="story-body-text" itemprop="articleBody">Silicon Valley has more money than it knows what to do with these days, leaving venture capitalists and other investors practically begging elite start-ups to take their cash. And the entrepreneurs are happy to oblige.</p>
+<p class="story-body-text" itemprop="articleBody">With young start-ups receiving lofty valuations — and with conflicts around the globe stoking fears of a market correction — some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of lean times ahead.</p>
+<p class="story-body-text" itemprop="articleBody">“If you’ve been through those boom cycles, you’re looking for signs that the next one is coming, and you’re very fearful of that,” Mr. Coburn said. “You don’t want to be stuck out raising money when the curtain call comes.”</p>
+<p class="story-body-text" itemprop="articleBody">At a time when many consumer tech brands like Uber and Snapchat are bursting with financing that values them at $10 billion or more, lesser-known but promising firms are also attracting prominent investors. Even traditionally conservative investors like <a href="//dealbook.on.nytimes.com/public/overview?symbol=TROW&#038;inline=nyt-org" class="tickerized" title="More information about T Rowe Price Group Inc">T. Rowe Price</a> are competing for access to the hottest tech deals.</p>
+<p class="story-body-text" itemprop="articleBody">In the first half of the year, investors put $22.7 billion into venture capital deals in the United States, 71 percent more than in the period last year, according to PricewaterhouseCoopers and the National Venture Capital Association, which used data from <a href="//dealbook.on.nytimes.com/public/overview?symbol=TRI&#038;inline=nyt-org" class="tickerized" title="More information about Thomson Reuters Corporation">Thomson Reuters</a>.</p>
+<p class="story-body-text" itemprop="articleBody">Raising this additional money comes at a cost to the start-ups: Venture capitalists often demand preferred stock, which can give them the right to recover their investment if the company is sold at a lower price. But in the flood of capital, many entrepreneurs are able to raise money on favorable terms and secure rich valuations. In the second quarter of this year, the average share price at which companies raised financing was 113 percent higher than the price in their previous financing round, according to the law firm Fenwick &#038; West, which analyzed 174 financings in Silicon Valley.</p>
+<p class="story-body-text" itemprop="articleBody">Still, the investor enthusiasm is now mixed with a modicum of concern. A survey of venture capitalists in the second quarter by Mark V. Cannice, an entrepreneurship professor at the University of San Francisco School of Management, produced a reading of 4.02 on a five-point scale of confidence. While high, that level was virtually flat from the first quarter of the year, ending a seven-quarter streak of increases.</p>
+<p class="story-body-text" itemprop="articleBody">“It’s a very cyclical industry, and entrepreneurs know that,” said Raphael Amit, a professor of entrepreneurship and management at the Wharton School of the University of Pennsylvania. Entrepreneurs, he said, are raising money “very prudently as a hedge, if you will, not knowing how things will develop in the future when they really need the money.”</p>
+<p class="story-body-text" itemprop="articleBody">Those who cite such fears typically have a few years’ more business experience than the youngest 20-somethings in tech. Kevin Hartz, 44, the chief executive of Eventbrite, an online ticketing service, said market concerns contributed to the company’s move to raise $60 million this year, at a valuation of $1 billion.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Hartz has lived through two major slumps. In 2001, after the dot-com crash, he helped found Xoom, a money transfer company, but said he found it “impossible” to raise financing. The terrorist attacks of Sept. 11 only worsened the financial climate. “We just had to bootstrap it,” Mr. Hartz said. Xoom, after 12 years in business, finally went public last year.</p>
+<div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-2/dbpix-venture-2-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-2/dbpix-venture-2-articleInline.jpg" src="https://static01.nyt.com/images/2014/08/30/business/dbpix-venture-2/dbpix-venture-2-articleInline.jpg" id="100000003082417" width="190" height="127" alt="Eventbrite, started by Julia and Kevin Hartz, raised $60 million earlier this year, at a $1 billion valuation."   /><meta itemprop="height" content="127"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Eventbrite, started by Julia and Kevin Hartz, raised $60 million earlier this year, at a $1 billion valuation.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Robert Galbraith/Reuters</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">He had a similar experience in the early days of Eventbrite, which he helped start in 2006. When the financial crisis of 2008 struck, Eventbrite was repeatedly turned down by venture capitalists, Mr. Hartz recalled. “We just hunkered down,” he said. Then, in 2009, Eventbrite attracted $6.5 million from Sequoia Capital, in its first venture capital investment, opening the door to additional financing rounds from other firms.</p>
+<p class="story-body-text" itemprop="articleBody">Silicon Valley is full of similar stories. Barry McCarthy, the former chief financial officer of <a href="//dealbook.on.nytimes.com/public/overview?symbol=NFLX&#038;inline=nyt-org" class="tickerized" title="More information about Netflix Inc">Netflix</a>, who joined the company in 1999, recalled its $50 million financing round in early 2000, shortly before the dot-com crash. He said that the amount was significantly more than Netflix — which at the time was a company that primarily rented DVDs by mail — knew what to do with, but that the decision to take the money proved crucial.</p>
+<p class="story-body-text" itemprop="articleBody">“Even though our business model was working quite well, we would not have had access to capital and we would have had to close the company if we hadn’t raised the extra money,” he said.</p>
+<p class="story-body-text" itemprop="articleBody">Some fear a return to the unreal economy of the late 1990s. And those voices are growing louder, stoking debate in the tech world. One prominent venture capitalist, George Zachary, a partner at Charles River Ventures who was an early investor in <a href="//dealbook.on.nytimes.com/public/overview?symbol=TWTR&#038;inline=nyt-org" class="tickerized" title="More information about Twitter">Twitter</a>, contends that Silicon Valley is in an expanding bubble, and he has been using his Twitter feed over the last year to cite evidence for that claim. Keeping a close eye on the public markets, Mr. Zachary also projects that a geopolitical shock like the conflicts in Ukraine or Iraq could set off a market correction and, in turn, constrain financing for tech firms.</p>
+<p class="story-body-text" itemprop="articleBody">Many executives and investors are looking for indications that the Federal Reserve might raise interest rates. Public markets are important for private company investors because many use public company capitalizations as a yardstick for start-up valuations.</p>
+<p class="story-body-text" itemprop="articleBody">But Mr. Zachary said his declarations had generated perplexed responses.</p>
+<p class="story-body-text" itemprop="articleBody">“After I’ve made comments about the public markets, I’ve actually gotten emails and private comments from other venture people saying: ‘Why do you say this? This is not good for our business for you to be publicly saying this,’ ” he said. “My take is it’s better for the market to be less volatile than for it to ballistically go up and explode.”</p>
+<footer class="story-footer">
+    <div class="story-meta">
+	<p class="story-print-citation">A version of this article appears in print on 09/01/2014, on page <span itemprop="printSection">B</span><span itemprop="printPage">1</span> of the <span itemprop="printEdition">NewYork</span> edition with the headline: Start-Ups Accrue Funding in Case of Leaner Times.</p>    </div>
+</footer>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2014/08/31/start-ups-accrue-funding-in-case-of-leaner-times/" data-title="Start-Ups Accrue Funding in Case of Leaner Times" data-description="Some entrepreneurs say worries about a possible downturn are partly why they are stocking up on financing, essentially taking out insurance on the risk of harder days ahead.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/08/30/top-bitcoin-proponent-to-plead-guilty-to-federal-charge/" title="Top Bitcoin Proponent to Plead Guilty to Federal Charge">
+				Top Bitcoin Proponent to Plead Guilty to Federal Charge			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/08/31/barclays-to-sell-retail-and-corporate-bank-units-to-caixabank-of-spain/" title="Barclays Sells Some Spanish Assets to CaixaBank">
+				Barclays Sells Some Spanish Assets to CaixaBank			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":52,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

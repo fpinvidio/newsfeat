@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-thelede section-"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-thelede section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-thelede section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-thelede section-" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="live_updates_json" content="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/live-updates/json/" /><meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/thelede/March 18 Updates on Libya and Arab Uprisings" />
+<meta name="communityAssetURL" content="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000732181"><meta name="author" content="Robert Mackey" />
+<meta name="CLMST" content="Robert Mackey" />
+<meta name="byl" content="Robert Mackey" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/m/robert_mackey/index.html" /><meta name="GBLC" content="Africa;Middle East;News;world">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1300452569" />
+<meta name="PUD" content="20110318" />
+<meta name="pdate" content="20110318" />
+<meta name="ptime" content="20110318084929" />
+<meta name="utime" content="20110319215040" />
+<meta property="article:modified_time" itemprop="dateModified" content="2011-03-19T21:50:40-04:00" />
+<meta name="DISPLAYDATE" content="March 18, 2011" />
+<meta name="dat" content="March 18, 2011" />
+<meta itemprop="articleSection" property="article:section" content="General" />
+<meta name="CG" content="General" />
+<meta name="SCG" content="thelede" />
+<meta name="BN" content="thelede" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Demonstrations, Protests, and Riots;Middle East and North Africa Unrest (2010- )">
+<meta name="geo" content="Bahrain;Libya;Syria;Yemen">
+<meta property="article:tag" content="Demonstrations Protests and Riots" />
+<meta property="article:tag" content="Middle East and North Africa Unrest (2010- )" />
+<meta property="article:tag" content="Bahrain" />
+<meta property="article:tag" content="Libya" />
+<meta property="article:tag" content="Syria" />
+<meta property="article:tag" content="Yemen" />
+<meta property="article:tag" content="Africa" />
+<meta property="article:tag" content="Middle East" />
+<meta property="article:tag" content="News" />
+<meta property="article:tag" content="world" />
+<meta name="keywords" content="Demonstrations Protests and Riots,Middle East and North Africa Unrest (2010- ),Bahrain,Libya,Syria,Yemen,Africa,Middle East,News,world" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fthelede.blogs.nytimes.com%2F2011%2F03%2F18%2Flatest-updates-on-libya-and-arab-uprisings%2F" title="March 18 Updates on Libya and Arab Uprisings" />
+<meta name="description" content="On Friday, The Lede is following the uprising in Libya and protest movements across North Africa and the Middle East." />
+<meta name="hdl" content="March 18 Updates on Libya and Arab Uprisings" />
+<meta property="og:title" content="March 18 Updates on Libya and Arab Uprisings" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/" />
+<meta property="og:site_name" content="The Lede" />
+<meta property="og:description" content="On Friday, The Lede is following the uprising in Libya and protest movements across North Africa and the Middle East." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="March 18 Updates on Libya and Arab Uprisings" />
+<meta name="twitter:url" content="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/" />
+<meta name="twitter:description" content="On Friday, The Lede is following the uprising in Libya and protest movements across North Africa and the Middle East." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@thelede">
+<link rel='prev' title='March 17 Updates on Japan&#8217;s Nuclear Crisis and Earthquake Aftermath' href='//thelede.blogs.nytimes.com/2011/03/17/latest-updates-on-japans-nuclear-crisis-and-earthquake-aftermath-4/' />
+<link rel='next' title='Full Text and Audio of Obama&#8217;s Statement on Military Action in Libya' href='//thelede.blogs.nytimes.com/2011/03/19/full-text-and-audio-of-obamas-statement-on-military-action-in-libya/' />
+<link rel='canonical' href='//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/' />
+<link rel='shortlink' href='//nyti.ms/gy5yf3' />
+<link rel='https://github.com/WP-API/WP-API' href='//thelede.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/thelede/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//thelede.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/index.jsonp" />
+<link rel="alternate" type="application/rss+xml" title="The Lede &raquo; March 18 Updates on Libya and Arab Uprisings Live Updates Feed" href="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/live-updates/" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/thelede/2011/03/18/latest-updates-on-libya-and-arab-uprisings/" />
+<meta name="dfp-ad-unit-path" content="general/thelede" />			<title>March 18 Updates on Libya and Arab Uprisings - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-99565 blog-universal nyt-blog-thelede live-blogging-desktop" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'General', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//thelede.blogs.nytimes.com">
+                The Lede            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        March 18 Updates on Libya and Arab Uprisings        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/"
+	 data-title="March 18 Updates on Libya and Arab Uprisings"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;On Friday, The Lede is following the uprising in Libya and protest movements across North Africa and the Middle East.&lt;/span&gt;&lt;a href=&quot;//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="March 18, 2011 8:49 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//s3.amazonaws.com/s3.documentcloud.org/viewer/loader.js"></script>
+<div id="thelede" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//thelede.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=General" title="Go to The Lede Home"><img src="https://static01.nyt.com/images/blogs_v5/thelede/thelede_post.png" alt="The Lede - The New York Times News Blog"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//thelede.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Lede">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-99565 post type-post status-publish hentry category-africa category-middle-east category-news category-world tag-bahrain tag-libya tag-muammar-el-qaddafi tag-syria tag-yemen des-demonstrations-protests-and-riots des-middle-east-and-north-africa-unrest-2010 geo-bahrain geo-libya geo-syria geo-yemen" id="post-99565">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">March 18 Updates on Libya and Arab Uprisings</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Robert Mackey			</address>
+			<!-- date published --><time class="dateline " datetime="2011-03-18T12:49:29+00:00" itemprop="datePublished">March 18, 2011 8:49 am</time>
+			<!-- date updated --><span class="visually-hidden updated">March 18, 2011 8:49 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody"><em>On Friday, The Lede is following the uprising in Libya and protest movements across North Africa and the Middle East. Updates below mix alerts on breaking news with reports from journalists and bloggers in the region.</em><span id="more-99565"></span>
+<div id="liveUpdatesModule" class="liveUpdatesModule">
+<div class="type-live-update update">
+<div id="to-qaddafi-everything-that-is-not-murder-is-theater" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#to-qaddafi-everything-that-is-not-murder-is-theater">7:13 P.M.</a></span> <strong>&#8216;To Qaddafi, Everything That Is Not Murder Is Theater&#8217;</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">The Lede is signing off for the evening, though we will no doubt return to follow events in Libya and the wider region again over the days and weeks ahead. In the meantime, please visit the homepage of NYTimes.com to read reports by my colleagues in the region, watch videos and get more context and analysis from Times reporters and experts.</p>
+<p class="story-body-text" itemprop="articleBody">As the international community appears to be on the verge of a complex military intervention justified on humanitarian grounds, readers might be interested in a new post <a href="//www.newyorker.com/online/blogs/newsdesk/2011/03/libya-all-necessary-measures.html">on The New Yorker&#8217;s news blog</a> by Philip Gourevitch, who has written in great depth about the crisis in Rwanda in the 1990s. In his post on Libya, Mr. Gourevitch observes:</p>
+<blockquote>
+<p class="story-body-text" itemprop="articleBody">Advocates of intervention have been fond of invoking Rwanda in 1994 as a spur to action. As usual with such historical analogies, the differences are far greater and more significant than the parallels. If Rwanda taught us anything, it should be that the U.N. is a woeful instrument for responding to an emergency. Time and again, we have seen that to be under U.N. protection in a U.N. safe area is to be in terrible peril. Qaddafi’s first answer to the Security Council was to start the heavy bombardment of the rebels, and then, this morning, his Foreign Minister declared a unilateral ceasefire; that accommodating gesture was accompanied by Qaddafi’s comments to Portuguese TV that he’d start attacking non-military ships and planes in the Mediterranean. “If the world gets crazy with us, we will get crazy, too,” he said. “We will respond. We will make their lives hell because they are making our lives hell. They will never have peace.”</p>
+<p class="story-body-text" itemprop="articleBody">To Qaddafi, everything that is not murder is theatre, and having scared us into joining his war he is now calling our bluff, saying, in effect, that the West once again pretends to be acting in the name of humanitarianism when the real motive is regime change. It’s true that a full-scale humanitarian intervention would merely turn the crisis into the status quo and insure that it drags on forever. And it’s true, too, that now that we’ve made this our war we cannot pretend to be satisfied by simply containing or neutralizing Qaddafi. Are we prepared to accept that, by the grim logic of our intervention, the only way we can avoid being defeated in Libya is by defeating him? That could happen swiftly, or it could be a brutally drawn out, bitter, bloody slog, and come at a terrible price.</p>
+<p class="story-body-text" itemprop="articleBody">Either way, the military campaign is likely to be the easy part. Then what? We know that we are fighting against Qaddafi, but whom are we fighting for? It is impossible not to sympathize with victims of Qaddafi’s reign of terror who want to overthrow him. Still, do we have a good idea of who the Libyan rebels are and what they stand for? Jon Lee Anderson’s superb <a href="//www.newyorker.com/online/blogs/newsdesk/libya/">dispatches from the eastern front</a> in recent weeks have made it clear that even the rebels themselves don’t know exactly. Some say the fight is for freedom; some say it’s for democracy. Meanwhile, an acting chief of the rebellion is a man who served, until a few weeks ago, as Qaddafi’s own Minister of Justice.
+</p>
+</blockquote>
+</div></div>
+<div class="type-live-update update">
+<div id="video-appears-to-show-protests-in-syria" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#video-appears-to-show-protests-in-syria">7:03 P.M.</a></span> <strong>Video Appears to Show Protests in Syria</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<div class="w480"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=oC55uPBKYqU?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=oC55uPBKYqU?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object><span class="caption">Video posted online, said to show protests in Syria on Friday, is featured in this Al Jazeera report.</span></div>
+<p class="story-body-text" itemprop="articleBody">The wave of uprisings sweeping the Arab world reportedly reached Syria on Friday, according to several witnesses who spoke to news organizations. </p>
+<p class="story-body-text" itemprop="articleBody">A resident of the southern city of Deraa <a href="//www.reuters.com/article/2011/03/18/syria-protest-deaths-idUSLDE72H1XN20110318">told Reuters</a> that the security forces killed two demonstrators during a peaceful protest demanding political freedom and an end to corruption in Syria.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+Hussam Abdel Wali Ayyash and Akram Jawabreh were among several thousands who where chanting &#8220;God, Syria, Freedom&#8221; and anti-corruption slogans, accusing the family of the president of corruption, when they were shot dead by security forces who were reinforced with troops flown in by helicopters, the resident said.</p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">A Syrian human rights activist who spoke to Agence France-Presse said that &#8220;security forces fired live bullets at the protesters,&#8221; in Deraa, killing four people.</p>
+<p class="story-body-text" itemprop="articleBody">Video said to show the protests in Deraa and other cities, including the capital, Damascus, was posted on YouTube and Facebook by <a href="//www.facebook.com/Syrian.Revolution">Syrian activists</a>. </p>
+<p class="story-body-text" itemprop="articleBody">An Egyptian blogger who writes as <a href="https://www.twitter.com/Zeinobia">Zeinobia</a>, wrote a post headlined, &#8220;<a href=" //egyptianchronicles.blogspot.com/2011/03/friday-of-dignity-in-syria-start-of.html">The Friday of Dignity in Syria: the Start of Revolution</a>,&#8221; which puts most of the video that has appeared online so far into context.</p>
+<p class="story-body-text" itemprop="articleBody">This video, posted on YouTube on Friday, is said to show a protest in the Umayyad Mosque in Damascus:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=QLdC3sMs3hY?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=QLdC3sMs3hY?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">Mona Eltahawy, an Egyptian journalist noted on Twitter that a protester in this video, apparently shot inside the mosque, was holding a sign calling for Muslim-Christian unity:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=tkQCihTGqmE?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=tkQCihTGqmE?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">Hossam el-Hamalawy, an Egyptian journalist, pointed to these two clips, said to show protests in the towns of <a href="//en.wikipedia.org/wiki/Daraa">Deraa</a> and <a href="//en.wikipedia.org/wiki/Homs">Homs</a> on Friday, in <a href="//www.arabawy.org/blog/">a post on his Arabawy blog</a>:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=gudqUvE-Tzo?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=gudqUvE-Tzo?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=5_juJ0X5ELI?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=5_juJ0X5ELI?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">Other clips were said to show a protest in the town of Baniyas. According to the blogger Zeinobia, &#8220;the video below is showing a Sheikh who was actually reading a list of demands, from simple demands like reducing electricity bills to conservative demands like canceling coeducation, to political demands like releasing political prisoners, canceling the emergency laws and freedom of expression.</p>
+<p class="story-body-text" itemprop="articleBody">Do you know where was he standing? He was standing at state security building which was taken over by the people.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=tvo5f8UmOe0?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=tvo5f8UmOe0?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+</div></div>
+<div class="type-live-update update">
+<div id="war-crimes-prosecutor-warns-libyan-military" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#war-crimes-prosecutor-warns-libyan-military">6:03 P.M.</a></span> <strong>War Crimes Prosecutor Warns Libyan Military</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<div class="w480"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=ZfAsTXOozbY?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=ZfAsTXOozbY?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object><span class="caption">Video of Luis Moreno-Ocampo, the International Criminal Court&#8217;s prosecutor, speaking about Libya on Friday.</span></div>
+<p class="story-body-text" itemprop="articleBody">Speaking to reporters in The Hague, Luis Moreno-Ocampo, the International Criminal Court&#8217;s prosecutor, warned Libyan military commanders that they could be prosecuted for attacks on civilians.</p>
+<p class="story-body-text" itemprop="articleBody">As <a href="//hosted.ap.org/dynamic/stories/E/EU_INTERNATIONAL_COURT_LIBYA?SITE=AP&#038;SECTION=HOME&#038;TEMPLATE=DEFAULT&#038;CTIME=2011-03-18-12-04-30">The Associated Press reported</a>, Mr. Moreno-Ocampo spoke on Friday morning, following an ultimatum from the Libyan government telling civilians to leave the eastern rebel stronghold of Benghazi or face attack. &#8220;As a prosecutor, I want to be clear: the issuance of such a warning does not provide an excuse to attack civilians,&#8221; Mr. Moreno-Ocampo said. &#8220;Civilians in fact can remain in Benghazi. The forces who attack them should be careful. Any indiscriminate attack affecting civilians could constitute war crimes.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">The prosecutor added: &#8220;I am even more worried because after the Security Council decided to protect civilians using resolution 1973, members of the ministry of defense issued a threatening [statement]. They said: all civilian and military activities will be the target of a Libyan counterattack if the members of the U.N. enforce the Security Council resolution.&#8221;</p>
+</div></div>
+<div class="type-live-update update">
+<div id="a-times-video-report-from-yemen" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#a-times-video-report-from-yemen">5:36 P.M.</a></span> <strong>A Times Video Report From Yemen</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Here is a video report by my colleague Laura Kasinof in Sana, Yemen&#8217;s capital on Friday:</p>
+<p class="story-body-text" itemprop="articleBody"><iframe width="480" height="373" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="nyt_video_player" title="New York Times Video - Embed Player" src="https://static01.nyt.com/bcvideo/1.0/iframe/embed.html?videoId=100000000732609&#038;playerType=embed"></iframe></p>
+<p class="story-body-text" itemprop="articleBody">More video from the scene is included in <a href="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/?ref=middleeast#video-shows-violent-crackdown-in-yemen">our 1:37 p.m. update</a> below.</p>
+</div></div>
+<div class="type-live-update update">
+<div id="libya-calls-for-international-cease-fire-observers" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#libya-calls-for-international-cease-fire-observers">5:10 P.M.</a></span> <strong>Libya Calls for International Cease-Fire Observers</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Amid continuing reports of military action in eastern Libya on Friday night, Libya&#8217;s deputy foreign minister, Khaled Kaalim, insisted that a new government cease-fire was &#8220;real,&#8221; and called on Malta, China, Turkey and Germany to send observers to Libya to verify this as soon as possible.</p>
+<p class="story-body-text" itemprop="articleBody">After joking from the podium with reporters at a late-night news conference, Mr. Kaalim said in a brief statement:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">I&#8217;m here to confirm to you that the statement made by our minister of foreign affairs this morning is credible, real and valid. And because of that we are calling for observers from  Malta, China, Turkey and Germany to come to Libya as soon as possible, maybe in a matter of hours, to make sure that there is a real cease-fire on the ground. And to go to areas where still some countries are  are not believing there is a real cease-fire of the ground.
+</p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">On Thursday, China had abstained during the U.N. Security Council vote on the resolution authorizing force against Libya. Turkey, which has close economic ties to Libya, has reportedly resisted military action by NATO. Earlier on Friday, both Malta and Germany announced that they would not take part in the international campaign &#8212; although, as BBC News reported, German Chancellor Angela Merkel said: &#8220;We unreservedly share the aims of this resolution. Our abstention should not be confused with neutrality.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Responding to questions after his statement, the deputy foreign minister insisted that Libya&#8217;s military had not killed a single civilian during the uprising in recent weeks.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Kaalim also said bluntly that Libya&#8217;s government does not intend to remove its military forces from the towns and cities where they have been deployed and insisted that troops will remain outside the eastern city of Benghazi. That suggests that the Qaddafi government has no intention of meeting President Barack Obama&#8217;s demand that forces stop advancing on Benghazi and be withdrawn from Adjadbiya, Misrata and Zawiyah.</p>
+</div></div>
+<div class="type-live-update update">
+<div id="complete-text-and-video-of-obamas-statement-on-libya" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#complete-text-and-video-of-obamas-statement-on-libya">4:35 P.M.</a></span> <strong>Complete Text and Video of Obama&#8217;s Statement on Libya</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">The White House Web site has posted <a href="//www.whitehouse.gov/the-press-office/2011/03/18/remarks-president-situation-libya">a complete transcript</a> and this video of President Barack Obama&#8217;s full statement on possible military action in Libya on Friday:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=geqTT14AXwE?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=geqTT14AXwE?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object></p>
+</div></div>
+<div class="type-live-update update">
+<div id="video-of-obamas-ultimatum-to-qaddafi" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#video-of-obamas-ultimatum-to-qaddafi">3:45 P.M.</a></span> <strong>Video of Obama&#8217;s Ultimatum to Qaddafi</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Here is Associated Press video of the ultimatum President Barack Obama&#8217;s delivered to Libya&#8217;s Col. Muammar el-Qaddafi on Friday:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=YxMgo28VJaU?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=YxMgo28VJaU?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">As we noted earlier, Mr. Obama said that Colonel Qaddafi must cease attacks on the eastern city of Benghazi and withdraw his forces from the towns of Ajdabiya, Misrata and Zawiyah, or else. He added: &#8220;Let me be clear, these terms are not negotiable. These terms are not subject to negotiation. If Qaddafi does not comply with the resolution, the international community will impose consequences, and the resolution will be enforced through military action.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Obama also said: </p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+I also want to be clear about what we will not be doing: the United States is not going to deploy ground troops into Libya, and we are not going to use force to go beyond a well-defined goal, specifically the protection of civilians in Libya. In the coming weeks, we will continue to help the Libyan people with humanitarian and economic assistance so that they can fulfill their aspirations peacefully.</p>
+</blockquote>
+</div></div>
+<div class="type-live-update update">
+<div id="obama-says-qaddafi-must-withdraw-forces" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#obama-says-qaddafi-must-withdraw-forces">3:00 P.M.</a></span> <strong>Obama Says Qaddafi Must Withdraw Forces </strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Speaking a short time ago at the White House on possible military action in Libya, President Barack Obama said that Col. Muammar el-Qaddafi must both cease attacks on the eastern city of Benghazi and withdraw his forces from the towns of Ajdabiya, Misrata and Zawiyah, which was recently reclaimed by the government after bloody fighting.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Obama added:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Let me be clear, these terms are not negotiable.  These terms are not subject to negotiation. If Qaddafi does not comply with the resolution, the international community will impose consequences, and the resolution will be enforced through military action.</p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">Here are further excerpts from Mr. Obama&#8217;s statement (as soon as video of the complete statement is available, we will add it to this blog post):</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+Over the last several weeks, the world has watched events unfold in Libya with hope and alarm.  Last month, protesters took to the streets across the country to demand their universal rights and a government that is accountable to them and responsive to their aspirations. But they were met with an iron first. Within days, whole parts of the country declared their independence from a brutal regime. And members of the government serving in Libya and abroad chose to align themselves with the forces of change.</p>
+<p class="story-body-text" itemprop="articleBody">Muammar Qddafi clearly lost the confidence of his own people and the legitimacy to lead.  Instead of respecting the rights of his own people, Qaddafi chose the path of brutal suppression. Innocent civilians were beaten, imprisoned and in some cases killed. Peaceful protests were forcefully put down. Hospitals were attacked and patients disappeared. A campaign of intimidation and repression began. [&#8230;]</p>
+<p class="story-body-text" itemprop="articleBody">There should be no doubt about his intentions, because he, himself, has made them clear. For decades, he&#8217;s demonstrated a willingness to use brute force, through his sponsorship of terrorism against the American people as well as others, and through the killings that he has carried out within his own borders. </p>
+<p class="story-body-text" itemprop="articleBody">And just yesterday, speaking of the city of Benghazi, a city of roughly 700,000 people, he threatened, and I quote: &#8220;We will have no mercy and no pity.&#8221; No mercy on his own citizens. [&#8230;]</p>
+<p class="story-body-text" itemprop="articleBody">Yesterday, in response to a call for action by the Libyan people and the Arab League, the U.N. Security Council passed a strong resolution that demands an end to the violence against citizens. It authorizes the use of force, with an explicit commitment to pursue all necessary measures to stop the killing, to include the enforcement of a no-fly zone over Libya. It also strengthens our sanctions and the enforcement of an arms embargo against the Qaddafi regime.</p>
+<p class="story-body-text" itemprop="articleBody">Now, once more, Muammar Qaddafi has a choice. The resolution that passed lays out very clear conditions that must be met. The United States, the United Kingdom, France and Arab states agree that a cease-fire must be implemented immediately. That means all attacks against civilians must stop. Qaddafi must stop his troops from advancing on Benghazi; pull them back from Adjadbiya, Misrata and Zawiyah, and establish water, electricity and gas supplies to all areas. Humanitarian assistance must be allowed to reach the people of Libya.
+</p>
+</blockquote>
+</div></div>
+<div class="type-live-update update">
+<div id="video-of-pearl-monument-being-destroyed-in-bahrain" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#video-of-pearl-monument-being-destroyed-in-bahrain">2:32 P.M.</a></span> <strong>Video of Pearl Monument Being Destroyed in Bahrain</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">As my colleague <a href="//www.nytimes.com/2011/03/19/world/middleeast/19bahrain.html">Ethan Bronner reports</a> from Bahrain&#8217;s capital, Manama, the monument at the center of the Pearl Roundabout in the city, which had become a symbol of pro-democracy protests, was destroyed by Bahrain&#8217;s government on Friday.</p>
+<p class="story-body-text" itemprop="articleBody">This video report shows the monument being pulled down:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=hnHDpB4LfWg?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=hnHDpB4LfWg?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">About three hours ago, one of the Bahraini bloggers who supported the occupation of the roundabout by protesters trasnmitted <a href="//yfrog.com/gzumzzjj">an image of the smashed monument</a> from his phone to Yfrog with this caption: &#8220;Every time I saw that pearl it made me happy, now they have torn it down. We will rebuild it we must!&#8221;</p>
+</div></div>
+<div class="type-live-update update">
+<div id="live-video-of-obamas-remarks-on-libya" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#live-video-of-obamas-remarks-on-libya">1:53 P.M.</a></span> <strong>Live Video of Obama&#8217;s Remarks on Libya</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">The live video feed of President Barack Obama&#8217;s statement on Libya has now concluded. We will add recorded video of the complete statement to this blog as soon as it becomes available.</p>
+</div></div>
+<div class="type-live-update update">
+<div id="this-is-not-iraq-we-are-not-going-to-war" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#this-is-not-iraq-we-are-not-going-to-war">1:48 P.M.</a></span> <strong>&#8216;This Is Not Iraq; We Are Not Going to War&#8217;</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Britain&#8217;s deputy prime minister, Nick Clegg, who was a fierce opponent of the war in Iraq, said that he supports U.N. military action in Libya. In <a href="//www.bbc.co.uk/news/uk-12786794">a video interview</a>, Mr. Clegg told BBC News: &#8220;This Is Not Iraq; we are not going to war; we are not invading Libya. What we are doing is upholding the international rule of law.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">After Libya&#8217;s foreign minister announced a cease-fire in response to the U.N. resolution, Prime Minister David Cameron was pressed by Gary Gibbon of Britain&#8217;s Channel 4 News on the question of whether or not the international community would accept Col. Muammar el-Qaddafi remaining in power if attacks on civilians cease:</p>
+<p class="story-body-text" itemprop="articleBody"><object id="flashObj" width="480" height="300" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="//download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="//c.brightcove.com/services/viewer/federated_f9?isVid=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=836200175001&#038;playerID=69900095001&#038;playerKey=AQ~~,AAAAAEabvr4~,Wtd2HT-p_VhJQ6tgdykx3j23oh1YN-2U&#038;domain=embed&#038;dynamicStreaming=true" /><param name="base" value="//admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="//c.brightcove.com/services/viewer/federated_f9?isVid=1" bgcolor="#FFFFFF" flashVars="videoId=836200175001&#038;playerID=69900095001&#038;playerKey=AQ~~,AAAAAEabvr4~,Wtd2HT-p_VhJQ6tgdykx3j23oh1YN-2U&#038;domain=embed&#038;dynamicStreaming=true" base="//admin.brightcove.com" name="flashObj" width="480" height="300" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" swLiveConnect="true" allowScriptAccess="always" pluginspage="//www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object></p>
+</div></div>
+<div class="type-live-update update">
+<div id="video-shows-violent-crackdown-in-yemen" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#video-shows-violent-crackdown-in-yemen">1:07 P.M.</a></span> <strong>Video Shows Violent Crackdown in Yemen</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">As my colleagues <a href="//www.nytimes.com/2011/03/19/world/middleeast/19yemen.html">Laura Kasinof and David Goodman report</a>, &#8220;Security forces and government supporters opened fire on demonstrators&#8221; in Yemen&#8217;s capital, Sana, on Friday, killing at least 30 people.</p>
+<p class="story-body-text" itemprop="articleBody">This video report from Al Jazeera shows some of those wounded in the attack and chaotic scenes in the city:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=wtzFSUIbX1M?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=wtzFSUIbX1M?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">This graphic Associated Press video shows doctors in Sana trying to save badly wounded protesters:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=LDpwCQv6Mmo?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=LDpwCQv6Mmo?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">The video includes an emotional plea from a doctor surrounded by wounded protesters who told a journalist: &#8220;we are calling on the world to come and see what he is doing, look!&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Several video clips were also posted on YouTube on Friday by people who said they were filmed during the attack on protesters in Sana.</p>
+<p class="story-body-text" itemprop="articleBody">This video, in which the sound of shots can be heard, was uploaded to YouTube by a blogger who added the simple description: &#8220;WE ARE NOT IN PALESTINE.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=Jt4aelL_9L0?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=Jt4aelL_9L0?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">In this clip, also said to have been shot on Friday in Sana, the protesters can be heard shouting: &#8220;Peaceful! Peaceful!&#8221; as shots ring out:</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="390"><param name="movie" value="https://www.youtube.com/watch?v=_UXNza-fAZw?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=_UXNza-fAZw?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="390"></embed></object></p>
+</div></div>
+<div class="type-live-update update">
+<div id="spain-will-contribute-to-military-action-in-libya" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#spain-will-contribute-to-military-action-in-libya">12:14 P.M.</a></span> <strong>Spain Will Contribute to Military Action in Libya</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Spain will contribute to the international military operation against Libya, Prime Minister José Luis Rodríguez Zapatero said on Friday, <a href="//www.elpais.com/articulo/espana/Zapatero/comunidad/internacional/va/dejar/enganar/Gadafi/elpepuesp/20110318elpepunac_9/Tes">El País reports</a>.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Zapatero, who opposed the Iraq war and quickly withdrew Spanish forces from that country <a href="//www.nytimes.com/2008/03/10/world/europe/10zapatero-web.html">when he took office in 2004</a>, cast possible action against Libya in humanitarian terms.</p>
+<p class="story-body-text" itemprop="articleBody">Speaking after meeting with Ban Ki-moon, the United Nations secretary general, Mr. Zapatero said that jets enforcing the no-fly zone over Libya could use Spanish air bases and added that he has asked Parliament to approve the use of Spanish forces in the international effort. He also said, &#8220;The international community will not be fooled by the Libyan regime.&#8221;</p>
+</div></div>
+<div class="type-live-update update">
+<div id="video-of-clintons-statement-on-libya" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#video-of-clintons-statement-on-libya">11:51 A.M.</a></span> <strong>Video of Clinton&#8217;s Statement on Libya</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Here is Associated Press video of Secretary of State Hillary Clinton&#8217;s remarks on Friday morning in Washington, in which she said that the Libyan government&#8217;s declaration of a cease-fire needs to be backed by &#8220;actions on the ground,&#8221; and added that the United States would continue &#8220;to press Qaddafi to leave.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=p5QKxSrUfIk?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=p5QKxSrUfIk?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object></p>
+</div></div>
+<div class="type-live-update update">
+<div id="qaddafis-son-calls-u-n-resolution-unfair" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#qaddafis-son-calls-u-n-resolution-unfair">11:27 A.M.</a></span> <strong>Qaddafi&#8217;s Son Calls U.N. Resolution &#8216;Unfair&#8217;</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">In <a href="//abcnews.go.com/Nightline/libya-war-christiane-amanpour-saif-gadhafi-interview-transcript/story?id=13162838&#038;page=1">a telephone interview with ABC News</a> on Thursday night, Seif al-Islam el-Qaddafi, the Libyan leader&#8217;s son, called the U.N. Security Council resolution authorizing the use of force against his father&#8217;s government &#8220;unfair,&#8221; because, he claimed, reports of attacks on protesters were false.</p>
+<p class="story-body-text" itemprop="articleBody">Speaking to Christiane Amanpour, Mr. Qaddafi said:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">First of all, it was unfair because, as you know, as you know, from the beginning we told to everybody there were no air strikes against civilians, no bombing of civilian districts or demonstrations. And thousands of those reports showed they were false. And this is No. 1. No. 2, even if you see last week what happened. The army and Libyan volunteers did fight the armored militia and liberated five Libyan cities from them. Have we seen a single civilian casualty? Even the terrorists or the armed people, they just surrender. So there was no bloodshed in Libya. </p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">According to a transcript on ABC&#8217;s Web site, Mr. Qaddafi was not asked about the disconnect between what he said had taken place in Libya and reports from foreign journalists and accounts posted on social media sites by Libyan activists and bloggers which seemed to document the use of deadly force against protesters.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Qaddafi&#8217;s remarks echoed those he made one day earlier in a television interview in which he said: &#8220;when you impose no-fly zone, you are supporting terrorists.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=6irB3VoBB_E?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=6irB3VoBB_E?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">In that interview, Mr. Qaddafi also said, of the French president, who took a leading role in pressing for the U.N. resolution: &#8220;Sarkozy, one month ago, he did invite me, he sent me an official letter to go there, he wants to convince me to buy <a href="//www.dassault-aviation.com/en/defense/rafale/omnirole-by-design.html?L=1">the Rafale</a>, the air fighter, the aircraft. He was like a pussy cat, yeah he was so nice. In two weeks, he wants to be like a tiger&#8230;. I am not a pussy cat or Mickey Mouse. We are here to defend. War separates men from children, and we are men. I&#8217;m a man. I&#8217;m standing up and defending my country.&#8221;</p>
+</div></div>
+<div class="type-live-update update">
+<div id="reports-of-continued-attacks-by-libyan-forces" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#reports-of-continued-attacks-by-libyan-forces">10:59 A.M.</a></span> <strong>Reports of Continued Attacks by Libyan Forces</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Following the Libyan government&#8217;s declaration of an immediate cease-fire on Friday morning, there was skepticism from governments preparing for military action and reports that fighting continued in rebel-held parts of the country.</p>
+<p class="story-body-text" itemprop="articleBody">Secretary of State Hillary Clinton, speaking minutes ago, said: &#8220;we&#8217;ve seen press reports of a cease-fire by the Libyan government. This is a fluid and dynamic situation. We are going to be not responsive or impressed by words, we would have to see actions on the ground and that is not yet at all clear.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">BBC News reports that British Prime Minister David Cameron told the broadcaster that Col. Muammar el-Qaddafi &#8220;will be judged by his deeds not his words.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">As my colleagues <a href="//www.nytimes.com/2011/03/19/world/africa/19libya.html">Alan Cowell and David Kirkpatrick report</a>: </p>
+<blockquote><p class="story-body-text" itemprop="articleBody">France reacted cautiously to the Libyan announcement. Colonel Qaddafi “begins to be afraid, but on the ground, the threat hasn’t changed,” the French foreign ministry spokesman, Bernard Valero, said Friday. “We have to be very cautious.”
+</p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">A recent update on <a href="//www.bbc.co.uk/news/world-middle-east-12776418#video">the BBC News live blog</a> suggested that fighting continued during the cease-fire announcement in the rebel-held town of Misrata:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+While the Libyan foreign minister was speaking of a cease-fire, an eyewitness in Misrata, who has asked to remain unnamed, told the BBC there was heavy fighting between rebels and the brigade forces, and that several civilian buildings had been hit. &#8220;We are terrified,&#8221; she said. &#8220;He [Qaddafi] is going to kill us all.&#8221;
+</p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">A short time ago, Al Jazeera reported that fighting was also continuing near the rebel-held city of Ajdabiya.</p>
+<p class="story-body-text" itemprop="articleBody">Unless the restrictions on the work of independent reporters inside Libya are lifted, it will be difficult to verify that the declared cease-fire has, in fact, stopped the attacks by Colonel Qaddafi&#8217;s forces.</p>
+<p class="story-body-text" itemprop="articleBody">At the very end of his statement to foreign journalists in Tripoli, the Libyan capital, on Friday, Moussa Koussa, the former Libyan intelligence chief who is now Colonel Qaddafi&#8217;s foreign minister, said: &#8220;we insist on our request for all international governments, N.G.O.s and others to check the facts on the ground by sending fact-finding missions to Libya, so they can take the right position based on the general facts.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">On Thursday, the Libyan government acknowledged that it had <a href="//www.nytimes.com/2011/03/19/world/africa/19journalists.html">detained four New York Times reporters</a> who went missing earlier this week, and said that they will be released. </p>
+<p class="story-body-text" itemprop="articleBody">Seif al-Islam el-Qaddafi, the Libyan leader&#8217;s son, suggested in <a href="//abcnews.go.com/Nightline/libya-war-christiane-amanpour-saif-gadhafi-interview-transcript/story?id=13162838&#038;page=2">an interview</a> with Christiane Amanpour of ABC News on Thursday that the journalists had been arrested for entering the rebel-controlled eastern region of Libya without visas.</p>
+<p class="story-body-text" itemprop="articleBody">Foreign journalists in Tripoli whose entry to Libya was approved by Colonel Qaddafi&#8217;s government have had severe restrictions placed on their work, as <a href="//www.nytimes.com/2011/03/17/world/africa/17tripoli.html">David Kirkpatrick explained</a> in detail in Thursday&#8217;s New York Times.</p>
+</div></div>
+<div class="type-live-update update">
+<div id="complete-text-of-u-n-resolution-on-libya" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#complete-text-of-u-n-resolution-on-libya">9:59 A.M.</a></span> <strong>Complete Text of U.N. Resolution on Libya</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<div class="w480"><object width="480" height="300"><param name="movie" value="https://www.youtube.com/watch?v=q1TUxCCr0p4?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/watch?v=q1TUxCCr0p4?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="300"></embed></object><span class="caption">An Associated Press report on the response in Libya to the new U.N. resolution authorizing the use of force against Col. Muammar el-Qaddafi&#8217;s forces on Thursday night.</span></div>
+<p class="story-body-text" itemprop="articleBody">Shortly after it was approved on Thursday night, <a href="//www.un.org/News/Press/docs/2011/sc10200.doc.htm#Resolution">the complete text of United Nations Security Council resolution 1973</a>, authorizing military action to protect Libya&#8217;s civilians from the forces of Col. Muammar el-Qaddafi, was posted on a U.N. Web site.</p>
+<p class="story-body-text" itemprop="articleBody">Here is the full text of two of the most important provisions of the resolution:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+<strong>Protection of civilians</strong></p>
+<p class="story-body-text" itemprop="articleBody">4. Authorizes Member States that have notified the Secretary-General, acting nationally or through regional organizations or arrangements, and acting in cooperation with the Secretary-General, to take all necessary measures, notwithstanding paragraph 9 of resolution 1970 (2011), to protect civilians and civilian populated areas under threat of attack in the Libyan Arab Jamahiriya, including Benghazi, while excluding a foreign occupation force of any form on any part of Libyan territory, and requests the Member States concerned to inform the Secretary-General immediately of the measures they take pursuant to the authorization conferred by this paragraph which shall be immediately reported to the Security Council;</p>
+<p class="story-body-text" itemprop="articleBody">5. Recognizes the important role of the League of Arab States in matters relating to the maintenance of international peace and security in the region, and bearing in mind Chapter VIII of the Charter of the United Nations, requests the Member States of the League of Arab States to cooperate with other Member States in the implementation of paragraph 4;</p>
+<p class="story-body-text" itemprop="articleBody"><strong>No-fly zone</strong></p>
+<p class="story-body-text" itemprop="articleBody">6. Decides to establish a ban on all flights in the airspace of the Libyan Arab Jamahiriya in order to help protect civilians;</p>
+<p class="story-body-text" itemprop="articleBody">7. Decides further that the ban imposed by paragraph 6 shall not apply to flights whose sole purpose is humanitarian, such as delivering or facilitating the delivery of assistance, including medical supplies, food, humanitarian workers and related assistance, or evacuating foreign nationals from the Libyan Arab Jamahiriya, nor shall it apply to flights authorized by paragraphs 4 or 8, nor other flights which are deemed necessary by States acting under the authorization conferred in paragraph 8 to be for the benefit of the Libyan people, and that these flights shall be coordinated with any mechanism established under paragraph 8;</p>
+<p class="story-body-text" itemprop="articleBody">8. Authorizes Member States that have notified the Secretary-General and the Secretary-General of the League of Arab States, acting nationally or through regional organizations or arrangements, to take all necessary measures to enforce compliance with the ban on flights imposed by paragraph 6 above, as necessary, and requests the States concerned in cooperation with the League of Arab States to coordinate closely with the Secretary General on the measures they are taking to implement this ban, including by establishing an appropriate mechanism for implementing the provisions of paragraphs 6 and 7 above,</p>
+<p class="story-body-text" itemprop="articleBody">9. Calls upon all Member States, acting nationally or through regional organizations or arrangements, to provide assistance, including any necessary overflight approvals, for the purposes of implementing paragraphs 4, 6, 7 and 8 above;</p>
+<p class="story-body-text" itemprop="articleBody">10. Requests the Member States concerned to coordinate closely with each other and the Secretary-General on the measures they are taking to implement paragraphs 4, 6, 7 and 8 above, including practical measures for the monitoring and approval of authorized humanitarian or evacuation flights;</p>
+<p class="story-body-text" itemprop="articleBody">11. Decides that the Member States concerned shall inform the Secretary-General and the Secretary-General of the League of Arab States immediately of measures taken in exercise of the authority conferred by paragraph 8 above, including to supply a concept of operations;</p>
+<p class="story-body-text" itemprop="articleBody">12. Requests the Secretary-General to inform the Council immediately of any actions taken by the Member States concerned in exercise of the authority conferred by paragraph 8 above and to report to the Council within 7 days and every month thereafter on the implementation of this resolution, including information on any violations of the flight ban imposed by paragraph 6 above;</p>
+</blockquote>
+</div></div>
+<div class="type-live-update update">
+<div id="video-of-camerons-remarks-on-military-preparations" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#video-of-camerons-remarks-on-military-preparations">9:39 A.M.</a></span> <strong>Video of Cameron&#8217;s Remarks on Military Preparations</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Here is video of Britain&#8217;s Prime Minister David Cameron&#8217;s remarks to the House of Commons in London on Friday, outlining British preparations for military action against Col. Muammar el-Qaddafi&#8217;s forces, shortly before Libya&#8217;s foreign minister declared a cease-fire.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Cameron said that Britain was taking necessary measure to prepare to use force &#8220;to enforce a no-fly zone and to protect civilians and civilian-populated areas, including Benghazi.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><object id="flashObj" width="480" height="300" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="//download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="//c.brightcove.com/services/viewer/federated_f9?isVid=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=835788335001&#038;playerID=69900095001&#038;playerKey=AQ~~,AAAAAEabvr4~,Wtd2HT-p_VhJQ6tgdykx3j23oh1YN-2U&#038;domain=embed&#038;dynamicStreaming=true" /><param name="base" value="//admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="//c.brightcove.com/services/viewer/federated_f9?isVid=1" bgcolor="#FFFFFF" flashVars="videoId=835788335001&#038;playerID=69900095001&#038;playerKey=AQ~~,AAAAAEabvr4~,Wtd2HT-p_VhJQ6tgdykx3j23oh1YN-2U&#038;domain=embed&#038;dynamicStreaming=true" base="//admin.brightcove.com" name="flashObj" width="480" height="300" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" swLiveConnect="true" allowScriptAccess="always" pluginspage="//www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object></p>
+</div></div>
+<div class="type-live-update update">
+<div id="more-on-libyan-foreign-ministers-remarks" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#more-on-libyan-foreign-ministers-remarks">9:19 A.M.</a></span> <strong>More on Libyan Foreign Minister&#8217;s Remarks</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody"><object type='application/x-shockwave-flash' data='//www.reuters.com/resources_v2/flash/video_embed.swf?videoId=197002425' id='rcomVideo_197002425' width='460' height='259'><param name='movie' value='//www.reuters.com/resources_v2/flash/video_embed.swf?videoId=197002425'></param><param name='allowFullScreen' value='true'></param><param name='allowScriptAccess' value='always'></param><param name='wmode' value='transparent'><embed src='//www.reuters.com/resources_v2/flash/video_embed.swf?videoId=197002425' type='application/x-shockwave-flash' allowfullscreen='true' allowScriptAccess='always' width='460' height='259' wmode='transparent'></embed></object></p>
+<p class="story-body-text" itemprop="articleBody">Here is more on what Moussa Koussa, the former Libyan intelligence chief who is now Col. Muammar el-Qaddafi&#8217;s foreign minister, said about the United Nations resolution authorizing the use of force to protect Libyan civilians from their own government a few minutes ago.</p>
+<p class="story-body-text" itemprop="articleBody">Speaking in Arabic, Mr. Koussa read a statement that was translated into English for reporters in Tripoli, the Libyan capital, by Musa Ibrahim, a spokesman for the Qaddafi government who stood next to him.</p>
+<p class="story-body-text" itemprop="articleBody">He began:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+You all know that the Security Council has issued a resolution last night.</p>
+<p class="story-body-text" itemprop="articleBody">[Libya] having got knowledge of this resolution, wants to explain the following: My country will do its best to deal positively with this resolution&#8230;. [In accordance with] article 25 of the U.N. charter and taking into consideration that Libya is a full member of the U.N. we accept that it is obliged to accept the U.N. Security Council resolution.</p>
+<p class="story-body-text" itemprop="articleBody">Therefore, Libya has decided an immediate cease-fire and the stoppage of all military operations.</p>
+<p class="story-body-text" itemprop="articleBody">[Libya] takes great interest in protecting all civilians and offering them all necessary humanitarian aid, and respecting all human rights and obliging to the international and humanitarian laws, and it is also obliged to protect all of the foreigners in Libya and protecting their assets.
+</p>
+</blockquote>
+<p class="story-body-text" itemprop="articleBody">Speaking of the text of the resolution passed by the Security Council on Thursday night, Mr. Koussa added:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+We emphasize and agree to the article regarding the protection of civilians and the territorial unity of Libya. And therefore, building on this, the Libyan state encourages the opening of all dialogue channels with everyone interested in the territory of Libya.</p>
+<p class="story-body-text" itemprop="articleBody">My country is very serious about continuing the development &#8212; economic, political, humanitarian and social development &#8212; of the Libyan nation. And we have indeed taken serious steps in continuing this development for the Libyan people. And we believe that this will take the country back to safety and security for all Libyans.</p>
+<p class="story-body-text" itemprop="articleBody">We also express our sadness towards what the resolution has included: of procedures against the Libyan nation, such as the no-fly zone, which includes commercial and civilian flights, which will increase the suffering of the Libyan nation and the Libyan people and will have a negative impact on the general life of the Libyan people.</p>
+<p class="story-body-text" itemprop="articleBody">The international community should have exempted civilians from the resolution, to secure their quality of life. Also the total and inclusive freezing of all Libyan assets and investments will have a very negative impact on normal Libyans and will also negatively impact the ability of Libya to fulfill its contracts locally and internationally.</p>
+<p class="story-body-text" itemprop="articleBody">Libya also finds that its very strange and unreasonable that the Security Council allows in its resolution the use of military power and there are signs that this might indeed take place.</p>
+<p class="story-body-text" itemprop="articleBody">This goes clearly against the U.N. charter and it&#8217;s a violation of the national sovereignty of Libya&#8230;.</p>
+<p class="story-body-text" itemprop="articleBody">Finally, we insist on our request for all international governments, N.G.O.s and others to check the facts on the ground by sending fact-finding missions to Libya, so they can take the right position based on the general facts.
+</p>
+</blockquote>
+</div></div>
+<div class="type-live-update update">
+<div id="libya-announces-cease-fire-in-response-to-resolution" class="updated-entry">
+<h5 class="updated-marker highlight"><span class="time"><a href="#libya-announces-cease-fire-in-response-to-resolution">8:48 A.M.</a></span> <strong>Libya Announces Cease-Fire in Response to Resolution</strong></h5>
+</p></div>
+<div class="updated-entry-content">
+<p class="story-body-text" itemprop="articleBody">Speaking at a news conference in Triploli, the Libyan capital, minutes ago, Moussa Koussa, the Libyan foreign minister announced an immediate cease-fire in response to the United Nations resolution passed hours earlier authorizing the use of force to protect Libyan civilians.</p>
+<p class="story-body-text" itemprop="articleBody">As my colleagues <a href="//www.nytimes.com/2011/03/19/world/africa/19libya.html">Alan Cowell, Dan Bilefsky and Mark Landler reported</a>, just hours after a resolution authorizing the use of force by the international community was adopted by the U.N. Security Council on Thursday night in New York, &#8220;French and British officials said on Friday that military action would start soon. News reports said warplanes from the two countries would spearhead the attack.&#8221;</p>
+</div></div>
+</div>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//thelede.blogs.nytimes.com/2011/03/18/latest-updates-on-libya-and-arab-uprisings/" data-title="March 18 Updates on Libya and Arab Uprisings" data-description="On Friday, The Lede is following the uprising in Libya and protest movements across North Africa and the Middle East.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thelede.blogs.nytimes.com/2011/03/17/latest-updates-on-japans-nuclear-crisis-and-earthquake-aftermath-4/" title="March 17 Updates on Japan&#039;s Nuclear Crisis and Earthquake Aftermath">
+				March 17 Updates on Japan&#8217;s Nuclear Crisis and Earthquake Aftermath			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//thelede.blogs.nytimes.com/2011/03/19/full-text-and-audio-of-obamas-statement-on-military-action-in-libya/" title="Full Text and Audio of Obama&#039;s Statement on Military Action in Libya">
+				Full Text and Audio of Obama&#8217;s Statement on Military Action in Libya			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">The Lede is a blog that remixes national and international news stories -- adding information gleaned from the Web or gathered through original reporting -- to supplement articles in The New York Times and draw readers in to the global conversation about the news taking place online.</p>
+<p>Readers are encouraged to take part in the blogging by using the comments threads to suggest links to relevant material elsewhere on the Web or by submitting eyewitness accounts, photographs or video of news events. <a href="//thelede.blogs.nytimes.com/about-the-lede/">Read more.</a></p>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//thelede.blogs.nytimes.com/2014/07/'> July 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/05/'> May 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/04/'> April 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/03/'> March 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/02/'> February 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2014/01/'> January 2014 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/12/'> December 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/11/'> November 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/10/'> October 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/09/'> September 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/08/'> August 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//thelede.blogs.nytimes.com/2013/04/'> April 2013 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/07/14/the-lede-is-going-dark/" title="Read: The Lede Is Going Dark">The Lede Is Going Dark</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/07/14/the-lede-is-going-dark/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Lede will no longer be updated, but the blog&#8217;s regular features will remain a part of The New York Times news report. <a href="//thelede.blogs.nytimes.com/2014/07/14/the-lede-is-going-dark/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/22/family-of-detained-egyptian-journalist-say-leaked-images-of-him-were-staged/" title="Read: Family of Detained Egyptian Journalist Says Leaked Images of Him Were Staged">Family of Detained Egyptian Journalist Says Leaked Images of Him Were Staged</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/22/family-of-detained-egyptian-journalist-say-leaked-images-of-him-were-staged/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The family of an Egyptian journalist detained for nine months without charge expressed outrage that images of him were leaked to a Facebook page run by Interior Ministry sympathizers.<a href="//thelede.blogs.nytimes.com/2014/05/22/family-of-detained-egyptian-journalist-say-leaked-images-of-him-were-staged/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/21/iranians-detained-for-happy-video-released-on-bail/" title="Read: Iranians Detained for &#8216;Happy&#8217; Video Are Released on Bail">Iranians Detained for &#8216;Happy&#8217; Video Are Released on Bail</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/21/iranians-detained-for-happy-video-released-on-bail/"></a>
+				</span>			</h5>
+			<p class="summary">
+			One of the stars of &#8220;Happy in Tehran,&#8221; an exuberant music video that offended the sensibilities of Iran&#8217;s conservative judiciary, reported on Instagram Wednesday that she was free.<a href="//thelede.blogs.nytimes.com/2014/05/21/iranians-detained-for-happy-video-released-on-bail/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/"><img src="https://static01.nyt.com/images/2014/05/20/world/middleeast/20lede_happy/20lede_happy-thumbStandard.png" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/" title="Read: Young Iranians Arrested for Being Too &#8216;Happy in Tehran&#8217;">Young Iranians Arrested for Being Too &#8216;Happy in Tehran&#8217;</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Six young Iranians were arrested and forced to repent on state television Tuesday for the grievous offense of proclaiming themselves to be &#8220;Happy in Tehran,&#8221; in a homemade music video they posted on YouTube.<a href="//thelede.blogs.nytimes.com/2014/05/20/young-iranians-arrested-for-being-happy-in-tehran/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//thelede.blogs.nytimes.com/2014/05/19/video-shows-killing-of-palestinians-on-nakba-day/" title="Read: Video Shows Killing of Palestinians on &#8216;Nakba Day&#8217;">Video Shows Killing of Palestinians on &#8216;Nakba Day&#8217;</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//thelede.blogs.nytimes.com/2014/05/19/video-shows-killing-of-palestinians-on-nakba-day/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Security-camera footage obtained by a rights group appears to show the fatal shooting of two young Palestinians during a demonstration in Beitunia, in the Israeli-occupied West Bank.<a href="//thelede.blogs.nytimes.com/2014/05/19/video-shows-killing-of-palestinians-on-nakba-day/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    <div id="blogroll-3" class="module nocontent widget_blogroll"><h4 class="moduleHeader">Blogroll</h4>		<div class="entry blogroll">
+						<h6 class="kicker">Analysis, Features and Documentaries</h6>
+						<ul class="refer odd">
+						<li><a href="//news.bbc.co.uk/panorama/hi/default.stm">BBC Panorama</a></li>
+						<li><a href="//news.bbc.co.uk/today/hi/default.stm">BBC Radio 4</a></li>
+						<li><a href="//www.boston.com/bigpicture/">Big Picture</a></li>
+						<li><a href="//www.pbs.org/wgbh/pages/frontline/">Frontline</a></li>
+						<li><a href="//www.bbc.co.uk/haveigotnewsforyou/seenit/borisvsken.shtml">Have I Got News For You</a></li>
+						<li><a href="//iwpr.net/programme/iran">Institute for War &amp; Peace Reporting/ Iran</a></li>
+						<li><a href="//iranprimer.usip.org/blog">Iran Primer</a></li>
+						<li><a href="//www.miller-mccune.com/">Miller-McCune</a></li>
+						<li><a href="//news.bbc.co.uk/2/hi/programmes/newsnight/default.stm">Newsnight</a></li>
+			</ul><ul class="refer even">			<li><a href="//www.pbs.org/newshour/home.html">PBS NewsHour</a></li>
+						<li><a href="//roomfordebate.blogs.nytimes.com/">Room for Debate</a></li>
+						<li><a href="//www.slate.com/">Slate</a></li>
+						<li><a href="//www.publicintegrity.org/">The Center for Public Integrity</a></li>
+						<li><a href="//www.thedailyshow.com/">The Daily Show</a></li>
+						<li><a href="//www.newyorker.com/">The New Yorker</a></li>
+						<li><a href="//pulitzercenter.org/untold-stories">Untold Stories</a></li>
+						<li><a href="//www.vanityfair.com/">Vanity Fair</a></li>
+						</ul>
+		</div>
+				<div class="entry blogroll">
+						<h6 class="kicker">Blogs</h6>
+						<ul class="refer odd">
+						<li><a href="//www.bbc.co.uk/blogs/adamcurtis/">Adam Curtis</a></li>
+						<li><a href="//arabist.net/">Arabist</a></li>
+						<li><a href="//atwar.blogs.nytimes.com/">At War</a></li>
+						<li><a href="//chinadigitaltimes.net/">China Digital Times</a></li>
+						<li><a href="//cityroom.blogs.nytimes.com/">City Room</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/closeread/">Close Read</a></li>
+						<li><a href="//coteret.com/">Coteret</a></li>
+						<li><a href="//cuminet.blogs.ku.dk/">Cuminet</a></li>
+						<li><a href="//www.damascusdiaries.com/">Damascus Diaries</a></li>
+						<li><a href="//blog.wired.com/defense/">Danger Room</a></li>
+						<li><a href="//dotearth.blogs.nytimes.com/">Dot Earth</a></li>
+						<li><a href="//www.enduringamerica.com/">EA WorldView</a></li>
+						<li><a href="//news.feetintwoworlds.org/">Feet in Two Worlds</a></li>
+						<li><a href="//firstroundbye.blogspot.com/">First Round Bye</a></li>
+						<li><a href="//blog.foreignpolicy.com/">Foreign Policy: Passport</a></li>
+						<li><a href="//garysick.tumblr.com/">Gary Sick</a></li>
+						<li><a href="//globalvoicesonline.org/">Global Voices</a></li>
+						<li><a href="//heresycorner.blogspot.com/">Heresy Corner</a></li>
+						<li><a href="//iranianvoicesintranslation.blogspot.com/">Iranian Progressives in Translation</a></li>
+						<li><a href="//jarretbrachman.net/">Jarret Brachman</a></li>
+						<li><a href="//jonathanturley.org/">Jonathan Turley</a></li>
+						<li><a href="//kottke.org/">Kottke</a></li>
+			</ul><ul class="refer even">			<li><a href="//languagelog.ldc.upenn.edu/nll/">Language Log</a></li>
+						<li><a href="//bigbrowser.blog.lemonde.fr/">Le Monde&#39;s News Blog</a></li>
+						<li><a href="//lens.blogs.nytimes.com/">Lens</a></li>
+						<li><a href="//www.murketing.com/journal/">Murketing</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/newsdesk/?xrail">New Yorker's News Desk</a></li>
+						<li><a href="//www.nowlebanon.com/Default.aspx">Now Lebanon</a></li>
+						<li><a href="//blogs.nybooks.com/">NYRB Blog</a></li>
+						<li><a href="//community.livejournal.com/nytimesinmoscow/">NYT: Moscow</a></li>
+						<li><a href="//www.propublica.org/ion/blog">Pro Publica Blog</a></li>
+						<li><a href="//robinwrightblog.blogspot.com/">Robin Wright</a></li>
+						<li><a href="//saudijeans.org/">Saudi Jeans</a></li>
+						<li><a href="//smallwarsjournal.com/blog/">Small Wars Journal</a></li>
+						<li><a href="//strangemaps.wordpress.com/">Strange Maps</a></li>
+						<li><a href="//www.talkingpointsmemo.com/">Talking Points Memo</a></li>
+						<li><a href="//thecaucus.blogs.nytimes.com/">The Caucus</a></li>
+						<li><a href="//www.npr.org/blogs/thetwo-way/">The Two-Way</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/stevecoll/">Think Tank</a></li>
+						<li><a href="//www.wired.com/threatlevel/">Threat Level</a></li>
+						<li><a href="//transitionland.wordpress.com/">Transitionland</a></li>
+						<li><a href="//www.vanityfair.com/online/daily">Vanity Fair Daily</a></li>
+						<li><a href="//www.salon.com/news/politics/war_room/index.html">War Room</a></li>
+						</ul>
+		</div>
+				<div class="entry blogroll">
+						<h6 class="kicker">News Sites </h6>
+						<ul class="refer odd">
+						<li><a href="//english.alarabiya.net/">Al Arabiya</a></li>
+						<li><a href="//english.aljazeera.net/">Al Jazeera (English)</a></li>
+						<li><a href="//www.ansa.it/site/notizie/awnplus/english/english.html">ANSA (English)</a></li>
+						<li><a href="//www.arabnews.com/">Arab News</a></li>
+						<li><a href="//www.asharq-e.com/default.asp">Asharq Al-Awsat</a></li>
+						<li><a href="//www.asianage.com/">Asian Age</a></li>
+						<li><a href="//news.bbc.co.uk/">BBC News</a></li>
+						<li><a href="//www.bbc.co.uk/worldservice/">BBC World Service</a></li>
+						<li><a href="//www.cbc.ca/news/">CBC</a></li>
+						<li><a href="//www.channel4.com/news/">Channel 4 News</a></li>
+						<li><a href="//www.clarin.com/">Clarín</a></li>
+						<li><a href="//www.cnn.com/">CNN</a></li>
+						<li><a href="//www.corriere.it/">Corriere della Sera</a></li>
+						<li><a href="//www.corriere.it/english/">Corriere Della Sera (English)</a></li>
+						<li><a href="//www.dailystar.com.lb/">Daily Star, Lebanon</a></li>
+						<li><a href="//www.dawn.com/wps/wcm/connect/Dawn%20Content%20Library/dawn/news/home/">Dawn</a></li>
+						<li><a href="//www.almasryalyoum.com/en">Egypt Independent</a></li>
+						<li><a href="//www.elmundo.es/">El Mundo</a></li>
+						<li><a href="//www.elpais.com/global/">El País</a></li>
+						<li><a href="//tribune.com.pk/">Express Tribune</a></li>
+						<li><a href="//www.ft.com/home/us">Financial Times</a></li>
+						<li><a href="//g1.globo.com/">Globo.com</a></li>
+						<li><a href="//news.google.com/">Google News</a></li>
+						<li><a href="//www.guardian.co.uk/">Guardian.co.uk</a></li>
+						<li><a href="//www.haaretz.com/">Haaretz</a></li>
+						<li><a href="//ibnlive.in.com/">IBNLive.com</a></li>
+						<li><a href="//www.irishtimes.com/">Irish Times</a></li>
+						<li><a href="//www.lanacion.com.ar/index.asp">Lanacion.com</a></li>
+						<li><a href="//www.latimes.com/">LATimes.com</a></li>
+						<li><a href="//www.lemonde.fr/">Le Monde</a></li>
+						<li><a href="//www.mcclatchydc.com">McClatchy</a></li>
+			</ul><ul class="refer even">			<li><a href="//www.msnbc.msn.com/">MSNBC</a></li>
+						<li><a href="//www.ndtv.com/convergence/ndtv/default.aspx">NDTV</a></li>
+						<li><a href="//www.npr.org/">NPR</a></li>
+						<li><a href="//oglobo.globo.com/">O Globo</a></li>
+						<li><a href="//www.propublica.org/">ProPublica</a></li>
+						<li><a href="//www.publicola.net/">PubliCola</a></li>
+						<li><a href="//www.rayogram.com/news">Rayogram/News</a></li>
+						<li><a href="//www.reuters.com/">Reuters</a></li>
+						<li><a href="//www.rue89.com/">Rue89</a></li>
+						<li><a href="//www.russiatoday.com/en">Russia Today</a></li>
+						<li><a href="//www.soitu.es/">Soitu</a></li>
+						<li><a href="//www.spiegel.de/international/">Spiegel (English)</a></li>
+						<li><a href="//www.smh.com.au/">Sydney Morning Herald</a></li>
+						<li><a href="//www.tehelka.com/">Tehelka</a></li>
+						<li><a href="//www.pbs.org/wgbh/pages/frontline/tehranbureau/">Tehran Bureau</a></li>
+						<li><a href="//hosted.ap.org/dynamic/fronts/HOME?SITE=AP&amp;SECTION=HOME">The Associated Press</a></li>
+						<li><a href="//www.theglobeandmail.com/">The Globe and Mail</a></li>
+						<li><a href="//www.thelocal.de/">The Local (Berlin)</a></li>
+						<li><a href="//www.mg.co.za/">The Mail and Guardian</a></li>
+						<li><a href="//www.thenational.ae/">The National</a></li>
+						<li><a href="//nytimes.com/">The New York Times</a></li>
+						<li><a href="//www.thenews.com.pk/index.html">The News (Pakistan)</a></li>
+						<li><a href="//seattletimes.nwsource.com/html/home/index.html">The Seattle Times</a></li>
+						<li><a href="//www.telegraph.co.uk/">The Telegraph</a></li>
+						<li><a href="//www.wsj.com">The Wall Street Journal</a></li>
+						<li><a href="//www.nytimes.com/pages/aponline/news/index.html">The Wires: A.P.</a></li>
+						<li><a href="//www.nytimes.com/pages/reuters/index.html">The Wires: Reuters</a></li>
+						<li><a href="//www.todayszaman.com/mainAction.action">Today&#039;s Zaman</a></li>
+						<li><a href="//www.voiceofsandiego.org/">Voice of San Diego</a></li>
+						<li><a href="//www.washingtonpost.com">Washingtonpost.com</a></li>
+						<li><a href="//www.heute.de/ZDFheute/inhalt/20/0,3672,20,00.html">ZDF</a></li>
+						</ul>
+		</div>
+				<div class="entry blogroll">
+						<h6 class="kicker">News Video</h6>
+						<ul class="refer odd">
+						<li><a href="//www.youtube.com/user/AlJazeeraEnglish#grid/uploads">Al Jazeera Video</a></li>
+						<li><a href="//www.youtube.com/user/AssociatedPress">AP Video</a></li>
+						<li><a href="//news.bbc.co.uk/2/hi/video_and_audio/default.stm">BBC News Video</a></li>
+						<li><a href="//news.bbc.co.uk/2/hi/video_and_audio/news_summary/8070822.stm">BBC One Minute World News</a></li>
+						<li><a href="//www.youtube.com/channel4news#g/u">Channel 4 News Video</a></li>
+						<li><a href="//www.cineinstitute.com/news/recovery-and-reportage">Cine Institute</a></li>
+						<li><a href="//www.citizentube.com/">CitizenTube</a></li>
+						<li><a href="//www.youtube.com/user/nocommenttv#g/u">Euronews/nocomment</a></li>
+			</ul><ul class="refer even">			<li><a href="//www.youtube.com/user/TheGuardian#g/u">Guardian Video</a></li>
+						<li><a href="//www.youtube.com/user/itnnews#play/all">ITN Video</a></li>
+						<li><a href="//mag.ma/">Magma</a></li>
+						<li><a href="//video.nytimes.com/">NYT.com Video</a></li>
+						<li><a href="//www.britishpathe.com/">Pathe Newsreel Archive</a></li>
+						<li><a href="//www.youtube.com/user/ReutersVideo">Reuters Video</a></li>
+						<li><a href="//www.youtube.com/user/skynews#g/u">Sky News</a></li>
+						<li><a href="//www.youtube.com/user/telegraphtv#g/u">Telegraph TV</a></li>
+						</ul>
+		</div>
+		</div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/thelede" title="Follow @thelede on twitter">@thelede</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/thelede" title="Follow thelede on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/thelede" title="Follow @thelede on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-21',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":84,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-kristof section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-kristof section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-kristof section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-kristof section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/kristof/Are as Many Civilians Dying in South Sudan as in Syria? ( 20160311 )" />
+<meta name="communityAssetURL" content="//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta name="author" content="Nicholas Kristof" />
+<meta name="CLMST" content="Nicholas Kristof" />
+<meta name="byl" content="Nicholas Kristof" />
+<meta name="article:author" content="//www.nytimes.com/column/nicholas-kristof" /><meta name="GBLC" content="food">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1457744418" />
+<meta name="PUD" content="20160311" />
+<meta name="pdate" content="20160311" />
+<meta name="ptime" content="20160311200018" />
+<meta name="utime" content="20160312010022" />
+<meta property="article:modified_time" itemprop="dateModified" content="2016-03-12T01:00:22-05:00" />
+<meta name="DISPLAYDATE" content="March 11, 2016" />
+<meta name="dat" content="March 11, 2016" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="kristof" />
+<meta name="BN" content="kristof" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Kristof, Nicholas D">
+<meta name="des" content="Civilian Casualties">
+<meta name="geo" content="South Sudan">
+<meta property="article:tag" content="Kristof Nicholas D" />
+<meta property="article:tag" content="Civilian Casualties" />
+<meta property="article:tag" content="South Sudan" />
+<meta property="article:tag" content="food" />
+<meta name="keywords" content="Kristof Nicholas D,Civilian Casualties,South Sudan,food" />
+<meta name="description" content="Uncounted thousands are dying from South Sudan&#8217;s civil war, not so much from bullets as from malnutrition and disease, and the conflict isn&#8217;t getting the attention it merits." />
+<meta name="hdl" content="Are as Many Civilians Dying in South Sudan as in Syria?" />
+<meta property="og:title" content="Are as Many Civilians Dying in South Sudan as in Syria?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/" />
+<meta property="og:site_name" content="On the Ground" />
+<meta property="og:description" content="Uncounted thousands are dying from South Sudan&#8217;s civil war, not so much from bullets as from malnutrition and disease, and the conflict isn&#8217;t getting the attention it merits." />
+<meta property="og:image" content="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Are as Many Civilians Dying in South Sudan as in Syria?" />
+<meta name="twitter:url" content="//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/" />
+<meta name="twitter:description" content="Uncounted thousands are dying from South Sudan&#8217;s civil war, not so much from bullets as from malnutrition and disease, and the conflict isn&#8217;t getting the attention it merits." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@NickKristof">
+<link rel='prev' title='Clinton and Sanders Joust in Democratic Debate' href='//kristof.blogs.nytimes.com/2016/03/09/clinton-and-sanders-joust-in-democratic-debate/' />
+<link rel='next' title='What It&#8217;s Like to Work for Nicholas Kristof' href='//kristof.blogs.nytimes.com/2016/03/24/what-its-like-to-work-for-nicholas-kristof/' />
+<link rel='canonical' href='//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/' />
+<link rel='shortlink' href='//nyti.ms/1RdfAiP' />
+<link rel='https://github.com/WP-API/WP-API' href='//kristof.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/kristof/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//kristof.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/kristof/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/" />
+<meta name="dfp-ad-unit-path" content="opinion/kristof" />			<title>Are as Many Civilians Dying in South Sudan as in Syria? - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-13682 blog-universal nyt-blog-kristof" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//kristof.blogs.nytimes.com">
+                Nicholas Kristof            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Are as Many Civilians Dying in South Sudan as in Syria?        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/"
+	 data-title="Are as Many Civilians Dying in South Sudan as in Syria?"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Uncounted thousands are dying from South Sudan&#039;s civil war, not so much from bullets as from malnutrition and disease, and the conflict isn&#039;t getting the attention it merits. &lt;/span&gt;&lt;a href=&quot;//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="March 11, 2016 8:00 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="kristof" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<div id="logo" ><a href="//kristof.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to Nicholas Kristof Home"><img src="https://static01.nyt.com/images/blogs_v5/kristof/kristof_post.png" alt="Nicholas Kristof - A New York Times Blog"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//kristof.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Nicholas Kristof">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-13682 post type-post status-publish hentry category-food tag-civilian-casualties tag-kristof-nicholas-d tag-south-sudan per-kristof-nicholas-d des-civilian-casualties geo-south-sudan" id="post-13682">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Are as Many Civilians Dying in South Sudan as in Syria?</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Nicholas Kristof			</address>
+			<!-- date published --><time class="dateline " datetime="2016-03-12T01:00:18+00:00" itemprop="datePublished">March 11, 2016 8:00 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">March 11, 2016 8:00 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/" data-title="Are as Many Civilians Dying in South Sudan as in Syria?" data-description="Uncounted thousands are dying from South Sudan&#039;s civil war, not so much from bullets as from malnutrition and disease, and the conflict isn&#039;t getting the attention it merits. ">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog/04kristof_blog-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog/04kristof_blog-blog480.jpg" src="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog/04kristof_blog-blog480.jpg" id="100000004250036" width="480" height="385" alt="A woman collapsed from hunger in the streets of Aweil, South Sudan."   /><meta itemprop="height" content="385"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">A woman collapsed from hunger in the streets of Aweil, South Sudan.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Nicholas Kristof/The New York Times</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">The answer is we don’t know, because the data aren’t reliable, especially for South Sudan. But as I write in my column, it’s possible — and that’s staggering considering how little attention South Sudan has received. The Tyndall Report says that television network evening news programs provided zero coverage of South Sudan’s civil war in 2015.</p>
+<p class="story-body-text" itemprop="articleBody">So here are the (dubious) numbers. The Syrian Observatory for Human Rights estimates that <a href="//www.syriahr.com/en/?p=41912">13,249 civilians were killed in Syria in fighting in 2015</a> (many more combatants were killed, on both government and rebel sides). In South Sudan, we don’t have solid figures, but a U.N. official <a href="//www.aljazeera.com/news/2016/03/tens-thousands-killed-south-sudan-war-160303054110110.html">has estimated 50,000 deaths</a> total over a bit more than two years, and another has said simply “tens of thousands.” Sue Lautze, the deputy humanitarian coordinator for the U.N. in South Sudan, told me that she has been unable to derive an accurate death count but that if pressed, she believes the 50,000 estimate &#8220;may well be an underestimation.&#8221; Likewise, Jehanne Henry of Human Rights Watch, who has spent her time bouncing around remote parts of the country, says of the 50,000 estimate: &#8220;I think the figure is probably higher but really don’t have any scientific way to show it. The gap in the death toll information encapsulates how neglected this conflict is — no one is even counting the dead.&#8221; <a href="https://sg.news.yahoo.com/south-sudan-dying-nobody-counting-045835128.html?soc_src=social-sh&amp;soc_trk=tw">AFP has suggested</a> that the total death toll could be as high as 300,000.</p>
+<p class="story-body-text" itemprop="articleBody">One rare data point is a <a href="//reliefweb.int/sites/reliefweb.int/files/resources/160202_Crisis%20impacts%20on%20households%20in%20Unity%20State_SS.pdf">mortality study</a> in just one area of South Sudan, Unity State. It found about 8,000 deaths from violence and drowning (while escaping fighting) over a one-year period in 24 communities representing about one-quarter of the state&#8217;s population. Those include combatant deaths, but in South Sudan the fighters mostly avoid each other and just target civilians, so the great majority in the case of South Sudan are civilian deaths. So remember — that is 8,000 deaths in just one year and just one part of one state, and just from violence.<br />
+<span id="more-13682"></span></p>
+<p class="story-body-text" itemprop="articleBody">The majority of deaths in a war like South Sudan’s come not from fighting but from “excess mortality” caused by war. That means from malnutrition and disease that take more lives because people can’t farm or get medical care in war time. The most lethal conflict since World War II, <a href="//www.rescue.org/news/conflict-congo-deadliest-world-war-ii-says-irc-3730">according to mortality studies</a>, is the one that has sputtered for many years in Eastern Congo, taking millions of lives, and only a tiny share of those were from bullets; the great majority were from disease and malnutrition. The same is true in South Sudan. In normal times, more than 100,000 South Sudanese die each year, including senior citizens dying of old age and babies dying of hunger or disease (about 10 percent of children do not make it to the age of five). It’s also true in Syria that the war causes excess mortality from hunger and disease, but it’s a smaller share: Most of the civilians killed by war in Syria die from bullets or bombs; most in South Sudan die from disease or malnutrition.<br />
+<div class="w480"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-blog480.jpg" src="https://static01.nyt.com/images/2016/03/04/opinion/04kristof_blog2/04kristof_blog2-blog480.jpg" id="100000004250041" width="480" height="334" alt="A malnourished woman at the hospital in Aweil in 2015. She later died."   /><meta itemprop="height" content="334"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">A malnourished woman at the hospital in Aweil in 2015. She later died.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Nicholas Kristof/The New York Times</span></figcaption></figure></div></p>
+<p class="story-body-text" itemprop="articleBody">There’s no doubt the mortality rate increased significantly in South Sudan since the war began in December 2013. More than 2 million South Sudanese are displaced, many cannot plant crops, many don’t get bed nets to fight off malaria, and many no longer have access to medical care. I encountered many families who lost children to mundane causes, and that was true even in areas away from the fighting (like Aweil) where food is now scarce as a result of the civil war. And if the mortality rate increased by 25 percent because of the war, that’s more than another 25,000 civilians dying annually, or 50,000 over two years, as a consequence of the fighting, in addition to those who die from violence.</p>
+<p class="story-body-text" itemprop="articleBody">We don’t know how to weigh these figures properly, and we may never know. But it does seem to me that the South Sudanese toll among civilians in the last year or two may well be as great as in Syria, perhaps greater (although combatant casualties were clearly greater in Syria). The point is not that Syria should get less coverage — on the contrary, Syria should receive more attention for the tragedy unfolding there, and that&#8217;s why I&#8217;ve reported on it — but I wish South Sudan could also get high level humanitarian and diplomatic attention, especially because the United States and other Western countries midwifed this country and bear some responsibility for the tragedy unfolding here. It is a disgrace that at last count, the U.N. humanitarian appeal for South Sudan was only 3 percent funded. As the U.N. human rights chief, Zeid Ra&#8217;ad al-Hussein, <a href="//www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=17207&amp;LangID=E">says,</a> &#8220;This is one of the most horrendous human rights situations in the world . . . yet it has been more or less off the international radar.&#8221;</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//kristof.blogs.nytimes.com/2016/03/11/are-as-many-civilians-dying-in-south-sudan-as-in-syria/" data-title="Are as Many Civilians Dying in South Sudan as in Syria?" data-description="Uncounted thousands are dying from South Sudan&#039;s civil war, not so much from bullets as from malnutrition and disease, and the conflict isn&#039;t getting the attention it merits. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//kristof.blogs.nytimes.com/2016/03/09/clinton-and-sanders-joust-in-democratic-debate/" title="Clinton and Sanders Joust in Democratic Debate">
+				Clinton and Sanders Joust in Democratic Debate			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//kristof.blogs.nytimes.com/2016/03/24/what-its-like-to-work-for-nicholas-kristof/" title="What It&#039;s Like to Work for Nicholas Kristof">
+				What It&#8217;s Like to Work for Nicholas Kristof			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About Nicholas Kristof</h4><div class="entry">
+<p><img class="w190 right" src="https://static01.nyt.com/images/blogs/kristof/posts/Nick_in_field.190.jpg" alt=""/>
+<p class="summary"> This blog expands on Nicholas Kristof’s twice-weekly columns, sharing thoughts that shape the writing but don’t always make it into the 800-word text. It’s also the place where readers make their voices heard.</p>
+<ul class="refer">
+<li><a href="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/nicholasdkristof/index.html" title="Go to the Columnists Page">More About Nicholas Kristof</a></li>
+</ul>
+</div>
+</div>		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//kristof.blogs.nytimes.com/2017/09/'> September 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/07/'> July 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/06/'> June 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/05/'> May 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/04/'> April 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/03/'> March 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/02/'> February 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2017/01/'> January 2017 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/12/'> December 2016 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/11/'> November 2016 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/10/'> October 2016 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/09/'> September 2016 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/08/'> August 2016 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/07/'> July 2016 </option>
+	<option value='//kristof.blogs.nytimes.com/2016/06/'> June 2016 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//kristof.blogs.nytimes.com/2017/09/15/announcing-a-trump-poetry-contest/" title="Read: Announcing a Trump Poetry Contest">Announcing a Trump Poetry Contest</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//kristof.blogs.nytimes.com/2017/09/15/announcing-a-trump-poetry-contest/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Enter my contest for poems about our times and the Trump presidency.<a href="//kristof.blogs.nytimes.com/2017/09/15/announcing-a-trump-poetry-contest/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//kristof.blogs.nytimes.com/2017/07/26/despite-progress-child-marriage-is-still-legal-in-all-50-states/"><img src="https://static01.nyt.com/images/2017/07/26/opinion/26kristof_blog/26kristof_blog-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//kristof.blogs.nytimes.com/2017/07/26/despite-progress-child-marriage-is-still-legal-in-all-50-states/" title="Read: Despite Progress, Child Marriage Is Still Legal in All 50 States">Despite Progress, Child Marriage Is Still Legal in All 50 States</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//kristof.blogs.nytimes.com/2017/07/26/despite-progress-child-marriage-is-still-legal-in-all-50-states/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Several states have moved in recent months to strengthen their laws against child marriage. <a href="//kristof.blogs.nytimes.com/2017/07/26/despite-progress-child-marriage-is-still-legal-in-all-50-states/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//kristof.blogs.nytimes.com/2017/07/25/born-poor-die-poor/"><img src="https://static01.nyt.com/images/2017/07/25/opinion/25kristofblog_fountain/25kristofblog_fountain-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//kristof.blogs.nytimes.com/2017/07/25/born-poor-die-poor/" title="Read: &#8216;Born Poor, Die Poor&#8217;">&#8216;Born Poor, Die Poor&#8217;</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//kristof.blogs.nytimes.com/2017/07/25/born-poor-die-poor/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Nicholas Kristof met Abel when he was a 17-year-old orphan, and the effective head of a household. I caught up with him 7 years later. <a href="//kristof.blogs.nytimes.com/2017/07/25/born-poor-die-poor/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//kristof.blogs.nytimes.com/2017/07/13/for-women-in-prison-tampons-should-be-free/"><img src="https://static01.nyt.com/images/2017/07/13/opinion/13kristof_blog/13kristof_blog-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//kristof.blogs.nytimes.com/2017/07/13/for-women-in-prison-tampons-should-be-free/" title="Read: For Women in Prison, Tampons Should Be Free">For Women in Prison, Tampons Should Be Free</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//kristof.blogs.nytimes.com/2017/07/13/for-women-in-prison-tampons-should-be-free/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The availability of sanitary products isn&#8217;t simply a matter of budget lines and purchasing orders. It has to do with power. <a href="//kristof.blogs.nytimes.com/2017/07/13/for-women-in-prison-tampons-should-be-free/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//kristof.blogs.nytimes.com/2017/07/13/liu-xiaobo-we-miss-you/"><img src="https://static01.nyt.com/images/2017/07/09/opinion/sunday/09Kristof/09Kristof-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//kristof.blogs.nytimes.com/2017/07/13/liu-xiaobo-we-miss-you/" title="Read: Liu Xiaobo, We Miss You">Liu Xiaobo, We Miss You</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//kristof.blogs.nytimes.com/2017/07/13/liu-xiaobo-we-miss-you/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Liu Xiaobo died with dignity and honor, his principles intact. Everybody else, not so much.<a href="//kristof.blogs.nytimes.com/2017/07/13/liu-xiaobo-we-miss-you/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    <div id="nyt_promo_widget-6" class="module nocontent widget_nyt_promo_widget"><div class="entry"><h6 class="kicker">Sunday Magazine</h6><h5><a href="//www.nytimes.com/2010/10/24/magazine/24volunteerism-t.html"><img class="w75 right" src="https://static01.nyt.com/images/2010/10/24/magazine/24volunteerism337/24volunteerism337-thumbStandard.jpg" alt="75 Thumbnail"/></a><a href="//www.nytimes.com/2010/10/24/magazine/24volunteerism-t.html">D.I.Y. Foreign-Aid Revolution
+</a></h5><p class="summary">Why wait for governments or established charities when you can start an NGO in your basement?
+</p>
+<ul class="refer">
+<li><a href="//www.nytimes.com/slideshow/2010/10/24/magazine/nepal-aid.html">Slide Show</a></li>
+</ul>
+</div></div><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div class="subColumn-2">
+<div class="column">
+<div class="entry">
+<h6 class="kicker">Photos</h6>
+<h5><a href="//www.nytimes.com/interactive/2009/08/26/magazine/20090826-a-womens-world-reader-photos.html" title="">A Woman's World</a></h5>
+<p class="summary"><img class="w75 right" src="https://static01.nyt.com/images/2009/08/26/magazine/women_promo.75.jpg" alt="75 Thumbnail"/>Readers submitted photographs to the Magazine that illustrate the empowerment of women.</p>
+<ul class="refer">
+<li class="photo"><a href="//www.nytimes.com/interactive/2009/08/26/magazine/20090826-a-womens-world-reader-photos.html" title="">View the Photos ¬ª</a></li>
+</ul>
+</div>
+</div><!-- end subCol -->
+
+
+<div class="column lastColumn">
+<div class="entry">
+<h6 class="kicker">Audio Slide Show</h6>
+<h5><a href="//www.nytimes.com/interactive/2009/08/20/magazine/kristof-audioss/index.html" title="">A Powerful Truth</a></h5>
+<p class="summary"><img class="w75 right" src="https://static01.nyt.com/images/2009/08/20/magazine/kristof-audioss/19women_promo.75.jpg" alt="75 Thumbnail"/>Nicholas Kristof talked to the Magazine about how educating girls can help fight poverty.</p>
+<ul class="refer">
+<li class="audio"><a href="//www.nytimes.com/interactive/2009/08/20/magazine/kristof-audioss/index.html" title="">Go the Audio Slide Show ¬ª</a></li>
+</ul>
+</div>
+</div><!-- end subCol -->
+</div><!-- end Col2 --></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/NickKristof" title="Follow @NickKristof on twitter">@NickKristof</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NickKristof" title="Follow NickKristof on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/NickKristof" title="Follow @NickKristof on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-47',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":62,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

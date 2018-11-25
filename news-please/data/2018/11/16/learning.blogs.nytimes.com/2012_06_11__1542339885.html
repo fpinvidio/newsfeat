@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000001599417"><meta name="author" content="Katherine Schulten" />
+<meta name="CLMST" content="Katherine Schulten" />
+<meta name="byl" content="Katherine Schulten" />
+<meta name="GBLC" content="Guest Post;Lesson Plans">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1339443131" />
+<meta name="PUD" content="20120611" />
+<meta name="pdate" content="20120611" />
+<meta name="ptime" content="20120611153211" />
+<meta name="utime" content="20120611202507" />
+<meta property="article:modified_time" itemprop="dateModified" content="2012-06-11T20:25:07-04:00" />
+<meta name="DISPLAYDATE" content="June 11, 2012" />
+<meta name="dat" content="June 11, 2012" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Guest Post" />
+<meta property="article:tag" content="Lesson Plans" />
+<meta name="keywords" content="Guest Post,Lesson Plans" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2012%2F06%2F11%2Fguest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest%2F" title="Guest Blog | &#8216;Taking a Dip in the Nonfiction Pool&#8217; With Our Summer Reading Contest" />
+<meta name="description" content="Our summer reading contest begins on Friday and lasts all summer. If you&#8217;re still not convinced you should participate, you should read what this New Jersey high school teacher has to say." />
+<meta name="hdl" content="Guest Blog &#124; &#039;Taking a Dip in the Nonfiction Pool&#039; With Our Summer Reading Contest" />
+<meta property="og:title" content="Guest Blog &#124; &#039;Taking a Dip in the Nonfiction Pool&#039; With Our Summer Reading Contest" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="Our summer reading contest begins on Friday and lasts all summer. If you&#8217;re still not convinced you should participate, you should read what this New Jersey high school teacher has to say." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Guest Blog &#124; &#039;Taking a Dip in the Nonfiction Pool&#039; With Our Summer Reading Contest" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/" />
+<meta name="twitter:description" content="Our summer reading contest begins on Friday and lasts all summer. If you&#8217;re still not convinced you should participate, you should read what this New Jersey high school teacher has to say." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='Prescription Drugs and High Achievers' href='//learning.blogs.nytimes.com/2012/06/11/prescription-drugs-and-high-achievers/' />
+<link rel='next' title='Word of the Day | diatribe' href='//learning.blogs.nytimes.com/2012/06/12/word-of-the-day-diatribe/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/' />
+<link rel='shortlink' href='//nyti.ms/KwZWg9' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Guest Blog &#124; &#039;Taking a Dip in the Nonfiction Pool&#039; With Our Summer Reading Contest - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-111837 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Guest Blog | &#8216;Taking a Dip in the Nonfiction Pool&#8217; With Our Summer Reading Contest        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/"
+	 data-title="Guest Blog | &#8216;Taking a Dip in the Nonfiction Pool&#8217; With Our Summer Reading Contest"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Our summer reading contest begins on Friday and lasts all summer. If you&#039;re still not convinced you should participate, you should read what this New Jersey high school teacher has to say. &lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="June 11, 2012 3:32 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-111837 post type-post status-publish hentry category-guest-post category-lesson-plans tag-summer-2012 tag-summer-reading tag-summer-reading-contest" id="post-111837">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Guest Blog | &#8216;Taking a Dip in the Nonfiction Pool&#8217; With Our Summer Reading Contest</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Katherine Schulten			</address>
+			<!-- date published --><time class="dateline " datetime="2012-06-11T19:32:11+00:00" itemprop="datePublished">June 11, 2012 3:32 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">June 11, 2012 3:32 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w190 right"><img src="https://static01.nyt.com/images/2012/05/25/arts/25SUMMER/25SUMMER-articleInline.jpg" id="100000001565462" width="190" height="367" alt="" /><span class="credit">Illustration by Brianne Farley</span><span class="caption"><a href="//www.nytimes.com/2012/05/25/books/granddad-theres-a-head-on-the-beach-and-other-summer-reads.html">Go to related article »</a> </span></div>
+<p class="story-body-text" itemprop="articleBody">If you were among the thousands who <a href="//learning.blogs.nytimes.com/2012/06/07/blogging-a-day-devoted-to-summerreading/">posted about #summerreading on Twitter last Thursday</a>, thank you again.  <a href="https://www.twitter.com/#!/search/%23summerreading">The hashtag has been going strong</a> ever since, and we expect readers to keep posting thoughts and recommendations all season long. </p>
+<p class="story-body-text" itemprop="articleBody">This week, on Friday, our own <a href="//learning.blogs.nytimes.com/2012/04/27/our-third-annual-summer-reading-contest/">summer reading contest</a> begins. Anyone who is 13-25 years old is invited to enter any week from June 15 through Aug. 17, and every week those who participate have a new chance to win and be published on our blog.</p>
+<p class="story-body-text" itemprop="articleBody">Need more convincing? Read below what Sarah Gross, a high school teacher in New Jersey, has to say.</p>
+<p class="story-body-text" itemprop="articleBody">Ms. Gross, an English teacher at <a href="//www.hths.mcvsd.org/">High Technology High School</a> in Lincroft, N.J., is yet another teacher we got to know on Twitter when we saw that she and her teaching partner, Jonathan Olsen, thought teaching with The Times was &#8220;revolutionizing&#8221; their class.</p>
+<p class="story-body-text" itemprop="articleBody">Ms. Gross blogs at <a href="//thereadingzone.wordpress.com/">The Reading Zone</a> and when we saw what she <a href="//thereadingzone.wordpress.com/2012/06/07/taking-a-dip-in-the-nonfiction-pool/">posted</a> last week, we asked if we could reprint it in its entirety. Because there&#8217;s no way we could have said it better ourselves.</p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-111837"></span></p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><strong>Taking a Dip in the Nonfiction Pool….#SummerReading</strong><br />
+By Sarah Gross</p>
+<p class="story-body-text" itemprop="articleBody">In January, my history co-teacher brought up the idea of incorporating The New York Times into our daily routine with the freshman class.  </p>
+<p class="story-body-text" itemprop="articleBody">We wrote a grant proposal for our Parent-Teacher Association and it was approved, with our subscription beginning in February.  Today, we receive 16 copies of the paper daily and it has revolutionized our teaching. Every morning we get to school and skim the paper for an article to focus on that day.  We draw up an activity and the students read and respond to the article when they get to class.  This usually leads to a discussion, and we’ve had some great ones.</p>
+<p class="story-body-text" itemprop="articleBody">At the beginning of our great experiment, many students were lacking in general background knowledge.  Today, they can speak about a variety of issues and have learned to evaluate writing for bias, opinion, facts and much more.  </p>
+<p class="story-body-text" itemprop="articleBody">They follow stories over extended periods of time and can have intelligent discussions about issues that include Syria, standardized testing, Facebook’s I.P.O., ancient artifact ownership, and concussions in sports.  Bringing The Times into our class has afforded us many opportunities to make connections between the past and the present and I can’t imagine teaching without the paper now!</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>&#8220;At the beginning of our great experiment, many students were lacking in general background knowledge.  Today, they can speak about a variety of issues and have learned to evaluate writing for bias, opinion, facts and much more. &#8220;</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><cite>&#8212; <a href="#">Sarah Gross</a></cite></div>
+</div>
+<p class="story-body-text" itemprop="articleBody">One of the most striking effects of adding The Times to our curriculum is the sustained silent reading that my students participate in daily.  Unlike our independent reading time, this is a part of the day when every student is reading a long-form nonfiction article.  Most of my students don’t spend a lot of time with nonfiction, so this daily exposure has been vital to their growth as students. </p>
+<p class="story-body-text" itemprop="articleBody">I was concerned about them regressing over the summer, when they don’t have The Times waiting for them when they wake up. I am thrilled to share that The Learning Network at the New York Times is doing its Third Annual Summer Reading Contest!</p>
+<p class="story-body-text" itemprop="articleBody">How does the contest work?  Every week students can comment and share an article that they read that week.  In their comment, they will explain why that particular article interested them in approximately 350 words.  Any article will do, from the Magazine section, or sports, or business, or opinions, or the arts, etc.  The editors will choose a few comments each week as winners and those comments will be highlighted in a separate post on the blog.  That’s like being published in the New York Times!  Pretty good, if you ask me! (Some examples from last year can be found by scrolling down on <a href="//learning.blogs.nytimes.com/tag/summer-reading-contest/">this page</a>.)</p>
+<p class="story-body-text" itemprop="articleBody">The best part is that the rules are pretty loose for this contest.  I love the fact that students can read anything they want in the paper.  They can even choose graphics, videos, and other forms of media as their article for the week!  And while the Times has a digital subscription service, students can access 10 free articles each month.  Plus, any articles linked from the Learning Network blog don’t count towards the cap.  That should provide more than enough opportunities for students who don’t have digital subscriptions to the paper.</p>
+<p class="story-body-text" itemprop="articleBody">The contest will begin on June 15 and run weekly through the summer.  I will be sharing with my students and posting reminders on our class Facebook page throughout the summer.  I will also post links to interesting articles each week, to give the more reluctant student readers a jumping off point for the week.  </p>
+<p class="story-body-text" itemprop="articleBody">I’m really looking forward to this summer’s contest because I think it will encourage my students to continue reading the paper over the summer.  Hopefully, they will continue to improve their nonfiction skills.  And honestly, I really just want them to form a habit of reading the newspaper more often!  Whether they read one article per week or the entire paper, cover to cover, they will be practicing an important life skill.  They will also be building their background knowledge and forming opinions on current events.</p>
+<p class="story-body-text" itemprop="articleBody">What do you think?  Students from age 13-25 are invited to participate in the Third Annual Summer Reading Contest and I think it’s going to be great!  Do you read the newspaper often?  What about your students?  Do you think this contest will motivate them to give it a try?</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2012/06/11/guest-blog-taking-a-dip-in-the-nonfiction-pool-with-our-summer-reading-contest/" data-title="Guest Blog | &#8216;Taking a Dip in the Nonfiction Pool&#8217; With Our Summer Reading Contest" data-description="Our summer reading contest begins on Friday and lasts all summer. If you&#039;re still not convinced you should participate, you should read what this New Jersey high school teacher has to say. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-620728">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lina</span>
+			<span class="comment-link">
+				<a href="#comment-620728" title="Comment Permalink">
+					<span class="comment-date">July 6, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:30 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I read an article today about a lifeguard choosing to break a rule that his job required to be followed, in order to rescue a swimmer. It turns out this lifeguard, Mr. Lopez was then fired. He was then offered his job back but decided to pass on the opportunity because he felt what he did was right. In my opinion rules are very important to maintain structure and balance but there’s moments when those rules cannot comply with a situation you’re in. For example if Mr. Lopez had decided to follow the rule requiring him not to leave his beach zone area this swimmer might of drowned or have gotten injured. I believe that rules should be followed as long as the rule is not hurting anybody in its surroundings. There’s moments when a person should follow their instinct and do what feels right, rules are meant for disorder but if the rule is not in relation to the situation a person has the right to abide it, even if it risks losing a job. If I was in this lifeguards position I would have rejected the job as well, depending on the duties I have to accomplish there’s also exceptions to the rule. A person does not have to go as far into thinking sometimes following your heart and the values you have gained throughout the years should help you make a good decision. The choice you make might not be agreed by many but it’s always better to take the chance than to regret not taking the chance later and then be stuck with “what could’ve happened?” A rule is a procedure governing conduct and regulation but you cant simply arrange something to fit this rule so having the wisdom to make you’re own decisions shows a lot of courage and integrity. You cannot live life expecting to satisfy everyone so simply live it making yourself happy as long as it doesn’t hurt anybody else. In my opinion just FOLLOW YOUR HEART and have faith that your decision will affect everyone in a positive way and if it doesn’t then the best thing to do is learn from your mistakes.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-631301">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Osvaldo Rodriguez</span>
+			<span class="comment-link">
+				<a href="#comment-631301" title="Comment Permalink">
+					<span class="comment-date">July 19, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Within the article “Obama Picks Diplomats for Afghanistan and Pakistan,” by Peter Barker, President Obama has selected two diplomats to be stationed in two oversees posts, one in Afghanistan while the other goes to Pakistan.  Throughout the article the mending of broken relations is constantly reoccurring.  Only through agreements and cooperation is it possible to prosper, since it brings economic growth throughout the world, results in forgiveness between conflicting countries, and can stop global violence.   This allows the country to focus on itself then on international matters, which results in prosperity.  President Obama is concern with the relationship with Afghanistan and Pakistan and he is hoping that with the help of these two diplomats he is able to heal the damage that has been done.  Economic growth can be the result of agreements and cooperation between the countries due to the fact that it will lessen the economic spending used for war and artillery.  Forgiveness is the key to prosperity since it drops the worries of going to war or to have strained relations with one other to the point where there is no compromise between counties.  To add through agreements and cooperation between countries it can stop the majority of global violence.  For instance, if a disagreement were to occur with cooperation and understanding of one another, which can be brought with the help of these diplomats, it would not escalate to violence. Preventing violence helps a country to prosper because it would not be torn by war, which has occurred to Afghanistan and has left it destroyed.  President Obama hopes that these deputies can mend the relations with Afghanistan and Pakistan in order to withdraw American forces from Afghanistan by 2014, which is great news for military families in the United States. The healing of relations can bring prosperity to these countries.  President Obama is doing his best to help this process since it means less global violence and repairing what has been done by the years of fighting.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-635217">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mary Ho</span>
+			<span class="comment-link">
+				<a href="#comment-635217" title="Comment Permalink">
+					<span class="comment-date">July 24, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:09 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>In the article that I recently read, &#8221; Obama and Romney Do Not Change Course Over Outcry on Gun Violence&#8221; I strongly disagree with them both. I believe they should fortify the ability of getting the weapons. If they don&#8217;t change the gun control laws, something like the Colorado Massacre and it might be already too late to change things since many people would have their hands on different, dangerous weapons. I think Obama and Romney won&#8217;t change the gun control law because they might think it would affect their campaign. But when running for president, shouldn&#8217;t they consider the safety or citizens and isn&#8217;t gun control one of them? The Colorado Massacre should serve as a warning that the gun control law isn&#8217;t reinforced enough and people can get their hands on the weapons easily. When are they going to finally ban these type of behaviors? Shouldn&#8217;t people with gun license only be able to get their hands on perilous weapons? It isn&#8217;t right how people can pay thousands of dollars to buy a weapon and use it for violence instead of a weapon of protection. This gun control law needs to be reconsidered and not overlooked at because you never know when the next shooting outcry will be. There are many citizens out there who are scared to go out of their houses because they live in a neighborhood where there are guns and violence. Everyday at least everyday someone dies because of a gunshot. When can we finally stop this? When 100 people die because of one insane person who shoots sporadic gunshots at people? As presidents they hold a huge responsibility of protecting citizens and no president should overlook this law. Don&#8217;t these politicians fear their own life? Scared that someone might assassin them? If they really cared for their people these laws need to be secured and stricter. We don&#8217;t want to see another dreadful massacre like the one recently. Presidents shouldn&#8217;t fear what their voters might think. If they make a valid explanation on why, their supporters would agree with them and vote for them. But the most important thing that president&#8217;s should consider are the citizen&#8217;s of the USA safety first.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-637306">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mary Ho</span>
+			<span class="comment-link">
+				<a href="#comment-637306" title="Comment Permalink">
+					<span class="comment-date">July 26, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:24 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>In the article on,&#8221; Cocaine’s Flow Is Unchecked In Venezuela&#8221; I believe the Venezuela government isn&#8217;t being enough to protect the drug flow of cocaine. If he really tightened the security for that particular area, wouldn&#8217;t there be less cocaine coming into America? This issue isn&#8217;t something that we can solve quickly, but we need to act fast before other areas get their hands on cocaine. I think they should check the aircraft that is delivering all the cocaine. Isn&#8217;t anyone checking what is inside the aircraft and find out who the pilot is? This also isn&#8217;t damaging the reputation of Venezuela, but also the citizens and the government. People wouldn&#8217;t want to come and visit there if there is uncontrolled dealing of cocaine. Not only do residents of Venezuela need to be careful, but also the citizens of other parts of America. We never know when this uncontrollable cocaine is going to reach our area. We need to be alert and make sure to report anything that is suspicious. The officials and government may be under this whole scheme and no one would know about. Who would know if authorities and government officials gave information out and told them where the police are patrolling. These things we will never know and everyone has to be under suspense. This isn&#8217;t damaging to Venezuela, but think about the other citizens in other states and countries, they don&#8217;t want to live in fear that there are people out there with cocaine in their hands. We don;t know what they are going to to with it. Government in Venezuela really needs to tighten the security and patrol the area 24/7 to see any suspicious activity and people. If this cocaine flowing isn&#8217;t going to stop now, when is it going to stop? and how? We can&#8217;t simply just patrol the area more, but we need to investigate this as well. Investigating meaning taking the time to do reports, research, list any suspicious people, write down any witness reports, and take pictures. It might take awhile to figure out why the cocaine isn&#8217;t stopping, but isn&#8217;t better to take action than hoping that one day it&#8217;ll stop? Of course other states and countries should all help figure a solution to this problem. There are people living afraid and not trusting the government. Who would want to live in a place filled with schemers and especially since they are the government. If we can&#8217;t trust the people that protect out city, who else will?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-637495">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KI</span>
+			<span class="comment-link">
+				<a href="#comment-637495" title="Comment Permalink">
+					<span class="comment-date">July 27, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:00 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>“For Children Who Cannot Speak, a True Voice via Technology,” composed by Emily B. Hager, reported about a nine-year-old boy named Enrique Mendez who was given a voice through an application on iPad called Proloquo2Go 2.1. This application allowed Enrique, who has Down syndrome and speech apraxia, to voice his opinions in a child’s voice similar to his own. Before Enrique applied for this app, his only way of communication was through grunting. Despite the fact that he is still left with some difficulties like how he might not be able to follow everyone’s pace of the communication and change the monotonous voice of the device, Enrique was given a new opportunity to speak up. It is true that the technology allowed the impossible to possible: Magellan explored the world with ship, the Wright brothers flew in the air with plane, and how Apollo XVIII landed on the moon. The possibilities are infinite. But, I would also like to believe in the possibilities of humans as well, like how Helen Keller proved it to us. Helen Keller became blind and deaf due to illness when she was nineteen months old. This was before she even learned how to communicate! In 1887, Anne Sullivan arrived in Keller’s house and taught Keller how to spell objects familiar to Keller beginning with “doll” on Keller’s palm. Keller was frustrated with the new words that she could not comprehend. But Keller’s breakthrough with communication started when she learned an idea of “water.” She began to devour the words in her world through Sullivan and later became involved in political affairs such as women’s rights movements. She was able to overcome her difficulties of deafblind and showed us the possibilities of human beings. The technology that started when humans learned how to light the fire still continues to advance forward without knowing its limit only for one purpose&#8212; for humans to live an easier life. Now, the technology is irreplaceable to all of us: iPod, television, computers…. And today, the technology has given thousands of children with disabilities a gift to speak! Although I do believe in the possibilities of mankind, I also agree to have evolving technology that gives us new opportunities and a ray of new hope in our future.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-641921">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mary Ho</span>
+			<span class="comment-link">
+				<a href="#comment-641921" title="Comment Permalink">
+					<span class="comment-date">July 30, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;Democrats Draft Gay Marriage Platform,&#8221; is a very interesting article that i read about today. I never understood why Democrats wouldn&#8217;t approve of gay-marriage. Coming to America, people want to have rights and freedom, freedom to do whatever they want and why not marrying the same sex in the same category as freedom and rights? It wouldn&#8217;t be fair for those that aren&#8217;t attracted to opposite sex, everyone has their one perspective of what they find attractive and just because they don&#8217;t think their opposite gender is attractive doesn&#8217;t make them less of a person. Shouldn&#8217;t everyone be given the chance to be with their other half whether it is a person of the same sex? We all deserve to be happy and limiting someones happiness isn&#8217;t what we call freedom. Why did it take so long for the Democratic Party to finally and hopefully approve of this on going issue. The gay&#8217;s shouldn&#8217;t be looked down upon because of how they are they should be appreciated just like any other couple. We shouldn&#8217;t look at them in the wrong way because everyone has feelings of their own. Just because their perspective of love is different from ours, doesn&#8217;t mean we should treat them like another person. Although many politics might think that their decision to approving gay rights might affect their political campaign, they should express how they feel on the issue and take a stance. Yes, there are voters who might think differently of not approving gay marriage but that shouldn&#8217;t change your opinion about it. They should express it and change their point of view put them in the shoes of the gay marriage couple. Would they like to be treated differently, why they want people to give them looks because they are holding hands with the same sex? They wouldn&#8217;t feel good about it either and expressing their thoughts on the issue while campaigning might get them more voters. All in all, the Democrats party should approve on this issue simply because in America we have freedom and rights, but not allowing someone to marry someone that they love isn&#8217;t what we call freedom in America.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-643367">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victoria W</span>
+			<span class="comment-link">
+				<a href="#comment-643367" title="Comment Permalink">
+					<span class="comment-date">July 31, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:40 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>“Disney Finds a Cure for the Common Stereotype With ‘Doc McStuffins’” by Brooks Barnes raises the controversial argument of the company’s association with racism.</p>
+<p>I’m an avid lover of just about anything Disney, whether it’s the famous duo of Mickey and Minnie, or new animations like Up and Tangled. Even so, I’m also strongly opposed against anything supporting or suggesting racism.</p>
+<p>Dumbo, released in 1941, displays three black crows that are portrayed as poor and unintelligent. Disney also adds other characteristics that could easily be seen as racist. In Fantasia, a 1940 Disney animation, Sunflower the Centaur is shown as an African servant to creatures of a higher class.</p>
+<p>It’s no secret Disney has depicted some of their older characters with racist stereotypes.</p>
+<p>That alone is something I can move past. However, I do condemn Disney for not publicly accepting their mistakes. They’ve denied many accusations and re-released edited originals to remove racist depictions.</p>
+<p>On a business level, I can understand why Disney would do that. A statement such as, “We admit to having used racist stereotypes in our characters”, by Disney would generate more heat than praise. They’d lose millions of dollars, face lawsuits and attacks. In short, it wouldn’t be a smart move.</p>
+<p>In recent years, however, it seems Disney is doing all it can to, say, make up for its past. </p>
+<p>In 2009, they released The Princess and the Frog starring Tiana, Disney’s first African-American princess. And now, they’ve brought out Doc McStuffins, a new cartoon with an African-American girl at its center. The cartoon teaches preschoolers about health and hygiene while promoting racial diversity.</p>
+<p>Disney, like every major company, has a big handful of people focused on the financial aspect alone. But, I also know that there are people within looking to do good through their work, whether by educating the public or promoting racial diversity.</p>
+<p>Walt Disney once said, “Movies can and do have tremendous influence in shaping young lives in the realm of entertainment towards the ideals and objectives of normal adulthood.”</p>
+<p>And hey, if kids are enjoying the show, Disney is obviously doing something right.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-645396">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mary H.</span>
+			<span class="comment-link">
+				<a href="#comment-645396" title="Comment Permalink">
+					<span class="comment-date">August 1, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:59 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;Guilty Plea Is Expected in the Killing of a Boy, 8&#8243; written by Mosi Secret is a devastating story. Our society today still deals with everything- murder, suicide, racism, homicide, killing, shooting, and so many other crimes. Why do we have to add another one of those cases among the many cases. When I read stories about someone killing someone, especially a little kid, it makes me realize how the world isn&#8217;t changing for the better. There will always be people out there doing horrible things and won&#8217;t change their behavior. How can people have the heart to kill someone just like that without thinking twice. Leiby Kletzky, in the article stated that he took the boy to the wedding and after he panicked because of all the missing poster and killed him. Shouldn&#8217;t he have taken the boy to the police? Why would be panic and kill him? If you see a boy lost, take him to the police or guide him to the right direction, how is killing someone&#8217;s kid going to solve him being panic. That doesn&#8217;t make any sense to me at all. It is sad how the boy asked someone that killed him instead of someone who could&#8217;ve helped him. Serving forty years in prison, I hope that he will reflect on what he did and when he comes out of jail he&#8217;ll be a new person with a new heart and when a little boy/girl ask for help he&#8217;ll help them instead of panic and kill them.<br />
+Although we can&#8217;t change people I hope people can come to their senses and realize the wrongdoings that they have done. People should think before they go out a do wrong crimes. How will their crimes benefit them if they eventually will get caught and pay the consequences. Do criminals think that there are people who love them dearly and hope to see them everyday? Sometimes I wonder when the world will be at peace where everyone gets along and help one another. But with today&#8217;s society and seeing the news everyday it&#8217;ll probably never happen until many years later.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-648525">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victoria Wang</span>
+			<span class="comment-link">
+				<a href="#comment-648525" title="Comment Permalink">
+					<span class="comment-date">August 3, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:34 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I’m well aware of the world of online gaming, having played in it myself. I’ve seen up front how easily it is to communicate and interact with other players.</p>
+<p>While it may be true that the gender makeup is mostly compiled of males when it comes to gaming online, it doesn’t justify discrimination or harassment against female players. </p>
+<p>In online gaming, players can do anything from messaging to webcamming and voice chatting. While this brings them a more thrilling experience and a better form of integrated communication, this also makes them more vulnerable to insults, badmouthing, and the like. </p>
+<p>“In Virtual Play, Sex Harassment Is All Too Real” by Amy O’Leary opens up the topic of sexual harassment against female gamers in online gaming.</p>
+<p>Miranda Pakozdi, an experienced gamer, enter the Cross Assault tournament in hope of winning a $25,000 prize. While in team training, her coach interrogated her for her bra size, told her to take off her shirt, and even leaned in to smell her. Keep in mind that this was all happening while on webcam.</p>
+<p>	Along with this, Anita Sarkeesian was harassed over her campaign to document how women are depicted in video games. Sam Killerman’s “Gamers Against Bigotry” campaign had received 1,500 pledges before it was hacked.</p>
+<p>	Many of these “trolls” find pleasure and amusement in frustrating and attacking other gamers. Some even go beyond the game to means of stalking and out-of-game abuse.</p>
+<p>	These incidents remind us of how vicious people can be, especially when they’re hiding behind an online identity.</p>
+<p>	On the positive side, many people are speaking out against this and working to create a safer online gaming community.</p>
+<p>	James Portnow, a game designer, created an animated video discussing harassment in online gaming and possible methods to decrease it. He mentions how “these are grown men that should know better” and that “this is the work of a very small but vocal minority”.</p>
+<p>Every true gamer knows that bladder control and lightning-quick reflexes are skills every pixel as precious as having the values of respect and sportsmanship. </p>
+<p>And that, in itself, is more important that what any troll can have to say.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-649933">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victoria W.</span>
+			<span class="comment-link">
+				<a href="#comment-649933" title="Comment Permalink">
+					<span class="comment-date">August 4, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>“There’s Still Hope For the Planet” by David Leonhardt addresses how government investment in cleaner alternative energy resources may be succeeding. The article also touches on the cap-and-trade program, which aims to make standard energy more expensive, and the investment program, which looks to make alternative energy less expensive.</p>
+<p>We can’t rely on funding for investments alone, and it’s also not reasonable to keep “dirty” energy at its current price.  Like the article mentions, scientists and economists both believe that to succeed at creating a thriving clean energy program, a combination of both methods may be best.</p>
+<p>Now, from here, I believe that it’s the government’s decision on what they will execute. We can’t afford to spend wastefully, nor can we move forward if we don’t learn from our mistakes. </p>
+<p>In the face of building a clean energy program, there isn’t one simple solution. </p>
+<p>The Unites States isn’t in the best shape right now. That’s obvious. And it’s understandable that our time and energy can’t all be going towards this cause. Even so, some measures or precautions must be taken because at the rate we’re using, we’ll be at a dead end before we know it.</p>
+<p>I now realize that while some things happen almost effortlessly, others do not. The push for a cleaner future isn’t easy or simple. But, I think it’s important to remember in the midst of it all that without someone fighting, there’d be no battle at all.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-650002">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mary H.</span>
+			<span class="comment-link">
+				<a href="#comment-650002" title="Comment Permalink">
+					<span class="comment-date">August 4, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>As we walk into the hospitals, we never realize how much noise we make to get to the room where our loved ones are. We just go and never think twice about how this might cause other patients to wake up if we&#8217;re loud and something might happen to them. In the article, &#8220;The Clatter of the Hospital Room&#8221; written by Pauline W. Chen M.D, she talks about the effects of the loud noises that the patients has the suffer. Patient&#8217;s heal best when their sleeping, where no one can bother them, but with all the machines that their connected to, other people visiting the hospital, people going in and out, and nurses giving the patient&#8217;s shots, there&#8217;s never a time where there is &#8220;quiet&#8221; in the place. I think all the hospitals should follow Department of Veterans Affairs New Jersey Health Care System. The department is helping minimize the noise level by checking when they sleep and other things to help them sleep so they can be at peace. The other hospitals should do that to because doctors and nurses forget how frustrating it is to wake up for a simple blood test that could be done when the patients is awake. Every patient, I believe should have a fixed schedule of what goes on throughout the day so they can give the patients time to rest without disturbing them when they are sleeping. The walls maybe should be changed if there are a lot of outdoor noises that prevents the patients from sleeping. Putting wireless things in the room wouldn&#8217;t a bad idea either. You can still monitor the patient without disturbing them and if something goes wrong you can still quickly aid them. Besides the machines itself, nurses and doctors also need to change the scheduling for checking up the hospitals. With simple changes, we can change the patient&#8217;s lives and have them rest in peace and not with disturbance everywhere.  All in all, hospitals should discuss amongst themselves how noises can be reduced to help the patients sleep better without anyone/ anything disturbing them. These changes can help the patient and the hospital.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-650320">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victoria W.</span>
+			<span class="comment-link">
+				<a href="#comment-650320" title="Comment Permalink">
+					<span class="comment-date">August 4, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:59 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The London 2012 Olympics are in full swing. Thousands of people have come to spectate, countless hours of labor have been put in, and athletes that have been working all their lives for this moment have come together to compete.</p>
+<p>Olympians train hard and sacrifice a lot. We’re all aware.</p>
+<p>They push their physical limits and commit their lives to the sport they love. Sometimes, they spend months away from their families </p>
+<p>“Overcoming a Heart Condition to Win Olympic Gold” by Anahad O’ Connor represents exactly that. </p>
+<p>Dana Vollmer, a member of the USA swim team, overcame QT syndrome, a genetic cardiac electrical disorder that could have caused her to go into a cardiac arrest at anytime. But, in doing so, she won three gold medals and set a world record in the 100-meter butterfly.</p>
+<p>	“That defibrillator represented that I wasn’t invincible. I could die, my heart could just stop…”, she said.</p>
+<p>	While Vollmer appears to have outgrown her diagnosis, seeing as doctors are no longer able to detect it, many athletes continue to have the syndrome through their entire career.</p>
+<p>Wes Leonard, a high school basketball star, went into sudden cardiac arrest after helping his team end the season with the winning shot. He was taken to a defibrillator on court, but later died at a hospital.</p>
+<p>A study by the Mayo Clinic found that only one out of 130 athletes diagnosed with long-term QT syndrome who continued to compete suffered a cardiac attack related to playing. While the chances may be slim, the risk is always there, such as in the case of Wes Leonard.</p>
+<p>The love for a sport is can be beyond measures at times. Athletes will risk everything to continue to play and compete.</p>
+<p>Because of this, I believe that it is crucial to raise awareness about cardiac events so that precautions can be taken. Defibrillators should also be placed wherever athletic training takes place in the case of an emergency, as the article mentions.</p>
+<p>As in every team sport, knowing that someone “has your back” provides invaluable assurance. Whether in high school or at professional level, athletes should be able to train having the same confidence.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-653027">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Kimberly-SHS</span>
+			<span class="comment-link">
+				<a href="#comment-653027" title="Comment Permalink">
+					<span class="comment-date">August 6, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:46 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>In the recent news there have been many scary and sad stories about killings in different parts of the United States. It makes me sad to see that so many innocent people are getting killed for thrills. Another thing to consider is the fact that these events have occurred in public places. The article that I read is “Gunman Kills 6 at a Sikh Temple Near Milwaukee.” It shows the danger that is growing in what are supposed to be safe places.<br />
+Congregants were preparing for the morning services when an armed man walked in around 10:30 am. He started to shoot and killed 6 people while injuring 3 others. The people inside hid for protection while calling and texting anyone they could in a desperate attempt to get help. After several calls the police came in a rush. The armed man attacked one of the first police officers to arrive and shot him several times, leaving him on the brink of life.  One of his fellow officers then shot the armed man and killed him ending the shooting and the danger.<br />
+The armed man was a 40-year-old white male. This event was called “a domestic terrorist-type incident” and wasn’t the only terrorist-type incident to have occurred in the past month. Since weapons were found at the scene the F.B.I. has decided to step in and investigate the incident further. Officials have not found the motive for the incident, but it seems to be a hate crime.<br />
+Because this terrible event occurred in a place of worship the people in the community have seemed to have lost a sense of security. But who can blame them when tragic events are occurring in the most public places?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-653418">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victoria W</span>
+			<span class="comment-link">
+				<a href="#comment-653418" title="Comment Permalink">
+					<span class="comment-date">August 6, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Before we are even born, we begin to learn. In our premature bodies, our minds gather information on how to function and how to survive. Then, when our parents cart us off to school, knowledge comes whirling at us from every direction. We learn how to trace, do basic math, read and write, and obviously, spell.</p>
+<p>In the technologically attached generation of today, we rely on our devices for everything. Our lives depend on the contact list entered in our phones, the documents on our computer, and the reminders from our mobile clock telling us to pick up dinner or send our nephews their belated birthday present. </p>
+<p>Along with this, yet another advancement is AutoCorrect. It knows how to tweak our errors to form real words and phrases. This proves as an extremely useful tool in the scenarios of speed-texting or guessing how to spell a word. </p>
+<p>In “Auto Crrect Ths!” by James Gleick, the issue of this tool and its impact on out population is debated. On one hand, it can ease the task of texting while on the other, can promote laziness among other things.</p>
+<p>I, as a glued-to-my-phone type of gal, use Autocorrect with every message, every e-mail, and every post. </p>
+<p>Most of the times, it corrects small errors like teh to the or shell to she’ll. It’s only once in a while that it’ll help me spell a word I actually didn’t know how to.</p>
+<p>Autocorrect is constantly improving. The article mentions that “the better Autocorrect gets, the more we will come to reply rely on it.”</p>
+<p>I believe that this is completely true.<br />
+As an educated population, we know the value of literacy. Regardless of our technological advances, that should always remain true.</p>
+<p>If we become too lazy to spell, what happens then? This isn’t just for the sake of our generation, but for future ones as well. If we put everything we have on technology, then we’re putting all we have on the line.</p>
+<p>Autocorrect is a form of aid, not a replacement for being literate. It should help our skills, not replace them.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-654810">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victoria W</span>
+			<span class="comment-link">
+				<a href="#comment-654810" title="Comment Permalink">
+					<span class="comment-date">August 7, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:16 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Man’s best friend is a partner-in-crime, family pet, running buddy, lifelong companion. Whatever way you put it, we love them to death.</p>
+<p>However, in many areas, these canines are treated differently. They’re wild animals that roam free, and sometimes, even dinner.</p>
+<p>In the article, “Where Streets are Thronged With Strays Baring Fangs” by Gardiner Harris, the topic of strays in India is raised. The country has free-roaming dogs numbering in the tens of millions, and each year, millions of people are bit.</p>
+<p>Deepak Kumar, only 6 years old, was slashed across the back from a stray dog while another bit Arshpreet Kaur who was 3 at the time. She slipped into a coma for 9 years before finally dying.</p>
+<p>20,000 people every year die from rabies infections in India alone. Stray dogs pose as a great danger because in addition to their unpredictable behavior, they also tend to carry viruses and diseases. And, as if that wasn’t bad enough, they also help ticks and other parasites thrive.</p>
+<p>In America, when we see dogs, they’re usually on leashes. In India, they run free, and it’s the people that have to worry. </p>
+<p>The middle classes of India have even begun to take in the concept of pet ownership. However, many of the dogs eventually end up on the streets because the owners don’t want to take care of them anymore. “</p>
+<p>In 2001, a law was pass forbidding the killing of dogs. Now, the stray population has increased so greatly that many officials are looking to conduct a census or find methods to control the numbers. </p>
+<p>A solution seems easy. Just get rid of the dogs.</p>
+<p>However, India has a great amount of garage in which the dogs feed off of. If you get rid of them, then the garbage stays. Most Hindus are opposed against killing animals, and animal welfare advocates reject euthanasia.</p>
+<p>Arpan Sharma, chief executive of the Federation of Indian Animal Protection Organizations, suggests that India must first manage its garbage better. </p>
+<p>If that first step can be taken, then I believe that the rest can. Less strays, less bites, less deaths. It’s as simple as that.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-655192">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Christine T.</span>
+			<span class="comment-link">
+				<a href="#comment-655192" title="Comment Permalink">
+					<span class="comment-date">August 8, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:42 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It’s NASA’s mission to “pioneer the future in space exploration, scientific discovery, and aeronautics research.” On Monday, August 6, the impeccable landing of Curiosity, the rover NASA had sent to Mars to explore the Martian surface, as Kenneth Chang reports in “After Safe Landing, Rover Sends Images From Mars,” set the breakthrough in the next level of space exploration. I believe the success of Curiosity’s landing is a huge achievement for NASA. Some do not believe that space exploration is necessary because they do not see how extraterrestrial bodies are relevant to humans on earth, but I think that the learning more about extraterrestrial bodies assists us, humans, to better understand the universe that surrounds us. Ever since the first man had walked on the moon on July 1969, during the Cold War, major advances in science have transpired. It has since then fostered medical research, environmental awareness, energy management, and technology. The space program has progressed from a competitor in the “Space Race” to a vast research institution. I can only imagine how ecstatic the scientists and engineers at JPL were when they heard word of the successful touchdown of Curiosity. It set the United States as the leader in space exploration. For a while, some people thought that NASA had forgotten how to explore, but this event has proved otherwise. With the remarkable technology and equipment that had been equipped onto the rover, the discoveries that NASA will make about Mars will definitely open a door to the unknown that exists or existed on the planet. It would be mind-blowing to discover that Mars had once fostered life. Imagining that Earth was not the only planet in this solar system that sustained life reminds me of the quote “It’s a small world,” by The Walt Disney Company. I await future discoveries on the Martian planet. The cost of sending Curiosity into space, $2.5 billion, is, no doubt, an investment towards our future.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-656150">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Karina L</span>
+			<span class="comment-link">
+				<a href="#comment-656150" title="Comment Permalink">
+					<span class="comment-date">August 8, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Today I read the article &#8220;Suspensions Are Higher for Disabled Students, Federal Data Indicate&#8221; by Motoko Rich. In the article I    came to learn that 13 % of the suspensions in the 2009-10 school year were of disabled students. This shocked me, I would of never guessed that the suspension rate of these students would be so high. I would only think that these would be the kids that are getting the additional support to prevent such things from happening. In my opinion, this is what any school in any state and district should want to prevent. They should put good use of the school&#8217;s money and hire more social workers and psychologists to help the disturbed students cope with issues they may be dealing with. Being disabled, these are also the kind of kids that teachers should be giving leniency to since they have more to deal with than the average student. In my opinion, the schools&#8217; should also not stoop to matters such as suspension as a punishment. Appose to what educators believe, suspending a student off school grounds actually does more bad than good. Suspending them only drives the student to be away from school which takes away from their education as well. In some cases, because they are being driven away from school, the student may just drop out for good. What these students need is someone to be on their side and take a stand for them. The schools need to come up with a new way of disciplining their students. And of course what both of them need is support from the communities they reside.  If we want students striving for an education, we must make a group effort to put thoughts into actions.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-657330">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Kimberly-SHS</span>
+			<span class="comment-link">
+				<a href="#comment-657330" title="Comment Permalink">
+					<span class="comment-date">August 9, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>In the article, “Long Island Man Faked His Own Death, Wife Says,” a man from Long Island faked his death in hopes of claiming insurance money.<br />
+In these times the economy is not very stable and people are getting fired from their jobs every day. Thus the people have to find other ways to gain money to support their families, even if it’s by illegal means.<br />
+The long island man, Raymond Roth, was recently fired from his job for threatening to shoot two of his co-workers. The police then contacted him about the gun he had licensed to him and he turned it in on July 21. Since he was fired, he needed some way to support his family. He then decided to make a plot for faking his death to collect the family’s insurance money. He and his son, Jonathan, plotted out what to do, but they did not tell Mrs. Roth their plan.<br />
+Mr. Roth was reported missing from Jones beach by his son Jonathan. On the beach the police found some of Mr. Roth’s personnel belongings. The police began an air, water and land search for Mr. Roth’s body. Mrs. Roth actually did believe Mr. Roth was dead until she saw some emails sent between Mr. Roth and Jonathan. So she called up some relatives and let the police know he was still alive. Five days later Mr. Roth was found when he was pulled over for speeding in South Carolina. He then returned to New York and cleared everything up.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-658071">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KI</span>
+			<span class="comment-link">
+				<a href="#comment-658071" title="Comment Permalink">
+					<span class="comment-date">August 10, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:31 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>“In the East Village, Fun and Fashion Amid Old Tombs,” by John Harney depicts a cemetery between Second Avenue and the Bowery in the East Village with such beautiful greenery: hibiscus trees and a fructified peach tree. The cemetery was established in 1830. But, the age of industrialization did not allow the cemetery to keep its serene environment; soon tall buildings and crimes in the neighborhood concealed the cemetery, forgotten. The place slowly disintegrated. It was only recent that the cemetery was trying to regain its original aspect, but for different purposes: weddings, fashion event, photo session and other media purposes.<br />
+	I remember my first encounter with “cemetery.” I was barely beginning to learn how to read clumped magical letters and took an interest in reading all kinds of signs: street signs, bill boards, and name of the stores that I could see out in the world from my little window seat. But there was a word that attracted my attention. The hexagonal shaped stone bore the letters “R-E-S-U-R-R-E-C-T-I-O-N” and “C-E-M-E-T-E-R-Y” and had a cross-shaped sign next to the letters. I asked my mother what this “R-E-S-U-R-R-E-C-T-I-O-N” and “C-E-M-E-T-E-R-Y” was. “Cemetery is no place for kids; it’s not a playground,” answered my mother, “It is an architect for the dead to rest and be respected.” As I grew older, I came to understand what my mother meant. The desolate place, that has nothing but just a green lawn and graves (and maybe some offerings), seemed to give off a feeling of grief but also with dignity and wonder. From the picture of the cemetery taken by Angel Franco, the cemetery does not possess those characteristic, instead, gives off somewhat cheerful and animated feeling.<br />
+Indeed, it is a joyous fact that the cemetery is slowly recovering to its original appearance&#8212; or even better with the money that was collected through the events, but I still feel that cemetery is somewhere more sacred and to be treated with reverence, not as a place for a show. As my mother’s word still rings true in my ears, “Cemetery is no place for kids; it’s not a playground. It is an architect for the dead to rest and be respected,” this cemetery in New York should also be used for its original purpose: a placid resting place for the dead.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-658701">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KI</span>
+			<span class="comment-link">
+				<a href="#comment-658701" title="Comment Permalink">
+					<span class="comment-date">August 10, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:09 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Test is tomorrow! You would probably gather up your notes that you have been taking since the beginning of the lesson and be studying frantically a week in advance, or even the night before.</p>
+<p> But what is test? Why are you taking the test for? Why are you studying for it on the night before? Just basing the purpose of the test on the test score is meaningless; test is for you to see how much you have learned from the lesson and also a challenge of how much you managed to utilize the information in the test. It also allows the teachers to see how well their students are following their way of teaching, allowing the teachers to alter their style of teaching if needed.</p>
+<p>“To Earn Classroom Certification, More Teaching and Less Testing,” by Al Baker introduces a new approach to become an aspiring charismatic educator. This change means that the schoolteachers would be expected to have the potential of handling students with different talents, thus real hands-on experience with the students. Teacher Performance Assessment, a program that evaluates teachers (also including university professors) designed by Stanford University, would be introduced in 130 schools in New York that award teaching certificates where creativity and flexibility would lead to the key of success. Linda Darling-Hammond, a professional on teacher education at Stanford, claims that this new teaching evaluation method would be vital to the class reform project in America. </p>
+<p>It is true that the test is important; but in teaching we all should know that the importance of real-world experience and how it outweighs the result of the test. And that could go for all careers: doctor, pilot, baker…. Information is important but it is not as important as the fact of how much you could memorize that information for the multiple-choice test. </p>
+<p>As Gilbert K. Chesterton said, “Education is simply the soul of a society as it passes from one generation to another.” With better educators for the students, the nation of America will continue to prosper with the jewel called knowledge.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-662540">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KI</span>
+			<span class="comment-link">
+				<a href="#comment-662540" title="Comment Permalink">
+					<span class="comment-date">August 13, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:18 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Munch. Munch- Munch. You probably are munching on snacks as you are glued to the television, watching the Olympics. You take another piece from that new-flavored potato chip bag. Is it lime-flavored? Nachos? Or even a churros-flavored! Wondering how the company even thought of making new flavors such as churros? But you could also be involved in this project, without even realizing it. </p>
+<p>Recently you see new suggested flavors on the Facebook apps of Frito-Lay with a button that says, “I’d Eat That.” You might wonder why the app even allows the consumers to make any suggestions and choose its own preference but “Social Media Are Giving a Voice to Taste Buds,” by Stephanie Clifford explains all reasons as to why. </p>
+<p>Facebook, Twitter, Tumblr… there are innumerable social media networks overflowing in the society today. Many people use at least one of these social networks to connect with their friends. But if many people are using it, then seeing it from another perspective, why not let the company take advantage of it too? Huge companies like Wal-Mart and Fritos-Lay are successful in taking advantage asking the consumers of their preference. For example, Wal-Mart was alerted that cake pops were becoming popular so they included cake pop makers in the store. And the success in this plan made Wal-Mart think about bringing them back again for holiday seasons. The survey also helps the company collect data from wide range of ages.  As noted above, the rich data in the social media allows the market to seek more new products. </p>
+<p>There are many inspiring flavors out in the world. You might even have the chance to meet new delicious flavors like Crab flavor in Thailand! But new flavors always do not mean that the consumers would like the flavor. I prefer the regular flavors like barbeque, lime, salt and pepper… the ones that we all are familiar in the stores. Unlike the flavors that we are familiar with, new flavors like churros and nachos are the ones that I have more difficulty of getting familiar to; the taste is always unexpected and sometimes you regret buying the flavor. </p>
+<p>As for the “like” button on Facebook, I think it is common for people to like things that they don’t really like; they like it because their friends like it. </p>
+<p>The resources suddenly became available through Facebook and other social media. Considering how much these resources helped the markets to polish up, our information might help in other fields as well in the future.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-662543">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KI</span>
+			<span class="comment-link">
+				<a href="#comment-662543" title="Comment Permalink">
+					<span class="comment-date">August 13, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:20 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>If you look up in the dictionary, it means the quality or state of showing pleasure. This is the literal definition of “happiness.” But what does happiness mean to you?</p>
+<p>“One Key to Happiness: Let Go of Some Long-Term Goals,” by Carl Richards, gives an advice of how to obtain happiness: by letting go of some things. </p>
+<p>First is to let go of expectations. Goals are goals, not expectations.<br />
+ Second is to let go of outcomes. Goal and outcomes are different; this realization often leads you to disappointment.<br />
+Third is to let go worry. Worrying about money only creates ruts.<br />
+Fourth is to let go of measuring. Being competitive cannot measure happiness.<br />
+Fifth is to let go of mindless tracking. Goal is something you don’t track but know where it leads to.</p>
+<p>As listed above, these five things are what Richards think could lead to happiness. </p>
+<p>Similar study of happiness began as early as 350 BCE by Aristotle. He stated that happiness is the only thing we yearn for our own and he studied that many sought rich for happiness. To him, “happiness is ‘the virtuous activity of the soul in accordance with reason’: happiness is the practice of virtue.”  The constitution combined this idea and John Locke’s and later came up with the famous phrase, “life, liberty, and the pursuit of happiness.” Happiness is something that we all pursued even from 2300 years before but this universal theme still remains undefined today.</p>
+<p>My mother often told me that happiness is always there&#8212;- the only thing is that no one realizes it. And, I do believe that my happiness is there: when I see the night fall and sun rise from my little window, when I eat Haagen-Dazs ice cream with my brother, when I do fireworks with my friends…. My happiness may be small, but to me these are the things that I would always love to see.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-662562">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">KI</span>
+			<span class="comment-link">
+				<a href="#comment-662562" title="Comment Permalink">
+					<span class="comment-date">August 13, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:37 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Today, there is more chance for seeing people beg for money on the street. They hold out cardboard that says “I have children to feed, PLEASE offer me money” and stands there the entire day &#8212;- or even weeks hoping for some pennies in the can. </p>
+<p>The life is hard on us now; economy is being aggravated, companies are torn down in this economic crisis, and people are getting laid off! Even if you look for a work place, there is hardly one that you could ever look for that “HIRING” poster.</p>
+<p> If you can’t get your hands on the work and you are broke then what would you do?</p>
+<p>“Long Island Man Faked His Own Death, Wife Says” by N. R. Kleinfield reports about the case of a long island man faking his death for his life insurance. The man, Raymond Roth, was reported to be missing from the beach by his son, Jonathan. After the call, the police agency did the search but Mr. Roth’s body was nowhere to be found and was assumed of his death.</p>
+<p>The case seemed to close until Mrs. Roth found the email communication between Mr. Roth and his son. The content of the email said that Mr. Roth needed his “trip” money and the time of when his son should call Mr. Roth with a paid phone so Mr. Roth could know what is going on. Mrs. Roth then contacted her relatives and called the authority. </p>
+<p>Mr. Roth was a manager at a telecommunication company until he threatened his supervisors with his gun. He got fired from the job and this case was to put into action. After the case, his wife was informed from the company that his life insurance was tripled in January. Mr. Roth was caught speeding in South Carolina five days after his “death” incident.</p>
+<p>Mrs. Roth claimed the need of her protection against her husband and Jonathan, her stepson. Neither Mr. Roth nor his son could be reached. Mrs. Roth said that her husband had been calling her for days and Mrs. Roth finally got on the phone on Friday. On the way to her conference with the news reporters, she said she got a call from her husband and he told her to be nice and if she really wanted her stepson to go to jail.</p>
+<p>Mr. Roth’s way of solving his problem was definitely not the right way; but what other approach could he have done? There are no jobs, he was very sentimental to the point of becoming alcoholic and also threatening his superiors, and even his wife claims that it was a downward spiral after he was fired. </p>
+<p>Although I am not strictly religious, I do think that life is a miracle of God. It is such a waste to treat your life like that, even if Mr. Roth only faked his death. This case, I feel, has really informed the society the seriousness of our economic crisis.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-663627">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Christine T</span>
+			<span class="comment-link">
+				<a href="#comment-663627" title="Comment Permalink">
+					<span class="comment-date">August 13, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:49 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>We as Americans do not realize how blessed we are with the laws that we have that protect people from being tortured and forced into prostitution, especially us, ladies. In the article “Wed and Tortured at 13, Afghan Girl Finds Rare Justice” by Graham Bowley, a 14-year-old girl named Sahar Gul was forced into marriage at an illegal age, and was tortured because she refused to become a prostitute and have sex with the man she was wedded to. I felt so much sympathy for the young teenager who had to go through the abuse. It wasn’t just her husband that abused her; it was her husband’s parents, too. I didn’t understand why they would have such harsh punishments for the young girl who just didn’t want to be forced into something she didn’t want to do. It was frustrating to read about how the neighbors couldn’t really do much to protect Gul. It’s rare for abused girls in Afghanistan to be saved in that way. Some of them are even put into prison for no reason at all. Even though Afghanistan has a law against violence against women, it is hardly ever applied. Their legal system needs improvement because people who have been abused definitely should not be punished. I find it wonderful, however, that Gul has goals to one day “become a politician and stop other women suffering the same.” Reading this made me feel really lucky because anyone could have been put in her situation; that could have been me. There are people in the United States who are forced into prostitution, too, and abused when they don’t comply with the rules. It’s really hard for these people to be liberated from their situations without having to live in fear for the rest of their lives. Our laws for these types of things are a lot better enforced and more justice is served than in Afghanistan. I believe that in the future, however, law enforcement in Afghanistan will change. It will be because of people like Gul who have first-hand experience that will fight for a change in the government. I believe that if enough people gather together to fight for a cause, amazing differences can be made.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-664415">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Christine T</span>
+			<span class="comment-link">
+				<a href="#comment-664415" title="Comment Permalink">
+					<span class="comment-date">August 14, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:30 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Hong Kong was previously under British rule until 1997, when it was returned to the Chinese. Hong Kong had a western government that was supposed to convert to Chinese in the year 2047. China is slowly enforcing more of their own laws on Hong Kong to convert their government. The Chinese’s partially communist government is very secretive, though, and the citizens of Hong Kong know that. It censors the internet, and teaches their people only things the government wants them to know, technically “brainwashing” them. In the article “Thousands Protest China’s Plans for Hong Kong Schools” by Joyce Lau, the citizens of Hong Kong protested the nationalistic education China plans to enforce upon schools in Hong Kong. The Hong Kong students have no choice but to comply with the new curriculum unless they have enough money attend international schools. The new curriculum will promote Chinese patriotism and give a one sided view on the world. I feel as if this type of new education that China wants to enforce upon Hong Kong is similar to the one that North Korea is enforcing upon their citizens. The government is trying to brainwash the minds of the children starting at a young age, so when they become adults, they can help justify, without rebelling, the new Chinese government that will soon be administered. I believe this is unfair, though, because I think that everyone should have the liberty of having an unbiased education. I can understand why the Chinese make their curriculum so one-sided; it’s so they can prevent rebellion and have more supporters; but I think the citizens need more perspective in their education. It’s hard to understand and be at peace without knowing more than one side to a story. I think the Chinese need an education that would help them fully understand everything that goes in in their world, and allow the people of China to decide for themselves, not government officials, what is wrong or right.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2012/06/11/prescription-drugs-and-high-achievers/" title="Prescription Drugs and High Achievers">
+				Prescription Drugs and High Achievers			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2012/06/12/word-of-the-day-diatribe/" title="Word of the Day | diatribe">
+				Word of the Day | diatribe			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":74,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

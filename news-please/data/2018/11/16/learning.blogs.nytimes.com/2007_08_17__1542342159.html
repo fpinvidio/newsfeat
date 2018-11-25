@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000005251422"><meta name="author" content="Michelle Sale and Javaid Khan" />
+<meta name="CLMST" content="Michelle Sale and Javaid Khan" />
+<meta name="byl" content="Michelle Sale and Javaid Khan" />
+<meta name="GBLC" content="Art as a Reflection of Society;Creative Writing;Language Arts;Literature">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1187369580" />
+<meta name="PUD" content="20070817" />
+<meta name="pdate" content="20070817" />
+<meta name="ptime" content="20070817125300" />
+<meta name="utime" content="20170711180748" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-07-11T18:07:48-04:00" />
+<meta name="DISPLAYDATE" content="August 17, 2007" />
+<meta name="dat" content="August 17, 2007" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Art as a Reflection of Society" />
+<meta property="article:tag" content="Creative Writing" />
+<meta property="article:tag" content="Language Arts" />
+<meta property="article:tag" content="Literature" />
+<meta name="keywords" content="Art as a Reflection of Society,Creative Writing,Language Arts,Literature" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2007%2F08%2F17%2Fword-trip%2F" title="Word Trip" />
+<meta name="description" content="In this lesson, students explore the writing style of Jack Kerouac and other Beat generation authors and write their own stream-of-consciousness pieces." />
+<meta name="hdl" content="Word Trip" />
+<meta property="og:title" content="Word Trip" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2007/08/17/word-trip/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="In this lesson, students explore the writing style of Jack Kerouac and other Beat generation authors and write their own stream-of-consciousness pieces." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Word Trip" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2007/08/17/word-trip/" />
+<meta name="twitter:description" content="In this lesson, students explore the writing style of Jack Kerouac and other Beat generation authors and write their own stream-of-consciousness pieces." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='Don&#8217;t Bet the House On It!' href='//learning.blogs.nytimes.com/2007/08/16/dont-bet-the-house-on-it/' />
+<link rel='next' title='Peer Pressure' href='//learning.blogs.nytimes.com/2007/08/20/peer-pressure/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2007/08/17/word-trip/' />
+<link rel='shortlink' href='https://nyti.ms/2tdTBnO' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2007/08/17/word-trip/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Word Trip - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-4593 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Word Trip        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2007/08/17/word-trip/"
+	 data-title="Word Trip"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;In this lesson, students explore the writing style of Jack Kerouac and other Beat generation authors and write their own stream-of-consciousness pieces.&lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2007/08/17/word-trip/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="August 17, 2007 12:53 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-4593 post type-post status-publish hentry category-art-as-a-reflection-of-society category-creative-writing category-language-arts category-literature" id="post-4593">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Word Trip</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Michelle Sale and Javaid Khan			</address>
+			<!-- date published --><time class="dateline " datetime="2007-08-17T16:53:00+00:00" itemprop="datePublished">August 17, 2007 12:53 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">August 17, 2007 12:53 pm</span>		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody"><em>Note: This lesson was originally published on an older version of The Learning Network; the link to the related Times article will take you to a page on the old site.</em></p>
+<div class="w151 right module">
+<div class="entry"><a href="/category/lesson-plans/"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan151.png" alt="Lesson Plans - The Learning Network"/></a><br />
+<a href="/category/lesson-plans/"><img alt="Lesson Plans - The Learning Network" src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan35.png" class="w35 right"/></a></p>
+<p class="summary">Teaching ideas based on New York Times content.
+<ul class="refer">
+<li><a href="/category/lesson-plans/">See all lesson plans &raquo;</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"><strong>Overview of Lesson Plan:</strong> In this lesson, students explore the writing style of Jack Kerouac and other Beat generation authors and write their own stream-of-consciousness pieces.<br />
+<span id="more-4593"></span></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Author(s):</strong><br />
+Michelle Sale, The New York Times Learning Network<br />
+Javaid Khan, The Bank Street College of Education in New York City</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Suggested Time Allowance:</strong> 1 hour</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Objectives:</strong><br />Students will:<br />  1. Explore the writing style of Jack Kerouac and compare it to their own.<br />  2. Examine the staying power of Mr. Kerouac&#8217;s famous book by reading and discussing the article &#8220;Still Vital, &#8216;On the Road&#8217; Turns 50.&#8221;<br />  3. Write their own stream-of-consciousness pieces after listening to the first chapter of &#8220;On the Road.&#8221;<br />  4. Research the work of a Beat author and share their findings in a future class.  </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Resources / Materials:</strong><br />-pens/pencils<br />  -classroom board<br />  -copies of the first page of Jack Kerouac&#8217;s &#8220;On the Road,&#8221; found online at <a href="//www.nytimes.com/2007/08/14/arts/15kerouac.html"> //www.nytimes.com/2007/08/14/arts/15kerouac.html</a> (one per student)<br />  -access to the audio file of the first chapter of Jack Kerouac&#8217;s &#8220;On the Road&#8221; found online at <a href="https://static01.nyt.com/packages/flash/multimedia/INLINE_PLAYER/inlinePlayerScale.swf?mp3=http%3A//knews.em.nytimes.com/audiosrc/arts/Jack.mp3">https://static01.nyt.com/packages/flash/multimedia/INLINE_PLAYER/inlinePlayerScale.swf?mp3=http%3A//knews.em.nytimes.com/audiosrc/arts/Jack.mp3. (An additional launch is available at the bottom of the article that provides an interesting graphic).<br />  -copies of the article &#8220;Still Vital, &#8216;On the Road&#8217; Turns 50,&#8221; found online at <a href="//www.nytimes.com/learning/teachers/featured_articles/20070817friday.html"> //www.nytimes.com/learning/teachers/featured_articles/20070817friday.html</a>(one per student)<br />  -copies of the definition for stream-of- consciousness, found at The Literary Encyclopedia online <a href="//www.litencyc.com/php/stopics.php?rec=true&amp;UID=1062"> //www.litencyc.com/php/stopics.php?rec=true&amp;UID=1062</a> (optional; one per student)<br />  -resources about the Beat generation (optional; literature reference books, encyclopedias, computers with Internet access, etc.)  </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Activities / Procedures:</strong><br />1. WARM-UP/DO-NOW: As students enter the room, pass out unlabeled copies of the first page of Jack Kerouac&#8217;s &#8220;On the Road&#8221; (found online at <a href="//www.nytimes.com/2007/08/14/arts/15kerouac.html"> //www.nytimes.com/2007/08/14/arts/15kerouac.html</a>). Allow time for students to carefully read the passage. Ask students to underline phrases they find interesting, funny, confusing or meaningful in some way. Once everyone has finished reading, allow time for all students to share one phrase they underlined to create an impromptu class poem based on Mr. Kerouac&#8217;s text. What words, ideas, images were mentioned? How did the class poem compare to the style of the actual text? As a class, discuss the following questions (written on the board prior to class):<br />  -Have you seen this type of writing before and if so, where?<br />  -Have you done this type of writing before and if so, what is it called? If not, when do you think it is commonly used?<br />  -What do you like about it? Give an example.<br />  -What do you dislike about it? Give an example.<br />
+  If students didn&#8217;t mention freewriting, point out that this writing may seem similar to the uncensored type of prewriting students often do to brainstorm ideas or write rough drafts. What similarities do you see between freewriting and this excerpt?<br />
+  Tell students this passage is from Jack Kerouac&#8217;s classic novel, &#8220;On the Road.&#8221; Explain that this book was a best-seller in 1957, and is still very popular today as it is representative of the Beat generation, which, according to The Beat Page (<a href="//www.rooknet.com/beatpage/index.html"> //www.rooknet.com/beatpage/index.html</a>), &#8220;began in the early 1950&#8217;s with a small and tightly connected group of young writers who demonstrated a care-free, often reckless and unquestionably fresh approach to literature as well as a demonstrative social stance toward what was sometimes referred to as &#8216;The Establishment.&#8217; The term &#8216;Beat&#8217; was reportedly coined by Jack Kerouac in the late 1940&#8217;s, but became more common at about the time that writers like himselfwere beginning to get noticed. It was quickly becoming a slang term in America after World War II, meaning &#8216;exhausted&#8217; or &#8216;beat down&#8217; and provided this generation with a definitive label for their personal and social positions and perspectives.&#8221;<br />
+  Briefly discuss how the free-form style of Kerouac&#8217;s writing reflects the beliefs he shared with others from the Beat movement.<br />
+  2. As a class, read and discuss the article, &#8220;Still Vital, &#8216;On the Road&#8217; Turns 50&#8243; (<a href="//www.nytimes.com/learning/teachers/featured_articles/20070817friday.html">//www.nytimes.com/learning/teachers/featured_articles/20070817friday.html</a>), focusing on the following questions:<br />  a. How do the novels &#8220;Peyton Place&#8221; and &#8220;On the Road&#8221; differ, according to the article?<br />  b. What is the basic storyline of &#8220;On the Road&#8221;?<br />  c. Based on the description of the storyline given in the article, what themes, lessons, etc. do you think this novel provides its readers?<br />  d. On what was the first version of &#8220;On the Road&#8221; written? Why do you think Mr. Kerouac did this?<br />  e. What is ironic about Mr. Kerouac being featured in Gap ads in the 1990s, based on the information in the article?<br />  f. Why is &#8220;On the Road&#8221; popular today?<br />  g. What is notable about &#8220;On the Road,&#8221; according to Robert Contant?<br />  h. How do various people interviewed for this article explain the popularity of &#8220;On the Road&#8221;?<br />  i. How does Kafe Kerouac reflect the Beat movement?<br />  j. What does Bill Savage mean when he says, &#8220;There are so many ways in which you&#8217;re not where you are and Kerouac is about being where you are&#8221;? Explain in your own words.<br />  k. Why does Ann Douglas believe students in her course do the best writing of their careers?<br />  l. Can you think of a contemporary book that has similar staying power to &#8220;On the Road&#8221;? Explain your answer.<br />
+  3. Play the audio file of the first chapter of &#8220;On the Road,&#8221; found online at <a href="https://static01.nyt.com/packages/flash/multimedia/INLINE_PLAYER/inlinePlayerScale.swf?mp3=http%3A//knews.em.nytimes.com/audiosrc/arts/Jack.mp3">https://static01.nyt.com/packages/flash/multimedia/INLINE_PLAYER/inlinePlayerScale.swf?mp3=http%3A//knews.em.nytimes.com/audiosrc/arts/Jack.mp3. (An additional launch is available at the bottom of the article that provides an interesting graphic). Have students follow along for part of the audio file using the text from the Do-Now assignment. After the class has listened to the text, discuss the following questions:<br />   -Now that you have listened to this writing style, has your opinion of it changed? Why or why not?<br />  -What adjectives would you use to describe this type of writing?<br />  -How does this type of writing compare to the way you write for your classes?<br />  -When, if at all, have you used this type of writing?<br />
+  Explain to students that &#8220;On the Road&#8221; is an example of stream-of-consciousness writing. According to The Literary Encyclopedia online <a href="//www.litencyc.com/php/stopics.php?rec=true&amp;UID=1062">//www.litencyc.com/php/stopics.php?rec=true&amp;UID=1062</a>, &#8220;Stream of consciousness writing aims to provide a textual equivalent to the stream of a fictional character&#8217;s consciousness. It creates the impression that the reader is eavesdropping on the flow of conscious experience in the character&#8217;s mind, gaining intimate access to their private &#8220;thoughts.&#8221; It involves presenting in the form of written text something that is neither entirely verbal nor textual. Stream-of-consciousness writing was developed in the early decades of the twentieth century when writers became interested in finding ways of laying open for readers&#8217; inspection, in a way impossible in real life, the imagined inner lives of their fictional characters. The challenge was to find ways of writing that would create plausible textual presentations of the imagined thought-streams.<br />
+  Stream-of-consciousness writing comes in a variety of stylistic forms, most importantly narrated stream of consciousness and quoted stream of consciousness (&#8216;interior monologue&#8217;). Narrated stream-of-consciousness is most often composed of a variety of sentence types including psycho-narration (the narrative report of characters&#8217; psychological states) and free indirect style. Interior monologue is the direct quotation of characters&#8217; silent speech, though not necessarily marked with speech marks. &#8216;Interior monologue&#8217; is sometimes mistakenly used as a synonym for stream of consciousness writing as such.&#8221; (This definition may be copied into a handout and distributed to students to use as a reference while writing their own stream of consciousness pieces.)<br />
+     Invite students to write their own stream-of-consciousness texts of about 200 words, using one of the following prompts (or another prompt, approved by the teacher):<br />   -&#8220;If I could do it all again&#8221;<br />  -&#8220;I&#8217;ve never believed&#8221;<br />  -&#8220;I wish there were more&#8221;<br />  -&#8220;My biggest worry&#8221;<br />  -&#8220;I&#8217;m most proud of&#8221;<br />
+  At the end of class, students share their work in an informal setting, similar to the coffee houses that were popular among the Beat crowd.<br />
+  4. WRAP-UP/HOMEWORK: Individually, students investigate the work of a Beat writer, such as Jack Kerouac, Allen Ginsberg or Lawrence Ferlinghetti, and learn about his life and work. They then create a brief presentation about the author, including a reading of his work in either a short poem or excerpt from a poem, novel or memoir. The presentation should also incorporate an explanation of what students like or dislike about the piece, and what they think this work illustrates about the time in which it was written. </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Further Questions for Discussion:</strong><br />-What determines whether writing is &#8220;good&#8221; or &#8220;bad&#8221;?<br />  -What can a novice writer learn from stream-of-consciousness writing?<br />  -What factors do writers consider when choosing their writing style for a particular piece of work?<br />  -What factors do you consider when writing a particular piece of work?<br />  -What words, techniques, etc. characterize your daily writing style?<br />  -How has email and text messaging changed the way you write?  </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Evaluation / Assessment:</strong><br />Students will be evaluated based on participation in class activities and discussions, thoughtful completion of stream-of-consciousness pieces, and carefully planned presentations on a Beat author.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Vocabulary:</strong><br />precursor, clarion, homage, aficionados, untethered, gospel, resonates, exuberance  </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Extension Activities:</strong><br />1. Write an essay exploring the types of lessons you might learn on a road trip across America with a friend. For inspiration, read the first chapter of &#8220;On the Road,&#8221; found online at <a href="//www.nytimes.com/2007/08/14/arts/15kerouac.html"> //www.nytimes.com/2007/08/14/arts/15kerouac.html</a>).<br />
+  2. Research and compile a popular culture guide of songs, movies, books, theatrical performances, paintings, sculptures, etc. that are based on or inspired by &#8220;On the Road.&#8221; For each item you include, write a brief explanation of how this work relates to Jack Kerouac&#8217;s classic text.<br />
+  3. Develop a list of books that you think every bookstore should carry. Visit your local bookstore to see if these books are in stock, and if so, how many. For the books that are not in the store, write a letter persuading the owner to include your choices in his or her collection.<br />
+  4. Read &#8220;On the Road&#8221; and write a book review for today&#8217;s audience, explaining its relevance (or lack of relevance) to you and your peers.<br />
+  5. Choose a favorite author and write a short piece in the same style as this writer. </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Interdisciplinary Connections:</strong><br />American History &#8211; Create a poster highlighting the current events, politics, popular culture (including music, movies, and books), etc. of 1957, the year &#8220;On the Road&#8221; became a best-selling novel.<br />
+  Economics  Explore the monetary compensation authors gets if their books are published. How is the amount of money determined? Consider initial payment, as well as royalties, reissuing of books, etc. Create a timeline illustrating your findings.<br />
+  Geography &#8211; On a large map of the United States, map out the path of a road trip you would like to take across the country. You can go north and south as often as you like, but you must travel from the west coast to the east coast, or vice versa. Highlight landmarks you would see along the route you created.<br />
+  Teaching with The Times   Read the Book Review section for a new book that interests you. Read the book and write a letter to the author asking him or her questions about the work. To order The New York Times for your classroom, <a href="//www.nytimes.com/learning/teachers/NIE/index.html">click here</a>.  -Read the Arts section of The Times to find reviews, articles and photographs of material from the 1950s and 1960s that is still popular today or has been revived for theater, an art exhibit, or some other cultural outlet. Create a poster of clippings illustrating your findings. To order The New York Times for your classroom, <a href="//www.nytimes.com/learning/teachers/NIE/index.html">click here</a>.  </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Other Information on the Web:</strong><br />The Beat Page (<a href="//www.rooknet.com/beatpage"> //www.rooknet.com/beatpage</a>) provides a timeline of early Beat generation literary works, as well as pop culture references to this movement.<br />
+  The University of California at Berkley&#8217;s library (<a href="//www.lib.berkeley.edu/MRC/BeatGen.html#Back%20Beat">//www.lib.berkeley.edu/MRC/BeatGen.html#Back%20Beat</a>) lists an extensive bibliography of audio and video titles related to the Beat movement.<br />
+  The New York Times&#8217; Times Topics (<a href="//topics.nytimes.com/top/reference/timestopics/people/k/jack_kerouac/index.html">//topics.nytimes.com/top/reference/timestopics/people/k/jack_kerouac/index.html</a>) features a collection of articles relating to Jack Kerouac, including his obituary.  </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Academic Content Standards:</strong><br />Grades 6-8<br />  Language Arts Standard 1- Demonstrates competence in the general skills and strategies of the writing process. Benchmarks: Evaluates own and others&#8217; writing; Write compositions that are focused for different audiences and different purposes; Writes in response to literature <br /> Language Arts Standard 2- Demonstrates competence in the stylistic and rhetorical aspects of writing. Benchmark: Uses descriptive language that clarifies and enhances ideas <br /> Language Arts Standard 6- Demonstrates competence in the general skills and strategies for reading a variety of literary texts. Benchmarks: Applies reading skills and strategies to a variety of literary passages and texts; Knows the defining characteristics of a variety of literary forms and genres; Recognizes the use of specific literary devices; Understands the effects of the author&#8217;s style on a literary text<br />   Language Arts Standard 8 &#8211; Demonstrates competence in speaking and listening as tools for learning. Benchmarks: Plays a variety of roles in group discussions; Asks questions to seek elaboration and clarification of ideas; Listens in order to understand a speaker&#8217;s topic, purpose, and perspective; Conveys a clear main point when speaking to others and stays on the topic being discussed <br /> Historical Understanding Standard 1- Understands and knows how to analyze chronological relationships and patterns. Benchmarks: Knows how to diagram the temporal structure of events in autobiographies, biographies, literary narratives, and historical narratives, and understands the differences between them; Understands patterns of change and continuity in the historical succession of related events; Knows how to impose temporal structure on their historical narratives; Knows how to periodize events of the nation into broadly defined eras<br />
+  Grades 9-12<br />  Language Arts Standard 1- Demonstrates competence in the general skills and strategies of the writing process. Benchmarks: Evaluates own and others&#8217; writing; Writes compositions that are focused for different audiences; Writes compositions that fulfill different purposes; Writes reflective compositions; Writes in response to literature <br /> Language Arts Standard 2- Demonstrates competence in the stylistic and rhetorical aspects of writing. Benchmarks: Uses descriptive language that clarifies and enhances ideas; Organizes ideas to achieve cohesion in writing; Uses a variety of techniques to convey a personal style and voice <br /> Language Arts Standard 6- Demonstrates competence in the general skills and strategies for reading a variety of literary texts. Benchmarks: Applies reading skills and strategies to a variety of literary texts; Knows the defining characteristics of a variety of literary forms and genres; Understands the effects of complex literary devices and techniques on the overall quality of a work; Relates personal response to the text with that seemingly intended by the author<br /> Language Arts Standard 8 &#8211; Demonstrates competence in speaking and listening as tools for learning. Benchmarks: Plays a variety of roles in group discussions; Asks questions to seek elaboration and clarification of ideas; Listens in order to understand a speaker&#8217;s topic, purpose, and perspective; Conveys a clear main point when speaking to others and stays on the topic being discussed <br /> Historical Understanding Standard 1- Understands and knows how to analyze chronological relationships and patterns. Benchmarks: Knows how to diagram the temporal structure of events in autobiographies, biographies, literary narratives, and historical narratives, and understands the differences between them; Understands patterns of change and continuity in the historical succession of related events; Knows how to impose temporal structure on their historical narratives; Knows how to periodize events of the nation into broadly defined eras   </p>
+<hr /><p class="story-body-text" itemprop="articleBody"><em>This lesson plan may be used to address the academic standards listed above.
+				 These standards are drawn from Content Knowledge: A Compendium of Standards and Benchmarks for K-12 Education;
+				 3rd and 4th Editions and have been provided courtesy of the <a href="//www.mcrel.org/">Mid-continent Research
+				 for Education and Learning</a> in Aurora, Colorado.</em></p>	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2007/08/17/word-trip/" data-title="Word Trip" data-description="In this lesson, students explore the writing style of Jack Kerouac and other Beat generation authors and write their own stream-of-consciousness pieces.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2007/08/16/dont-bet-the-house-on-it/" title="Don&#039;t Bet the House On It!">
+				Don&#8217;t Bet the House On It!			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2007/08/20/peer-pressure/" title="Peer Pressure">
+				Peer Pressure			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":47,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

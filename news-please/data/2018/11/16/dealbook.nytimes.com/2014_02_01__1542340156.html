@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dealbook/Law Doesn't End Revolving Door on Capitol Hill  ( 20140201 )" />
+<meta name="communityAssetURL" content="https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002683780"><meta name="author" content="Eric Lipton and Ben Protess" />
+<meta name="CLMST" content="Eric Lipton and Ben Protess" />
+<meta name="byl" content="Eric Lipton and Ben Protess" />
+<meta name="GBLC" content="Financial Services;Investment Banking;Legal/Regulatory;Revolving Door;Top Headline 1">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1391277035" />
+<meta name="PUD" content="20140201" />
+<meta name="pdate" content="20140201" />
+<meta name="ptime" content="20140201125035" />
+<meta name="utime" content="20140203145615" />
+<meta property="article:modified_time" itemprop="dateModified" content="2014-02-03T14:56:15-05:00" />
+<meta name="DISPLAYDATE" content="February 1, 2014" />
+<meta name="dat" content="February 1, 2014" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Conflicts of Interest;Lobbying and Lobbyists;United States Politics and Government">
+<meta name="org" content="House of Representatives;Senate">
+<meta property="article:tag" content="Conflicts of Interest" />
+<meta property="article:tag" content="Lobbying and Lobbyists" />
+<meta property="article:tag" content="United States Politics and Government" />
+<meta property="article:tag" content="House of Representatives" />
+<meta property="article:tag" content="Senate" />
+<meta property="article:tag" content="Financial Services" />
+<meta property="article:tag" content="Investment Banking" />
+<meta property="article:tag" content="Legal/Regulatory" />
+<meta property="article:tag" content="Revolving Door" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta name="keywords" content="Conflicts of Interest,Lobbying and Lobbyists,United States Politics and Government,House of Representatives,Senate,Financial Services,Investment Banking,Legal/Regulatory,Revolving Door,Top Headline 1" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2014%2F02%2F01%2Flaw-doesnt-end-revolving-door-on-capitol-hill%2F" title="Law Doesn&#8217;t End Revolving Door on Capitol Hill" />
+<meta name="description" content="Former officials have little trouble passing through loopholes in laws intended to keep them from immediately lobbying their onetime colleagues." />
+<meta name="hdl_p" content="Law Doesn’t End Revolving Door on Capitol Hill" />
+<meta name="hdl" content="Law Doesn&#039;t End Revolving Door on Capitol Hill " />
+<meta property="og:title" content="Law Doesn&#039;t End Revolving Door on Capitol Hill " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="Former officials have little trouble passing through loopholes in laws intended to keep them from immediately lobbying their onetime colleagues." />
+<meta property="og:image" content="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-videoSixteenByNine600.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Law Doesn&#039;t End Revolving Door on Capitol Hill " />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/" />
+<meta name="twitter:description" content="Former officials have little trouble passing through loopholes in laws intended to keep them from immediately lobbying their onetime colleagues." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Detroit Sues to Cancel Some Costly Contracts' href='https://dealbook.nytimes.com/2014/01/31/detroit-sues-to-cancel-some-costly-contracts/' />
+<link rel='next' title='Hoping to Stay Independent, Jos. A. Bank in Talks to Buy Eddie Bauer' href='https://dealbook.nytimes.com/2014/02/02/hoping-to-stay-independent-jos-a-bank-is-said-to-hold-merger-talks-with-eddie-bauer/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/' />
+<link rel='shortlink' href='//nyti.ms/1ksHnxX' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>Law Doesn&#039;t End Revolving Door on Capitol Hill  - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-593526 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Law Doesn&#8217;t End Revolving Door on Capitol Hill        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/"
+	 data-title="Law Doesn&#8217;t End Revolving Door on Capitol Hill"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Former officials have little trouble passing through loopholes in laws intended to keep them from immediately lobbying their onetime colleagues.&lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="February 1, 2014 12:50 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-593526 post type-post status-publish hentry category-financial-services category-investment-banking category-legal category-revolving-door tag-conflicts-of-interest tag-house-of-representatives tag-lobbying-and-lobbyists tag-senate tag-united-states-politics-and-government des-conflicts-of-interest des-lobbying-and-lobbyists des-united-states-politics-and-government org-house-of-representatives org-senate" id="post-593526">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a> | <a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></span>		</div>
+				<h1 itemprop="headline" class="entry-title">Law Doesn&#8217;t End Revolving Door on Capitol Hill</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Eric Lipton and Ben Protess			</address>
+			<!-- date published --><time class="dateline " datetime="2014-02-01T17:50:35+00:00" itemprop="datePublished">February 1, 2014 12:50 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">February 1, 2014 12:50 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content">
+	<div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-tmagArticle.jpg" src="https://static01.nyt.com/images/2014/02/02/business/02-BIZ-JUMP-LOBBY/02-BIZ-JUMP-LOBBY-tmagArticle.jpg" id="100000002683652" width="592" height="397" alt="Erik Olson was chief of staff to Representative Ron Kind, Democrat of Wisconsin until September. He soon became a lobbyist. Because his salary fell below a cap established in House rules, a one-year ban on lobbying his former boss does not apply."   /><meta itemprop="height" content="397"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Erik Olson was chief of staff to Representative Ron Kind, Democrat of Wisconsin until September. He soon became a lobbyist. Because his salary fell below a cap established in House rules, a one-year ban on lobbying his former boss does not apply.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Tom Williams/CQ Roll Call, via Getty Images</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/" data-title="Law Doesn&#8217;t End Revolving Door on Capitol Hill" data-description="Former officials have little trouble passing through loopholes in laws intended to keep them from immediately lobbying their onetime colleagues.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div>
+<p class="story-body-text" itemprop="articleBody">A top aide to a Republican congressman from Arizona helped promote a legislative plan to overhaul the nation’s home mortgage finance system. Weeks after leaving his government job, he reappeared on Capitol Hill, now as a lobbyist for a company poised to capitalize on the plan.</p>
+<p class="story-body-text" itemprop="articleBody">A former counsel to Democrats on the House Financial Services Committee left Capitol Hill a year ago. He, too, returned to the Hill just months later, lobbying committee aides on behalf of Wall Street giants like <a href="//dealbook.on.nytimes.com/public/overview?symbol=JPM&#038;inline=nyt-org" class="tickerized" title="More information about JPMorgan Chase &#038; Company">JPMorgan Chase</a> and <a href="//topics.nytimes.com/top/news/business/companies/bloomberg_lp/index.html?inline=nyt-org" class="tickerized" title="More articles about Bloomberg LP">Bloomberg L.P.</a></p>
+<p class="story-body-text" itemprop="articleBody">And the chief of staff for the Republican chairman of the House Financial Services Committee left his government salary behind in January 2012. Yet for months afterward, he continued to manage his boss’s re-election campaign, even while serving as a lobbyist for financial industry clients.</p>
+<div class="entry entry-related"><h4>Related Links</h4>	<div class="entry-related">
+		<ul>
+					<li><a href="//www.nytimes.com/interactive/2014/02/02/us/politics/02revolving-door-documents.html">Document: Slipping Through Congress's Revolving Door</a></li>
+				</ul>
+	</div>
+	</div>
+<p class="story-body-text" itemprop="articleBody">The experiences of the three Capitol Hill aides-turned-lobbyists — traced through interviews with political operatives and a review of public records — illustrate in new detail the gaping holes in rules governing Washington’s revolving door.</p>
+<p class="story-body-text" itemprop="articleBody">Federal ethics rules are intended to limit lobbying by former senior officials within one year after they leave the government. Yet even after the ethics rules were revised in 2007 following a lobbying scandal, more than 1,650 congressional aides have registered to lobby within a year of leaving Capitol Hill, according to an analysis by The New York Times of data from LegiStorm, an online database that tracks congressional staff members and lobbying. At least half of those departing aides, the analysis shows, faced no restrictions at all.</p>
+<p class="story-body-text" itemprop="articleBody">The rules are particularly loose in the House of Representatives, where aides and lawmakers enjoy significant leeway in hopping from job to job — and from government pay to six- and seven-figure private sector salaries.</p>
+<p class="story-body-text" itemprop="articleBody">In the three cases identified by The Times, the interviews and records suggest, the former House staff members did not violate the rules but rather seized on loopholes to lobby within one year.</p>
+<p class="story-body-text" itemprop="articleBody">Those examples, and the data analyzed by The Times, offer a playbook of the many ways that former officials can legally circumvent the purpose of the law. While the law’s limitations were known, the data highlight for the first time the extent to which lobbyists routinely capitalize on an array of loopholes.</p>
+<p class="story-body-text" itemprop="articleBody">Some aides resist pay raises, to keep their salaries just below the cutoff that would prompt lobbying restrictions. More highly paid House aides, simply because their paycheck came from an individual lawmaker or leadership office rather than a committee they worked closely with, are immediately allowed to lobby former committee colleagues. This maneuver would be prohibited in the Senate, where senior aides <a title="Senate ethics document: &quot;Guidance on the Postemployment Contact Ban.&quot; (PDF)" href="//www.ethics.senate.gov/public/index.cfm/files/serve?File_id=bf9ea0f9-2593-4f49-83b3-f581f86b9098" target="_blank">cannot contact anyone in the Senate for a year</a>.</p>
+<p class="story-body-text" itemprop="articleBody">In other cases, former House aides can continue socializing with lawmakers, working on campaigns and attending committee hearings while representing private clients as a lobbyist. That loophole exists even though a lobbyist’s presence on campaigns and at committee hearings could serve as a reminder of pending requests by clients.</p>
+<p class="story-body-text" itemprop="articleBody">The effortless way former staff members avoid the one-year ban raises new concerns about the revolving door. Some critics say it fosters a clubby culture in Washington, where lawmakers and their aides might seek to protect Wall Street and other industries like health care from new rules and legislation.</p>
+<p class="story-body-text" itemprop="articleBody">When Congress <a title="Times article." href="//www.nytimes.com/2007/08/03/washington/03lobby.html" target="_blank">updated the ethics rules</a> in 2007 in the wake of the <a href="//topics.nytimes.com/top/reference/timestopics/people/a/jack_abramoff/index.html?inline=nyt-per" class="tickerized" title="More articles about Jack Abramoff.">Jack Abramoff</a> lobbying scandal, which included illegal influence peddling <a title="Justice Department news release." href="//www.justice.gov/opa/pr/2007/September/07_crm_705.html" target="_blank">between a lawmaker and a former aide</a>, it initially drafted tighter restrictions on the revolving door, arguing that a broader ban lasting two years might curb conflicts of interest in Washington. But with protests from some lawmakers — including Representative John Conyers, Democrat of Michigan, and Representative Lamar Smith, Republican of Texas, then the top two members of the House Judiciary Committee — the <a title="Related article." href="//www.nytimes.com/cq/2007/05/17/cq_2747.html?pagewanted=print" target="_blank">proposal was watered down</a> to remove the two-year “cooling off” period for the House and other restrictions.</p>
+<p class="story-body-text" itemprop="articleBody">The resulting widespread use of loopholes is disheartening to former lawmakers who tried, but failed, to enact more radical changes.</p>
+<p class="story-body-text" itemprop="articleBody">“Is it any wonder that the public holds such a low esteem for Congress?” said <a title="Biographical information." href="//bioguide.congress.gov/scripts/biodisplay.pl?index=H000444" target="_blank">Joel M. Hefley</a>, a Republican who served as chairman of the House Ethics Committee before he retired in 2007. “You can dance around these rules in so many ways it really does not accomplish much of anything.”</p>
+<p class="story-body-text" itemprop="articleBody">The continued surge of former congressional staffers to K Street helps explain the fundamental change that is taking place in the lobbying profession in Washington, as former government employees accounted for 44 percent of all registered, active firm lobbyists in 2012, up from 18 percent in 1998, according to <a href="//sunlightfoundation.com/blog/2014/01/21/revolving-door-lobbyists-government-experience/" title="The study.">a recent study by the Sunlight Foundation</a>.</p>
+<p class="story-body-text" itemprop="articleBody">On some occasions, former congressional aides crossed a legal line and paid a price. <a title="Times article." href="//www.nytimes.com/2012/06/08/us/politics/ex-ensign-aide-pleads-guilty-in-scheme-that-snared-only-him.html" target="_blank">Doug Hampton</a> — a onetime aide to the former senator John Ensign, Republican of Nevada — pleaded guilty in 2012 to violating the one-year ban.</p>
+<p class="story-body-text" itemprop="articleBody">But such prosecutions are rare. The Justice Department, which is responsible for enforcing the ban, does not actively police compliance with the rules, ethics lawyers who handle such cases said.</p>
+<p class="story-body-text" itemprop="articleBody">“Unless the violation is brought to our attention, it is hard to enforce,” said Michael P. Kortan, the chief spokesman for the <a href="//topics.nytimes.com/top/reference/timestopics/organizations/f/federal_bureau_of_investigation/index.html?inline=nyt-org" class="tickerized" title="More articles about the Federal Bureau of Investigation.">F.B.I.</a></p>
+<p class="story-body-text" itemprop="articleBody">And in interviews, aides-turned-lobbyists emphasized that there was no need to run afoul of the law, given the broad number of exemptions.</p>
+<p class="story-body-text" itemprop="articleBody">The salary loophole is perhaps the most popular. House aides can avoid the one-year “cooling-off” period as long as their salaries are below a certain cap, <a title="House ethics memorandum on the salary cap. (PDF)" href="//ethics.house.gov/sites/ethics.house.gov/files/pay%20rates%202013_0.pdf" target="_blank">totaling $130,500 last year</a>.</p>
+<p class="story-body-text" itemprop="articleBody">Erik Olson’s salary fell below that cap when he stepped down in September from his job as chief of staff to Representative Ron Kind, Democrat of Wisconsin. Soon after, he started to lobby Congress on behalf of <a title="Lobbying report." href="//soprweb.senate.gov/index.cfm?event=getFilingDetails&amp;filingID=d60bb527-be18-4d10-a2eb-01e4c7aef9bf&amp;filingTypeID=78" target="_blank">corporate clients like Leprino Foods of Denver</a>, which wanted to shape the so-called <a href="//topics.nytimes.com/top/reference/timestopics/subjects/f/farm_bill_us/index.html?inline=nyt-classifier" class="tickerized" title="More articles about the Farm Bill (U.S.).">Farm Bill</a>, a topic that Mr. Kind was involved in.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Olson, when asked if he had contacted his former boss in the months since he left, said his firm’s policy was “to not publicize who we are meeting with on the Hill or administration,” and a spokesman for Mr. Kind simply said, “No comment.”</p>
+<p class="story-body-text" itemprop="articleBody">Matthew Tully, the Congressional aide who helped pitch a plan to revamp the nation’s home mortgage finance system, earned an annual salary of $128,000 while serving as chief of staff to Representative David Schweikert, Republican of Arizona. Mr. Tully’s job title, like Mr. Olson’s, would seem to have qualified him as a senior staff member, a role the ethics law is supposed to cover. But again, the paycheck amount exempted him from the one-year ban.</p>
+<p class="story-body-text" itemprop="articleBody">During Mr. Tully’s tenure in the House, Mr. Schweikert was one of the leading House advocates for legislation that would change the way most Americans obtain home mortgages, limiting the federal government’s role as the primary insurer of these loans. While on Capitol Hill, Mr. Tully became a sought-after expert on the debate, speaking in 2012 at a <a title="News release on the conference." href="//www.insidemortgagefinance.com/issues/imfpubs_ibcl/2012_22/news/GSE-Reform-and-Non-Agency-Plans-in-the-Works-1000020983-1.html" target="_blank">major mortgage industry conference</a> in Miami to highlight legislation his boss was preparing.</p>
+<p class="story-body-text" itemprop="articleBody">But in 2013, Mr. Tully spun that expertise into a job as the only internal lobbyist for a Pennsylvania-based private mortgage insurer, a job he started one day after leaving the House. The company, Essent Guaranty, stands to benefit from Mr. Schweikert’s positions.</p>
+<p class="story-body-text" itemprop="articleBody">And yet Mr. Tully, in his new role as a lobbyist, was free to communicate with the staff in his former boss’s office. At one point, while attending a House hearing on housing legislation, he emailed one of Mr. Schweikert’s staff members, according to a Congressional aide with direct knowledge of the matter.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Tully and Essent declined requests for comment, so it is unclear whether he intentionally kept his salary below the $130,500 threshold.</p>
+<p class="story-body-text" itemprop="articleBody">But a former Senate staff member-turned-lobbyist, whose salary was just a few thousand dollars below the cap, acknowledged that she had knowingly kept down her pay. That way, she was free to immediately lobby at least some members of the Senate upon her departure for a mortgage company.</p>
+<p class="story-body-text" itemprop="articleBody">“I was very lucky I was underneath the cap,” she said, asking that she not be named because her new employer would not allow her to speak on the subject. “The rules are very arbitrary. Honestly, they don’t make sense to me.”</p>
+<p class="story-body-text" itemprop="articleBody">Dee Buchanan, a Republican who earned more than $170,000 during his last year as a senior aide to Representative Jeb Hensarling, Republican of Texas, benefited from a different exemption.</p>
+<p class="story-body-text" itemprop="articleBody">After departing Capitol Hill in fall 2012, Mr. Buchanan started a job with Ogilvy Government Relations. The firm’s website boasts that Mr. Buchanan — who quickly registered to lobby for the American Bankers Association and the <a href="//dealbook.on.nytimes.com/public/overview?symbol=CME&#038;inline=nyt-org" class="tickerized" title="More information about CME Group Inc">CME Group</a>, one of the world’s largest futures exchanges — was “the ‘go-to guy’ for the new House Financial Services Committee chairman,” Mr. Hensarling.</p>
+<p class="story-body-text" itemprop="articleBody">Despite the close ties, Mr. Buchanan was free to immediately lobby most members of Mr. Hensarling’s committee. Mr. Buchanan’s one-year ban did not apply to the committee at large because his government paycheck had come from the House Republican Conference, a leadership arm of the party that Mr. Hensarling led in 2011 and 2012. As such, Mr. Buchanan was restricted from lobbying only Mr. Hensarling and a few other committee members who also belonged to leadership.</p>
+<p class="story-body-text" itemprop="articleBody">Democratic aides have made similar moves.</p>
+<p class="story-body-text" itemprop="articleBody">John Hughes, the lobbyist now representing JPMorgan Chase and Bloomberg L.P., last held a job on Capitol Hill as a senior adviser to Representative Steny Hoyer of Maryland, the No. 2 Democrat in the House. As an aide to Mr. Hoyer, Mr. Hughes’s job in part was to be the contact person with the House Financial Services Committee, where he worked as the top lawyer during the 2008 financial crisis.</p>
+<p class="story-body-text" itemprop="articleBody">Because his most recent government paycheck came from House Democratic leadership, Mr. Hughes was prohibited only from lobbying top House leaders. Mr. Hughes, who declined to comment for this article, was soon able to begin contacting his former associates on the House committee.</p>
+<p class="story-body-text" itemprop="articleBody">“It is almost a meaningless ban,” said Craig Holman, who helped write the 2007 ethics law as a government ethics expert at the nonprofit group <a href="//topics.nytimes.com/top/reference/timestopics/organizations/p/public_citizen/index.html?inline=nyt-org" class="tickerized" title="More articles about Public Citizen">Public Citizen</a>.</p>
+<p class="story-body-text" itemprop="articleBody">The one-year ban also allows former aides to “<a title="House memorandum." href="https://ethics.house.gov/sites/ethics.house.gov/files/post%20emp%20Member_0.pdf" target="_blank">interact socially</a>“ with former bosses or Capitol Hill colleagues. Although there can be no “intent to influence” a lawmaker’s “official actions or decisions” at dinner parties and golf games, the lobbyists can work behind the scenes, using their expertise to advise clients about the inner workings of Congress. And when it comes to working on a political campaign, there are few restrictions, since such activity is considered a form of free speech.</p>
+<p class="story-body-text" itemprop="articleBody">The result is a blurring of lines that allows former aides like Larry Lavender to legally spin through the revolving door. Mr. Lavender spent five years as chief of staff to the top Republican on the House Financial Services Committee at the time, Representative Spencer Bachus, a longtime friend from Alabama.</p>
+<p class="story-body-text" itemprop="articleBody">When a law firm representing JPMorgan recruited Mr. Lavender for a job in early 2012, he left the committee behind. But he stayed close to Mr. Bachus, becoming an unpaid campaign manager for the congressman’s re-election bid.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Lavender, who earned $172,500 in his final full year on the Hill, fit squarely into the one-year ban’s allowances for campaigning and socializing. While Mr. Lavender occasionally lunched with former colleagues, and even made an appearance at the committee’s holiday party, he said he did not seek out any official favors or actions. And although he represented JPMorgan, he said he had never contacted the committee on the bank’s behalf.</p>
+<p class="story-body-text" itemprop="articleBody">“I took great care to confer with the House ethics committee to make sure I understood the rules, and then I was scrupulous in complying,” Mr. Lavender said in an interview.</p>
+<p class="story-body-text" itemprop="articleBody">The rules allowed Mr. Lavender to join a behind-the-scenes effort to help JPMorgan avoid having to testify at a House hearing in 2012. The hearing focused on the collapse of <a href="//dealbook.on.nytimes.com/public/overview?symbol=MFGLQ&#038;inline=nyt-org" class="tickerized" title="More information about MF Global">MF Global</a>, a major New York brokerage firm that was one of JPMorgan’s clients.</p>
+<p class="story-body-text" itemprop="articleBody">On a conference call with fellow lobbyists, one person briefed on the call recalled, Mr. Lavender took aim at the former colleagues who wanted to force JPMorgan executives to testify. The person briefed on the call, who spoke on the condition of anonymity, said that Mr. Lavender remarked about his former colleagues: “I should have fired them when I had the chance.”</p>
+<footer class="story-footer">
+    <div class="story-meta">
+	<p class="story-print-citation">A version of this article appears in print on 02/02/2014, on page <span itemprop="printSection">A</span><span itemprop="printPage">1</span> of the <span itemprop="printEdition">NewYork</span> edition with the headline: Law Doesn’t End Revolving Door on Capitol Hill.</p>    </div>
+</footer>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2014/02/01/law-doesnt-end-revolving-door-on-capitol-hill/" data-title="Law Doesn&#8217;t End Revolving Door on Capitol Hill" data-description="Former officials have little trouble passing through loopholes in laws intended to keep them from immediately lobbying their onetime colleagues.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/01/31/detroit-sues-to-cancel-some-costly-contracts/" title="Detroit Sues to Cancel Some Costly Contracts ">
+				Detroit Sues to Cancel Some Costly Contracts 			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/02/02/hoping-to-stay-independent-jos-a-bank-is-said-to-hold-merger-talks-with-eddie-bauer/" title="Hoping to Stay Independent, Jos. A. Bank in Talks to Buy Eddie Bauer">
+				Hoping to Stay Independent, Jos. A. Bank in Talks to Buy Eddie Bauer			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":54,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

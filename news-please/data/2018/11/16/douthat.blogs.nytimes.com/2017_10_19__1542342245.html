@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-douthat section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-douthat section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-douthat section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-douthat section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/douthat/The Age of Consent and Its Discontents ( 20171019 )" />
+<meta name="communityAssetURL" content="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta name="author" content="" />
+<meta name="CLMST" content="" />
+<meta name="byl" content="" />
+<meta name="article:author" content="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/rossdouthat/index.html" /><meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1508427103" />
+<meta name="PUD" content="20171019" />
+<meta name="pdate" content="20171019" />
+<meta name="ptime" content="20171019113143" />
+<meta name="utime" content="20171019153454" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-10-19T15:34:54-04:00" />
+<meta name="DISPLAYDATE" content="October 19, 2017" />
+<meta name="dat" content="October 19, 2017" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="douthat" />
+<meta name="BN" content="douthat" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Weinstein, Harvey">
+<meta name="des" content="Sex;Sexual Harassment;Women&#039;s Rights">
+<meta property="article:tag" content="Weinstein Harvey" />
+<meta property="article:tag" content="Sex" />
+<meta property="article:tag" content="Sexual Harassment" />
+<meta property="article:tag" content="Women&#039;s Rights" />
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Weinstein Harvey,Sex,Sexual Harassment,Women&#039;s Rights,Uncategorized" />
+<meta name="news_keywords" content="Sex" />
+<meta name="description" content="Does Harvey Weinstein prove the case against a &#8220;consenting adults&#8221; sexual ethics? Not quite." />
+<meta name="hdl" content="The Age of Consent and Its Discontents" />
+<meta property="og:title" content="The Age of Consent and Its Discontents" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" />
+<meta property="og:site_name" content="Ross Douthat" />
+<meta property="og:description" content="Does Harvey Weinstein prove the case against a &#8220;consenting adults&#8221; sexual ethics? Not quite." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="The Age of Consent and Its Discontents" />
+<meta name="twitter:url" content="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" />
+<meta name="twitter:description" content="Does Harvey Weinstein prove the case against a &#8220;consenting adults&#8221; sexual ethics? Not quite." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@DouthatNYT">
+<link rel='prev' title='Ta-Nehisi Coates and the Alternatives to Despair' href='//douthat.blogs.nytimes.com/2017/09/14/ta-nehisi-coates-and-the-alternatives-to-despair/' />
+<link rel='next' title='Liberalism and the Politics of Low Fertility' href='//douthat.blogs.nytimes.com/2017/10/25/liberalism-and-the-politics-of-low-fertility/' />
+<link rel='canonical' href='//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/' />
+<link rel='shortlink' href='https://nyti.ms/2zlrE0z' />
+<link rel='https://github.com/WP-API/WP-API' href='//douthat.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/douthat/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//douthat.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/douthat/2017/10/19/the-age-of-consent-and-its-discontents/" />
+<meta name="dfp-ad-unit-path" content="opinion/douthat" />			<title>The Age of Consent and Its Discontents - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt","jkiddScript"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-22087 blog-universal nyt-blog-douthat" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//douthat.blogs.nytimes.com">
+                Ross Douthat            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        The Age of Consent and Its Discontents        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+<div id="liftoff-nyt5-bar1" class="hidden"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/"
+	 data-title="The Age of Consent and Its Discontents"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Does Harvey Weinstein prove the case against a &quot;consenting adults&quot; sexual ethics? Not quite.&lt;/span&gt;&lt;a href=&quot;//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="October 19, 2017 11:31 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="douthat" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<div id="logo" ><a href="//douthat.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion" title="Go to Ross Douthat Home"><img src="https://static01.nyt.com/images/blogs_v5/douthat/douthat_post.png" alt="Ross Douthat - Just another nytimes.com Blogs weblog"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//douthat.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Ross Douthat">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-22087 post type-post status-publish hentry tag-sex tag-sexual-harassment tag-weinstein-harvey tag-womens-rights per-weinstein-harvey des-sex des-sexual-harassment des-womens-rights news_keywords-sex" id="post-22087">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">The Age of Consent and Its Discontents</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+							</address>
+			<!-- date published --><time class="dateline " datetime="2017-10-19T15:31:43+00:00" itemprop="datePublished">October 19, 2017 11:31 am</time>
+			<!-- date updated --><span class="visually-hidden updated">October 19, 2017 11:31 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" data-title="The Age of Consent and Its Discontents" data-description="Does Harvey Weinstein prove the case against a &quot;consenting adults&quot; sexual ethics? Not quite.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody">Amid the cascade of sexual assault stories coming out of liberal Hollywood in the wake of Harvey Weinstein&#8217;s fall, <a href="//www.nationalreview.com/article/452683/sex-consent-morality-culture-ruined-sexual-revolution">David French argues</a> that the time is ripe for social conservatives to claim vindication in their critique of our society&#8217;s elevation of &#8220;consent&#8221; as the only rule of sexual morality:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">You can sum up the sexual ethic of the sexual revolutionary in one sentence: Except in the most extreme circumstances (such as incest), consenting adults define their own moral norms. One-night stands? Fine, so long as there’s consent. May/December relationships. Fantastic, so long as there’s consent. Workplace liaisons between boss and subordinate? No problem, with consent. Adultery? Yes, there are tears, but the heart wants what it wants.</p>
+<p class="story-body-text" itemprop="articleBody">The practical result of consent-focused morality is the sexualization of everything. With the line drawn at desire alone, there is no longer any space that’s sex-free. Work meetings or restaurants can be creative locations for steamy liaisons. Not even marriage or existing relationships stand as a firewall against potential hookups.</p>
+<p class="story-body-text" itemprop="articleBody">The problem, of course, is that people don’t walk around broadcasting their desires. We don’t have a flashing “yes” or “no” that hovers over our heads. So someone has to make the ask. Someone has to make the move. Consent is determined by the request, and in a completely sexualized culture, the request can come at any time, anywhere, and from any person you encounter — regardless of the power imbalance or the propriety of the location.</p>
+<p class="story-body-text" itemprop="articleBody">And for powerful people in particular, the ask so often has fruitful results — sometimes out of genuine desire, sometimes out of fear, and sometimes out of a sense of intimidated resignation — that the ask quickly blurs into expectation, and expectations can yield demands.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">I agree with much of this, but I think it&#8217;s important for social conservatives to recognize that the predation of powerful men (and men generally) is hard for any moral system to contain. In a world of consent and assumed promiscuity, the predator plays on the idea that sex isn&#8217;t such a big deal, that what he&#8217;s asking for is really a small thing, that you should be a good sport and play along and if you&#8217;re offended or hurt or feel that you&#8217;ve been violated well look we&#8217;re all adults here and again, it&#8217;s just sex, it&#8217;s transactional and ephemeral, an exchange of pleasures so why not an exchange of pleasure for a job, and I&#8217;m sorry that my pursuit of self-fulfillment didn&#8217;t quite respect your boundaries, but since I didn&#8217;t rape you and maybe you led me on you don&#8217;t have any grounds for complaint &#8230;</p>
+<p class="story-body-text" itemprop="articleBody">&#8230; but in a world of more stringent moral rules, a world that emphasizes sexual restraint and make chastity a virtue, the same predator might find a different way. He might be <em>more</em> aggressive, for instance, and then play on his victim&#8217;s sense of shame, her desire to be chaste and her feeling that she&#8217;s been soiled by the encounter, to induce her not to tell anyone and perhaps even to continue seeing him, because after once you&#8217;ve fallen there&#8217;s no point in getting up, you&#8217;re just a fallen women and you might as well accept it. And he might rely on a different kind of authority: Not the authority of the creeper boss or colleague, but the aristocratic or spiritual authority that more hierarchical societies tend to invest their leaders with — the priest/prophet/king combination that can be abused just as easily as the authority of a Hollywood producer.</p>
+<p class="story-body-text" itemprop="articleBody">Read <a href="//www.theamericanconservative.com/dreher/her-too/">this grim story from a Mormon woman</a> on Rod Dreher&#8217;s blog for a concrete example of how this works — how a virtue-ethics society can enable a predator just as much a more permissive one. It&#8217;s exactly the kind of story that liberals cite to argue <em>for</em> reducing sexual morality to the rule of consent: Because the alternative, they insist, is a world where predators just rely on sexual shame and institutional self-protection (see Catholicism, recent history of) to keep their depredations secret or unpunished. Only by removing any hint of shame from a consensual encounter, the theory goes, can non-consensual encounters receive the condemnation they deserve.</p>
+<p class="story-body-text" itemprop="articleBody">I don&#8217;t think this is right, but a few related things are true. First, what we think of as traditional sexual ethics, a code of chastity before marriage and monogamy thereafter, has been historically entangled with a patriarchal sexism that male predators have used to their advantage. Which shouldn&#8217;t be surprising because <em>all</em> moral systems and social orders have their weak spots, their places where the power of male predation finds a way. Indeed predators are often good at a kind of code-switching, playing on both permissive and hierarchical attitudes at once, relying on the sacred and the profane, on prejudices both liberal and conservative, for justification and protection. This was often true of abusive Catholic priests in the 1970s, it was true more recently in <a href="https://www.nytimes.com/2014/09/07/opinion/sunday/ross-douthat-rape-and-rotherham.html">the Rotherham grooming horror</a>, and it seems to have been true in <a href="//www.abc.net.au/religion/articles/2017/10/18/4751367.htm">the depressing case of the Mennonite theologian John Howard Yoder</a>, who relied on a mix of anti-bourgeois radicalism and very traditional spiritual authority for his weird depredations.</p>
+<p class="story-body-text" itemprop="articleBody">And then further, while it&#8217;s almost certainly true (as <a href="https://www.nytimes.com/2017/10/14/opinion/sunday/1970s-weinstein-sexual-predation.html">I wrote this weekend</a>) that the chaos associated with the first phase of the sexual revolution — call it 1963-1980 — made predation way, <em>way</em> worse, it&#8217;s also almost certainly true that the norms of feminism and the code of consent have imposed some effective guardrails since, especially where underage victims are concerned. Which makes it possible (though by no means certain) that these norms will become somewhat more effective every time there&#8217;s a big cascade of revelations — that there&#8217;s an iterative process where a pig&#8217;s downfall becomes a cautionary tale to would-be pigs, and a source of greater confidence for potential victims, and things really do get better.</p>
+<p class="story-body-text" itemprop="articleBody">This means that conservatives arguing for a different, thicker sexual ethic than just the rule of &#8220;consent&#8221; need to recognize that any revived code of sexual restraint would need to draw on the insights of feminism as well as those of pre-sexual revolution sources, lest it fall back into the sins of patriarchy once again. And it means that the depredations of Weinstein and his ilk may be suggestive evidence of our system&#8217;s flaws, but they aren&#8217;t necessarily the best evidence that it&#8217;s actively failing and should be reformed or overthrown.</p>
+<p class="story-body-text" itemprop="articleBody">What&#8217;s the best evidence? In certain ways I think the mess on college campuses — not the clearly-rape cases, not the Hefnerite excesses of frat culture (which a stronger feminism might eventually restrain), but the endless gray-zone drunk-sex cases at the most self-consciously progressive schools — tells us more about the inherent problems with &#8220;consent alone&#8221; than does the mess in Hollywood, because it&#8217;s a case where there&#8217;s more social equality, less boss-on-minion pressure, and a generally sex-positive culture of experimentation &#8230; and yet young people still clearly desire and need a system of rules stronger than consent alone to protect them from feeling unexpected rage or shame over how a particular encounter happened.</p>
+<p class="story-body-text" itemprop="articleBody">But really the strongest evidence is rather less dramatic than the extremes of rape and assault, predation and harassment. It lies in the fact that our consenting-adults moral system isn&#8217;t serving what should be the obvious ends of any moral-sexual ecosystem: To make people happy, to make women happy, to successfully balance <a href="https://douthat.blogs.nytimes.com/2013/12/17/sex-sociology-and-the-single-girl/">the often very different sexual/romantic impulses of the sexes</a>, to pair off as many people as wish to be paired off as contentedly as possible in ways that ensure stable environments for their children to flourish, and to encourage the continuation of present societies and the human race.</p>
+<p class="story-body-text" itemprop="articleBody">Across all of these counts the Western sexual order just doesn&#8217;t seem to be working out very well. We are several generations into the post-sexual revolution world, and <a href="//clalit20plus.co.il/NR/rdonlyres/08586B39-9E87-4A86-ACDA-BB50CD52F1EB/0/The_Paradox_of_Declining_Female_Happiness.pdf">women are less happy</a> than they were before, people are <a href="https://www.washingtonpost.com/news/wonk/wp/2015/06/23/144-years-of-marriage-and-divorce-in-the-united-states-in-one-chart/?utm_term=.557b1999f1e7">marrying less</a> and (despite what you would expect from self-selection) the marriages that do happen are <a href="https://www.twitter.com/WilcoxNMP/status/915208192745000960">less contented</a> than in the past, people are <a href="https://medium.com/migration-issues/how-big-is-the-fertility-gap-in-america-fd205e9d1a35">consistently missing their desired fertility</a>, a huge share of children (especially the poorest and most vulnerable children) are growing up without both their biological parents, and some of <a href="//www.telegraph.co.uk/news/2017/04/11/japans-population-shrink-third-2065/">the wealthiest societies</a> <a href="https://qz.com/394456/the-numbers-behind-germanys-demographic-nightmare/">in the world</a> are headed for a demographic cliff. And then there&#8217;s the fact that the sexes are <a href="https://www.nytimes.com/2017/08/09/opinion/google-women-memo.html?rref=collection%2Fcolumn%2Fross-douthat&amp;action=click&amp;contentCollection=opinion&amp;region=stream&amp;module=stream_unit&amp;version=latest&amp;contentPlacement=7&amp;pgtype=collection">politically polarized</a> as never before, that both smug marrieds and singletons are <a href="https://www.ncbi.nlm.nih.gov/pubmed/28265779">having less sex</a> than in the past, the recrudescent of toxic misogyny (among <a href="https://www.buzzfeed.com/markdistefano/kriss-facebook-note?utm_term=.lu7nrxOLx#.irN5ZnBRn">woke Marxist bros</a> as well as alt-righters, in some cases) now that the internet has removed certain social filters, and more.</p>
+<p class="story-body-text" itemprop="articleBody">Looking out across this landscape, a renewed social conservatism isn&#8217;t the only plausible response; there&#8217;s always the more radical Marxist and feminist alternatives, which argue that the sexual revolution we did have was fatally compromised by capitalism and male privilege. But I think a second look at sexual conservatism is much more plausible than a status quo bias, in which sexual liberalism is supposed to have created a level of social happiness and personal fulfillment that is simply not in evidence from data or anecdote alike.</p>
+<p class="story-body-text" itemprop="articleBody">But again, this indictment of the status quo isn&#8217;t at its strongest in cases like Weinstein. The persistence of predation in progressive circles does point to <a href="https://www.nytimes.com/2017/10/07/opinion/sunday/harvey-weinstein-harassment-liberals.html">certain problems with liberal consent culture</a>, but predation is also a problem that we shall always have with us, and one that relative to the Hef-and-Polanski era the current moral order has at least partially restrained (or, in some cases, dulled with a permanent supply of porn).</p>
+<p class="story-body-text" itemprop="articleBody">Rather it&#8217;s everything else, the failure of <em>ordinary</em> relations between the sexes, that indicts our present order and suggests that we need a different way — either the greater radicalism and utopianism urged by the most rigorous and consistent left-feminists, or else a return to ideas about restraint that were taken for granted in the past not because people were blind or bigoted, but because they made a better fit with human nature and human flourishing than where we&#8217;ve ended up.</p>
+<p class="story-body-text" itemprop="articleBody">&nbsp;</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" data-title="The Age of Consent and Its Discontents" data-description="Does Harvey Weinstein prove the case against a &quot;consenting adults&quot; sexual ethics? Not quite.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//douthat.blogs.nytimes.com/2017/09/14/ta-nehisi-coates-and-the-alternatives-to-despair/" title="Ta-Nehisi Coates and the Alternatives to Despair">
+				Ta-Nehisi Coates and the Alternatives to Despair			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//douthat.blogs.nytimes.com/2017/10/25/liberalism-and-the-politics-of-low-fertility/" title="Liberalism and the Politics of Low Fertility">
+				Liberalism and the Politics of Low Fertility			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">Ross Douthat joined The New York Times as an Op-Ed columnist in April 2009. Previously, he was a senior editor at the Atlantic and a blogger for <a href="//www.theatlantic.com/">theatlantic.com</a>. He is the author of "Privilege: Harvard and the Education of the Ruling Class" (Hyperion, 2005) and the co-author, with Reihan Salam, of "Grand New Party: How Republicans Can Win the Working Class and Save the American Dream" (Doubleday, 2008). He is the film critic for National Review.</p>
+<ul class="refer">
+<li><a href="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/rossdouthat/index.html">Ross Douthat's Columnist Page »</a></li>
+</ul>
+</div>
+</div>		<div class="module ad" id="MiddleRight"></div>
+        <div id="blogroll-3" class="module nocontent widget_blogroll"><h4 class="moduleHeader">Blogroll</h4>		<div class="entry blogroll">
+						<ul class="refer odd">
+						<li><a href="//text-patterns.thenewatlantis.com/">Alan Jacobs</a></li>
+						<li><a href="//andrewsullivan.theatlantic.com/the_daily_dish/">Andrew Sullivan</a></li>
+						<li><a href="//blogs.telegraph.co.uk/news/author/damianthompson/">Damian Thompson</a></li>
+						<li><a href="//www.amconmag.com/larison/">Daniel Larison</a></li>
+						<li><a href="//washingtonindependent.com/author/weigel">Dave Weigel</a></li>
+						<li><a href="//www.frumforum.com/">David Frum</a></li>
+						<li><a href="//voices.washingtonpost.com/ezra-klein/">Ezra Klein</a></li>
+						<li><a href="//www.firstthings.com/blogs/firstthoughts/">First Thoughts</a></li>
+						<li><a href="//www.frontporchrepublic.com/">Front Porch Republic</a></li>
+						<li><a href="//www.newyorker.com/online/blogs/georgepacker/">George Packer</a></li>
+						<li><a href="//getreligion.org">Get Religion</a></li>
+						<li><a href="//gregmankiw.blogspot.com/">Greg Mankiw</a></li>
+						<li><a href="//hotair.com">Hot Air</a></li>
+						<li><a href="//jeffreygoldberg.theatlantic.com">Jeffrey Goldberg</a></li>
+						<li><a href="//campaignspot.nationalreview.com/">Jim Geraghty</a></li>
+						<li><a href="//keithhennessey.com/">Keith Hennessey</a></li>
+						<li><a href="//www.motherjones.com/kevin-drum">Kevin Drum</a></li>
+			</ul><ul class="refer even">			<li><a href="//politics.theatlantic.com/">Marc Ambinder</a></li>
+						<li><a href="//markshea.blogspot.com">Mark Shea</a></li>
+						<li><a href="//meganmcardle.theatlantic.com">Megan McArdle</a></li>
+						<li><a href="//www.slate.com/blogs/blogs/kausfiles/">Mickey Kaus</a></li>
+						<li><a href="//www.ordinary-gentlemen.com/">Ordinary Gentlemen</a></li>
+						<li><a href="//www.firstthings.com/blogs/postmodernconservative/">Postmodern Conservative</a></li>
+						<li><a href="//agenda.nationalreview.com/">Reihan Salam</a></li>
+						<li><a href="//secularright.org/">Secular Right</a></li>
+						<li><a href="//ta-nehisicoates.theatlantic.com/">Ta-Nehisi Coates</a></li>
+						<li><a href="//www.theamericanscene.com">The American Scene</a></li>
+						<li><a href="//corner.nationalreview.com">The Corner</a></li>
+						<li><a href="//www.thenextright.com/">The Next Right</a></li>
+						<li><a href="//www.theweeklystandard.com/weblogs/TWSFP/TWSFPView.asp">The Standard Blog</a></li>
+						<li><a href="//www.marginalrevolution.com">Tyler Cowen</a></li>
+						<li><a href="//nymag.com/daily/entertainment/">Vulture</a></li>
+						<li><a href="//www.willwilkinson.net/flybottle/">Will Wilkinson</a></li>
+						</ul>
+		</div>
+		</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//douthat.blogs.nytimes.com/2017/10/'> October 2017 </option>
+	<option value='//douthat.blogs.nytimes.com/2017/09/'> September 2017 </option>
+	<option value='//douthat.blogs.nytimes.com/2017/07/'> July 2017 </option>
+	<option value='//douthat.blogs.nytimes.com/2017/06/'> June 2017 </option>
+	<option value='//douthat.blogs.nytimes.com/2017/05/'> May 2017 </option>
+	<option value='//douthat.blogs.nytimes.com/2016/12/'> December 2016 </option>
+	<option value='//douthat.blogs.nytimes.com/2016/05/'> May 2016 </option>
+	<option value='//douthat.blogs.nytimes.com/2016/04/'> April 2016 </option>
+	<option value='//douthat.blogs.nytimes.com/2016/03/'> March 2016 </option>
+	<option value='//douthat.blogs.nytimes.com/2016/02/'> February 2016 </option>
+	<option value='//douthat.blogs.nytimes.com/2016/01/'> January 2016 </option>
+	<option value='//douthat.blogs.nytimes.com/2015/12/'> December 2015 </option>
+	<option value='//douthat.blogs.nytimes.com/2015/11/'> November 2015 </option>
+	<option value='//douthat.blogs.nytimes.com/2015/10/'> October 2015 </option>
+	<option value='//douthat.blogs.nytimes.com/2015/09/'> September 2015 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//douthat.blogs.nytimes.com/2017/10/25/liberalism-and-the-politics-of-low-fertility/" title="Read: Liberalism and the Politics of Low Fertility">Liberalism and the Politics of Low Fertility</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//douthat.blogs.nytimes.com/2017/10/25/liberalism-and-the-politics-of-low-fertility/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Is the West trapped in a demographic-political doom loop?<a href="//douthat.blogs.nytimes.com/2017/10/25/liberalism-and-the-politics-of-low-fertility/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" title="Read: The Age of Consent and Its Discontents">The Age of Consent and Its Discontents</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Does Harvey Weinstein prove the case against a &#8220;consenting adults&#8221; sexual ethics? Not quite.<a href="//douthat.blogs.nytimes.com/2017/10/19/the-age-of-consent-and-its-discontents/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//douthat.blogs.nytimes.com/2017/09/14/ta-nehisi-coates-and-the-alternatives-to-despair/" title="Read: Ta-Nehisi Coates and the Alternatives to Despair">Ta-Nehisi Coates and the Alternatives to Despair</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//douthat.blogs.nytimes.com/2017/09/14/ta-nehisi-coates-and-the-alternatives-to-despair/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Two disagreements with the latest Coates blockbuster on Trump and race.<a href="//douthat.blogs.nytimes.com/2017/09/14/ta-nehisi-coates-and-the-alternatives-to-despair/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//douthat.blogs.nytimes.com/2017/07/13/is-game-of-thrones-a-dystopia/" title="Read: Is &#8216;Game of Thrones&#8217; a Dystopia?">Is &#8216;Game of Thrones&#8217; a Dystopia?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//douthat.blogs.nytimes.com/2017/07/13/is-game-of-thrones-a-dystopia/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Or do its fans love it because they secretly long to have a king?<a href="//douthat.blogs.nytimes.com/2017/07/13/is-game-of-thrones-a-dystopia/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//douthat.blogs.nytimes.com/2017/07/06/should-tyler-cowen-believe-in-god/" title="Read: Should Tyler Cowen Believe in God?">Should Tyler Cowen Believe in God?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//douthat.blogs.nytimes.com/2017/07/06/should-tyler-cowen-believe-in-god/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A long dialogue with an agnostic economist.<a href="//douthat.blogs.nytimes.com/2017/07/06/should-tyler-cowen-believe-in-god/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/DouthatNYT" title="Follow @DouthatNYT on twitter">@DouthatNYT</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/DouthatNYT" title="Follow DouthatNYT on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/DouthatNYT" title="Follow @DouthatNYT on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-102',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+
+
+         
+
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":55,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

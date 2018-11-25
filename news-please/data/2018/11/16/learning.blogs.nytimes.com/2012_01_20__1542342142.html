@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000001299084"><meta name="author" content="The Learning Network" />
+<meta name="CLMST" content="The Learning Network" />
+<meta name="byl" content="The Learning Network" />
+<meta name="GBLC" content="Historic Headlines">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1327050214" />
+<meta name="PUD" content="20120120" />
+<meta name="pdate" content="20120120" />
+<meta name="ptime" content="20120120040334" />
+<meta name="utime" content="20120120090337" />
+<meta property="article:modified_time" itemprop="dateModified" content="2012-01-20T09:03:37-05:00" />
+<meta name="DISPLAYDATE" content="January 20, 2012" />
+<meta name="dat" content="January 20, 2012" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Historic Headlines" />
+<meta name="keywords" content="Historic Headlines" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2012%2F01%2F20%2Fjan-20-1981-iran-releases-american-hostages-as-reagan-takes-office%2F" title="Jan. 20, 1981 | Iran Releases American Hostages as Reagan Takes Office" />
+<meta name="description" content="On Jan. 20, 1981, Iran released 52 Americans who had been held hostage for 444 days, minutes after the presidency had passed from Jimmy Carter to Ronald Reagan." />
+<meta name="hdl" content="Jan. 20, 1981 &#124; Iran Releases American Hostages as Reagan Takes Office" />
+<meta property="og:title" content="Jan. 20, 1981 &#124; Iran Releases American Hostages as Reagan Takes Office" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="On Jan. 20, 1981, Iran released 52 Americans who had been held hostage for 444 days, minutes after the presidency had passed from Jimmy Carter to Ronald Reagan." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Jan. 20, 1981 &#124; Iran Releases American Hostages as Reagan Takes Office" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/" />
+<meta name="twitter:description" content="On Jan. 20, 1981, Iran released 52 Americans who had been held hostage for 444 days, minutes after the presidency had passed from Jimmy Carter to Ronald Reagan." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='News Quiz | Jan. 20, 2012' href='//learning.blogs.nytimes.com/2012/01/20/news-quiz-jan-20-2012/' />
+<link rel='next' title='Test Yourself | English, Jan. 20, 2012' href='//learning.blogs.nytimes.com/2012/01/20/test-yourself-english-jan-20-2012/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/' />
+<link rel='shortlink' href='//nyti.ms/z8cmoM' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Jan. 20, 1981 &#124; Iran Releases American Hostages as Reagan Takes Office - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-97551 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Jan. 20, 1981 | Iran Releases American Hostages as Reagan Takes Office        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/"
+	 data-title="Jan. 20, 1981 | Iran Releases American Hostages as Reagan Takes Office"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;On Jan. 20, 1981, Iran released 52 Americans who had been held hostage for 444 days, minutes after the presidency had passed from Jimmy Carter to Ronald Reagan. &lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="January 20, 2012 4:03 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-97551 post type-post status-publish hentry category-historic-headlines tag-foreign-policy tag-global-conflicts tag-global-politics tag-iran tag-middle-east tag-presidents-and-presidency-us-des" id="post-97551">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Jan. 20, 1981 | Iran Releases American Hostages as Reagan Takes Office</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By The Learning Network			</address>
+			<!-- date published --><time class="dateline " datetime="2012-01-20T09:03:34+00:00" itemprop="datePublished">January 20, 2012 4:03 am</time>
+			<!-- date updated --><span class="visually-hidden updated">January 20, 2012 4:03 am</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2012/01/16/learning/Jan20LN/Jan20LN-blog480.jpg" id="100000001290090" width="480" height="324" alt="" /><span class="credit"> Department of Defense<br />
+</span><span class="caption"> Freed American hostages disembark from a plane at Andrews Air Force Base in Maryland on Jan. 27, 1981, one week after being released.</span></div>
+<div class="w190 right module">
+<div class="entry">
+<h5>Historic Headlines</h5>
+<p class="summary">Learn about key events in history and their connections to today.</p>
+<ul class="refer">
+<li><a href="//learning.blogs.nytimes.com/on-this-day/January-20">Go to related On This Day page »</a></li>
+<li><a href="//www.findingdulcinea.com/news/on-this-day/November/On-this-Day--Iran-Hostage-Crisis-Begins.html">Go to related post from our partner, findingDulcinea »</a></li>
+<li><a title="All Historic Headlines" href="/category/historic-headlines/">See all Historic Headlines »</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">On Jan. 20, 1981, Iran released 52 Americans who had been held hostage for 444 days, minutes after the presidency had passed from Jimmy Carter to Ronald Reagan. The hostages were placed on a plane in Tehran as Reagan delivered his inaugural address.</p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/on-this-day/january-20">The New York Times</a> said that Reagan’s address “made no reference at all to the long-awaited release of the hostages” as he was “apparently following a self-imposed restraint of not saying anything until the Americans had left Iranian air space.”  </p>
+<p class="story-body-text" itemprop="articleBody">Reagan announced the release of the hostages later in the afternoon at a Congressional luncheon. “The news seemed to turn the inauguration celebration, normally a highly festive occasion, into an event of unbridled joy for Mr. Reagan and his supporters,” The Times wrote.<br />
+<span id="more-97551"></span><br />
+The Iran Hostage Crisis had begun on Nov. 4, 1979, when a group of several hundred militant Islamic students broke into the United States embassy in Tehran and took its occupants hostage. The students initially intended to hold the hostages for only a short time, but changed their plans when their act garnered widespread praise in Iran. Ayatollah Khomeini, leader of the 1979 Iranian Revolution and the country’s supreme leader, was among the supporters.</p>
+<p class="story-body-text" itemprop="articleBody">In response, President Carter imposed economic sanctions on Iran. In April 1980, he authorized a rescue mission, Operation Eagle Claw, conducted by the U.S. military. The mission failed badly, as two U.S. aircraft collided, killing eight military personnel. The prolonged crisis came to reflect poorly on Mr. Carter, who was seen as weak for failing to secure the hostages’ release. Ronald Reagan&#8217;s defeat of President Carter in the 1980 presidential election happened to fall on the one-year anniversary of the hostage-taking. </p>
+<p class="story-body-text" itemprop="articleBody">Mr. Carter continued to negotiate for the hostages’ release until the end of his term of office. Finally, on Jan. 19, 1981, Algerian-mediated talks between the U.S. and Iran produced an agreement to end the crisis. </p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><strong>Connect to Today:</strong></p>
+<p class="story-body-text" itemprop="articleBody">The United States and <a href="//topics.nytimes.com/top/news/international/countriesandterritories/iran/index.html">Iran</a> have maintained a generally hostile relationship since the 1979 Iranian Revolution. Relations have further deteriorated in recent years because of the Iranian government’s suppression of dissent in the 2009 elections and Iran’s alleged nuclear development. In November 2011, the United Nations released evidence that Iran may be developing a nuclear device, which has prompted economic penalties against the country from the United States and other Western countries.</p>
+<p class="story-body-text" itemprop="articleBody">On Jan. 11, 2012, as tensions increased over Iran’s nuclear program, the country reported that an Iranian nuclear scientist died in what was termed a “terrorist bomb blast” in northern Tehran when an unidentified motorcyclist attached a magnetic explosive device to the scientist’s car. Officials denounced Israel and the U.S. and called for retaliation for the killing. According to a <a href="//www.nytimes.com/2012/01/13/world/middleeast/iran-outrage-over-scientist-killing-deepens-as-it-signals-revenge.html">Jan. 12 article</a> in The New York Times, &#8220;the scientists’ deaths are part of what current and former American officials and specialists on Iran have called an accelerating covert campaign of assassinations, bombings, defections and digital attacks, which they believe has been carried out mainly by Israel in an effort to subvert Iran’s nuclear program.&#8221; </p>
+<p class="story-body-text" itemprop="articleBody">Earlier that week, <a href="//www.nytimes.com/2012/01/11/world/middleeast/iran-imposes-death-sentence-on-us-man-accused-of-spying.html">Iran announced</a> that it had sentenced a U.S.-born former Marine from Flint, Mich., to death for allegedly spying for the C.I.A. </p>
+<p class="story-body-text" itemprop="articleBody">Do you think incidents like these could lead to full-scale war? Why or why not? What, if anything, do you think can be done to prevent the escalation of tension between Iran and the United States?</p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/on-this-day/January-20">Learn more about what happened in history on January 20 »</a></p>
+<p class="story-body-text" itemprop="articleBody"><a href="//learning.blogs.nytimes.com/2011/06/20/announcing-historical-headlines/">Learn more about Historic Headlines and our collaboration with findingDulcinea »</a></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2012/01/20/jan-20-1981-iran-releases-american-hostages-as-reagan-takes-office/" data-title="Jan. 20, 1981 | Iran Releases American Hostages as Reagan Takes Office" data-description="On Jan. 20, 1981, Iran released 52 Americans who had been held hostage for 444 days, minutes after the presidency had passed from Jimmy Carter to Ronald Reagan. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-428837">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ro n McCown</span>
+			<span class="comment-link">
+				<a href="#comment-428837" title="Comment Permalink">
+					<span class="comment-date">January 21, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:05 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I was deeply involved in the returned of the Iranian hostages to the US when they stayed at the United States Military Academy at West Point upon their return to the United States and were reunited with their families at West Point.  The few days they spent with their families there provided a time to decompress and reconnect with their love ones in a relaxed situation. The hotel Thayer is not the most ideal place for such a high profile return of hostages, but it served the purpose because it could be isolated from the media and the public while providing the necessary support for the reunion of the hostage families. </p>
+<p>After spending time at West Point, the hostages went on to Washington, D.C. and a national return home celebration. But  we were honored to have them first at West Point.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-429187">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Tyjuan</span>
+			<span class="comment-link">
+				<a href="#comment-429187" title="Comment Permalink">
+					<span class="comment-date">January 21, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:25 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think this act could lead to a major war because nations would fight to get there leaders back. To try to stop this from happening you could only allow the world leaders in the room. You could also have gaurds outside of the room.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-429225">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">CharlesC</span>
+			<span class="comment-link">
+				<a href="#comment-429225" title="Comment Permalink">
+					<span class="comment-date">January 21, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:03 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Yes, I was 16 years old, when Iran took the hostages. It made Carter look weak, when it came to defending the country. A embassy is suppose to be a area in a foriegn land where it is observed as part of a country and has amunity again prosecution or and is to be protected by that country the embassy is in. Since the government of Iran participated in taking hostages, we had the official rights to declare war on Iran, but Carter looked weak not declaring war. This might have been better off to declare war and end our differences with Iran as opposed to waiting 30 years and letting them possibly becoming nuclear armed. This is going to play out badly, if Iran becomes nuclear armed.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-429513">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Timothy Brian</span>
+			<span class="comment-link">
+				<a href="#comment-429513" title="Comment Permalink">
+					<span class="comment-date">January 21, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:28 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>well i would actually keep on this story as a warning for today AHMEDINEJAD is doing us a favor holding the AYATOLLAH and the SCIENISTS in restrainant so we don&#8217;t get attack today If he IS assasisnated we will go to war with IRAN obama will not approach this matter like carter did In 1980 please keep in mind this matter is dangerous give jimmy carter credit for being focused and cutting off the enemy obama and his administration will do the same but military will get more real and tougher this time out.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-555109">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Bob Brousseau</span>
+			<span class="comment-link">
+				<a href="#comment-555109" title="Comment Permalink">
+					<span class="comment-date">April 20, 2012</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:56 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It was my priviledge to be an Aircraft Security NCO assigned to the crew of Freedom One. I remember watching President Reagan being sworn in on a small television aboard the aircraft while sitting on the ramp at Andrews AFB.  Almost immediately after swearing in, the official party arrived and we departed for Germany, while the hostages were leaving Iranian airspace.  After the former hostages were released from the Weisbaden Medical facility, we flew them to Stewart Field, near West Point to let them get reaquainted with their families. Crossing into U.S. airspace was a special moment for everyone on board, a few of the former hostages had come up to sit in the crew area and just hang out.  Emotions were high on the ramp when we landed that day, even among the crew. The press was kept at distance for this arrival. We were supposed to fly back to Andrews when Bruce Laingen, the Charge&#8217;d&#8217;Affairs told the crew that &#8220;this aircrew&#8221; would be flying them back to DC. A few hours before we left for Andrews, &#8220;Freedom One&#8221; was stenciled on the nose of the aircraft.  Andrews sent another VC-137 and two VC-9 aircraft to help with the airlift back to DC. This part of the mission was the highlight of my Air Force career, families were together, kids were running up and down the aisle and everyone had a smile on their face. The arrival was not to be forgotten, most of the base came out to the parking ramp to welcome these good people home. The first person at the bottom of the the steps was V.P. George Bush and his wife, Tip O&#8217;Neill, Sec. Haig &#038; Weinberger, Senator&#8217;s &#038; Congressman, most of the senior people in our government. I feel blessed to have been a part of it and helped these American&#8217;s get home after their long ordeal.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1112065">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Wayne Earl Evans Maj USAF RET</span>
+			<span class="comment-link">
+				<a href="#comment-1112065" title="Comment Permalink">
+					<span class="comment-date">March 11, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:04 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>After I watched ARGO recently, I was so stunned, so proud  and speechless. I had the privilege to serve as escort officer with another USAF Officer for 26 of the 52 hostages and we were at the flight line as the C- Nightingale touched down. The decibels of the crowd cheering drowned out the sound of the jets reversing their engines on the runway. It was a thrilling moment to say the least. Once on the bus, I read a prepared state Department briefing, then turned the briefing paper over and read some news items, college football scores and soap opera updates. The ex-hostages were more interested in the latter to be sure. </p>
+<p>Once underway, our USAF bus was flanked by the German News media; yet to protect our travel to our USAF Hospital in Wiesbaden, the Landspolizei (State German Police) Polizei, intercepted the Huge News Camera Laden Mercedes (two of them) and provided a supervised close quarter safety escort. En route, traveling through one of the small German Villages, a number of citizens came out of their homes to greet our bus, wearing their bathrobes and caps (it was quite cold) and one elderly woman kissed the side of the bus shouting &#8220;Danke America, Danke&#8221; as her eyes welled up with tears. Once we arrived at the Freedom Hotel, USAF Regional Medical Center, Wiesbaden Germany, the ex-hostages were greeted by our Chief Nurse and another senior nurse who gave each and every hostage a big hug and as I write this, I am welling up a bit also. It was one of the if not THE proudest moments of my Ar Force Career. I recommend each and every American see the Movie ARGO. </p>
+<p>Note: In preparation for the repatriation of the hostages, many of you may remember the on again and off again routine of the hostage release. We lost a lot of sleep getting ready and then returning back to our base/quarters. Eventually our Hospital Commander said we would be awakened only when our USAF Airplane was in the air. This time it was a go and it was such an exciting time. So  many of the scenes in ARGO really hit home and I will close with the strong recommendation that every American see ARGO. a movie of dedication, risk, courage and most of all pride. Thank you.</p>
+<p>Major Wayne Earl Evans USAF Retired</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-2097800">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Roxie52</span>
+			<span class="comment-link">
+				<a href="#comment-2097800" title="Comment Permalink">
+					<span class="comment-date">December 10, 2014</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:05 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>this is mistaken,he announced right after his swearing in,he may have announced a second time that afternoon</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2012/01/20/news-quiz-jan-20-2012/" title="News Quiz | Jan. 20, 2012">
+				News Quiz | Jan. 20, 2012			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2012/01/20/test-yourself-english-jan-20-2012/" title="Test Yourself | English, Jan. 20, 2012">
+				Test Yourself | English, Jan. 20, 2012			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":46,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

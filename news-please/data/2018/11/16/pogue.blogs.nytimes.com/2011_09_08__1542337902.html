@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-pogue section-technology"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-pogue section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-pogue section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-pogue section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/pogue/Internet Memes 101: A Guide to Online Wackiness" />
+<meta name="communityAssetURL" content="//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000001041545"><meta name="author" content="" />
+<meta name="CLMST" content="" />
+<meta name="byl" content="" />
+<meta name="GBLC" content="internet;Tech Culture">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1315507598" />
+<meta name="PUD" content="20110908" />
+<meta name="pdate" content="20110908" />
+<meta name="ptime" content="20110908144638" />
+<meta name="utime" content="20110908204536" />
+<meta property="article:modified_time" itemprop="dateModified" content="2011-09-08T20:45:36-04:00" />
+<meta name="DISPLAYDATE" content="September 8, 2011" />
+<meta name="dat" content="September 8, 2011" />
+<meta itemprop="articleSection" property="article:section" content="Technology" />
+<meta name="CG" content="Technology" />
+<meta name="SCG" content="pogue" />
+<meta name="BN" content="pogue" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Comedy and Humor;Computers and the Internet">
+<meta name="org" content="YouTube.com">
+<meta property="article:tag" content="Comedy and Humor" />
+<meta property="article:tag" content="Computers and the Internet" />
+<meta property="article:tag" content="YouTube.com" />
+<meta property="article:tag" content="internet" />
+<meta property="article:tag" content="Tech Culture" />
+<meta name="keywords" content="Comedy and Humor,Computers and the Internet,YouTube.com,internet,Tech Culture" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fpogue.blogs.nytimes.com%2F2011%2F09%2F08%2Finternet-memes-101-a-guide-to-online-wackiness%2F" title="Internet Memes 101: A Guide to Online Wackiness" />
+<meta name="description" content="Can&#8217;t keep up with the cocktail party chatter? Here&#8217;s David Pogue&#8217;s essential list of Internet Memes You Should Know." />
+<meta name="hdl" content="Internet Memes 101: A Guide to Online Wackiness" />
+<meta property="og:title" content="Internet Memes 101: A Guide to Online Wackiness" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/" />
+<meta property="og:site_name" content="Pogue’s Posts Blog" />
+<meta property="og:description" content="Can&#8217;t keep up with the cocktail party chatter? Here&#8217;s David Pogue&#8217;s essential list of Internet Memes You Should Know." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Internet Memes 101: A Guide to Online Wackiness" />
+<meta name="twitter:url" content="//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/" />
+<meta name="twitter:description" content="Can&#8217;t keep up with the cocktail party chatter? Here&#8217;s David Pogue&#8217;s essential list of Internet Memes You Should Know." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@pogue">
+<link rel='prev' title='Rethinking the &#8216;Never Unsubscribe&#8217; Rule for Spam' href='//pogue.blogs.nytimes.com/2011/09/01/rethinking-the-never-unsubscribe-rule-for-spam/' />
+<link rel='next' title='Parsing Netflix&#8217;s &#8216;Apology&#8217;' href='//pogue.blogs.nytimes.com/2011/09/22/parsing-netflixs-apology/' />
+<link rel='canonical' href='//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/' />
+<link rel='shortlink' href='//nyti.ms/qZlW9n' />
+<link rel='https://github.com/WP-API/WP-API' href='//pogue.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/pogue/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//pogue.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/technology/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/pogue/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/" />
+<meta name="dfp-ad-unit-path" content="technology/pogue" />			<title>Internet Memes 101: A Guide to Online Wackiness - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-4575 blog-universal nyt-blog-pogue" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Technology', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//pogue.blogs.nytimes.com">
+                Pogue&#039;s Posts            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Internet Memes 101: A Guide to Online Wackiness        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/"
+	 data-title="Internet Memes 101: A Guide to Online Wackiness"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Can&#039;t keep up with the cocktail party chatter? Here&#039;s David Pogue&#039;s essential list of Internet Memes You Should Know. &lt;/span&gt;&lt;a href=&quot;//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="September 8, 2011 2:46 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="pogue" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//pogue.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Technology"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/pogue/pogue75.gif" alt="Pogue&#039;s Posts"/></div><div class="site-title">Pogue&#039;s Posts</div><div class="site-description">The Latest in Technology From David Pogue</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//pogue.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Pogue&#039;s Posts">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-4575 post type-post status-publish hentry category-internet category-tech-culture des-comedy-and-humor des-computers-and-the-internet org-youtube-com" id="post-4575">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Internet Memes 101: A Guide to Online Wackiness</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+							</address>
+			<!-- date published --><time class="dateline " datetime="2011-09-08T18:46:38+00:00" itemprop="datePublished">September 8, 2011 2:46 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">September 8, 2011 2:46 pm</span>		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">In the olden days, it was simple to keep up with pop culture. There were only three channels on TV, and everybody saw the same shows at the same time. </p>
+<p class="story-body-text" itemprop="articleBody">These days, of course, not so much. There are 500 channels on TV, and you can watch anything at any time. That doesn’t mean, however, that we no longer have a common pop-culture base. We do — it’s just moved online. Show me somebody under 20, and I’ll show you someone who can laugh at “Friday,” sing the “Bed Intruder Song” or “plank” in an incongruous place. </p>
+<p class="story-body-text" itemprop="articleBody"><iframe width="480" height="390" src="https://www.youtube.com/watch?v=jHjFxJVeCQs" frameborder="0" allowfullscreen></iframe></p>
+<p class="story-body-text" itemprop="articleBody">But there are plenty of other people who aren’t getting the references at cocktail parties and in the late-night comedians’ monologues. And a certain percentage of those out-of-the-loopers might wish they had a single, concise cheat sheet of the most important Internet memes (fad concepts). </p>
+<p class="story-body-text" itemprop="articleBody">Today’s your lucky day. After consulting <a href="//knowyourmeme.com/">Know Your Meme</a>, my Twitter followers (I’m @pogue) and my own three under-20 offspring, I’ve put together this essential list of Memes You Should Know. <span id="more-4575"></span></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Modern Videos</strong></p>
+<p class="story-body-text" itemprop="articleBody">Much of online pop culture lives and dies on YouTube. Over and over again, the videos most likely to go viral are the ones that incorporate catchy music, humor and spectacle — preferably all three. </p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="//www.schooltube.com/video/0bb8adf3c3e639a2cfb1/Rebecca-Black-Friday-OFFICIAL-VIDEO">“Friday.”</a></strong> In March, a 13-year-old girl named Rebecca Black released a YouTube music video. It became a sensation, with 167 million views — not because it was good, but because it was screamingly bad. With 87 percent thumbs-downs, it’s the most disliked video on YouTube. Sample ultra-banal lyrics: “Seven a.m., waking up in the morning … Gotta have my bowl, gotta have cereal…”</p>
+<p class="story-body-text" itemprop="articleBody">“Friday” wound up being performed by Stephen Colbert and the cast of “Glee,” making several pop-music charts and, most deliciously, inspiring dozens of YouTube parodies. Some of those have themselves become megahits. In the warped <a href="https://www.youtube.com/watch?v=zzfQwXEqYaI d">“Brock’s Dub,”</a> for example, the original audio is replaced with a Christopher Walken impersonation (warning: obscenities). </p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="https://www.youtube.com/watch?v=hMtZfW2z9dw">“Bed Intruder Song.”</a></strong> In July 2010, an Alabama news station, WAFF, <a href="https://www.youtube.com/watch?v=jPAeXI5rN9E">reported</a> an attempted rape. The intended victim’s brother, the eccentric and animated Antoine Dodson, spoke directly to the camera: “He’s climbin’ in your windows, he’s snatchin’ your people up&#8230; so y&#8217;all need to hide your kids, hide your wife and hide your husband cuz they’re rapin’ e’rybody out here!”</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Dodson’s performance was Auto-Tuned into melody and set to incredibly catchy music by the Gregory Brothers (see below). The result was the most-watched noncommercial YouTube video of 2010, inspiring over 2,500 people to record their own versions of the song, including a marching-band edition.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>“Hitler Finds Out” (a k a “Downfall”).</strong> For some weird reason, a scene from the 2004 German movie “Der Untergang” has become fodder for a huge array of YouTube parodies. In the scene, Hitler has a breakdown, screaming at his generals; Internet wiseacres love to add subtitles that make it seem as though he’s reacting to some trivial, modern-day development. </p>
+<p class="story-body-text" itemprop="articleBody">There’s actually a YouTube <a href="https://www.youtube.com/watch?v=user/hitlerrantsparodies">“HitlerRantsParodies”</a> channel. Here, among hundreds of others, you’ll find the spoofs where Hitler learns that <a href="https://www.youtube.com/watch?v=wd4WZ3LqCKw">Twitter is down</a>, that <a href="https://www.youtube.com/watch?v=3IzNPEGWNos">Sarah Palin has resigned the governorship</a> and that he’s been <a href="https://www.youtube.com/watch?v=sfkDxF2kn1I">banned from Xbox Live</a>.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>The new classics.</strong> Your education is not complete unless you’ve also witnessed the bizarre goofiness of modern-day YouTube classics like <a href="https://www.youtube.com/watch?v=FavUpD_IjVY">“Cows &#038; cows &#038; cows,”</a> <a href="https://www.youtube.com/watch?v=dm7yAWpX1Mc">“Double Dream Hands”</a> and <a href="https://www.youtube.com/watch?v=wPKlryXwmXk&#038;feature=fvst">“Honey Badger”</a> (watch both the original and the overdubbed <a href="https://www.youtube.com/watch?v=4r7wHMg5Yjg">parody</a>). No explanation of these will be provided here, because there is no possible explanation.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Classic Videos</strong></p>
+<p class="story-body-text" itemprop="articleBody">New videos go viral every day, but your online pop-culture education would not be complete without an appreciation for these immortal older videos:</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="https://www.youtube.com/watch?v=jHjFxJVeCQs">Dramatic prairie dog.</a></strong> The funniest five-second video on YouTube. As three evil chords play, the prairie dog turns to face the camera as it zooms in. That’s it.</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="https://www.youtube.com/watch?v=txqiwrbYGrs">David After Dentist.</a></strong> A home video in which a 7-year-old boy (David DeVore Jr.), still under the effects of oral-surgery anesthetic, hilariously wigs out at his sense of spacey disorientation. </p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="https://www.youtube.com/watch?v=60og9gwKh1o">Numa Numa Dance.</a></strong> In 2004, a chubby young man named Gary Brolsma recorded himself sitting in front of his computer, wearing headphones and dancing/lip-syncing to a Romanian pop song<strike> called “Numa Numa&#8221;</strike>. There’s such earnestness and charisma in his performance that you can’t tear your eyes away; his video, and copies of it, have been viewed 700 million times.</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="https://www.youtube.com/watch?v=J---aiyznGQ">Keyboard Cat.</a></strong> It’s just a silly 1984 video of a cat wearing a shirt and playing the piano (its paws manipulated offscreen by its owner). But its cultural impact has included 17 million views, cameos in video games and awards shows, and appearances on T-shirts. Above all, Keyboard Cat has become famous as a “Play him off, keyboard cat!” clip tacked onto the end of over 4,000 other videos (people falling, George W. Bush pelted with shoes, and so on).<br />
+<strong><br />
+Pranks</strong></p>
+<p class="story-body-text" itemprop="articleBody">The trend of the Web as the source of all humor continues with trends like these:</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Rickrolling.</strong> It’s an online bait-and-switch. You send a Web link to someone, promising something exciting or compelling (“Is this you!?”) — but the link actually takes your victim to a YouTube video of Rick Astley’s 1987 music video, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&#038;ob=av3e">“Never Gonna Give You Up.”</a> That’s it. That’s the joke. Ha! You’ve been Rickrolled! (See the Wikipedia article <a href="//en.wikipedia.org/wiki/Rickrolling">“Rickrolling”</a> for an astonishing list of high-profile rickrolls.)</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="//www.google.com/search?q=planking&#038;hl=en&#038;client=safari&#038;rls=en&#038;prmd=ivns&#038;source=lnms&#038;tbm=isch&#038;ei=oAFpTpi1A4etgQeLmdjjDA&#038;sa=X&#038;oi=mode_link&#038;ct=mode&#038;cd=2&#038;ved=0CBEQ_AUoAQ&#038;biw=1232&#038;bih=613">Planking.</a></strong> Here’s one of the few Internet memes that has a real-world component. In it, people take photos of themselves lying, face down, expressionless, arms at their sides, in strange locations: on rooftops, cars, trees and so on — and post them on Facebook. </p>
+<p class="story-body-text" itemprop="articleBody">The practice was originally meant to be a comment on the cliché of the usual tourist photo — facing front, fake smile, landmark in the background — but has now become, well, just a weird fad.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Memes</strong></p>
+<p class="story-body-text" itemprop="articleBody">Sometimes, Internet memes aren’t videos or acts, but just ideas that get passed around. Some classics:</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="//www.lolcats.com/">LOLcats.com.</a></strong> A Web site where people superimpose captions on cat photos. Always the same font, always the same weird broken-English catspeak syntax. And darned funny.</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="//www.chucknorrisfacts.com">Chuck Norris Facts.</a></strong> In this meme (immortalized by Web sites and even books), people pass around hyperbolic references to the virility and strength of Chuck Norris, the movie and TV action actor.<br />
+“Chuck Norris won American Idol using only sign language,” goes one. “Chuck Norris can cut through a hot knife with butter.” “Death once had a near-Chuck Norris experience.”<br />
+<strong><br />
+YouTube Stars</strong></p>
+<p class="story-body-text" itemprop="articleBody">YouTube is a talent discovery machine. Dozens of talented performers have become full-time YouTube video makers; the most popular of them produce weekly mini-masterpieces of comic silliness and sarcasm.</p>
+<p class="story-body-text" itemprop="articleBody">They include <a href="https://www.youtube.com/watch?v=user/RayWilliamJohnson?blend=1&#038;ob=5">Ray William Johnson,</a> the #1 most-subscribed-to YouTube personality, with over a million followers; <a href="https://www.youtube.com/watch?v=user/nigahiga?blend=1&#038;ob=5">Nigahiga</a>, whose humor is perfectly suited to the middle schoolers who adore him; and <a href="https://www.youtube.com/watch?v=user/mysteryguitarman?blend=1&#038;ob=4">Mystery Guitar Man</a>, a virtuoso on both every musical instrument and his video-editing software. </p>
+<p class="story-body-text" itemprop="articleBody">Then there are the Gregory Brothers, the four Brooklyn musicians responsible for “The Bed Intruder Song” and other Auto-Tuned video megahits, including <a href="https://www.youtube.com/watch?v=MX0D4oZwCsA">“Double Rainbow”</a> and <a href="https://www.youtube.com/watch?v=qIoG4PlEPtY">“Backin’ Up.”</a> </p>
+<p class="story-body-text" itemprop="articleBody">The Gregory Brothers’ YouTube success has brought them an agent, an Academy Awards appearance, an iPhone app and a development deal for a new Comedy Central TV show. </p>
+<p class="story-body-text" itemprop="articleBody">Yes, that’s right: among its many other accomplishments, the new-media meme machine is perfectly capable of producing material for the old media. Next thing you know, you’ll turn on your TV set, spot some gifted musician or comedian — and be grateful that you were culturally tuned-in enough to recognize them from their humble beginnings online.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//pogue.blogs.nytimes.com/2011/09/08/internet-memes-101-a-guide-to-online-wackiness/" data-title="Internet Memes 101: A Guide to Online Wackiness" data-description="Can&#039;t keep up with the cocktail party chatter? Here&#039;s David Pogue&#039;s essential list of Internet Memes You Should Know. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//pogue.blogs.nytimes.com/2011/09/01/rethinking-the-never-unsubscribe-rule-for-spam/" title="Rethinking the &#039;Never Unsubscribe&#039; Rule for Spam">
+				Rethinking the &#8216;Never Unsubscribe&#8217; Rule for Spam			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//pogue.blogs.nytimes.com/2011/09/22/parsing-netflixs-apology/" title="Parsing Netflix&#039;s &#039;Apology&#039;">
+				Parsing Netflix&#8217;s &#8216;Apology&#8217;			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="story">
+<p class="summary">David Pogue's technology column has appeared each Thursday in The Times since 2000. Each week, he also writes the Times e-mail column "From the Desk of David Pogue," creates a short, funny Web video for NYTimes.com, and posts entries to his Times blog. In his other life, David is an Emmy-winning correspondent for CBS News, a frequent contributor to NPR's "Morning Edition," creator of the Missing Manual series of computer books, and father of three.</p>
+<ul class="refer">
+<li class="free"><a href="//topics.nytimes.com/top/reference/timestopics/people/p/david_pogue/index.html" target="_top">Recent Articles by David</a></li>
+<p><script type="text/javascript">
+//<![CDATA[
+
+function hiveware_enkoder(){var i,j,x,y,x=
+"x="783d223738336432323330373833643563323233363633333233323337333433363636" +
+"33363334333633393337333333373335333633343336363333363634333633353336333533" +
+"33363433353635333733343332363333323332333436353337333733373335333636343336" +
+"33323336333933373331333633393336333433363335333236333332333033343338333233" +
+"32333333343336333133373633333633313332333633363339333633303336333833373334" +
+"33353633333233323336333533363332333336353334333633333634333533353336363433" +
+"36363333323332333633313336333933363634333633313336363333323330333433393336" +
+"36333337333433363331333733343336363633333336333633393336363133373330333633" +
+"34333336333332363633363337333736363336333133333335333633353334363533323332" +
+"33323330333636353337333933333632333333393337333433363330333336323563323233" +
+"39333636343336336237393364323733353337333333323237336236363666363533363333" +
+"33363732323836393364363633363634333333303362363933633636333733333337373832" +
+"65366336353335333633323336366536373734363836313336333533363362363932623364" +
+"33333337333433333332323937623739363433353330333632623364373536653636333633" +
+"37333736353733363336313335333633353332373036353238323733373337333333323235" +
+"32373262373833353333333233333265373337353632333033353330333637333734373232" +
+"38363633373333333736393263333232393334333733333335323933623764373932323362" +
+"36613364363537363631366332383738326536333638363137323431373432383330323932" +
+"39336237383364373832653733373536323733373437323238333132393362373933643237" +
+"32373362363636663732323836393364333033623639336337383265366336353665363737" +
+"34363833623639326233643338323937623739326233643738326537333735363237333734" +
+"37323238363932633334323933623764363636663732323836393364333433623639336337" +
+"38326536633635366536373734363833623639326233643338323937623739326233643738" +
+"32653733373536323733373437323238363932633334323933623764373933643739326537" +
+"33373536323733373437323238366132393362223b793d27273b666f7228693d303b693c78" +
+"2e6c656e6774683b692b3d32297b792b3d756e657363617065282725272b782e7375627374" +
+"7228692c3229293b7d79";y='';for(i=0;i<x.length;i+=2){y+=unescape('%'+x.sub" +
+"str(i,2));}y";
+document.write('
+<li>');
+while(x=eval(x));}hiveware_enkoder();
+document.write('</li>
+
+');
+
+//]]>
+</script>
+</ul>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//pogue.blogs.nytimes.com/2013/10/'> October 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/09/'> September 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/08/'> August 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/08/'> August 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//pogue.blogs.nytimes.com/2013/10/23/david-pogue-times-technology-columnist-leaves-for-yahoo/" title="Read: David Pogue, Times Technology Columnist, Leaves for Yahoo">David Pogue, Times Technology Columnist, Leaves for Yahoo</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/23/david-pogue-times-technology-columnist-leaves-for-yahoo/"></a>
+				</span>			</h5>
+			<p class="summary">
+			After writing about personal technology for The Times for 13 years, David Pogue will start a consumer technology Web site at Yahoo.<a href="//pogue.blogs.nytimes.com/2013/10/23/david-pogue-times-technology-columnist-leaves-for-yahoo/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//pogue.blogs.nytimes.com/2013/10/17/terrific-sound-in-a-tiny-package/" title="Read: Terrific Sound in a Tiny Package">Terrific Sound in a Tiny Package</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/17/terrific-sound-in-a-tiny-package/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Jambox Mini is small enough to fit in a coat pocket and delivers sound that is richer, crisper and louder than the feeble speakers on your phone, tablet or laptop.<a href="//pogue.blogs.nytimes.com/2013/10/17/terrific-sound-in-a-tiny-package/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/"><img src="https://static01.nyt.com/images/2013/10/11/business/10fddp-1/10fddp-1-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/">From the Desk of David Pogue</a>
+				</h6>
+							<h5><a href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/" title="Read: T-Mobile Hands Consumers a Pleasant Shocker">T-Mobile Hands Consumers a Pleasant Shocker</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/"></a>
+				</span>			</h5>
+			<p class="summary">
+			T-Mobile&#8217;s plan to eliminate international roaming charges is bold and transparent. And it suggests that we&#8217;ve been paying those insane charges for nothing.<a href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/">From the Desk of David Pogue</a>
+				</h6>
+							<h5><a href="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" title="Read: A New Kindle Fire, Just in Time for the Holiday Season">A New Kindle Fire, Just in Time for the Holiday Season</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#8217;s a lighter, sharper and faster pleasure than the prior model.<a href="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/">From the Desk of David Pogue</a>
+				</h6>
+							<h5><a href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/" title="Read: The iPhone 5s&#8217;s Fingerprint Scanner Was Hacked, but I&#8217;m Not Worried">The iPhone 5s&#8217;s Fingerprint Scanner Was Hacked, but I&#8217;m Not Worried</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Yes, Apple&#8217;s Touch ID can be fooled &#8212; by a determined attacker with the time and resources to do it.<a href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/pogue" title="Follow @pogue on twitter">@pogue</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/pogue" title="Follow pogue on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/pogue" title="Follow @pogue on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-27',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":53,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

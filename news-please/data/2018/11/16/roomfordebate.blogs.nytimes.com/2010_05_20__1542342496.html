@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-roomfordebate section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/roomfordebate/Can States Fix Their Pension Problems?" />
+<meta name="communityAssetURL" content="//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000244147"><meta name="author" content="The Editors" />
+<meta name="CLMST" content="The Editors" />
+<meta name="byl" content="The Editors" />
+<meta name="GBLC" content="Business;Economy;Politics">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1274402129" />
+<meta name="PUD" content="20100520" />
+<meta name="pdate" content="20100520" />
+<meta name="ptime" content="20100520203529" />
+<meta name="utime" content="20170912190625" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-09-12T19:06:25-04:00" />
+<meta name="DISPLAYDATE" content="May 20, 2010" />
+<meta name="dat" content="May 20, 2010" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="roomfordebate" />
+<meta name="BN" content="roomfordebate" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Business" />
+<meta property="article:tag" content="Economy" />
+<meta property="article:tag" content="Politics" />
+<meta property="article:tag" content="_featured" />
+<meta name="keywords" content="Business,Economy,Politics,_featured" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Froomfordebate.blogs.nytimes.com%2F2010%2F05%2F20%2Fcan-states-fix-their-pension-problems%2F" title="Can States Fix Their Pension Problems?" />
+<meta name="description" content="The public is outraged over stories of $150,000-a-year pensions for public employees. But what can be done?" />
+<meta name="hdl" content="Can States Fix Their Pension Problems?" />
+<meta property="og:title" content="Can States Fix Their Pension Problems?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/" />
+<meta property="og:site_name" content="Room for Debate" />
+<meta property="og:description" content="The public is outraged over stories of $150,000-a-year pensions for public employees. But what can be done?" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Can States Fix Their Pension Problems?" />
+<meta name="twitter:url" content="//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/" />
+<meta name="twitter:description" content="The public is outraged over stories of $150,000-a-year pensions for public employees. But what can be done?" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Politicians and Their Fake War Stories' href='//roomfordebate.blogs.nytimes.com/2010/05/19/politicians-and-their-fake-war-stories/' />
+<link rel='next' title='What Will Wall Street Look Like Next Year?' href='//roomfordebate.blogs.nytimes.com/2010/05/21/what-will-wall-street-look-like-next-year/' />
+<link rel='canonical' href='//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/' />
+<link rel='shortlink' href='https://nyti.ms/2nSG7wo' />
+<link rel='https://github.com/WP-API/WP-API' href='//roomfordebate.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/roomfordebate/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//roomfordebate.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/roomfordebate/2010/05/20/can-states-fix-their-pension-problems/" />
+<meta name="dfp-ad-unit-path" content="opinion/roomfordebate" />			<title>Can States Fix Their Pension Problems? - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-38601 blog-universal nyt-blog-roomfordebate" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//roomfordebate.blogs.nytimes.com">
+                Room for Debate            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Can States Fix Their Pension Problems?        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/"
+	 data-title="Can States Fix Their Pension Problems?"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;The public is outraged over stories of $150,000-a-year pensions for public employees. But what can be done?&lt;/span&gt;&lt;a href=&quot;//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="May 20, 2010 8:35 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="roomfordebate" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//roomfordebate.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="site-title">Room for Debate</div><div class="site-description">A New York Times Blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//roomfordebate.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Room for Debate">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-38601 post type-post status-publish hentry category-business category-economy category-politics tag-budgets-and-budgeting tag-new-york tag-pensions tag-retirement" id="post-38601">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Can States Fix Their Pension Problems?</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By The Editors			</address>
+			<!-- date published --><time class="dateline " datetime="2010-05-21T00:35:29+00:00" itemprop="datePublished">May 20, 2010 8:35 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">May 20, 2010 8:35 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2010/05/17/opinion/17rfd-image/17rfd-image-custom3.jpg" alt="safe box" /><span class="credit">Maye Webb </span> <span class="caption"></span></div>
+<p class="story-body-text" itemprop="articleBody"><span style="color:#8c2626;"><strong>Updated, 3:00 p.m. | </strong></span> Joshua D. Rauh, a professor of finance at Kellogg School of Management, on what the federal government should do.  </p>
+<p class="story-body-text" itemprop="articleBody"><span style="color:#8c2626;"><strong>Updated, 12:40 p.m. | </strong></span> John D. Wong, from Wichita State University, and Cynthia B. Green, a former member of the Governmental Accounting Standards Board, join the discussion.</p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody">An article in <a href="//www.nytimes.com/2010/05/21/business/economy/21pension.html">The Times today details how &#8220;errors, misunderstandings and wishful thinking&#8221; have caused public pension costs in New York State to explode.</a> The problem is not limited to New York or to the fiscal crisis poster state, California, whose ballooning pension obligations have stoked battles between anti-tax crusaders and public sector unions, with the legislature paralyzed in between. Even states like Kansas, where retirees&#8217;  payouts are relatively small, are facing grim forecasts.    </p>
+<p class="story-body-text" itemprop="articleBody">Stories about $150,000-a-year pensions for retired officials are fueling anger and demands for action, but there seems to be little that officials can do about existing contracts, for legal and other reasons. The focus has turned to reforming the state systems, to make sure they are fiscally sustainable in the future. What states have led the way? And what political obstacles have arisen in other places?   </p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-38601"></span></p>
+<ul>
+<li><a href="#girard">Girard Miller,</a> Governing magazine</li>
+<li><a href="#munnell">Alicia H. Munnell,</a> Center for Retirement Research</li>
+<li><a href="#mcmahon">E.J. McMahon,</a> senior fellow at Manhattan Institute</li>
+<li><a href="#teresa">Teresa Ghilarducci,</a> New School for Social Research </li>
+<li><a href="#steven">Steven Greenhut,</a> author of &#8220;Plunder!&#8221;</li>
+<li><a href="#liam">Liam Dillon, </a> voiceofsandiego.org</li>
+<li><a href="#john">John D. Wong, </a> Wichita State University</li>
+<li><a href="#cynthia">Cynthia B. Green, </a> ex-Governmental Accounting Standards Board member</li>
+<li><a href="#joshua">Joshua D. Rauh,</a> Kellogg School of Management</li>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="girard"></a></p>
+<h4>No More Magic Tricks</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/girard_miller.50.jpg" alt="Girard Miller" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><a href="//www.governing.com/authors/Girard-Miller.html"><strong>Girard Miller</strong> </a> is the public money columnist for Governing magazine and a senior strategist at the <a href="https://www.pfm.com/">PFM Group</a>, a financial services company with government clients.</em></p>
+<p class="story-body-text" itemprop="articleBody">The pension crisis in New York state parallels others such as those in Illinois and California that also require serious solutions. Each has its own historical roots, which usually involved funding malpractices and awarding retroactive benefits on the naïve assumption that investments would magically pay the bills.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Pension officials should look to Washington State and South Dakota for ways to reform their systems.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Without depriving retirees and incumbent employees of benefits they have already earned, many states must fix their pension laws to enable public employers to install lower-cost benefits for future service by incumbents and new employees.  </p>
+<p class="story-body-text" itemprop="articleBody">Where employees pay less than half the current costs of their benefits, the underfunded plans need to split the tab more fairly. This includes retiree medical benefits plans that are 95 percent underfunded nationally.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">States looking to reform their plans for new employees should look at Washington State&#8217;s hybrid plan, which is half pension and half defined contribution.  That design shares the investment risks and rewards equitably.  </p>
+<p class="story-body-text" itemprop="articleBody">South Dakota&#8217;s moderate pension plan formula limits the pension payment multiplier at 1.7 percent times years of service times final compensation &#8212; and they avoid using investment surpluses to buy into irrevocable higher benefits. Illinois&#8217; recent remedial reforms to align the retirement ages for new civilian employees with Social Security&#8217;s age 67 and cap the maximum pension benefit at $106,000 should be followed by others. </p>
+<p class="story-body-text" itemprop="articleBody"> Giving all new employees a statutory right to elect into a competitive defined contribution plan will also prevent future &#8220;pension creep&#8221; as more workers take that option. States and local governments should be conducting formal sustainability analyses to quantify their capacity to bear current obligations and any proposed enhancements, taking into account future reforms in governmental accounting rules that will only heighten the cost increases facing public employers.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="munnell"></a></p>
+<h4>Hysteria Now Won&#8217;t Help</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/alicia_munnell.50.jpg" alt="Alicia Munnell" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a id="aptureLink_qNAkHK42Ua" href="//www2.bc.edu/~munnell/">Alicia H. Munnell</a></strong>, a former member of the Council of Economic Advisers, is the Peter F. Drucker professor of management sciences at Boston College’s Carroll School of Management and director of the college&#8217;s Center for Retirement Research.</em></p>
+<p class="story-body-text" itemprop="articleBody">Public pension plans — like the rest of us — are suffering from the financial crisis and ensuing recession. States and localities were on a path toward full funding, but they were seriously knocked off track with the collapse of asset prices. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Better accounting might have helped avoid the benefit liberalizations that took place in the 1990s when many plans appeared to be overfunded.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Between 2008 and 2009, the ratio of assets to liabilities for a sample of 126 plans in <a href="//crr.bc.edu/briefs/the_funding_of_state_and_local_pensions_2009-2013.html">a report conducted by the Center for Retirement Research</a> dropped to 78 percent from 84 percent, and ratios are likely to continue declining for the next five years as actuaries average in the losses. </p>
+<p class="story-body-text" itemprop="articleBody">It is true that the financial numbers would look worse under more appropriate accounting. Discounting liabilities by a low rate that reflects the riskless nature of the liabilities (that is, the benefits being guaranteed) would reduce the 2009 funded ratio to 55 percent. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Better accounting in the past would have led to more assets today and may have helped avoid the benefit liberalizations that took place in the 1990s when many plans appeared to be overfunded.</p>
+<p class="story-body-text" itemprop="articleBody">For example, in 1997 CalPERS, the California public employees pension system,  reported that assets equaled 111 percent of liabilities. In response, the California legislature enhanced benefits for current and future employees. If CalPERS liabilities had been valued at a riskless rate, the plan would have been only 76 percent funded. </p>
+<p class="story-body-text" itemprop="articleBody">Although the present value of promised benefits depends on the choice of the discount rate, the promised benefits themselves do not. When teachers or firefighters retire, they will get the amount calculated under the plan provisions, and how that future amount is reported today has no impact on the ultimate payment. </p>
+<p class="story-body-text" itemprop="articleBody">Moreover, an average ratio of assets to annual benefits of 15 (among the sample of plans in <a href="//crr.bc.edu/images/stories/Briefs/slp_10.pdf">the Center’s study</a>) suggests that plans — with notable exceptions such as most Illinois plans, Oklahoma Teachers and New Jersey Teachers — have enough on hand to pay benefits for decades. So liquidity is generally not an issue. </p>
+<p class="story-body-text" itemprop="articleBody">The key question is what should be done. A major increase in contributions is not realistic at this time. Because of court rulings, states and localities have virtually no ability to cut benefits for existing employees and may have only limited ability to increase employee contributions. And any changes for new employees will take a long time to have any substantial effect.</p>
+<p class="story-body-text" itemprop="articleBody">That means if funding levels are to be restored quickly, the money must come primarily from taxes. But the recession has significantly reduced  tax revenues and increased the demand for services. Thus, finding additional taxes will be extremely difficult. The only real option is to wait for the market and the economy to recover. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="mcmahon"></a></p>
+<h4>Stop the Bleeding</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/edmund_mcmahon.50.jpg" alt="E.J. McMahon"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>E.J. McMahon</strong> is a <a href="//www.manhattan-institute.org/html/mcmahon.htm">senior fellow at the Manhattan Institute</a> and director of the institute&#8217;s <a href="//www.empirecenter.org/">Empire Center for New York State Policy</a>. </em></p>
+<p class="story-body-text" itemprop="articleBody">New York&#8217;s latest stab at pension reform, which created a new &#8220;tier&#8221; of slightly reduced benefits, was an enormous missed opportunity.   While the plan shaved away a few of the most costly sweeteners added to pension benefits since the early 1990s, it preserved the basic defined benefit plan structure.  This is the core of the problem: a huge  and growing financial risk for current and future taxpayers.   </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>For starters, New York should close existing defined-benefit pension plans to new entrants.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">That risk is likely to be compounded by the next state budget.  Gov. David Paterson  and legislative majorities apparently have agreed to cap rising pension bills by &#8220;amortizing&#8221; them, which essentially means borrowing $2.5 billion from the pension fund in the next four years alone.  Of course, this won’t reduce costs — it will merely push them into the future.  Meanwhile, as documented in this recent Manhattan Institute report, <a href="//www.manhattan-institute.org/html/cr_61.htm">public pension obligations are grossly understated to begin with</a>.</p>
+<p class="story-body-text" itemprop="articleBody">Unfortunately, there is no way to reverse the pension cost spiral in the short term.   The state Constitution is generally interpreted as locking in all current employees’ retirement benefits — even those not yet earned.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">But this should not be an excuse for paralysis.  The first order of business should be to stop the bleeding — by closing existing defined-benefit pension plans to new entrants and enrolling newly hired general employees in defined-contribution plans.  A ready-made model is the <a href="//www.suny.edu/benefits/benefits_information/retirement/retirement.cfm">Optional Retirement Program</a> favored by employees of the State University of New York. </p>
+<p class="story-body-text" itemprop="articleBody">Republicans and Democrats alike in Albany have long treated fundamental pension reform as a political third rail.  But there is at least one tiny crack in the wall of fear.  State Assemblyman Jack Quinn, a Buffalo-area Republican running for state Senate, just unveiled the most far-reaching and comprehensive <a href="//www.quinnforny.com/PensionPlan.pdf">pension reform proposal</a> we’ve seen from any member of the New York Legislature in decades.   Mr. Quinn’s plan represents the kind of approach New York needs — before it’s too late.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="teresa"></a></p>
+<h4>The Right Pension Plan</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/teresa_ghilarducci.50.jpg" alt="Teresa Ghilarducci" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a href="//www.nd.edu/~tghilard/">Teresa Ghilarducci</a></strong>, director of economic policy analysis at the <a href="//www.newschool.edu/nssr/">New School for Social Research</a target="new">, is the author of <a href="//press.princeton.edu/titles/8608.html">&#8220;When I&#8217;m 64: The Plot Against Pensions and the Plan to Save Them.&#8221;</a target="new"></em></p>
+<p class="story-body-text" itemprop="articleBody">Most public employees have pensions plans most every worker wants and should have. The defined benefit plans provide a benefit credit for every year of service tied to an employee’s wage. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Employees and employers should pay more in good times and less in bad times.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Employers and employees contribute, professionals invest the money for a low fee and the benefit is paid out as a pension for life. Even better, the funds are invested in the economy to promote growth and public pensioners provide consumer demand when they retire. And, unlike 401(k) plans workers can’t spend the funds before retirement. </p>
+<p class="story-body-text" itemprop="articleBody">The core benefit design is good. But cheating is not. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">I was a trustee of the Indiana public employees’ pension plan in the late 1990s and early 2000. We made mistakes but we had good bones. Today the fund is not hugely underfunded, which means cities and the state do not have to make large and unexpected contributions in a recession. </p>
+<p class="story-body-text" itemprop="articleBody">Indiana public employers and employees always contributed &#8212; there were no pension holidays. In the go–go years we didn’t invest in what we didn’t understand. No Enron, no derivatives, very little private equity, no hedge funds. We kept the assumed interest rate assumptions on the low side. </p>
+<p class="story-body-text" itemprop="articleBody">In contrast, in good times many states and municipalities speculated that their funds would earn high rates of return so they could contribute less: their taxpayers, by the way, benefited in the short-term and shouldn’t complain now that it is payback. Pension funding should work the opposite way: employees and employers should pay more in good times and less in bad times. The funding status should range from about 120 percent to 80 percent. There are technical ways to do that; they have to be embedded in the funding design. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="steven"></a></p>
+<h4>California&#8217;s Mess</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/steven_greenhut.50.jpg" alt="Steven Greenhut" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Steven Greenhut</strong> is the author of <a href="//www.amazon.com/Plunder-Employee-Treasuries-Controlling-Bankrupting/dp/0984275207">“Plunder! How Public Employee Unions Are Raiding Treasuries, Controlling Our Lives And Bankrupting the Nation.”</a></em></p>
+<p class="story-body-text" itemprop="articleBody">There’s no denying that California’s pension problem has turned into a full-fledged fiscal crisis. Unfunded pension liabilities are soaring — as high as one half-trillion dollars, according to a recent Stanford University estimate — as the result of a market downturn, followed by years of absurdly generous pension increases for government employees. The state’s $100,000 pension club has more than 15,000 members from all retirement systems — and the numbers are growing rapidly.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>California voters are going to have to take matters into their own hands, through the state’s clumsy initiative process.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Not only libertarian and conservative government critics have been noticing. Former Democratic Assembly Speaker Willie Brown wrote in his San Francisco Chronicle column early this year that “[W]e politicians — pushed by our friends in labor — gradually expanded pay and benefits . . . while keeping the job protections and layering on incredibly generous retirement packages.” The chief actuary for the California Public Employees’ Retirement System (CalPERS) called the current pension system “unsustainable.”</p>
+<p class="story-body-text" itemprop="articleBody">Gov. Arnold Schwarzenegger’s pension adviser, David Crane, recently told a state Senate hearing on pension reform, “One cannot both be a progressive and be opposed to pension reform.  The math is irrefutable that the losers from excessive and unfunded pensions are precisely the programs progressive Democrats tend to applaud. Those programs are being driven out of existence by rising pension costs.”</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Yet the modest reform legislation Mr. Crane backed, which would have provided a still-generous second retirement tier for new hires, was dead on arrival in the Democratic-dominated Legislature, which has simply ignored these compelling “depletion of services” arguments. In California, there is no hope of reform coming from the Legislature, period. California voters — who are showing signs of agitation at the pension debt and the unfairness of the current system — are going to have to take matters into their own hands, through the state’s clumsy initiative process.</p>
+<p class="story-body-text" itemprop="articleBody">Courts have ruled that current pension deals are vested benefits that cannot be reduced, but there’s no reason not to fix the problem going forward. No initiative has so far gotten the backing necessary, but that’s only a matter of time. When unions complain about their vilification in a coming battle, they and their political allies will only have themselves to blame for ignoring the words of progressive Democrats like Willie Brown and David Crane.</p>
+</div>
+</div>
+<hr/>
+<a name="liam"></a></p>
+<h4>San Diego, Six Years After</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/liam_dillon.50.jpg" alt="Liam Dillon" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Liam Dillon</strong> reports on politics for <a href="//www.voiceofsandiego.org/">voiceofsandiego.org. </a> </em></p>
+<p class="story-body-text" itemprop="articleBody">The pension crisis that engulfed the city of San Diego nearly eight years ago forced the mayor to resign, led to numerous federal and state investigations and kept the city off the bond market for four years. At its nadir in 2004, the city&#8217;s pension system only was 65.8 percent funded.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The horizon remains bleak, even though the city has already made many  fixes now proposed elsewhere. </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Since then, the city adopted an aggressive pension repayment schedule, passed a charter amendment that requires voter approval for any pension increases and created a more austere pension plan for new city employees.</p>
+<p class="story-body-text" itemprop="articleBody">This year, the city&#8217;s pension system is 66.5 percent funded, the lowest level since 2004.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">San Diego should be a cautionary tale for governments seeing pension crises for the first time. Even though the city already has made many of the fixes now proposed elsewhere, San Diegans remain burdened by pension payments eating up more and more tax dollars each year. </p>
+<p class="story-body-text" itemprop="articleBody">The city is reducing its library hours, letting its roads deteriorate and cutting the sacred cows of city government, the police and fire departments. At the same time, next year the city will pay a $231 million bill to the pension system, an amount equal to 20 percent of its day-to-day operating budget. Investment losses fuel that bill, but so does an inability to cut larger costs.</p>
+<p class="story-body-text" itemprop="articleBody">Overall, the city hasn&#8217;t made fundamental changes to its cost structure, nor has it tried to raise taxes. Instead, change has been incremental, including a heavy dose of one-time budget fixes.</p>
+<p class="story-body-text" itemprop="articleBody">The most radical solutions to the city&#8217;s pension problem &#8212; lawsuits to roll back benefits granted to city employees &#8212; so far have failed. The city just filed another lawsuit, this one to force employees to share stock market risks with the city. If successful, which is a big if, the city will have turned the traditional idea of its pension system on its head, but saved at most $40 million this year. In years with better investment returns, the city could owe more than it would otherwise.</p>
+<p class="story-body-text" itemprop="articleBody">The horizon remains bleak. As it stands, in 15 years the city&#8217;s annual pension bill will eclipse $500 million.</p>
+</div>
+</div>
+<hr/>
+<a name="john"></a></p>
+<h4>Let&#8217;s Talk About Kansas</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/john_wong.50.jpg" alt="John Wong" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>John D. Wong</strong>, a <a href="//hws.wichita.edu/faculty_staff/faculty/John_D_Wong/">professor of public administration</a>, is the interim director of the Hugo Wall School of Urban and Public Affairs at Wichita State University.</em></p>
+<p class="story-body-text" itemprop="articleBody">The underlying causes of the public pension crises across many states are varied.  Some of these causes involve poor policy choices and nefarious behavior.  However, many do not. Of course, the economic downturn has not helped. As asset value has plummeted, many states have not increased their contributions to offset these losses.  As a result, accrued unfunded liabilities skyrocketed.  </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The Kansas pension plan will run out of money unless significant changes are made to the system. </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">One significant problem that must be dealt with in all public pensions is the delicate balance between present and future compensation and the impact of this relationship on the ability of state and local governments to attract and retain productive and loyal employees to hourly jobs that are often dangerous (firefighters, police officers) and undesirable (sanitation workers).  Historically, compensation of public employees tended to be skewed toward future compensation.  Public employees generally accept lower compensation compared to the private sector in exchange for more generous retirement later. This is a major factor in why most public pensions were structured as defined-benefit plans as opposed to defined-contribution plans. </p>
+<p class="story-body-text" itemprop="articleBody">Although a change to defined-contribution plans on the part of public entities would limit states’ exposure to pension liabilities in the future, it would also reduce the attractiveness of many of the jobs. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">In February, a report by the Kansas Legislative Division of Post Audit  found that “nearly 84 percent  of the $2.4 billion increase” in the Kansas Public Employees Retirement System  is “attributed to the investment return factor.” But there are still underlying structural problems with the Kansas pension system.</p>
+<p class="story-body-text" itemprop="articleBody">In 1993 the Kansas Legislature restructured the state pension system, enhancing employee benefits, spreading the unfunded accrued liability over a longer time period and capping the public contribution rate.  While this minimized the potential impact of pension liabilities on public budgets,  it worsened the future impact of accrued pension liabilities over time. </p>
+<p class="story-body-text" itemprop="articleBody">A report by the Center for Applied Economics at the University of Kansas concluded in September 2009 that the Kansas Public Employees Retirement System was “bankrupt under current operating assumptions.” Mark Parkinson, the governor of Kansas, disagreed. He said that the system “has more than enough money to pay out promised retirement levels for many, many years.” </p>
+<p class="story-body-text" itemprop="articleBody">The truth, therefore, depends on how “bankrupt” is defined and what “many, many years” means.  The state pension system is technically not bankrupt because it has about $10 billion in assets, more than enough to pay retirees well into the immediate future. But long-term, the pension owes about $20 billion in accrued liabilities so at some point the plan will run out of money unless significant changes are made to the system.   </p>
+</div>
+</div>
+<hr/>
+<a name="cynthia"></a></p>
+<h4>Stop the Madness</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/cynthia_green.50.jpg" alt="Cynthia Green" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Cynthia B. Green</strong> is a former member of the Governmental Accounting Standards Board.</em> </p>
+<p class="story-body-text" itemprop="articleBody">Governments are their own worst enemies when it comes to pensions. When their coffers are flush, they hand out benefit sweeteners without getting anything in return. When their coffers are empty, they fail to make required contributions to their pension plans. Both actions increase the amount governments owe, and, therefore, the amount they must contribute each year, which only exacerbates their budget problems.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The only solution is to end the unaffordable defined-benefit pension plans for public employees once and for all.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">We prefer not to think about balancing budgets by cutting programs and services for the poor or increasing class size. But it is unthinkable to balance these budgets by reneging on pension or retiree health benefits — promises made to state and local employees who have devoted their careers to serving the public.</p>
+<p class="story-body-text" itemprop="articleBody">The inescapable conclusion is that the only solution to managing these competing, critical objectives is to start the long process of ending the unaffordable defined-benefit pension plans for public employees once and for all. These cannot be taken away from current employees, but no employee hired from this day forward should receive anything other than a defined-contribution plan. Although not an instant solution, this is vital to a long-lasting positive change on the fiscal health of governments.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">In addition, in advance of any increases in retirement benefits, state and local governments must prepare and publicly present the multiyear cost of these changes and an assessment of their long-term affordability. The total actuarial cost of these benefits must be funded annually and jurisdictions should be prohibited from ever again celebrating a pension holiday.</p>
+<p class="story-body-text" itemprop="articleBody">Taking these steps will put us on the right path. </p>
+</div>
+</div>
+<hr/>
+<a name="joshua"></a></p>
+<h4>Needed: A Federal Role </h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/joshua_rauh.50.jpg" alt="Joshua D. Rauh" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong><a href="//www.kellogg.northwestern.edu/faculty/rauh/">Joshua D. Rauh</a></strong> is an associate professor of finance at Kellogg School of Management, Northwestern University.</em></p>
+<p class="story-body-text" itemprop="articleBody">Many states are in deep trouble. As many as twenty states could see their pension funds run out by the end of 2025, even if they earn 8% on their investments. The federal government should be worried, as insolvent states will turn to them for help. Given the funding gaps in state pension plans, the total size of a federal bailout of states and their pension programs would exceed the recent bailout of the U.S. financial system — and would be likely more than $1 trillion.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The federal government should cut a deal with states.  </p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">The federal government should cut a deal with states. They should allow a state to issue tax-subsidized bonds for the purpose of pension funding for the next 15 years — if and only if the state government agrees to take three specific measures to stop the growth of unfunded liabilities:</p>
+<p class="story-body-text" itemprop="articleBody">&#8212; The state must close its defined benefit plans to new employees and agree not to start any new defined benefit plans for at least 30 years.</p>
+<p class="story-body-text" itemprop="articleBody">&#8212; The state must annually make exactly its actuarially required contribution left over from the existing underfunded plans; only the amount of that contribution will be subsidized.</p>
+<p class="story-body-text" itemprop="articleBody">&#8212; The state must include its new workers Social Security, and provide them with an adequate defined contribution plan, again for at least 30 years. To this end, the federal government should start a Thrift Savings Program for state workers and operate it alongside the existing Thrift Savings Program for federal workers.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">The tax subsidies for these new Pension Security Bonds would work like Build America Bonds, with the federal government paying 35% of all coupon payments directly to the state. The cost of this subsidy will be in large part offset by the gains to the Social Security system of bringing in new state workers. On net, this plan would cost the federal government $75 billion today, and would prevent a trillion dollar crisis in less than a decade.</p>
+</div>
+</div>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//roomfordebate.blogs.nytimes.com/2010/05/20/can-states-fix-their-pension-problems/" data-title="Can States Fix Their Pension Problems?" data-description="The public is outraged over stories of $150,000-a-year pensions for public employees. But what can be done?">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2010/05/19/politicians-and-their-fake-war-stories/" title="Politicians and Their Fake War Stories">
+				Politicians and Their Fake War Stories			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2010/05/21/what-will-wall-street-look-like-next-year/" title="What Will Wall Street Look Like Next Year?">
+				What Will Wall Street Look Like Next Year?			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//roomfordebate.blogs.nytimes.com/2010/07/'> July 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/06/'> June 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/05/'> May 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/04/'> April 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/03/'> March 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/02/'> February 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/01/'> January 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/12/'> December 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/11/'> November 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/10/'> October 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/09/'> September 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/08/'> August 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/07/'> July 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/06/'> June 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/05/'> May 2009 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" title="Read: Room for Debate Has Moved">Room for Debate Has Moved</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Visit Room for Debate&#8217;s new home on The New York Times Web site.<a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" title="Read: Should More Veterans Get P.T.S.D. Benefits?">Should More Veterans Get P.T.S.D. Benefits?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/"></a>
+				</span>			</h5>
+			<p class="summary">
+			What does the latest research tell us about the extent of combat trauma?<a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" title="Read: Do U.S. Donors Drive Israeli Politics?">Do U.S. Donors Drive Israeli Politics?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are American citizens&#8217; contributions to West Bank settlements helping or hurting the peace process?<a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" title="Read: What We Still Don&#8217;t Know About Sunscreens">What We Still Don&#8217;t Know About Sunscreens</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Why has the F.D.A. stalled in requiring better labels and safer ingredients in sunscreens?<a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" title="Read: The Pitfalls in Identifying a Gifted Child">The Pitfalls in Identifying a Gifted Child</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are New York City&#8217;s plans to revamp testing of preschoolers for gifted programs a step backward? <a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">Room for Debate on</span></span>
+</h4>
+<ul>
+</ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-74',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":109,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

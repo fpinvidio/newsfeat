@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-roomfordebate section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-roomfordebate section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta name="author" content="The Editors" />
+<meta name="CLMST" content="The Editors" />
+<meta name="byl" content="The Editors" />
+<meta name="GBLC" content="Business;Economy;Politics">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1252712094" />
+<meta name="PUD" content="20090911" />
+<meta name="pdate" content="20090911" />
+<meta name="ptime" content="20090911193454" />
+<meta name="utime" content="20090914160503" />
+<meta property="article:modified_time" itemprop="dateModified" content="2009-09-14T16:05:03-04:00" />
+<meta name="DISPLAYDATE" content="September 11, 2009" />
+<meta name="dat" content="September 11, 2009" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="roomfordebate" />
+<meta name="BN" content="roomfordebate" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Business" />
+<meta property="article:tag" content="Economy" />
+<meta property="article:tag" content="Politics" />
+<meta property="article:tag" content="_featured" />
+<meta name="keywords" content="Business,Economy,Politics,_featured" />
+<meta name="description" content="One year after the collapse of Lehman Brothers, financial institutions continue to resist tougher regulations." />
+<meta name="hdl" content="Why Wall Street Reforms Have Stalled" />
+<meta property="og:title" content="Why Wall Street Reforms Have Stalled" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/" />
+<meta property="og:site_name" content="Room for Debate" />
+<meta property="og:description" content="One year after the collapse of Lehman Brothers, financial institutions continue to resist tougher regulations." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Why Wall Street Reforms Have Stalled" />
+<meta name="twitter:url" content="//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/" />
+<meta name="twitter:description" content="One year after the collapse of Lehman Brothers, financial institutions continue to resist tougher regulations." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Over the Line in South Carolina' href='//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/' />
+<link rel='next' title='What Will Mexico&#8217;s New Drug Law Do?' href='//roomfordebate.blogs.nytimes.com/2009/09/13/decriminalizing-drugs-in-mexico/' />
+<link rel='canonical' href='//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/' />
+<link rel='shortlink' href='https://nyti.ms/2nSNcgF' />
+<link rel='https://github.com/WP-API/WP-API' href='//roomfordebate.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/roomfordebate/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//roomfordebate.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/roomfordebate/2009/09/11/why-wall-street-reforms-have-stalled/" />
+<meta name="dfp-ad-unit-path" content="opinion/roomfordebate" />			<title>Why Wall Street Reforms Have Stalled - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-18157 blog-universal nyt-blog-roomfordebate" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//roomfordebate.blogs.nytimes.com">
+                Room for Debate            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Why Wall Street Reforms Have Stalled        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/"
+	 data-title="Why Wall Street Reforms Have Stalled"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;One year after the collapse of Lehman Brothers, financial institutions continue to resist tougher regulations.  &lt;/span&gt;&lt;a href=&quot;//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="September 11, 2009 7:34 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="roomfordebate" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//roomfordebate.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="site-title">Room for Debate</div><div class="site-description">A New York Times Blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//roomfordebate.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Room for Debate">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-18157 post type-post status-publish hentry category-business category-economy category-politics tag-banks tag-finance tag-investment-banks tag-wall-street" id="post-18157">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Why Wall Street Reforms Have Stalled</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By The Editors			</address>
+			<!-- date published --><time class="dateline " datetime="2009-09-11T23:34:54+00:00" itemprop="datePublished">September 11, 2009 7:34 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">September 11, 2009 7:34 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2009/09/10/opinion/11finance.480.jpg" alt="Wall Street" /><span class="credit">Todd Heisler/The New York Times</span> <span class="caption">Lower Manhattan, near Wall Street.</span></div>
+<p class="story-body-text" itemprop="articleBody"><strong><span style="color:#8c2626;">Updated, Sept. 12, 9:05 a.m. | </span></strong><a href="#scott">Scott Reynolds Nelson</a>, a historian of American financial crises, discusses the reliance and conflict between the federal government and financiers going back to the nation&#8217;s founding. </p>
+<hr/>
+<p class="story-body-text" itemprop="articleBody">One year ago next week, Lehman Brothers went bankrupt, Merrill Lynch was sold and A.I.G. was rescued by a huge federal bailout. In the wake of the global financial crisis, Congress and regulators vowed to end Wall Street&#8217;s profligate risk-taking and the compensation structures that rewarded that behavior. Yet looking back, <a href="//www.nytimes.com/2009/09/12/business/12change.html?_r=1&#038;hp">experts say not a lot has changed</a> in that culture, and efforts to control risk and reform executive pay have stalled.</p>
+<p class="story-body-text" itemprop="articleBody">Why is it so hard to regulate Wall Street?  Has the financial industry always been better able to block government reforms than other industries?  </p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-18157"></span></p>
+<ul>
+<li><a href="#yves">Yves Smith,</a> financial analyst</li>
+<li><a href="#russell">Russell Roberts,</a> professor of economics</li>
+<li><a href="#jeffry">Jeffry A. Frieden,</a> professor of government</li>
+<li><a href="#nicole">Nicole Gelinas,</a> Manhattan Institute</li>
+<li><a href="#william">William K. Black,</a> former banking regulator</li>
+<li><a href="#edward">Edward Harrison,</a> banking and finance specialist</li>
+<li><a href="#scott">Scott Reynolds Nelson,</a> professor of history</li>
+</ul>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="yves"></a></p>
+<h4>Too Much Power for the Few</h4>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Yves Smith</strong> has written the blog <a href="www.nakedcapitalism.com">Naked Capitalism</a target="new"> since 2006. She has spent more than 25 years in the financial services industry and currently is head of <a href="//www.auroraadvisors.com/">Aurora Advisors</a target="new">, a management consulting firm. </em></p>
+<p class="story-body-text" itemprop="articleBody">Wall Street has become hard to regulate because we&#8217;ve allowed it to evolve that way. Credit is vital to any economy beyond the barter stage. As commerce became large scale and more interconnected, bank failures, which were once local affairs, increasingly led to widespread panics that produced considerable harm. As a result, government not only started to provide more safety nets for banks but also supervised them and placed limits on their activities.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>It is pretty hard to regulate someone who has a knife at your throat.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Since the 1980s, lending has shifted from banks to the capital markets. While many loans do remain with the bank that originated them, in the U.S., what Treasury Secretary Timothy Geithner has called &#8220;market-based credit&#8221; has become prevalent. Even though a bank initially extends the loan, it is often on-sold through capital markets firms to investors.</p>
+<p class="story-body-text" itemprop="articleBody">That process gives major financial players control over the all-important over-the-counter debt markets. Most of these deals do not trade much once sold, making them ill-suited to shift on to exchanges that would be easier to police. But these over-the-counter markets have, for a host of reasons, strong scale economies and network effects, so absent intervention, it was inevitable that they would become increasingly concentrated, with a comparatively small number of firms becoming dominant.</p>
+<p class="story-body-text" itemprop="articleBody">It is pretty hard to regulate someone who has a knife at your throat.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Add to that the fact that the major financial players have been allowed to create a host of complex products, like customized derivatives and collateralized-debt obligations, which have often been used to evade regulations or to shift risks on to unsuspecting parties. The worst is that some of these products have now become a vital part of the credit infrastructure (if nothing else, the capital markets firms that now control the crucial financial plumbing use them to manage their exposures), making it difficult to rein them in.</p>
+<p class="story-body-text" itemprop="articleBody">Regulators sat on the sidelines as these new complex instruments proliferated, and frankly do not understand them very well. Even if they were somehow able to become as expert as the big financial firms on the level of trade craft, they still lack the data and knowledge to ascertain what the systemwide effects of significant changes in the rules might entail. Given how interconnected financial markets are, and how some efforts to intervene during the crisis produced unexpected, adverse side effects, they worry that efforts to contain risky products and practices could backfire and actually make matters worse.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="russell"></a></p>
+<h4>Misbehaving Children, Indulgent Parents</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/russell-roberts.50.jpg" alt="Russell Roberts" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Russell Roberts</strong> is a research fellow at Stanford University’s Hoover Institution and professor of economics at George Mason University. He is the host of <a href="//www.econtalk.org/">EconTalk</a>, a weekly podcast.</em> </p>
+<p class="story-body-text" itemprop="articleBody">Wall Street appears to be back to business as usual, but this is a bit deceptive. First, capital buffers are up and leverage is down. People are worried about the future and they should be. Some natural forces are reining in some of the excesses of the recent past.</p>
+<p class="story-body-text" itemprop="articleBody">Should we try to do more explicitly to change how Wall Street operates? One mistake we are making is to re-create what got us here in the first place. The Federal Reserve has bought hundreds of billions of dollars of assets from Fannie and Freddie in a desperate attempt to shore up the housing market artificially. I am not optimistic on how this will turn out. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>For three decades, the government has rescued virtually every large troubled financial institution &#8212; to bad effect.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">There is also a focus on regenerating the securitization market. But people are very wary of securitization and rightfully so. Perhaps it is wise to let securitization die for now. Maybe it will return. To force it back into life is a mistake.</p>
+<p class="story-body-text" itemprop="articleBody">What about more explicit regulation to shape compensation, capital requirements, and the risks that financial institutions are allowed to take? That will be the natural focus of the next regulatory regime that will inevitably arise once the economy has recovered and Washington’s direct role in financial institutions gets back to normal.</p>
+<p class="story-body-text" itemprop="articleBody">Past attempts of explicit regulation have been ineffective. It’s like re-inventing a broken wheel. Perhaps it’s time to look elsewhere for stability. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">More important than fine-tuning the explicit regulatory regime in the utopian hope of finally getting it right, is to change the implicit policy of ad hoc interventions the Fed and the Treasury have pursued for the last three decades. The government has rescued virtually every large troubled financial institution, beginning with Continental Illinois and the savings and loans in the 1980s to Long Term Capital Management in the 1990s to Bear Stearns and AIG and Fannie and Freddie today. </p>
+<p class="story-body-text" itemprop="articleBody">Almost as reliable as clockwork, the Fed and the Treasury act as parents to clean up the mess made by the irresponsible children. Not surprisingly, the children find new ways to misbehave. This implicit policy punishes stockholders in the name of preventing moral hazard and rewards creditors and counterparties in the name of preventing systemic risk. Neither part has worked: the moral hazard remains and the systemic risk persists. Too big to fail has failed.</p>
+<p class="story-body-text" itemprop="articleBody">We have channeled hundreds of billions of dollars of taxpayer money into the pockets of some of the richest people on the face of the earth. The people who took the most imprudent risks were not punished sufficiently. Instead, those of us on the sidelines are paying the bill. For the sake of democracy and capitalism, we need to find another way.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="jeffry"></a></p>
+<h4>Captured Regulators</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/jeffry_frieden.50.jpg" alt="Jeffry Frieden"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Jeffry A. Frieden</strong>, a professor of government at Harvard, is the author of <a href="//www.wwnorton.com/catalog/spring07/032981.htm">Global Capitalism: Its Fall and Rise in the Twentieth Century.&#8221;</a></em></p>
+<p class="story-body-text" itemprop="articleBody">It has been difficult to move forward rapidly to reform the American financial regulatory system. This is not surprising. Financial regulation in the United States has always been arcane, complex, and resistant to change. There are several reasons, all of which come down the one overarching reality: financial regulation is extraordinarily political, and confronts powerful interests.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Financial regulators tend to be sympathetic to interests of financial institutions, which makes them reluctant to make changes that would be costly or difficult.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"><strong>Special-interest politics</strong>. Regulatory agencies are often sympathetic to the industries they regulate. This pattern is so well known among scholars that it has a name: “regulatory capture.”  This effect  can be due to the political influence of the industry on its regulators; or to the fact that the regulators spend so much time with their charges that they come to accept their world view; or to the prospect of lucrative private-sector jobs when regulators retire or resign. </p>
+<p class="story-body-text" itemprop="articleBody">Whatever the reason, financial regulators tend to be sensitive to the views and interests of financial institutions, which makes them reluctant to make changes that would be costly or difficult.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Technical complexity.</strong> The “capture” of financial regulators is facilitated by the extraordinary complexity of modern finance. Very few consumers, or politicians, understand the financial markets and institutions that regulators supervise. And very few care much about them, in normal times. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">For their part, regulators cannot usually afford to hire all the expensive financial experts they need. This means that the regulators’ principal source of information and attention is the financial institutions themselves. This was codified in some of the regulatory mistakes made in the run-up to the crisis, such as when regulators — in the United States and in many other countries — accepted the argument that banks themselves were best suited to evaluating the riskiness of some of their most complicated holdings. </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Fragmentation.</strong> American bank regulation is among the most fragmented in the world. Each state has its own bank regulator; there are often separate regulations and regulators for each variety of bank (commercial banks, savings and loans, credit unions); and financial institutions that look a lot like banks are typically regulated by other agencies. </p>
+<p class="story-body-text" itemprop="articleBody">The proliferation of regulators means that financial institutions are often able to “jurisdiction-shop” for the most favorable regulatory environment. It also means that each of the dozens of regulators jealously guards its independence. Attempts to consolidate regulation, for example, run up against the states and their regulators, the disparate federal agencies, and their Congressional and private-sector supporters. </p>
+<p class="story-body-text" itemprop="articleBody"><strong>Uncertainty.</strong> One of the most important tasks of financial regulators is devising policies toward new financial instruments. This is also one of the most daunting tasks, as the new instruments are typically not well understood — indeed, they may have been devised precisely to avoid easy control by the regulators. Most observers did not understand how risky the new American mortgage-backed securities might be until they collapsed, bringing the financial system and the rest of the world economy down with them.</p>
+<p class="story-body-text" itemprop="articleBody">For financial regulation to be reformed in line with the true public interest, then, requires an almost magical combination. Policymakers and regulators must be generally immune to political pressure from the financial services industries. Reformers have to have a broad and deep understanding of the great complexity of modern finance. Central policymakers need to be willing and able to override the opposition of existing, turf-protecting, state and federal regulators. And enough people have to care, and to be paying attention, to get politicians to focus on the topic and push it to a conclusion. </p>
+<p class="story-body-text" itemprop="articleBody">In the aftermath (or what may be in the midst) of the gravest financial crisis in the United States in 75 years, all of these stars may be aligned. The opportunities for fundamental regulatory reform are probably greater now than they have been since the Great Depression. </p>
+<p class="story-body-text" itemprop="articleBody">Even so,  it will require an enormous amount of expertise, perseverance, and political courage to pull it off.</p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="nicole"></a></p>
+<h4>Restore Market Discipline</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/nicole_gelinas.50.jpg" alt="Nicole Gelinas" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Nicole Gelinas</strong>, a Manhattan Institute senior fellow, is author of the forthcoming &#8220;After The Fall: Saving Capitalism from Wall Street – and Washington.&#8221;<br />
+</em></p>
+<p class="story-body-text" itemprop="articleBody">Adequately regulating finance is easier than Wall Street and Washington would like the public to think.  </p>
+<p class="story-body-text" itemprop="articleBody">Most important, Washington must restore market discipline, which has been missing since 1984, when the Reagan administration decided with its Continental Illinois rescue that some banks were “too big to fail.” </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Make lenders, including those &#8220;too big to fail,&#8221; suffer the consequences of their bad decisions.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"> Investors learned from the experience and from subsequent episodes that the government would not allow lenders to some financial firms to suffer the consequences of their bad decisions. When the government subsidizes something, as it did with this implicit guarantee, it gets more of it. That’s how we eventually got record levels of financial-industry debt.  </p>
+<p class="story-body-text" itemprop="articleBody"> Lawmakers and regulators must permanently remove this subsidy by prescribing a consistent, predictable way in which large or complex financial firms can fail, with lenders, too, taking warranted losses. Without this framework, other regulatory efforts will be ineffective. Financial firms insulated from market discipline will find ways around other new rules. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody"> Washington also must protect the financial system from inevitable failures, with consistent limits on borrowing across financial instruments of firms and central clearing and reporting of derivatives and other financial instruments so that investors and regulators can know where the risk lies. </p>
+<p class="story-body-text" itemprop="articleBody"> So why have the Democrats stalled, and why haven’t the Republicans complained about the delay? </p>
+<p class="story-body-text" itemprop="articleBody"> This, too, is simple. </p>
+<p class="story-body-text" itemprop="articleBody">The too-big-to-fail financial industry has been good to elected officials and former elected officials of both parties over its 25-year life span, and it has allowed regular Americans to borrow well beyond their means. Removing the too-big-to-fail subsidy through appropriate regulation and letting financial innovations succeed or fail on their own merits would be painful in the short term, not just in Washington but on Main Street. </p>
+<p class="story-body-text" itemprop="articleBody"> In the long run, though, the economy would be more competitive, with other industries no longer facing an unfair disadvantage against Uncle Sam’s Wall Street. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="william"></a></p>
+<h4>Refusing to Admit the Problem</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/william_black.50.jpg" alt="William K. Black" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>William K. Black</strong>, associate professor of economics and law at the University of Missouri, Kansas City, is a former financial regulator. His book, &#8220;The Best Way to Rob a Bank is to Own One,&#8221; focuses on the role of “control fraud” in financial crises.</em></p>
+<p class="story-body-text" itemprop="articleBody">Tom Ferguson explained in 1995 in his classic book, “Golden Rule,” that those that have the gold make the financial rules. Nobody has as much gold as the finance industry. It used its political power to deregulate and de-supervise the industry. </p>
+<p class="story-body-text" itemprop="articleBody">It promised that these policies would bring us unparalleled wealth while reducing risk. The purported gains were fool’s gold. The administration and industry do not want the public to know that the financial system brought us to the brink of a Great Depression and that Treasury and the Fed only delayed that catastrophe by adopting policies that (1) increased “moral hazard”, which makes future crises more likely, and (2) combine the worst elements of “crony capitalism” and the “socialized losses.” </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>No reform can be achieved when administration officials are pretending that no fundamental change in finance is needed.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">There has been no honest examination of the crisis because it would embarrass C.E.O.s and politicians. Jennifer Taub has identified some of these elites in a recent paper: <a href="//papers.ssrn.com/sol3/papers.cfm?abstract_id=1472190">“Enablers of Exuberance: The Legal Acts and Omissions that Facilitated the Global Financial Crisis.”</a> </p>
+<p class="story-body-text" itemprop="articleBody">Instead, the Treasury and the Fed are urging us not to examine the crisis and to believe that all will soon be well. There have been no prosecutions of the chief executives of the large nonprime lenders that would expose the “epidemic”  of fraudulent mortgage lending that drove the crisis. There has been no accountability.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">The bloated finance industry opposes reform because it would shrink and lose power and wealth. Its ability to defeat reform has grown. Both parties put freshmen from tough districts on the House Financial Services Committee to ensure political contributions and increase the chances of reelection. The committee has grown to an absurd total of 71 members.</p>
+<p class="story-body-text" itemprop="articleBody">The only hope for reform in the face of this opposition is public disclosure of the true depth of the crisis and its roots in widespread “control fraud” and the need for fundamental reform. The administration would have to marshal public outrage, document the fraud and abuses, and provide a supporting theory to have any chance of success. </p>
+<p class="story-body-text" itemprop="articleBody">Instead, the Obama administration and Fed Chairman Ben Bernanke have refused to investigate the nature and causes of the crisis.  And the administration selected Timothy Geithner, who with then Treasury Secretary Paulson bungled the bailout of A.I.G. and other favored “too big to fail” institutions, to head up Treasury. </p>
+<p class="story-body-text" itemprop="articleBody">Now Lawrence Summers, head of the White House National Economic Council, and Mr. Geithner argue that no fundamental change in finance is needed. They want to recreate a secondary market in the subprime mortgages that caused trillions of dollars of losses. </p>
+<p class="story-body-text" itemprop="articleBody">Traditional neo-classical economic theory, particularly “modern finance theory,” has been proven false  but economists have failed to replace it. No fundamental reform can be passed when the proponents are pretending that there really is no crisis or need for change. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="edward"></a></p>
+<h4>The Industry Took Control</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/edward_harrison.50.jpg" alt="Edward Harrison" /></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Edward Harrison</strong> is a banking and finance specialist at the economic consultancy Global Macro Advisors. He is also the principal contributor to the financial website <a href="//www.creditwritedowns.com/" target="new">Credit Writedowns</a>. </em></p>
+<p class="story-body-text" itemprop="articleBody">Regulating Wall Street has become difficult in large part because of regulatory capture. Regulators, government officials, finance executives and economists all came to believe in an extreme form of deregulatory capitalism that simply does not work.</p>
+<p class="story-body-text" itemprop="articleBody">Over the past quarter-century, regulations erected during the Great Depression have been stripped away, largely leaving Wall Street to self-regulate. The theory has been that the freedom brought through reduced regulation increases innovation and reduces inefficiency. These claims are valid.</p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>Deregulation as practiced has conflated the act of deregulating markets with the act of removing regulatory oversight.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">However, deregulation as practiced has conflated the act of deregulating markets with the act of removing regulatory oversight. The result has meant a core aspect of our economy lacked rules and boundaries just as it faced a new operating environment. This, in turn, led to excessive risk and repeated crises whereby the government felt compelled to intervene to avert worse.</p>
+<p class="story-body-text" itemprop="articleBody">Moreover, monetary policy amplified these crises by providing liquidity to prevent bust but not withdrawing enough liquidity to prevent bubbles. This asymmetry caused Wall Street firms to take on yet more risk in the understanding that worst-case scenarios would be mitigated by macro-economic policy.</p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">Was this instability an inevitability of the financial stability after the Great Depression?  Are these bouts of financial panic bound to reoccur? It is unclear. Nevertheless, we should not use the fatalistic notion that panics and crises are inevitable to absolve us of the responsibility to adequately regulate financial markets. </p>
+<p class="story-body-text" itemprop="articleBody">We need not erect a whole super-structure of regulatory agencies to change course.  Nor do we necessarily need to re-impose a provision like the Glass-Steagall act to separate riskier and less risky financial activities. We do need to enforce the regulatory statutes presently available. We do need to adequately fund, staff and compensate our regulatory agencies as the Madoff scandal attests And we do need to bring vestiges of the shadow banking system like money market and hedge funds under the regulatory umbrella. </p>
+</div>
+</div>
+<hr/>
+<p class="story-body-text" itemprop="articleBody"><a name="scott"></a></p>
+<h4>A Symbiotic Relationship</h4>
+<div class="w50 left"><img src="https://static01.nyt.com/images/blogs/roomfordebate/contributors/scott_nelson.50.jpg" alt="Scott Nelson"></div>
+<p class="story-body-text" itemprop="articleBody"><em><strong>Scott Reynolds Nelson</strong>, a professor of history at the College of William and Mary, is the author of the forthcoming &#8220;Crash: An Uncommon History of America&#8217;s Financial Panics.&#8221;<br />
+</em></p>
+<p class="story-body-text" itemprop="articleBody">Since the nation’s founding, financial institutions have been empowered to carry out  policy, and at times to stifle federal initiatives and profit from others. </p>
+<p class="story-body-text" itemprop="articleBody">John Jacob Astor and Stephen Girard financed the War of 1812 when they agreed to take U.S. bonds in exchange for cash. The two financiers then demanded that the government create a Second Bank of the United States to prop up their federal bonds. They got it. </p>
+<div class="w190 right module">
+<div class="entry">
+<blockquote>The intimate connection between Wall Street and the federal government has humbled presidents since the nation&#8217;s founding.</p></blockquote>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">President Jackson removed federal deposits from the Bank of the United States in his political struggle with Nicholas Biddle, the bank’s president, a move that some have argued led to  the Panic of 1837. In financial crises, this tension between public and private institutions becomes most visible and most incendiary: it often leads to changes in Congress and the presidency. No one forgave President Jackson’s successor Martin Van Buren for the Panic of 1837. Democrats crumbled; the Whig party picked up the pieces.</p>
+<p class="story-body-text" itemprop="articleBody">This intimate connection between the nation and Wall Street has humbled presidents ever since. During the Panic of 1893 Grover Cleveland pleaded with J.P. Morgan for help. Morgan’s syndicate built up the nation’s gold reserve and Morgan seemed a hero. </p>
+<div class="toggleContent">
+<p class="story-body-text" itemprop="articleBody"><a href="javascript:void(0);" class="showContent">Read more&#8230;</a></p>
+<div class="hiddenContent" style="display: none;">
+<p class="story-body-text" itemprop="articleBody">But in the 1907 panic, the public mood changed. Morgan needed President Theodore Roosevelt’s Treasury Secretary to rescue his Trust Company of America. He got it. But popular anger at this bailout led Democrats and Republicans to craft an independent financial institution, one that would never again be a tool of Wall Street. The Federal Reserve became the nation’s financial institution for regulating the money supply and reserve ratios. </p>
+<p class="story-body-text" itemprop="articleBody">Nowadays, former employees of the Federal Reserve end up in the most powerful Wall Street banks, and banks have a fondness for hiring former members of the House and  Senate Banking committees. Congress created the Federal Deposit Insurance Corporation as a separate entity during the last depression, hoping that this institution might be safer from Wall Street influence. </p>
+<p class="story-body-text" itemprop="articleBody">The intimacy of the public-private relationship in the United States banking has always raised eyebrows.  Might federal regulators be helping their former bosses? In 2008, when well-connected Goldman Sachs got help and Lehman Brothers did not, even Wall Street cried foul. </p>
+<p class="story-body-text" itemprop="articleBody"> It’s an indication of that symbiosis when many argue that the federal government, by allowing Lehman to fail, created our current crisis. </p>
+</div>
+</div>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//roomfordebate.blogs.nytimes.com/2009/09/11/why-wall-street-reforms-have-stalled/" data-title="Why Wall Street Reforms Have Stalled" data-description="One year after the collapse of Lehman Brothers, financial institutions continue to resist tougher regulations.  ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-151353">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">rmarc</span>
+			<span class="comment-link">
+				<a href="#comment-151353" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:58 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Reforms have stalled because, like the medical-industrial complex, the financial service industry has succeeded in buying the President!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151383">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">andrew</span>
+			<span class="comment-link">
+				<a href="#comment-151383" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Give me one good reason why the FDIC should back proprietary trading. This was the essence of GlassSteagle and its demise was the ultimate reason for our current fiasco. If we don&#8217;t fix this we are doomed to a repeat.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151395">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Donald Surr</span>
+			<span class="comment-link">
+				<a href="#comment-151395" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>All that we could add to what rmarc already has said is:  and  congress!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151443">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">L D Fraley</span>
+			<span class="comment-link">
+				<a href="#comment-151443" title="Comment Permalink">
+					<span class="comment-date">September 11, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Obama does not realize how severely his Presidency has been hurt by insatlling the Summers/Geithner solution to the financial crises. Institutions that were too big to fail have been made larger.</p>
+<p>Summers/Geithner have created a monstrously powerful financial system that has only a few large institutions&#8230;&#8230;a Plutocracy. It&#8217;s driving force is to concentrate the wealth of many into the hands of a few.</p>
+<p>Geithner is trying to export the system to the rest of the World. It is evident to most that this creation will eventually move beyond the control of any government. </p>
+<p>It would be far better to break up the large institutions to save the Democracy and the quality of life of the workers.</p>
+<p>People do not trust Wall Street. They want financial power dispersed into smaller,well run institutions motivated to supply capital to it&#8217;s highest use&#8230;.supporting innovation by the educated middle class. There, the systemt can be controlled by clear and simple regulation.</p>
+<p>The Paulson and now Summers/Geithner concept that the faulty Wall Street financial system had to be saved can make the most promising  President in decades into a one term&#8230;or less&#8230;fiasco. </p>
+<p>It is not too late to reverse course. Obama will have overwhelming support to face down the aspiring oligarchs, retool his financial team, and save the American dream.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151567">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">C.C.</span>
+			<span class="comment-link">
+				<a href="#comment-151567" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:28 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I hereby nominate William K. Black to be the new White House Financial Reform &#8220;czar&#8221; with full powers to deleverage both Mr. Summers and Mr. Geithner.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151609">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">T Mex</span>
+			<span class="comment-link">
+				<a href="#comment-151609" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:20 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The accompanying Times article refers to &#8220;Wall street executives&#8221; as saying, in effect,  we don&#8217;t need regulation, we learned our lesson, this won&#8217;t happen again.  Didn&#8217;t we hear the same thing after the Savings and Loan debacle two decades ago, and after the burst of the dot com bubble and the shenanigans of the  &#8220;few bad applies&#8221; like Enron at the end of the 1990s? How about this explanation: &#8220;In every stock-jobbing swindle everyone knows that some time or other the crash must come, but everyone hopes that it may fall on the head of his neighbor after he himself has caught the shower of gold&#8230;&#8221;  Anybody want to guess who said that back about 1867?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151629">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">anna</span>
+			<span class="comment-link">
+				<a href="#comment-151629" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:55 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Well &#8230; what a question? The answer is simple &#8211; we&#8217;re collapsing &#8211; all plutocracies do.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151683">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Health is wealth [10:10]</span>
+			<span class="comment-link">
+				<a href="#comment-151683" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:52 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A healthy state of affairs, between opposing ideologies, would lead to more robust forms of equitable, sustainable growth.</p>
+<p>Regulating Wall Street, is like regulating democracy : Wall Street is our alarm bell, it tells us when something is wrong.</p>
+<p>If the USA and China were to impose a peace treaty, on the Korean peninsula, this simple act, would calm all the anxiety [1] there is out there . . .  would probably add 10-20% to the value of the US Dollar, thus raising the value of a big chunk of debt, and thus erasing all questions, over the global monetary system.</p>
+<p>[1]</p>
+<p>&#8216;These are urgent times, and perhaps now some of our messages will have greater resonance. </p>
+<p>Blind faith in economic growth and gain as the be-all, end-all, cure-for-all has been misplaced.</p>
+<p>Fairness is at the heart of our ambitions.</p>
+<p>Greater equity in the health status of populations, within and between countries, should be regarded as a key measure of how we, as a civilized society, are making progress.&#8217;</p>
+<p>Margaret Chan, director-general, World Health Organization, in New Scientist weekly, 12 September 2009.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151701">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Captain Ronnel</span>
+			<span class="comment-link">
+				<a href="#comment-151701" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:37 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;Once upon a time, there existed the planetary system Economania. All was well until the leaders of the planet Wallstreetopia became so inflamed with greed that they engineered the greatest swindle in the history of Economania, almost destroying it in the process.<br />
+&#8220;The other planets called a High Counsel to decide the fate of the miscreants, with the decision being that instead of facing prosecution, the &#8216;masters of the universe&#8217; were instead rewarded for fear they would defect to the greener pastures of rival planetary system Financialatica.<br />
+&#8220;With no incentive to change their ways, 10 years later the malefactors of Wallstreetopia perpetrated an even greater swindle, and this time Economania WAS destroyed.&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151727">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">v harris</span>
+			<span class="comment-link">
+				<a href="#comment-151727" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:02 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Fraley: you are on target save for one thorny issue: Obama was bought a long time ago and will do nothing to pursue meaningful financial reform. The trick is to make it complicated and play one government agency against another so nothing gets done. Our government is controlled by the financial oligarchy &#8211; from the White House and Treasury to Congress. The oligarchs have eliminated or absorbed rivals and become our rulers. Supposed Congressional watchdogs such as Barney Frank, Chris Dodd etc. are just their hand maidens. The one person in Washington who makes sense is FDIC Chairman Sheila Bair and I suggest that anyone who cares about stopping the oligarchs and restoring democracy support her reform proposals.<br />
+They are a good start.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151755">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Sam Abrams</span>
+			<span class="comment-link">
+				<a href="#comment-151755" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:02 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Obama failed to reregulate while he had them over avarrel&#8230;as German central bankers advised him to&#8230;<br />
+for 50 years, New Deal regualtions gave us stable, transparent financial markets&#8230;the way back tot hat is obvious.. repass Glass-Steagall, break up the financial supermarkets&#8230;.this is conservative doctrine of spreading the risk&#8230;with the supermarkets. the citicorps&#8230;risk is concentrated</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151761">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">luccas</span>
+			<span class="comment-link">
+				<a href="#comment-151761" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:24 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Shiela Bair and Tim Geithner are together spawn of the devil, who participate in TALF, and bind Americans to back and guarantee, through the Fund the FDIC is responsible to oversee, the program initiated by TALF &#8211; which is essentially making the FDIC an options originator or derivatives originator, and the Treasury Office an options writer.   </p>
+<p>This is far off base from what these offices were intended to do.  It is the brain child of people at JPMorgan, with support from other people in the financial industry, who will, never, be accountable for crafting the program.  And like its administrators, Shiela Bair and Tim Geithner, it represents the worst of wall street thinking and irresponsible banking executive behavior, unparrallelled in the last 200 years.  </p>
+<p>TALF is a usurpation of individual American freedoms to be free from such obligations, wherein, a program is imposed by a few dictators, that 99 percent of the American populace would never vote for; never.  Sheila Bair is the more conscientious of the two and she KNOWs Americans would never approve of it, because they have never participated in such markets, never used 6 time leverage, (going on 10 times levearage by the time it is over, as it will keep creeping up because the Treasury lacks oversight and willfully abuses power as the model has been provided by Henry Paulson to his understudy Geithner of how to push BS off on the American tax payer base and tell them lies about how the Office came by the legal authority to do such things).  Shiela knows Americans would never approve such activity, because they were never invited to partake in the glory years, with JPMorgan and Goldman Sachs, Lehman and Morgan Stanley, who raked in vast wealth for themselves, when self-regulating this market. </p>
+<p>Shiela knows Americans were not invited to participate in this market for 20 years, and why.  Sheila knows Americans do not trust the people who peddle these instruments, and would NEVER agree to backing them.  NEVER.  Sheila knows that 99 percent of Americans do not understand, that market, and therefore, should NOT be liable for it.  </p>
+<p>Yet Sheila is silent, in the face of abuse, like a mother who lets her children be molested by her Uncle or paternal figures, who reap wealth and prestige because they constantly lie to the public about what they do in private.</p>
+<p>Who would let the country&#8217;s tax payers, through their corrupted Treasury Office, become an originator in the options market, or a derivative, of that market?  Who would let the country&#8217;s tax payer base, who lack knowledge in this market, become liable for Trillions in an options market, backed and guaranteed by U.S. Tax payer funds?  Who would let the top 1 percent abuse the trust of those in her care?  </p>
+<p>It is a failed woman who has no integrity to stand on her own and make sustained denouncement of people she knows are corrupt, because she has stood silent beside them when they have done their worst.  </p>
+<p>It is a hapless creature, who does not any longer resemble a matron for the good of those under her charge, because she herself, has been compromised by the men she lets perform in the abusive acts.</p>
+<p>It is the same woman who has power, but does not remove boards of directors and CEOS.  The same woman who would have you believe that vice presidents of these large banks, are not competent to run a large bank; when they are and especially would be, under FDIC oversight (with the FDIC giving them orders on how much pay they can give out during a crisis and how dividend distributions must halt immediately, because it is an emergency and with U.S. taxpayers on the hook there is no need to pay out dividends from banks that are undercapitalized or let the industry as a whole become substantially undercapitalized, via failure to self-regulate).</p>
+<p>It is non other than Sheila Bair.  She is the same failed person, to her core, who lets abuse occur in her own house.  Because she has come to love the offender, and it makes her go silent when the time for abuse is to occur.  She has become numb and complacent to the signs.  She endures it, because she likes her position, and she knows if she makes waves, it will cause her to fall out of favor with those who constantly, and habitually, abuse and exploit trust.</p>
+<p>TALF = 6 times leverage, going on 10 times leverage by the time it is finished.</p>
+<p>The economic policy is void of Presidential leadership. Obama is the same woman as Bush was the same woman, who lets abuse occur in her house.  Because they like the social position and love the prestige more, which offending parties have bestowed upon them.  </p>
+<p>The economic policy is to rake profits out of a market and to dump the expense and loss on the common.  The economic policy is to pay for the best programmers and mathematicians, keep the ingenuity to themselves and the wealth it creates, but dump the expense and cost off on the tax payer base.</p>
+<p>That is all the current president and the one before have done.  They continually fail in leadership, to subject original offending CFOs, boards and corporations, to scrutiny.  They willfully let executives of these large firms commingle tax payer funds with bank money and convert it dishonestly into executive wealth, or individual wealth for other executives at the firm; when they should account for every penny (as if it was a unique client who gave them the money and not someone they can steal from by deceitful methodology).</p>
+<p>Sheila Bair is weak like this.  And Obama/Bush is the same woman who lets abuse occur in her house, because she adores the position and the prestige more than she loves standing up proper, and denouncing the practices to preserve her own dignity.</p>
+<p>Sheila is the same woman as Obama/Bush.  They are the same offender who lacks fortitude and are negligent, 24 hours a day for years at a time.</p>
+<p>They are all three, part of the sickness that lets abuse and corruption occur.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151783">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Scott T.</span>
+			<span class="comment-link">
+				<a href="#comment-151783" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:16 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Did reforms ever start or was it all a lie to cover the lie?</p>
+<p><a href="//www.nextrevolution.net" rel="nofollow">//www.nextrevolution.net</a></p>
+<p>We didn&#8217;t do anything about the crime in the 1980s during the banking scandals which led to this finacial crisis. Did we expect by allowintg the same crooks to steal mor ethis time they wouldn&#8217;t continue &#038; come back to commit the crime again? Returned to the scene of the crime, I guess it&#8217;s true.</p>
+<p>Like the CIA, lack of or manipuated intelligence leading to the war in Iraq, the FBI isn&#8217;t investigating the crime in the finacial crisis. The perfect example would be the state of the union, we had all the crooks in one place, could have arreste dthem all or put bars up around them to keep the misfits from corrupting society but no, we watched &#038; listened like fools only to continue be taken in.</p>
+<p>WY2K took Us to Iraq, is still making millions on oil after breaking US while we pay hom $400K a year. The only accomplishment WY2K achieved except for exposing teh crime inb derivatives through the pric eof oil which droove up the price of everything we buy, busting household budgets to DC standards, in the red, resulting in the financial collapse.</p>
+<p>At that time, instead of demanding justice we allowed the crooks/terrorist on our payroll to bailout the crooks their in the pocket of &#038; in bed with through campaign fiannce.</p>
+<p>I have a petition for full finacial disclosure by all our representatives &#038; families on <a href="//www.nextrevolution.net" rel="nofollow">//www.nextrevolution.net</a></p>
+<p>The American people allowed the crooks to get away with the greatest crime of all time, unless we dmand full finacial disclosure which will tell US &#038; the world who made the $ breaking US all! Elther we are a country of, for, &#038; by the people or just puppets willing to be taken by those we pay to represent US.</p>
+<p>If we are so foolish to allow this to continue, as we did when the bankingscandals of the 1980s, we&#8217;ll be taken again, continue as we have since that time, &#038; be going through this all again which wil no doubt be the last time before the Chinese flag proudly waves over the White House,</p>
+<p>History has repeated itself &#038; will again just as with Iraq &#038; Vietnam. The FDIC is about to borrow billions for only the second time in our history, the first was during the first bush adminstration &#038; banking scandals of the 80s. </p>
+<p>Health care is unaffordable beacuse as well as the trillions we carry as debt &#038; every problem we have because allow campaign finance whoich we pay after our mis-representatives are elected &#038; hand billions as well as tax cuts to contributors, tax cuts we absorb as individuals while driving 70% of the economy buying their product.</p>
+<p>Do any of the contributors use the infrastructure we&#8217;re spending billions through stimulus, to produce ot move their product? Why did our mis-representatives hand out tax cuts when the American Society of Civil Engineers have given our infrastructure a D or D- for years, also telling US it would cost $1.6 trillion to fix &#038; upgrade?</p>
+<p>The American people have been taken in the greatest crime the worl dhas ever seen &#038; after Madoff I would thoink we would catch on. The SEC, FED, &#038; Treasury stopped public debate into whether derivatives were a risk to the world finacial system. Brooksley Born, head of the Commodities Futures Trading Commission tesified 17 times before Congress for publuc debate &#038; was shut down!</p>
+<p>I have a oetition for full finacial dislcoure by all representatives &#038; family on <a href="//www.nextrveolution.net" rel="nofollow">//www.nextrveolution.net</a></p>
+<p>If the American people don&#8217;t sign on you are giving the crooks permsiion to conitue the crime!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151799">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Scott T.</span>
+			<span class="comment-link">
+				<a href="#comment-151799" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:43 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It is not too late to reverse course. Obama will have overwhelming support to face down the aspiring oligarchs, retool his financial team, and save the American dream.</p>
+<p>— L D Fraley</p>
+<p>Here it is again but this time seems to be a democrat saying it. Do any of US know the definaition of the American dream?</p>
+<p><a href="//www.nextrevolution.net" rel="nofollow">//www.nextrevolution.net</a></p>
+<p>According to Webster&#8217;s, an American social ideal </p>
+<p>Are we calling Obama the American dream,republicans seem to be shouting it louder then demcorats making it really strange, 21st century wierd. Calling Obama a socialist isn&#8217;t calling Obama the American dream? Are the working class so simple minded they accept the meaning as they hear on the street, owning a house is the American dream?</p>
+<p>Considering the finacial crisis derived from derivatives the SEC, FED, &#038; treasury stopped public into to prevent demage to the world finacial system, the American dream better not be home ownership.</p>
+<p>I&#8217;ve seen it happen in my life, I didn&#8217;t go after something because someone told me or popular opinion swayed me, I never investigated myself, &#038; in the end found the talk was cheap, a lie, so I missed an opportunity.</p>
+<p>Democrats aren&#8217;t calling their man the dream &#038; republicans are, both contradict themsleves because they as individuals are manipulated by other oor their own party or the other party. The lies are a feeding frenzy of confusion compounding the mess our mis-representatives through campaign finance have US in. There is no truth in either party, campaign finance has US living a lie, manipulated into losing country, freedom, &#038; the people keep going for it as a country divided.</p>
+<p>Imagine US, a country divided down party lines &#038; we&#8217;re going to win the war against terror? Not a chance! I would be willing to bet bin Laden had this all figured out, from campaign finance to the people going at each other as republicans &#038; democrats destroying US from within. Imagine, one attack by terrorist &#038; they won the war because we destroyed ourselves from within through our mis-representation, the two parties accepting camoaign finance, greed, &#038; breaking US down.</p>
+<p>That s exactly what is happening &#038; bin Laden is a genius. He knew WY2K would do as he did, go to Iraq &#038; open up the floodgates. The every reason old man bush never went into Iraq during teh gulf war. It really isn&#8217;t genius at all, it&#8217;s looking at US from afar, realizing how campaign fiance controls US through our mis-representation. They have taken US for trillions &#038; we&#8217;re still going for it.</p>
+<p>That is how hillbilly backwards the people of 21st century America are. Uneducated, believe anything &#038; everything the crooks in campaign finance &#038; on our payroll in DC tell US. Doesn&#8217;t matter which party is in office, in control, the lies are spread like wild fire so the othe party can regain control &#038; look where it has US. Can&#8217;t tell the people going crazy at town hall meetings &#038; now the state of the union?</p>
+<p>Do all the people who were all about going to war in Iraq know what liberate means? </p>
+<p>Might want to get Webster&#8217;s out before you start another war like Iraq in which the crook we allowed to take office breaks US through this perpetual lie. Looks like Obama is dong the same as WY2K did, playing US as fools.</p>
+<p>All Obama has to do is make one loud bold statement. can anybody guess what it is? Campaign fiannce is the weapon bin Laden is using to destroy US because he knows America will never change due to the greed &#038; corruption. Either we eliminat eboth parties &#038; take the campaign fiannce, put it in the general fund or we are finished. Don&#8217;t believe it? Look around, listen.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151801">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Diana</span>
+			<span class="comment-link">
+				<a href="#comment-151801" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:47 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I completely agree with poster #4 and also thought Prof. Black particularly eloquent. </p>
+<p>I voted for Mr. Obama and believed in his hope rhetoric.  But he has made a series of poor decisions that have severely eroded trust in his presidency, not just from me, but from everyone I know, people who are suffering in this economy, who either have lost jobs, or are afraid of losing jobs, people who never invested a dime in Wall Street and who have never set foot into an Ivy or an oil field.  At every step Mr Obama has proceeded without really explaining what he is doing and why&#8212;basically, he asserts how good it will be for America, says how we &#8216;have to do&#8217; x, protects and/or appoints his pals, and spews forth empty unprovable slogans such as the current one about health care, &#8220;It won&#8217;t cost the taxpayers a dime.&#8221;  No one believes him.</p>
+<p>He decided to bail out Wall Street with &#8216;googleplex&#8217; dollars (as my kids used to call indescribably huge amounts) because, um, I don&#8217;t really know, because we &#8216;had to,&#8217;  and far far worse, he refused to attach any strings to the money;  he refused to investigate Wall Streets&#8217; obviously rampant corruption and cronyism; and finally, he tarnished himself by installing pals Summer and Geithner into his inner circle.  </p>
+<p>He can talk all he wants about hope and democratic values, but I am feeling increasingly hopeless.  I am feeling like my America &#8211; the land of democracy &#8211; is slipping away fast like so much sand between the fingers.  While the Republicans spew forth hysterical insanities that are obediently megaphoned by the media,  Mr. Obama seems bent on helping us become an oligarchy, if we haven&#8217;t already become one.  He is completely disconnected from the American people and seems to think he is still a professor in a university and pals with the &#8216;best and the brightest.&#8217;  </p>
+<p>With the Republicans bent on destruction through their hysterical unbalanced lust for power, and the Democrats bent on destruction through their oblivious above-it-all cronyism, soon we will have nothing but a few grains of sand.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151803">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">luccas</span>
+			<span class="comment-link">
+				<a href="#comment-151803" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:49 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>These are self-regulated markets the U.S. tax payer has NO business backing nor guaranteeing, except it be the wishes of corrupt officers like Jamie Dimon, Henry Paulson, Lloyd Blankfien and their understudy, Tim Geithner.</p>
+<p>These are self-regulated markets for the last 20 years, let them keep keep full responsibility and accountable for if it fails.  If it fails it should be counted to their executive wealth and the executive wealth of every officer of these firms and should remain with their companies first.  </p>
+<p>Americans have not been invited to participate in any bonus such executives and companies paid themselves or each other, from the self-regulation of these markets.  Americans have not received any such enjoyment as these firms have enjoyed, improving their offices and vanities and homes and cars and legal departments, etcetera, lavishing upon themselves such wealth as proves they are gluttonous and indulgent, such that they should rightly take responsibiliby, personally and corporately, when this market is exploited to its limits and left barren as if it were a piece of land exploited of all minerals and left in disarray and no executive standing up, and no corporate officer taking responsibility for making that land good again.  </p>
+<p>They ran it for 20 years, let them suffer for the mis-management of it, and for all logic and soundness of reason, do not push that off on the tax payer base.  Have some fortitude for once, during an economic crisis Sheila Bair, Ben Bernanke and Mr. Obama.</p>
+<p>No where in Rule 13(3)  does it say the Secretary of Treasury can become an options writer or act to bind Americans to be liable as a put options writer, nor for a derivative of that market.  No where in Rule 13(3) does it give any Secretary of any office in the United States, permission to deprive Americans of their vote on whether they will like to be liable for a market that was regulated, privately, by large New York banks, and guarantee 6 times leverage or more, some 14 to 54 trillion dollars worth of mortgage backed securities, or derivatives of same, while the large banks essentially lie to the American public about how they paid us back some trivial amount, in comparison.</p>
+<p>What a joke our leaders have become.  Total pansies in service to corrupt banking industry.  Lacking in all fortitude and letting them make up the rules as they go along; and mainly after they have extracted every possible benefit out of that market, that could be extracted, in 20 years time of NO supervision.  </p>
+<p>The New York banking community, and this includes the New York Federal reserve, have become the most corrupt faction of people, in 200 years of U.S. history.  </p>
+<p>They are anti-American.  They are self serving.  Totally self indulgent, and void of integrity, and ability, to stand up and give an account of their actions in oversight and in self-regulation, (what they clamored for, for decades, and when it comes time for them to take responsibility fall silent and let people like Sheila Bair and Obama/Bush and Chris Cox and Ben Bernanke take the blame for their failed workmanship).</p>
+<p>Because they hide behind corrupt officials like Paulson and Geithner, and do-good-ers like Bair and Bernanke, they should receive the full brunt of responsibility for that market and NOT be allowed to escape scrutiny for exploiting and destroying that market, while supervising it for 20 years; and they should never be allowed to push it off in the U.S. tax payer (without being accountable for it first).  </p>
+<p>Any one who loves the country will protect the naive and innocent people, from them.  Protect their Fund first.  And hold those who self-regulated that market accountable first, before asking Americans to shoulder even a dollar&#8217;s cost, what can first be taken from these corrupt officers, like Jamie Dimon.</p>
+<p>These are far bigger criminals than Bernie Madoff:  Henry Paulson, Jamie Dimon and others who managed and self-regulated that market, to extract wealth for themselves and never once warned us about it, when they converted everything they pulled out of it, into wealth for themselves and for individuals and colleagues of their firms, who acted with them.</p>
+<p>These people should be made an example of, so that it serves as a deterrent for the future.  Little will stop abuse in the financial industry, unless those who have exploited trust, are held accountable and the accountability is binding to the point that it rises up in magnitude, the same magnitude as the crisis itself.</p>
+<p>If it is a 100 year event, the deterrent should also rise up in magnitude, to carry forward for the next 100 years.  </p>
+<p>There is no other way to regulate a powerful industry [who has money enough (thanks to tax payer funds) to buy lobbyists, policy writers, politicians, news networks and entire regulatory agencies] than deterrent.  </p>
+<p>Without deterrent any rule of law is subject to be trounced and walked over.  Look at how many laws were undermined by Federal reserve rule 13I(3).  These people have no respect for the law.  They only have respect, if they are held accountable for their deeds and mis-management.   They only have respect for the law if they are subjected to the law when it is clear they are co-mingling, failing to give proper account for what they did with the client&#8217;s money (U.S. tax payer is client), for how they sought to gouge the client and unjustly enrich themselves, during an economic crisis, how they even deceived the nation, to convert tax payer funds into executive wealth and sought to lead others astray as in the Federal reserves, to print money and put it in the stock market to wrongfully and illegally, float that market up, acting in such way as to print money for the benefit of a select few of Wall Street&#8217;s banks.  </p>
+<p>These things are unprecedented and they should be prosecuted using fraud and group activity statutes, dishonesty in the graft and group acting in common purpose.</p>
+<p>Ask Henry Paulson under oath the name of John Snow&#8217;s stock broker? If he does not answer, it does not matter, because he an John Snow&#8217;s stock broker and his White House counsel, acted in a common purpose to compromise John Snow and lie to the American public, about what they were trying to accomplish.  They all acted in the same goal which was to mislead John Snow, compromise him, mislead him some more, craft a mini-scandal for him, point out his conflict of interest and trick him.  Note the same White House counsel did not properly advise Henry Paulson of his conflict of interest.  But they sure made that clear in John Snow&#8217;s case.  Compare 13.9 Billion to Goldman Sachs through AIG and 10-12 Billion in TARP to Goldman Sachs (more conflict of interest than John Snow ever had &#8211; and they made Snow resign over far less money and far less PROFESSIONAL conflict).</p>
+<p>It all goes to deterrent.  Effective deterrent helps in regulating a powerful industry.  </p>
+<p>Let those responsible for self-regulating the market, be accountable for that market.  (Not our Treasury Office nor our FDIC funds  Our Treasury was not meant for that work &#8211; becoming a put options writer?  Our FDIC was not meant to guarantee such a derivative, of the options market, nor was it ever intended to originate such derivatives of put options).</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151819">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Rene</span>
+			<span class="comment-link">
+				<a href="#comment-151819" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:27 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Lessons Learned and Soon Forgotten</p>
+<p><a href="//baselinescenario.com/2009/09/10/lessons-learned-and-soon-forgotten/" rel="nofollow">//baselinescenario.com/2009/09/10/lessons-learned-and-soon-forgotten/</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151821">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Victor Grauer</span>
+			<span class="comment-link">
+				<a href="#comment-151821" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:32 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The reason nothing has changed is because our economy has reached a point where by far the greatest part of our national income derives from the banking and investment industries. If we were to regulate them in a meaningful manner, they wouldn&#8217;t be able to play their old games and as a result their income would plummet and our economy would sink like a stone. &#8220;Too big to fail&#8221; means exactly that. We are literally caught between a rock and a hard place. The only alternative is the canceling of all outstanding debts and the construction of a completely new economy &#8212; but there is zero political will to promote that sort of change. As a result, there will be another crisis, possibly very soon, followed by ever more desperate attempts to maintain what has become a national Ponzi scheme. It&#8217;s hard to see how long such a scheme can maintain itself, but we&#8217;ve been lurching from one crisis to another for a long time now, so maybe we should change our national motto from &#8220;In God We Trust&#8221; to: There&#8217;s Always Room for One More (Crisis).<br />
+<a href="//amoleintheground.blogspot.com/" rel="nofollow">//amoleintheground.blogspot.com/</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151833">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ransome</span>
+			<span class="comment-link">
+				<a href="#comment-151833" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:15 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>There is another solution to ineffective regulation.  It is called the Tobin Tax.  Transaction taxation is another method of modifying behavior and containing damage.  If the taxpayer is to be perpetually on the hook for the risk taking money centers, then tax them.  In the old days, people that created money were taxed for the privilege.  Producing securities backed by questionable assets of ethereal value is no different than printing money.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151835">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Andrew Houston</span>
+			<span class="comment-link">
+				<a href="#comment-151835" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:17 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The simplest way of regulating markets is &#8220;occasional shooting&#8221; of CEOs of companies &#8220;too big to fail&#8221;/responsible for this mess. That would be the only thing they might be afraid of. </p>
+<p>you can not regulate the GREED, you can not control the STUPIDITY. </p>
+<p>I&#8217;ve been working in financial industry for many years. There is nothing (except &#8220;occasional shootings&#8221;, of course) which can protect society from greedy wall street bastards. they have money, they have power, a bunch of lawyers looking for loopholes, etc. etc.  And, as recent stories have shown,  Wall Street cronies are protected by &#8220;private bodyguards&#8221;, like FBI.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151841">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Elizabeth Renant</span>
+			<span class="comment-link">
+				<a href="#comment-151841" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:26 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>What&#8217;s really interesting about the failure of &#8220;the indulgent parents&#8221; to rein in &#8220;the irresponsible children&#8221; is that those of us on the sidelines whose hard-earned money went into the &#8220;pockets of some of the richest people in the world&#8221; knew all along what the end result would be.</p>
+<p>We all knew that we were being snowed when the bailout went forward; we all knew that the thundering rhetoric from Capitol Hill and the White House and Congress about accountability, transparency and ending &#8220;too big to fail&#8221; was hot air; we all knew we&#8217;d get the shaft and have to pay for our mistakes with lost life savings, lost homes, educations deferred for our kids, bankruptcy, etc., while the Feds frantically printed money to save Goldman Sachs and AIG and BOA and Capital One and Merrill Lynch and JPMorgan Chase from their errors.  And when, within half a year of the bailout, the same execs who set the house on fire  were paying themselves seven-figure bonuses again, we were shocked &#8211;</p>
+<p>but not surprised.  What no one has seen fit to discuss here is the intangible cost to Americans&#8217; relationship with their government.  What no one has seen fit to write columns about is the total cynicism that has set in among American citizens vis-a-vis any faith whatsoever in their government&#8217;s ability to protect  them or deal fairly with them, cemented for good and all by the bailout and the subsequent spectacle of Wall Street thumbing its nose at Congress and the American taxpayer, as it rushed to raise interest rates on the very people whose money went into its pockets, refused to increase lending, and instead held onto the money and bought up smaller banks with it &#8211;  all with the tacit approval of Congress.</p>
+<p>No one is talking about what, down the road, may result from the (in my opinion) permanent tear in a fabric already worn somewhat thin.  No one is wondering about the long-term social ramifications of allowing Wall Street (and Big Health Care and Big Energy and Big PhrMa) to continue to call the tune.  No one is noticing that one response has been the radicalization of the far right and another the slow erosion of the middle-class, two developments that down the road may converge at a deadly flash point that will be reminiscent of the rist of fascism in Germany in the early 1930s.  Spare me the &#8220;it can&#8217;t happen here&#8221; reply.  &#8220;It&#8221; can happen anywhere.</p>
+<p>Here&#8217;s what I see, the three deadly factors whose interrelationship will, despite the election of Barack Obama (which allowed me to think for five minutes that we might avoid it) plunge this country into an awful cataclysm  within 25 years: the failure to stop huge corporate interests from dominating the setting of economic policy in Congress (in short, a total failure to get corporate money out of government); the loss of the middle-class, sold out time and again to those corporate interests and left to sink and, one day, unable to rise again; and the violent and dangerous radicalization of the far right, whose minions are growing, who worship borderline personalities like Sarah Palin, who are impervious to the truth of any issue (Joe Wilson being a prime example), and who are motivated in a way that their perennially more nuanced counterparts in the center-left are not.</p>
+<p>These three factors and their interplay will bring this once great nation down.  Well, nothing lasts forever &#8211; the sun is burning itself up and once out of fuel will go nova and take this solar system with it.  But the sun can&#8217;t help itself &#8211; it&#8217;s a force of nature and energy burns fuel, there is no way around that.</p>
+<p>But governments and societies make choices.  We chose to refuse to get corporate money out of government.  We chose not to go the Mall by the millions screaming at the government for letting the banks we just bailed out increase the presssure of the their feet on our collective necks.   We keep voting Democratic and Republican and wondering why they keep bowing to corporate interests while sacrificing ours, all the while telling us they&#8217;re doing it for our own good.</p>
+<p>Obama had one chance in a thousand to do things differently.  But as soon as he put in Summers and Geithner and kept Bernanke, and as soon as that credit card reform bill&#8217;s implementation was deferred for fifteen months to allow the banks &#8220;time to adjust&#8221; (who gave US time to adust? Oh! I forgot &#8211; that comes fifteen months from now, AFTER the banks got the interest rates up where they want them), as soon as it got out that Geithner refused to make it a condition of getting bailout money that banks tell us what they were doing with the money or that any CEOs who presided over the debacle get pushed out. . . .the handwriting was on the wall.  Then came the health care debate, resulting in the destruction of the public option from the bill that would have given the insurance profiteers the only real competition they&#8217;ve ever had &#8211; instead, people who can&#8217;t afford insurance will be forced to buy it (guess from who?) and the health profiteers will once again be smiling all the way to the bank . . .</p>
+<p>The middle-class in this country is a dying pigeon, and Obama had a chance to stop its final strangulation, and he didn&#8217;t.  He&#8217;ll continue our Middle East quagmire.  He&#8217;ll fail to stop Wall Street and its corporate brethren from tightening their hold on Congress.  And the little he will manage to do will continue to galvanize the far right into an violent uprising.</p>
+<p>We all knew how it would be and we let it happen.  My advice to all you young things out there is to get practical degrees and educations that will make you desirable citizens of other countires, and then to emigrate to Canada or, if you&#8217;re good with languages, to a place like Denmark (where, by the way, salaries on average rose 5% over the last year and the population has been remarkably less scathed by the world-wide recession).</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151843">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">daedalus2u</span>
+			<span class="comment-link">
+				<a href="#comment-151843" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:33 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The ultimate problem is that the financial industry needs to shrink as a fraction of the economy.  The cost to store and move financial records around is getting less and less.  Computers have made the accounting part of banking essentially zero cost.  </p>
+<p>There are no economies of scale to banking.  There is no reason that gigantic banks are any better than smaller banks other than that they have monopoly power and can pay big bucks to lobbyists to manipulate the system so they can game it.  Gaming the system will always be easier and more profitable than doing something productive.  Gaming the system is a zero-sum.  The economy can only support a certain fraction of zero-sum non-productive transactions.  </p>
+<p>What needs to be done is for the largest banks to be broken up into smaller entities such that each of them is small enough to fail.  Then they should be allowed to fail one at a time.  </p>
+<p>Rescuing the biggest players and letting them retain monopoly power and the ability to bring the whole economy down will lead to this same scenario again and again.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151853">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Hassan Azarm</span>
+			<span class="comment-link">
+				<a href="#comment-151853" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:14 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>More and more I come to the conclusion that Democracy for Main Street America and Wall Street Capitalism are in a perpetual conflict&#8230;..</p>
+<p>The unholy relations between the Big Money and the Political Machinery is the root cause of the booms and busts and lives and fortunes ending up in ruins time and time again&#8230;..</p>
+<p>Wall Street works with its Colonial DNA and the Political Machinery in Western Democracies have become the &#8220;Clients&#8221; of the Feudalistic Financial System we have in place since 1970s (This when the US abandoned the Bretton Woods Agreement)&#8230;</p>
+<p>To reform the system, this relationship MUST be broken up and the fate of the Federal Reserve and all Regulators MUST be put in a the hands of the 4th pillar of Democracy, a Supreme Court like entity to keep its eyes on money supply, banking, trading, insurance and all that go with it.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-151859">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">gerry</span>
+			<span class="comment-link">
+				<a href="#comment-151859" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:27 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>How can you expect reform from the same group that caused, and has financially benefitted from, the problem?</p>
+<p>One solution that will get to the core of the resistance to reform we are having-not just of the financial system but healthcare, environmental policy, etc-is to finally pass and implement a campaign reform and lobbying policy which limits the amounts of financial and &#8220;in kind&#8221; contribution which corporations and their industry groups/PACs can make to political campaigns. Congress and the Presidency right now are basically bought and paid for by financially well-fixed corporations and the individuals who run them. Why do you think Obama appointed Geithner and Sumners to &#8220;reform&#8221; financial abuses on Wall Street? That is asking the wolf to find out who is eating the sheep.</p>
+<p>As long as we have a political system wherein money is  the most powerful lever in determining policy- by choosing who has the funds to run expensive campaigns (for massive TV advertising, mailings, etc) to get elected/re-elected-then we will never get real change. The politicians will get their marching orders from those who give them their financial pipeline. We need laws which limit direct or indirect dollar amounts given to one candidate, a limit on amounts that can be spent by any party on a Presidential campaign and on Congressional campaigns, equal time given by the TV networks to major Presidential candidates for political ads, and more public debates covered by TV.<br />
+Finally, there should be a &#8220;neutral zone&#8221; provision prohibiting lobbyists from entering (without appointments) Congress or Congressional administrative offices (similar to no campaign solicitation provisions at polling places on election day). Financial investigations of some of the biggest lobbying firms should also be conducted-the corruption discovered would be staggering.</p>
+<p>If these policies were implemented, I believe you would soon see a radical sea change in openness to real reforms in financial system as well as other areas.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-151861">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mortadella</span>
+			<span class="comment-link">
+				<a href="#comment-151861" title="Comment Permalink">
+					<span class="comment-date">September 12, 2009</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:28 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>There&#8217;s really no mystery here.  All you need to know is the statement Senator Dick Durbin made in April:  &#8220;And the banks &#8212; hard to believe in a time when we&#8217;re facing a banking crisis that many of the banks created &#8212; are still the most powerful lobby on Capitol Hill. And they frankly own the place,&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2009/09/10/over-the-line-in-south-carolina/" title="Over the Line in South Carolina">
+				Over the Line in South Carolina			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//roomfordebate.blogs.nytimes.com/2009/09/13/decriminalizing-drugs-in-mexico/" title="What Will Mexico&#039;s New Drug Law Do?">
+				What Will Mexico&#8217;s New Drug Law Do?			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//roomfordebate.blogs.nytimes.com/2010/07/'> July 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/06/'> June 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/05/'> May 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/04/'> April 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/03/'> March 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/02/'> February 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2010/01/'> January 2010 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/12/'> December 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/11/'> November 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/10/'> October 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/09/'> September 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/08/'> August 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/07/'> July 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/06/'> June 2009 </option>
+	<option value='//roomfordebate.blogs.nytimes.com/2009/05/'> May 2009 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" title="Read: Room for Debate Has Moved">Room for Debate Has Moved</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Visit Room for Debate&#8217;s new home on The New York Times Web site.<a href="//roomfordebate.blogs.nytimes.com/2010/07/12/room-for-debate-has-moved/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" title="Read: Should More Veterans Get P.T.S.D. Benefits?">Should More Veterans Get P.T.S.D. Benefits?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/"></a>
+				</span>			</h5>
+			<p class="summary">
+			What does the latest research tell us about the extent of combat trauma?<a href="//roomfordebate.blogs.nytimes.com/2010/07/08/should-more-veterans-get-p-t-s-d-benefits/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" title="Read: Do U.S. Donors Drive Israeli Politics?">Do U.S. Donors Drive Israeli Politics?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are American citizens&#8217; contributions to West Bank settlements helping or hurting the peace process?<a href="//roomfordebate.blogs.nytimes.com/2010/07/07/do-u-s-donors-drive-israeli-politics/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" title="Read: What We Still Don&#8217;t Know About Sunscreens">What We Still Don&#8217;t Know About Sunscreens</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Why has the F.D.A. stalled in requiring better labels and safer ingredients in sunscreens?<a href="//roomfordebate.blogs.nytimes.com/2010/07/05/what-we-still-dont-know-about-sunscreens/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" title="Read: The Pitfalls in Identifying a Gifted Child">The Pitfalls in Identifying a Gifted Child</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Are New York City&#8217;s plans to revamp testing of preschoolers for gifted programs a step backward? <a href="//roomfordebate.blogs.nytimes.com/2010/07/04/the-pitfalls-in-identifying-a-gifted-child/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">Room for Debate on</span></span>
+</h4>
+<ul>
+</ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-74',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="//www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":64,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

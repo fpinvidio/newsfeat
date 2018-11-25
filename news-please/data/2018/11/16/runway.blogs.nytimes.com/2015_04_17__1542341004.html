@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-runway section-fashion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-runway section-fashion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-runway section-fashion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-runway section-fashion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/runway/Is Alexander Wang Really the Most Influential Designer in the World? ( 20150417 )" />
+<meta name="communityAssetURL" content="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" />
+<meta name="WT.z_fw" content="1" /><meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003634445"><meta name="author" content="Vanessa Friedman" />
+<meta name="CLMST" content="Vanessa Friedman" />
+<meta name="byl" content="Vanessa Friedman" />
+<meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1429275686" />
+<meta name="PUD" content="20150417" />
+<meta name="pdate" content="20150417" />
+<meta name="ptime" content="20150417090126" />
+<meta name="utime" content="20150417140326" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-04-17T14:03:26-04:00" />
+<meta name="DISPLAYDATE" content="April 17, 2015" />
+<meta name="dat" content="April 17, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Style" />
+<meta name="CG" content="Style" />
+<meta name="SCG" content="Fashion" />
+<meta name="BN" content="runway" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Wang, Alexander (1983- )">
+<meta name="des" content="Fashion and Apparel">
+<meta name="org" content="Time (Magazine)">
+<meta property="article:tag" content="Wang Alexander (1983- )" />
+<meta property="article:tag" content="Fashion and Apparel" />
+<meta property="article:tag" content="Time (Magazine)" />
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Wang Alexander (1983- ),Fashion and Apparel,Time (Magazine),Uncategorized" />
+<meta name="news_keywords" content="Alexander Wang,Fashion,Time Inc" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Frunway.blogs.nytimes.com%2F2015%2F04%2F17%2Fis-alexander-wang-really-the-most-influential-designer-in-the-world%2F" title="Is Alexander Wang Really the Most Influential Designer in the World?" />
+<meta name="description" content="He is the only creative director on Time magazine&#8217;s &#8220;100 Most Influential People&#8221; list." />
+<meta name="hdl" content="Is Alexander Wang Really the Most Influential Designer in the World?" />
+<meta property="og:title" content="Is Alexander Wang Really the Most Influential Designer in the World?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" />
+<meta property="og:site_name" content="On the Runway Blog" />
+<meta property="og:description" content="He is the only creative director on Time magazine&#8217;s &#8220;100 Most Influential People&#8221; list." />
+<meta property="og:image" content="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Is Alexander Wang Really the Most Influential Designer in the World?" />
+<meta name="twitter:url" content="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" />
+<meta name="twitter:description" content="He is the only creative director on Time magazine&#8217;s &#8220;100 Most Influential People&#8221; list." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@NYTfashion">
+<link rel='prev' title='Will Carine Roitfeld &amp; Uniqlo Be More or Less Than the Sum of Its Parts?' href='//runway.blogs.nytimes.com/2015/04/16/will-carine-roitfeld-uniqlo-be-more-or-less-than-the-sum-of-its-parts/' />
+<link rel='next' title='How a Color Becomes a Trend: Introducing Minion Yellow' href='//runway.blogs.nytimes.com/2015/04/21/how-a-color-becomes-a-trend-introducing-minion-yellow/' />
+<link rel='canonical' href='//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/' />
+<link rel='shortlink' href='//nyti.ms/1b9RPeD' />
+<link rel='https://github.com/WP-API/WP-API' href='//runway.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/runway/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//runway.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/fashion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/runway/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" />
+<meta name="dfp-ad-unit-path" content="style/runway" />			<title>Is Alexander Wang Really the Most Influential Designer in the World? - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-33349 blog-universal nyt-blog-runway" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Style', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//runway.blogs.nytimes.com">
+                On the Runway            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Is Alexander Wang Really the Most Influential Designer in the World?        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/"
+	 data-title="Is Alexander Wang Really the Most Influential Designer in the World?"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;He is the only creative director on Time magazine&#039;s &quot;100 Most Influential People&quot; list.&lt;/span&gt;&lt;a href=&quot;//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="April 17, 2015 9:01 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="runway" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//runway.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Style"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/runway/runway75.gif" alt="On the Runway"/></div><div class="site-title">On the Runway</div><div class="site-description">All Things Fashion</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//runway.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search On the Runway">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-33349 post type-post status-publish hentry per-wang-alexander-1983 des-fashion-and-apparel org-time-magazine news_keywords-alexander-wang news_keywords-fashion-2 news_keywords-time-inc" id="post-33349">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Is Alexander Wang Really the Most Influential Designer in the World?</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Vanessa Friedman			</address>
+			<!-- date published --><time class="dateline " datetime="2015-04-17T13:01:26+00:00" itemprop="datePublished">April 17, 2015 9:01 am</time>
+			<!-- date updated --><span class="visually-hidden updated">April 17, 2015 9:01 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" data-title="Is Alexander Wang Really the Most Influential Designer in the World?" data-description="He is the only creative director on Time magazine&#039;s &quot;100 Most Influential People&quot; list.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><div class="w480"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-blog480.jpg" src="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-blog480.jpg" id="100000003634382" width="480" height="310" alt="Alexander Wang at his fall 2015 show for Balenciaga during Paris Fashion Week."   /><meta itemprop="height" content="310"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Alexander Wang at his fall 2015 show for Balenciaga during Paris Fashion Week.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Ian Langsdon/European Pressphoto Agency</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">The Time magazine &#8220;<a href="//time.com/collection/2015-time-100">100 Most Influential People</a>&#8221; list is out, and there are four fashion names on it (or two, and two kind-of-fashion names): Alexander Wang, under artists; Diane von Furstenberg, under icons; and Kim Kardashian and Kanye West, under titans.</p>
+<p class="story-body-text" itemprop="articleBody">I can’t really quibble with the last three — Ms. Kardashian&#8217;s social media presence is titanic, as is Mr. West&#8217;s personal brand (and his perception of it), and Ms. von Furstenberg not only has her own reality TV show but also has her own humanitarian awards, to be given out at the United Nations next week. But I am struck by the fact that Mr. Wang is the only creative director listed.</p>
+<p class="story-body-text" itemprop="articleBody">The implication: He is the single most influential designer in the world. Is this true?</p>
+<p class="story-body-text" itemprop="articleBody">I know these kinds of lists are ridiculously subjective, but at the same time, in a world where “Top Ten X&#8217;s” have become ubiquitous thanks to social media, the Time 100 still ranks as one of the grandfathers of the form. So it’s worth examining its choices.</p>
+<p class="story-body-text" itemprop="articleBody">It’s hard to know how the people at Time chose their list, as <a href="//time.com/3822828/time-100-editors-letter/">the methodology explanation</a> doesn’t actually explain much at all, but the model Karlie Kloss <a href="//time.com/3823143/alexander-wang-2015-time-100/">wrote</a> Mr. Wang’s entry, which is as close to a justification for their thinking as we are going to get. To paraphrase: “He’s cool.”</p>
+<p class="story-body-text" itemprop="articleBody">Is that enough?</p>
+<p class="story-body-text" itemprop="articleBody">I don’t doubt that Mr. Wang is talented, and the success of his name-brand company unquestionably helped draw attention to the rise of contemporary. He is, as I <a href="//www.nytimes.com/2014/09/04/fashion/alexander-wang-serving-two-masters.html">wrote</a> last year, at the forefront of a new wave of young designers who bridge two brands. Those are trends, and arguably he helped create them, though they have nothing to do with cool.</p>
+<p class="story-body-text" itemprop="articleBody">But while he embodies two movements in the business, I don’t think he created them: It was François-Henri Pinault who brought him to Balenciaga, and while he was part of the contemporary wave, he didn’t kick-start it by himself. Sure, he did that H&amp;M thing, which was a big success, but other designers have had very successful collaborations with H&amp;M.</p>
+<p class="story-body-text" itemprop="articleBody">And yes, he’s in a Kanye West song (&#8220;<a href="//genius.com/1781214">New Slaves</a>&#8220;). But &#8220;Versace&#8221; is the actual title, not to mention many of the lyrics, of a different song (Migos’s “<a href="//genius.com/Migos-versace-lyrics">Versace</a>”), so that may not be the best rationale.</p>
+<p class="story-body-text" itemprop="articleBody">It seems to me that to be really influential (in fashion and beyond, but let’s stick to fashion here), you need to have changed something: a silhouette, a way of doing business.</p>
+<p class="story-body-text" itemprop="articleBody">By that measuring stick, I would think Hedi Slimane, who effectively circumvented the fashion news media and led to an entire class of aggregating designers, might qualify as more influential (not only are his rock-thrift clothes being widely imitated at lower price points, so is his marketing strategy); ditto Nicolas Ghesquière and Phoebe Philo of Céline, two more designers who most “inspire” main-street brands.</p>
+<p class="story-body-text" itemprop="articleBody">And that doesn’t even begin to get into such figures as Rei Kawakubo, Azzedine Alaïa and Karl Lagerfeld, who have come to embody specific approaches to both the business of fashion as well as to women’s bodies.</p>
+<p class="story-body-text" itemprop="articleBody">Or, for that matter, people like Stefan Persson, H&amp;M’s owner, who has changed the way we shop and think about clothes in a pretty essential way.</p>
+<p class="story-body-text" itemprop="articleBody">What Mr. Wang represents, however, which these names do not, is a certain kind of cheerfulness and lack of neuroses: He bounds down the runway! He is having fun! He makes fashion look like a neat job.</p>
+<p class="story-body-text" itemprop="articleBody">And maybe this is where his influence really lies, in that he may persuade kids to go into the sector. Maybe he’s an accessible role model, changing the image of what a fashion designer is. Maybe that qualifies.</p>
+<p class="story-body-text" itemprop="articleBody">What do you think?</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" data-title="Is Alexander Wang Really the Most Influential Designer in the World?" data-description="He is the only creative director on Time magazine&#039;s &quot;100 Most Influential People&quot; list.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//runway.blogs.nytimes.com/2015/04/16/will-carine-roitfeld-uniqlo-be-more-or-less-than-the-sum-of-its-parts/" title="Will Carine Roitfeld &amp; Uniqlo Be More or Less Than the Sum of Its Parts?">
+				Will Carine Roitfeld &#038; Uniqlo Be More or Less Than the Sum of Its Parts?			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//runway.blogs.nytimes.com/2015/04/21/how-a-color-becomes-a-trend-introducing-minion-yellow/" title="How a Color Becomes a Trend: Introducing Minion Yellow">
+				How a Color Becomes a Trend: Introducing Minion Yellow			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary">Vanessa Friedman writes about fashion-related news, from the latest runway shows and trends to an inside look into the design process. Contributors include <a href="https://twitter.com/AlexandraJacobs">Alexandra Jacobs</a>, <a href="https://twitter.com/MatthewSchneier">Matthew Schneier</a>, <a href="https://twitter.com/koblin">John Koblin</a> and <a href="//topics.nytimes.com/topics/reference/timestopics/people/l/ruth_la_ferla/index.html">Ruth La Ferla</a>.</p>
+</div>
+</div><div id="nyt_videoplayer-3" class="module nocontent widget_nyt_videoplayer">		<div id="VideoPlayerCCol"></div>
+		<script type="text/javascript">
+		require(['https://static01.nyt.com/bcvideo/1.0/iframe/embed.js'], function () {
+			NYT_VideoPlayerStart({"playerType":"homepage","playlistId":"1194811622325","adxPagename":"runway.blogs.nytimes.com\/video","parentDomId":1,"targetDomId":"VideoPlayerCCol"});
+		});
+		</script>
+		</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//runway.blogs.nytimes.com/2015/05/'> May 2015 </option>
+	<option value='//runway.blogs.nytimes.com/2015/04/'> April 2015 </option>
+	<option value='//runway.blogs.nytimes.com/2015/03/'> March 2015 </option>
+	<option value='//runway.blogs.nytimes.com/2015/02/'> February 2015 </option>
+	<option value='//runway.blogs.nytimes.com/2015/01/'> January 2015 </option>
+	<option value='//runway.blogs.nytimes.com/2014/12/'> December 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/11/'> November 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/10/'> October 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/09/'> September 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/08/'> August 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/07/'> July 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/06/'> June 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/05/'> May 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/04/'> April 2014 </option>
+	<option value='//runway.blogs.nytimes.com/2014/03/'> March 2014 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//runway.blogs.nytimes.com/2015/05/20/on-the-runway-moving/" title="Read: On the Runway Moving">On the Runway Moving</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//runway.blogs.nytimes.com/2015/05/20/on-the-runway-moving/"></a>
+				</span>			</h5>
+			<p class="summary">
+			On the Runway&#8217;s daily features can now be found at the blog&#8217;s topics page, as well as at the Styles home page.<a href="//runway.blogs.nytimes.com/2015/05/20/on-the-runway-moving/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//runway.blogs.nytimes.com/2015/04/24/renzo-piano-and-max-mara-create-a-handbag/"><img src="https://static01.nyt.com/images/2015/04/25/fashion/25runway/25runway-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//runway.blogs.nytimes.com/2015/04/24/renzo-piano-and-max-mara-create-a-handbag/" title="Read: After Frank Gehry and Louis Vuitton Comes Renzo Piano and MaxMara">After Frank Gehry and Louis Vuitton Comes Renzo Piano and MaxMara</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//runway.blogs.nytimes.com/2015/04/24/renzo-piano-and-max-mara-create-a-handbag/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The designer of the new Whitney Museum and the fashion house have created a handbag.<a href="//runway.blogs.nytimes.com/2015/04/24/renzo-piano-and-max-mara-create-a-handbag/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//runway.blogs.nytimes.com/2015/04/23/why-athletic-brands-may-be-the-greenest-fashion-sector/"><img src="https://static01.nyt.com/images/2015/04/23/fashion/runway24/runway24-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//runway.blogs.nytimes.com/2015/04/23/why-athletic-brands-may-be-the-greenest-fashion-sector/" title="Read: Why Athletic Brands May Be the Greenest Fashion Sector">Why Athletic Brands May Be the Greenest Fashion Sector</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//runway.blogs.nytimes.com/2015/04/23/why-athletic-brands-may-be-the-greenest-fashion-sector/"></a>
+				</span>			</h5>
+			<p class="summary">
+			They reviewed their supply chains before other fashion sectors, use techno fabrics and know that their target customer cares about the environment. All that adds up to high rankings on sustainability indexes.<a href="//runway.blogs.nytimes.com/2015/04/23/why-athletic-brands-may-be-the-greenest-fashion-sector/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//runway.blogs.nytimes.com/2015/04/21/how-a-color-becomes-a-trend-introducing-minion-yellow/"><img src="https://static01.nyt.com/images/2015/04/22/fashion/22runway/22runway-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//runway.blogs.nytimes.com/2015/04/21/how-a-color-becomes-a-trend-introducing-minion-yellow/" title="Read: How a Color Becomes a Trend: Introducing Minion Yellow">How a Color Becomes a Trend: Introducing Minion Yellow</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//runway.blogs.nytimes.com/2015/04/21/how-a-color-becomes-a-trend-introducing-minion-yellow/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Pantone company creates a new shade linked to the summer&#8217;s &#8220;Despicable Me&#8221; spinoff, and all ready for the new royal baby. <a href="//runway.blogs.nytimes.com/2015/04/21/how-a-color-becomes-a-trend-introducing-minion-yellow/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/"><img src="https://static01.nyt.com/images/2015/04/18/fashion/18runway/18runway-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" title="Read: Is Alexander Wang Really the Most Influential Designer in the World?">Is Alexander Wang Really the Most Influential Designer in the World?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/"></a>
+				</span>			</h5>
+			<p class="summary">
+			He is the only creative director on Time magazine&#8217;s &#8220;100 Most Influential People&#8221; list.<a href="//runway.blogs.nytimes.com/2015/04/17/is-alexander-wang-really-the-most-influential-designer-in-the-world/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/NYTfashion" title="Follow @NYTfashion on twitter">@NYTfashion</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTfashion" title="Follow NYTfashion on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/NYTfashion" title="Follow @NYTfashion on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div><div id="nyt_promo_widget-2" class="module nocontent widget_nyt_promo_widget"><style>
+.a-column .related-coverage .entry .kicker {
+margin-bottom: 5px;
+}
+.a-column .related-coverage ul li {
+font-size: 0.875rem;
+line-height: 1.125rem;
+font-weight: 500;
+font-family: "nyt-cheltenham-sh", georgia, "times new roman", times, serif;
+margin-bottom: 5px;
+padding-left: 0;
+}
+.a-column .related-coverage ul li a {
+text-decoration: none;
+}
+.a-column .related-coverage ul li a:hover {
+text-decoration: underline;
+}
+</style></div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-25',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":68,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

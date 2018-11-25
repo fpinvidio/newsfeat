@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="channels" content="NytNow" />
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dealbook/Breaking Up Is the New Thing to Do in Silicon Valley ( 20141006 )" />
+<meta name="communityAssetURL" content="https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003161574"><meta name="author" content="David Gelles" />
+<meta name="CLMST" content="David Gelles" />
+<meta name="byl" content="David Gelles" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/g/david_gelles/index.html" /><meta name="GBLC" content="I.P.O./Offerings;Technology;Top Headline 1;Top Headline 2">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1412643054" />
+<meta name="PUD" content="20141006" />
+<meta name="pdate" content="20141006" />
+<meta name="ptime" content="20141006205054" />
+<meta name="utime" content="20141007173625" />
+<meta property="article:modified_time" itemprop="dateModified" content="2014-10-07T17:36:25-04:00" />
+<meta name="DISPLAYDATE" content="October 6, 2014" />
+<meta name="dat" content="October 6, 2014" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Whitman, Margaret C">
+<meta name="des" content="Mergers, Acquisitions and Divestitures">
+<meta name="org" content="Hewlett-Packard Company">
+<meta name="ticker" content="Hewlett-Packard Company|HPQ|NYSE" />
+<meta property="article:tag" content="Whitman Margaret C" />
+<meta property="article:tag" content="Mergers Acquisitions and Divestitures" />
+<meta property="article:tag" content="Hewlett-Packard Company" />
+<meta property="article:tag" content="I.P.O./Offerings" />
+<meta property="article:tag" content="Technology" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta property="article:tag" content="Top Headline 2" />
+<meta name="keywords" content="Whitman Margaret C,Mergers Acquisitions and Divestitures,Hewlett-Packard Company,I.P.O./Offerings,Technology,Top Headline 1,Top Headline 2" />
+<meta name="news_keywords" content="Meg Whitman,Mergers and Acquistions" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2014%2F10%2F06%2Fbreaking-up-is-the-new-thing-to-do%2F" title="Breaking Up Is the New Thing to Do in Silicon Valley" />
+<meta name="description" content="Activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow." />
+<meta name="hdl_p" content="Suddenly, Breaking Up Is the Thing to Do" />
+<meta name="hdl" content="Breaking Up Is the New Thing to Do in Silicon Valley" />
+<meta property="og:title" content="Breaking Up Is the New Thing to Do in Silicon Valley" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="Activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow." />
+<meta property="og:image" content="https://static01.nyt.com/images/2014/10/07/business/Split2/Split2-videoSixteenByNine600-v5.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2014/10/07/business/Split2/Split-thumbLarge-v3.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Breaking Up Is the New Thing to Do in Silicon Valley" />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/" />
+<meta name="twitter:description" content="Activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2014/10/07/business/Split2/Split-thumbLarge-v3.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2014/10/07/business/Split2/Split-thumbLarge-v3.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Libya&#8217;s Sovereign Fund and Goldman Sachs Clash in Court' href='https://dealbook.nytimes.com/2014/10/06/libyas-sovereign-fund-and-goldman-sachs-clash-in-court/' />
+<link rel='next' title='A.I.G. Bailout, Revisionists&#8217;  Version' href='https://dealbook.nytimes.com/2014/10/06/a-i-g-bailout-revisionists-version/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/' />
+<link rel='shortlink' href='//nyti.ms/1refXwe' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2014/10/06/breaking-up-is-the-new-thing-to-do/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>Breaking Up Is the New Thing to Do in Silicon Valley - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-631767 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="sea1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Breaking Up Is the New Thing to Do in Silicon Valley        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/"
+	 data-title="Breaking Up Is the New Thing to Do in Silicon Valley"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow. &lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="October 6, 2014 8:50 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-631767 post type-post status-publish hentry category-ipoofferings category-technology tag-hewlett-packard-company tag-mergers-acquisitions-and-divestitures tag-whitman-margaret-c per-whitman-margaret-c des-mergers-acquisitions-and-divestitures org-hewlett-packard-company news_keywords-meg-whitman news_keywords-mergers-and-acquistions" id="post-631767">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Breaking Up Is the New Thing to Do in Silicon Valley</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By David Gelles			</address>
+			<!-- date published --><time class="dateline " datetime="2014-10-07T00:50:54+00:00" itemprop="datePublished">October 6, 2014 8:50 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">October 6, 2014 8:50 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content">
+	<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/" data-title="Breaking Up Is the New Thing to Do in Silicon Valley" data-description="Activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow. ">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/10/07/business/Split/Split-articleInline-v4.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/10/07/business/Split/Split-articleInline-v4.jpg" src="https://static01.nyt.com/images/2014/10/07/business/Split/Split-articleInline-v4.jpg" id="100000003161225" width="190" height="253" alt="A Hewlett-Packard server being assembled in Houston. The company will separate its personal and enterprise businesses."   /><meta itemprop="height" content="253"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">A Hewlett-Packard server being assembled in Houston. The company will separate its personal and enterprise businesses.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Donna Carson/Reuters</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">In the aftermath of the financial crisis, investors bet on companies that seemed too big to fail. Even if a business wasn’t growing at breakneck speed, there was safety in large numbers; the more sales the better, it seemed.</p>
+<p class="story-body-text" itemprop="articleBody">So in 2011, when <a href="//dealbook.on.nytimes.com/public/overview?symbol=HPQ&#038;inline=nyt-org" class="tickerized" title="More information about Hewlett-Packard Company">Hewlett-Packard</a> hastily announced a plan to break in two, investors balked. Separating HP’s personal computers unit from its enterprise products and services seemed a risky bet that could leave both halves vulnerable. That plan was shelved, and the chief executive who proposed the split was summarily dismissed.</p>
+<p class="story-body-text" itemprop="articleBody">But today, stock market investors are betting on companies with tightly focused visions. Too many divisions are seen as a distraction for management. And activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow.</p>
+<p class="story-body-text" itemprop="articleBody">So when HP announced on Monday that it would split in two, essentially reviving the 2011 plan, shareholders rejoiced. HP’s stock jumped nearly 5 percent, and virtually no one questioned the decision.</p>
+<p class="story-body-text" itemprop="articleBody">In announcing a plan to break itself apart, HP is following a trail blazed by other technology companies, including <a href="//dealbook.on.nytimes.com/public/overview?symbol=EBAY&#038;inline=nyt-org" class="tickerized" title="More information about eBay Inc">eBay</a> and <a href="//dealbook.on.nytimes.com/public/overview?symbol=IBM&#038;inline=nyt-org" class="tickerized" title="More information about International Business Machines Corporation">IBM</a>. And in bowing to investors’ appetite for simplicity, HP is signaling that the wave of spinoffs and divestitures shaking up Silicon Valley may just be getting started.</p>
+<p class="story-body-text" itemprop="articleBody">“During the financial crisis shareholders rewarded size, sales and diversity,” said Chris Ventresca, co-head of global mergers and acquisitions at <a href="//dealbook.on.nytimes.com/public/overview?symbol=JPM&#038;inline=nyt-org" class="tickerized" title="More information about JPMorgan Chase &#038; Company">JPMorgan Chase</a>. “Now they don’t feel like they need the safety net of larger scale. Companies are healthier and stronger. That gives boards the confidence to take a harder look at their portfolio.”</p>
+<div class="w480"><figure class="promo media video blog-video "
+    data-videoid="100000003161463" data-media-action="modal" data-autoplay="" data-embedded="true" aria-label="media" role="group">
+        <span class="visually-hidden">Video</span>
+
+    <figcaption class="caption">
+        <h4 class="headline">HP Bets That Smaller Is Better</h4>
+		        <div class="caption-video">
+                <div class="summary-credit">
+            <p class="summary">With Hewlett-Packard splitting into two companies, a look at recent examples where the strategy worked out well and where it did not.</p>
+            <span class="credit video-credit" itemprop="copyrightHolder">
+                By Carrie Halperin on                                                    <span class="visually-hidden">Publish Date </span>October 6, 2014.
+                            </span>
+            <span class="credit photo-credit" itemprop="copyrightHolder">
+                                    Photo by Franziska Kraufmann/European Pressphoto Agency.
+                                </span>
+        </div>
+
+                    <div class="sharetools-video-container">
+                <div id="sharetools-video-tools-100000003161463"
+                    class="sharetools sharetools-video-tools">
+                    <ul>
+                        <li class="sharetool embed-sharetool">
+                            <a href="javascript:;" data-share="embed" data-modal-title="">
+                                <i class="icon sprite-icon"></i>
+                                <span class="sharetool-text ">embed</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sharetools-video-inline-100000003161463"
+                    class="sharetools sharetools-video-inline"
+                    data-shares="facebook|,twitter|"
+                    data-url="https://www.nytimes.com/video/multimedia/100000003161463/hp-bets-that-smaller-is-better.html?action=click&amp;contentCollection=multimedia&amp;module=blog-video&amp;region=caption&amp;pgtype=article"
+                    data-title="HP Bets That Smaller Is Better"
+                    data-description="With Hewlett-Packard splitting into two companies, a look at recent examples where the strategy worked out well and where it did not."
+                    data-content-type="video">
+                </div>
+            </div>
+        </div>
+            </figcaption>
+</figure>
+</div>
+<p class="story-body-text" itemprop="articleBody">Just last week, eBay announced that it would spin off its PayPal unit into a separate publicly traded company, giving in to the wishes of the activist investor <a href="//topics.nytimes.com/top/reference/timestopics/people/i/carl_c_icahn/index.html?inline=nyt-per" class="tickerized" title="More articles about Carl C. Icahn.">Carl C. Icahn</a>. That move follows eBay’s sale of its <a href="//topics.nytimes.com/top/news/business/companies/skype_technologies_sa/index.html?inline=nyt-org" class="tickerized" title="More articles about Skype Technologies SA.">Skype</a> Internet phone service a few years ago.</p>
+<p class="story-body-text" itemprop="articleBody">IBM, for its part, routinely sheds big units that no longer fit with its strategy. It recently sold its low-end server business to Lenovo, the Chinese company that acquired IBM’s personal computer business nearly a decade ago. <a href="//dealbook.on.nytimes.com/public/overview?symbol=EMC&#038;inline=nyt-org" class="tickerized" title="More information about EMC Corporation">EMC</a>, a big data storage company, is under pressure from activist hedge funds to divest itself of its stake in <a href="//dealbook.on.nytimes.com/public/overview?symbol=VMW&#038;inline=nyt-org" class="tickerized" title="More information about VMware Inc">VMware</a>, a valuable virtualization company. Some analysts even want <a href="//dealbook.on.nytimes.com/public/overview?symbol=MSFT&#038;inline=nyt-org" class="tickerized" title="More information about Microsoft Corporation">Microsoft</a> to break into different companies focusing on software, video games and search.</p>
+<p class="story-body-text" itemprop="articleBody">The shift in investor sentiment is already leading to upheavals well beyond the technology industry. A flurry of spinoffs and divestitures has reshaped the media industry in recent years, thanks in part to a seller’s market. Other companies and <a href="//dealbook.nytimes.com/category/main-topics/private-equity/?inline=nyt-classifier" class="tickerized" title="More articles about private equity.">private equity</a> firms are eager to acquire good businesses, and investors are willing to buy stock in new companies.</p>
+<p class="story-body-text" itemprop="articleBody">“Companies have lots of choices right now,” Mr. Ventresca said. “They can sell because buyers are hungry. And they have the opportunity to do something like an initial public offering because the markets are healthy.”</p>
+<p class="story-body-text" itemprop="articleBody"><a href="//dealbook.on.nytimes.com/public/overview?symbol=TWX&#038;inline=nyt-org" class="tickerized" title="More information about Time Warner Inc">Time Warner</a> has whittled itself down to the core, creating a streamlined television and movie studio group. In recent years, it has spun off <a href="//dealbook.on.nytimes.com/public/overview?symbol=AOL&#038;inline=nyt-org" class="tickerized" title="More information about AOL Inc">AOL</a>, <a href="//dealbook.on.nytimes.com/public/overview?symbol=TWC&#038;inline=nyt-org" class="tickerized" title="More information about Time Warner Cable Inc">Time Warner Cable</a> and <a href="//dealbook.on.nytimes.com/public/overview?symbol=TIME&#038;inline=nyt-org" class="tickerized" title="More information about Time Inc.">Time Inc.</a>, its magazine businesses.</p>
+<p class="story-body-text" itemprop="articleBody"><a href="//topics.nytimes.com/top/reference/timestopics/people/m/rupert_murdoch/index.html?inline=nyt-per" class="tickerized" title="More articles about Rupert Murdoch.">Rupert Murdoch</a> split <a href="//dealbook.on.nytimes.com/public/overview?symbol=NWSA&#038;inline=nyt-org" class="tickerized" title="More information about News Corporation">News Corporation</a> in two, spinning off its movie and television assets into a new company called 21st Century Fox. <a href="//dealbook.on.nytimes.com/public/overview?symbol=GCI&#038;inline=nyt-org" class="tickerized" title="More information about Gannett Company Inc">Gannett</a>, the publisher of USA Today, announced in August that it was shedding its newspaper assets to focus on its television operations.</p>
+<p class="story-body-text" itemprop="articleBody">Three of the biggest industrial companies are also slimming down. DuPont, under pressure from the activist investor <a href="//topics.nytimes.com/top/reference/timestopics/people/p/nelson_peltz/index.html?inline=nyt-per" class="tickerized" title="More articles about Nelson Peltz.">Nelson Peltz</a>, said last year that it would split in two. And while <a href="//dealbook.on.nytimes.com/public/overview?symbol=DOW&#038;inline=nyt-org" class="tickerized" title="More information about Dow Chemical Company">Dow Chemical</a> has resisted calls from another activist investor, Daniel S. Loeb, to split itself in half, it continues to divest itself of smaller business lines. <a href="//dealbook.on.nytimes.com/public/overview?symbol=GE&#038;inline=nyt-org" class="tickerized" title="More information about General Electric Company">General Electric</a> spun off its retail finance arm in July and sold its appliance business in September.</p>
+<p class="story-body-text" itemprop="articleBody">Consumer goods and pharmaceuticals companies have joined the fray. <a href="//dealbook.on.nytimes.com/public/overview?symbol=PG&#038;inline=nyt-org" class="tickerized" title="More information about Procter &#038; Gamble Company">Procter &#038; Gamble</a> is selling more than half its brands. The drug maker <a href="//dealbook.on.nytimes.com/public/overview?symbol=ABT&#038;inline=nyt-org" class="tickerized" title="More information about Abbott Laboratories">Abbott Laboratories</a> spun off <a href="//dealbook.on.nytimes.com/public/overview?symbol=ABBV&#038;inline=nyt-org" class="tickerized" title="More information about AbbVie Inc.">AbbVie</a> in 2013, creating two enormous health care companies.</p>
+<p class="story-body-text" itemprop="articleBody">And still, the cleaving in half of HP is among the most attention-getting splits to date.</p>
+<figure id="The-Hewlett-Packard-Split" class="interactive interactive-first-child interactive-centered interactive-300">
+    <figcaption class="interactive-caption">
+            <h2 class="interactive-headline">
+            The Hewlett-Packard Split        </h2>
+                <p class="interactive-leadin">
+            Hewlett-Packard’s decision to split in two would produce two publicly traded companies of approximately the same size.        </p>
+        </figcaption>
+    <div class="interactive-graphic"><div id='ai2html-1007-biz-webWHITMAN-B1'>
+	<!-- Generated by ai2html v0.49 - 1006-1949 -->
+	<!-- ai file: 1007-biz-webWHITMAN-B1 -->
+	<!-- preview: 2014-10-06-hewlett-packard-split -->
+	<!-- scoop  : The-Hewlett-Packard-Split -->
+
+	<link rel="stylesheet" href="https://static01.nyt.com/newsgraphics/2014/10/06/hewlett-packard-split/ca4e47d0113309d5948a6b1d9d307848ed5be263/resizerStyle.css">
+
+	<!-- Artboard: Artboard_1 -->
+	<div id='g-1007-biz-webWHITMAN-B1-Artboard_1' class='g-show-small g-show-smallplus g-show-submedium g-show-medium g-show-large g-show-xlarge'>
+		<style type='text/css' media='screen,print'>
+			#g-1007-biz-webWHITMAN-B1-Artboard_1{
+				position:relative;
+				overflow:hidden;
+				width:300px;
+			}
+			.g-aiAbs{
+				position:absolute;
+			}
+			.g-aiImg{
+				display:block;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 p{
+				font-family:nyt-franklin,arial,helvetica,sans-serif;
+				font-size:13px;
+				line-height:18px;
+				margin:0;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle0 {
+				font-weight:700;
+				color:#333333;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle1 {
+				font-size:11px;
+				line-height:14px;
+				font-weight:700;
+				color:#333333;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle2 {
+				font-size:12px;
+				line-height:14px;
+				font-weight:500;
+				font-style:italic;
+				color:#333333;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle3 {
+				font-size:12px;
+				line-height:14px;
+				font-weight:500;
+				color:#333333;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle4 {
+				font-size:12px;
+				line-height:14px;
+				font-weight:500;
+				text-align:right;
+				color:#333333;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle5 {
+				font-size:10px;
+				line-height:11px;
+				font-weight:700;
+				text-align:right;
+				color:#333333;
+			}
+			#g-1007-biz-webWHITMAN-B1-Artboard_1 .g-aiPstyle6 {
+				font-size:12px;
+				line-height:14px;
+				font-weight:700;
+				text-align:right;
+				color:#333333;
+			}
+		</style>
+		<div id='g-1007-biz-webWHITMAN-B1-Artboard_1-graphic'>
+			<img id='g-ai0-0'
+				class='g-aiImg'
+				width=100%
+				src='https://static01.nyt.com/images/multimedia/10x10.gif'
+				data-src='https://static01.nyt.com/newsgraphics/2014/10/06/hewlett-packard-split/ca4e47d0113309d5948a6b1d9d307848ed5be263/1007-biz-webWHITMAN-B1-Artboard_1.png'
+				data-height-multiplier='0.9531'
+				/>
+			<div id='g-ai0-1' class='g-Layer_1 g-aiAbs' style='top:2.7980%;left:0.2332%;'>
+				<p class='g-aiPstyle0'>Approximate annual revenue, in billions*</p>
+			</div>
+			<div id='g-ai0-2' class='g-Layer_1 g-aiAbs' style='top:13.9898%;left:0.2375%;'>
+				<p class='g-aiPstyle1'>HEWLETT-PACKARD ENTERPRISE</p>
+			</div>
+			<div id='g-ai0-3' class='g-Layer_1 g-aiAbs' style='top:19.9355%;left:0.1613%;width:98.6139%;'>
+				<p class='g-aiPstyle2'>Specializing in business technology, including computer servers, data storage equipment, software and services.</p>
+			</div>
+			<div id='g-ai0-4' class='g-Layer_1 g-aiAbs' style='top:31.8269%;left:0.3682%;'>
+				<p class='g-aiPstyle3'>Enterprise</p>
+				<p class='g-aiPstyle3'>group</p>
+			</div>
+			<div id='g-ai0-5' class='g-Layer_1 g-aiAbs' style='top:31.8269%;left:39.4971%;'>
+				<p class='g-aiPstyle3'>Enterprise</p>
+				<p class='g-aiPstyle3'>services</p>
+			</div>
+			<div id='g-ai0-6' class='g-Layer_1 g-aiAbs' style='top:36.7233%;right:18.1247%;'>
+				<p class='g-aiPstyle4'>Software</p>
+			</div>
+			<div id='g-ai0-7' class='g-Layer_1 g-aiAbs' style='top:41.6197%;right:0.9967%;'>
+				<p class='g-aiPstyle5'>TOTAL</p>
+			</div>
+			<div id='g-ai0-8' class='g-Layer_1 g-aiAbs' style='top:45.4669%;right:0.9971%;'>
+				<p class='g-aiPstyle6'>$58.4</p>
+			</div>
+			<div id='g-ai0-9' class='g-Layer_1 g-aiAbs' style='top:45.4669%;left:1.0661%;'>
+				<p class='g-aiPstyle3'>$28.0</p>
+			</div>
+			<div id='g-ai0-10' class='g-Layer_1 g-aiAbs' style='top:45.4669%;left:40.1950%;'>
+				<p class='g-aiPstyle3'>22.8</p>
+			</div>
+			<div id='g-ai0-11' class='g-Layer_1 g-aiAbs' style='top:45.4669%;left:71.4238%;'>
+				<p class='g-aiPstyle3'>4.1</p>
+			</div>
+			<div id='g-ai0-12' class='g-Layer_1 g-aiAbs' style='top:45.4669%;left:78.7188%;'>
+				<p class='g-aiPstyle3'>3.5</p>
+			</div>
+			<div id='g-ai0-13' class='g-Layer_1 g-aiAbs' style='top:53.1613%;right:18.1250%;'>
+				<p class='g-aiPstyle4'>Financial services</p>
+			</div>
+			<div id='g-ai0-14' class='g-Layer_1 g-aiAbs' style='top:66.1019%;left:0.2375%;'>
+				<p class='g-aiPstyle1'>HP INC.</p>
+			</div>
+			<div id='g-ai0-15' class='g-Layer_1 g-aiAbs' style='top:72.0476%;left:0.2054%;width:96.1758%;'>
+				<p class='g-aiPstyle2'>Specializing in personal computers and printers.</p>
+			</div>
+			<div id='g-ai0-16' class='g-Layer_1 g-aiAbs' style='top:79.0425%;left:0.3682%;'>
+				<p class='g-aiPstyle3'>Personal systems</p>
+			</div>
+			<div id='g-ai0-17' class='g-Layer_1 g-aiAbs' style='top:79.0425%;left:47.4629%;'>
+				<p class='g-aiPstyle3'>Printing</p>
+			</div>
+			<div id='g-ai0-18' class='g-Layer_1 g-aiAbs' style='top:83.9390%;right:0.9967%;'>
+				<p class='g-aiPstyle5'>TOTAL</p>
+			</div>
+			<div id='g-ai0-19' class='g-Layer_1 g-aiAbs' style='top:87.7862%;right:0.9971%;'>
+				<p class='g-aiPstyle6'>$57.2</p>
+			</div>
+			<div id='g-ai0-20' class='g-Layer_1 g-aiAbs' style='top:87.7862%;left:1.0661%;'>
+				<p class='g-aiPstyle3'>$33.7</p>
+			</div>
+			<div id='g-ai0-21' class='g-Layer_1 g-aiAbs' style='top:87.7862%;left:48.1611%;'>
+				<p class='g-aiPstyle3'>23.5</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://static01.nyt.com/newsgraphics/2014/10/06/hewlett-packard-split/ca4e47d0113309d5948a6b1d9d307848ed5be263/resizerScript.js"></script>
+	<!-- End ai2html - 1006-1949 -->
+</div>
+<!-- Pipeline: ca4e47d0113309d5948a6b1d9d307848ed5be263 --></div>
+    <div class="footer">
+        
+                <div class="interactive-source">
+            Source: Hewlett-Packard        </div>
+        
+            </div>
+</figure>
+
+<p class="story-body-text" itemprop="articleBody">HP was founded 75 years ago, when two friends from <a href="//topics.nytimes.com/top/reference/timestopics/organizations/s/stanford_university/index.html?inline=nyt-org" class="tickerized" title="More articles about Stanford University">Stanford University</a>, William Hewlett and David Packard, began making audio equipment in a garage. The company grew to become the largest maker of personal computers in the world, a major supplier of printers and ink and a big provider of servers, software and supplies for other businesses.</p>
+<p class="story-body-text" itemprop="articleBody">When <a href="//topics.nytimes.com/top/reference/timestopics/people/w/margaret_c_whitman/index.html?inline=nyt-per" class="tickerized" title="More articles about Margaret C Whitman.">Meg Whitman</a> took over HP in 2011 after the failed tenure of Léo Apotheker, she inherited a troubled company that lacked focus and had lost some of its financial muscle.</p>
+<p class="story-body-text" itemprop="articleBody">“HP was under acute pressure,” said Peter Burris, an analyst at <a href="//dealbook.on.nytimes.com/public/overview?symbol=FORR&#038;inline=nyt-org" class="tickerized" title="More information about Forrester Research Inc">Forrester Research</a>. “They had a hugely complex portfolio. The balance sheet had degraded a bit over the last 10 years.”</p>
+<p class="story-body-text" itemprop="articleBody">Ms. Whitman announced job cuts, refocused the business units and cleaned up the balance sheet. Those moves allowed her to revive the idea of a split with a measure of confidence that shareholders would cheer the idea.</p>
+<p class="story-body-text" itemprop="articleBody">“A move like this a few years ago might have looked like a fire sale,” Mr. Burris said. “Now, this move improves its focus, simplifying some of the complexity.”</p>
+<p class="story-body-text" itemprop="articleBody">Ralph V. Whitworth, the activist investor who gained a seat on HP’s board, hailed the split on Monday as a victory for shareholders, a reminder of the degree to which the decision was motivated by financial concerns.</p>
+<p class="story-body-text" itemprop="articleBody">The separation is “a brilliant value-enhancing move at the perfect time in the turnaround,” Mr. Whitworth said. “Shareholders will now be able to invest in the respective asset groups without the fear of cross-subsidies and inefficiencies that invariably plague large business conglomerates.”</p>
+<p class="story-body-text" itemprop="articleBody">The separation of HP Inc. (the computer and printers unit) and Hewlett-Packard Enterprise (the business products and services division) does not mean each company will not grow. Both could be in the market for deals after the split is complete, or possibly even before.</p>
+<p class="story-body-text" itemprop="articleBody">HP held talks with EMC earlier this year, and a deal between the companies is still on the table, according to people briefed on the matter. And HP Inc. might be able to acquire smaller personal computer or printer companies, or could be a target itself.</p>
+<p class="story-body-text" itemprop="articleBody">There will be risks for both companies too. HP Inc. and Hewlett-Packard Enterprise will now have to fend for themselves. While both companies will be big, neither will enjoy the same sort of safety in numbers that investors valued during the financial crisis.</p>
+<p class="story-body-text" itemprop="articleBody">“It doesn’t make all the challenges go away,” Mr. Burris said. “Their successes or failures will be much more transparent. They won’t be able to hide their struggles anymore.”</p>
+<h4>Related:</h4>
+			<div class="nyt-article-promo">
+								<div class="w190">
+					<a href="//www.nytimes.com/2014/10/07/technology/meg-whitman-finds-a-vision-for-hp.html?ref=dealbook"><img src="https://static01.nyt.com/images/2014/10/07/business/WHITMAN/WHITMAN-thumbWide.jpg" width="190" height="126" alt="Meg Whitman Finds a Vision for HP" /></a>
+				</div>
+                				<h4><a href="//www.nytimes.com/2014/10/07/technology/meg-whitman-finds-a-vision-for-hp.html?ref=dealbook">Meg Whitman Finds a Vision for HP</a></h4>
+				<p class="nyt-article-byline">By QUENTIN HARDY</p>
+				<p class="nyt-article-summary">By splitting Hewlett-Packard into two new entities, Meg Whitman is putting her own, decisive stamp on the iconic company she has led for three years.</p>
+			</div>
+			<p class="story-body-text" itemprop="articleBody">
+			<div class="nyt-article-promo">
+								<div class="w190">
+					<a href="//www.nytimes.com/2014/10/07/business/hewlett-packard-announces-breakup-plan.html?ref=dealbook"><img src="https://static01.nyt.com/images/2014/10/07/business/07hewlett/07hewlett-thumbWide.jpg" width="190" height="126" alt="Hewlett-Packard Announces Breakup Plan as Technology Landscape Shifts" /></a>
+				</div>
+                				<h4><a href="//www.nytimes.com/2014/10/07/business/hewlett-packard-announces-breakup-plan.html?ref=dealbook">Hewlett-Packard Announces Breakup Plan as Technology Landscape Shifts</a></h4>
+				<p class="nyt-article-byline">By QUENTIN HARDY and DAVID GELLES</p>
+				<p class="nyt-article-summary">The Silicon Valley pioneer said it would divide in two, with one company for its data businesses and another focusing on PCs and printers.</p>
+			</div>
+			</p>
+<footer class="story-footer">
+    <div class="story-meta">
+	<p class="story-print-citation">A version of this article appears in print on 10/07/2014, on page <span itemprop="printSection">B</span><span itemprop="printPage">1</span> of the <span itemprop="printEdition">NewYork</span> edition with the headline: Suddenly, Breaking Up Is the Thing to Do.</p>    </div>
+</footer>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2014/10/06/breaking-up-is-the-new-thing-to-do/" data-title="Breaking Up Is the New Thing to Do in Silicon Valley" data-description="Activist investors are eager to take small stakes in big companies and call for breakups, betting that profit will follow. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/10/06/libyas-sovereign-fund-and-goldman-sachs-clash-in-court/" title="Libya&#039;s Sovereign Fund and Goldman Sachs Clash in Court">
+				Libya&#8217;s Sovereign Fund and Goldman Sachs Clash in Court			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/10/06/a-i-g-bailout-revisionists-version/" title="A.I.G. Bailout, Revisionists&#039;  Version">
+				A.I.G. Bailout, Revisionists&#8217;  Version			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164156","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":381,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

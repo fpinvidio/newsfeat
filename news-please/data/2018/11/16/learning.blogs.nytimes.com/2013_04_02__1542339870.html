@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002150086"><meta name="author" content="Michael Gonchar" />
+<meta name="CLMST" content="Michael Gonchar" />
+<meta name="byl" content="Michael Gonchar" />
+<meta name="GBLC" content="Student Opinion">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1364893243" />
+<meta name="PUD" content="20130402" />
+<meta name="pdate" content="20130402" />
+<meta name="ptime" content="20130402050043" />
+<meta name="utime" content="20130402090043" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-04-02T09:00:43-04:00" />
+<meta name="DISPLAYDATE" content="April 2, 2013" />
+<meta name="dat" content="April 2, 2013" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Student Opinion" />
+<meta name="keywords" content="Student Opinion" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2013%2F04%2F02%2Fdo-you-think-child-stars-have-it-rough%2F" title="Do You Think Child Stars Have It Rough?" />
+<meta name="description" content="Why do you think child stars are so prone to public &#8220;meltdowns&#8221;? Or do you think they are only acting the way any young adult might, except in the very public eye?" />
+<meta name="hdl" content="Do You Think Child Stars Have It Rough?" />
+<meta property="og:title" content="Do You Think Child Stars Have It Rough?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="Why do you think child stars are so prone to public &#8220;meltdowns&#8221;? Or do you think they are only acting the way any young adult might, except in the very public eye?" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Do You Think Child Stars Have It Rough?" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/" />
+<meta name="twitter:description" content="Why do you think child stars are so prone to public &#8220;meltdowns&#8221;? Or do you think they are only acting the way any young adult might, except in the very public eye?" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='Growing Concern That Too Many Children Are Receiving A.D.H.D. Diagnosis' href='//learning.blogs.nytimes.com/2013/04/02/growing-concern-that-too-many-children-are-receiving-a-d-h-d-diagnosis/' />
+<link rel='next' title='&#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust' href='//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/' />
+<link rel='shortlink' href='//nyti.ms/14BDe5k' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2013/04/02/do-you-think-child-stars-have-it-rough/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Student Opinion &#124; Do You Think Child Stars Have It Rough? - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-129059 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Do You Think Child Stars Have It Rough?        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/"
+	 data-title="Do You Think Child Stars Have It Rough?"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Why do you think child stars are so prone to public &quot;meltdowns&quot;? Or do you think they are only acting the way any young adult might, except in the very public eye?&lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="April 2, 2013 5:00 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-129059 post type-post status-publish hentry category-student-opinion tag-fame tag-justin-bieber tag-pop-stars tag-teenagers-and-adolescence-des" id="post-129059">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Do You Think Child Stars Have It Rough?</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Michael Gonchar			</address>
+			<!-- date published --><time class="dateline " datetime="2013-04-02T09:00:43+00:00" itemprop="datePublished">April 2, 2013 5:00 am</time>
+			<!-- date updated --><span class="visually-hidden updated">April 2, 2013 5:00 am</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w151 right module">
+<div class="entry"><a title="See all Student Opinion" href="/category/student-opinion/"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning_student-opinion151.png" alt="Student Opinion - The Learning Network" /></a><a title="See all Student Opinion" href="/category/student-opinion/"><img class="w35 right" src="https://static01.nyt.com/images/blogs_v3/learning/learning_student-opinion35.png" alt="Student Opinion - The Learning Network" /></a></p>
+<p class="summary">Questions about issues in the news for students 13 and older.</p>
+<ul class="refer">
+<li><a title="See all Student Opinion" href="/category/student-opinion/">See all Student Opinion »</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"><em>The public spectacle of child stars self destructing is almost clichéd. Think <a href="//www.nytimes.com/2013/03/10/movies/young-stars-embody-potential-and-letdown-all-at-once.html">Britney Spears in her 20s, or the continuing struggles of Lindsay Lohan</a>.  But what&#8217;s really going on?</p>
+<p class="story-body-text" itemprop="articleBody">Do you think child stars have it particularly rough?<br />
+</em></p>
+<p class="story-body-text" itemprop="articleBody"><span id="more-129059"></span></p>
+<p class="story-body-text" itemprop="articleBody">In the article <a href="//www.nytimes.com/2013/03/31/fashion/justin-bieber-and-todays-youth.html">&#8220;Justin Bieber and Youth’s New Wilderness,&#8221;</a> Teddy Wayne argues that Mr. Bieber&#8217;s recent &#8220;meltdown&#8221; and the public&#8217;s reaction are very much intertwined with a &#8220;sea change in how our culture regards childhood in the 21st century.&#8221; </p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Justin Bieber has had it rough of late. Even before this week’s news that his neighbor was accusing him of battery, the 19-year-old Canadian superstar endured a public breakup with his girlfriend, Selena Gomez; was photographed supposedly reveling with codeine-spiked cough syrup and marijuana, and was snubbed by the Grammys. He retaliated with a live-stream Internet performance that hit technical snags.</p>
+<p class="story-body-text" itemprop="articleBody">He also walked bare-chested through airport security, fainted onstage and canceled another concert, was kicked out of a London nightclub on his birthday for bringing in the 14-year-old performer Jaden Smith and nearly came to sailor-mouthed blows with one of the British paparazzi (above, he’s restrained by his bodyguard).</p>
+<p class="story-body-text" itemprop="articleBody">And then, in what is now de rigueur in the age of social-media celebrity, he issued a strident defense of his behavior and an attack on the press via Instagram, in which he also took a potshot at Lindsay Lohan. He later apologized and removed the post.</p>
+<p class="story-body-text" itemprop="articleBody">A sampling of substances that have come his way, which some members of the public and the media have long saved up: bile, vitriol, acid.</p>
+<p class="story-body-text" itemprop="articleBody">Well, big deal. This concerns a tiny subset of the population: child performers and those who read about them in supermarket tabloids. The bitter spitballs tossed from the back of the classroom are the same ones aimed at anyone in a station above us, regardless of age. Right?</p>
+<p class="story-body-text" itemprop="articleBody">Maybe not. The response to Mr. Bieber’s crackup says much about our culture’s discomfort with changing notions of childhood, a decade-long shift in values and conventions that he exemplifies better than anyone.
+</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><strong>Students:</strong> </p>
+<ul>
+<li>Why do you think child stars are so prone to public &#8220;meltdowns&#8221;?  </li>
+<li>Or do you think child stars are only acting out the way any young adult might, except that their every move is photographed for the world to see?</li>
+<li>Do you think the combination of fame and childhood can be unhealthy? Why? </li>
+<li>Do you think famous youngsters are more likely to grow up spoiled and pampered, unable to face everyday challenges? </li>
+<li>Or are we as a society unfair to child stars? Do we expect them to act more mature than most 16-, 18- or even 26-year-olds really are?  And then we revel in their very public downfall?</li>
+</ul>
+<hr />
+<p class="story-body-text" itemprop="articleBody"><strong>Students 13 and older</strong> are invited to comment below. Please use only your <strong>first name.</strong> For <a href="//www.nytimes.com/ref/membercenter/help/privacysummary.html">privacy policy</a> reasons, we will not publish student comments that include a last name.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Teachers and Students: </strong> <a href="//thechoice.blogs.nytimes.com/">The Choice</a> is a New York Times blog about college admission and aid.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2013/04/02/do-you-think-child-stars-have-it-rough/" data-title="Do You Think Child Stars Have It Rough?" data-description="Why do you think child stars are so prone to public &quot;meltdowns&quot;? Or do you think they are only acting the way any young adult might, except in the very public eye?">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-1138443">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Wanderson</span>
+			<span class="comment-link">
+				<a href="#comment-1138443" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:11 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>They are leaned to behavior collapses because they are not prepared enough to handle a big exposition like that. We can not ignore that they are just young people who would like to do everything related to their ages. But they can&#8217;t and maybe they haven&#8217;t figured it out yet. Paparazzis won&#8217;t stop taking their photos. It&#8217;s their job. As Justin Bieber as many others need to understand that it is part of their job as well. They will be photographed every single expostion moment of their lives. They accepted that when choosing this carrer. If they didn&#8217;t, they should! I can&#8217;t judge them like &#8220;people disabled to handle this situation&#8221;. But I also agree it is not a healthy life. I can&#8217;t imagine how it would be my life if I had a life like theirs. But if I were in their position, I will try to not caring about with paparazzis. I will just try to live my life so well as I can. They have been making a lot of Money with their job. However, this money might not pay the price for a free life.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1138457">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Camryn C</span>
+			<span class="comment-link">
+				<a href="#comment-1138457" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:21 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are more prone to public meltdowns because they have to feel the pressure of everyone&#8217;s eyes on them. Most kids have the comfort of growing up and making mistakes in private without the world watching them, but child stars aren&#8217;t just growing up with their families. They&#8217;re growing up infornt of the whole world too. I feel society is just slightly a little unfair to child stars. Although these kids are child stars they still are children and they still make mistakes. As they enter the world of entertainment they must realize that the world will be watching their every move and the world will criticize them when they make mistakes, but that&#8217;s what happens when your famous.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1138545">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Tieriney</span>
+			<span class="comment-link">
+				<a href="#comment-1138545" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:56 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I feel that child stars feel pressure from everyone and think that they have to do anything to get away from so much drama. For examples drugs,many stars do it to relax and get away from drama. Many stars do things that normal children do but we don&#8217;t  have papparazis down our back about what we do or say. I feel like whatever they do or say is none of the papparazis business but that is what happens when you are a huge superstar.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1138546">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">jeremy</span>
+			<span class="comment-link">
+				<a href="#comment-1138546" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:00 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are more likely to have public meltdowns because they have to feel the pressure of everyone’s eyes on them.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1138560">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Muneer</span>
+			<span class="comment-link">
+				<a href="#comment-1138560" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:31 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think that the pressure that a child star has will always be there. I also think that if a young adult or child is spoiled at a very young age, he/she wouldn&#8217;t be able to go throughout life and actually working a hard job. I believe that it is unhealthy because, they end up being very lazy, their attitude will be very ugly if they are spoiled, and they will never have a normal child&#8217;s life. Just think about it, when a 16 year old person doesn&#8217;t have to do anything but sit back and get what they want, they will get tired of life and then in result of a that a breakdown is to happen. Also, the thing about society expecting more from child stars, child stars should act more mature because, if not they can make an inmature move and end up fired or arrested. They can ruin their whole set career and life and then they&#8217;ll have to do life the hard way.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1138584">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Warren</span>
+			<span class="comment-link">
+				<a href="#comment-1138584" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:06 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think that child stars are more prone to public breakdowns because they don’t really know how to act outside of them doing what they were paid to be doing. I think that fame and someone who is a child star is kind of unhealthy. If you look at someone like Michael Jackson, he was a child star but when he was older he wished that he had a normal childhood. Having a normal childhood to him was to be able to go out and play with his friends, to go see a movie on the weekend, to be able to go to school. Also, I think that when a child becomes a star they suddenly become pampered and all the fame goes to their head they start to act different. Now they just do what they need to do and get tons of money off of it. Then with the money comes more money and fans, publicity, and it’s not that good for them at a young age. It’s just the way you grow up, if you are a kid having to do chores to get your favorite comic book all the time then you will grow up knowing that hard work pays off but, if you were a kid and your parents spoiled you and gave you everything you wanted then you wouldn’t know what hard work gave you. So, even though child stars are expected to be great they should learn to control their fame and remember that they are human and not God.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1138587">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Deonte</span>
+			<span class="comment-link">
+				<a href="#comment-1138587" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:07 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8212;&#8212;&#8212;-1.	I think child stars are prone to public meltdowns is because they are celebrities and life is left at a high expectation and to be because you’re always being watched. In most cases child stars try and can maintain a steady normal life. The only problem is that they are being photographed of their every move. In some cases some of these stars get themselves sucked in to the world no one wants to enter. Drug addiction partying under aged drinking and reckless driving. This is why I think the combination of fame and a childhood is the complete reason why child celebrities grow up too fast or in court for something ridiculous. In most cases a child star based if they were born into wealth are just unappreciative and spoiled. So most of these kids that actually go to school probably have their parents pay a traveling teacher and gets in between the social life a child. They are probably going to have disadvantages with non-famous children they are known to just everyday life situations. I believe to a certain extent that child stars are unfairly treated by society but still are responsible for all their actions. I personally don’t expect them to be more mature than me or anyone else in the modern world. If I were a celebrity I would be immature rather than mature.&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1138593">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">leonard v</span>
+			<span class="comment-link">
+				<a href="#comment-1138593" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:29 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Children of stars have it rough because their parents keep them away from the real life world. They can&#8217;t hang around their friends because their parents don&#8217;t want their kids hang with poor kids.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1138631">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Beto</span>
+			<span class="comment-link">
+				<a href="#comment-1138631" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:09 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think they are spoiled because they have everything.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1138632">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Nicolette</span>
+			<span class="comment-link">
+				<a href="#comment-1138632" title="Comment Permalink">
+					<span class="comment-date">April 2, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>yha i think they like to grow up spoiled bit that is nit good because then you expect everything. if you are spoiled you can get in to trouble.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1139456">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">kimp238</span>
+			<span class="comment-link">
+				<a href="#comment-1139456" title="Comment Permalink">
+					<span class="comment-date">April 3, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:20 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are more prone to public &#8220;meltdowns&#8221; than a person their age outside of the spot light, because they are observed under a microscope from the public. When a child star reaches their teens they are expected to act older than their age and not to make any mistakes. This is an unrealistic expectation because teenage years are a time of experimentation and figuring out who you really are. Something that wouldn&#8217;t seem like a big deal to most, like a picture of a 19 year old boy smoking what might be marijuana, is made controversial when the boy is famous and has young children aspiring to be him. It must be hard for a young person like Justin Bieber to maintain a private life such as a relationship, when paparazzis are constantly taking pictures of his every move. I believe that the cause of Britney Spears&#8217;s meltdown was the enormous amount of pressure put on her and the overwhelming fame. Exploiting her public downfall didn&#8217;t help the problem either. It is sick to think that by standards find a thrill in celebrity break downs such as Lindsay Lohan. Dealing with an addiction is hard enough when you are not famous and unfortunately more common than the media makes it seem. There are people struggling with drugs and alcohol all over the country, but aren&#8217;t getting criticized by random people they will never meet because they are not famous. It should not be this difficult for child stars to grow up in the public eye.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1139582">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Natoria</span>
+			<span class="comment-link">
+				<a href="#comment-1139582" title="Comment Permalink">
+					<span class="comment-date">April 3, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:41 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I Feel That Child Stars Do Have It Hard  , But They Knew What Was In Store For Them When They Started The Star-Life. Child Stars Were Taught How To Act In Public When It Comes To The Photographers. They Know That When They Go Out Fans Are Waiting</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1139956">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">David B</span>
+			<span class="comment-link">
+				<a href="#comment-1139956" title="Comment Permalink">
+					<span class="comment-date">April 3, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:17 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Child Stars now are so prone to public meltdowns because they have the pressure of trying to live up to the standards their fans, producers and the paparazzi. this can be so stressful because they have not had the proper life experiences to control when or where they might have a public breakdown. Even if a small situation arises for a celebrity ass seen in the article with Justin&#8217;s breakup, he was unable to take time to think out what to do if he did not have the stress of the people that adore him so much. That small minute situation led to the use of harmful chemical abuse.<br />
+ Alike any young adult might behave with breakdowns it is normal however with people watching your every move, any type of negative response will be shown for everybody to see. For example if Justin was not as popular and did not have every move photographed this small outburst would not have been such a big deal. But when the news spread he could not handle what had occurred leading to more bad attention.<br />
+The combination of fame and childhood has its ups and downs for both that person and people involved with that person. For example while growing up that child is usually not in constant contact with other children their age promoting possible social problems in their future, This could have been one of the supporting reasons for why Justin and Selena broke up.<br />
+If a child grows up being rich and pampered they will expect their life to be unconditionally like that forever which will cause them to always want more like a toddler, however instead of getting better they will either stay the same or deteriorate. As a teacher of mine always drills into our brains, if you practice being good you will only get better,but if you don&#8217;t practice getting better or you continue to in this case to be pampered you will remain that way. Spoiled, and once you have practiced staying that was, at one point it will become too late to get better. Like bad eating habits. As well if people help them now, once that help stops. they will be incapable to complete daily challenges and not no how to respond correctly to a situation. In this scenario Justin responded by doing drugs which could have been different if he had been better suited for the real world.<br />
+In a sense we do expect the child stars to act more mature because with people like Justin, he has many followers or people that look up to him. In society now nobody wants young people or viewers to have a roll model that does not act as such. This is the reason why the world was so shocked when Justin was doing illegal drugs. However in most situations now we see that many child stars are taking what they are given and acting like mature people, such as Chandler Riggs from AMC&#8217;s the walking dead because he acts like a mature person off camera helping to higher the standards for young celebrities.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1140107">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Priya K</span>
+			<span class="comment-link">
+				<a href="#comment-1140107" title="Comment Permalink">
+					<span class="comment-date">April 3, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are so prone to public &#8220;meltdowns&#8221; because they are put under so much pressure. When people become celebrities at a very young age, it gives them the benefit of living their dream, but it takes away all the advantages of being a normal kid. For example, they don&#8217;t get to hang out with their friends very often or  play any sports. Instead, they are required to do things that are mature since they have photographers watching them . So, sometimes the child star may be put under pressure to act like someone they are not so they are encouraged to do something out of the ordinary. For example, Justin Bieber has been a celebrity since a young age, now that he is older, he has been living a different life for quite some time and wanted a little bit of change in his life. I think the combination of fame and childhood may be unhealthy in some cases because when you are a child, you should be able to experience living as a kid, without many responsibilities. As soon as you get into the business of becoming a star, your whole life is different. You act different since you have much more importance in people&#8217;s lives. No, I don&#8217;t think young stars grow up to be unable to face challenges because even as a star there are problems that they have to figure out. Justin Bieber for example is a great teenager that has much support from his fans and crew and when he has an issue, he finds a way to resolve it. Sometimes, people expect too much of a young star and want them to act older than they are. They should be able to live the way they want to live, as long as hold responsibility for their career as a celebrity, but no one should ever hold them accountable for something they are not yet aged to do.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1140860">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Kathryn O</span>
+			<span class="comment-link">
+				<a href="#comment-1140860" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:51 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are more prone to public meltdowns because they have to feel the pressure of everyone’s eyes on them. Most kids have the comfort of growing up and making mistakes in private without the world watching them, but child stars aren’t just growing up with their families. They’re growing up infornt of the whole world too. I feel society is just slightly a little unfair to child stars. Although these kids are child stars they still are children and they still make mistakes. As they enter the world of entertainment they must realize that the world will be watching their every move and the world will criticize them when they make mistakes, but that’s what happens when your famous.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1141154">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jesse</span>
+			<span class="comment-link">
+				<a href="#comment-1141154" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:17 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Questions:<br />
+Why do you think child stars are so prone to public “meltdowns”?<br />
+Or do you think child stars are only acting out the way any young adult might, except that their every move is photographed for the world to see?<br />
+Do you think the combination of fame and childhood can be unhealthy? Why?<br />
+Do you think famous youngsters are more likely to grow up spoiled and pampered, unable to face everyday challenges?<br />
+Or are we as a society unfair to child stars? Do we expect them to act more mature than most 16-, 18- or even 26-year-olds really are? And then we revel in their very public downfall?<br />
+Because they&#8217;re still young and still have a lot to experience.  Because they&#8217;re rich, they have never experienced something in which they were really mad at someone, and learned to control their temper.  Because they&#8217;re rich and famous, most of what they know is to act, or sing, or dance.  They don&#8217;t have a taste of a regular life.  I think that child stars are still acting like babies out in the world for the first time.  Fame and childhood teaches you nothing about the real world.Yes, i think that famous youngsters are more likely to grow up spoiled and pampered, unable to face everyday challenges.  No we are not a society unfair to child stars.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1141182">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Dominique C</span>
+			<span class="comment-link">
+				<a href="#comment-1141182" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:55 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are so prone to public meltdowns because as the article says, they are exploited so much and they live in a  world of modern technology where so much can go viral and cause them to breakdown. Many young adults react the way child stars do so I think they react normally really like any other teen but knowing that their every move is photographed, I think, provides a lot more pressure and cause them to make sure their life is good enough for everyone else but one day they will snap and have a &#8220;meltdown&#8221;. I do think that the combination of fame and childhood is bad because its a &#8220;doggy dog world&#8221; and not everyone will like you and there will always be someone who is jealous or is a hater. We are all exposed to this at some point in our lives but being exposed at such a young age causes confusion and more pressure to make people like you when you cant. I do think that childstars will grow up to be spoiled and pampered because as a child they were spoiled and pampered and that is how they will be raised to be and what to expect. They wont be able to deal with everyday situations. In the article, it is said Justin Bieber broke up with his girlfriend and that he is having it rough. Sure, a breakup can be very difficult to get through but I think that if he wasn&#8217;t so spoiled he could&#8217;ve gotten through it. As a society we are very unfair to childstars. we assume they should act very mature ad we know they cant. We put them down for our own entertainment, to see someone break. Then we enjoy when it happens.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1141264">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Matt Z</span>
+			<span class="comment-link">
+				<a href="#comment-1141264" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:19 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are so prone to public meltdowns because as the article says, they are exploited so much and they live in a world of modern technology where so much can go viral and cause them to breakdown. These kids work day in and day out to try and just amuuse a unfreatful fan base. Many young adults react the way child stars do so I think they react normally really like any other teen but knowing that their every move is photographed, I think, provides a lot more pressure and cause them to make sure their life is good enough for everyone else but one day they will snap and have a “meltdown”. I do think that the combination of fame and childhood is bad because its a “doggy dog world” and not everyone will like you and there will always be someone who is jealous or is a hater. We are all exposed to this at some point in our lives but being exposed at such a young age causes confusion and more pressure to make people like you when you cant. I do think that childstars will grow up to be spoiled and pampered because as a child they were spoiled and pampered and that is how they will be raised to be and what to expect. In the article, it is said Justin Bieber broke up with his girlfriend and that he is having it rough. Sure, a breakup can be very difficult to get through but I think that if he wasn’t so spoiled he could’ve gotten through it. As a society we are very unfair to childstars. we assume they should act very mature ad we know they cant. These kids need to start living their lives&#8230;the way they want to.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1141311">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ellen P.</span>
+			<span class="comment-link">
+				<a href="#comment-1141311" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:19 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are more prone to &#8220;public meltdowns&#8221; because they are under a lot of pressure at a young age. Child stars don&#8217;t have the regular life a normal boy or girl have. Meaning they cannot go out with their friends without being noticed,and not having as much privacy as other children does. I do not think that young adults act like this way because they are more &#8220;mature&#8221; unlike child stars who are still growing up. I also do believe that childhood and fame is an unhealthy combination because they wouldn&#8217;t have the full experience of their childhood. For example, they would not be able to hang out with their friends or do any other fun activities like sports without being followed by the paparazzi. Also they would also be followed by not only fans but also haters who say harsh words. Haters are another example of why child stars are more prone to public meltdowns. Also, in my opinion, I do believe that sometimes child stars end up growing into a more self-centered, pampered people who have difficulties facing real life problems because people learn how to face their issues by learning from their childhood. However, since child stars lose that opportunity of having a normal life, they would most likely end up having trouble facing their problems later on in their lives. And finally, I believe that society is very unfair to the child stars because they expect them to act like normal adult stars. Society does not like to accept the fact that child stars are children who end up making mistakes. For example, in the article, it mentions everything that Justin Bieber did that seemed to be his childish mistakes. Also  they do not respect the fact that it is the stars life and not theirs. For example, in the article is says that Justin Bieber&#8217;s breakup with Selena Gomez was very public. I think society needs to give the child stars some space.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1141312">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jessie Y</span>
+			<span class="comment-link">
+				<a href="#comment-1141312" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:22 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are so prone to meltdowns because they are under so much pressure, and there is always the thought of making a wrong move. Being a star at a young age could be a dream come true, but there is a lot of responsibilities that come along with it.  There is a lot of people looking up to you and watching you, so you have to be careful with what you say and do. Being famous also limits your privacy. There&#8217;s a lot of paparazzi watching you and everyone needs their personal space. Paparazzi doesnt always say what&#8217;s true, and when that happens, it makes the person look bad.<br />
+I think child stars are acting the way an young adult would probably more mature. even though they are famous, they are still young , and everyone makes mistakes. Its harder for stars to make mistakes and for people to accept them as easily,  but you have to remember that they are humans, and all humans make mistakes.<br />
+I think the combination of fame and childhood may be unhealthy in some cases because, at a young age, you -already hold so many responsibilities and pressure. Knowing that anything you may do wrong, will spread, and may hurt your career, reputation and others and yourself.<br />
+I do not believe that famous youngsters wont become spoiled because there are a lot of stars that aren&#8217;t spoiled, even though their famous and young. Relating to what  another person commented &#8220;Justin Bieber for example is a great celebrity who has much support from his fans and crew and when he has a issue, he finds a way to resolve it.&#8221; Justin is famous and he has a lot of people that support him, and look up ro him. Like a lot of people,  he make mistakes and has troubles,  like  in the article they said &#8220;Justin Bieber has had it rough of late&#8221;. He&#8217;s a great person and celebrity, but like anyone else, he makes mistakes, but he&#8217;s not spoiled. Celebrity&#8217;s have many challenges they need to overcome, the problems they face may be different from others, but they still have to face everyday challenges like everyone else.<br />
+I think society is unfair to child stars because everyone makes mistakes because we are human. Society expects them to be more mature than real 16 year olds actually are.  I  think we revel in their own downfall,  we make small things into huge problems and a mess. Whenever they make it a mistake, the papparazzi is there, and it gets public. I think that if we let celebrities be themselves a little more, give them more privacy and not expect them to act much more mature than their age,there wouldnt be so much downfalls. Even so, they must accept their career and their responsibilities of being famous.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1141422">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Teja K.</span>
+			<span class="comment-link">
+				<a href="#comment-1141422" title="Comment Permalink">
+					<span class="comment-date">April 4, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:38 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think child stars are so prone to public meltdowns because they are constantly under a lot of pressure and they are still young and they do stuff they regret. They also do not go things we go through in our everyday lives, so they are not used to it. I do not think these kids are acting like other teens. I think they are trying to live up to certain expectations, but everything they do wrong is extreme compared to what we do. The article states a lot of the mistakes performed by Justin Bieber &#8220;&#8230;was photographed supposedly reveling with codeine-spiked cough syrup and marijuana, and was snubbed by the Grammys. He retaliated with a live-stream Internet performance that hit technical snags. He also walked bare-chested through airport security, fainted onstage and canceled another concert, was kicked out of a London nightclub on his birthday for bringing in the 14-year-old performer Jaden Smith and nearly came to sailor-mouthed blows with one of the British paparazzi (above, he’s restrained by his bodyguard). And then, in what is now de rigueur in the age of social-media celebrity, he issued a strident defense of his behavior and an attack on the press via Instagram, in which he also took a potshot at Lindsay Lohan. He later apologized and removed the post.&#8221; I do think the combination of childhood and fame can be unhealthy, because these kids grow up around a lot of drama, especially if your parents are famous. You will probably be spoiled and always have money at your disposal while others do not have that kind of opportunity and they do not get to live luxurious lives. I don’t think they would be able to face everyday challenges in our terms, but they learn different thing then we do and have different lives. They might to solve our problems and we might not be able to solve theirs. Most child celebrities know how to conduct themselves in public, but there are always the few rebellious kids, but you expect them to mature as they grow up.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1141889">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Eternity</span>
+			<span class="comment-link">
+				<a href="#comment-1141889" title="Comment Permalink">
+					<span class="comment-date">April 5, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:52 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>i think child stars, have a little bit more pressure then, adult celebrities, just because everyone watching them, little kids look up to them, &#038; others judge them. i think kids can probably break down a lot also, just because they are on camera a lot, and they are prone to act a certain way.i think some parents could probably grow a big head, meaning they don&#8217;t teach their kids they everyday challenges just because they baby them, up until they grown, &#038; then when it time for them to go out into the real world they are clueless, and don&#8217;t know what to expect, because the parents breastfeed them untill they are all grown up.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1142041">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Nicole</span>
+			<span class="comment-link">
+				<a href="#comment-1142041" title="Comment Permalink">
+					<span class="comment-date">April 5, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:39 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I do think child stars are more likely to have public meltdowns but I do not think it is appropriate. They chose this life style and should be able to handle the ups and downs. They knew there would be people writing false statements about them in magazines and taking pictures of them.  I do think in some cases that child fame in unhealthy. It seems that a lot of child stars end up getting involved in trouble with drugs and other things. I do believe child stars are somewhat spoiled. Depending upon the person is how spoiled they are. Some stars handle things better than others. I do not think society is unfair to child stars, going back to what I said earlier, they knew what the downfalls would be before they entered the business.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-1142053">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Sarah</span>
+			<span class="comment-link">
+				<a href="#comment-1142053" title="Comment Permalink">
+					<span class="comment-date">April 5, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:49 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I think that child stars are more prone to public breakdowns because they don’t really know how to act outside of them doing what they were paid to be doing but I dont nessesarily think they have it &#8220;rough&#8221;. If you are a child actor you know you will become  a role model to other young kids. Everyone does make mistakes growing up and reporters do take it out of hand but they should know that before becoming a child star in the beginning.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-1142059">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Kamesha B</span>
+			<span class="comment-link">
+				<a href="#comment-1142059" title="Comment Permalink">
+					<span class="comment-date">April 5, 2013</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:55 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>i do think being a child star would be rough because you would still have to do school work and homework and still have to be able to do your job at the same time then they would get really stressed.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2013/04/02/growing-concern-that-too-many-children-are-receiving-a-d-h-d-diagnosis/" title="Growing Concern That Too Many Children Are Receiving A.D.H.D. Diagnosis">
+				Growing Concern That Too Many Children Are Receiving A.D.H.D. Diagnosis			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2013/04/02/the-centurys-bitterest-journalistic-failure-considering-times-coverage-of-the-holocaust/" title="&#039;The Century&#039;s Bitterest Journalistic Failure&#039;? Considering Times Coverage of the Holocaust">
+				&#8216;The Century&#8217;s Bitterest Journalistic Failure&#8217;? Considering Times Coverage of the Holocaust			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":49,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-krugman section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-krugman section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-krugman section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-krugman section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000005381993"><meta name="author" content="" />
+<meta name="CLMST" content="" />
+<meta name="byl" content="" />
+<meta name="article:author" content="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/paulkrugman/index.html" /><meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1213648242" />
+<meta name="PUD" content="20080616" />
+<meta name="pdate" content="20080616" />
+<meta name="ptime" content="20080616163042" />
+<meta name="utime" content="20170821161555" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-08-21T16:15:55-04:00" />
+<meta name="DISPLAYDATE" content="June 16, 2008" />
+<meta name="dat" content="June 16, 2008" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="krugman" />
+<meta name="BN" content="krugman" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fkrugman.blogs.nytimes.com%2F2008%2F06%2F16%2Fmundus-vult-decipi-ergo-decipiatur%2F" title="Mundus vult decipi, ergo decipiatur" />
+<meta name="description" content="" />
+<meta name="hdl" content="Mundus vult decipi, ergo decipiatur" />
+<meta property="og:title" content="Mundus vult decipi, ergo decipiatur" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//krugman.blogs.nytimes.com/2008/06/16/mundus-vult-decipi-ergo-decipiatur/" />
+<meta property="og:site_name" content="Paul Krugman Blog" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Mundus vult decipi, ergo decipiatur" />
+<meta name="twitter:url" content="//krugman.blogs.nytimes.com/2008/06/16/mundus-vult-decipi-ergo-decipiatur/" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Campaign coverage puzzle' href='//krugman.blogs.nytimes.com/2008/06/16/campaign-coverage-puzzle/' />
+<link rel='next' title='On not knowing Who' href='//krugman.blogs.nytimes.com/2008/06/16/on-not-knowing-who/' />
+<link rel='canonical' href='//krugman.blogs.nytimes.com/2008/06/16/mundus-vult-decipi-ergo-decipiatur/' />
+<link rel='shortlink' href='https://nyti.ms/2uzp8kQ' />
+<link rel='https://github.com/WP-API/WP-API' href='//krugman.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/krugman/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//krugman.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/krugman/2008/06/16/mundus-vult-decipi-ergo-decipiatur/" />
+<meta name="dfp-ad-unit-path" content="opinion/krugman" />			<title>Mundus vult decipi, ergo decipiatur - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-736 blog-universal nyt-blog-krugman" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//krugman.blogs.nytimes.com">
+                Paul Krugman            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Mundus vult decipi, ergo decipiatur        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//krugman.blogs.nytimes.com/2008/06/16/mundus-vult-decipi-ergo-decipiatur/"
+	 data-title="Mundus vult decipi, ergo decipiatur"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;&lt;/span&gt;&lt;a href=&quot;//krugman.blogs.nytimes.com/2008/06/16/mundus-vult-decipi-ergo-decipiatur/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="June 16, 2008 4:30 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="krugman" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<div id="logo" ><a href="//krugman.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion" title="Go to Paul Krugman Home"><img src="https://static01.nyt.com/images/blogs_v5/krugman/krugman_post.png" alt="Paul Krugman - New York Times Blog"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//krugman.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Paul Krugman">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-736 post type-post status-publish hentry" id="post-736">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Mundus vult decipi, ergo decipiatur</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+							</address>
+			<!-- date published --><time class="dateline " datetime="2008-06-16T20:30:42+00:00" itemprop="datePublished">June 16, 2008 4:30 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">June 16, 2008 4:30 pm</span>		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">I saw this phrase in Alan Furst&#8217;s new book <em>The Spies of Warsaw</em>; it means &#8220;The world wants to be deceived, so let it be deceived.&#8221; A good slogan for the Bush years &#8211; but not only in reference to Bush.</p>
+<p class="story-body-text" itemprop="articleBody">I just read <a href="//www.thenation.com/doc/20080630/klein">Naomi Klein</a>:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Barack Obama waited just three days after Hillary Clinton pulled out of the race to declare, on CNBC, &#8220;Look. I am a pro-growth, free-market guy. I love the market.&#8221;
+</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">followed by a rant against Jason Furman.</p>
+<p class="story-body-text" itemprop="articleBody">Look, Obama didn&#8217;t pose as a <em>Nation</em>-type progressive, then turn on his allies after the race was won. Throughout the campaign he was slightly less progressive than Hillary Clinton on domestic issues &#8212; and more than slightly on health care. If people like Ms. Klein are shocked, shocked that he isn&#8217;t the candidate of their fantasies, they have nobody but themselves to blame.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//krugman.blogs.nytimes.com/2008/06/16/mundus-vult-decipi-ergo-decipiatur/" data-title="Mundus vult decipi, ergo decipiatur" data-description="">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-34265">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Chris Dornan</span>
+			<span class="comment-link">
+				<a href="#comment-34265" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:05 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I am very pro-Obama and <i>very</i> sceptical of dogmatic neoliberalism.  I thought Klein&#8217;s piece was a lot more nuanced than you are making out.  Her point was that Obama was singing a very different tune in Pennsylvania and charting his likely destination.  This is Obama tacking back to the center for the general campaign, surely.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34267">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ann</span>
+			<span class="comment-link">
+				<a href="#comment-34267" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:21 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Oh well, they will eventually figure it out.  From the earliest days of Obama&#8217;s presidential aspirations, my husband (Univ of Chicago Law School alum) and I both kept saying that Obama was deep into the Univ of Chicago.  And that means that to get a job cleaning the floors at the U of C, one has to fall to the floor and worship the Univ of Chicago&#8217;s great god, Milton Friedman.  The U of C law school is addicted to ridiculous law-economic theories that have never been accepted in any court. According to the U of C law school, we do not need health and safety laws, non-discrimination laws, laws about negligence and liability (including car accidents) or really any laws at all that are designed to protect the anyone but large businesses because the free market will take care of the problem.</p>
+<p>Even the U of C law school alums joke that the question is how many U of C economics professors does it take to cahnge a light bulb? Answer: None &#8211; the free market will affect the necessary change.</p>
+<p>Problem is Obama was fundamentally a blank slate so all those people made him into what they wanted to think he was. Now, that blank slate is showing its real colors.  They were all so busy being politically correct that they parked their brains and common sense and forgot where they left them.</p>
+<p>My only question is how could they all be that stupid as to believe a U of C faculty member (even if merely the lowest of the low as an adjunct instructor) would not suscribe to the official U of C economic mantra?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34269">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Dan</span>
+			<span class="comment-link">
+				<a href="#comment-34269" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:24 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>My goodness Paul, do we need to add economists to the list of Democrats disappointed by Hillary Clinton&#8217;s loss, along with these hordes of angry women we keep reading about? I think it&#8217;s time to get over it&#8230;as you have pointed out yourself many times, either one of them will be a vast, vast improvement over George Bush or John McCain.</p>
+<p>Your inevitable candidate turned &#8220;ready on day one&#8221; commander-in-chief turned faux-populist lost already. Move on already.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34271">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Technocrat</span>
+			<span class="comment-link">
+				<a href="#comment-34271" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:40 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>What’s wrong with being pro-growth? Who isn’t, after all? Claiming a “love” for “the market” does not a free-market fundamentalist make. It is clear from Sen. Obama’s proposals and voting record that he is not a right-wing ideologue, so statements from him such as this one must be taken with a grain of salt. Look, we’ve entered the general election, the point at which the Democratic nominee no longer has to out-populist h/er competitors in order to succeed, so why the surprise? What makes Prof. Krugman so confident that Sen. Clinton would have kept to her populist rhetoric and proposals had she won the nomination? It was not long ago that people like Prof. Krugman were pointing out how much more progressive than Democratic nominees from the recent past all of the leading Democratic contenders were. What changed? Not the proposals, to be sure, but perhaps the rhetoric? If so, then who cares? I am not one to defend Sen. Obama at all costs, but I suspect that these accusations of centrism and false progressivism are motivated more by disappointment with Sen. Clinton’s loss than by actual evidence of Sen. Obama’s right-leaning tendencies. Is he posturing here? Of course. Has he postured before? Of course. Will he continue to posture? Of course. These people are politicians – posturing is their principal means of getting ahead. In all seriousness, though, does it really make sense to be so down about Sen. Obama being the nominee when the only realistic alternative was Sen. Clinton? If it does, then I’m afraid I’m missing something.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34273">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Matt Stoller</span>
+			<span class="comment-link">
+				<a href="#comment-34273" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:58 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>That&#8217;s not fair.  Klein has been consistent about holding all candidates to a progressive standard, and she is speaking to Obama partisans.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34275">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">El Cid</span>
+			<span class="comment-link">
+				<a href="#comment-34275" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:48 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The flat statement by Klein sort of surprised me because no Democratic candidate &#8212; in fact, not even the Senate&#8217;s one Socialist member (Sanders) &#8212; has declared any opposition whatsoever to the market.  Even the most fiery of Democratic Party reformers and market excess critics hasn&#8217;t declared any opposition to the general importance of the market to the U.S. economy.</p>
+<p>Certainly it would be nice to begin to reverse the freakish and fraudulent market fetishism or market fundamentalism of 30 years of Reaganite rhetoric, particularly in its denigration of the role of public &amp; democratic intervention into the economy via public institutions (such as single payer health care, maybe, one day) or via regulation &amp; directed investment, but no one should have made the assumption that any Democrat was criticizing the existence of the market economy.</p>
+<p>It might make more sense to view this emergent rhetoric as an attempt to pressure Obama to take some more explicit moves toward the &#8216;populist&#8217; (i.e., sane and just) economic reforms we so desperately need.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34263">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mark Coats</span>
+			<span class="comment-link">
+				<a href="#comment-34263" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:08 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Actually, Obama was never the candidate of Naomi Klein&#8217;s &#8220;fantasies&#8221;.  She never endorsed him and characterized Moveon.org and the Nation&#8217;s endorsement of him as a &#8220;serious strategic mistake&#8221;.  She argued that progressives should take advantage of the hotly contested primary to sway the candidates towards progressive positions and warned that when you endorse a candidate you relegate yourself to the position of &#8220;cheerleader&#8221; for that candidate.  A lot of progressive drank the Obama Kool-aid, Ms. Klein was not one of them.  </p>
+<p>Below is a link to her March 26 commentary, &#8220;Players, Not Cheerleaders&#8221;, which she co-wrote with The Nation reporter, Jeremy Scahill.</p>
+<p><a href="//www.huffingtonpost.com/naomi-klein-and-jeremy-scahill/players-not-cheerleaders_b_93515.html" rel="nofollow">//www.huffingtonpost.com/naomi-klein-and-jeremy-scahill/players-not-cheerleaders_b_93515.html</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34277">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">otto</span>
+			<span class="comment-link">
+				<a href="#comment-34277" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:26 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>On war with Iran, however, there were and remain some differences.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34257">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Robert Johnson</span>
+			<span class="comment-link">
+				<a href="#comment-34257" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:12 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Why do we have Naomi Klein to blame for the fact that Barack is further to the right than she would like, and I suspect you would like? What kind of swipe is that??</p>
+<p> Jason Furman is not the issue here.  Obama is.  He cannot be everything to everyone and an awful lot of people are projecting a very heavy progressive agenda onto him.   When jousting with HRC he fed those flames at times. </p>
+<p>I cannot speak for Naomi, but other than your column very few challenged the progressive hype around Barack Obama.  Some are shocked that he appears to be shifting right. Labor unions that supported him included.  Hope appears to be leaving the room.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34259">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Larry</span>
+			<span class="comment-link">
+				<a href="#comment-34259" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:15 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>For Heaven&#8217;s sake. What prominent Democrat *isn&#8217;t* in favor of growth and the market? Our most recent Democratic president certainly was.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34261">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">harold</span>
+			<span class="comment-link">
+				<a href="#comment-34261" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:16 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The Clintons brought us Nafta, Enron (gov assistance to and disastrous adventures in India happened on their watch), outsourcing, &#8220;reinventing&#8221; government, and de-regulation. </p>
+<p>Centrists? I don&#8217;t think so.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34253">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">corinne</span>
+			<span class="comment-link">
+				<a href="#comment-34253" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:47 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It&#8217;s a good slogan, and certainly true as it refers to Obama.  The candidate of their fantasies is no progressive and never has been.  His slogans of change and hope are just that.  People are going to learn the hard way that he is just another politician who will do and say anything to get elected.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34255">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Nathan</span>
+			<span class="comment-link">
+				<a href="#comment-34255" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:30 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A typical problem with an easy solution.  When all the mainstream candidates (inevitably) turn out to be disappointments, turn to Ralph Nader!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34289">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">jf</span>
+			<span class="comment-link">
+				<a href="#comment-34289" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:24 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Please keep up the good work of dissecting the economic policies of the candidates.  You really shine here.  But, man, I absolutely hate the fact that you insist on sticking your finger in the primary wound.  We all know you were, are, and always will be a HRC supporter and fan.  I thinks she&#8217;s an amazing person who would have made a tremendous president.  But as a supporter, people look to you to see if Clinton is going to try and ruin Obama&#8217;s chances this fall.  Not saying that is your intention, but that&#8217;s what it looks like.</p>
+<p>You might not mind another four years of U.S. Constitution bashing, but I&#8217;m going to do everything in my power to elect Obama, regardless of his economic policy.  But if you can move him to the right place there, the country needs you.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34285">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">heck39</span>
+			<span class="comment-link">
+				<a href="#comment-34285" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:29 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I appreciate the skepticism about Obama&#8217;s economic policies, like the previous, thorough critique of his tax cutting proposals. However, posts like this are just more tired politicking, disguised as a complaint about tired politicking. The Nation&#8217;s endorsement of Obama was very nuanced, and acknowledged EXACTLY the critiques you are leveling while still making a qualified endorsement. They were hardly being starry-eyed idealists.</p>
+<p>Posts like this are just hollow, boring politics. The post engages in the same distortions, partial truths, non sequiters, ad hominem mis-characterizations, and probably some other latin-termed bad things, that are the bread and butter of TV pundits. There is already more than enough of that to be found. I come to this blog for something different.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34279">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Larry Powell</span>
+			<span class="comment-link">
+				<a href="#comment-34279" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:34 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>To suggest that Hilary Clinton is more of a progressive than Barck Obama is just plain nonsense. Some of the Clinton&#8217;s best friends are hedge fund managers, the types who almost took down our economy. The real point is that the type of progressive that Dr. Krugman wants is not going to running for president any time soon, and once again Mrs. $100,000,000 Clinton is not a progressive. The best we can hope for is a centrist/mildly liberal president and we will have to fight with all our strength for initiatves for national health car insurance, responsible energy policies and stopping the U.S. form indecent and immoral wars like Iraq.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34281">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Sandi</span>
+			<span class="comment-link">
+				<a href="#comment-34281" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:35 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>To Ann: I know at least one U of C alum who has regurgitated the Friedman Kool-aide, so it is not impossible.  Time will tell, of course. As Yogi famously said, &#8220;It ain&#8217;t over til it&#8217;s over.&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34283">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Rob</span>
+			<span class="comment-link">
+				<a href="#comment-34283" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:54 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Prof. Krugman, Although the Nation endorsed Obama, Ms. Klein and Jeremy Scahill criticized this decision in an op-ed as it eliminated the leverage to advocate for more progressive policies between the candidates. The op-ed was specifically addressing the war, however, I believe this shows that she wasn&#8217;t necessarily a water carrier for Obama.</p>
+<p><a href="//www.huffingtonpost.com/naomi-klein-and-" rel="nofollow">//www.huffingtonpost.com/naomi-klein-and-</a><br />
+jeremy-scahill/players-not-cheerleaders_b_93515.html</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34287">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">robertdfeinman</span>
+			<span class="comment-link">
+				<a href="#comment-34287" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">9:46 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Look, the Clinton campaign is over, can we start focusing on the general election?</p>
+<p>There is a group of people (I&#8217;m one) who think that the wild-eyed Obama supports as seen at DailyKos and elsewhere are going to be disappointed when he doesn&#8217;t turn out to be a white knight, but just a pragmatic politician. Should we keep bringing this up? It seems like a matter of style.</p>
+<p>On the other side, allowing idealists to dream their dreams may force cautious politicians into taking positions closer to those of the vocal supporters. We see this on the right all the time and it is frequently commented on: &#8220;X is moving to the right in order to gain the support of the Y group.&#8221;</p>
+<p>So, if it works on the right, why not try it on the left? You want changes to health care, demand the candidate take a strong position on the issue. Not strong enough yet, demand more.</p>
+<p>If we naysayers turn out to be right then what was gained? The ability to say &#8220;we told you so&#8221;? I&#8217;m personally going to downplay the warning and let the idealists see how far they can go. There is plenty of time after January to push for practical legislation.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34291">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Bob Tourville</span>
+			<span class="comment-link">
+				<a href="#comment-34291" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:38 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Obama was vague about his policies. Purposely so. His supporters called it a feature (like the bugs in windows). So, we can only guess what he will do. What I did not like is the &#8220;cheerleader&#8221; aspect, which I see as more of Bush. Bush&#8217;s slogans did not match what he enacted as policies. Will Obama&#8217;s? All Obama promised was &#8220;you can do it&#8221;. What? How can a chief executive be a grass roots organizer?</p>
+<p>What I know is that people are mad. Mad because they are scared. Scared because there way of life is threatened. How can they drive? How to get to work? How are they going to stay warm this winter? Everyday, Gas and heating oil go up. Food is going up. The value of their house is going down, and jobs get more scarce. Factories have disappeared. Nothing is made here anymore. They have to press one for English. The refrain is &#8220;What happened to our country&#8221;? </p>
+<p>They do not understand why it happened. They did not see it coming. They do not understand how Bush&#8217;s policies affected the value of the dollar. They can&#8217;t understand how Bush&#8217;s &#8220;free market&#8221; deregulation of financial markets led to the housing melt down. Its too complicated for them to understand. They do not know who to blame. Perhaps Bush, but already the right wing spin machine is blaming it on the Democrat&#8217;s majority in Congress. The people do not understand that slim majority means nothing.</p>
+<p>My point is this. If Obama gets elected, and his policies do not make a change, and quickly, then that is the last of the democrats for a very long time.</p>
+<p>The people want their country back. They don&#8217;t want change. They want the way it was, when they could make it in their own country, and when their country made things they needed, when their country meant something in the world, when &#8220;made in the USA&#8221; meant something, and gave them satisfaction of contributing to self-reliance. They want their culture back, and they want new comers to absorb and accept that culture, they do not want to bend to others. They do not want to press one for English, or to speak to another country when they call for tech support or to check their banking records, etc.., or tele-marketing calls from India at dinner time.</p>
+<p>The state of union is so horrendous, it is frightening.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34293">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">John Putz</span>
+			<span class="comment-link">
+				<a href="#comment-34293" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">10:53 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Paul &#8211; you keep having it both ways on Obama.  You&#8217;ve said yourself that Furman was a good guy and progressive.  Yet, you keep using others&#8217; criticism of Furman (Klein, Sweeney) to accentuate your argument that Obama is a centrist and not progressive.  The quote that you quote from Klein is taken out of context in that it was an &#8220;I like X great, but in the case of Y X doesn&#8217;t work very well&#8221;.  If it were Hillary that had picked Furman, you would be defending Hillary and criticizing her detractors.  And when you make the &#8220;progressive&#8221; case for Hillary, you seem to be ignoring that she voted for a WAR in order to try to get elected president.  Obama compromised a bit on his universal health care proposal in order to get elected.  And did so in a way that still gives him room to come around &#8211; after all, these bills are generated in the congress.  He could very easily justify signing something that was not exactly what he promised, presidents do that all the time.  A little harder to justify voting for a war after the fact.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34295">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">tinbox</span>
+			<span class="comment-link">
+				<a href="#comment-34295" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">11:05 am</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Regular readers understand your admiration for Mr Furman, but where did Ms Klein rant? She described Furman as &#8220;one of Wal-Mart&#8217;s most prominent defenders.&#8221; Was she wrong about that? Was Klein wrong about Sen. Obama criticizing Sen Clinton for her work on Wal-Mart&#8217;s board? Ms Klein clearly disagrees with Furman on the subject of Wal-Mart, but so did Sen Obama on the campaign trail. </p>
+<p>In many ways Sen Obama did &#8220;pose&#8221; as a &#8220;Nation-type&#8221; progressive, I don&#8217;t think Ms. Klein was fooled and I don&#8217;t think you were fooled, but many of Obama&#8217;s supporters were.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34297">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">r</span>
+			<span class="comment-link">
+				<a href="#comment-34297" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:25 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Hmmm&#8230; Obama is open to the possibility of reducing corporate tax rates.  Where is the change?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34299">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Gary</span>
+			<span class="comment-link">
+				<a href="#comment-34299" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:55 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Let&#8217;s face it:  the candidates with truly progressive platforms were Edwards and Kucinich, who were squeezed out early.  Left to choose between Clinton and Obama, I noted that Barack remained fairly consistent in his program, while Hillary tacked right and left with the winds.  I also, fairly or unfairly, noted that Bill Clinton had campaigned originally &#8220;on the economy,&#8221; but shifted to the right in office, reserving most of his passion for NAFTA type agreements, denouncing big government &amp; starving welfare funding.  At least Obama hasn&#8217;t betrayed us yet.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34301">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">john riehle</span>
+			<span class="comment-link">
+				<a href="#comment-34301" title="Comment Permalink">
+					<span class="comment-date">June 17, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:44 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Oh, come on Paul.  The only way you could paint Naiomi Klein as a victim of Obamamania is either never to have read her or to intentionally mislead those who haven&#8217;t.  I have enough respect for you to want to belive the first, rather than the second.  The majority of the Nation&#8217;s writers and readers, on the other hand, have been drinking the cool-aid for a while, and I think its clear that Naiomi intends this latest piece as a wake-up call for these folks.  </p>
+<p>I suspect that the more substantial reason for your discomfort with her has to do with her critique of Bill Clinton&#8217;s neo-liberalism and its obvious continuity with the economic policies of Reagan, Bush I and II &#8211; which she spells out quite explicitly in the article.  The uncomfortable fact that the so-called &#8220;boom&#8221; of the Clinton years was an almost completely hollow shell game that enabled both the tech-bubble and the subprime crash doesn&#8217;t fit with your attachment to the Clinton Cult &#8211; a phenomenon as mystifying to me as was the Kennedy Cult before it.</p>
+<p>Whatever political differences we may have I think you&#8217;re way too smart to allow this silly and embarrasing affiliation to cloud the powers of judgement that you normally exercise so much more astutely, and honestly, than most mainstream economists.  Obama accolytes aren&#8217;t the only ones that need to stop drinking the cool-aid.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//krugman.blogs.nytimes.com/2008/06/16/campaign-coverage-puzzle/" title="Campaign coverage puzzle">
+				Campaign coverage puzzle			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//krugman.blogs.nytimes.com/2008/06/16/on-not-knowing-who/" title="On not knowing Who">
+				On not knowing Who			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-6" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">ABOUT</h4><div class="entry">
+<p class="summary">Paul Krugman is an Op-Ed columnist for The New York Times.</p>
+<ul class="refer">
+<li><a href="//www.nytimes.com/ref/opinion/KRUGMAN-BIO.html">Biography »</a></li>
+<li><a href="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/paulkrugman/index.html">Columns »</a></li>
+<h6 class="kicker">Books</h6>
+<li><a href="//books.wwnorton.com/books/detail.aspx?ID=4294971028">End This Depression Now!</a> (2013)</li>
+<li><a href="//www.worthpublishers.com/newcatalog.aspx?search=krugman&isbn=0716771586">Principles of Economics, 2nd ed.</a> (2009)</li>
+<li><a href="//www.krugmanonline.com/books/the-return-of-depression-economics-and-the-crisis-of-2008.php" target="new" alt="The Return of Depression Economics and the Crisis of 2008">The Return of Depression Economics and the Crisis of 2008</a> (Dec. 2008)</li>
+<li><a href="//www.krugmanonline.com/books/the-conscience-of-a-liberal.php" target="new" alt="KrugmanOnline.com">The Conscience of a Liberal</a> (Oct. 2007)</li>
+</ul>
+</div>
+</div>		<div class="module ad" id="Box1"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-48',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":49,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

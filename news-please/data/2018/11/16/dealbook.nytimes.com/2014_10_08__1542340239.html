@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="channels" content="NytNow" />
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dealbook/Chinese Return to the Waldorf, With $2 Billion  ( 20141008 )" />
+<meta name="communityAssetURL" content="https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003166106"><meta name="author" content="David Barboza" />
+<meta name="CLMST" content="David Barboza" />
+<meta name="byl" content="David Barboza" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/b/david_barboza/index.html" /><meta name="GBLC" content="Financial Services;Mergers &amp; Acquisitions;Real Estate;Top Headline 1;Top Headline 2">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1412818122" />
+<meta name="PUD" content="20141008" />
+<meta name="pdate" content="20141008" />
+<meta name="ptime" content="20141008212842" />
+<meta name="utime" content="20141009142551" />
+<meta property="article:modified_time" itemprop="dateModified" content="2014-10-09T14:25:51-04:00" />
+<meta name="DISPLAYDATE" content="October 8, 2014" />
+<meta name="dat" content="October 8, 2014" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Chen Xiaolu;Deng Xiaoping">
+<meta name="des" content="Foreign Investments;Hotels and Travel Lodgings;Mergers, Acquisitions and Divestitures;Real Estate (Commercial)">
+<meta name="org" content="Anbang Insurance Group Co;Hilton Worldwide Holdings Inc">
+<meta name="geo" content="China;Midtown Area (Manhattan, NY)">
+<meta name="ticker" content="Hilton Worldwide Holdings Inc|HLT|NYSE" />
+<meta property="article:tag" content="Chen Xiaolu" />
+<meta property="article:tag" content="Deng Xiaoping" />
+<meta property="article:tag" content="Foreign Investments" />
+<meta property="article:tag" content="Hotels and Travel Lodgings" />
+<meta property="article:tag" content="Mergers Acquisitions and Divestitures" />
+<meta property="article:tag" content="Real Estate (Commercial)" />
+<meta property="article:tag" content="Anbang Insurance Group Co" />
+<meta property="article:tag" content="Hilton Worldwide Holdings Inc" />
+<meta property="article:tag" content="China" />
+<meta property="article:tag" content="Midtown Area (Manhattan NY)" />
+<meta property="article:tag" content="Financial Services" />
+<meta property="article:tag" content="Mergers &amp; Acquisitions" />
+<meta property="article:tag" content="Real Estate" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta property="article:tag" content="Top Headline 2" />
+<meta name="keywords" content="Chen Xiaolu,Deng Xiaoping,Foreign Investments,Hotels and Travel Lodgings,Mergers Acquisitions and Divestitures,Real Estate (Commercial),Anbang Insurance Group Co,Hilton Worldwide Holdings Inc,China,Midtown Area (Manhattan NY),Financial Services,Mergers &amp; Acquisitions,Real Estate,Top Headline 1,Top Headline 2" />
+<meta name="news_keywords" content="Anbang Insurance Group,Chen Xiaolu,China,Commercial Real Estate,Deng Xiaoping,Foreign Investment,Hotels,Mergers and Acquistions,Midtown Area Manhattan" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2014%2F10%2F08%2Fchinese-return-to-the-waldorf-with-2-billion%2F" title="Chinese Return to the Waldorf, With $2 Billion" />
+<meta name="description" content="An obscure Chinese company, Anbang Insurance, is buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor." />
+<meta name="hdl_p" content="Chinese Return to the Waldorf, With $2 Billion" />
+<meta name="hdl" content="Chinese Return to the Waldorf, With $2 Billion " />
+<meta property="og:title" content="Chinese Return to the Waldorf, With $2 Billion " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="An obscure Chinese company, Anbang Insurance, is buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor." />
+<meta property="og:image" content="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-videoSixteenByNine600-v2.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-thumbLarge-v2.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Chinese Return to the Waldorf, With $2 Billion " />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/" />
+<meta name="twitter:description" content="An obscure Chinese company, Anbang Insurance, is buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-thumbLarge-v2.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-thumbLarge-v2.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Expected Change in Derivatives Aims to Curb Damage From Bank Failure' href='https://dealbook.nytimes.com/2014/10/08/expected-change-in-derivatives-aims-to-curb-damage-from-bank-failure/' />
+<link rel='next' title='Old Mutual&#8217;s Asset Management Arm I.P.O. Priced Low at $14 a Share' href='https://dealbook.nytimes.com/2014/10/09/old-mutuals-asset-management-arm-i-p-o-priced-low-at-14-a-share/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/' />
+<link rel='shortlink' href='//nyti.ms/1BU7S6b' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>Chinese Return to the Waldorf, With $2 Billion  - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-632136 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Chinese Return to the Waldorf, With $2 Billion        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/"
+	 data-title="Chinese Return to the Waldorf, With $2 Billion"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;An obscure Chinese company, Anbang Insurance, is buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor. &lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="October 8, 2014 9:28 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-632136 post type-post status-publish hentry category-financial-services category-mergers-acquisitions category-real-estate tag-anbang-insurance-group-co tag-chen-xiaolu tag-china tag-deng-xiaoping tag-foreign-investments tag-hilton-worldwide-holdings-inc tag-hotels-and-travel-lodgings tag-mergers-acquisitions-and-divestitures tag-midtown-area-manhattan-ny tag-real-estate-commercial per-chen-xiaolu per-deng-xiaoping des-foreign-investments des-hotels-and-travel-lodgings des-mergers-acquisitions-and-divestitures des-real-estate-commercial org-anbang-insurance-group-co org-hilton-worldwide-holdings-inc geo-china geo-midtown-area-manhattan-ny news_keywords-anbang-insurance-group news_keywords-chen-xiaolu news_keywords-china news_keywords-commercial-real-estate news_keywords-deng-xiaoping news_keywords-foreign-investment news_keywords-hotels news_keywords-mergers-and-acquistions news_keywords-midtown-area-manhattan" id="post-632136">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Chinese Return to the Waldorf, With $2 Billion</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By David Barboza			</address>
+			<!-- date published --><time class="dateline " datetime="2014-10-09T01:28:42+00:00" itemprop="datePublished">October 8, 2014 9:28 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">October 8, 2014 9:28 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content">
+	<div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-tmagArticle-v2.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-tmagArticle-v2.jpg" src="https://static01.nyt.com/images/2014/10/09/business/WALDORF/WALDORF-tmagArticle-v2.jpg" id="100000003165450" width="592" height="366" alt="In the Waldorf-Astoria’s earlier glory days, Henry Kissinger is flanked by Deng Xiaoping, right, and Qiao Guanhua in 1974."   /><meta itemprop="height" content="366"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">In the Waldorf-Astoria’s earlier glory days, Henry Kissinger is flanked by Deng Xiaoping, right, and Qiao Guanhua in 1974.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> John Sotomayor/The New York Times</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/" data-title="Chinese Return to the Waldorf, With $2 Billion" data-description="An obscure Chinese company, Anbang Insurance, is buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor. ">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody">After President <a href="//topics.nytimes.com/top/reference/timestopics/people/n/richard_milhous_nixon/index.html?inline=nyt-per" class="tickerized" title="More articles about Richard Milhous Nixon.">Richard Nixon</a>’s historic opening to China, <a href="//topics.nytimes.com/top/reference/timestopics/people/d/deng_xiaoping/index.html?inline=nyt-per" class="tickerized" title="More articles about Deng Xiaoping.">Deng Xiaoping</a>, the vice premier and eventual paramount leader of this country, made <a href="//query.nytimes.com/gst/abstract.html?res=9801E6D7133FEF34BC4952DFB266838F669EDE" title="POOR LANDS URGED TO CONTROL GOODS (April 11, 1974)">his first trip to the United States</a> for a meeting at the <a href="//topics.nytimes.com/top/reference/timestopics/organizations/u/united_nations/index.html?inline=nyt-org" class="tickerized" title="More articles about the United Nations.">United Nations</a> in the spring of 1974.</p>
+<p class="story-body-text" itemprop="articleBody">He stayed in Midtown Manhattan at the regal Waldorf-Astoria hotel, where Secretary of State <a href="//topics.nytimes.com/top/reference/timestopics/people/k/henry_a_kissinger/index.html?inline=nyt-per" class="tickerized" title="More articles about Henry A. Kissinger.">Henry A. Kissinger</a> <a href="//www.nytimes.com/1999/01/10/weekinreview/word-for-word-kissinger-transcripts-sex-spooks-hereafter-private-banter-with.html" title="Word for Word/Kissinger Transcripts; Sex, Spooks and the Hereafter: Private Banter With Brezhnev and Mao (Jan. 10, 1999)">hosted a banquet for Mr. Deng</a> and other dignitaries.</p>
+<p class="story-body-text" itemprop="articleBody">Forty years later, an obscure Chinese insurance company is now buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor. The company is run by Mr. Deng’s grandson-in-law.</p>
+<p class="story-body-text" itemprop="articleBody">Started just a decade ago, the company, the Anbang Insurance Group, has managed to build up the capital and connections to broker the largest deal ever by a Chinese investor for an American building, agreeing to pay $1.95 billion for the 47-story tower owned by <a href="//dealbook.on.nytimes.com/public/overview?symbol=HLT&#038;inline=nyt-org" class="tickerized" title="More information about Hilton Worldwide Holdings Inc.">Hilton Worldwide Holdings</a>. The record purchase reflects the growing global influence of China’s business elite. When Mr. Deng introduced radical reforms in the late 1970s, he paved the way for a generation of private companies to help spur the Chinese economy to new heights. Today, such businesses, along with the state-owned giants, are behind a surge in overseas investments.</p>
+<p class="story-body-text" itemprop="articleBody">The broad push is being led by China’s richest and most powerful companies like Alibaba, Baidu, Huawei, and Wanda, the property developer that owns the AMC movie theater chain. But younger companies like Anbang Insurance, with deep pockets, mysterious owners and significant political clout, are increasingly jumping into the fray. Anbang is controlled, in part, by the members of China’s ruling class, relatives of some of the Communist revolutionary leaders who took control of the country in 1949, among them Mr. Deng’s grandson-in-law.</p>
+<p class="story-body-text" itemprop="articleBody">Authorities in Beijing have encouraged companies to look beyond their borders to improve their capabilities and acquire new technologies. As growth flags at home, overseas investments also offer the opportunity for Chinese companies to earn hefty returns.</p>
+<p class="story-body-text" itemprop="articleBody">“Chinese investors have been on a buying binge,” said Jonathan J. Miller, the chief executive of Miller Samuel Inc., a real estate appraisal and consulting firm. “It’s emblematic of this global shift of wealth to Asia.”</p>
+<p class="story-body-text" itemprop="articleBody">While global companies have welcomed the flood of money, the deal-making has also been greeted by skepticism. Given the overarching influence of the Chinese government on private business, such deals have raised concerns at times. The Chinese push into the global markets has quickly evolved in the past decade from investing largely in mines and building materials to buying up luxury villas, French vineyards and world-class hotels. Although the Chinese like to bargain, they are often willing to pay top dollar for trophy assets, particularly when they go abroad.</p>
+<p class="story-body-text" itemprop="articleBody">In the past two years, Chinese businessmen have been snapping up iconic properties in the world’s biggest cities, including the <a href="//dealbook.nytimes.com/2013/07/08/chinese-insurer-buys-lloyds-building-in-london/?_php=true&#038;_type=blogs&#038;_r=0" title="Article.">Lloyd’s of London</a> building, as well as the <a href="//dealbook.on.nytimes.com/public/overview?symbol=GM&#038;inline=nyt-org" class="tickerized" title="More information about General Motors">General Motors</a> building and One Chase Manhattan Plaza in New York. A Shanghai-based developer, the Greenland Group, owns 70 percent of Brooklyn’s $5 billion <a href="//topics.nytimes.com/top/reference/timestopics/subjects/a/atlantic_yards_brooklyn/index.html?inline=nyt-classifier" class="tickerized" title="More articles about Atlantic Yards (Brooklyn).">Atlantic Yards</a> project.</p>
+<p class="story-body-text" itemprop="articleBody">The real estate deals have prompted comparisons to the wave of purchases by Japanese investors in the 1980s. Back then, many players got burned when the American economy sputtered.</p>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/10/09/business/dbpix-waldorf1/dbpix-waldorf1-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/10/09/business/dbpix-waldorf1/dbpix-waldorf1-blog480.jpg" src="https://static01.nyt.com/images/2014/10/09/business/dbpix-waldorf1/dbpix-waldorf1-blog480.jpg" id="100000003164359" width="480" height="320" alt="The landmark Waldorf-Astoria hotel in Manhattan is being bought by Anbang Insurance Group, a Chinese company."   /><meta itemprop="height" content="320"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">The landmark Waldorf-Astoria hotel in Manhattan is being bought by Anbang Insurance Group, a Chinese company.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Justin Lane/European Pressphoto Agency</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">And like Japanese investors in the 1980s, Chinese buyers today have helped to push up the price tag for iconic buildings in the market, said Woody Heller, group head of the Savills Studley Capital Transactions Group. But, he added, “by definition there is a premium, people are willing to pay extra to get the pleasure of saying ‘I own that.’” Even in China, though,<a href="//www.anbanggroup.com/abic/english/index.html" title="The website."> Anbang is</a> hardly a household name.</p>
+<p class="story-body-text" itemprop="articleBody">The company was founded in 2004 as a privately-owned property and casualty insurer in the eastern Chinese city of Ningbo, near Shanghai. Seed capital for the insurer came from two of China’s biggest state-owned companies, Sinopec, a national oil giant, and Shanghai Automotive, one of the biggest automakers.</p>
+<p class="story-body-text" itemprop="articleBody">But Anbang is highly connected.</p>
+<p class="story-body-text" itemprop="articleBody">Anbang’s chairman is Wu Xiaohui, who married the granddaughter of Mr. Deng, who died in 1997. One of Mr. Wu’s other companies once formed a partnership with New Horizon Capital, a big <a href="//dealbook.nytimes.com/category/main-topics/private-equity/?inline=nyt-classifier" class="tickerized" title="More articles about private equity.">private equity</a> firm co-founded by Wen Yunsong, the son of former prime minister <a href="//topics.nytimes.com/top/reference/timestopics/people/w/wen_jiabao/index.html?inline=nyt-per" class="tickerized" title="More articles about Wen Jiabao.">Wen Jiabao</a>, according to public filings and a report in Caixin, a Chinese business magazine.</p>
+<p class="story-body-text" itemprop="articleBody">The insurer’s board of directors<a href="//www.nytimes.com/2013/12/07/world/asia/a-student-leader-in-maos-cultural-revolution.html?pagewanted=all&#038;_r=0" title="Article."> includes Chen Xiaolu</a>, a former officer in the People’s Liberation Army and the son of Marshall Chen Yi, a revolutionary military commander with <a href="//topics.nytimes.com/top/reference/timestopics/people/m/mao_zedong/index.html?inline=nyt-per" class="tickerized" title="More articles about Mao Zedong.">Mao Zedong</a> and who later served as mayor of Shanghai and, between 1958 and his death in 1972, as China’s foreign minister.</p>
+<p class="story-body-text" itemprop="articleBody">Anbang is one of the few privately-controlled insurers that has been allowed to grow into a financial services conglomerate, getting a license to move into life insurance, asset management and banking. The company, started with about $75 million in 2004, now has 30,000 employees and more than $100 billion in assets, including a gleaming headquarters office tower in central Beijing.</p>
+<p class="story-body-text" itemprop="articleBody">Analysts say that Anbang has grown rapidly by offering investment-style insurance products with higher interest rates than regular bank deposits, and by plowing much of its capital into expanding its businesses. After insurance regulators loosened investment rules for companies, Anbang started scooping up huge plots of land in Beijing and other big cities and taking stakes in some of the country’s largest banks, including China Merchants Bank and Minsheng Bank.</p>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/10/09/business/subjpWALDORF/subjpWALDORF-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/10/09/business/subjpWALDORF/subjpWALDORF-blog480.jpg" src="https://static01.nyt.com/images/2014/10/09/business/subjpWALDORF/subjpWALDORF-blog480.jpg" id="100000003165882" width="480" height="299" alt="The lobby of the Waldorf-Astoria. Hilton Worldwide Holdings, which is selling the hotel, will continue to manage it."   /><meta itemprop="height" content="299"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">The lobby of the Waldorf-Astoria. Hilton Worldwide Holdings, which is selling the hotel, will continue to manage it.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Mark Lennihan/Associated Press</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">Chinese regulators have also allowed insurers to invest more of their money overseas, which has led to a flurry of deals from big Chinese insurers like China Life and Ping An. But several analysts said they were surprised to find that Anbang — which was once ranked No. 28 in life insurance premiums and was recently ranked No. 8 in the nation — can afford to buy the Waldorf-Astoria for $1.95 billion.</p>
+<p class="story-body-text" itemprop="articleBody">“Chinese insurance firms are now stepping up their global investments, and commercial real estate in developed markets such as the U.S. fit their risk-averse profile,” said Thilo Hanemann, director of research on cross-border investments for the Rhodium Group, a consultant group based in New York.</p>
+<p class="story-body-text" itemprop="articleBody">A person who answered the telephone at Anbang’s headquarters said the company’s executives were not available for comment Wednesday.</p>
+<p class="story-body-text" itemprop="articleBody">The Waldorf-Astoria marks Anbang’s first major foray into the United States. Opened in 1931 by the Astor family, the Waldorf, which was later taken over by Conrad N. Hilton, has been the hotel of choice for world leaders visiting when the United Nations is in session and even for United States presidents like Barack Obama who stayed this year. Hilton, which will continue to operate the property, indicates that Anbang will invest more money to renovate the 1,413-room hotel, once the largest in the world.</p>
+<p class="story-body-text" itemprop="articleBody">The Waldorf-Astoria also holds special significance in the history of United States-China relations. Every Chinese leader since Mr. Deng has stayed there, including former presidents <a href="//topics.nytimes.com/top/reference/timestopics/people/j/_jiang_zemin/index.html?inline=nyt-per" class="tickerized" title="More articles about Jiang Zemin.">Jiang Zemin</a> and <a href="//topics.nytimes.com/top/reference/timestopics/people/h/hu_jintao/index.html?inline=nyt-per" class="tickerized" title="More articles about Hu Jintao.">Hu Jintao</a>. More recently, investors lined up outside the Waldorf-Astoria to listen to Jack Ma, the chairman of the Alibaba Group, just before his company went public in the largest initial public offering in history.</p>
+<p class="story-body-text" itemprop="articleBody">Back on April 14, 1974, Mr. Deng seemed to enjoy his first visit to New York. On that evening, at the Waldorf just after 8 p.m., Dr. Kissinger hosted Mr. Deng and other Chinese officials in his hotel suite, 35A. There he made repeated toasts to Mr. Deng, as the Chinese are fond of doing, with a high alcohol-content liquor made from sorghum, called Maotai.</p>
+<p class="story-body-text" itemprop="articleBody">“I think if we drink enough Maotai, we can solve anything,” Dr. Kissinger said to Mr. Deng, <a href="//www.nytimes.com/1999/01/10/weekinreview/word-for-word-kissinger-transcripts-sex-spooks-hereafter-private-banter-with.html" title="Word for Word/Kissinger Transcripts; Sex, Spooks and the Hereafter: Private Banter With Brezhnev and Mao (Jan. 10, 1999)">according to a transcript</a> of the conversation that was later published. To which Mr. Deng replied, “Then when I go back to China, I must increase production of it.”</p>
+			<div class="nyt-article-promo">
+								<div class="w190">
+					<a href="//www.nytimes.com/2014/10/07/nyregion/waldorf-astoria-hotel-to-be-sold-for-195-billion.html?ref=dealbook"><img src="https://static01.nyt.com/images/2014/10/07/nyregion/WALDORF/WALDORF-thumbWide.jpg" width="190" height="126" alt="Waldorf-Astoria to Be Sold in a $1.95 Billion Deal" /></a>
+				</div>
+                				<h4><a href="//www.nytimes.com/2014/10/07/nyregion/waldorf-astoria-hotel-to-be-sold-for-195-billion.html?ref=dealbook">Waldorf-Astoria to Be Sold in a $1.95 Billion Deal</a></h4>
+				<p class="nyt-article-byline">By CHARLES V. BAGLI</p>
+				<p class="nyt-article-summary">Hilton Worldwide, the seller, will continue to operate the hotel under a 100-year management contract with Anbang Insurance Group of China.</p>
+			</div>
+			
+<p class="story-body-text" itemprop="articleBody"><em>Alexandra Stevenson contributed reporting from New York. </em></p>
+<footer class="story-footer">
+    <div class="story-meta">
+	<p class="story-print-citation">A version of this article appears in print on 10/09/2014, on page <span itemprop="printSection">A</span><span itemprop="printPage">1</span> of the <span itemprop="printEdition">NewYork</span> edition with the headline: Chinese Return to the Waldorf, With $2 Billion.</p>    </div>
+</footer>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2014/10/08/chinese-return-to-the-waldorf-with-2-billion/" data-title="Chinese Return to the Waldorf, With $2 Billion" data-description="An obscure Chinese company, Anbang Insurance, is buying the landmark hotel with plans to restore the 83-year-old Art Deco building to its original splendor. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/10/08/expected-change-in-derivatives-aims-to-curb-damage-from-bank-failure/" title="Expected Change in Derivatives Aims to Curb Damage From Bank Failure">
+				Expected Change in Derivatives Aims to Curb Damage From Bank Failure			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/10/09/old-mutuals-asset-management-arm-i-p-o-priced-low-at-14-a-share/" title="Old Mutual&#039;s Asset Management Arm I.P.O. Priced Low at $14 a Share">
+				Old Mutual&#8217;s Asset Management Arm I.P.O. Priced Low at $14 a Share			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":69,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dotearth section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dotearth section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dotearth section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dotearth section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dotearth/Young Conservatives Press Republican Presidential Debaters on Energy Policy ( 20150806 )" />
+<meta name="communityAssetURL" content="//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003839877"><meta name="author" content="Andrew C. Revkin" />
+<meta name="CLMST" content="Andrew C. Revkin" />
+<meta name="byl" content="Andrew C. Revkin" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/r/andrew_c_revkin/index.html" /><meta name="GBLC" content="Climate Change;coal;efficiency;energy;fossil fuels;politics">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1438867908" />
+<meta name="PUD" content="20150806" />
+<meta name="pdate" content="20150806" />
+<meta name="ptime" content="20150806093148" />
+<meta name="utime" content="20150819212805" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-08-19T21:28:05-04:00" />
+<meta name="DISPLAYDATE" content="August 6, 2015" />
+<meta name="dat" content="August 6, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="dotearth" />
+<meta name="BN" content="dotearth" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Debates (Political);Energy Efficiency;Environment;Global Warming;Mercury (Metal);Presidential Election of 2016;Solar Energy;Wind Power">
+<meta name="org" content="Christian Coalition of America;Republican Party">
+<meta name="geo" content="Cleveland (Ohio)">
+<meta property="article:tag" content="Debates (Political)" />
+<meta property="article:tag" content="Energy Efficiency" />
+<meta property="article:tag" content="Environment" />
+<meta property="article:tag" content="Global Warming" />
+<meta property="article:tag" content="Mercury (Metal)" />
+<meta property="article:tag" content="Presidential Election of 2016" />
+<meta property="article:tag" content="Solar Energy" />
+<meta property="article:tag" content="Wind Power" />
+<meta property="article:tag" content="Christian Coalition of America" />
+<meta property="article:tag" content="Republican Party" />
+<meta property="article:tag" content="Cleveland (Ohio)" />
+<meta property="article:tag" content="Climate Change" />
+<meta property="article:tag" content="coal" />
+<meta property="article:tag" content="efficiency" />
+<meta property="article:tag" content="energy" />
+<meta property="article:tag" content="fossil fuels" />
+<meta property="article:tag" content="politics" />
+<meta name="keywords" content="Debates (Political),Energy Efficiency,Environment,Global Warming,Mercury (Metal),Presidential Election of 2016,Solar Energy,Wind Power,Christian Coalition of America,Republican Party,Cleveland (Ohio),Climate Change,coal,efficiency,energy,fossil fuels,politics" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdotearth.blogs.nytimes.com%2F2015%2F08%2F06%2Fyoung-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy%2F" title="Young Conservatives Press Republican Presidential Debaters on Energy Policy" />
+<meta name="description" content="Young conservatives press the case for energy-policy sanity as Republican presidential candidates take the stage in Cleveland." />
+<meta name="hdl" content="Young Conservatives Press Republican Presidential Debaters on Energy Policy" />
+<meta property="og:title" content="Young Conservatives Press Republican Presidential Debaters on Energy Policy" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/" />
+<meta property="og:site_name" content="Dot Earth Blog" />
+<meta property="og:description" content="Young conservatives press the case for energy-policy sanity as Republican presidential candidates take the stage in Cleveland." />
+<meta property="og:image" content="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-facebookJumbo-v2.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Young Conservatives Press Republican Presidential Debaters on Energy Policy" />
+<meta name="twitter:url" content="//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/" />
+<meta name="twitter:description" content="Young conservatives press the case for energy-policy sanity as Republican presidential candidates take the stage in Cleveland." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dotearth">
+<link rel='prev' title='Four Graphs Bolster Bill Gates&#8217;s Case for Greatly Boosting Clean-Energy Research' href='//dotearth.blogs.nytimes.com/2015/08/04/four-graphs-bolster-bill-gatess-case-for-greatly-boosting-clean-energy-research/' />
+<link rel='next' title='Heck of a Class Project: An &#8216;Affordable, Robust, Compact&#8217; Fusion Reactor Design, Buildable in a Decade' href='//dotearth.blogs.nytimes.com/2015/08/11/heck-of-a-class-project-an-affordable-robust-compact-fusion-reactor-design-buildable-in-a-decade/' />
+<link rel='canonical' href='//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/' />
+<link rel='shortlink' href='//nyti.ms/1InRSiK' />
+<link rel='https://github.com/WP-API/WP-API' href='//dotearth.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dotearth/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dotearth.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dotearth/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/" />
+<meta name="dfp-ad-unit-path" content="opinion/dotearth" />			<title>Young Conservatives Press Republican Presidential Debaters on Energy Policy - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-55680 blog-universal nyt-blog-dotearth" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dotearth.blogs.nytimes.com">
+                Dot Earth            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Young Conservatives Press Republican Presidential Debaters on Energy Policy        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/"
+	 data-title="Young Conservatives Press Republican Presidential Debaters on Energy Policy"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Young conservatives press the case for energy-policy sanity as Republican presidential candidates take the stage in Cleveland.&lt;/span&gt;&lt;a href=&quot;//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="August 6, 2015 9:31 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dotearth" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap opinion-alternate">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//dotearth.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/dotearth/dotearth75.gif" alt="Dot Earth"/></div><div class="site-title">Dot Earth</div><div class="site-description">New York Times blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dotearth.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Dot Earth">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-55680 post type-post status-publish hentry category-climate-change category-coal-energy category-efficiency category-energy category-fossil-fuels category-politics tag-christian-coalition-of-america tag-cleveland-ohio tag-debates-political tag-energy-efficiency tag-environment tag-global-warming tag-mercury-metal tag-presidential-election-of-2016 tag-republican-party tag-solar-energy tag-wind-power des-debates-political des-energy-efficiency des-environment des-global-warming des-mercury-metal des-presidential-election-of-2016 des-solar-energy des-wind-power org-christian-coalition-of-america org-republican-party geo-cleveland-ohio" id="post-55680">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Young Conservatives Press Republican Presidential Debaters on Energy Policy</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Andrew C. Revkin			</address>
+			<!-- date published --><time class="dateline " datetime="2015-08-06T13:31:48+00:00" itemprop="datePublished">August 6, 2015 9:31 am</time>
+			<!-- date updated --><span class="visually-hidden updated">August 6, 2015 9:31 am</span>		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/" data-title="Young Conservatives Press Republican Presidential Debaters on Energy Policy" data-description="Young conservatives press the case for energy-policy sanity as Republican presidential candidates take the stage in Cleveland.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2015/08/06/blogs/dotenergyparty/dotenergyparty-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/08/06/blogs/dotenergyparty/dotenergyparty-blog480.jpg" src="https://static01.nyt.com/images/2015/08/06/blogs/dotenergyparty/dotenergyparty-blog480.jpg" id="100000003839803" width="480" height="278" alt="Not your typical Republican party"   /><meta itemprop="height" content="278"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Not your typical Republican party</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> </span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody"><webonly><span id="t17h1s" class="update">Updated, 5:01 p.m. | </span></webonly>A few hundred yards from the Cleveland arena where Fox News invited the top-ranked Republican presidential candidates to <a href="//www.nytimes.com/live/republican-debate-election-2016-cleveland/debate-night-in-cleveland-what-the-republican-candidates-need-to-do/">debate</a>, several hundred young conservatives will gather for an unusual party &#8212; &#8220;an epic Republican evening&#8221; celebrating and promoting energy policy reforms that are anathema to most of those who&#8217;ll be onstage.</p>
+<p class="story-body-text" itemprop="articleBody">These include ending subsidies for the fossil fuel industry, boosting energy efficiency, advancing renewable sources like wind and solar power and moving away from the idea that &#8220;drill baby, drill&#8221; is a solution.</p>
+<p class="story-body-text" itemprop="articleBody">The reception and debate-watching party has been organized by <a href="//www.yc4er.org/node/2">Young Conservatives for Energy Reform</a>, the <a href="//www.cc.org/our_agenda">Christian Coalition of America</a> and the <a href="https://www.facebook.com/pages/Ohio-Conservative-Energy-Forum/450525781774645">Ohio Conservative Energy Forum</a>.</p>
+<p class="story-body-text" itemprop="articleBody">A prime force behind this push is <a href="//www.politico.com/arena/bio/michele_combs.html">Michele Combs</a>, a longtime Republican and evangelical organizer who founded the national energy reform group in 2012. Combs says she got involved in energy politics when her doctor advised her to avoid fish during a pregnancy because of mercury levels worsened by power plant pollution and Republican friends said this was not an issue to pursue.</p>
+<p class="story-body-text" itemprop="articleBody">Combs and Scott Rost, from the group&#8217;s board of advisers, describe their goals in <a href="//www.cleveland.com/opinion/index.ssf/2015/08/young_conservatives_want_to_he.html">an opinion piece on Cleveland.com</a>.</p>
+<p class="story-body-text" itemprop="articleBody">I had a Skype conversation with Combs last night that gets across the basics. I hope <a href="https://www.youtube.com/watch?v=i3F5ZgpCiLk">you&#8217;ll listen here</a>. A transcribed snippet is below.</p>
+<div class="w480">
+<div class="w480 youtube-video-container">
+<div class="youtube-video" data-youtube-id="i3F5ZgpCiLk" data-start="">
+<div class="thumb"><img src="https://img.youtube.com/vi/i3F5ZgpCiLk/0.jpg" />
+<div class="playButton">
+<div class="arrow"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">This is an arena rife with hidden agendas, <a href="//www.nytimes.com/gwire/2009/08/28/28greenwire-enviro-ad-sparks-debate----grass-roots-or-astr-70395.html?pagewanted=all">political AstroTurf</a> and the like.</p>
+<p class="story-body-text" itemprop="articleBody">But for the moment, this organization&#8217;s only agenda seems to be prodding the party and the candidates to realize that the Republican message of past campaigns is unsustainable &#8212; both environmentally and politically.<strong>**</strong></p>
+<p class="story-body-text" itemprop="articleBody">At the very least, it&#8217;s clearly not a pop-up effort.</p>
+<p class="story-body-text" itemprop="articleBody">In 2012, Inside Climate News focused on Combs in this article: &#8220;<a href="//insideclimatenews.org/news/20120905/against-odds-young-conservatives-buck-gop-energy-and-climate-change">Against the Odds, Young Conservatives Buck the GOP on Energy and Climate Change</a>.&#8221; Read this <a href="//www.postandcourier.com/article/20131108/PC1208/131109503/1014/michele-combs-a-conservative-voice-for-energy-reform">2013 (Charleston, N.C.) Post &amp; Courier piece</a> for more.</p>
+<div class="w480"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-blog480.jpg" src="https://static01.nyt.com/images/2015/08/06/blogs/dotyoungconserv/dotyoungconserv-blog480.jpg" id="100000003839767" width="480" height="288" alt="The website of &lt;a href=&quot;//yc4er.org&quot;&gt;Young Conservatives for Energy Reform&lt;/a&gt;."   /><meta itemprop="height" content="288"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">The website of <a href="//yc4er.org">Young Conservatives for Energy Reform</a>.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> </span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">The group&#8217;s <a href="//www.yc4er.org/node/15">website has talking points</a> that could as easily be found over <a href="https://www.americanprogress.org/issues/green/news/2015/03/12/108382/making-subsidy-reform-stick">at the Center for American Progress</a>*, like this one: <span id="more-55680"></span></p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Right now, subsidies and tax breaks favor old, dirty, entrenched energy sources over emerging clean, high-tech energy sources of the future. These subsidies and tax breaks keep us tied to foreign sources of energy, and discourage us from developing alternatives here at home and leading the world. We need to consider leveling the playing field.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">I hope someone on the podium tonight is listening.</p>
+<p class="story-body-text" itemprop="articleBody">Here&#8217;s a small excerpt from my chat with Combs:</p>
+<blockquote>
+<div class="q left">Q.</div>
+<p class="story-body-text" itemprop="articleBody">What is it like to talk to other Republicans about this.</p>
+<div class="a left">A.</div>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s all about education. You start with energy independence. I think most Republicans want to be energy independent. They don&#8217;t like having wars and they don&#8217;t like having to buy oil from countries that hate us and want to harm us. And then I think most people want clean air. I&#8217;ve never talked to anyone who doesn&#8217;t want clean air.</p>
+<p class="story-body-text" itemprop="articleBody">This issue was so polarized for so many years and I think it had the wrong messenger. [<em>Elsewhere she alludes to former Vice President Al Gore and President Obama</em>.]</p>
+<p class="story-body-text" itemprop="articleBody">Getting it back in our court is a slow process, but I haven&#8217;t had any negative feedback.</p>
+<div class="q left">Q.</div>
+<p class="story-body-text" itemprop="articleBody">There&#8217;s a lot of name calling &#8212; deniers &#8212; when it comes to climate change. When I look behind the yelling, I see a lot of the things you were just talking about. I know libertarians who love to not have to rely on a utility for all their electricity. Having a solar panel or some kind of capacity to generate your own electricity, that is a very powerful thing for someone who wants limited control on their lives from the outside&#8230;. If you make it all about climate change, you might be alienating people who could be allies. Do you see that kind of thing?</p>
+<div class="a left">A.</div>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s not a litmus test for our group because i think it would alienate. But there&#8217;s a process of getting there. I think you start with energy independence and renewables and homegrown energy. Especially with younger conservatives and millennials, they don&#8217;t have a problem with climate change. They know it&#8217;s out there, and even a lot of the candidates that are running now definitely have acknowledged it.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">I see a lot of synchronicity between this partisan approach and the nonpartisan efforts of others seeking climate progress, including the religion-framed discourse of the <a href="//www.npr.org/2014/06/08/319831143/climate-scientist-climate-change-is-a-christian-issue-too">Texas Tech climate scientist Katharine Hayhoe</a> and the arguments of <a href="//dotearth.blogs.nytimes.com/2012/03/30/a-republican-meteorologist-tries-to-remove-liberal-label-from-climate-concern/">Kerry Emanuel of the Massachusetts Institute of Technology</a> and <a href="https://www.youtube.com/watch?v=4tMeqjbA94I">Richard Alley at Penn State</a> &#8212; both of whom are climate scientists who are registered Republicans.</p>
+<p class="story-body-text" itemprop="articleBody"><em>For more</em> |</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//www.nytimes.com/2015/08/03/us/politics/obama-policy-could-force-robust-climate-discussion-from-2016-candidates.html">Obama Policy Could Force Robust Climate Discussion From 2016 Candidates</a>&#8221; (The New York Times, Aug. 2, 2015)</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//thinkprogress.org/climate/2015/07/26/3683808/gop-field-climate-energy-ranked/">The Most (And Least) Extreme Republican Presidential Candidates On Climate Change</a>&#8221; (Climate Progress, July 26, 2015)</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//www.nationaljournal.com/energy/the-seven-surprise-republicans-to-watch-if-you-care-about-climate-change-20150105">The Seven Unexpected Republicans to Watch If You Care About Climate Change</a>&#8221; (National Journal, Jan. 5, 2015)</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//www.nytimes.com/2014/07/31/us/religious-conservatives-embrace-proposed-epa-rules.html">Religious Conservatives Embrace Pollution Fight</a>&#8221; (The New York Times, July 31, 2014)</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//dotearth.blogs.nytimes.com/2011/06/23/wanted-republicans-for-responsible-oil-policy/">Wanted: Republicans for Responsible Oil Policy</a>&#8221; (Dot Earth, June 23, 2011)</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//dotearth.blogs.nytimes.com/2011/03/14/republicans-for-environmental-protection-endangered-species/">‘Republicans for Environmental Protection’ – Endangered Species?</a>&#8221; (Dot Earth March 14, 2011)</p>
+<p class="story-body-text" itemprop="articleBody"><em>Clarification</em>, 12:40 p.m. | * I initially included <a href="//thinkprogress.org/climate/2015/05/22/3662148/we-pay-what-for-fossil-fuels/">a link to a Think Progress post</a> from the Center of American Progress point above. A reader <a href="https://www.twitter.com/rebleber/status/629318061821161472">pointed out on Twitter</a> that the blog has different approach to issues than the nonprofit group.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Postscript</em>, 5:25 p.m. | ** Via Twitter, I was pointed to a <a href="//dailysignal.com/2015/08/04/why-young-conservatives-for-energy-reform-arent-what-they-seem/">Heritage Foundation blog post</a> by Joel Griffith criticizing Young Conservatives for Energy Reform for supporting renewable-energy subsidies and taking a sizable grant from the Emily Hall Tremaine Foundation, which <a href="//tremainefoundation.org/Content/Environment_Programs.asp">focuses in part on addressing climate change</a>.</p>
+<p class="story-body-text" itemprop="articleBody">His piece didn&#8217;t go into any depth on whether the Heritage Foundation&#8217;s <a href="//www.sourcewatch.org/index.php/Heritage_Foundation#Core_Financials">sources of support</a> shape its worldview, or vice versa.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dotearth.blogs.nytimes.com/2015/08/06/young-conservatives-press-g-o-p-presidential-debaters-to-wise-up-on-energy/" data-title="Young Conservatives Press Republican Presidential Debaters on Energy Policy" data-description="Young conservatives press the case for energy-policy sanity as Republican presidential candidates take the stage in Cleveland.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dotearth.blogs.nytimes.com/2015/08/04/four-graphs-bolster-bill-gatess-case-for-greatly-boosting-clean-energy-research/" title="Four Graphs Bolster Bill Gates&#039;s Case for Greatly Boosting Clean-Energy Research">
+				Four Graphs Bolster Bill Gates&#8217;s Case for Greatly Boosting Clean-Energy Research			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dotearth.blogs.nytimes.com/2015/08/11/heck-of-a-class-project-an-affordable-robust-compact-fusion-reactor-design-buildable-in-a-decade/" title="Heck of a Class Project: An &#039;Affordable, Robust, Compact&#039; Fusion Reactor Design, Buildable in a Decade">
+				Heck of a Class Project: An &#8216;Affordable, Robust, Compact&#8217; Fusion Reactor Design, Buildable in a Decade			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry"><img class="w151 right" src="https://static01.nyt.com/images/2012/10/28/opinion/Revkin/Revkin-blogSmallInline.jpg" alt="Andrew C. Revkin on Sustainability" /></p>
+<p class="summary">By 2050 or so, the human population is expected to <a href="//esa.un.org/unpd/wpp/index.htm">pass nine billion</a>. Those billions will be seeking food, water and other resources on a planet where humans are already shaping climate and the web of life. Dot Earth was created by <a href="//about.me/revkin">Andrew Revkin</a> in October 2007 -- in part with support from a John Simon Guggenheim Fellowship -- to explore ways to balance human needs and the planet's limits.</p>
+<p class="summary">The blog moved to the Opinion side of The Times in 2010 when Revkin left the Times staff to teach communication courses at Pace University. He won a <a href="//dotearth.blogs.nytimes.com/2011/09/15/four-years-163-posts-and-a-nice-award/">National Academies Communication Award</a> for Dot Earth in 2011 and Time Magazine named him <a href="//techland.time.com/2013/08/05/the-25-best-bloggers-2013-edition/slide/andrew-revkin-dot-earth/">one of the web's 25 top bloggers</a> in 2013.</p>
+<p class="summary">In December 2016, Revkin ended the blog and left Pace to return to full-time journalism as senior reporter on climate and related issues for the public-interest newsroom <a href="https://www.propublica.org/about/andrew-revkin-to-join-propublica-as-senior-reporter-on-climate-change" target="_blank">ProPublica</a>.</p>
+<p>Click here for a <a href="https://static01.nyt.com/packages/html/science/20071024_DOTEARTH_FEATURE/index.html">narrated slide show</a> on the roots of Revkin's journalistic journey.</p>
+<ul class="refer">
+<li>More: <a href="//twitter.com/revkin">Twitter</a> | <a href="//www.facebook.com/Andrew.Revkin.5">Facebook</a> | <a href="//www.youtube.com/anrevk">YouTube</a> | <a href="https://plus.google.com/u/0/106981109992478346191/posts">Google+</a> | <a href="//www.amazon.com/Andrew-Revkin/e/B001IXNSRK/ref=sr_tc_2_0?qid=1390325965&sr=1-2-ent">Books</a> | <a href="//j.mp/revkinmusic">Music</a></li>
+</ul>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dotearth.blogs.nytimes.com/2016/12/'> December 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/11/'> November 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/10/'> October 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/09/'> September 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/08/'> August 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/07/'> July 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/06/'> June 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/05/'> May 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/04/'> April 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/03/'> March 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/02/'> February 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/01/'> January 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2015/12/'> December 2015 </option>
+	<option value='//dotearth.blogs.nytimes.com/2015/11/'> November 2015 </option>
+	<option value='//dotearth.blogs.nytimes.com/2015/10/'> October 2015 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/"><img src="https://static01.nyt.com/images/2012/10/23/blogs/dotearthmaprace/dotearthmaprace-thumbStandard-v2.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/sustainability/">sustainability</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/" title="Read: After Nine Years and 2,810 Posts, a Dot Earth Farewell">After Nine Years and 2,810 Posts, a Dot Earth Farewell</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/"></a>
+				</span>			</h5>
+			<p class="summary">
+			After nine years and 2,810 posts, a blog seeking a sustainable path for humans on a finite planet comes to an end.<a href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/activism/">activism</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/04/facing-standing-rock-campaign-army-corps-blocks-dakota-pipeline-path/" title="Read: Facing Standing Rock Campaign, Obama Administration Blocks Dakota Pipeline Path">Facing Standing Rock Campaign, Obama Administration Blocks Dakota Pipeline Path</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/04/facing-standing-rock-campaign-army-corps-blocks-dakota-pipeline-path/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Intensifying Indian protests prompted the Obama administration to block a pipeline&#8217;s path in North Dakota.<a href="//dotearth.blogs.nytimes.com/2016/12/04/facing-standing-rock-campaign-army-corps-blocks-dakota-pipeline-path/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/"><img src="https://static01.nyt.com/images/2016/06/13/blogs/dotsequoiabeforeafter/dotsequoiabeforeafter-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/forests/">forests</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/" title="Read: Will California Ever Let Sierra Nevada Forests Burn?">Will California Ever Let Sierra Nevada Forests Burn?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/"></a>
+				</span>			</h5>
+			<p class="summary">
+			In the Sierra Nevada, California&#8217;s main forest fire problem lies in not letting forests burn.<a href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/"><img src="https://static01.nyt.com/images/2016/12/02/blogs/dotgormezano/dotgormezano-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/appreciation/">Appreciation</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/" title="Read: A Belated Farewell to a Pioneering Polar Bear Researcher">A Belated Farewell to a Pioneering Polar Bear Researcher</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A tribute after the death of a young and innovative field researcher who used a scat-sniffing dog to help figure out polar bears&#8217; changing diets.<a href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/"><img src="https://static01.nyt.com/images/2016/11/29/blogs/dotunnatural/dotunnatural-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/anthropocene-2/">Anthropocene</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/" title="Read: TED&#8217;s Science Curator Sees Hope in Earth&#8217;s Anthropocene Age">TED&#8217;s Science Curator Sees Hope in Earth&#8217;s Anthropocene Age</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/"></a>
+				</span>			</h5>
+			<p class="summary">
+			TED&#8217;s new curator of science, David Biello, explains why he sees hints of hope in Earth&#8217;s emerging Anthropocene &#8220;age of us.&#8221;<a href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/dotearth" title="Follow @dotearth on twitter">@dotearth</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/dotearth" title="Follow dotearth on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/dotearth" title="Follow @dotearth on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-14',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":52,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

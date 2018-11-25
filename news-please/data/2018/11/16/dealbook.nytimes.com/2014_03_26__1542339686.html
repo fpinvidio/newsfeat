@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dealbook section-business"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dealbook section-business" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dealbook/Citigroup Fails Federal Reserve's Stress Test for 2nd Time in 3 Years ( 20140326 )" />
+<meta name="communityAssetURL" content="https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000002789976"><meta name="author" content="Michael Corkery" />
+<meta name="CLMST" content="Michael Corkery" />
+<meta name="byl" content="Michael Corkery" />
+<meta name="GBLC" content="Financial Services;Investment Banking;Legal/Regulatory;Top Headline 1">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1395864163" />
+<meta name="PUD" content="20140326" />
+<meta name="pdate" content="20140326" />
+<meta name="ptime" content="20140326160243" />
+<meta name="utime" content="20140327202154" />
+<meta property="article:modified_time" itemprop="dateModified" content="2014-03-27T20:21:54-04:00" />
+<meta name="DISPLAYDATE" content="March 26, 2014" />
+<meta name="dat" content="March 26, 2014" />
+<meta itemprop="articleSection" property="article:section" content="Business Day" />
+<meta name="CG" content="Business Day" />
+<meta name="SCG" content="Dealbook" />
+<meta name="BN" content="dealbook" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Banking and Financial Institutions;Company Reports;Regulation and Deregulation of Industry">
+<meta name="org" content="Citigroup Inc;Federal Reserve System">
+<meta name="ticker" content="Citigroup Inc|C|NYSE" />
+<meta property="article:tag" content="Banking and Financial Institutions" />
+<meta property="article:tag" content="Company Reports" />
+<meta property="article:tag" content="Regulation and Deregulation of Industry" />
+<meta property="article:tag" content="Citigroup Inc" />
+<meta property="article:tag" content="Federal Reserve System" />
+<meta property="article:tag" content="Financial Services" />
+<meta property="article:tag" content="Investment Banking" />
+<meta property="article:tag" content="Legal/Regulatory" />
+<meta property="article:tag" content="Top Headline 1" />
+<meta name="keywords" content="Banking and Financial Institutions,Company Reports,Regulation and Deregulation of Industry,Citigroup Inc,Federal Reserve System,Financial Services,Investment Banking,Legal/Regulatory,Top Headline 1" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=https%3A%2F%2Fdealbook.nytimes.com%2F2014%2F03%2F26%2Ffed-rebuffs-citigroup-on-capital-plans%2F" title="Citigroup Fails Federal Reserve&#8217;s Stress Test for 2nd Time in 3 Years" />
+<meta name="description" content="The Fed&#8217;s decision is prompting calls for another round of changes at the top of the bank&#8217;s management and questions over whether the bank should break up its far-flung operations." />
+<meta name="hdl_p" content="Fed Rejects Citigroup’s Payout Plans, Citing Concerns Over Capital" />
+<meta name="hdl" content="Citigroup Fails Federal Reserve&#039;s Stress Test for 2nd Time in 3 Years" />
+<meta property="og:title" content="Citigroup Fails Federal Reserve&#039;s Stress Test for 2nd Time in 3 Years" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/" />
+<meta property="og:site_name" content="DealBook" />
+<meta property="og:description" content="The Fed&#8217;s decision is prompting calls for another round of changes at the top of the bank&#8217;s management and questions over whether the bank should break up its far-flung operations." />
+<meta property="og:image" content="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-videoSixteenByNine600.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Citigroup Fails Federal Reserve&#039;s Stress Test for 2nd Time in 3 Years" />
+<meta name="twitter:url" content="https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/" />
+<meta name="twitter:description" content="The Fed&#8217;s decision is prompting calls for another round of changes at the top of the bank&#8217;s management and questions over whether the bank should break up its far-flung operations." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@dealbook">
+<link rel='prev' title='Brazilian Telecommunications Deal Clears Hurdle' href='https://dealbook.nytimes.com/2014/03/26/brazilian-telecommunications-deal-clears-hurdle/' />
+<link rel='next' title='Bank of America to Pay $6.3 Billion to Settle Mortgage Securities Suit' href='https://dealbook.nytimes.com/2014/03/26/bank-of-america-to-pay-6-3-billion-to-settle-mortgage-securities-suit/' />
+<link rel='canonical' href='https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/' />
+<link rel='shortlink' href='//nyti.ms/1dOg7p8' />
+<link rel='https://github.com/WP-API/WP-API' href='https://dealbook.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dealbook/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://dealbook.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/business/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.comdealbook/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/" />
+<meta name="dfp-ad-unit-path" content="businessday/dealbook" />			<title>Citigroup Fails Federal Reserve&#039;s Stress Test for 2nd Time in 3 Years - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/dealbook.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-603398 blog-universal nyt-blog-dealbook" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Business Day', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="https://dealbook.nytimes.com">
+                DealBook            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Citigroup Fails Federal Reserve&#8217;s Stress Test for 2nd Time in 3 Years        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/"
+	 data-title="Citigroup Fails Federal Reserve&#8217;s Stress Test for 2nd Time in 3 Years"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt; The Fed’s decision is prompting calls for another round of changes at the top of the bank’s management and questions over whether the bank should break up its far-flung operations.&lt;/span&gt;&lt;a href=&quot;https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="March 26, 2014 4:02 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dealbook" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="https://dealbook.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Business Day" title="Go to DealBook Home"><img src="https://static01.nyt.com/images/blogs_v5/dealbook/dealbook_post.png" alt="DealBook - A Financial News Service of The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="https://dealbook.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search DealBook">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		<div id="topic-nav">
+		<ul>
+			<li class="first"><a href="https://dealbook.nytimes.com/category/main-topics/mergers-acquisitions/">Mergers &amp; Acquisitions</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/private-equity/">Private Equity</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/hedge-funds/">Hedge Funds</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/ipoofferings/">I.P.O./Offerings</a></li>
+			<li><a href="https://dealbook.nytimes.com/category/main-topics/venture-capital/">Venture Capital</a></li>
+			<li class="last"><a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></li>
+		</ul>
+	</div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-603398 post type-post status-publish hentry category-financial-services category-investment-banking category-legal tag-banking-and-financial-institutions tag-citigroup-inc tag-company-reports tag-federal-reserve-system tag-regulation-and-deregulation-of-industry des-banking-and-financial-institutions des-company-reports des-regulation-and-deregulation-of-industry org-citigroup-inc org-federal-reserve-system" id="post-603398">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="https://dealbook.nytimes.com/category/main-topics/investment-banking/">Investment Banking</a> | <a href="https://dealbook.nytimes.com/category/main-topics/legal/">Legal/Regulatory</a></span>		</div>
+				<h1 itemprop="headline" class="entry-title">Citigroup Fails Federal Reserve&#8217;s Stress Test for 2nd Time in 3 Years</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Michael Corkery			</address>
+			<!-- date published --><time class="dateline " datetime="2014-03-26T20:02:43+00:00" itemprop="datePublished">March 26, 2014 4:02 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">March 26, 2014 4:02 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content">
+	<div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-tmagArticle.jpg" src="https://static01.nyt.com/images/2014/03/27/business/Stress1/Stress1-tmagArticle.jpg" id="100000002790462" width="592" height="364" alt="Citigroup was the only one of the nation’s largest banks that failed to persuade the Fed to bless its plans to give money to shareholders."   /><meta itemprop="height" content="364"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Citigroup was the only one of the nation’s largest banks that failed to persuade the Fed to bless its plans to give money to shareholders.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Mario Tama/Getty Images</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/" data-title="Citigroup Fails Federal Reserve&#8217;s Stress Test for 2nd Time in 3 Years" data-description=" The Fed’s decision is prompting calls for another round of changes at the top of the bank’s management and questions over whether the bank should break up its far-flung operations.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div>
+<p class="story-body-text" itemprop="articleBody">The <a class="tickerized" title="More articles about the Federal Reserve System." href="//topics.nytimes.com/top/reference/timestopics/organizations/f/federal_reserve_system/index.html?inline=nyt-org">Federal Reserve</a> dealt an embarrassing blow to <a class="tickerized" title="More information about Citigroup Inc" href="//dealbook.on.nytimes.com/public/overview?symbol=C&amp;inline=nyt-org">Citigroup</a> on Wednesday, attacking the bank’s financial projections for its sprawling operations and denying the bank’s plan to increase dividends and repurchase stock.</p>
+<p class="story-body-text" itemprop="articleBody">In a report, the Fed rejected Citigroup’s plans to manage its capital, citing concerns about the “overall reliability of Citigroup’s capital planning process.” It was the only one of the nation’s top five banks that failed to persuade the Fed to bless its plans for shareholder payouts.</p>
+<p class="story-body-text" itemprop="articleBody">The Fed did not give many details behind its rejection, which was the second denial of Citigroup’s capital plan in the past three years. But analysts and investors said the message from the regulator was clear.</p>
+<p class="story-body-text" itemprop="articleBody">“The Fed is saying that the bank’s financial processes are not where they should be, and this is five years after the crisis,” said Mike Mayo, the CLSA banking analyst. “It is not as though they haven’t had time to clean up their act.”</p>
+<p class="story-body-text" itemprop="articleBody">The Fed’s rejection of Citigroup was particularly striking not only because most of its large peers, like <a class="tickerized" title="More information about JPMorgan Chase &amp; Company" href="//dealbook.on.nytimes.com/public/overview?symbol=JPM&amp;inline=nyt-org">JPMorgan Chase</a> and <a class="tickerized" title="More information about Bank of America Corporation" href="//dealbook.on.nytimes.com/public/overview?symbol=BAC&amp;inline=nyt-org">Bank of America</a>, had their plans accepted, but also because Citigroup’s capital cushion — a key measure of a bank’s strength — comfortably exceeded the regulatory minimum.</p>
+<div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/03/27/business/Stress2/Stress2-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/03/27/business/Stress2/Stress2-articleInline.jpg" src="https://static01.nyt.com/images/2014/03/27/business/Stress2/Stress2-articleInline.jpg" id="100000002790467" width="190" height="242" alt="Michael L. Corbat became chief at Citigroup after its capital plan was denied in 2012."   /><meta itemprop="height" content="242"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Michael L. Corbat became chief at Citigroup after its capital plan was denied in 2012.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Bryan Bedder/Getty Images</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">The rebuke could derail the plans of <a class="tickerized" title="More articles about Michael L. Corbat." href="//topics.nytimes.com/top/reference/timestopics/people/c/michael_l_corbat/index.html?inline=nyt-per">Michael Corbat</a>, the bank’s chief executive, to gradually rehabilitate Citigroup by dialing back risk and cutting costs. The Fed’s decision is already reviving calls to break up Citi’s far-flung businesses that stretch from New York to Mexico.</p>
+<p class="story-body-text" itemprop="articleBody">Indeed, the Fed said on Wednesday that it had concerns about the bank’s “ability to project revenue and losses under a stressful scenario for material parts of the firm’s global operations.”</p>
+<p class="story-body-text" itemprop="articleBody">The Fed’s criticisms echoed concerns voiced by investors and analysts after the discovery of a $400 million fraud in Citigroup’s Mexican unit last month. The fraud, involving a Mexican company, forced Citigroup to restate its earnings and raised questions about whether the bank is properly overseeing its many units.</p>
+<p class="story-body-text" itemprop="articleBody">In a statement, Mr. Corbat said that “needless to say we are deeply disappointed by the Fed’s decision,” adding that the bank would work with the Fed to address its concerns. Citigroup can resubmit a revised capital plan, but the bank said it was not clear when it would do so.</p>
+<p class="story-body-text" itemprop="articleBody">News of the stress test results set off a panic within Citigroup, according to two people with knowledge of the matter. Citibank’s board and top executives thought that the bank would fare well on the annual review, especially because Mr. Corbat makes regular trips to Washington in an effort to bolster open dialogue with regulators.</p>
+<div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/03/27/business/StressColor/StressColor-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/03/27/business/StressColor/StressColor-articleInline.jpg" src="https://static01.nyt.com/images/2014/03/27/business/StressColor/StressColor-articleInline.jpg" id="100000002790631" width="190" height="163" alt="Citigroup&#039;s headquarters on Park Avenue in New York."   /><meta itemprop="height" content="163"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Citigroup's headquarters on Park Avenue in New York.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Justin Lane/European Pressphoto Agency</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">Hours after the stress test results were released, Citigroup convened a board meeting at the bank’s Park Avenue headquarters. The mood, according to two people familiar with the matter, was grim. Few expected such a blow, the people said. Mr. Corbat scrambled to determine what exactly had happened, contacting the authorities at the Federal Reserve.</p>
+<p class="story-body-text" itemprop="articleBody">The Fed’s last rejection of Citigroup’s capital plan, in 2012, helped precipitate a leadership coup at the bank. The bank’s failure to pass the test that year augmented pressure on the board to oust <a class="tickerized" title="More articles about Vikram S. Pandit." href="//topics.nytimes.com/top/reference/timestopics/people/p/vikram_s_pandit/index.html?inline=nyt-per">Vikram S. Pandit</a> from the chief executive role.</p>
+<p class="story-body-text" itemprop="articleBody">At first, it seemed as though the leadership change was ushering in a new era for Citigroup, which was rescued by taxpayers in the financial crisis. With Mr. Corbat at the helm, the bank passed the stress test last year and its stock price soared. Last year, many bank stocks including Citigroup’s continued to rise, partly in anticipation of increased dividends.</p>
+<p class="story-body-text" itemprop="articleBody">Now, the Fed’s action on Wednesday is already prompting calls for another round of changes at the top of the bank’s management.</p>
+<div class="w592"><figure class="promo media video blog-video "
+    data-videoid="100000002792191" data-media-action="modal" data-autoplay="" data-embedded="true" aria-label="media" role="group">
+        <span class="visually-hidden">Video</span>
+
+    <figcaption class="caption">
+        <h4 class="headline">Banking Analyst on Citigroup Setback</h4>
+		        <div class="caption-video">
+                <div class="summary-credit">
+            <p class="summary">“This is why so many people hate Wall Street,” said Mike Mayo, the CLSA banking analyst. Mr. Mayo said that Citgroup’s chief financial officer needs to step down.</p>
+            <span class="credit video-credit" itemprop="copyrightHolder">
+                                                                    <span class="visually-hidden">Publish Date </span>March 27, 2014.
+                            </span>
+            <span class="credit photo-credit" itemprop="copyrightHolder">
+                                    Photo by CNBC.
+                                </span>
+        </div>
+
+                    <div class="sharetools-video-container">
+                <div id="sharetools-video-tools-100000002792191"
+                    class="sharetools sharetools-video-tools">
+                    <ul>
+                        <li class="sharetool embed-sharetool">
+                            <a href="javascript:;" data-share="embed" data-modal-title="">
+                                <i class="icon sprite-icon"></i>
+                                <span class="sharetool-text ">embed</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sharetools-video-inline-100000002792191"
+                    class="sharetools sharetools-video-inline"
+                    data-shares="facebook|,twitter|"
+                    data-url="https://www.nytimes.com/video/business/100000002792191/banking-analyst-on-citigroup-setback.html?action=click&amp;contentCollection=business&amp;module=blog-video&amp;region=caption&amp;pgtype=article"
+                    data-title="Banking Analyst on Citigroup Setback"
+                    data-description="“This is why so many people hate Wall Street,” said Mike Mayo, the CLSA banking analyst. Mr. Mayo said that Citgroup’s chief financial officer needs to step down."
+                    data-content-type="video">
+                </div>
+            </div>
+        </div>
+            </figcaption>
+</figure>
+</div>
+<p class="story-body-text" itemprop="articleBody">“There’s no question in our minds that heads should roll,” Mr. Mayo said.</p>
+<p class="story-body-text" itemprop="articleBody">The Fed said that while Citigroup had made progress in the areas of “risk-management and control practices,” its capital planning process “reflected a number of deficiencies.”</p>
+<p class="story-body-text" itemprop="articleBody">The Fed also said that Citigroup had failed to make “sufficient improvement” in certain areas that supervisors had previously identified as “requiring attention.”</p>
+<p class="story-body-text" itemprop="articleBody">In addition to Citigroup, the Fed rejected the capital plans of the American units of three international banks: <a class="tickerized" title="More information about HSBC Holdings PLC." href="//dealbook.on.nytimes.com/public/overview?symbol=HSBC&amp;inline=nyt-org">HSBC</a>, Santander of Spain and the <a class="tickerized" title="More articles about the Royal Bank of Scotland." href="//topics.nytimes.com/top/news/business/companies/royal-bank-of-scotland-group-plc/index.html?inline=nyt-org">Royal Bank of Scotland</a>, which operates under the Citizens Bank brand in the United States.</p>
+<p class="story-body-text" itemprop="articleBody">The Fed cited “inadequate governance and weak internal controls” in the capital planning process at HSBC and the Royal Bank of Scotland. Santander faced similar problems in addition to flaws with the bank’s risk management during the process, according to the Fed.</p>
+<p class="story-body-text" itemprop="articleBody">In this year’s test, the Fed expanded the number of banks under review to 30 from 18, and included for the first time the American units of several large European banks.</p>
+<p class="story-body-text" itemprop="articleBody">The Fed also rejected the capital plans of the bank Zions Bancorporation, saying that its capital cushion fell under the regulatory minimum when tested under stress.</p>
+<p class="story-body-text" itemprop="articleBody">Over all, though, the results of the annual test — called the Comprehensive Capital Analysis and Review — showed that most of the nation’s banking system had healed substantially since the 2008 financial crisis. The Fed uses the annual test to review the capital plans of 30 large banks under a series of stressful economic situations. If a bank can pay dividends and buy back stock while still maintaining a minimum capital cushion, the Fed typically blesses its plans.</p>
+<p class="story-body-text" itemprop="articleBody">By this measure alone, Citigroup passed the test easily. When run through the Fed’s adverse scenario test, Citigroup’s capital plan left the bank with a minimum Tier 1 common ratio of 6.5 percent. That is a larger cushion than JPMorgan’s 5.5 percent capital ratio, Bank of America’s 5.3 percent ratio and <a class="tickerized" title="More information about Goldman Sachs Group Inc" href="//dealbook.on.nytimes.com/public/overview?symbol=GS&amp;inline=nyt-org">Goldman Sachs</a>’s 6.1 percent.</p>
+<p class="story-body-text" itemprop="articleBody">The Fed has consistently raised the standards of its annual stress tests, leading some bankers to grumble that the regulators’ efforts to make the financial system safer may be choking off credit to the broader economy. Others have complained that the regulator each year is unfairly changing the rules.</p>
+<p class="story-body-text" itemprop="articleBody">“In raising the bar, perhaps the Fed felt Citigroup didn’t make the cut,” said Moshe Orenbuch, a banking analyst at <a class="tickerized" title="More information about Credit Suisse Group A.G" href="//dealbook.on.nytimes.com/public/overview?symbol=CS&amp;inline=nyt-org">Credit Suisse</a>.</p>
+<p class="story-body-text" itemprop="articleBody">Many of the 25 banks that passed the review lost little time in taking steps to lift shareholders’ returns. For the first time since 2009, Bank of America announced a dividend increase, to 5 cents a share. The bank also said it was buying back $4 billion in stock. JPMorgan said it was increasing its quarterly dividend to 40 cents a share and buying back $6.5 billion of stock.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Jessica Silver-Greenberg contributed reporting. </em></p>
+<footer class="story-footer">
+    <div class="story-meta">
+	<p class="story-print-citation">A version of this article appears in print on 03/27/2014, on page <span itemprop="printSection">B</span><span itemprop="printPage">1</span> of the <span itemprop="printEdition">NewYork</span> edition with the headline: Fed Rejects Citigroup’s Payout Plans, Citing Concerns Over Capital.</p>    </div>
+</footer>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="https://dealbook.nytimes.com/2014/03/26/fed-rebuffs-citigroup-on-capital-plans/" data-title="Citigroup Fails Federal Reserve&#8217;s Stress Test for 2nd Time in 3 Years" data-description=" The Fed’s decision is prompting calls for another round of changes at the top of the bank’s management and questions over whether the bank should break up its far-flung operations.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/03/26/brazilian-telecommunications-deal-clears-hurdle/" title="Brazilian Telecommunications Deal Clears Hurdle">
+				Brazilian Telecommunications Deal Clears Hurdle			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="https://dealbook.nytimes.com/2014/03/26/bank-of-america-to-pay-6-3-billion-to-settle-mortgage-securities-suit/" title="Bank of America to Pay $6.3 Billion to Settle Mortgage Securities Suit">
+				Bank of America to Pay $6.3 Billion to Settle Mortgage Securities Suit			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-12',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":132,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-first-draft section-us tone-hard-news is-dashblog"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-first-draft section-us tone-hard-news is-dashblog" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-first-draft section-us tone-hard-news is-dashblog" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-first-draft section-us tone-hard-news is-dashblog" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<style>
+.viewport-small .media.slideshow.in-page-player .container.ratio-landscape .image {
+    height: auto !important;
+}
+
+.viewport-small-10 .media.slideshow.in-page-player .container.ratio-landscape .image, 
+.viewport-medium .media.slideshow.in-page-player .container.ratio-landscape .image, 
+.viewport-large .media.slideshow.in-page-player .container.ratio-landscape .image {
+    height: 340px !important;
+}
+
+.viewport-small .media.slideshow.in-page-player .container.ratio-landscape .content-container {
+    height: 350px !important;
+}
+
+.viewport-medium .media.slideshow.in-page-player .container.ratio-landscape .content-container,
+.viewport-large .media.slideshow.in-page-player .container.ratio-landscape .content-container {
+    height: 416px !important;
+}
+
+.viewport-small .media.slideshow.in-page-player .arrow-navigation {
+	bottom: 5px !important;
+}
+
+.viewport-medium .media.slideshow.in-page-player .arrow-navigation, 
+.viewport-large .media.slideshow.in-page-player .arrow-navigation {
+	bottom: 10px !important;
+}
+
+html:not(.viewport-medium) .media-viewer.theme-dark .media-viewer-headline {
+margin: 20px 30px 0px;
+text-align: left !important;
+padding-right: 30px;
+margin-right: 30px !important;
+}
+
+html.viewport-medium .twitter-tweet {
+max-width: 550px !important;
+}
+
+#first-draft #blogs-masthead .site-title #header-social-options a.briefing {
+background: transparent url("https://static01.nyt.com/packages/images/nytint/projects/firstdraft/envelope-16x16.png") top left no-repeat !important;
+background-size: inherit !important;
+}
+#first-draft #blogs-masthead .site-title #header-social-options a.twitter {
+background: transparent url("https://static01.nyt.com/packages/images/nytint/projects/firstdraft/twitter-16x16.png") top left no-repeat !important;
+background-size: inherit !important;
+}
+#first-draft #blogs-masthead .site-title #header-social-options a.facebook {
+background: transparent url("https://static01.nyt.com/packages/images/nytint/projects/firstdraft/facebook-16x16.png") top left no-repeat !important;
+background-size: inherit !important;
+}
+
+.viewport-large .nyt-blog-first-draft #first-draft .story-footer {
+padding-right: 195px;
+}
+
+.viewport-large #first-draft #blogs-masthead .site-title #header-social-options a.twitter, .viewport-large #first-draft #blogs-masthead .site-title #header-social-options a.facebook, .viewport-medium #first-draft #blogs-masthead .site-title #header-social-options a.twitter, .viewport-medium #first-draft #blogs-masthead .site-title #header-social-options a.facebook { 
+width: 7px;
+}
+
+.first-slideshow .slideshow .headline {
+display: none;
+}
+
+.nyt-blog-first-draft #first-draft .content .media.video.promo .caption .sharetools-video-tools ul, .nyt-blog-first-draft #first-draft .content .media.video.promo .caption .sharetools-video-inline ul {
+margin:0;
+}
+.viewport-small .sharetools-video-container, .viewport-small-10 .sharetools-video-container {
+display: none;
+}
+.viewport-medium .sharetools-video-container, .viewport-large .sharetools-video-container {
+display: block;
+}
+</style><meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000004082992"><meta name="author" content="Alan Rappeport" />
+<meta name="CLMST" content="Alan Rappeport" />
+<meta name="byl" content="Alan Rappeport" />
+<meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1449658842" />
+<meta name="PUD" content="20151209" />
+<meta name="pdate" content="20151209" />
+<meta name="ptime" content="20151209060042" />
+<meta name="utime" content="20151209115812" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-12-09T11:58:12-05:00" />
+<meta name="DISPLAYDATE" content="December 9, 2015" />
+<meta name="dat" content="December 9, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Politics" />
+<meta name="CG" content="Politics" />
+<meta name="SCG" content="First Draft" />
+<meta name="BN" content="first-draft" />
+<meta name="robots" content="noodp">
+<link rel="apple-touch-icon-precomposed" href="https://static01.nyt.com/packages/images/nytdesign/2014/politics/logo-flag-150.png">
+<meta name="live_stream_endpoint" content="https://int.nyt.com/assets/blogs/live-coverage/first-draft/live-stream-endpoint-12092015.jsonp" />
+<meta name="per" content="Eisenhower, Dwight David;Roosevelt, Franklin Delano;Trump, Donald J">
+<meta name="des" content="Chinese-Americans;Discrimination;Illegal Immigration;Immigration and Emigration;Muslim Americans;Presidential Election of 2016">
+<meta name="org" content="Republican Party">
+<meta name="geo" content="China;Japan;Mexico;United States">
+<meta property="article:tag" content="Eisenhower Dwight David" />
+<meta property="article:tag" content="Roosevelt Franklin Delano" />
+<meta property="article:tag" content="Trump Donald J" />
+<meta property="article:tag" content="Chinese-Americans" />
+<meta property="article:tag" content="Discrimination" />
+<meta property="article:tag" content="Illegal Immigration" />
+<meta property="article:tag" content="Immigration and Emigration" />
+<meta property="article:tag" content="Muslim Americans" />
+<meta property="article:tag" content="Presidential Election of 2016" />
+<meta property="article:tag" content="Republican Party" />
+<meta property="article:tag" content="China" />
+<meta property="article:tag" content="Japan" />
+<meta property="article:tag" content="Mexico" />
+<meta property="article:tag" content="United States" />
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Eisenhower Dwight David,Roosevelt Franklin Delano,Trump Donald J,Chinese-Americans,Discrimination,Illegal Immigration,Immigration and Emigration,Muslim Americans,Presidential Election of 2016,Republican Party,China,Japan,Mexico,United States,Uncategorized" />
+<meta name="news_keywords" content="China,Chinese American,Discrimination,Japan,Mexico" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fwww.nytimes.com%2Fpolitics%2Ffirst-draft%2F2015%2F12%2F09%2Fidea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots%2F" title="Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots" />
+<meta name="description" content="Mr. Trump&#8217;s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history." />
+<meta name="hdl" content="Idea Behind Donald Trump&#8217;s Plan to Bar Muslims Has Some Deep Roots" />
+<meta property="og:title" content="Idea Behind Donald Trump&#8217;s Plan to Bar Muslims Has Some Deep Roots" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/" />
+<meta property="og:site_name" content="First Draft" />
+<meta property="og:description" content="Mr. Trump&#8217;s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history." />
+<meta property="og:image" content="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Idea Behind Donald Trump&#8217;s Plan to Bar Muslims Has Some Deep Roots" />
+<meta name="twitter:url" content="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/" />
+<meta name="twitter:description" content="Mr. Trump&#8217;s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@NYTPolitics">
+<link rel='prev' title='For Bernie Sanders, Policy and Levity on &#8216;Tonight Show&#8217;' href='//www.nytimes.com/politics/first-draft/2015/12/09/for-bernie-sanders-policy-and-levity-on-tonight-show/' />
+<link rel='next' title='Local TV Networks Seek to Counter Campaign Ads&rsquo; Shift Online' href='//www.nytimes.com/politics/first-draft/2015/12/09/local-tv-networks-seek-to-counter-campaign-ads-shift-online/' />
+<link rel='canonical' href='//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/' />
+<link rel='shortlink' href='//nyti.ms/1OQ7wbe' />
+<link rel='https://github.com/WP-API/WP-API' href='//www.nytimes.com/politics/first-draft/json' />
+<meta name="adxPage" content="blog.nytimes.com/first-draft/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//www.nytimes.com/politics/first-draft/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/politics/index.jsonp" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="dfp-ad-unit-path" content="us/politics/firstdraft" />			<title>Idea Behind Donald Trump&#8217;s Plan to Bar Muslims Has Some Deep Roots - First Draft. Political News, Now. - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/interactive.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/first-draft.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-28597 blog-universal nyt-blog-first-draft" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Politics', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//www.nytimes.com/politics/first-draft">
+                First Draft            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/"
+	 data-title="Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Mr. Trump’s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history.&lt;/span&gt;&lt;a href=&quot;//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/&quot; class=&quot;more-link&quot;&gt;Read more&lt;/a&gt;"
+	data-publish-date="December 9, 2015 6:00 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//s3.amazonaws.com/s3.documentcloud.org/viewer/loader.js"></script>
+<div id="first-draft" class="spanAC blog">
+			<header id="blogs-masthead">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+	<div class="element1">
+	<div id="logo" class="archived-blog-post">
+		<div class="site-title">
+			<div id="first-draft-branding">
+				<a id="mini_nyt_logo" href="javascript:;">
+					<span>
+						<img alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgogICAgIHZpZXdCb3g9IjAgMCAyMiAyOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjIgMjgiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjMjMxRjIwIiBkPSJNMjAuOCwxN0wyMC44LDE3Yy0wLjksMi4xLTIuNCwzLjgtNC43LDQuN1YxN2wyLjYtMi4zbC0yLjYtMi4zVjkuMWMyLjQtMC4xLDQuMi0xLjksNC4yLTQuMQogICAgYzAtMi44LTIuNi0zLjgtNC4yLTMuOGMtMC4zLDAtMC43LDAtMS4yLDAuMXYwLjFjMC4yLDAsMC41LDAsMC42LDBjMSwwLDEuOCwwLjUsMS44LDEuNGMwLDAuNy0wLjYsMS40LTEuNiwxLjQKICAgIGMtMi42LDAtNS42LTIuMS04LjktMi4xYy0yLjksMC01LDIuMi01LDQuNGMwLDIuMiwxLjMsMi45LDIuNiwzLjRsMC0wLjFDNCw5LjgsMy43LDkuMywzLjcsOC42YzAtMSwwLjktMS44LDIuMS0xLjgKICAgIGMyLjgsMCw3LjMsMi4zLDEwLDIuNGgwLjF2My4zbC0yLjYsMi4zbDIuNiwyLjN2NC44Yy0wLjksMC4zLTIsMC41LTMuMiwwLjVjLTEuOSwwLTMuNi0wLjUtNC45LTEuNmw0LjctMi4xVjkuMkw2LDEyLjEKICAgIEM2LjgsOS44LDguNSw4LjUsOS44LDhsMC0wLjFDNSw4LjksMS4yLDEyLjMsMS4yLDE3YzAsNS41LDQuMiw5LjYsMTAuMyw5LjZjNi4zLDAsOS4yLTQuNiw5LjItOS4zVjE3eiBNNy43LDIwLjUKICAgIGMtMS4zLTEuMi0yLjEtMy4xLTIuMS01LjVjMC0xLDAuMS0yLDAuNC0yLjdsMi4yLTF2OUw3LjcsMjAuNXoiLz4KPC9zdmc+Cg==" />
+					</span>
+				</a>
+				<a id="first_draft_logo" href="//www.nytimes.com/politics/first-draft/">
+					<img alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjM0LjkgMzQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIzNC45IDM0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICAgICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSIwLDAgMCw3LjQgMy4yLDcuNCAzLjIsMjYuMiAwLDI2LjIgMCwzMy41IDE5LjYsMzMuNSAxOS42LDI2LjIgMTUuNiwyNi4yIDE1LjYsMTkuNCAyMC43LDE5LjQgMjAuNywxNC4xIDE1LjYsMTQuMQogICAgICAgICAgICAxNS42LDcuNCAyMS40LDcuNCAyMS40LDExLjUgMjkuMSwxMS41IDI5LjEsMCAiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBhdGggZD0iTTMwLjEsMTAuNnY2LjJoMS45djEwLjVoLTEuOXY2LjJoMTQuN3YtNi4yaC0yVjEwLjZIMzAuMXogTTMxLjksOC4yaDEwLjhWMEgzMS45VjguMnoiPjwvcGF0aD4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgIDxkZWZzPgogICAgICAgICAgICAgIDxyZWN0IGlkPSJTVkdJRF8xXyIgd2lkdGg9IjIzNC45IiBoZWlnaHQ9IjM0Ij48L3JlY3Q+CiAgICAgICAgICAgIDwvZGVmcz4KICAgICAgICAgICAgPGNsaXBQYXRoIGlkPSJTVkdJRF8yXyI+CiAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iIG92ZXJmbG93PSJ2aXNpYmxlIj48L3VzZT4KICAgICAgICAgICAgPC9jbGlwUGF0aD4KICAgICAgICAgICAgPHBhdGggY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSIgZD0iTTY1LjMsMTguMWMtMC43LDAtMS40LDAuMi0yLjEsMC4zYy0xLjUsMC40LTIuNSwxLjEtMy4yLDIuMmMtMC4yLDAuNC0wLjQsMC45LTAuNSwxLjUKICAgICAgICAgICAgICBjLTAuMSwwLjYtMC4xLDEuNi0wLjEsMi45djIuM0g2MnY2LjJINDYuN3YtNi4yaDEuOVYxNi44aC0xLjl2LTYuMmgxMi43djMuNWMxLjMtMS40LDIuNi0yLjUsMy45LTMuMmMxLjMtMC43LDIuNy0xLDQuMi0wLjlsMC44LDAKICAgICAgICAgICAgICBWMThDNjcsMTgsNjYsMTguMSw2NS4zLDE4LjEiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSIgZD0iTTkxLDI2LjJjMCwxLjEtMC4yLDIuMS0wLjcsMy4xYy0wLjQsMC45LTEuMSwxLjgtMS45LDIuNWMtMC44LDAuNy0xLjgsMS4zLTIuOSwxLjYKICAgICAgICAgICAgICBjLTEuMSwwLjQtMi40LDAuNi0zLjcsMC42Yy0wLjYsMC0xLjIsMC0xLjctMC4xcy0xLjEtMC4xLTEuNy0wLjNjLTAuNi0wLjEtMS4yLTAuMy0xLjgtMC41Yy0wLjctMC4yLTEuNC0wLjUtMi4zLTAuOHYxLjFoLTUuMgogICAgICAgICAgICAgIHYtNy43aDUuMWMwLjMsMSwwLjcsMS44LDEuMiwyLjNjMC41LDAuNSwxLjIsMC44LDIuMiwwLjhjMC43LDAsMS4zLTAuMiwxLjctMC41YzAuNC0wLjMsMC42LTAuNywwLjYtMS4zYzAtMC44LTAuNS0xLjQtMS41LTEuOQogICAgICAgICAgICAgIGwtNS0yLjFjLTEuMy0wLjUtMi4yLTEuMy0yLjktMi40Yy0wLjctMS0xLTIuMi0xLTMuNGMwLTEsMC4yLTEuOSwwLjctMi44YzAuNC0wLjksMS4xLTEuNywxLjktMi4zYzAuOC0wLjcsMS43LTEuMiwyLjgtMS42CiAgICAgICAgICAgICAgYzEuMS0wLjQsMi4yLTAuNiwzLjQtMC42YzEsMCwyLDAuMSwyLjksMC4zYzAuOSwwLjIsMS45LDAuNiwzLDEuMXYtMWg1LjJ2Ny40aC00LjhjLTAuMi0xLjEtMC42LTItMS0yLjZjLTAuNS0wLjYtMS4xLTAuOS0yLTAuOQogICAgICAgICAgICAgIGMtMC42LDAtMS4yLDAuMi0xLjYsMC41Yy0wLjQsMC4zLTAuNiwwLjgtMC42LDEuM2MwLDAuOSwwLjYsMS42LDEuOCwyLjFsNC45LDEuOUM4OS41LDIxLjMsOTEsMjMuNCw5MSwyNi4yIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPHBvbHlnb24gcG9pbnRzPSI5My44LDMuNCA5My44LDEwLjYgOTEuOSwxMC42IDkxLjksMTYuOCA5My44LDE2LjggOTMuOCwzMy41IDEwNy44LDMzLjUgMTA3LjgsMjYuMiAxMDQuNiwyNi4yIDEwNC42LDE2LjgKICAgICAgICAgICAgMTA3LjgsMTYuOCAxMDcuOCwxMC42IDEwNC42LDEwLjYgMTA0LjYsMy40ICI+PC9wb2x5Z29uPgogICAgICAgICAgICA8Zz4KICAgICAgICAgICAgPGRlZnM+CiAgICAgICAgICAgICAgPHJlY3QgaWQ9IlNWR0lEXzNfIiB3aWR0aD0iMjM0LjkiIGhlaWdodD0iMzQiPjwvcmVjdD4KICAgICAgICAgICAgPC9kZWZzPgogICAgICAgICAgICA8Y2xpcFBhdGggaWQ9IlNWR0lEXzRfIj4KICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNTVkdJRF8zXyIgb3ZlcmZsb3c9InZpc2libGUiPjwvdXNlPgogICAgICAgICAgICA8L2NsaXBQYXRoPgogICAgICAgICAgICA8cGF0aCBjbGlwLXBhdGg9InVybCgjU1ZHSURfNF8pIiBkPSJNMTMzLjQsMTYuNmMwLTEuOC0wLjItMy4zLTAuNi00LjZjLTAuNC0xLjItMS4xLTIuMy0yLTMuMmMtMC42LTAuNi0xLjItMS0yLTEuMgogICAgICAgICAgICAgIGMtMC44LTAuMi0xLjgtMC4zLTMuMi0wLjN2MTguOGMxLjMsMCwyLjMtMC4xLDMuMS0wLjNjMC43LTAuMiwxLjQtMC42LDIuMS0xLjJDMTMyLjUsMjMuMSwxMzMuNCwyMC40LDEzMy40LDE2LjYgTTE0NiwxNwogICAgICAgICAgICAgIGMwLDIuMy0wLjQsNC40LTEuMSw2LjNjLTAuNywxLjktMS43LDMuNi0zLDVjLTEuMywxLjQtMi45LDIuNi00LjcsMy40Yy0xLjgsMC45LTMuOSwxLjQtNi4xLDEuNmMtMC43LDAuMS0xLjMsMC4xLTEuNywwLjEKICAgICAgICAgICAgICBjLTAuNCwwLTAuNywwLTAuOSwwSDExMHYtNy40aDMuMlY3LjRIMTEwVjBoMTguMWMxLjYsMCwzLDAuMSw0LjMsMC4zYzEuMiwwLjIsMi41LDAuNSwzLjYsMWMzLjIsMS4zLDUuNywzLjMsNy40LDYKICAgICAgICAgICAgICBDMTQ1LjIsMTAsMTQ2LDEzLjMsMTQ2LDE3Ij48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF80XykiIGQ9Ik0xNjYuNCwxOC4xYy0wLjcsMC0xLjQsMC4yLTIuMSwwLjNjLTEuNSwwLjQtMi41LDEuMS0zLjIsMi4yYy0wLjIsMC40LTAuNCwwLjktMC41LDEuNQogICAgICAgICAgICAgIGMtMC4xLDAuNi0wLjEsMS42LTAuMSwyLjl2Mi4zaDIuNnY2LjJoLTE1LjN2LTYuMmgxLjlWMTYuOGgtMS45di02LjJoMTIuN3YzLjVjMS4zLTEuNCwyLjYtMi41LDMuOS0zLjJjMS4zLTAuNywyLjctMSw0LjItMC45CiAgICAgICAgICAgICAgbDAuOCwwVjE4QzE2OC4xLDE4LDE2Ny4xLDE4LjEsMTY2LjQsMTguMSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBjbGlwLXBhdGg9InVybCgjU1ZHSURfNF8pIiBkPSJNMTg3LDIxLjljMC0xLjctMC4zLTIuOS0wLjgtMy44Yy0wLjUtMC45LTEuMy0xLjMtMi4zLTEuM2MtMSwwLTEuOCwwLjUtMi4zLDEuNAogICAgICAgICAgICAgIGMtMC41LDAuOS0wLjgsMi4zLTAuOCw0YzAsMSwwLjEsMS45LDAuNCwyLjhjMC4yLDAuOSwwLjUsMS41LDAuOSwyYzAuNSwwLjYsMS4xLDAuOSwxLjgsMC45YzEsMCwxLjgtMC41LDIuNC0xLjUKICAgICAgICAgICAgICBDMTg2LjcsMjUuMywxODcsMjMuOCwxODcsMjEuOSBNMTg3LjIsMzMuNXYtMi4zbC0wLjQsMC4zYy0wLjgsMC41LTEuNCwwLjktMS44LDEuMmMtMC40LDAuMy0wLjgsMC41LTEsMC42CiAgICAgICAgICAgICAgYy0xLjIsMC41LTIuNCwwLjgtMy43LDAuOGMtMS41LDAtMi45LTAuMy00LjEtMC45Yy0xLjItMC42LTIuMy0xLjQtMy4zLTIuNWMtMC45LTEuMS0xLjYtMi4zLTIuMi0zLjhjLTAuNS0xLjQtMC44LTMtMC44LTQuOAogICAgICAgICAgICAgIHMwLjMtMy4zLDAuOC00LjdjMC41LTEuNCwxLjMtMi42LDIuMi0zLjdjMS0xLDIuMS0xLjgsMy40LTIuNGMxLjMtMC42LDIuOC0wLjgsNC40LTAuOGMxLjMsMCwyLjQsMC4yLDMuNCwwLjVjMSwwLjMsMiwwLjgsMywxLjUKICAgICAgICAgICAgICB2LTJIMTk4djE2LjdoMnY2LjJIMTg3LjJ6Ij48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF80XykiIGQ9Ik0yMDEuNSwzMy41di02LjJoMi4yVjE2LjhoLTIuMnYtNi4yaDIuMlY5LjhjMC0xLDAtMS45LDAuMS0yLjdjMC4xLTAuOCwwLjItMS40LDAuMy0yCiAgICAgICAgICAgICAgYzAuMi0wLjYsMC40LTEuMSwwLjYtMS42czAuNi0wLjksMC45LTEuM2MwLjctMC43LDEuNi0xLjMsMi44LTEuN2MxLjItMC40LDIuNS0wLjYsNC4xLTAuNmg0Ljd2N2MtMC43LDAuMS0xLjMsMC4xLTEuNiwwLjIKICAgICAgICAgICAgICBjLTAuNCwwLjEtMC43LDAuMy0wLjksMC42Yy0wLjIsMC4zLTAuMywwLjctMC4zLDEuMWMwLDAuNCwwLDAuOSwwLDEuN2gyLjl2Ni4yaC0yLjh2MTAuNWgyLjh2Ni4ySDIwMS41eiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0iMjIwLjksMy40IDIyMC45LDEwLjYgMjE5LDEwLjYgMjE5LDE2LjggMjIwLjksMTYuOCAyMjAuOSwzMy41IDIzNC45LDMzLjUgMjM0LjksMjcuMyAyMzEuNywyNy4zIDIzMS43LDE2LjgKICAgICAgICAgICAgMjM0LjksMTYuOCAyMzQuOSwxMC42IDIzMS43LDEwLjYgMjMxLjcsMy40ICI+PC9wb2x5Z29uPgogICAgICAgICAgPC9zdmc+Cg==" />
+					<!--<span>FirstDraft</span>-->
+				</a>
+				 <span class="header-current-day">Dec.9, 2015<span class="arrow-holder"><span class="arrow"><!--&#9660;--></span></span></span><ul class="header-days-dropdown"><li><a href="//www.nytimes.com/politics/first-draft/2016/05/13/">May. 13, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/12/">May. 12, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/11/">May. 11, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/10/">May. 10, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/09/">May. 9, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/06/">May. 6, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/05/">May. 5, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/04/">May. 4, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/03/">May. 3, 2016</a></li><li><a href="//www.nytimes.com/politics/first-draft/2016/05/02/">May. 2, 2016</a></li></ul>			</div>
+			<div id="header-social-options">
+				<a class="briefing" href="//www.nytimes.com/newsletters/politics/" target="mailing">
+					Politics Newsletter: <button class="mailing-list">Sign Up</button>
+				</a>
+				<div class="social-wrapper">
+					<span class="social-label">Follow Us</span>
+					<a class="twitter" href="https://twitter.com/NYTPolitics">
+						&nbsp;
+					</a>
+					<a class="facebook" href="https://www.facebook.com/nytpolitics">
+						&nbsp;
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="site-description">Political News, Now.</div>
+	</div>
+</div></header>	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+		<section class="posts posts-no-stickies">
+			<div class="content">
+								<article class="entry post-28597 post type-post status-publish hentry tag-china tag-chinese-americans tag-discrimination tag-eisenhower-dwight-david tag-illegal-immigration tag-immigration-and-emigration tag-japan tag-mexico tag-muslim-americans tag-presidential-election-of-2016 tag-republican-party tag-roosevelt-franklin-delano tag-trump-donald-j tag-united-states per-eisenhower-dwight-david per-roosevelt-franklin-delano per-trump-donald-j des-chinese-americans des-discrimination des-illegal-immigration des-immigration-and-emigration des-muslim-americans des-presidential-election-of-2016 org-republican-party geo-china geo-japan geo-mexico geo-united-states news_keywords-china news_keywords-chinese-american news_keywords-discrimination news_keywords-japan news_keywords-mexico" id="post-28597">
+					<div class="entry-content">
+	<div class="inline-module-container show-on-viewport-medium">
+	<div class="inlineModule byline">
+		<!-- date published --><time class="dateline " datetime="2015-12-09T11:00:42+00:00" itemprop="datePublished">6:00 <span class="seg">am ET</span></time>
+			<!-- date updated --><span class="visually-hidden updated">6:00 <span class="seg">am ET</span></span>    		<div class="name name-with-headshot" data-author="By Alan Rappeport"style="background-image: url('https://static01.nyt.com/images/2014/09/22/us/politics/Alan-Rappeport/First-Draft-avatars-slide-UQ7D-thumbLarge.png');">
+    			<address class="author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+								<span class="fn">By Alan Rappeport</span>
+							</address>
+		</div>
+		<div class="shareTools sharetools theme-classic sharetools-story" data-shares="facebook|Share,twitter|Tweet" data-url="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/" data-title="Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots" data-description="Mr. Trump’s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history."></div>	</div>
+</div><h1 itemprop="headline" class="entry-title"><a href="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/" rel="bookmark" class="entry-title-link " title="Permanent link to Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots">Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots</a></h1>	<div class="hide-on-viewport-medium byline">
+		<!-- date published --><time class="dateline " datetime="2015-12-09T11:00:42+00:00" itemprop="datePublished">6:00 <span class="seg">am ET</span></time>
+			<!-- date updated --><span class="visually-hidden updated">6:00 <span class="seg">am ET</span></span>		<div class="name name-with-headshot" data-author="By Alan Rappeport" style="background-image: url('https://static01.nyt.com/images/2014/09/22/us/politics/Alan-Rappeport/First-Draft-avatars-slide-UQ7D-thumbLarge.png');">
+			<span class="author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By <address class="vcard first-byline" itemscope itemprop="author creator" itemtype="//schema.org/Person" itemid="Alan Rappeport">
+					<span class="fn" itemprop="name">Alan Rappeport</span>
+				</address>			</span>
+		</div>
+		<div class="shareTools sharetools theme-classic sharetools-story" data-shares="facebook|Share,twitter|Tweet" data-url="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/" data-title="Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots" data-description="Mr. Trump’s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history."></div>	</div>
+	<div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-tmagArticle.jpg" src="https://static01.nyt.com/images/2015/12/08/us/08firstdraftnl-history/08firstdraftnl-history-tmagArticle.jpg" id="100000004081973" width="592" height="395" alt="The Rohwer Relocation Center near Rohwer, Ark., in September 1942. It was one of several Japanese internment camps in the United States."   /><meta itemprop="height" content="395"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text">The Rohwer Relocation Center near Rohwer, Ark., in September 1942. It was one of several Japanese internment camps in the United States.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Horace Cort/Associated Press</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">Donald J. Trump’s proposal to ban all Muslims from entering the United States has been panned as reactionary, discriminatory and immoral by Republicans and Democrats, drawing comparisons to persecution of Jews and stirring recollections of Japanese internment camps.</p>
+<p class="story-body-text" itemprop="articleBody">While Muslims have not been the targets of such policies in the United States, the sentiment of keeping certain kinds of people out of the country is not unprecedented in American history.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Trump acknowledged as much on Tuesday, when he pointed to former President Franklin D. Roosevelt’s so-called enemy alien control program. The World War II-era provisions allowed law enforcement agencies to arrest people of German, Italian or Japanese ancestry who were living in the United States. Mr. Trump said that the former president had remained so popular that roads had been named after him.</p>
+<p class="story-body-text" itemprop="articleBody">Mr. Trump also <a href="//www.nytimes.com/interactive/2016/us/elections/fact-check.html#/factcheck-4">made reference</a> this week to <a href="https://tshaonline.org/handbook/online/articles/pqo01">a controversial 1954 policy</a> introduced by President Dwight D. Eisenhower after a spike in immigration was deemed to have suppressed wages and created an influx of crime. Under the program, nicknamed “Operation Wetback,” the United States employed military buses and planes to swoop into border settlements and cities and remove undocumented immigrants who had crossed the Rio Grande from Mexico looking for work.</p>
+<p class="story-body-text" itemprop="articleBody">“Everybody liked Ike,” Mr. Trump said of Mr. Eisenhower in an interview on MSNBC.</p>
+<p class="story-body-text" itemprop="articleBody">But tough immigration tactics date even farther back.</p>
+<p class="story-body-text" itemprop="articleBody">In 1924, Congress passed <a href="https://history.state.gov/milestones/1921-1936/immigration-act">the Johnson-Reed Act</a>, a piece of legislation that imposed tight quotas on entry into the United States in hopes of preserving the country’s demographics. It brought literacy tests and new measures to keep Asians out of the country, while loosening restrictions on immigration from the British Isles and Western Europe. The law built upon a 1917 immigration change, born from World War I national security concerns, that imposed an “Asiatic Barred Zone” against people from much of South and Southeast Asia.</p>
+<p class="story-body-text" itemprop="articleBody">“We sort of ebb and flow nationally from openness to a surge of anti-immigrant sentiment,” Omar Wasow, a political science professor at Princeton University, said. “We’re in the midst of one of those convulsions.”</p>
+<p class="story-body-text" itemprop="articleBody">Chinese immigrants were the target of xenophobia in the 1800s. An influx of Chinese laborers came to the United States in the second half of the century to work in mines and factories, eventually stirring anti-Chinese sentiment. <a href="https://history.state.gov/milestones/1866-1898/chinese-immigration">According to the State Department</a>, “American objections to Chinese immigration took many forms, and generally stemmed from economic and cultural tensions, as well as ethnic discrimination.”</p>
+<p class="story-body-text" itemprop="articleBody">After some debate about offending China, by 1882 Congress had passed the Chinese Exclusion Act, which banned for a decade the immigration of skilled and unskilled Chinese laborers. The law required Chinese people who entered or left the United States to carry identifications cards certifying their work status. Tighter restrictions were added until 1943 when China became a wartime ally and the law was repealed.</p>
+<p class="story-body-text" itemprop="articleBody">Erika Lee, director of the Immigration History Research Center at the University of Minnesota, said that the Chinese Exclusion Act was remembered by scholars as one of the darkest periods in American history. However, unlike Mr. Trump’s proposal, it had some exceptions that allowed passage for Chinese students, teachers and tourists.</p>
+<p class="story-body-text" itemprop="articleBody">“As egregious as that law was, Trump’s recent proposal to call for an all-out ban on Muslim immigration is even worse than the exclusion act,” Ms. Lee said. “I never thought I’d say this, but in comparison to this proposal, the exclusion act looks better.”</p>
+<div class="w480"><p style="margin:0;"><em>Find out what you need to know about the <a href="//www.nytimes.com/interactive/2016/us/elections/election-2016.html">2016 presidential race</a> today, and get politics news updates via <a href="https://www.facebook.com/nytpolitics">Facebook</a>, <a href="https://www.twitter.com/nytpolitics">Twitter</a> and <a href="//www.nytimes.com/newsletters/politics/">the First Draft newsletter</a>.</em></p></div>
+		<div class="hide-on-viewport-medium sharetools-footer">
+		<div class="shareTools sharetools theme-classic sharetools-story" data-shares="facebook|Share,twitter|Tweet" data-url="//www.nytimes.com/politics/first-draft/2015/12/09/idea-behind-donald-trumps-plan-to-bar-muslims-has-some-deep-roots/" data-title="Idea Behind Donald Trump&rsquo;s Plan to Bar Muslims Has Some Deep Roots" data-description="Mr. Trump’s proposal to stop all Muslims from entering the United States has been panned, but while Muslims have not been the targets of such policies in the United States, the desire to keep certain kinds of people out of the country is not unprecedented in American history."></div>		</div>
+	<div class="clear"></div>
+	</div>				</article>
+							</div>
+		</section>
+	</div><!-- end content -->
+</div><!-- end .a-column -->
+<nav class="day-navigation">
+	<span class="day-nav day-previous">
+				<a href="//www.nytimes.com/politics/first-draft/2015/12/08/">
+			<span class="day">Tue. Dec. 08</span>
+			<span class="count">19 Posts</span>
+		</a>
+			</span>
+	<span class="day-nav day-next">
+				<a href="//www.nytimes.com/politics/first-draft/2015/12/10/">
+			<span class="day">Thu. Dec. 10</span>
+			<span class="count">14 Posts</span>
+		</a>
+			</span>
+</nav>
+<div class="first-draft-ad">
+	<div class="ad" id="TopAd1"></div>
+</div>
+<footer class="footer-sidebar">
+	<!-- fake modules -->
+	<div class="module nocontent">
+		<h4 class="moduleHeader">About First Draft</h4>
+		<p>
+		First Draft provides fast-paced and comprehensive coverage of politics and elections by The New York Times. Come back throughout the day for the latest news and analysis, and be part of the political conversation.
+		</p>
+        <p>
+        <br />Like it? Hate it? Have a tip for us? Send any and all feedback to <a href="mailto:firstdraft@nytimes.com">firstdraft@nytimes.com</a>.
+        </p>
+	</div>
+	<div class="module nocontent follow-module">
+		<h4 class="moduleHeader briefing">Politics Newsletter</h4>
+		<div class='brief-container'>
+			<p>
+			We send out a newsletter around 7 a.m. eastern time each weekday that serves as a look-ahead to the day's political events and expected stories.
+			</p>
+			<a href="//www.nytimes.com/newsletters/politics/" target="mailing" class="mailing-list">Sign Up</a>
+		</div>
+		<h4 class="moduleHeader follow-us">Follow Us</h4>
+		<ul class="social-links">
+			<li><a class="twitter" href="https://twitter.com/NYTPolitics"><span class="label">@NYTPolitics</span></a></li>
+			<li><a class="facebook" href="https://www.facebook.com/nytpolitics"><span class="label">Follow us on Facebook</span></a></li>
+			<li><a class="rss" href="//www.nytimes.com/politics/first-draft/feed/"><span class="label">RSS Feed</span></a></li>
+		</ul>
+	</div>
+</footer>
+<script>
+(function (){function o(o){o=o||window.event;var u=o.target||o.srcElement,a,f,l;while(u&&u.nodeName.toLowerCase()!=="a"){u=u.parentNode}if(u&&u.nodeName.toLowerCase()==="a"&&u.href){a=u.href.match(e);if(a){f=Math.round(s/2-n/2);l=0;if(i>r){l=Math.round(i/2-r/2)}window.open(u.href,"intent",t+",width="+n+",height="+r+",left="+f+",top="+l);o.returnValue=false;o.preventDefault&&o.preventDefault()}}}if(window.__twitterIntentHandler)return;var e=/twitter\.com(\:\d{2,4})?\/intent\/(\w+)/,t="scrollbars=yes,resizable=yes,toolbar=no,location=yes",n=550,r=420,i=screen.height,s=screen.width;if(document.addEventListener){document.addEventListener("click",o,false)}else if(document.attachEvent){document.attachEvent("onclick",o)}window.__twitterIntentHandler=true})()
+</script>
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+		</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-150',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+			</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+			<script>
+		require(['foundation/main'], function () {
+			require( ['blogs/instances/first-draft'] );
+		});
+	</script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":51,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-pogue section-technology"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-pogue section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-pogue section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-pogue section-technology" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/pogue/A New Kindle Fire, Just in Time for the Holiday Season ( 20131003 )" />
+<meta name="communityAssetURL" content="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta name="author" content="" />
+<meta name="CLMST" content="" />
+<meta name="byl" content="" />
+<meta name="GBLC" content="Tablets">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1380800232" />
+<meta name="PUD" content="20131003" />
+<meta name="pdate" content="20131003" />
+<meta name="ptime" content="20131003073712" />
+<meta name="utime" content="20131008162033" />
+<meta property="article:modified_time" itemprop="dateModified" content="2013-10-08T16:20:33-04:00" />
+<meta name="DISPLAYDATE" content="October 3, 2013" />
+<meta name="dat" content="October 3, 2013" />
+<meta itemprop="articleSection" property="article:section" content="Technology" />
+<meta name="CG" content="Technology" />
+<meta name="SCG" content="pogue" />
+<meta name="BN" content="pogue" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Amazon Kindle;Tablet Computers">
+<meta name="org" content="Amazon.com Inc">
+<meta name="ticker" content="Amazon.com Inc|AMZN|NASDAQ" />
+<meta property="article:tag" content="Amazon Kindle" />
+<meta property="article:tag" content="Tablet Computers" />
+<meta property="article:tag" content="Amazon.com Inc" />
+<meta property="article:tag" content="Tablets" />
+<meta name="keywords" content="Amazon Kindle,Tablet Computers,Amazon.com Inc,Tablets" />
+<meta name="description" content="The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#8217;s a lighter, sharper and faster pleasure than the prior model." />
+<meta name="hdl" content="A New Kindle Fire, Just in Time for the Holiday Season" />
+<meta property="og:title" content="A New Kindle Fire, Just in Time for the Holiday Season" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" />
+<meta property="og:site_name" content="Pogue’s Posts Blog" />
+<meta property="og:description" content="The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#8217;s a lighter, sharper and faster pleasure than the prior model." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="A New Kindle Fire, Just in Time for the Holiday Season" />
+<meta name="twitter:url" content="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" />
+<meta name="twitter:description" content="The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#8217;s a lighter, sharper and faster pleasure than the prior model." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@pogue">
+<link rel='prev' title='The iPhone 5s&#8217;s Fingerprint Scanner Was Hacked, but I&#8217;m Not Worried' href='//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/' />
+<link rel='next' title='T-Mobile Hands Consumers a Pleasant Shocker' href='//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/' />
+<link rel='canonical' href='//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/' />
+<link rel='shortlink' href='//nyti.ms/18wNBHD' />
+<link rel='https://github.com/WP-API/WP-API' href='//pogue.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/pogue/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//pogue.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/technology/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/pogue/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" />
+<meta name="dfp-ad-unit-path" content="technology/pogue" />			<title>A New Kindle Fire, Just in Time for the Holiday Season - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-7148 blog-universal nyt-blog-pogue" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Technology', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//pogue.blogs.nytimes.com">
+                Pogue&#039;s Posts            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        A New Kindle Fire, Just in Time for the Holiday Season        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/"
+	 data-title="A New Kindle Fire, Just in Time for the Holiday Season"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#039;s a lighter, sharper and faster pleasure than the prior model.&lt;/span&gt;&lt;a href=&quot;//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="October 3, 2013 7:37 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="pogue" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//pogue.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Technology"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/pogue/pogue75.gif" alt="Pogue&#039;s Posts"/></div><div class="site-title">Pogue&#039;s Posts</div><div class="site-description">The Latest in Technology From David Pogue</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//pogue.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Pogue&#039;s Posts">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-7148 post type-post status-publish hentry category-tablets tag-amazon-kindle tag-amazon-com-inc tag-tablet-computers-2 des-amazon-kindle des-tablet-computers org-amazon-com-inc" id="post-7148">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/?module=BlogCategory&version=Blog Post&action=Click&contentCollection=Technology&pgtype=Blogs&region=Header">From the Desk of David Pogue</a></span>
+		</div>
+				<h1 itemprop="headline" class="entry-title">A New Kindle Fire, Just in Time for the Holiday Season</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+							</address>
+			<!-- date published --><time class="dateline " datetime="2013-10-03T11:37:12+00:00" itemprop="datePublished">October 3, 2013 7:37 am</time>
+			<!-- date updated --><span class="visually-hidden updated">October 3, 2013 7:37 am</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2013/10/03/technology/personaltech/03fddp-kindle/03fddp-kindle-blog480.png" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/10/03/technology/personaltech/03fddp-kindle/03fddp-kindle-blog480.png" src="https://static01.nyt.com/images/2013/10/03/technology/personaltech/03fddp-kindle/03fddp-kindle-blog480.png" id="100000002480062" width="480" height="325" alt="The &quot;X&quot; in the Kindle Fire HDX is a reference to the screen’s clarity. It packs in 323 tiny dots per inch, making it sharper than high definition."   /><meta itemprop="height" content="325"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">The "X" in the Kindle Fire HDX is a reference to the screen’s clarity. It packs in 323 tiny dots per inch, making it sharper than high definition.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> </span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">If it’s October, that must mean the holiday buying season has begun — and that means Amazon will offer a new color tablet.</p>
+<p class="story-body-text" itemprop="articleBody">It’s the Kindle Fire HDX. It costs $230, and it’s terrific. The battery goes for about 11 hours, or 17 in a power-saving, reading-only mode. The stereo speakers sound great. The plastic case weighs less than the prior version and has narrower margins around the screen. There’s a mediocre camera on the front for video chatting (not on the back on the 7-inch model). The one big misfire was putting the power and volume keys on the back; you’ll spend the first week hitting the Off button by mistake while trying to turn it up the sound.</p>
+<p class="story-body-text" itemprop="articleBody">The X in “HDX” is a reference to the screen’s clarity. It packs in 323 tiny dots per inch, making it sharper than high definition, and making the iPad Mini’s 163 dots per inch look coarse.</p>
+<p class="story-body-text" itemprop="articleBody">The HDX’s screen really is spectacular, if infuriatingly reflective. The trouble is, you can see the new sharpness only when you’re looking at source material with resolution that high. The type in books and magazines looks razor-sharp, but most of the 150,000 TV shows and videos in Amazon’s catalog don’t look any clearer. Movies are also the wrong shape for the screen; you see black bands above and below.<span id="more-7148"></span></p>
+<p class="story-body-text" itemprop="articleBody">Although the Kindle is based on the Android operating system, Amazon has thoroughly disguised it.</p>
+<p class="story-body-text" itemprop="articleBody">The home screen still features a sliding horizontal “carousel” of everything you’ve had open recently — books, movies, music, apps. Below that carousel, you now see a traditional grid of icons, just as on other tablets. Good.</p>
+<p class="story-body-text" itemprop="articleBody">Parental controls are easy and effective. You can limit your kids’ time each day or limit which items they can use, watch or read.</p>
+<p class="story-body-text" itemprop="articleBody">Amazon has started to bring its X-Ray trivia feature to movies and music. Some of the songs you buy from Amazon (a few thousand, apparently) now display scrolling lyrics. And watching a movie with the X-Ray panel open is great fun; it identifies the actors in the scene before you, their bios one tap away, and tells you the name of the song playing in the background.</p>
+<p class="story-body-text" itemprop="articleBody">The company says that in an upcoming software update, you’ll be able to fling the video to a PlayStation 3 or a Samsung TV, while continuing to read the X-Ray details on your Kindle Fire. That doesn’t fully compensate, however, for the loss of any other way to connect the Fire to a TV (the HDMI jack is gone).</p>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2013/10/09/business/fddp-kindle/fddp-kindle-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2013/10/09/business/fddp-kindle/fddp-kindle-blog480.jpg" src="https://static01.nyt.com/images/2013/10/09/business/fddp-kindle/fddp-kindle-blog480.jpg" id="100000002487882" width="480" height="293" alt=""   /><meta itemprop="height" content="293"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text"></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Stuart Goldenberg</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">Boldest and most stunning of all, though, is Mayday: a button that places an instant, free video call to a 24-hour help technician. The agents can see your screen, but can’t see you. You can see the agents (in a tiny, 1-inch movable window), and accept their invitation to take control of your Kindle or draw with virtual highlighter pens around elements of the screen.</p>
+<p class="story-body-text" itemprop="articleBody">Mayday is amazing and truly practical — but keep in mind that the HDX (the 7-inch and its $380 9-inch sibling) won’t be for sale until later this month. Will there be enough of those video agents to go around, especially Christmas week?</p>
+<p class="story-body-text" itemprop="articleBody">Now, $230 is an excellent price for a tablet this fast, smooth and satisfying — and this Amazon tablet finally includes a wall charger. It’s $30 more than last year’s model, but bargain hunters might be happy with the revamped Kindle Fire HD, which is only $140 despite being, as a rep told me, “more performant” (I’m pretty sure that’s supposed to mean “faster”).</p>
+<p class="story-body-text" itemprop="articleBody">But $230 also happens to be the price of Google’s Nexus 7 tablet, which is also fast, smooth and satisfying, and also has a 323-d.p.i. screen. On the Kindle, though, you see a full-screen ad every time you turn on the device; getting rid of them forever costs another $15. For another $50, you can buy a cover that attaches magnetically and folds in weird ways to act as a stand.</p>
+<p class="story-body-text" itemprop="articleBody">So which is the better deal?</p>
+<p class="story-body-text" itemprop="articleBody">Depends on what you’re looking for. The Nexus is a real tablet, with all of the flexibility and complexity that entails. The Kindle Fire is still clearly intended to show off the books, TV shows, music and videos you’ve bought from Amazon.</p>
+<p class="story-body-text" itemprop="articleBody">It still doesn’t seem like a “real” tablet. There’s still no GPS navigation, no speech recognition, no to-do list or notes app. It doesn’t run standard Android apps, and can’t access the Google Play store that houses a million of them. About 100,000 apps have been tailored for the Fire, but lots of important ones are missing — including Dropbox, SkyDrive and anything by Google.</p>
+<p class="story-body-text" itemprop="articleBody">That’s not a slam, either. The Kindle’s simplicity and dedication to its purpose has always been its primary virtue. Amazon should tread carefully; piling on features risks junking up this focused, efficient reader. Already, the company intends to add “enterprise” features in a software update this fall: V.P.N. access, Office-compatible productivity suite, hardware data encryption and so on.</p>
+<p class="story-body-text" itemprop="articleBody">But never mind. As it is, the Kindle Fire HDX is a lightweight, sharp-screened, superfast pleasure.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" data-title="A New Kindle Fire, Just in Time for the Holiday Season" data-description="The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#039;s a lighter, sharper and faster pleasure than the prior model.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/" title="The iPhone 5s&#039;s Fingerprint Scanner Was Hacked, but I&#039;m Not Worried">
+				The iPhone 5s&#8217;s Fingerprint Scanner Was Hacked, but I&#8217;m Not Worried			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/" title="T-Mobile Hands Consumers a Pleasant Shocker">
+				T-Mobile Hands Consumers a Pleasant Shocker			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="story">
+<p class="summary">David Pogue's technology column has appeared each Thursday in The Times since 2000. Each week, he also writes the Times e-mail column "From the Desk of David Pogue," creates a short, funny Web video for NYTimes.com, and posts entries to his Times blog. In his other life, David is an Emmy-winning correspondent for CBS News, a frequent contributor to NPR's "Morning Edition," creator of the Missing Manual series of computer books, and father of three.</p>
+<ul class="refer">
+<li class="free"><a href="//topics.nytimes.com/top/reference/timestopics/people/p/david_pogue/index.html" target="_top">Recent Articles by David</a></li>
+<p><script type="text/javascript">
+//<![CDATA[
+
+function hiveware_enkoder(){var i,j,x,y,x=
+"x="783d223738336432323330373833643563323233363633333233323337333433363636" +
+"33363334333633393337333333373335333633343336363333363634333633353336333533" +
+"33363433353635333733343332363333323332333436353337333733373335333636343336" +
+"33323336333933373331333633393336333433363335333236333332333033343338333233" +
+"32333333343336333133373633333633313332333633363339333633303336333833373334" +
+"33353633333233323336333533363332333336353334333633333634333533353336363433" +
+"36363333323332333633313336333933363634333633313336363333323330333433393336" +
+"36333337333433363331333733343336363633333336333633393336363133373330333633" +
+"34333336333332363633363337333736363336333133333335333633353334363533323332" +
+"33323330333636353337333933333632333333393337333433363330333336323563323233" +
+"39333636343336336237393364323733353337333333323237336236363666363533363333" +
+"33363732323836393364363633363634333333303362363933633636333733333337373832" +
+"65366336353335333633323336366536373734363836313336333533363362363932623364" +
+"33333337333433333332323937623739363433353330333632623364373536653636333633" +
+"37333736353733363336313335333633353332373036353238323733373337333333323235" +
+"32373262373833353333333233333265373337353632333033353330333637333734373232" +
+"38363633373333333736393263333232393334333733333335323933623764373932323362" +
+"36613364363537363631366332383738326536333638363137323431373432383330323932" +
+"39336237383364373832653733373536323733373437323238333132393362373933643237" +
+"32373362363636663732323836393364333033623639336337383265366336353665363737" +
+"34363833623639326233643338323937623739326233643738326537333735363237333734" +
+"37323238363932633334323933623764363636663732323836393364333433623639336337" +
+"38326536633635366536373734363833623639326233643338323937623739326233643738" +
+"32653733373536323733373437323238363932633334323933623764373933643739326537" +
+"33373536323733373437323238366132393362223b793d27273b666f7228693d303b693c78" +
+"2e6c656e6774683b692b3d32297b792b3d756e657363617065282725272b782e7375627374" +
+"7228692c3229293b7d79";y='';for(i=0;i<x.length;i+=2){y+=unescape('%'+x.sub" +
+"str(i,2));}y";
+document.write('
+<li>');
+while(x=eval(x));}hiveware_enkoder();
+document.write('</li>
+
+');
+
+//]]>
+</script>
+</ul>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//pogue.blogs.nytimes.com/2013/10/'> October 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/09/'> September 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/08/'> August 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//pogue.blogs.nytimes.com/2012/08/'> August 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//pogue.blogs.nytimes.com/2013/10/23/david-pogue-times-technology-columnist-leaves-for-yahoo/" title="Read: David Pogue, Times Technology Columnist, Leaves for Yahoo">David Pogue, Times Technology Columnist, Leaves for Yahoo</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/23/david-pogue-times-technology-columnist-leaves-for-yahoo/"></a>
+				</span>			</h5>
+			<p class="summary">
+			After writing about personal technology for The Times for 13 years, David Pogue will start a consumer technology Web site at Yahoo.<a href="//pogue.blogs.nytimes.com/2013/10/23/david-pogue-times-technology-columnist-leaves-for-yahoo/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<h5><a href="//pogue.blogs.nytimes.com/2013/10/17/terrific-sound-in-a-tiny-package/" title="Read: Terrific Sound in a Tiny Package">Terrific Sound in a Tiny Package</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/17/terrific-sound-in-a-tiny-package/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The Jambox Mini is small enough to fit in a coat pocket and delivers sound that is richer, crisper and louder than the feeble speakers on your phone, tablet or laptop.<a href="//pogue.blogs.nytimes.com/2013/10/17/terrific-sound-in-a-tiny-package/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/"><img src="https://static01.nyt.com/images/2013/10/11/business/10fddp-1/10fddp-1-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/">From the Desk of David Pogue</a>
+				</h6>
+							<h5><a href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/" title="Read: T-Mobile Hands Consumers a Pleasant Shocker">T-Mobile Hands Consumers a Pleasant Shocker</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/"></a>
+				</span>			</h5>
+			<p class="summary">
+			T-Mobile&#8217;s plan to eliminate international roaming charges is bold and transparent. And it suggests that we&#8217;ve been paying those insane charges for nothing.<a href="//pogue.blogs.nytimes.com/2013/10/10/t-mobile-hands-consumers-a-pleasant-shocker/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/">From the Desk of David Pogue</a>
+				</h6>
+							<h5><a href="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" title="Read: A New Kindle Fire, Just in Time for the Holiday Season">A New Kindle Fire, Just in Time for the Holiday Season</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/"></a>
+				</span>			</h5>
+			<p class="summary">
+			The latest version of the Kindle Fire is still focused on its main purpose: encouraging consumers to buy more stuff from Amazon. But it&#8217;s a lighter, sharper and faster pleasure than the prior model.<a href="//pogue.blogs.nytimes.com/2013/10/03/a-new-kindle-fire-just-in-time-for-the-holiday-season/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//pogue.blogs.nytimes.com/category/from-the-desk-of-david-pogue/">From the Desk of David Pogue</a>
+				</h6>
+							<h5><a href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/" title="Read: The iPhone 5s&#8217;s Fingerprint Scanner Was Hacked, but I&#8217;m Not Worried">The iPhone 5s&#8217;s Fingerprint Scanner Was Hacked, but I&#8217;m Not Worried</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Yes, Apple&#8217;s Touch ID can be fooled &#8212; by a determined attacker with the time and resources to do it.<a href="//pogue.blogs.nytimes.com/2013/09/26/the-iphone-5ss-fingerprint-scanner-was-hacked-but-im-not-worried/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/pogue" title="Follow @pogue on twitter">@pogue</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/pogue" title="Follow pogue on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/pogue" title="Follow @pogue on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-27',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":59,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

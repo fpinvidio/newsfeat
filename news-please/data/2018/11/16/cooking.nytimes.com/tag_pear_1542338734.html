@@ -1,0 +1,2997 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pear Recipes - NYT Cooking</title>
+
+    <script>
+      window.googletag = window.googletag || {};
+      window.googletag.cmd = window.googletag.cmd || [];
+    </script>
+
+    <script>
+      // nyt-a cookie required for Abra
+      document.cookie="nyt-a="+(document.cookie.match(/(?:^|;) *nyt-a=([^;]+)/)||[,btoa(String.fromCharCode.apply(String,(window.crypto||msCrypto).getRandomValues(new Uint8Array(18)))).replace(/\+/g,"-").replace(/\//g,"_")])[1]+";domain=.nytimes.com;path=/;expires="+new Date(+new Date+31536e6).toUTCString();
+
+      var NYTD=NYTD||{};NYTD.Abra=function(t){"use strict";function n(t){var n=i[t];return n&&n[1]||null}function e(t,n){if(t){var e,o,r=n[0],i=n[1],u=0,c=0;if(1!==i.length||4294967296!==i[0])for(e=a(t+" "+r)>>>0,u=0,c=0;o=i[u++];)if(e<(c+=o[0]))return o}}function o(n,e,o,a){s+="subject="+n+"&test="+encodeURIComponent(e)+"&variant="+encodeURIComponent(o||0)+"&url="+encodeURIComponent(t.location.href)+"&instant=1&skipAugment=true\n",a&&f.push(a),c||(c=t.setTimeout(r,0))}function r(){var n=new t.XMLHttpRequest,e=f;n.withCredentials=!0,n.open("POST",u),n.onreadystatechange=function(){var t,o;if(4==n.readyState)for(t=200==n.status?null:new Error(n.statusText);o=e.shift();)o(t)},n.send(s),s="",f=[],c=null}function a(t){for(var n,e,o,r,a,i,u,c=0,s=0,f=[],l=[n=1732584193,e=4023233417,~n,~e,3285377520],h=[],p=t.length;s<=p;)h[s>>2]|=(s<p?t.charCodeAt(s):128)<<8*(3-s++%4);for(h[u=p+8>>2|15]=p<<3;c<=u;c+=16){for(n=l,s=0;s<80;n=[0|[(i=((t=n[0])<<5|t>>>27)+n[4]+(f[s]=s<16?~~h[c+s]:i<<1|i>>>31)+1518500249)+((e=n[1])&(o=n[2])|~e&(r=n[3])),a=i+(e^o^r)+341275144,i+(e&o|e&r|o&r)+882459459,a+1535694389][0|s++/20],t,e<<30|e>>>2,o,r])i=f[s-3]^f[s-8]^f[s-14]^f[s-16];for(s=5;s;)l[--s]=l[s]+n[s]|0}return l[0]}var i,u,c,s="",f=[];return n.init=function(n,r){var a,c,s,f,l,h=[],p=(t.document.cookie.match(/(^|;) *nyt-a=([^;]*)/)||[])[2],d=(t.document.cookie.match(/(^|;) *ab7=([^;]*)/)||[])[2],m=new RegExp("[?&]abra(=([^&#]*))"),g=m.exec(t.location.search);if(g&&g[2]&&(d=d?g[2]+"&"+d:g[2]),i)throw new Error("can't init twice");if(u=r,i={},d)for(d=decodeURIComponent(d).split("&"),a=0;a<d.length;a++)l=d[a].split("="),l[0]in i||(i[l[0]]=[,l[1],1],o("ab-alloc",l[0],l[1]),l[1]&&h.push(l[0]+"="+l[1]));for(a=0;a<n.length;a++)s=n[a],(c=s[0])in i||(f=e(p,s)||[],i[c]=f,f[1]&&h.push(c.replace(/[^\w-]/g)+"="+(""+f[1]).replace(/[^\w-]/g)),f[2]&&o("ab-alloc",c,f[1]));h.length&&t.document.documentElement.setAttribute("data-nyt-ab",h.join(" "))},n.reportExposure=function(n,e){var r=i[n];r&&r[2]?o("ab-expose",n,r[1],e):e&&t.setTimeout(function(){e(null)},0)},n}(this);
+
+        NYTD.Abra.init([
+  [
+    "COOK_TP3_FreePayBalance",
+    [
+      [
+        429496730,
+        "0_control",
+        1
+      ],
+      [
+        429496730,
+        "1_paid",
+        1
+      ],
+      [
+        3435973836,
+        "holdout",
+        0
+      ]
+    ]
+  ]
+], '//et.nytimes.com');
+    </script>
+
+    <meta charset="UTF-8">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dea65dec80","applicationID":"38387186","transactionName":"cAleTBBWWVVRRBtDVlFJQ10DS1ZRG0JVUw==","queueTime":0,"applicationTime":70,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="sourceApp" content="nytcooking" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+<meta name="CG" content="npv">
+<meta name="SCG" content="cooking">
+<meta name="PT" content="tag">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="apple-itunes-app"
+      content="app-id=911422904">
+
+
+  <meta property="og:url" content="https://cooking.nytimes.com/tag/pear"/>
+  <link rel="canonical" href="https://cooking.nytimes.com/tag/pear" />
+
+  <meta property="og:title" content="Pear Recipes" />
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="NYT Cooking"/>
+<meta property="article:publisher" content="https://www.facebook.com/nytcooking"/>
+<meta property="fb:app_id" content="422306974586348" />
+
+  <meta property="og:image" content="https://int.nyt.com/applications/cooking/static/images/NYTCookingLogo.png"/>
+
+  <meta property="og:description" content="Browse and save the best pear recipes on New York Times Cooking."/>
+
+    <meta name="description" content="Browse and save the best pear recipes on New York Times Cooking."/>
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@nytfood"/>
+
+
+
+<link rel="shortcut icon" href="/favicon.ico" />
+
+  <script async src="//typeface.nytimes.com/plw8kql.js"></script>
+
+
+      <script>
+   dataLayer = [{
+     'pageCategory': 'tagLanding',
+   }];
+  </script>
+
+
+      <link rel="stylesheet" media="all" href="//int.nyt.com/applications/cooking/b6a7ace/assets/core.min.css" />
+
+    <meta name="apple-mobile-web-app-title" content="NYT Cooking">
+<meta name="application-name" content="NYT Cooking">
+
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+
+  </head>
+
+  <body class="tag-landing-page logged-out    ">
+      <div id="js-react-on-rails-context" style="display:none" data-rails-context="{&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://cooking.nytimes.com/tag/pear&quot;,&quot;location&quot;:&quot;/tag/pear&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;cooking.nytimes.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/tag/pear&quot;,&quot;search&quot;:null,&quot;httpAcceptLanguage&quot;:&quot;en&quot;,&quot;serverSide&quot;:false}"></div>
+<div class="js-react-on-rails-component" style="display:none" data-component-name="SiteNavWrapped" data-props="{&quot;user&quot;:null,&quot;modalState&quot;:{&quot;isOpen&quot;:false},&quot;popover&quot;:{&quot;dragToFolderPopover&quot;:{&quot;isDisplayed&quot;:false},&quot;savePopover&quot;:{&quot;isDisplayed&quot;:false,&quot;saveType&quot;:&quot;&quot;},&quot;signUpPopover&quot;:{&quot;isShown&quot;:false},&quot;subscribePopover&quot;:{&quot;isDisplayed&quot;:false}},&quot;app&quot;:{&quot;consumerMarketingURL&quot;:&quot;https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?return_url=https://cooking.nytimes.com&quot;,&quot;env&quot;:&quot;production&quot;,&quot;saveRecapURL&quot;:&quot;https://ckg-user-recommendations-dot-nyt-ckg-prd.appspot.com/recommendations/users&quot;,&quot;staticAssetHost&quot;:&quot;//int.nyt.com/applications/cooking/static&quot;},&quot;page&quot;:{&quot;type&quot;:&quot;tag-landing-page&quot;,&quot;id&quot;:null,&quot;viewableType&quot;:null},&quot;editorsCollections&quot;:{},&quot;promos&quot;:{&quot;homepage&quot;:null,&quot;recipeDetails&quot;:null,&quot;isFetchingPromos&quot;:false},&quot;recirculationBand&quot;:{&quot;suggestionsData&quot;:[],&quot;isTablet&quot;:false,&quot;promo&quot;:null},&quot;searchBarIsOpen&quot;:false,&quot;sidebarIsOpen&quot;:false,&quot;siteSearch&quot;:{&quot;query&quot;:&quot;&quot;,&quot;isFocused&quot;:false,&quot;autocomplete&quot;:{&quot;tags&quot;:null,&quot;recipes&quot;:null,&quot;guides&quot;:null}},&quot;topNav&quot;:{&quot;label&quot;:&quot;Thanksgiving&quot;,&quot;path&quot;:&quot;/topics/thanksgiving&quot;}}" data-trace="true" data-dom-id="siteNavMount"></div>
+    <div id="siteNavMount"><div data-reactroot="" data-reactid="1" data-react-checksum="492260466"><div class="nytc---sitenav---siteNav" data-reactid="2"><div class="nytc---sitenav---siteNavWrap" data-reactid="3"><div class="nytc---maintenancemodebanner---maintenance-mode-banner" data-reactid="4"><span data-reactid="5">Sorry! We&#x27;re currently performing maintenance on the site. Certain actions are not working at this time. Check back later.</span></div><div class="nytc---hamburgerbtn---hamburgerWrapper" data-reactid="6"><a class="nytc---hamburgerbtn---hamburger" data-reactid="7"><span data-reactid="8">Menu</span></a></div><a href="/?action=click&amp;module=nav&amp;region=logo&amp;pgType=tag-landing-page" class="nytc---sitelogo---logoWrapper" alt="Cooking with The New York Times" data-reactid="9"><div class="nytc---sitelogo---logo" data-reactid="10"></div></a><a class="nytc---mobileSearchIcon---iconWrapper nytc---mobileSearchIcon---position" data-reactid="11"><span class="nytc---mobileSearchIcon---icon" data-reactid="12"></span></a><div class="nytc---mask---hidden nytc---mask---showNavBlackBG" data-reactid="13"></div></div></div><div class="nytc---sitesearch---siteSearch nytc---sitesearch---isNotLoggedIn nytc---sitesearch---isNotSubscribed" data-reactid="14"><div class="nytc---sitesearchbar---inputWrap" data-reactid="15"><form class="nytc---sitesearchbar---searchForm" action="/" data-reactid="16"><span class="nytc---sitesearchbar---clearQuery" data-reactid="17">X</span><input type="search" aria-label="Search NYT Cooking" class="nytc---sitesearchbar---searchInput" placeholder="What would you like to cook?" value="" data-reactid="18"/><span class="nytc---sitesearchbar---searchBTN" data-reactid="19">Search</span></form></div></div></div></div>
+    
+<script id="consoleReplayLog">
+console.log.apply(console, ["[SERVER] RENDERED SiteNavWrapped to dom node with id: siteNavMount with railsContext:","{\"inMailer\":false,\"i18nLocale\":\"en\",\"i18nDefaultLocale\":\"en\",\"href\":\"https://cooking.nytimes.com/tag/pear\",\"location\":\"/tag/pear\",\"scheme\":\"https\",\"host\":\"cooking.nytimes.com\",\"port\":null,\"pathname\":\"/tag/pear\",\"search\":null,\"httpAcceptLanguage\":\"en\",\"serverSide\":true}"]);
+</script>
+
+
+    <div id="appContainer"></div>
+    <div id="alertBannerMount"></div>
+
+
+
+    <div id="container">
+      
+
+  <div id="content" class="landing-content">
+    <section id="latest-recipes">
+      <div class="latest-container grid-wrap">
+        <h1 id="tag-title">Pear Recipes</h1>
+        <section class="recipe-card-list track-card-params"
+                 data-layout="grid"
+                 data-analytics-category="Tag | pear"
+                 data-tracker-module="Tag Page Recipe Card"
+                 data-tracker-region="pear"
+                 data-page-type="tag"
+                 >
+          
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019650"
+           data-url="/recipes/1019650-apple-pear-galette-with-apple-cider-caramel"
+           data-seo-image-url="https://static01.nyt.com/images/2018/10/09/dining/ss-apple-pear-galette/ss-apple-pear-galette-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019650-apple-pear-galette-with-apple-cider-caramel"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/10/09/dining/ss-apple-pear-galette/ss-apple-pear-galette-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/10/09/dining/ss-apple-pear-galette/ss-apple-pear-galette-verticalTwoByThree735.jpg' alt='Image for Apple-Pear Galette With Apple Cider Caramel'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019650-apple-pear-galette-with-apple-cider-caramel"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Apple-Pear Galette With Apple Cider Caramel"
+          data-share-title="Apple-Pear+Galette+With+Apple+Cider+Caramel+by+Samantha+Seneviratne">
+        Apple-Pear Galette With Apple Cider Caramel
+      </h3>
+
+
+        <p class="card-byline">By Samantha Seneviratne</p>
+    </div>
+
+      <p class="cooking-time">1 hour 10 minutes, plus chilling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019592"
+           data-url="/recipes/1019592-roasted-pear-quick-bread"
+           data-seo-image-url="https://static01.nyt.com/images/2018/09/26/dining/ed-pear-quickbread/ed-pear-quickbread-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019592-roasted-pear-quick-bread"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/09/26/dining/ed-pear-quickbread/ed-pear-quickbread-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/09/26/dining/ed-pear-quickbread/ed-pear-quickbread-verticalTwoByThree735.jpg' alt='Image for Roasted Pear Quick Bread'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019592-roasted-pear-quick-bread"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Roasted Pear Quick Bread"
+          data-share-title="Roasted+Pear+Quick+Bread+by+Erin+Jeanne+McDowell">
+        Roasted Pear Quick Bread
+      </h3>
+
+
+        <p class="card-byline">By Erin Jeanne McDowell</p>
+    </div>
+
+      <p class="cooking-time">About 1 1/2 hours, plus 1 hour&#39;s cooling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019299"
+           data-url="/recipes/1019299-freds-chicken-salad-with-balsamic-dressing"
+           data-seo-image-url="https://static01.nyt.com/images/2018/05/08/dining/08COOKING-CHOPCHIXSALAD/08COOKING-CHOPCHIXSALAD-threeByTwoMediumAt2X.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019299-freds-chicken-salad-with-balsamic-dressing"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/05/08/dining/08COOKING-CHOPCHIXSALAD/08COOKING-CHOPCHIXSALAD-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/05/08/dining/08COOKING-CHOPCHIXSALAD/08COOKING-CHOPCHIXSALAD-verticalTwoByThree735.jpg' alt='Image for Freds' Chicken Salad With Balsamic Dressing'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019299-freds-chicken-salad-with-balsamic-dressing"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Freds&#39; Chicken Salad With Balsamic Dressing"
+          data-share-title="Freds%27+Chicken+Salad+With+Balsamic+Dressing+by+Ginia+Bellafante">
+        Freds&#39; Chicken Salad With Balsamic Dressing
+      </h3>
+
+
+        <p class="card-byline">By Ginia Bellafante</p>
+    </div>
+
+      <p class="cooking-time">45 minutes, plus roasting and cooling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018983"
+           data-url="/recipes/1018983-pork-stew-with-pears-and-sweet-potatoes"
+           data-seo-image-url="https://static01.nyt.com/images/2018/01/03/dining/03COUNTRYRIBS/03COUNTRYRIBS-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018983-pork-stew-with-pears-and-sweet-potatoes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2018/01/03/dining/03COUNTRYRIBS/03COUNTRYRIBS-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2018/01/03/dining/03COUNTRYRIBS/03COUNTRYRIBS-verticalTwoByThree735.jpg' alt='Image for Pork Stew With Pears and Sweet Potatoes'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018983-pork-stew-with-pears-and-sweet-potatoes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pork Stew With Pears and Sweet Potatoes"
+          data-share-title="Pork+Stew+With+Pears+and+Sweet+Potatoes+by+John+Willoughby">
+        Pork Stew With Pears and Sweet Potatoes
+      </h3>
+
+
+        <p class="card-byline">By John Willoughby</p>
+    </div>
+
+      <p class="cooking-time">2 hours, plus marinating</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019017"
+           data-url="/recipes/1019017-black-and-brown-rice-stuffing-with-walnuts-and-pears"
+           data-seo-image-url="https://static01.nyt.com/images/2011/11/08/science/11recipehealth/11recipehealth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019017-black-and-brown-rice-stuffing-with-walnuts-and-pears"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2011/11/08/science/11recipehealth/11recipehealth-largeHorizontal375-v2.jpg' data-pin-media='https://static01.nyt.com/images/2011/11/08/science/11recipehealth/11recipehealth-verticalTwoByThree735-v2.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019017-black-and-brown-rice-stuffing-with-walnuts-and-pears"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Black and Brown Rice Stuffing With Walnuts and Pears"
+          data-share-title="Black+and+Brown+Rice+Stuffing+With+Walnuts+and+Pears+by+Martha+Rose+Shulman">
+        Black and Brown Rice Stuffing With Walnuts and Pears
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">About 1 hour 30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1019009"
+           data-url="/recipes/1019009-spiced-red-wine-poached-pears"
+           data-seo-image-url="https://static01.nyt.com/images/2017/10/29/magazine/29Paris-recipes4/29Paris-recipes4-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1019009-spiced-red-wine-poached-pears"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/10/29/magazine/29Paris-recipes4/29Paris-recipes4-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/10/29/magazine/29Paris-recipes4/29Paris-recipes4-verticalTwoByThree735.jpg' alt='Image for Spiced Red Wine Poached Pears'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1019009-spiced-red-wine-poached-pears"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spiced Red Wine Poached Pears"
+          data-share-title="Spiced+Red+Wine+Poached+Pears+by+Dorie+Greenspan">
+        Spiced Red Wine Poached Pears
+      </h3>
+
+
+        <p class="card-byline">By Dorie Greenspan</p>
+    </div>
+
+      <p class="cooking-time">35 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018847"
+           data-url="/recipes/1018847-apple-or-pear-jam"
+           data-seo-image-url="https://static01.nyt.com/images/2017/08/07/dining/07JAMGUIDE15/07JAMGUIDE15-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018847-apple-or-pear-jam"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/08/07/dining/07JAMGUIDE15/07JAMGUIDE15-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/08/07/dining/07JAMGUIDE15/07JAMGUIDE15-verticalTwoByThree735.jpg' alt='Image for Apple or Pear Jam'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018847-apple-or-pear-jam"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Apple or Pear Jam"
+          data-share-title="Apple+or+Pear+Jam+by+Alison+Roman">
+        Apple or Pear Jam
+      </h3>
+
+
+        <p class="card-byline">By Alison Roman</p>
+    </div>
+
+      <p class="cooking-time">About 1 1/2 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018711"
+           data-url="/recipes/1018711-haroseth-with-chestnuts-pine-nuts-pears-and-dried-fruits"
+           data-seo-image-url="https://static01.nyt.com/images/2017/04/05/dining/05PASSOVER6/05PASSOVER6-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018711-haroseth-with-chestnuts-pine-nuts-pears-and-dried-fruits"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/04/05/dining/05PASSOVER6/05PASSOVER6-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/04/05/dining/05PASSOVER6/05PASSOVER6-verticalTwoByThree735.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018711-haroseth-with-chestnuts-pine-nuts-pears-and-dried-fruits"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Haroseth With Chestnuts, Pine Nuts, Pears and Dried Fruits"
+          data-share-title="Haroseth+With+Chestnuts%2C+Pine+Nuts%2C+Pears+and+Dried+Fruits+by+Joan+Nathan">
+        Haroseth With Chestnuts, Pine Nuts, Pears and Dried Fruits
+      </h3>
+
+
+        <p class="card-byline">By Joan Nathan</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018663"
+           data-url="/recipes/1018663-cast-iron-sourdough-pancakes"
+           data-seo-image-url="https://static01.nyt.com/images/2017/03/19/magazine/19eat1/19eat1-videoSixteenByNineJumbo1600-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018663-cast-iron-sourdough-pancakes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/03/19/magazine/19eat1/19eat1-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/03/19/magazine/19eat1/19eat1-verticalTwoByThree735-v2.jpg' alt='Image for Cast-Iron Sourdough Pancakes'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018663-cast-iron-sourdough-pancakes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Cast-Iron Sourdough Pancakes"
+          data-share-title="Cast-Iron+Sourdough+Pancakes+by+Tejal+Rao">
+        Cast-Iron Sourdough Pancakes
+      </h3>
+
+
+        <p class="card-byline">By Tejal Rao</p>
+    </div>
+
+      <p class="cooking-time">30 minutes, plus overnight fermentation</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018574"
+           data-url="/recipes/1018574-pastry-nests-with-poached-pears-and-feta-and-saffron-cream"
+           data-seo-image-url="https://static01.nyt.com/images/2017/02/08/dining/08BAKING2/08BAKING2-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018574-pastry-nests-with-poached-pears-and-feta-and-saffron-cream"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/02/08/dining/08BAKING2/08BAKING2-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/02/08/dining/08BAKING2/08BAKING2-verticalTwoByThree735.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018574-pastry-nests-with-poached-pears-and-feta-and-saffron-cream"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pastry Nests With Poached Pears and Feta and Saffron Cream"
+          data-share-title="Pastry+Nests+With+Poached+Pears+and+Feta+and+Saffron+Cream+by+Yotam+Ottolenghi">
+        Pastry Nests With Poached Pears and Feta and Saffron Cream
+      </h3>
+
+
+        <p class="card-byline">By Yotam Ottolenghi</p>
+    </div>
+
+      <p class="cooking-time">1 hour, plus infusing time</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018332"
+           data-url="/recipes/1018332-pear-snacking-cake-with-brown-butter-glaze"
+           data-seo-image-url="https://static01.nyt.com/images/2016/09/29/multimedia/clark-pear-cake/clark-pear-cake-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018332-pear-snacking-cake-with-brown-butter-glaze"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/09/29/multimedia/clark-pear-cake/clark-pear-cake-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/09/29/multimedia/clark-pear-cake/clark-pear-cake-verticalTwoByThree735.jpg' alt='Image for Pear Snacking Cake With Brown Butter Glaze'>
+      </div>
+      <div class="icon-video-icon-white-bg"></div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018332-pear-snacking-cake-with-brown-butter-glaze"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Snacking Cake With Brown Butter Glaze"
+          data-share-title="Pear+Snacking+Cake+With+Brown+Butter+Glaze+by+Melissa+Clark">
+        Pear Snacking Cake With Brown Butter Glaze
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 1/4 hours, plus setting and cooling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1018031"
+           data-url="/recipes/1018031-korean-meatballs-and-noodles"
+           data-seo-image-url="https://static01.nyt.com/images/2016/03/23/dining/23PAIRING/23PAIRING-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1018031-korean-meatballs-and-noodles"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2016/03/23/dining/23PAIRING/23PAIRING-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2016/03/23/dining/23PAIRING/23PAIRING-verticalTwoByThree735.jpg' alt='Image for Korean Meatballs and Noodles'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1018031-korean-meatballs-and-noodles"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Korean Meatballs and Noodles"
+          data-share-title="Korean+Meatballs+and+Noodles+by+Florence+Fabricant">
+        Korean Meatballs and Noodles
+      </h3>
+
+
+        <p class="card-byline">By Florence Fabricant</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017783"
+           data-url="/recipes/1017783-edna-lewiss-spiced-pears"
+           data-seo-image-url="https://static01.nyt.com/images/2015/11/01/magazine/01spicedpears/01spicedpears-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017783-edna-lewiss-spiced-pears"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2015/11/01/magazine/01spicedpears/01spicedpears-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2015/11/01/magazine/01spicedpears/01spicedpears-verticalTwoByThree735.jpg' alt='Image for Edna Lewis’s Spiced Pears'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017783-edna-lewiss-spiced-pears"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Edna Lewis’s Spiced Pears"
+          data-share-title="Edna+Lewis%E2%80%99s+Spiced+Pears+by+Francis+Lam">
+        Edna Lewis’s Spiced Pears
+      </h3>
+
+
+        <p class="card-byline">By Francis Lam</p>
+    </div>
+
+      <p class="cooking-time">1 hour, plus 6 hours for cooling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017195"
+           data-url="/recipes/1017195-nava-atlass-sweet-potato-tzimmes"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/46.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017195-nava-atlass-sweet-potato-tzimmes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-46 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/46.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017195-nava-atlass-sweet-potato-tzimmes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Nava Atlas’s Sweet Potato Tzimmes"
+          data-share-title="Nava+Atlas%E2%80%99s+Sweet+Potato+Tzimmes+by+Karen+Barrow">
+        Nava Atlas’s Sweet Potato Tzimmes
+      </h3>
+
+
+        <p class="card-byline">By Karen Barrow</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1017011"
+           data-url="/recipes/1017011-pear-crumb-cake"
+           data-seo-image-url="https://static01.nyt.com/images/2014/11/26/dining/26BRING/26SUPERREEF-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1017011-pear-crumb-cake"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/11/26/dining/26BRING/26SUPERREEF-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/11/26/dining/26BRING/26BRING-verticalTwoByThree735-v2.jpg' alt='Image for Pear Crumb Cake'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1017011-pear-crumb-cake"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Crumb Cake"
+          data-share-title="Pear+Crumb+Cake+by+Melissa+Clark">
+        Pear Crumb Cake
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">About an hour and a half, plus at least 2 hours to cool</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016963"
+           data-url="/recipes/1016963-pear-kuchen"
+           data-seo-image-url="https://static01.nyt.com/images/2014/11/19/dining/19SOUTHDAKOTA/19SOUTHDAKOTA-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016963-pear-kuchen"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/11/19/dining/19SOUTHDAKOTA/19SOUTHDAKOTA-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/11/19/dining/19SOUTHDAKOTA/19SOUTHDAKOTA-verticalTwoByThree735-v2.jpg' alt='Image for Pear Kuchen'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016963-pear-kuchen"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Kuchen"
+          data-share-title="Pear+Kuchen+by+Sam+Sifton">
+        Pear Kuchen
+      </h3>
+
+
+        <p class="card-byline">By Sam Sifton</p>
+    </div>
+
+      <p class="cooking-time">1 hour, plus 2 to 3 hours’ rising</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1016875"
+           data-url="/recipes/1016875-squab-with-mushrooms-and-pears"
+           data-seo-image-url="https://static01.nyt.com/images/2014/10/22/dining/22PAIR/22PAIR-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1016875-squab-with-mushrooms-and-pears"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/10/22/dining/22PAIR/22PAIR-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/10/22/dining/22PAIR/22PAIR-verticalTwoByThree735-v2.jpg' alt='Image for Squab With Mushrooms and Pears'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1016875-squab-with-mushrooms-and-pears"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Squab With Mushrooms and Pears"
+          data-share-title="Squab+With+Mushrooms+and+Pears+by+Florence+Fabricant">
+        Squab With Mushrooms and Pears
+      </h3>
+
+
+        <p class="card-byline">By Florence Fabricant</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015271"
+           data-url="/recipes/1015271-roasted-beets-with-pears-and-pistachios"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/15/dining/With-Pears-and-Pistachios/With-Pears-and-Pistachios-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015271-roasted-beets-with-pears-and-pistachios"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/15/dining/With-Pears-and-Pistachios/With-Pears-and-Pistachios-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/15/dining/With-Pears-and-Pistachios/With-Pears-and-Pistachios-mediumThreeByTwo252-v3.jpg' alt='Image for Roasted Beets With Pears and Pistachios'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015271-roasted-beets-with-pears-and-pistachios"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Roasted Beets With Pears and Pistachios"
+          data-share-title="Roasted+Beets+With+Pears+and+Pistachios+by+Mark+Bittman">
+        Roasted Beets With Pears and Pistachios
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">About 2 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1014537"
+           data-url="/recipes/1014537-pear-vanilla-sorbet"
+           data-seo-image-url="https://static01.nyt.com/images/2013/02/12/science/13recipehealth/13recipehealth-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1014537-pear-vanilla-sorbet"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2013/02/12/science/13recipehealth/13recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2013/02/12/science/13recipehealth/13recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Pear Vanilla Sorbet'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1014537-pear-vanilla-sorbet"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Vanilla Sorbet"
+          data-share-title="Pear+Vanilla+Sorbet+by+Martha+Rose+Shulman">
+        Pear Vanilla Sorbet
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">30 minutes, plus at least 4 hours&#39; freezing and refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12964"
+           data-url="/recipes/12964-pear-clafoutis"
+           data-seo-image-url="https://static01.nyt.com/images/2012/11/20/science/23recipehealth/23recipehealth-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12964-pear-clafoutis"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2012/11/20/science/23recipehealth/23recipehealth-largeHorizontal375.jpg' data-pin-media='https://static01.nyt.com/images/2012/11/20/science/23recipehealth/23recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Pear Clafoutis'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12964-pear-clafoutis"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Clafoutis"
+          data-share-title="Pear+Clafoutis+by+Martha+Rose+Shulman">
+        Pear Clafoutis
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">2 hours 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12962"
+           data-url="/recipes/12962-pear-cranberry-galette"
+           data-seo-image-url="https://static01.nyt.com/images/2012/11/20/science/21recipehealth/21recipehealth-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12962-pear-cranberry-galette"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2012/11/20/science/21recipehealth/21recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2012/11/20/science/21recipehealth/21recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Pear Cranberry Galette'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12962-pear-cranberry-galette"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Cranberry Galette"
+          data-share-title="Pear+Cranberry+Galette+by+Martha+Rose+Shulman">
+        Pear Cranberry Galette
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">About 3 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12963"
+           data-url="/recipes/12963-apple-pear-strudel-with-dried-fruit-and-almonds"
+           data-seo-image-url="https://static01.nyt.com/images/2012/11/20/science/22recipehealth/22recipehealth-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12963-apple-pear-strudel-with-dried-fruit-and-almonds"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2012/11/20/science/22recipehealth/22recipehealth-largeHorizontal375.jpg' data-pin-media='https://static01.nyt.com/images/2012/11/20/science/22recipehealth/22recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Apple Pear Strudel With Dried Fruit and Almonds'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12963-apple-pear-strudel-with-dried-fruit-and-almonds"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Apple Pear Strudel With Dried Fruit and Almonds"
+          data-share-title="Apple+Pear+Strudel+With+Dried+Fruit+and+Almonds+by+Martha+Rose+Shulman">
+        Apple Pear Strudel With Dried Fruit and Almonds
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12886"
+           data-url="/recipes/12886-preserved-pears-with-pepper-star-anise-and-vanilla-syrup"
+           data-seo-image-url="https://static01.nyt.com/images/2012/10/31/dining/31SUBPEARS1_SPAN/31SUBPEARS1_SPAN-superJumbo-v2.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12886-preserved-pears-with-pepper-star-anise-and-vanilla-syrup"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2012/10/31/dining/31SUBPEARS1_SPAN/31SUBPEARS1_SPAN-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2012/10/31/dining/31SUBPEARS1_SPAN/31SUBPEARS1_SPAN-verticalTwoByThree735-v2.jpg' alt='Image for Preserved Pears With Pepper, Star Anise and Vanilla Syrup'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12886-preserved-pears-with-pepper-star-anise-and-vanilla-syrup"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Preserved Pears With Pepper, Star Anise and Vanilla Syrup"
+          data-share-title="Preserved+Pears+With+Pepper%2C+Star+Anise+and+Vanilla+Syrup+by+Cathy+Barrow">
+        Preserved Pears With Pepper, Star Anise and Vanilla Syrup
+      </h3>
+
+
+        <p class="card-byline">By Cathy Barrow</p>
+    </div>
+
+      <p class="cooking-time">About an hour, plus cooling time</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12807"
+           data-url="/recipes/12807-salsa"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/13/dining/PearSalsa/PearSalsa-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12807-salsa"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/13/dining/PearSalsa/PearSalsa-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/13/dining/PearSalsa/PearSalsa-mediumThreeByTwo252-v3.jpg' alt='Image for Salsa'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12807-salsa"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Salsa"
+          data-share-title="Salsa+by+Mark+Bittman">
+        Salsa
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12810"
+           data-url="/recipes/12810-endive-and-goat-cheese"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/13/dining/Endive-and-Goat-Cheese2/Endive-and-Goat-Cheese2-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12810-endive-and-goat-cheese"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/13/dining/Endive-and-Goat-Cheese2/Endive-and-Goat-Cheese2-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/13/dining/Endive-and-Goat-Cheese2/Endive-and-Goat-Cheese2-mediumThreeByTwo252-v3.jpg' alt='Image for Endive and Goat Cheese'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12810-endive-and-goat-cheese"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Endive and Goat Cheese"
+          data-share-title="Endive+and+Goat+Cheese+by+Mark+Bittman+">
+        Endive and Goat Cheese
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman </p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12804"
+           data-url="/recipes/12804-romaine-and-stilton"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/13/dining/Romaine/Romaine-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12804-romaine-and-stilton"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/13/dining/Romaine/Romaine-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/13/dining/Romaine/Romaine-mediumThreeByTwo252-v3.jpg' alt='Image for Romaine and Stilton'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12804-romaine-and-stilton"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Romaine and Stilton"
+          data-share-title="Romaine+and+Stilton+by+Mark+Bittman">
+        Romaine and Stilton
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12809"
+           data-url="/recipes/12809-fennel"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/13/dining/Fennel2/Fennel2-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12809-fennel"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/13/dining/Fennel2/Fennel2-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/13/dining/Fennel2/Fennel2-mediumThreeByTwo252-v3.jpg' alt='Image for Fennel'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12809-fennel"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Fennel"
+          data-share-title="Fennel+by+Mark+Bittman">
+        Fennel
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12805"
+           data-url="/recipes/12805-spinach-and-apples"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/13/dining/Spinach-and-Apples/Spinach-and-Apples-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12805-spinach-and-apples"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/13/dining/Spinach-and-Apples/Spinach-and-Apples-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/13/dining/Spinach-and-Apples/Spinach-and-Apples-mediumThreeByTwo252-v3.jpg' alt='Image for Spinach and Apples'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12805-spinach-and-apples"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spinach and Apples"
+          data-share-title="Spinach+and+Apples+by+Mark+Bittman">
+        Spinach and Apples
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12812"
+           data-url="/recipes/12812-arugula-pear-and-orange-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2014/05/13/dining/Arugula-and-Orange2/Arugula-and-Orange2-mediumThreeByTwo252-v3.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12812-arugula-pear-and-orange-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/05/13/dining/Arugula-and-Orange2/Arugula-and-Orange2-mediumThreeByTwo252-v3.jpg' data-pin-media='https://static01.nyt.com/images/2014/05/13/dining/Arugula-and-Orange2/Arugula-and-Orange2-mediumThreeByTwo252-v3.jpg' alt='Image for Arugula, Pear and Orange Salad'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12812-arugula-pear-and-orange-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Arugula, Pear and Orange Salad"
+          data-share-title="Arugula%2C+Pear+and+Orange+Salad+by+Mark+Bittman">
+        Arugula, Pear and Orange Salad
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12762"
+           data-url="/recipes/12762-pear-apple-butter-with-cardamom"
+           data-seo-image-url="https://static01.nyt.com/images/2017/07/19/dining/19PEARAPPLEBUTTER/19PEARAPPLEBUTTER-videoSixteenByNineJumbo1600.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12762-pear-apple-butter-with-cardamom"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2017/07/19/dining/19PEARAPPLEBUTTER/19PEARAPPLEBUTTER-mediumThreeByTwo252.jpg' data-pin-media='https://static01.nyt.com/images/2017/07/19/dining/19PEARAPPLEBUTTER/19PEARAPPLEBUTTER-verticalTwoByThree735.jpg' alt='Image for Pear-Apple Butter With Cardamom'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12762-pear-apple-butter-with-cardamom"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear-Apple Butter With Cardamom"
+          data-share-title="Pear-Apple+Butter+With+Cardamom+by+Melissa+Clark">
+        Pear-Apple Butter With Cardamom
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">3 1/2 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12346"
+           data-url="/recipes/12346-pear-haroseth-with-pecans-and-figs"
+           data-seo-image-url="https://static01.nyt.com/images/2014/03/28/dining/pearharoseth/pearharoseth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12346-pear-haroseth-with-pecans-and-figs"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/03/28/dining/pearharoseth/pearharoseth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/03/28/dining/pearharoseth/pearharoseth-verticalTwoByThree735-v2.jpg' alt='Image for Pear Haroseth With Pecans and Figs'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12346-pear-haroseth-with-pecans-and-figs"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear Haroseth With Pecans and Figs"
+          data-share-title="Pear+Haroseth+With+Pecans+and+Figs+by+Joan+Nathan">
+        Pear Haroseth With Pecans and Figs
+      </h3>
+
+
+        <p class="card-byline">By Joan Nathan</p>
+    </div>
+
+      <p class="cooking-time">10 minutes, plus 1 hour’s refrigeration</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="12354"
+           data-url="/recipes/12354-pear-and-arugula-smoothie-with-ginger-and-walnuts"
+           data-seo-image-url="https://static01.nyt.com/images/2012/02/28/science/28recipehealth/28recipehealth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/12354-pear-and-arugula-smoothie-with-ginger-and-walnuts"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2012/02/28/science/28recipehealth/28recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2012/02/28/science/28recipehealth/28recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Pear and Arugula Smoothie With Ginger and Walnuts'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/12354-pear-and-arugula-smoothie-with-ginger-and-walnuts"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear and Arugula Smoothie With Ginger and Walnuts"
+          data-share-title="Pear+and+Arugula+Smoothie+With+Ginger+and+Walnuts+by+Martha+Rose+Shulman">
+        Pear and Arugula Smoothie With Ginger and Walnuts
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1013546"
+           data-url="/recipes/1013546-pear-and-red-wine-sorbet"
+           data-seo-image-url="https://static01.nyt.com/images/2011/04/05/business/08recipehealth/08recipehealth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1013546-pear-and-red-wine-sorbet"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2011/04/05/business/08recipehealth/08recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2011/04/05/business/08recipehealth/08recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Pear and Red Wine Sorbet'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1013546-pear-and-red-wine-sorbet"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear and Red Wine Sorbet"
+          data-share-title="Pear+and+Red+Wine+Sorbet+by+Martha+Rose+Shulman">
+        Pear and Red Wine Sorbet
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">1 hours, plus chilling</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1013549"
+           data-url="/recipes/1013549-caramelized-honey-baked-pears"
+           data-seo-image-url="https://static01.nyt.com/images/2011/04/05/business/06recipehealth/06recipehealth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1013549-caramelized-honey-baked-pears"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2011/04/05/business/06recipehealth/06recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2011/04/05/business/06recipehealth/06recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Caramelized Honey-Baked Pears'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1013549-caramelized-honey-baked-pears"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Caramelized Honey-Baked Pears"
+          data-share-title="Caramelized+Honey-Baked+Pears+by+Martha+Rose+Shulman">
+        Caramelized Honey-Baked Pears
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">40 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1013411"
+           data-url="/recipes/1013411-watercress-and-endive-salad-with-pears-and-roquefort"
+           data-seo-image-url="https://static01.nyt.com/images/2010/12/28/science/29recipehealth/29recipehealth-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1013411-watercress-and-endive-salad-with-pears-and-roquefort"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2010/12/28/science/29recipehealth/29recipehealth-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2010/12/28/science/29recipehealth/29recipehealth-verticalTwoByThree735-v2.jpg' alt='Image for Watercress and Endive Salad With Pears and Roquefort'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1013411-watercress-and-endive-salad-with-pears-and-roquefort"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Watercress and Endive Salad With Pears and Roquefort"
+          data-share-title="Watercress+and+Endive+Salad+With+Pears+and+Roquefort+by+Martha+Rose+Shulman">
+        Watercress and Endive Salad With Pears and Roquefort
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">About 10 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1014117"
+           data-url="/recipes/1014117-pear-and-sour-cherry-brown-betty-with-brandy-hard-sauce"
+           data-seo-image-url="https://static01.nyt.com/images/2014/01/22/dining/recipes-sourcherrypearbrownbetty/recipes-sourcherrypearbrownbetty-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1014117-pear-and-sour-cherry-brown-betty-with-brandy-hard-sauce"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/01/22/dining/recipes-sourcherrypearbrownbetty/recipes-sourcherrypearbrownbetty-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/01/22/dining/recipes-sourcherrypearbrownbetty/recipes-sourcherrypearbrownbetty-verticalTwoByThree735-v2.jpg' alt='Image for Pear and Sour Cherry Brown Betty With Brandy Hard Sauce'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1014117-pear-and-sour-cherry-brown-betty-with-brandy-hard-sauce"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear and Sour Cherry Brown Betty With Brandy Hard Sauce"
+          data-share-title="Pear+and+Sour+Cherry+Brown+Betty+With+Brandy+Hard+Sauce+by+Melissa+Clark">
+        Pear and Sour Cherry Brown Betty With Brandy Hard Sauce
+      </h3>
+
+
+        <p class="card-byline">By Melissa Clark</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015107"
+           data-url="/recipes/1015107-poached-pears-in-red-wine"
+           data-seo-image-url="https://static01.nyt.com/images/2010/11/10/health/10well_pears/10well_pears-articleLarge.png"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015107-poached-pears-in-red-wine"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2010/11/10/health/10well_pears/10well_pears-largeHorizontal375.png' data-pin-media='https://static01.nyt.com/images/2010/11/10/health/10well_pears/10well_pears-articleLarge.png'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015107-poached-pears-in-red-wine"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Poached Pears in Red Wine"
+          data-share-title="Poached+Pears+in+Red+Wine+by+Tara+Parker-Pope">
+        Poached Pears in Red Wine
+      </h3>
+
+
+        <p class="card-byline">By Tara Parker-Pope</p>
+    </div>
+
+      <p class="cooking-time">About 20 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015027"
+           data-url="/recipes/1015027-endive-and-radicchio-salad-with-caramelized-pear"
+           data-seo-image-url="https://static01.nyt.com/images/2010/11/19/science/18welldallas/18welldallas-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015027-endive-and-radicchio-salad-with-caramelized-pear"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2010/11/19/science/18welldallas/18welldallas-tmagSF.jpg' data-pin-media='https://static01.nyt.com/images/2010/11/19/science/18welldallas/18welldallas-verticalTwoByThree735-v2.jpg'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015027-endive-and-radicchio-salad-with-caramelized-pear"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Endive and Radicchio Salad With Caramelized Pear"
+          data-share-title="Endive+and+Radicchio+Salad+With+Caramelized+Pear+by+Tara+Parker-Pope">
+        Endive and Radicchio Salad With Caramelized Pear
+      </h3>
+
+
+        <p class="card-byline">By Tara Parker-Pope</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015217"
+           data-url="/recipes/1015217-alsatian-pear-kugel-with-prunes"
+           data-seo-image-url="https://static01.nyt.com/images/2010/11/01/health/01well_nathan/01well_nathan-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015217-alsatian-pear-kugel-with-prunes"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2010/11/01/health/01well_nathan/01well_nathan-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2010/11/01/health/01well_nathan/01well_nathan-verticalTwoByThree735-v2.jpg' alt='Image for Alsatian Pear Kugel With Prunes'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015217-alsatian-pear-kugel-with-prunes"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Alsatian Pear Kugel With Prunes"
+          data-share-title="Alsatian+Pear+Kugel+With+Prunes+by+Tara+Parker-Pope">
+        Alsatian Pear Kugel With Prunes
+      </h3>
+
+
+        <p class="card-byline">By Tara Parker-Pope</p>
+    </div>
+
+      <p class="cooking-time">3 hours 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1015653"
+           data-url="/recipes/1015653-spice-poached-apples-or-pears"
+           data-seo-image-url="//int.nyt.com/applications/cooking/static/images/pattern/4.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1015653-spice-poached-apples-or-pears"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-4 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='//int.nyt.com/applications/cooking/static/images/pattern/4.png?1'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1015653-spice-poached-apples-or-pears"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Spice-Poached Apples or Pears"
+          data-share-title="Spice-Poached+Apples+or+Pears+by+Emily+Weinstein">
+        Spice-Poached Apples or Pears
+      </h3>
+
+
+        <p class="card-byline">By Emily Weinstein</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1013136"
+           data-url="/recipes/1013136-watercress-pear-and-gorgonzola-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2014/04/18/dining/Watercress/Watercress-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1013136-watercress-pear-and-gorgonzola-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/04/18/dining/Watercress/Watercress-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/04/18/dining/Watercress/Watercress-verticalTwoByThree735-v2.jpg' alt='Image for Watercress, Pear and Gorgonzola Salad'>
+      </div>
+  </a>
+
+    <a class="sticker easy"
+       href="/search?q=&amp;filters[meal_types][]=easy"
+       title="Search for Easy Recipes">
+      Easy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1013136-watercress-pear-and-gorgonzola-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Watercress, Pear and Gorgonzola Salad"
+          data-share-title="Watercress%2C+Pear+and+Gorgonzola+Salad+by+Florence+Fabricant">
+        Watercress, Pear and Gorgonzola Salad
+      </h3>
+
+
+        <p class="card-byline">By Florence Fabricant</p>
+    </div>
+
+      <p class="cooking-time">5 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1014037"
+           data-url="/recipes/1014037-pears-poached-in-beaujolais"
+           data-seo-image-url="https://static01.nyt.com/images/2014/01/22/dining/recipes-poachedpearSUB/recipes-poachedpearSUB-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1014037-pears-poached-in-beaujolais"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/01/22/dining/recipes-poachedpearSUB/recipes-poachedpearSUB-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/01/22/dining/recipes-poachedpearSUB/recipes-poachedpearSUB-verticalTwoByThree735-v2.jpg' alt='Image for Pears Poached in Beaujolais'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1014037-pears-poached-in-beaujolais"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pears Poached in Beaujolais"
+          data-share-title="Pears+Poached+in+Beaujolais+by+Martha+Rose+Shulman">
+        Pears Poached in Beaujolais
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">30 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1012896"
+           data-url="/recipes/1012896-roasted-apple-and-pear-compote-with-candied-ginger"
+           data-seo-image-url="https://static01.nyt.com/images/2009/11/25/health/25recipehealth_600/25recipehealth_600-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1012896-roasted-apple-and-pear-compote-with-candied-ginger"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2009/11/25/health/25recipehealth_600/25recipehealth_600-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2009/11/25/health/25recipehealth_600/25recipehealth_600-verticalTwoByThree735-v2.jpg'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1012896-roasted-apple-and-pear-compote-with-candied-ginger"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Roasted Apple and Pear Compote With Candied Ginger"
+          data-share-title="Roasted+Apple+and+Pear+Compote+With+Candied+Ginger+by+Martha+Rose+Shulman">
+        Roasted Apple and Pear Compote With Candied Ginger
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">2 hours</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1012895"
+           data-url="/recipes/1012895-pear-and-apple-souffle"
+           data-seo-image-url="https://static01.nyt.com/images/2009/11/24/health/24recipehealth_600/24recipehealth_600-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1012895-pear-and-apple-souffle"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2009/11/24/health/24recipehealth_600/24recipehealth_600-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2009/11/24/health/24recipehealth_600/24recipehealth_600-verticalTwoByThree735-v2.jpg' alt='Image for Pear and Apple Soufflé'>
+      </div>
+  </a>
+
+    <a class="sticker healthy"
+       href="/search?q=&amp;filters[special_diets][]=healthy"
+       title="Search for Healthy Recipes">
+      Healthy
+    </a>
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1012895-pear-and-apple-souffle"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pear and Apple Soufflé"
+          data-share-title="Pear+and+Apple+Souffl%C3%A9+by+Martha+Rose+Shulman">
+        Pear and Apple Soufflé
+      </h3>
+
+
+        <p class="card-byline">By Martha Rose Shulman</p>
+    </div>
+
+      <p class="cooking-time">1 hour 45 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1012862"
+           data-url="/recipes/1012862-maple-pear-upside-down-cake"
+           data-seo-image-url="https://static01.nyt.com/images/2014/03/31/dining/maple-pear-upside-down-cake/maple-pear-upside-down-cake-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1012862-maple-pear-upside-down-cake"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/03/31/dining/maple-pear-upside-down-cake/maple-pear-upside-down-cake-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/03/31/dining/maple-pear-upside-down-cake/maple-pear-upside-down-cake-verticalTwoByThree735-v2.jpg' alt='Image for Maple Pear Upside-Down Cake'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1012862-maple-pear-upside-down-cake"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Maple Pear Upside-Down Cake"
+          data-share-title="Maple+Pear+Upside-Down+Cake+by+Mark+Bittman">
+        Maple Pear Upside-Down Cake
+      </h3>
+
+
+        <p class="card-byline">By Mark Bittman</p>
+    </div>
+
+      <p class="cooking-time">90 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1012870"
+           data-url="/recipes/1012870-two-way-chanterelle-and-pear-bread-stuffing"
+           data-seo-image-url="https://static01.nyt.com/images/2014/10/24/dining/pear-mushroom-stuffing/pear-mushroom-stuffing-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1012870-two-way-chanterelle-and-pear-bread-stuffing"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/10/24/dining/pear-mushroom-stuffing/pear-mushroom-stuffing-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/10/24/dining/pear-mushroom-stuffing/pear-mushroom-stuffing-verticalTwoByThree735-v2.jpg' alt='Image for Two-Way Chanterelle and Pear Bread Stuffing'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1012870-two-way-chanterelle-and-pear-bread-stuffing"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Two-Way Chanterelle and Pear Bread Stuffing"
+          data-share-title="Two-Way+Chanterelle+and+Pear+Bread+Stuffing+by+Kim+Severson">
+        Two-Way Chanterelle and Pear Bread Stuffing
+      </h3>
+
+
+        <p class="card-byline">By Kim Severson</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1012486"
+           data-url="/recipes/1012486-pecorino-and-pear-salad"
+           data-seo-image-url="https://static01.nyt.com/images/2014/03/31/dining/pecorino-pear-salad/pecorino-pear-salad-superJumbo.jpg"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1012486-pecorino-and-pear-salad"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+        <img class='fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://static01.nyt.com/images/2014/03/31/dining/pecorino-pear-salad/pecorino-pear-salad-videoSixteenByNine310.jpg' data-pin-media='https://static01.nyt.com/images/2014/03/31/dining/pecorino-pear-salad/pecorino-pear-salad-verticalTwoByThree735-v2.jpg' alt='Image for Pecorino and Pear Salad'>
+      </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1012486-pecorino-and-pear-salad"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Pecorino and Pear Salad"
+          data-share-title="Pecorino+and+Pear+Salad+by+Florence+Fabricant">
+        Pecorino and Pear Salad
+      </h3>
+
+
+        <p class="card-byline">By Florence Fabricant</p>
+    </div>
+
+      <p class="cooking-time">1 hour</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+    <article            class="card recipe-card"
+           data-type="recipe"
+           data-id="1918"
+           data-url="/recipes/1918-holiday-ham"
+           data-seo-image-url="https://int.nyt.com/applications/cooking/static/images/pattern/19.png?1"
+  >
+    <div class="image-wrap">
+
+  <a href="/recipes/1918-holiday-ham"
+    class="image-anchor card-link"
+    >
+    <div class='image'>
+                          <img class='pattern-19 fixed-height ' src='//int.nyt.com/applications/cooking/static/images/card-placeholder-image.png' data-src='https://int.nyt.com/applications/cooking/static/images/pattern/19.png?1' alt='No Recipe Image Available'>
+                        </div>
+  </a>
+
+
+</div> <!-- /.image-wrap -->
+
+<div class="card-info-wrapper">
+  <a href="/recipes/1918-holiday-ham"
+    class="card-recipe-info card-link"
+    >
+    <div class="card-data-wrapper">
+      <h3 class="name"
+          data-name="Holiday Ham"
+          data-share-title="Holiday+Ham+by+Christine+Muhlke">
+        Holiday Ham
+      </h3>
+
+
+        <p class="card-byline">By Christine Muhlke</p>
+    </div>
+
+      <p class="cooking-time">3 hours 15 minutes</p>
+
+  </a>
+    <div class="controls card-controls recipe-card-controls">
+  <div class="control-buttons">
+    <div class="control-save-btn control-btn">
+      <span class="icon icon-bookmark-hover-outline control-transition"></span>
+      <span class="icon icon-bookmark-hover-fill"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </article>
+
+
+        </section>
+
+        <div id="show-more-recipes" class="show-more-with-popular">
+
+  <div class="btn-group">
+    <button class="btn-std btn-default btn-large show-more-btn ladda-button grey-spinner" data-style="normal" data-spinner-size="36">Show More Recipes</button>
+  </div>
+
+    <div class="popular-searches">
+      <h3>Or try our popular searches</h3>
+      <div class="popular-searches-btn-group">
+  <a href="/search?q=&filters[meal_types][]=easy" class="btn-std btn-flat-rounded btn-flat-easy">Easy</a>
+  <a href="/search?q=&filters[special_diets][]=vegetarian" class="btn-std btn-flat-rounded btn-flat-vegetarian">Vegetarian</a>
+  <a href="/search?q=&filters[dish_types][]=project" class="btn-std btn-flat-rounded btn-flat-weekend-projects">Weekend Projects</a>
+  <a href="/search?q=&filters[dish_types][]=times classics" class="btn-std btn-flat-rounded btn-flat-classic">Classic</a>
+  <a href="/search?q=&filters[meal_types][]=quick" class="btn-std btn-flat-rounded btn-flat-quick">Quick</a>
+  <a href="/search?q=&filters[special_diets][]=healthy" class="btn-std btn-flat-rounded btn-flat-healthy">Healthy</a>
+</div>
+
+    </div>
+</div>
+
+      </div>
+    </section>
+  </div>
+
+
+      <footer id="footer">
+  <div class="footer-wrap">
+      <div class="footer-body clearfix">
+  <div class="container">
+    
+<div class="newsletter-container">
+  <form id="footer-newsletter-email" class="newsletter-form" method="POST" novalidate>
+      <h3 class="title">Get Our Newsletter</h3>
+      <span class="description">Get recipes, tips and NYT special offers delivered straight to your inbox. Opt out or <a class="contact-us-link" href="http://www.nytimes.com/help/index.html">contact us</a> anytime.</span>
+      <input class="newsletter-input genericInputField" type="email" name="email" placeholder="Add Your Email" />
+      <button type="submit" class="red-button button">Sign Up</button>
+      <div class="error-msg">Please enter a valid email address.</div>
+  </form>
+</div>
+
+
+    <div class="promo-container">
+      <div class="share-links">
+        <span class="blurb">Follow Cooking</span>
+        <a class="pinterest" target="_blank" rel="noreferrer noopener" href="https://www.pinterest.com/nytcooking/" alt="Visit NYT Cooking on Pinterest"></a>
+        <a class="fb" target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/nytcooking" alt="Visit NYT Cooking on Facebook"></a>
+        <a class="twitter" target="_blank" rel="noreferrer noopener" href="https://twitter.com/nytfood" alt="Visit NYT Cooking on Twitter"></a>
+      </div>
+      <div class="ios">
+        <span class="blurb">Cooking For iPad &amp; iPhone</span>
+        <a class="icon-appstore-gray" target="_blank" rel="noreferrer noopener" href="http://appstore.com/nytcooking" alt="Download the iOS NYT Cooking app"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer-links">
+      <div class="container">
+        <div class="product-info">
+          <section class="about-us">
+            <h3 class="sub-heading">About Us</h3>
+              <p class="description">NYT Cooking is a subscription service of The New York Times. It is a digital cookbook and cooking guide alike, available on all platforms, that helps home cooks of every level discover, save and organize the world’s best recipes, while also helping them become better, more competent cooks. <a target="_blank" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?campaignId=79RLU" rel="noreferrer noopener" class="subscribe">Subscribe now</a> for full access.</p>
+          </section>
+          <section class="more">
+            <div class="learn-more">
+              <h3 class="sub-heading learn-shop">Learn More</h3>
+              <ul>
+                <li><a href="/ourcooks" class="footer-link">Our Cooks</a></li>
+                <li><a href="/see-our-features" class="footer-link">See Our Features</a></li>
+                <li><a href="/frequently-asked-questions" class="footer-link">FAQ</a></li>
+                <li><a href="/tools" class="footer-link">Tools for Saving</a></li>
+                <li><a target="_blank" href="https://www.nytimes.com/food" rel="noreferrer noopener" class="footer-link">NYTimes.com/food</a></li>
+                <li><a href="mailto:cookingcare@nytimes.com" class="footer-link send-feedback" id="customer-care-email">Send Us Feedback</a></li>
+              </ul>
+            </div>
+            <div class="shop">
+              <h3 class="sub-heading learn-shop">Shop</h3>
+              <ul>
+                <li><a target="_blank" href="https://www.nytimes.com/subscriptions/Multiproduct/cooking_gift.html?campaignId=7HYRF" rel="noreferrer noopener" class="footer-link">Gift Subscription</a></li>
+                <h4 class="cookbooks">Cookbooks</h4>
+                <li><a href="https://store.nytimes.com/products/new-essentials-of-french-cooking?utm_source=NYT_Cooking_Website&utm_medium=referral&utm_campaign=French_Cookbook&utm_content=footer"  target="_blank" rel="noreferrer noopener" class="footer-link">“The New Essentials of French Cooking”</a></li>
+                <li><a target="_blank" href="https://store.nytimes.com/products/personalized-cookbook?utm_source=NYT_Cooking_Website&utm_medium=referral&utm_campaign=MYO_Cookbook&utm_content=footer" rel="noreferrer noopener" class="footer-link">“Make-Your-Own Cookbook: Dinner”</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <section class="legal">
+          <ul>
+            <li>
+              <a href="http://www.nytco.com" itemprop="copyrightNotice" class="legal-info">
+                &copy;
+                <span itemprop="copyrightHolder provider sourceOrganization" itemscope itemtype="http://schema.org/Corporation" itemid="http://www.nytimes.com">
+                  <span itemprop="name">The New York Times Company</span>
+                  <meta itemprop="tickerSymbol" content="NYSE NYT"/>
+                </span>
+              </a>
+            </li>
+            <li><a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html" class="legal-info">Privacy Policy</a></li>
+            <li><a href="http://www.nytimes.com/content/help/rights/terms/terms-of-service.html" class="legal-info">Terms of Service</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        Sorry, your changes didn&#8217;t save.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="icon-close-grey"></div>
+      <div class="modal-body"></div>
+      <div class="modal-footer btn-group">
+        <button type="button" class="btn-std btn-default cancel-btn">NO</button>
+        <button type="button" class="btn-std btn-primary ok-btn">YES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+<script id="card-organize-tooltip" type="template">
+  <div class="collections-container">
+    <% if (!collections || !collections.length) { %>
+      <div class="no-collection-message">
+        <div class="no-collection-headline">Organize Your Recipes</div>
+        <div class="no-collection-body">Keep your Recipe Box organized by adding this recipe to a collection.</div>
+      </div>
+    <% } else {%>
+      <div class="header">Add to an Existing Collection:</div>
+      <ul>
+        <% collections.forEach(function(collection) { %>
+        <% var containsRecipe = _.contains(savedCollections, collection.id) ? 'contains-recipe' : ''; %>
+        <li class="<%= containsRecipe %>" data-id="<%= collection.id %>">
+        <span class="name"><%= _.escape(collection.name) %></span>
+        <span class="check-mark"></span>
+        </li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <div class="create-collection">
+      <form class="new-collection-form">
+        <input class="new-collection-input" autocomplete="off" placeholder='<%= (!collections || !collections.length) ? 'e.g., "Dinner Party Ideas"' : 'Create New Collection'%>'>
+        <div class="btn-primary new-collection-form-spinner hide" data-spinner-size="24"></div>
+        <button class="btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</script>
+
+<script id="card-organize-tooltip-second-save" type="template">
+  <div class="collections-container">
+    <% if (!collections || !collections.length) { %>
+      <div class="no-collection-message">
+        <div class="no-collection-headline">Success!</div>
+        <div class="no-collection-body">This recipe has been saved to your Recipe Box.</div>
+      </div>
+    <% } else {%>
+      <div class="header">Add to an Existing Collection:</div>
+      <ul>
+        <% collections.forEach(function(collection) { %>
+        <% var containsRecipe = _.contains(savedCollections, collection.id) ? 'contains-recipe' : ''; %>
+        <li class="<%= containsRecipe %>" data-id="<%= collection.id %>">
+        <span class="name"><%= _.escape(collection.name) %></span>
+        <span class="check-mark"></span>
+        </li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <div class="create-collection">
+      <form class="new-collection-form">
+        <input class="new-collection-input" autocomplete="off" placeholder='<%= (!collections || !collections.length) ? 'e.g., "Dinner Party Ideas"' : 'Create New Collection'%>'>
+        <div class="btn-primary new-collection-form-spinner hide" data-spinner-size="24"></div>
+        <button class="btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</script>
+
+<script id="remove-recipe-confirmation" type="template">
+  Are you sure you want to remove <b><%= _.escape(recipeName) %></b> from <%= collectionName ? '<b>' + _.escape(collectionName) + '</b>' : 'your recipe box' %>?
+</script>
+
+<script id="collection-item" type="template">
+
+  <li class="collection removable" data-collection-id="" data-collection-slug="-">
+  <a class="details needsclick" href="#">
+    <span class="name"></span>
+    <span class="count">0</span>
+    <span class="remove-icon"></span>
+  </a>
+  <span class="selected-arrow"></span>
+  <form class="inline-edit-form">
+    <input class="inline-edit">
+  </form>
+</li>
+
+</script>
+
+
+<script id="collection-delete-confirmation" type="template">
+  Are you sure you want to delete your folder <b><%= _.escape(name) %></b>?
+  <% if (extraDescription) { %>
+    Your recipes will still be saved under &ldquo;Saved Recipes.&rdquo;
+  <% } %>
+</script>
+
+<script id="regi-tooltip-content" type="template">
+  <a href="" class="regitip-login">Log in</a> or <a href="" class="regitip-regi">Sign up</a> <%= action %>.
+</script>
+
+<script id="tooltip-template" type="template">
+  <div class="popover <%= type %>" role="tooltip">
+    <div class="arrow"></div>
+    <div class="icon-close-grey <%= showCloseBtn ? '' : 'hidden' %>"></div>
+    <h3 class="popover-title"></h3>
+    <% if (body) { %>
+      <div class="popover-body"><%= body %></div>
+    <% } %>
+    <div class="popover-content"></div>
+  </div>
+</script>
+
+<script id="parse-msg-tmpl" type="template">
+  <div class="parse-message"><%= parse_msg %></div>
+</script>
+
+<script id="show-more-btn-tmpl" type="template">
+  <div class="btn-group">
+    <button class="btn-std btn-default show-more-<%= isReplies ? 'replies' : 'notes' %>-btn ladda-button grey-spinner" data-style="normal" data-spinner-size="17">Show More<%= isReplies ? ' Replies' : ' Notes' %></button>
+  </div>
+</script>
+
+<script id="onboarding-popover-template" type="template">
+  <button class="feature-onboarding-close onboarding-dismiss icon icon-close">Close</button>
+  <h3 class="feature-onboarding-title"><%= title %></h3>
+  <span class="icon onboarding-logo-icon <%= icon %>"></span>
+  <p class="feature-onboarding-content"><%= content %></p>
+  <button class="feature-onboarding-btn onboarding-dismiss">Got It</button>
+</script>
+
+
+    
+<script>
+  try {
+    bootstrap = window.bootstrap || {};
+    bootstrap.initialState = window.bootstrap.initialState || {};
+    bootstrap.initialState.features= {"promos_enabled":true,"optimizely_snippet":false,"tagx":true,"maintenance_mode":false,"disable_search":false,"chunk_search_populate_job":false,"publish_versioned_event_page_versions":false,"elasticsearch_live_updates_enabled":true,"paywall":true,"paywall_frontend":true,"paywall_debug":false,"hide_third_party_images":true,"all_guides_are_free":false,"subscription_info_service":true,"enroll_all_users_in_free_trial":true,"new_newsletter_subscribe_module":true,"paid_post":false,"recently_viewed_api":true,"recently_viewed_frontend":true,"abra_snippet":false,"features_onboarding":true,"sync_saves_for_recently_saved_service":true,"recently_viewed_jobs":true,"send_to_grocery_list":true,"json_kidd":true,"restrict_api_access":true,"grandfathering":true,"app_association_file":true,"include_promo_in_homepage_api":true,"save_recap":true,"react_notes":false,"sync_updated_recipes_on_gcp":true,"recently_viewed_band":true,"disable_newsletter_subscription_job":false,"disable_subscribe_email_job":false,"disable_cookie_refresh_call":false,"disable_recently_viewed_archive":true,"free_content_dashboard":true,"helix_api":true,"editors_collections_carousel":true,"editors_collections_new_cards":false,"new_listy":true,"gdpr_cookie_banner":true,"recently_viewed_sidekiq":true,"dfp_rules_logic":true,"check_third_party_tracker":true,"saved_recap_sidekiq":true,"weekly_planning":true,"weekly_planning_api":true,"test_paywall_5755":false,"baking_jobs":false,"survey_bucket1":false,"survey_bucket2":false,"survey_bucket3":false,"survey_bucket4":false,"survey_bucket5":false,"defer_css":false,"modal_window_api":true,"paywall_updates_2018":true,"thanksgiving_2018":true};
+    bootstrap.initialState.growler = {
+      type: null,
+      msg: null,
+    };
+    bootstrap.initialState.app = {
+      env:               'production',
+      debug:             false,
+      consumerMarketingURL: 'https://www.nytimes.com/subscriptions/Multiproduct/lp8R3WU.html?return_url=https://cooking.nytimes.com',
+      saveRecapURL: 'https://ckg-user-recommendations-dot-nyt-ckg-prd.appspot.com/recommendations/users',
+    };
+    bootstrap.initialState.topNav = {
+      // TODO: Remove this and actually fix broken tests
+      label: "Thanksgiving",
+      path: "/topics/thanksgiving",
+    };
+    bootstrap.initialState.page = {
+      hasAccessState: false,
+      isFree: true,
+      type: 'tag-landing-page',
+      id: null,
+      viewableType: '',
+    };
+    bootstrap.initialState.popover = {
+      dragPopover: {
+        isDisplayed: true,
+      },
+      dragToFolderPopover: {
+        isDisplayed: false,
+      },
+      savePopover: {
+        isDisplayed: false,
+        saveType: '',
+      },
+      signUpPopover: {
+        isShown: false
+      },
+      subscribePopover: {
+        isDisplayed: false,
+      },
+    };
+    bootstrap.initialState.siteSearch = {
+      query: "",
+      isFocused: false,
+      autocomplete: {
+        tags: null,
+        recipes: null,
+        guides: null,
+      },
+    };
+    bootstrap.initialState.searchBarIsOpen = false;
+    bootstrap.initialState.sidebarIsOpen = false;
+    bootstrap.initialState.recirculationBand = {"suggestionsData":[],"isTablet":false,"promo":null}
+    bootstrap.initialState.editorsCollections = {}
+    bootstrap.release = "b6a7ace";
+  } catch(e) {}
+</script>
+
+
+    <script>
+      bootstrap = window.bootstrap || {};
+      bootstrap.page = {
+        env:               'production',
+        debug:             false,
+        name:              'tag-landing-page',
+        smartFoldersEnum:  [{"term":"all","uri_name":"all","key":"","display":"Saved Recipes","recipe_tag_ids":null,"fallback_image":null},{"term":"breakfast","uri_name":"breakfast","key":"meal_types","display":"Breakfast","recipe_tag_ids":[129],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/breakfast.jpg"},{"term":"brunch","uri_name":"brunch","key":"meal_types","display":"Brunch","recipe_tag_ids":[130],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/brunch.jpg"},{"term":"lunch","uri_name":"lunch","key":"meal_types","display":"Lunch","recipe_tag_ids":[131],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/lunch.jpg"},{"term":"snack","uri_name":"snack","key":"meal_types","display":"Snack","recipe_tag_ids":[136],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/snack.jpg"},{"term":"appetizer","uri_name":"appetizer","key":"meal_types","display":"Appetizer","recipe_tag_ids":[4],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/appetizer.jpg"},{"term":"soups","uri_name":"soups","key":"dish_types","display":"Soups","recipe_tag_ids":[63],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/soups.jpg"},{"term":"sides","uri_name":"sides","key":"courses","display":"Sides","recipe_tag_ids":[3],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/sides.jpg"},{"term":"dinner","uri_name":"dinner","key":"meal_types","display":"Dinner","recipe_tag_ids":[128],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/dinner.jpg"},{"term":"drinks","uri_name":"drinks","key":"dish_types","display":"Drinks","recipe_tag_ids":[66,67,68,88],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/drinks.jpg"},{"term":"dessert","uri_name":"dessert","key":"courses","display":"Dessert","recipe_tag_ids":[2],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/dessert.jpg"},{"term":"vegetarian","uri_name":"vegetarian","key":"diet_types","display":"Vegetarian","recipe_tag_ids":[225],"fallback_image":"//int.nyt.com/applications/cooking/static/images/smartfolder_fallbacks/vegetarian.jpg"}],
+        staticAssetHost:         '//int.nyt.com/applications/cooking/static',
+      };
+    </script>
+
+    
+
+    <script src="https://a1.nyt.com/analytics/json-kidd.min.js"></script>
+
+    <script src="//int.nyt.com/applications/cooking/b6a7ace/assets/core.bundle.js"></script>
+  </body>
+</html>

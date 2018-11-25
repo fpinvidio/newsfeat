@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-cityroom section-nyregion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-cityroom section-nyregion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-cityroom section-nyregion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-cityroom section-nyregion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000004583042"><meta name="author" content="Anemona Hartocollis" />
+<meta name="CLMST" content="Anemona Hartocollis" />
+<meta name="byl" content="Anemona Hartocollis" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/h/anemona_hartocollis/index.html" /><meta name="GBLC" content="Courts and Law;Crime &amp; Public Safety;Cultural Affairs;Manhattan;Pop Culture">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1209666464" />
+<meta name="PUD" content="20080501" />
+<meta name="pdate" content="20080501" />
+<meta name="ptime" content="20080501142744" />
+<meta name="utime" content="20160810161651" />
+<meta property="article:modified_time" itemprop="dateModified" content="2016-08-10T16:16:51-04:00" />
+<meta name="DISPLAYDATE" content="May 1, 2008" />
+<meta name="dat" content="May 1, 2008" />
+<meta itemprop="articleSection" property="article:section" content="N.Y./Region" />
+<meta name="CG" content="N.Y./Region" />
+<meta name="SCG" content="cityroom" />
+<meta name="BN" content="cityroom" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Courts and Law" />
+<meta property="article:tag" content="Crime &amp; Public Safety" />
+<meta property="article:tag" content="Cultural Affairs" />
+<meta property="article:tag" content="Manhattan" />
+<meta property="article:tag" content="Pop Culture" />
+<meta name="keywords" content="Courts and Law,Crime &amp; Public Safety,Cultural Affairs,Manhattan,Pop Culture" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fcityroom.blogs.nytimes.com%2F2008%2F05%2F01%2Fuma-thurman-tells-jury-of-terrifying-notes-from-a-fan%2F" title="Uma Thurman Tells Jury of Menacing Notes From a Fan" />
+<meta name="description" content="The actress gave a reading to a Manhattan jury of material sent to her by an obsessive fan who sneaked onto the set of a movie she was filming in SoHo in 2005." />
+<meta name="hdl" content="Uma Thurman Tells Jury of Menacing Notes From a Fan" />
+<meta property="og:title" content="Uma Thurman Tells Jury of Menacing Notes From a Fan" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//cityroom.blogs.nytimes.com/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/" />
+<meta property="og:site_name" content="City Room" />
+<meta property="og:description" content="The actress gave a reading to a Manhattan jury of material sent to her by an obsessive fan who sneaked onto the set of a movie she was filming in SoHo in 2005." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Uma Thurman Tells Jury of Menacing Notes From a Fan" />
+<meta name="twitter:url" content="//cityroom.blogs.nytimes.com/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/" />
+<meta name="twitter:description" content="The actress gave a reading to a Manhattan jury of material sent to her by an obsessive fan who sneaked onto the set of a movie she was filming in SoHo in 2005." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nytmetro">
+<link rel='prev' title='The Mayor&#8217;s New Budget, Flat After Years of Growth' href='//cityroom.blogs.nytimes.com/2008/05/01/the-mayors-new-budget-flat-after-years-of-growth/' />
+<link rel='next' title='Jury Duty, Now More Tech-Friendly' href='//cityroom.blogs.nytimes.com/2008/05/01/jury-duty-now-more-tech-friendly/' />
+<link rel='canonical' href='//cityroom.blogs.nytimes.com/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/' />
+<link rel='shortlink' href='//nyti.ms/2aW3SMC' />
+<link rel='https://github.com/WP-API/WP-API' href='//cityroom.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/cityroom/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//cityroom.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/nyregion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/cityroom/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/" />
+<meta name="dfp-ad-unit-path" content="nyregion/cityroom" />			<title>Uma Thurman Tells Jury of Menacing Notes From a Fan - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-2739 blog-universal nyt-blog-cityroom" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'N.Y./Region', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//cityroom.blogs.nytimes.com">
+                City Room            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Uma Thurman Tells Jury of Menacing Notes From a Fan        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//cityroom.blogs.nytimes.com/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/"
+	 data-title="Uma Thurman Tells Jury of Menacing Notes From a Fan"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;The actress gave a reading to a Manhattan jury of material sent to her by an obsessive fan who sneaked onto the set of a movie she was filming in SoHo in 2005.&lt;/span&gt;&lt;a href=&quot;//cityroom.blogs.nytimes.com/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="May 1, 2008 2:27 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="cityroom" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<a href="//cityroom.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=N.Y./Region"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/cityroom/cityroom75.gif" alt="City Room"/></div><div class="site-title">City Room</div><div class="site-description">Blogging From the Five Boroughs</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//cityroom.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search City Room">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-2739 post type-post status-publish hentry category-courts-and-law category-crime-public-safety category-cultural-affairs category-manhattan category-pop-culture tag-movies tag-soho tag-uma-thurman" id="post-2739">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Uma Thurman Tells Jury of Menacing Notes From a Fan</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Anemona Hartocollis			</address>
+			<!-- date published --><time class="dateline " datetime="2008-05-01T18:27:44+00:00" itemprop="datePublished">May 1, 2008 2:27 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">May 1, 2008 2:27 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="full-width"><img src="https://static01.nyt.com/images/2008/05/01/nyregion/uma-533.jpg" alt="Uma"/><span class="caption">Uma Thurman arrived at court on Thursday to testify in the case against Jack Jordan, her accused stalker. (Photos: John Marshall Mantel for The New York Times)</span></div>
+<p class="story-body-text" itemprop="articleBody"><span style="color:#8c2626;">Updated, 10:37 p.m. | </span> Uma Thurman gave a harrowing reading to a Manhattan jury of cards and e-mail messages sent to her by an obsessive fan who sneaked onto the set of a movie she was filming in New York City in 2005.<br />
+<span id="more-2739"></span><br />
+In her testimony on Thursday morning, she told how Jack Jordan, who is on trial for stalking the actress on and off over a period of two years, came to the door of her trailer on Prince Street in SoHo on Nov. 8, 2005, when she was making the movie &#8220;<a href="//movies.nytimes.com/movie/331687/My-Super-Ex-Girlfriend/overview">My Super Ex-Girlfriend.&#8221;</a> He identified himself to one of Ms. Thurman’s assistants as a friend of her parents.</p>
+<p class="story-body-text" itemprop="articleBody">Trying not to be rude, because her parents have many friends &#8212; some “eccentric,” Ms. Thurman testified &#8212; she asked her assistant to take a telephone number, then innocently opened a card that the assistant delivered from Mr. Jordan.</p>
+<div class="standard190 right"><img src="https://static01.nyt.com/images/2008/05/01/nyregion/jordan-190.jpg" alt="Jordan"/><span class="caption">Jack Jordan</span></div>
+<p class="story-body-text" itemprop="articleBody">Little pieces of torn paper and a dollar bill fell out of the envelope, she said, as she pulled out a child’s confirmation card. On the front, was a dreamy pastel store-bought image of a small blonde girl, a spray of pink flowers and a dove.</p>
+<p class="story-body-text" itemprop="articleBody">On the back was a crude pen and ink drawing of a male stick figure &#8211;­ apparently Mr. Jordan &#8212; walking off the edge of an Acme razor blade into an open grave, where a female stick figure, ­ apparently Ms. Thurman &#8212; had a thought balloon over her head saying, “Tee-hee.”</p>
+<p class="story-body-text" itemprop="articleBody">On the blank side of the card was a handwritten message in the shape of a spiral. Most of the words had been inked out, and Ms. Thurman read the still visible ones out loud in court in a soft, slow voice: “Chocolate, mouth, soft, kissing…,” she said, adding, “And then I saw this part: ‘My hand should be on your body.’”</p>
+<p class="story-body-text" itemprop="articleBody">She was terrified, she said: “It didn’t look right. It looked very disturbed. All these words crossed out and then you looked at the ones that were left.”</p>
+<p class="story-body-text" itemprop="articleBody">Ms. Thurman, whose testimony is continuing this afternoon, testified on the third day of Mr. Jordan’s stalking and harassment trial. Mr. Jordan’s lawyer has said that his client, who is schizophrenic and was forcibly institutionalized after delivering the note to Ms. Thurman’s trailer, was in love with Ms. Thurman, but did not intend to harm or threaten her.</p>
+<p class="story-body-text" itemprop="articleBody">Many jurors listened with mouths open, concentrating intently on Ms. Thurman’s testimony, as if they were watching a dramatic performance in a hushed theater. She read Mr. Jordan’s words at a slow pace, making them sound bigger than life, both more menacing and more pathetic than they looked on the written page.</p>
+<p class="story-body-text" itemprop="articleBody">The power of her reading was heightened by her own drawn, pared-down appearance. She wore a gray shawl thrown over black slacks and a black sweater. Her golden hair was carelessly knotted in the back, with long strands loose on both sides of her face. She wore no makeup and looked thin and hollow-eyed.</p>
+<p class="story-body-text" itemprop="articleBody">It was the first time that Mr. Jordan had ever been so close to her. He sat 20 feet away at the defense table, yet he studiously ignored her, looking away from her with a bottled-up, blank expression throughout her more than two hours of testimony.</p>
+<p class="story-body-text" itemprop="articleBody"><em><a href="//www.nytimes.com/2008/05/02/nyregion/02thurman.html?ref=nyregion">An updated version of this article</a> prepared for Friday&#8217;s editions is now online.</em></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//cityroom.blogs.nytimes.com/2008/05/01/uma-thurman-tells-jury-of-terrifying-notes-from-a-fan/" data-title="Uma Thurman Tells Jury of Menacing Notes From a Fan" data-description="The actress gave a reading to a Manhattan jury of material sent to her by an obsessive fan who sneaked onto the set of a movie she was filming in SoHo in 2005.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-60768">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Alex M. Pruteanu</span>
+			<span class="comment-link">
+				<a href="#comment-60768" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:59 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Aaah, madness.  It&#8217;s all around, blooming.</p>
+<p><a href="//swine.wordpress.com" rel="nofollow">//swine.wordpress.com</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60767">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">SKV</span>
+			<span class="comment-link">
+				<a href="#comment-60767" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:03 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>My sympathies to Ms. Thurman for her ordeal, and respect for her bravery in confronting her stalker.  This kind of thing happens to many people who are not famous, but by pursuing it in court, she is not only protecting her own rights but helping make the syndrome known and recognized so others will be taken seriously.  I hope she gets justice.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60766">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">JR Flanders</span>
+			<span class="comment-link">
+				<a href="#comment-60766" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:12 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This article seems pretty tawdry and harsh its the characterization of Thurman&#8217;s appearance. I agree with SKV; she&#8217;s brave to confront her stalker and appear in public. As a benefit, she gets called &#8220;haggard&#8221; and &#8220;hollow-eyed.&#8221; Should stars be required to dress all sexy for their public appearances, even in front of a man who stalks her?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60765">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mark Dawson</span>
+			<span class="comment-link">
+				<a href="#comment-60765" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:18 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Uma needs to hire Travis Bickle as her bodyguard.  No doubt Quentin T. will turn this into a script, and Uma can play herself in the movie.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60757">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jeffery Wainright</span>
+			<span class="comment-link">
+				<a href="#comment-60757" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:29 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Very sad that this young man is crazy, but wouldn&#8217;t you have to be to stalk Uma Thurman&#8211;all downhill since Pulp Fiction. As to her reading of the note in court, it&#8217;s very dramatic because she herself is a drama queen, you see. That&#8217;s one of the myths of actors, it&#8217;s not some craft that they hone through training, it&#8217;s just good-looking people affected with bipolar disorder we choose to throw money at. In any case, if indeed this young man was so obsessed why give her assistant a note, and why not just jump into her trailer and do his business with her. That seems something a truly deranged and terrifying individual would have done, but all he does is give her a goth/emo note any 16 y.o. death-metal fan could have written. Also the characterization that he &#8220;sneaked&#8221; on to the set. So he was able to surreptitiously wander into the set of a movie being filmed on a public sidewalk, in a very crowded part of the city, in one of the most populous cities in North America; that is truly shocking. </p>
+<p>What I think gets lost here is the problem of mental illness. I would not describe this young man as an &#8220;obsessed fan&#8221; as much as I&#8217;d describe him as being mentally ill and requiring of medical attention. The fact that he is in the midst of a criminal trial is very telling about our society. That&#8217;s like saying Mark Chapman was really into John Lennon and just went a bit overboard.  So much tragedy in modern history could have been avoided if people had intervened at an earlier stage of a person&#8217;s illness.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60760">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">David in Brooklyn</span>
+			<span class="comment-link">
+				<a href="#comment-60760" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:30 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It&#8217;s embarrassing for the rest of us when disturbed fans cross a line. Thank goodness most New Yorkers are cool.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60761">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Sharon</span>
+			<span class="comment-link">
+				<a href="#comment-60761" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:38 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Hey Mark (number 4), Tacky, tacky.  Of course a comment posted by a man.  These offences are offensive and threatening and scary &#8212; and in some cases physically insulting; they are always psychically insulting.  Get a grip and get a view.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60762">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Siouxie</span>
+			<span class="comment-link">
+				<a href="#comment-60762" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:48 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Not to be catty, but I saw Uma Thurman on the street and, yes, she&#8217;s slim and statuesque, but she also looks like a bag lady.</p>
+<p>I&#8217;ve also heard same on the radio.  Maybe this is her public disguise.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60759">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mariano Patalinjug</span>
+			<span class="comment-link">
+				<a href="#comment-60759" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:48 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Yonkers, New York<br />
+01 May 2008</p>
+<p>I am not at all surprised that Miss Uma Thurman, the well-known movie actress, has been stalked for a long time now by Jack Jordan, who is apparently suffering from a mental disorder.</p>
+<p>As it happens, many movie and television stars, unfortunately, must go through the same predicament as Miss Thurman.</p>
+<p>That must be the price they are compelled to pay for their celebrity.</p>
+<p>Stalkers like Jack Jordan deserve to be confined and treated in a mental institution where they will cease to be a threat to celebrities like Uma Thurman.</p>
+<p>Mariano Patalinjug<br />
+<a href="mailto:MarPatalinjug@aol.com">MarPatalinjug@aol.com</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60763">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Yogi</span>
+			<span class="comment-link">
+				<a href="#comment-60763" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:49 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;Get a View&#8221; ??????</p>
+<p>i dont get it.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60764">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jon</span>
+			<span class="comment-link">
+				<a href="#comment-60764" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:49 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I don&#8217;t disagree with you about not minimizing her ordeal, but you didn&#8217;t have to call us all tacky, did you? That would be, uh&#8230; tacky.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60754">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Elan Durham</span>
+			<span class="comment-link">
+				<a href="#comment-60754" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:54 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Dear Ms. Thurman, anyone with taste knows you are a talented actress who deserves better than the comments of Jeffery #5 who underestimates the power of terror that a man&#8211;a strange one&#8211;can have over a woman, especially a public figure, not exactly a group exempt from stalking and menace. </p>
+<p>The &#8220;victim&#8221; felt threatened by Uma&#8217;s power and wanted to leverage some for himself through intimidation. We all know this never happens in real life&#8211;only in the fevered imaginations of actors and actresses.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60755">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">famdoc</span>
+			<span class="comment-link">
+				<a href="#comment-60755" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:54 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>AH, you wrote: &#8220;Many jurors listened open-mouthed, and with full concentration to Ms. Thurman’s testimony, as if they were at a performance in a hushed theater. As an actress, she seemed to bring an almost unconscious drama to the reading, making Mr. Jordan’s words sound bigger than life, both more menacing and more tragic than they did on the written page.&#8221;</p>
+<p>We think: Why is it necessary to inject a cynical note into this reporting?  &#8220;seemed&#8221; is a judgment not a statement of fact.  This woman&#8217;s life was in danger because of a delusional obsessed fan and you&#8217;re telling us the validity of her testimony should be tempered by the fact that, as an actress, she holds the power to persuade others.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60756">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Stew</span>
+			<span class="comment-link">
+				<a href="#comment-60756" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:55 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I&#8217;m with JR in comment 3: Uma was looking like someone going through a harrowing experience. As far as her hair goes; in the photo you run with the article it looks like it was windy coming into the courtroom. And to suggest that she was bringing an &#8220;unconscious drama&#8221; to her reading of the psycho&#8217;s letter?  This article has the feel of being written by some starstruck intern at People magazine. Wasn&#8217;t the NY Times once considered to be a paper that respected journalism. Lame, Shame and Who&#8217;s to Blame? Support and Love to Uma &#8211; fooey on the NYTimes!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60749">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">ehs</span>
+			<span class="comment-link">
+				<a href="#comment-60749" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:57 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>poor ms. thurman. but also poor mr. jordan. to be sick (mentally ill) is an issue in itself which noone seems to touch upon. i hope he can get some help.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60750">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">brendan</span>
+			<span class="comment-link">
+				<a href="#comment-60750" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:58 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>She looks good in the picture. I agree &#8212; don&#8217;t call her hollow-eyed. Jeez. Chick&#8217;s getting stalked.-b</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60751">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Peter</span>
+			<span class="comment-link">
+				<a href="#comment-60751" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:59 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Regardless of how crazy it is, what Jordan did is protected by the First Amendment. He didn&#8217;t threaten her life (he was only threatening his own). To the contrary, he was writing LOVE letters (albeit fairly nutty ones). His notes and emails are clearly protected speech. </p>
+<p>As for showing up at a filming&#8230;since when is showing up ONCE considered stalking?? Now if he were to surrepticiously follow her back to her home 7 days a week, 365 days a year&#8230;now that&#8217;s stalking. Sending notes isn&#8217;t stalking.</p>
+<p>Jordan isn&#8217;t the only crazed maniac. Uma Thurman is too &#8211; for taking a bunch of crazy notes TOO SERIOUSLY. She&#8217;s a high-profile movie start for god sakes &#8211; she has to get used to getting crazy fanmail.</p>
+<p>If Jordan is found guilty (which I hope wont happen), I am sure that appellate courts will overturn the verdict on free speech grounds.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60752">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">EBS</span>
+			<span class="comment-link">
+				<a href="#comment-60752" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:00 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>There is no telling how far a stalker will go in pursuit of his obsession. At the age of 19, a female relative of mine had a brief conversation with a young man one night at a college party. This inconsequential meeting began a persistent course of stalking that lasted almost 20 years. The stalker phoned her dozens of times, spied on her and wrote hundreds of delusional, disturbed letters. He claimed to be a famous architect and businessman, destined to build new cities with his ideal woman (my relative) at his side.</p>
+<p>In reality he was unemployable bipolar dropout who lived with his mother. His infatuation eventually crossed the line when he made physical threats against my relative and against other members of my family. Restraining orders, arrests, court-ordered psychiatric counselling and confinement to jail did not end his pursuit, which persisted even after the object of his obsession married and moved to another country. Eighteen years after their first and only meeting, the stalker crashed a family funeral attended by my relative and was charged once again with violating his restraining order. </p>
+<p>I can&#8217;t say, after almost 30 years, if we have seen the end of this man&#8217;s obsession. </p>
+<p>Uma Thurman appears to have suffered far less by comparison, though the full story of her stalking is perhaps not told in this article. I wish her all the best and pray that this trial ends Jack Jordan&#8217;s intrusion into her life.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60753">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">MARK KLEIN, M.D.</span>
+			<span class="comment-link">
+				<a href="#comment-60753" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:00 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Re Sharon&#8217;s comment (#7) to Mark (#4). If women had their way, men would be stripped of 1st Amendment rights.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60758">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Chris</span>
+			<span class="comment-link">
+				<a href="#comment-60758" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:05 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Mr Wainright doesn&#8217;t have a clue about the psychological makeup of stalkers, and he&#8217;s just a jerk regarding his opinions of Ms. Thurman. Stalkers not infrequently obssess to the point of murder. Ms. Thurman shouldn&#8217;t have had to testify in front of him because attention from the stalked person is what the stalker desires, that and proximity. Bu he gets to confron his accuser, blah blah. And regarding &#8216;if people had intervened'; please give me a break. I worked in emergency psychiatric care for over 10 years and the civil liberties of the mentally ill are so well protected that it is difficult to force people to get help until they are demonstrably dangerous. He needs to go away for a long long time.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60748">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">overreaction</span>
+			<span class="comment-link">
+				<a href="#comment-60748" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:14 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This is a complete over-reaction. So he sent he one creepy note &#8212; SO WHAT? GET OVER IT. He didn&#8217;t touch her, he didn&#8217;t hurt her, he didn&#8217;t do anything drastic.</p>
+<p>Hope the poor guy doesn&#8217;t get thrown into jail for one stupid mistake. Forgive and forget&#8230; live and let live.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60746">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ellen</span>
+			<span class="comment-link">
+				<a href="#comment-60746" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:23 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Hey Peter (15)<br />
+She is absolutely right to take these notes seriously &#8211; violence against women is common, and at the same time, not taken seriously. I&#8217;d like to see how you would react to a similar situation.</p>
+<p>Years ago in Florida, there was a female murderer who staked out men&#8217;s bathrooms off the highway. I&#8217;m not sure how many men she eventually killed, but I do remember the horror of my male friends who were so shocked that a woman would target men &#8220;just because they are men&#8221;.. My female friends and I, while of course sympathetic, were amazed at how naive they were&#8230; even as we explained that male serial killers of women ran rampant.. they never got it. and i suspect the many men who have written derisive comments above will also never get it.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60745">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">mouse</span>
+			<span class="comment-link">
+				<a href="#comment-60745" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:30 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8216;Thin and hollow-eyed?&#8217;</p>
+<p>I hope she doesn&#8217;t read that!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-60744">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lyle Vos</span>
+			<span class="comment-link">
+				<a href="#comment-60744" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:38 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>This is why some people need to be able to carry a licensed firearm. I could not live in Manhattan without my Walther PPS. Perhaps this is Karma. Uma choose to portray violence in movies and now fears the violence she portrayed. </p>
+<p>I feel bad for her and her fan(atic). They both need help. Perhaps the good Dr. Klein would be willing to provide a few free sessions.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-60732">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">adam eichner</span>
+			<span class="comment-link">
+				<a href="#comment-60732" title="Comment Permalink">
+					<span class="comment-date">May 1, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:42 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>snap!  people!  the lady chooses to be famous! like spiderman is always telling me (he communicated with me through my fillings) he says adam, &#8221; with great power comes great responsibility!&#8221;</p>
+<p>and she&#8217;s a freakin&#8217; ninja!  she killed all those crazy 88s!</p>
+<p>come on people!</p>
+<p>seriously though &#8211; for a woman whose father is the pre-eminent professor of Buddhism in North America, and whose mother is a gogo dancer turned psychotherapist, Ms. Thurman seemed not to deal with a slightly intrusive mentally ill fellow not that effectively..</p>
+<p>And, finally, to the typically shrill responsa that &#8220;she&#8217;s a woman, you&#8217;re a man &#8211; she&#8217;s weak, vulnerable and you wouldn&#8217;t understand..&#8221;</p>
+<p>a few points &#8211;</p>
+<p>a- she&#8217;s made a decision to be a VERY public figure.  with that choice come ENORMOUS financial and likely other types of rewards.  with the rose comes the thorns &#8211; deal with it</p>
+<p>b- i know many women who could kick my 220 pound butt.  my own wife, as part of being a yoga teacher can hold a board type push-up for like four days.  One can decide not to be a &#8220;victim&#8221; by learning self defense and making sure to be intensely physically fit.</p>
+<p>the end.</p>
+<p>thank you very much</p>
+<p>p.s. a shout out to all the aliens who speak to me through my fillings!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//cityroom.blogs.nytimes.com/2008/05/01/the-mayors-new-budget-flat-after-years-of-growth/" title="The Mayor&#039;s New Budget, Flat After Years of Growth">
+				The Mayor&#8217;s New Budget, Flat After Years of Growth			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//cityroom.blogs.nytimes.com/2008/05/01/jury-duty-now-more-tech-friendly/" title="Jury Duty, Now More Tech-Friendly">
+				Jury Duty, Now More Tech-Friendly			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-8" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Looking for New York Today?</h4><div class="entry">
+<h5><a href="//www.nytimes.com/nytoday">New York Today</a></h5>
+<p class="summary">New York Today is still going strong! Though no longer on City Room, New York Today continues to appear every weekday morning, offering a roundup of news and events for the city. You can find the latest New York Today at <a href="//www.nytimes.com/nytoday">nytoday.com</a> or in the morning, on <a href="//www.nytimes.com">The New York Times homepage</a> or its <a href="//www.nytimes.com/nyregion">New York section</a>. You can also receive it via <a href="//www.nytimes.com/newsletters/newyorktoday">email</a>.</p>
+</div></div><div id="nyt_promo_widget-9" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Lookin for Metropolitan Diary?</h4><div class="entry">
+<p class="summary">Metropolitan Diary continues to publish! Since 1976, Metropolitan Diary has been a place for New Yorkers, past and present, to share odd fleeting moments in the city. We will continue to publish one item each weekday morning and a round-up in Monday's print edition.  You can find the latest entries at <a href="//www.nytimes.com/column/metropolitan-diary">nytimes.com/diary</a> and on our <a href="//www.nytimes.com/nyregion">New York section</a> online. </p>
+</div></div>		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry">
+<p class="summary"><a href="//cityroom.blogs.nytimes.com/">City Room®</a>, a news blog of live reporting, features and reader conversations about New York City, has been archived. Send questions or suggestions  <a href="mailto:cityroom@nytimes.com">by e-mail</a>.</p>
+</div>
+<div class="entry">
+<h6 class="kicker">Browse Posts by Borough</h6>
+<ul class="refer wide">
+<li><a href="//cityroom.blogs.nytimes.com/category/brooklyn/"><strong>Brooklyn </strong></a> | <a href="//cityroom.blogs.nytimes.com/category/the-bronx/"><strong>The Bronx </strong></a> | <a href="//cityroom.blogs.nytimes.com/category/manhattan/"><strong>Manhattan </strong> </a>| <a href="//cityroom.blogs.nytimes.com/category/queens/"><strong>Queens </strong></a> | <a href="//cityroom.blogs.nytimes.com/category/staten-island/"><strong>Staten Island  </strong> </a></li>
+</ul>
+</div>
+<p><!-- end entry --></p>
+</div>		<div class="module ad" id="Box1"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-2',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":75,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

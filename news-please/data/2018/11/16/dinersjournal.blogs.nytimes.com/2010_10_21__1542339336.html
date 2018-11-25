@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dinersjournal section-dining"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000390339"><meta name="author" content="Emily Weinstein" />
+<meta name="CLMST" content="Emily Weinstein" />
+<meta name="byl" content="Emily Weinstein" />
+<meta name="GBLC" content="Breads/Baked Goods;cooking;Cuisine;Dinner;French;lunch;Other;The Baker's Apprentice;vegetarian">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1287690446" />
+<meta name="PUD" content="20101021" />
+<meta name="pdate" content="20101021" />
+<meta name="ptime" content="20101021154726" />
+<meta name="utime" content="20101021221533" />
+<meta property="article:modified_time" itemprop="dateModified" content="2010-10-21T22:15:33-04:00" />
+<meta name="DISPLAYDATE" content="October 21, 2010" />
+<meta name="dat" content="October 21, 2010" />
+<meta itemprop="articleSection" property="article:section" content="Style" />
+<meta name="CG" content="Style" />
+<meta name="SCG" content="Dining" />
+<meta name="BN" content="dinersjournal" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Breads/Baked Goods" />
+<meta property="article:tag" content="cooking" />
+<meta property="article:tag" content="Cuisine" />
+<meta property="article:tag" content="Dinner" />
+<meta property="article:tag" content="French" />
+<meta property="article:tag" content="lunch" />
+<meta property="article:tag" content="Other" />
+<meta property="article:tag" content="The Baker&#039;s Apprentice" />
+<meta property="article:tag" content="vegetarian" />
+<meta name="keywords" content="Breads/Baked Goods,cooking,Cuisine,Dinner,French,lunch,Other,The Baker&#039;s Apprentice,vegetarian" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F10%2F21%2Fthe-bakers-apprentice-mustard-tart%2F" title="The Baker&#8217;s Apprentice: Mustard Tart" />
+<meta name="description" content="Emily Weinstein attempts a tart crust in her series of lessons on baking." />
+<meta name="hdl" content="The Baker&#039;s Apprentice: Mustard Tart" />
+<meta property="og:title" content="The Baker&#039;s Apprentice: Mustard Tart" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dinersjournal.blogs.nytimes.com/2010/10/21/the-bakers-apprentice-mustard-tart/" />
+<meta property="og:site_name" content="Diner’s Journal Blog" />
+<meta property="og:description" content="Emily Weinstein attempts a tart crust in her series of lessons on baking." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="The Baker&#039;s Apprentice: Mustard Tart" />
+<meta name="twitter:url" content="//dinersjournal.blogs.nytimes.com/2010/10/21/the-bakers-apprentice-mustard-tart/" />
+<meta name="twitter:description" content="Emily Weinstein attempts a tart crust in her series of lessons on baking." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nytdining">
+<link rel='prev' title='Mackerel: The Sustainable Fish' href='//dinersjournal.blogs.nytimes.com/2010/10/21/mackerel-the-sustainable-fish/' />
+<link rel='next' title='Where Everybody Knows Your Name, and Other Things About You, Too' href='//dinersjournal.blogs.nytimes.com/2010/10/21/where-everybody-knows-your-name-and-other-things-about-you-too/' />
+<link rel='canonical' href='//dinersjournal.blogs.nytimes.com/2010/10/21/the-bakers-apprentice-mustard-tart/' />
+<link rel='shortlink' href='//nyti.ms/du3Uwn' />
+<link rel='https://github.com/WP-API/WP-API' href='//dinersjournal.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dinersjournal/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dinersjournal.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/dining/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dinersjournal/2010/10/21/the-bakers-apprentice-mustard-tart/" />
+<meta name="dfp-ad-unit-path" content="style/dinersjournal" />			<title>Recipe for Mustard Tart by Dorie Greenspan - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-38831 blog-universal nyt-blog-dinersjournal" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Style', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dinersjournal.blogs.nytimes.com">
+                Diner&#039;s Journal            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        The Baker&#8217;s Apprentice: Mustard Tart        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dinersjournal.blogs.nytimes.com/2010/10/21/the-bakers-apprentice-mustard-tart/"
+	 data-title="The Baker&#8217;s Apprentice: Mustard Tart"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Emily Weinstein attempts a tart crust in her series of lessons on baking. &lt;/span&gt;&lt;a href=&quot;//dinersjournal.blogs.nytimes.com/2010/10/21/the-bakers-apprentice-mustard-tart/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="October 21, 2010 3:47 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dinersjournal" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//dinersjournal.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Style" title="Go to Diner&#039;s Journal Home"><img src="https://static01.nyt.com/images/blogs_v5/dinersjournal/dinersjournal_post.png" alt="Diner&#039;s Journal - The New York Times Blog on Dining Out"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dinersjournal.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Diner&#039;s Journal">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-38831 post type-post status-publish hentry category-breadsbaked-goods category-cooking category-cuisine category-dinner category-french category-lunch category-other category-the-bakers-apprentice category-vegetarian tag-dorie-greenspan tag-home-cooking tag-mustard-tart tag-the-bakers-apprentice" id="post-38831">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">The Baker&#8217;s Apprentice: Mustard Tart</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Emily Weinstein			</address>
+			<!-- date published --><time class="dateline " datetime="2010-10-21T19:47:26+00:00" itemprop="datePublished">October 21, 2010 3:47 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">October 21, 2010 3:47 pm</span>		</div>
+			</header>
+		<div class="entry-content"><form method="post" name="emailThis_38831" id="emailThis_38831" style="display: inline;" enctype="application/x-www-form-urlencoded" action="//www.nytimes.com/mem/emailthis.html">
+<input type="hidden" name="type" value="1" />
+<input type="hidden" name="url" value="http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F10%2F21%2Fthe-bakers-apprentice-mustard-tart%2F" />
+<input type="hidden" name="title" value="Diner%26%23039%3Bs%20Journal%3A%20The%20Baker%26%238217%3Bs%20Apprentice%3A%20Mustard%20Tart" />
+<input type="hidden" name="description" value="%3Cspan%20class%3D%22excerpt-inner%22%3EEmily%20Weinstein%20attempts%20a%20tart%20crust%20in%20her%20series%20of%20lessons%20on%20baking.%20%3C%2Fspan%3E%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F10%2F21%2Fthe-bakers-apprentice-mustard-tart%2F%22%20class%3D%22more-link%22%3ERead%26nbsp%3Bmore...%3C%2Fa%3E" />
+<input type="hidden" name="author" value="By%20Emily%20Weinstein" />
+<input type="hidden" name="section" value="Style" />
+<input type="hidden" name="full_text" value="%3Cdiv%20class%3D%22w350%22%3E%3Cimg%20src%3D%22https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2010%2F10%2F21%2Fdining%2Fdj-tart%2Fdj-tart-custom1.jpg%22%20alt%3D%22%22%20%2F%3E%3Cspan%20class%3D%22credit%22%3EEmily%20Weinstein%3C%2Fspan%3E%20%3Cspan%20class%3D%22caption%22%3E%20%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cp%3E%3Cem%3EEmily%20Weinstein%2C%20who%20wrote%20%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2Fauthor%2Femily-weinstein%2F%22%3Ea%20series%20on%20this%20blog%20about%20learning%20to%20cook%3C%2Fa%3E%2C%20is%20now%20learning%20to%20bake%20with%20the%20food%20writer%20and%20cookbook%20author%20%3Ca%20href%3D%22http%3A%2F%2Fdoriegreenspan.com%2F%22%3EDorie%20Greenspan%3C%2Fa%3E.%20%3C%2Fem%3E%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3ELESSON%207%3A%20G%C3%89RARD%26%238217%3BS%20MUSTARD%20TART%20%20%28From%20%E2%80%9C%3Ca%20href%3D%22http%3A%2F%2Fwww.houghtonmifflinbooks.com%2Fcatalog%2Ftitledetail.cfm%3FtitleNumber%3D694263%22%3EAround%20My%20French%20Table%3C%2Fa%3E%E2%80%9D%29%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cp%3E%3Cem%3ETechniques%20and%20tips%20discussed%3A%20savory%20baking%2C%20yet%20more%20dough%20handling%20and%20rolling%2C%20mustard%26%238217%3Bs%20punch%20%28or%20lack%20thereof%29.%3C%2Fem%3E%3C%2Fp%3E%0A%3Cp%3EI%20love%20savory%20pastries%2C%20which%20in%20New%20York%20have%20proliferated%20lately%20in%20the%20form%20of%20cheddar%20biscuits%20and%20bacon%20scones%20%E2%80%94%20that%20is%2C%20on%20the%20Southern%2C%20or%20Southern-inspired%2C%20spectrum.%20But%20what%20of%20the%20French%20way%3F%20I%20assumed%20that%20way%20would%20be%20quiche%2C%20even%20though%20I%20have%20a%20sort%20of%20hate-love%20relationship%20with%20quiche%2C%20in%20that%20I%20always%20think%20I%26%238217%3Bll%20hate%20it%20until%20the%20rare%20occasion%20comes%20along%20in%20which%20I%20am%20offered%20a%20piece%2C%20accept%2C%20and%20eat%20every%20bite.%20Still%2C%20I%20knew%20it%20was%20a%20lesson%20I%20needed%20to%20learn%2C%20and%20so%20I%20didn%26%238217%3Bt%20share%20my%20feelings%20with%20Dorie.%20Prejudices%20would%20just%20have%20to%20be%20overcome.%3C%2Fp%3E%0A%3Cp%3EBut%20what%20Dorie%20then%20proposed%20was%20a%20mustard%20tart%20%E2%80%94%C2%A0%26%238220%3BThink%20of%20it%20as%20a%20cheeseless%20quiche%2C%26%238221%3B%20she%20wrote%20in%20an%20e-mail.%20%26%238220%3BIt%20doesn%E2%80%99t%20look%20like%20anything%20else%20you%E2%80%99ve%20made%20%E2%80%A6%20and%20it%E2%80%99s%20so%20delicious%21%E2%80%9D%20A%20recipe%20from%20her%20new%20cookbook%2C%20%E2%80%9C%3Ca%20href%3D%22http%3A%2F%2Fwww.houghtonmifflinbooks.com%2Fcatalog%2Ftitledetail.cfm%3FtitleNumber%3D694263%22%3EAround%20My%20French%20Table%3C%2Fa%3E%2C%26%238221%3B%20it%26%238217%3Bs%20a%20dish%20%3Ca%20href%3D%22http%3A%2F%2Fdoriegreenspan.com%2F2010%2F10%2Ffrench-fridays-with-dorie-gerards-mustard-tart-the-back-story.html%22%3Eshe%20learned%20to%20make%20from%20her%20friend%20G%C3%A9rard%20Jeannin%3C%2Fa%3E%2C%20who%20owns%20a%20bed%20and%20breakfast%2C%20with%20his%20wife%2C%20near%20Dijon.%20Made%20with%20p%C3%A2te%20bris%C3%A9e%20%E2%80%94%20a%20type%20of%20buttery%20dough%20I%20hadn%E2%80%99t%20yet%20attempted%2C%20different%20from%20the%20pie%20crust%20I%20made%20using%20%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F09%2F10%2Fthe-bakers-apprentice-peach-or-apple-pie%2F%22%3ESarabeth%20Levine%E2%80%99s%20recipe%3C%2Fa%3E%20%E2%80%94%20and%20slivers%20of%20carrots%20and%20leeks%2C%20it%E2%80%99s%20a%20tart%20with%20strong%20mustard%20flavors%20and%20scents%2C%20the%20kind%20that%20invade%20your%20nose%20and%20make%20your%20eyes%20water.%20%3Cspan%20id%3D%22more-38831%22%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3ETips%20from%20Dorie%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cli%3EUse%20a%20fluted%20tart%20pan%20with%20a%20removable%20base%2C%20and%20butter%20the%20pan%20even%20if%20it%20is%20nonstick.%3C%2Fli%3E%0A%3Cli%3EThe%20colder%20the%20butter%2C%20the%20better.%20If%20you%20have%20butter%20in%20the%20freezer%2C%20just%20cut%20the%20frozen%20butter%20into%20pieces%20and%20go%20straight%20to%20the%20food%20processor.%20It%E2%80%99s%20best%20if%20your%20egg%20is%20cold%20too.%3C%2Fli%3E%0A%3Cli%3EOnce%20you%E2%80%99ve%20added%20the%20egg%20to%20the%20dough%2C%20mix%20until%20you%20have%20dough%20that%20has%20clumps%20and%20curds%2C%20which%20can%20take%20longer%20than%20you%20might%20think.%20You%E2%80%99re%20looking%20for%20a%20dough%20that%20will%20hold%20together%20and%20stick%20to%20itself%20when%20pinched.%20Do%20not%20overprocess.%3C%2Fli%3E%0A%3Cli%3EAfter%20turning%20the%20dough%20out%2C%20if%20you%E2%80%99d%20like%20%28or%20if%20it%20doesn%E2%80%99t%20come%20together%20easily%29%2C%20you%20can%20do%20what%20the%20French%20call%20fraisage%2C%20which%20is%20a%20final%20blending%20process%3A%20Place%20a%20small%20piece%20of%20the%20dough%20under%20the%20heel%20of%20your%20hand%2C%20lift%20your%20fingers%20skyward%2C%20and%20push%20the%20dough%20forward.%20%20Repeat%20and%20then%20gather%20the%20dough%20into%20a%20ball%20before%20forming%20the%20disc.%3C%2Fli%3E%0A%3Cli%3EWhen%20you%26%238217%3Bre%20rolling%20out%20the%20dough%2C%20start%20from%20the%20center%20and%20work%20your%20way%20to%20the%20top%20edge.%20Give%20the%20circle%20a%20one-eighth%20turn%2C%20roll%20from%20the%20center%20outward%2C%20one-eighth%20turn%2C%20and%20so%20on.%20%20You%20turn%20the%20dough%20so%20that%20you%20keep%20the%20circle%20round%20%E2%80%94%20or%20roundish%3B%20no%20one%20ever%20gets%20it%20perfectly%20round.%20Also%2C%20turn%20the%20dough%20over%2C%20so%20that%20all%20parts%20of%20the%20dough%20are%20rolled%20equally.%20This%20will%20help%20the%20dough%20to%20bake%20and%20rise%20evenly.%3C%2Fli%3E%0A%3Cli%3ESteam%20the%20carrots%20and%20leeks%20until%20they%20are%20tender.%20Crisp%20vegetables%20just%20aren%26%238217%3Bt%20right%20here.%3C%2Fli%3E%0A%3Cli%3ECheck%20your%20mustard%20before%20you%20use%20it.%20%20Mustard%20can%20lose%20its%20punch%20%E2%80%94%20and%20its%20color%20too%20%E2%80%94%20sitting%20around%20in%20the%20refrigerator%20waiting%20for%20you.%3C%2Fli%3E%0A%3Cli%3EMake%20sure%20you%20bake%20the%20tart%20until%20the%20filling%20is%20uniformly%20puffed.%20It%20should%20rise%20in%20the%20center%2C%20not%20just%20around%20the%20edges.%3C%2Fli%3E%0A%3Cp%3EArmed%20with%20Dorie%E2%80%99s%20instructions%2C%20I%20made%20the%20mustard%20tart%20on%20a%20Sunday%20evening%2C%20with%20little%20drama%20to%20report.%20In%20fact%2C%20I%20was%20amazed%20at%20how%20easy%20it%20felt%20to%20make%20the%20tart%20dough%20%E2%80%94%20the%20dough%20practice%20from%20previous%20recipes%20was%20paying%20off%20%E2%80%94%20and%20I%20had%20a%20good%20time%20with%20it.%20A%20relaxing%20time%2C%20even.%20And%20wasn%E2%80%99t%20this%20the%20point%20of%20the%20learning-to-bake%20exercise%3A%20to%20see%20if%20I%20might%20like%20baking%20if%20only%20I%20could%20actually%20do%20it%3F%20When%20the%20finished%20tart%20finally%20came%20out%20of%20the%20oven%20that%20evening%2C%20I%20was%20elated%20by%20how%20beautiful%20it%20looked%2C%20my%20handsomest%20creation%20so%20far%20%28not%20that%20it%20has%20too%20much%20competition%29.%3C%2Fp%3E%0A%3Cp%3EThe%20mustard%20flavor%20was%20not%20as%20sharp%20as%20I%20anticipated%20it%20might%20be%20%E2%80%94%C2%A0I%20used%20only%20smooth%20Dijon%2C%20not%20grainy%2C%20which%20could%20account%20for%20it%2C%20but%20mostly%20likely%20my%20mustard%20was%20not%20at%20peak%20freshness.%20But%20it%20was%20delicious%3A%20rich%20buttery%20crust%3B%20subtly%20tangy%20mustard%3B%20smooth%2C%20mellow%20egg-cream%20filling%20%E2%80%94%20my%20love%20of%20savory%20tarts%20was%20now%20undeniable.%20I%20called%20Dorie%20to%20check%20in%20and%20found%20her%20in%20Seattle%2C%20where%20she%20was%20on%20a%20book%20tour%20supporting%20%26%238220%3BAround%20My%20French%20Table.%26%238221%3B%20%26%238220%3BIt%20was%20pretty%20painless%2C%26%238221%3B%20I%20told%20her.%3C%2Fp%3E%0A%3Cp%3E%26%238220%3BYou%20just%20said%20this%20was%20painless%2C%26%238221%3B%20she%20said%2C%20%26%238220%3Band%20you%20made%20a%20tart%20crust%21%20A%20few%20weeks%20ago%20if%20I%20said%2C%20%26%238216%3BEmily%2C%20just%20whip%20up%20this%20tart%2C%26%238217%3B%20you%20wouldn%26%238217%3Bt%20have%20had%20the%20confidence%20to%20say%2C%20%26%238216%3BSure.%26%238217%3B%20So%20this%20is%20pretty%20great.%20You%26%238217%3Bre%20getting%20a%20feel%20for%20dough%20%E2%80%94%20one%20of%20the%20basics%20of%20baking.%26%238221%3B%3C%2Fp%3E%0A%3Cp%3EThis%20recipe%20marks%20the%20halfway%20point%20in%20the%20baking%20project.%20Back%20to%20sweets%20next%20week.%3C%2Fp%3E%0A%3Cp%3E%3Cdiv%20class%3D%22recipe-wrap%22%3E%3Cdiv%20class%3D%22hrecipe%22%3E%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Ca%20class%3D%22recipe-print%22%20href%3D%22javascript%3AblogPostPrint%28%27Dorie%20Greenspan%2Chome%20cooking%2Cmustard%20tart%2CThe%20Baker%27s%20Apprentice%27%2C%20%27October%2021%2C%202010%27%2C%20%2738831%27%2C%20%27http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2FprintThis.html%27%2C%20%27https%3A%2F%2Fstatic01.nyt.com%2Fimages%2Fblogs_v3%2Fdinersjournal%2Fdinersjournal_print.png%27%20%29%3B%22%3EPrint%20Recipe%3C%2Fa%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3EG%C3%A9rard%E2%80%99s%20Mustard%20Tart%3C%2Fh3%3E%0A%3Cp%20class%3D%22recipe-author%22%3EAdapted%20from%20%22Around%20My%20French%20Table%22%20by%20Dorie%20Greenspan%20%28Houghton-Mifflin%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%20%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-summary%22%3E%3Ch5%3ESummary%3C%2Fh5%3E%3Cp%20class%3D%22summary%22%3EBe%20sure%20to%20use%20strong%20mustard%20from%20Dijon.%20Dorie%27s%20friend%20G%C3%A9rard%20Jeannin%20uses%20Dijon%E2%80%99s%20two%20most%20popular%20mustards%20in%20his%20tart%3A%20smooth%2C%20known%20around%20the%20world%20as%20Dijon%2C%20and%20grainy%20or%20old-fashioned%2C%20known%20in%20France%20as%20%E2%80%9C%C3%A0%20l%E2%80%99ancienne.%E2%80%9D%20You%20can%20use%20either%20one%20or%20the%20other%2C%20or%20you%20can%20adjust%20the%20proportions%20to%20match%20your%20taste%2C%20but%20whatever%20you%20do%2C%20make%20sure%20your%20mustard%20is%20fresh%2C%20bright%20colored%2C%20and%20powerfully%20fragrant.%20Do%20what%20G%C3%A9rard%20would%20do%3A%20smell%20it%20first.%20If%20it%20just%20about%20brings%20tears%20to%20your%20eyes%2C%20it%E2%80%99s%20fresh%20enough%20for%20this%20tart.%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E3%20carrots%20%28not%20too%20fat%29%2C%20trimmed%20and%20peeled%3C%2Fli%3E%3Cli%3E3%20thin%20leeks%2C%20white%20and%20light%20green%20parts%20only%2C%20cut%20lengthwise%20in%20half%20and%20washed%3C%2Fli%3E%3Cli%3E2%20rosemary%20sprigs%3C%2Fli%3E%3Cli%3E3%20large%20eggs%3C%2Fli%3E%3Cli%3E6%20tablespoons%20%20cr%C3%A8me%20fra%C3%AEche%20or%20heavy%20cream%3C%2Fli%3E%3Cli%3E2%20%20tablespoons%20%20Dijon%20mustard%2C%20or%20to%20taste%3C%2Fli%3E%3Cli%3E2%20%20tablespoons%20%20grainy%20mustard%2C%20preferably%20French%2C%20or%20to%20taste%3C%2Fli%3E%3Cli%3E%20Salt%2C%20preferably%20fleur%20de%20sel%2C%20and%20freshly%20ground%20white%20pepper%3C%2Fli%3E%3Cli%3E1%20%209-%20to%209%C2%BD-inch%20tart%20shell%20made%20from%20Tart%20Dough%20%28recipe%20below%29%2C%20partially%20baked%20and%20cooled%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3ECenter%20a%20rack%20in%20the%20oven%20and%20preheat%20the%20oven%20to%20425%20degrees.%20Line%20a%20baking%20sheet%20with%20a%20silicone%20baking%20mat%20or%20parchment%20paper.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ECut%20the%20carrots%20and%20leeks%20into%20slender%20b%C3%A2tons%20or%20sticks%3A%20First%20cut%20the%20carrots%20lengthwise%20in%20half%2C%20then%20place%20the%20halves%20cut%20side%20down%20on%20the%20cutting%20board%20and%20cut%20crosswise%20in%20half%20or%20cut%20into%20chunks%20about%203%20inches%20long.%20Cut%20the%20pieces%20into%201%2F%208-%20to%201%2F4-inch-thick%20matchsticks.%20If%20your%20carrots%20were%20fat%20and%20you%20think%20your%20matchsticks%20don%E2%80%99t%20look%20svelte%20enough%2C%20cut%20them%20lengthwise%20in%20half.%20Cut%20the%20leeks%20in%20the%20same%20way.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EFit%20a%20steamer%20basket%20into%20a%20saucepan.%20Pour%20in%20enough%20water%20to%20come%20almost%20up%20to%20the%20steamer%2C%20cover%2C%20and%20bring%20to%20a%20boil.%20Drop%20the%20carrots%2C%20leeks%2C%20and%201%20rosemary%20sprig%20into%20the%20basket%2C%20cover%2C%20and%20steam%20until%20the%20vegetables%20are%20tender%20enough%20to%20be%20pierced%20easily%20with%20the%20tip%20of%20a%20knife%2C%2010%20to%2015%20minutes.%20Drain%20the%20vegetables%20and%20pat%20them%20dry%3B%20discard%20the%20rosemary%20sprig.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EIn%20a%20medium%20bowl%2C%20whisk%20the%20eggs%20together%20with%20the%20cr%C3%A8me%20fra%C3%AEche%20or%20heavy%20cream.%20Add%20the%20mustards%2C%20season%20with%20salt%20and%20white%20pepper%20%E2%80%94%20mustard%20has%20a%20tendency%20to%20be%20salty%2C%20so%20proceed%20accordingly%20%E2%80%94%20and%20whisk%20to%20blend.%20Taste%20and%20see%20if%20you%20want%20to%20add%20a%20little%20more%20of%20one%20or%20the%20other%20mustards.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EPut%20the%20tart%20pan%20on%20the%20lined%20baking%20sheet%20and%20pour%20the%20filling%20into%20the%20crust.%20Arrange%20the%20vegetables%20over%20the%20filling%20%E2%80%94%20they%20can%20go%20in%20any%20which%20way%2C%20but%20they%E2%80%99re%20attractive%20arranged%20in%20spokes%20coming%20out%20from%20the%20center%20of%20the%20tart.%20Top%20with%20the%20remaining%20rosemary%20sprig%20and%20give%20the%20vegetables%20a%20sprinkling%20of%20salt%20and%20a%20couple%20of%20turns%20of%20the%20pepper%20mill.%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EBake%20the%20tart%20for%20about%2030%20minutes%2C%20or%20until%20it%20is%20uniformly%20puffed%20and%20lightly%20browned%20here%20and%20there%20and%20a%20knife%20inserted%20into%20the%20center%20of%20the%20custard%20comes%20out%20clean.%20Transfer%20the%20tart%20to%20a%20cooling%20rack%20and%20let%20it%20rest%20for%205%20minutes%20before%20removing%20the%20sides%20of%20the%20pan.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EServe%20hot%2C%20warm%2C%20or%20at%20room%20temperature%20%28or%20lightly%20chilled%29.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EServing%3A%20The%20tart%20is%20delicious%20just%20out%20of%20the%20oven%2C%20warm%2C%20at%20room%20temperature%2C%20or%20even%20slightly%20chilled%20%E2%80%94%20although%20that%20wouldn%E2%80%99t%20be%20G%C3%A9rard%E2%80%99s%20preference%2C%20I%E2%80%99m%20sure.%20If%20you%E2%80%99re%20serving%20it%20as%20a%20starter%2C%20cut%20it%20into%206%20portions%3B%20if%20it%E2%80%99s%20the%20main%20event%2C%20serve%20it%20with%20a%20lightly%20dressed%20small%20salad.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EStoring%3A%20Like%20all%20tarts%2C%20this%20is%20best%20soon%20after%20it%20is%20made%2C%20but%20leftovers%20can%20be%20covered%2C%20chilled%2C%20and%20nibbled%20on%20the%20next%20day.%0D%0A%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-variations%22%3E%3Ch5%3EVariations%3C%2Fh5%3E%3Cul%3E%3Cli%3ETomato-Mustard%20Tart%3A%20This%20is%20the%20original%20recipe%20and%20the%20one%20I%20think%20you%E2%80%99ll%20make%20often%20when%20ripe%2C%20juicy%20tomatoes%20are%20in%20season.%20You%E2%80%99ll%20need%201%20super-large%20tomato%2C%201%20or%202%20regular-sized%20tomatoes%2C%202%20or%203%20plum%20tomatoes%2C%20or%2015%20to%2020%20cherry%20or%20grape%20tomatoes%20%28this%20has%20to%20be%20approximate%20because%20I%20don%E2%80%99t%20know%20how%20big%20your%20tomatoes%20will%20be%29.%20If%20you%E2%80%99ve%20got%20cherry%20or%20grape%20tomatoes%2C%20cut%20them%20in%20half%3B%20if%20you%E2%80%99ve%20got%20round%20or%20plum%20tomatoes%2C%20cut%20them%20into%20slices%20about%201%2F3%20to%20%C2%BD%20inch%20thick.%20Arrange%20the%20halves%20%28cut%20side%20down%29%20or%20slices%20in%20the%20filled%20tart%20shell%2C%20and%20don%E2%80%99t%20worry%20when%20they%20sink%20into%20the%20filling%3B%20just%20take%20care%20not%20to%20put%20in%20so%20many%20halves%20or%20slices%20that%20the%20filling%20rises%20above%20the%20sides%20of%20the%20crust.%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20from%20%22Around%20My%20French%20Table%22%20by%20Dorie%20Greenspan%20%28Houghton-Mifflin%2C%202010%29%3C%2Fp%3E%0A%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3ETart%20Dough%3C%2Fh3%3E%0A%3Cp%20class%3D%22recipe-yield%22%3E%3Ci%3EYield%3C%2Fi%3E%20%20Makes%20one%209%20-%20to%209%20%C2%BD-inch%20tart%20shell%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-author%22%3EAdapted%20from%20%22Around%20My%20French%20Table%22%20by%20Dorie%20Greenspan%20%28Houghton-Mifflin%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%20%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-summary%22%3E%3Ch5%3ESummary%3C%2Fh5%3E%3Cp%20class%3D%22summary%22%3EWhile%20Dorie%20uses%20this%20dough%20for%20savories%2C%20it%E2%80%99s%20really%20an%20all-purpose%20recipe%20that%20produces%20a%20not-too-rich%2C%20slightly%20crisp%20crust%20that%20is%20as%20happy%20holding%20pastry%20cream%20for%20a%20strawberry%20tart%20as%20it%20is%20encasing%20a%20creamy%20cheese%20filling%20for%20a%20quiche.%20This%20is%20a%20good%20dough%20to%20use%20anytime%20you%20see%20a%20recipe%20calling%20for%20p%C3%A2te%20bris%C3%A9e.%20Be%20prepared%3A%20The%20dough%20should%20chill%20for%20at%20least%203%20hours.%3Cbr%20%2F%3E%0D%0A%3Cbr%20%2F%3E%0D%0A%3Cbr%20%2F%3E%0D%0A%3Cbr%20%2F%3E%0D%0A%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E1%201%2F4%20cups%20all-purpose%20flour%3C%2Fli%3E%3Cli%3E1%20teaspoon%20sugar%3C%2Fli%3E%3Cli%3E1%2F2%20teaspoon%20salt%3C%2Fli%3E%3Cli%3E6%20%20tablespoons%20%283%2F4%20stick%29%20very%20cold%20%28or%20frozen%29%20unsalted%20butter%2C%20cut%20into%20bits%3C%2Fli%3E%3Cli%3E1%20large%20egg%3C%2Fli%3E%3Cli%3E1%20teaspoon%20%20ice%20water%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3ETo%20make%20the%20dough%20in%20a%20food%20processor%3A%20Put%20the%20flour%2C%20sugar%20and%20salt%20in%20the%20processor%20and%20whir%20a%20few%20times%20to%20blend.%20Scatter%20the%20bits%20of%20butter%20over%20the%20flour%20and%20pulse%20several%20times%2C%20until%20the%20butter%20is%20coarsely%20mixed%20into%20the%20flour.%20Beat%20the%20egg%20with%20the%20ice%20water%20and%20pour%20it%20into%20the%20bowl%20in%203%20small%20additions%2C%20whirring%20after%20each%20one.%20%28Don%E2%80%99t%20overdo%20it%20%E2%80%94%20the%20dough%20shouldn%E2%80%99t%20form%20a%20ball%20or%20ride%20on%20the%20blade.%29%20You%E2%80%99ll%20have%20a%20moist%2C%20malleable%20dough%20that%20will%20hold%20together%20when%20pinched.%20Turn%20the%20dough%20out%20onto%20a%20work%20surface%2C%20gather%20it%20into%20a%20ball%20%28if%20the%20dough%20doesn%E2%80%99t%20come%20together%20easily%2C%20push%20it%2C%20a%20few%20spoonfuls%20at%20a%20time%2C%20under%20the%20heel%20of%20your%20hand%20or%20knead%20it%20lightly%29%2C%20and%20flatten%20it%20into%20a%20disk.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ETo%20make%20the%20dough%20by%20hand%3A%20Put%20the%20flour%2C%20sugar%2C%20and%20salt%20in%20a%20large%20bowl.%20Drop%20in%20the%20bits%20of%20butter%20and%2C%20using%20your%20hands%20or%20a%20pastry%20blender%2C%20work%20the%20butter%20into%20the%20flour%20until%20it%20is%20evenly%20distributed.%20You%E2%80%99ll%20have%20large%20and%20small%20butter%20bits%2C%20and%20that%E2%80%99s%20fine%20%E2%80%94%20uniformity%20isn%E2%80%99t%20a%20virtue%20here.%20Beat%20the%20egg%20and%20water%20together%2C%20drizzle%20over%20the%20dough%2C%20and%2C%20using%20a%20fork%2C%20toss%20the%20dough%20until%20it%20is%20evenly%20moistened.%20Reach%20into%20the%20bowl%20and%2C%20using%20your%20fingertips%2C%20mix%20and%20knead%20the%20dough%20until%20it%20comes%20together.%20Turn%20it%20out%20onto%20a%20work%20surface%2C%20gather%20it%20into%20a%20ball%20%28if%20the%20dough%20doesn%E2%80%99t%20come%20together%20easily%2C%20push%20it%2C%20a%20few%20spoonfuls%20at%20a%20time%2C%20under%20the%20heel%20of%20your%20hand%20or%20knead%20it%20some%20more%29%2C%20and%20flatten%20it%20into%20a%20disk.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EChill%20the%20dough%20for%20at%20least%203%20hours.%20%28The%20dough%20can%20be%20refrigerated%20for%20up%20to%205%20days.%29%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EWhen%20you%E2%80%99re%20ready%20to%20make%20the%20tart%20shell%2C%20butter%20a%209-%20to%209%201%2F2-inch%20fluted%20tart%20pan%20with%20a%20removable%20bottom%20%28butter%20it%20even%20if%20it%E2%80%99s%20nonstick%29.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ETo%20roll%20out%20the%20dough%3A%20I%20like%20to%20roll%20out%20the%20dough%20between%20sheets%20of%20wax%20paper%20or%20plastic%20wrap%20or%20in%20a%20lightly%20floured%20rolling%20cover%2C%20but%20you%20can%20roll%20it%20out%20on%20a%20lightly%20floured%20work%20surface.%20If%20you%E2%80%99re%20working%20between%20sheets%20of%20paper%20or%20plastic%20wrap%2C%20lift%20the%20paper%20or%20plastic%20often%20so%20that%20it%20doesn%E2%80%99t%20roll%20into%20the%20dough%2C%20and%20turn%20the%20dough%20over%20frequently.%20If%20you%E2%80%99re%20just%20rolling%20on%20the%20counter%2C%20make%20sure%20to%20lift%20and%20turn%20the%20dough%20and%20reflour%20the%20counter%20often.%20The%20rolled-out%20dough%20should%20be%20about%20%C2%BC%20inch%20thick%20and%20at%20least%2012%20inches%20in%20diameter.%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ETransfer%20the%20dough%20to%20the%20tart%20pan%2C%20easing%20it%20into%20the%20pan%20without%20stretching%20it.%20%28What%20you%20stretch%20now%20will%20shrink%20in%20the%20oven%20later.%29%20Press%20the%20dough%20against%20the%20bottom%20and%20up%20the%20sides%20of%20the%20pan.%20If%20you%E2%80%99d%20like%20to%20reinforce%20the%20sides%20of%20the%20crust%2C%20you%20can%20fold%20some%20of%20the%20excess%20dough%20over%2C%20so%20that%20you%20have%20a%20double%20thickness%20around%20the%20sides.%20Using%20the%20back%20of%20a%20table%20knife%2C%20trim%20the%20dough%20even%20with%20the%20top%20of%20the%20pan.%20Prick%20the%20base%20of%20the%20crust%20in%20several%20places%20with%20a%20fork.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EChill%20%E2%80%94%20or%20freeze%20%E2%80%94%20the%20dough%20for%20at%20least%201%20hour%20before%20baking.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ECenter%20a%20rack%20in%20the%20oven%20and%20preheat%20the%20oven%20to%20400%20degrees.%20Press%20a%20piece%20of%20buttered%20foil%20%28or%20use%20nonstick%20foil%29%20against%20the%20crust%E2%80%99s%20surface.%20If%20you%E2%80%99d%20like%2C%20you%20can%20fill%20the%20covered%20crust%20with%20rice%20or%20dried%20beans%20%28which%20will%20be%20inedible%20after%20this%20but%20can%20be%20used%20for%20baking%20for%20months%20to%20come%29%20to%20keep%20the%20dough%20flat%2C%20but%20this%20isn%E2%80%99t%20really%20necessary%20if%20the%20crust%20is%20well%20chilled.%20Line%20a%20baking%20sheet%20with%20a%20silicone%20baking%20mat%20or%20parchment%20paper%20and%20put%20the%20tart%20pan%20on%20the%20sheet.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ETo%20partially%20bake%20the%20crust%3A%20Bake%20for%2020%20minutes%2C%20then%20very%20carefully%20remove%20the%20foil%20%28with%20the%20rice%20or%20beans%29.%20Return%20the%20crust%20to%20the%20oven%20and%20bake%20for%20another%203%20to%205%20minutes%2C%20or%20until%20it%20is%20lightly%20golden.%20Transfer%20the%20baking%20sheet%20to%20a%20cooling%20rack%20and%20allow%20the%20crust%20to%20cool%20before%20you%20fill%20it.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ETo%20fully%20bake%20the%20crust%3A%20Bake%20for%20an%20additional%2010%20minutes%2C%20or%20until%20it%20is%20an%20even%20golden%20brown.%20Transfer%20the%20baking%20sheet%20to%20a%20cooling%20rack%20and%20allow%20the%20crust%20to%20cool%20before%20you%20fill%20it.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3EStoring%3A%20Well%20wrapped%2C%20the%20dough%20can%20be%20kept%20in%20the%20refrigerator%20for%20up%20to%205%20days%20or%20frozen%20for%20up%20to%201%20month.%20Although%20the%20fully%20baked%20crust%20can%20be%20wrapped%20airtight%20and%20frozen%20for%20up%20to%202%20months%2C%20I%20prefer%20to%20freeze%20the%20unbaked%20crust%20in%20the%20pan%20and%20bake%20it%20directly%20from%20the%20freezer%20%E2%80%94%20it%20has%20a%20fresher%20flavor.%20Just%20add%20about%205%20minutes%20or%20so%20to%20the%20baking%20time.%0D%0A%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20from%20%22Around%20My%20French%20Table%22%20by%20Dorie%20Greenspan%20%28Houghton-Mifflin%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fp%3E%0A" />
+</form>
+<div class="w350"><img src="https://static01.nyt.com/images/2010/10/21/dining/dj-tart/dj-tart-custom1.jpg" alt="" /><span class="credit">Emily Weinstein</span> <span class="caption"> </span></div>
+<p class="story-body-text" itemprop="articleBody"><em>Emily Weinstein, who wrote <a href="//dinersjournal.blogs.nytimes.com/author/emily-weinstein/">a series on this blog about learning to cook</a>, is now learning to bake with the food writer and cookbook author <a href="//doriegreenspan.com/">Dorie Greenspan</a>. </em></p>
+<p class="story-body-text" itemprop="articleBody"><strong>LESSON 7: GÉRARD&#8217;S MUSTARD TART  (From “<a href="//www.houghtonmifflinbooks.com/catalog/titledetail.cfm?titleNumber=694263">Around My French Table</a>”)</strong></p>
+<p class="story-body-text" itemprop="articleBody"><em>Techniques and tips discussed: savory baking, yet more dough handling and rolling, mustard&#8217;s punch (or lack thereof).</em></p>
+<p class="story-body-text" itemprop="articleBody">I love savory pastries, which in New York have proliferated lately in the form of cheddar biscuits and bacon scones — that is, on the Southern, or Southern-inspired, spectrum. But what of the French way? I assumed that way would be quiche, even though I have a sort of hate-love relationship with quiche, in that I always think I&#8217;ll hate it until the rare occasion comes along in which I am offered a piece, accept, and eat every bite. Still, I knew it was a lesson I needed to learn, and so I didn&#8217;t share my feelings with Dorie. Prejudices would just have to be overcome.</p>
+<p class="story-body-text" itemprop="articleBody">But what Dorie then proposed was a mustard tart — &#8220;Think of it as a cheeseless quiche,&#8221; she wrote in an e-mail. &#8220;It doesn’t look like anything else you’ve made … and it’s so delicious!” A recipe from her new cookbook, “<a href="//www.houghtonmifflinbooks.com/catalog/titledetail.cfm?titleNumber=694263">Around My French Table</a>,&#8221; it&#8217;s a dish <a href="//doriegreenspan.com/2010/10/french-fridays-with-dorie-gerards-mustard-tart-the-back-story.html">she learned to make from her friend Gérard Jeannin</a>, who owns a bed and breakfast, with his wife, near Dijon. Made with pâte brisée — a type of buttery dough I hadn’t yet attempted, different from the pie crust I made using <a href="//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/">Sarabeth Levine’s recipe</a> — and slivers of carrots and leeks, it’s a tart with strong mustard flavors and scents, the kind that invade your nose and make your eyes water. <span id="more-38831"></span></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Tips from Dorie:</strong></p>
+<li>Use a fluted tart pan with a removable base, and butter the pan even if it is nonstick.</li>
+<li>The colder the butter, the better. If you have butter in the freezer, just cut the frozen butter into pieces and go straight to the food processor. It’s best if your egg is cold too.</li>
+<li>Once you’ve added the egg to the dough, mix until you have dough that has clumps and curds, which can take longer than you might think. You’re looking for a dough that will hold together and stick to itself when pinched. Do not overprocess.</li>
+<li>After turning the dough out, if you’d like (or if it doesn’t come together easily), you can do what the French call fraisage, which is a final blending process: Place a small piece of the dough under the heel of your hand, lift your fingers skyward, and push the dough forward.  Repeat and then gather the dough into a ball before forming the disc.</li>
+<li>When you&#8217;re rolling out the dough, start from the center and work your way to the top edge. Give the circle a one-eighth turn, roll from the center outward, one-eighth turn, and so on.  You turn the dough so that you keep the circle round — or roundish; no one ever gets it perfectly round. Also, turn the dough over, so that all parts of the dough are rolled equally. This will help the dough to bake and rise evenly.</li>
+<li>Steam the carrots and leeks until they are tender. Crisp vegetables just aren&#8217;t right here.</li>
+<li>Check your mustard before you use it.  Mustard can lose its punch — and its color too — sitting around in the refrigerator waiting for you.</li>
+<li>Make sure you bake the tart until the filling is uniformly puffed. It should rise in the center, not just around the edges.</li>
+<p class="story-body-text" itemprop="articleBody">Armed with Dorie’s instructions, I made the mustard tart on a Sunday evening, with little drama to report. In fact, I was amazed at how easy it felt to make the tart dough — the dough practice from previous recipes was paying off — and I had a good time with it. A relaxing time, even. And wasn’t this the point of the learning-to-bake exercise: to see if I might like baking if only I could actually do it? When the finished tart finally came out of the oven that evening, I was elated by how beautiful it looked, my handsomest creation so far (not that it has too much competition).</p>
+<p class="story-body-text" itemprop="articleBody">The mustard flavor was not as sharp as I anticipated it might be — I used only smooth Dijon, not grainy, which could account for it, but mostly likely my mustard was not at peak freshness. But it was delicious: rich buttery crust; subtly tangy mustard; smooth, mellow egg-cream filling — my love of savory tarts was now undeniable. I called Dorie to check in and found her in Seattle, where she was on a book tour supporting &#8220;Around My French Table.&#8221; &#8220;It was pretty painless,&#8221; I told her.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;You just said this was painless,&#8221; she said, &#8220;and you made a tart crust! A few weeks ago if I said, &#8216;Emily, just whip up this tart,&#8217; you wouldn&#8217;t have had the confidence to say, &#8216;Sure.&#8217; So this is pretty great. You&#8217;re getting a feel for dough — one of the basics of baking.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">This recipe marks the halfway point in the baking project. Back to sweets next week.</p>
+<p class="story-body-text" itemprop="articleBody"><div class="recipe-wrap"><div class="hrecipe"><div class="recipe-head">
+<a class="recipe-print" href="javascript:blogPostPrint('Dorie Greenspan,home cooking,mustard tart,The Baker's Apprentice', 'October 21, 2010', '38831', '//dinersjournal.blogs.nytimes.com/printThis.html', 'https://static01.nyt.com/images/blogs_v3/dinersjournal/dinersjournal_print.png' );">Print Recipe</a>
+<div class="recipe-meta">
+<h3>Gérard’s Mustard Tart</h3>
+<p class="recipe-author">Adapted from "Around My French Table" by Dorie Greenspan (Houghton-Mifflin, 2010)</p>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg "></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-summary"><h5>Summary</h5><p class="summary">Be sure to use strong mustard from Dijon. Dorie's friend Gérard Jeannin uses Dijon’s two most popular mustards in his tart: smooth, known around the world as Dijon, and grainy or old-fashioned, known in France as “à l’ancienne.” You can use either one or the other, or you can adjust the proportions to match your taste, but whatever you do, make sure your mustard is fresh, bright colored, and powerfully fragrant. Do what Gérard would do: smell it first. If it just about brings tears to your eyes, it’s fresh enough for this tart.</p></div><div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>3 carrots (not too fat), trimmed and peeled</li><li>3 thin leeks, white and light green parts only, cut lengthwise in half and washed</li><li>2 rosemary sprigs</li><li>3 large eggs</li><li>6 tablespoons  crème fraîche or heavy cream</li><li>2  tablespoons  Dijon mustard, or to taste</li><li>2  tablespoons  grainy mustard, preferably French, or to taste</li><li> Salt, preferably fleur de sel, and freshly ground white pepper</li><li>1  9- to 9½-inch tart shell made from Tart Dough (recipe below), partially baked and cooled</li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>Center a rack in the oven and preheat the oven to 425 degrees. Line a baking sheet with a silicone baking mat or parchment paper.</li>
+
+
+<li>Cut the carrots and leeks into slender bâtons or sticks: First cut the carrots lengthwise in half, then place the halves cut side down on the cutting board and cut crosswise in half or cut into chunks about 3 inches long. Cut the pieces into 1/ 8- to 1/4-inch-thick matchsticks. If your carrots were fat and you think your matchsticks don’t look svelte enough, cut them lengthwise in half. Cut the leeks in the same way.</li>
+
+
+<li>Fit a steamer basket into a saucepan. Pour in enough water to come almost up to the steamer, cover, and bring to a boil. Drop the carrots, leeks, and 1 rosemary sprig into the basket, cover, and steam until the vegetables are tender enough to be pierced easily with the tip of a knife, 10 to 15 minutes. Drain the vegetables and pat them dry; discard the rosemary sprig.</li>
+
+
+<li>In a medium bowl, whisk the eggs together with the crème fraîche or heavy cream. Add the mustards, season with salt and white pepper — mustard has a tendency to be salty, so proceed accordingly — and whisk to blend. Taste and see if you want to add a little more of one or the other mustards.</li>
+
+
+<li>Put the tart pan on the lined baking sheet and pour the filling into the crust. Arrange the vegetables over the filling — they can go in any which way, but they’re attractive arranged in spokes coming out from the center of the tart. Top with the remaining rosemary sprig and give the vegetables a sprinkling of salt and a couple of turns of the pepper mill. </li>
+
+
+<li>Bake the tart for about 30 minutes, or until it is uniformly puffed and lightly browned here and there and a knife inserted into the center of the custard comes out clean. Transfer the tart to a cooling rack and let it rest for 5 minutes before removing the sides of the pan.</li>
+
+
+<li>Serve hot, warm, or at room temperature (or lightly chilled).</li>
+
+
+<li>Serving: The tart is delicious just out of the oven, warm, at room temperature, or even slightly chilled — although that wouldn’t be Gérard’s preference, I’m sure. If you’re serving it as a starter, cut it into 6 portions; if it’s the main event, serve it with a lightly dressed small salad.</li>
+
+
+<li>Storing: Like all tarts, this is best soon after it is made, but leftovers can be covered, chilled, and nibbled on the next day.
+</li></ul></div><div class="recipe-variations"><h5>Variations</h5><ul><li>Tomato-Mustard Tart: This is the original recipe and the one I think you’ll make often when ripe, juicy tomatoes are in season. You’ll need 1 super-large tomato, 1 or 2 regular-sized tomatoes, 2 or 3 plum tomatoes, or 15 to 20 cherry or grape tomatoes (this has to be approximate because I don’t know how big your tomatoes will be). If you’ve got cherry or grape tomatoes, cut them in half; if you’ve got round or plum tomatoes, cut them into slices about 1/3 to ½ inch thick. Arrange the halves (cut side down) or slices in the filled tart shell, and don’t worry when they sink into the filling; just take care not to put in so many halves or slices that the filling rises above the sides of the crust.</li></ul></div><p class="recipe-source">Source: Adapted from "Around My French Table" by Dorie Greenspan (Houghton-Mifflin, 2010)</p>
+<div class="recipe-head">
+<div class="recipe-meta">
+<h3>Tart Dough</h3>
+<p class="recipe-yield"><i>Yield</i>  Makes one 9 - to 9 ½-inch tart shell</p>
+<p class="recipe-author">Adapted from "Around My French Table" by Dorie Greenspan (Houghton-Mifflin, 2010)</p>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg "></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-summary"><h5>Summary</h5><p class="summary">While Dorie uses this dough for savories, it’s really an all-purpose recipe that produces a not-too-rich, slightly crisp crust that is as happy holding pastry cream for a strawberry tart as it is encasing a creamy cheese filling for a quiche. This is a good dough to use anytime you see a recipe calling for pâte brisée. Be prepared: The dough should chill for at least 3 hours.<br />
+<br />
+<br />
+<br />
+</p></div><div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>1 1/4 cups all-purpose flour</li><li>1 teaspoon sugar</li><li>1/2 teaspoon salt</li><li>6  tablespoons (3/4 stick) very cold (or frozen) unsalted butter, cut into bits</li><li>1 large egg</li><li>1 teaspoon  ice water</li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>To make the dough in a food processor: Put the flour, sugar and salt in the processor and whir a few times to blend. Scatter the bits of butter over the flour and pulse several times, until the butter is coarsely mixed into the flour. Beat the egg with the ice water and pour it into the bowl in 3 small additions, whirring after each one. (Don’t overdo it — the dough shouldn’t form a ball or ride on the blade.) You’ll have a moist, malleable dough that will hold together when pinched. Turn the dough out onto a work surface, gather it into a ball (if the dough doesn’t come together easily, push it, a few spoonfuls at a time, under the heel of your hand or knead it lightly), and flatten it into a disk.</li>
+
+
+<li>To make the dough by hand: Put the flour, sugar, and salt in a large bowl. Drop in the bits of butter and, using your hands or a pastry blender, work the butter into the flour until it is evenly distributed. You’ll have large and small butter bits, and that’s fine — uniformity isn’t a virtue here. Beat the egg and water together, drizzle over the dough, and, using a fork, toss the dough until it is evenly moistened. Reach into the bowl and, using your fingertips, mix and knead the dough until it comes together. Turn it out onto a work surface, gather it into a ball (if the dough doesn’t come together easily, push it, a few spoonfuls at a time, under the heel of your hand or knead it some more), and flatten it into a disk.</li>
+
+
+<li>Chill the dough for at least 3 hours. (The dough can be refrigerated for up to 5 days.) </li>
+
+
+<li>When you’re ready to make the tart shell, butter a 9- to 9 1/2-inch fluted tart pan with a removable bottom (butter it even if it’s nonstick).</li>
+
+
+<li>To roll out the dough: I like to roll out the dough between sheets of wax paper or plastic wrap or in a lightly floured rolling cover, but you can roll it out on a lightly floured work surface. If you’re working between sheets of paper or plastic wrap, lift the paper or plastic often so that it doesn’t roll into the dough, and turn the dough over frequently. If you’re just rolling on the counter, make sure to lift and turn the dough and reflour the counter often. The rolled-out dough should be about ¼ inch thick and at least 12 inches in diameter. </li>
+
+
+<li>Transfer the dough to the tart pan, easing it into the pan without stretching it. (What you stretch now will shrink in the oven later.) Press the dough against the bottom and up the sides of the pan. If you’d like to reinforce the sides of the crust, you can fold some of the excess dough over, so that you have a double thickness around the sides. Using the back of a table knife, trim the dough even with the top of the pan. Prick the base of the crust in several places with a fork.</li>
+
+
+<li>Chill — or freeze — the dough for at least 1 hour before baking.</li>
+
+
+<li>Center a rack in the oven and preheat the oven to 400 degrees. Press a piece of buttered foil (or use nonstick foil) against the crust’s surface. If you’d like, you can fill the covered crust with rice or dried beans (which will be inedible after this but can be used for baking for months to come) to keep the dough flat, but this isn’t really necessary if the crust is well chilled. Line a baking sheet with a silicone baking mat or parchment paper and put the tart pan on the sheet.</li>
+
+
+<li>To partially bake the crust: Bake for 20 minutes, then very carefully remove the foil (with the rice or beans). Return the crust to the oven and bake for another 3 to 5 minutes, or until it is lightly golden. Transfer the baking sheet to a cooling rack and allow the crust to cool before you fill it.</li>
+
+
+<li>To fully bake the crust: Bake for an additional 10 minutes, or until it is an even golden brown. Transfer the baking sheet to a cooling rack and allow the crust to cool before you fill it.</li>
+
+
+<li>Storing: Well wrapped, the dough can be kept in the refrigerator for up to 5 days or frozen for up to 1 month. Although the fully baked crust can be wrapped airtight and frozen for up to 2 months, I prefer to freeze the unbaked crust in the pan and bake it directly from the freezer — it has a fresher flavor. Just add about 5 minutes or so to the baking time.
+</li></ul></div><p class="recipe-source">Source: Adapted from "Around My French Table" by Dorie Greenspan (Houghton-Mifflin, 2010)</p>
+</div></div></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dinersjournal.blogs.nytimes.com/2010/10/21/the-bakers-apprentice-mustard-tart/" data-title="The Baker&#8217;s Apprentice: Mustard Tart" data-description="Emily Weinstein attempts a tart crust in her series of lessons on baking. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2010/10/21/mackerel-the-sustainable-fish/" title="Mackerel: The Sustainable Fish">
+				Mackerel: The Sustainable Fish			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2010/10/21/where-everybody-knows-your-name-and-other-things-about-you-too/" title="Where Everybody Knows Your Name, and Other Things About You, Too">
+				Where Everybody Knows Your Name, and Other Things About You, Too			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dinersjournal.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/08/'> August 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/07/'> July 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/06/'> June 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/05/'> May 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" title="Read: A Note to Readers">A Note to Readers</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diner&#8217;s Journal is ceasing publication so that we can create a single Dining section destination: nytimes.com/dining. <a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"><img src="https://static01.nyt.com/images/2013/07/10/dining/10BURNER2/10BURNER2-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" title="Read: Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More">Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Florence Fabricant&#8217;s recommendations for the week of July 9th. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/whats-for-dinner/">What's for Dinner?</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" title="Read: Vietnamese Marinated Flank Steak">Vietnamese Marinated Flank Steak</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Vary the marinade, and you can serve flank steak in endless variation all summer. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/drinking/">Drinking</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" title="Read: Wines for Savory, Pungent Sausages">Wines for Savory, Pungent Sausages</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A list of wines to take to your summer rental.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/back-of-house/">Back of House</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" title="Read: After Midnight, She Rules the Kitchen">After Midnight, She Rules the Kitchen</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diana Bush, a baker at the NoMad, works from 8 p.m. to dawn making the restaurant&#8217;s bread.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">@nytdining</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytdining" title="Follow nytdining on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-13',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":56,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

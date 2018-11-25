@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-krugman section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-krugman section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-krugman section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-krugman section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000005381997"><meta name="author" content="" />
+<meta name="CLMST" content="" />
+<meta name="byl" content="" />
+<meta name="article:author" content="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/paulkrugman/index.html" /><meta name="GBLC" content="">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1213631082" />
+<meta name="PUD" content="20080616" />
+<meta name="pdate" content="20080616" />
+<meta name="ptime" content="20080616114442" />
+<meta name="utime" content="20170821161550" />
+<meta property="article:modified_time" itemprop="dateModified" content="2017-08-21T16:15:50-04:00" />
+<meta name="DISPLAYDATE" content="June 16, 2008" />
+<meta name="dat" content="June 16, 2008" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="krugman" />
+<meta name="BN" content="krugman" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Uncategorized" />
+<meta name="keywords" content="Uncategorized" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fkrugman.blogs.nytimes.com%2F2008%2F06%2F16%2Ftax-policy-puzzles%2F" title="Tax policy puzzles" />
+<meta name="description" content="" />
+<meta name="hdl" content="Tax policy puzzles" />
+<meta property="og:title" content="Tax policy puzzles" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//krugman.blogs.nytimes.com/2008/06/16/tax-policy-puzzles/" />
+<meta property="og:site_name" content="Paul Krugman Blog" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Tax policy puzzles" />
+<meta name="twitter:url" content="//krugman.blogs.nytimes.com/2008/06/16/tax-policy-puzzles/" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<link rel='prev' title='Bad free trade arguments' href='//krugman.blogs.nytimes.com/2008/06/14/bad-free-trade-arguments/' />
+<link rel='next' title='Campaign coverage puzzle' href='//krugman.blogs.nytimes.com/2008/06/16/campaign-coverage-puzzle/' />
+<link rel='canonical' href='//krugman.blogs.nytimes.com/2008/06/16/tax-policy-puzzles/' />
+<link rel='shortlink' href='https://nyti.ms/2uzzbGw' />
+<link rel='https://github.com/WP-API/WP-API' href='//krugman.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/krugman/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//krugman.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/krugman/2008/06/16/tax-policy-puzzles/" />
+<meta name="dfp-ad-unit-path" content="opinion/krugman" />			<title>Tax policy puzzles - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-734 blog-universal nyt-blog-krugman" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//krugman.blogs.nytimes.com">
+                Paul Krugman            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Tax policy puzzles        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//krugman.blogs.nytimes.com/2008/06/16/tax-policy-puzzles/"
+	 data-title="Tax policy puzzles"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;&lt;/span&gt;&lt;a href=&quot;//krugman.blogs.nytimes.com/2008/06/16/tax-policy-puzzles/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="June 16, 2008 11:44 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="krugman" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<div id="logo" ><a href="//krugman.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion" title="Go to Paul Krugman Home"><img src="https://static01.nyt.com/images/blogs_v5/krugman/krugman_post.png" alt="Paul Krugman - New York Times Blog"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//krugman.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Paul Krugman">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-734 post type-post status-publish hentry" id="post-734">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Tax policy puzzles</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+							</address>
+			<!-- date published --><time class="dateline " datetime="2008-06-16T15:44:42+00:00" itemprop="datePublished">June 16, 2008 11:44 am</time>
+			<!-- date updated --><span class="visually-hidden updated">June 16, 2008 11:44 am</span>		</div>
+			</header>
+		<div class="entry-content"><p class="story-body-text" itemprop="articleBody">The Tax Policy Center comparison of the candidates&#8217; tax plans is <a href="//www.taxpolicycenter.org/publications/url.cfm?ID=411693">here</a>. Anyone who cares at all about the issues should read it.</p>
+<p class="story-body-text" itemprop="articleBody">There&#8217;s nothing surprising in there about the McCain plan: it&#8217;s tax cuts and more tax cuts, all hugely tilted toward the top 1 percent of the income distribution.</p>
+<p class="story-body-text" itemprop="articleBody">The surprise about the Obama plan is how much in the way of tax breaks it contains, and how much that cuts into the revenue available for other things, especially health care. And there are two pieces that really puzzle me.</p>
+<p class="story-body-text" itemprop="articleBody">First is the income tax exemption for seniors with incomes under 50K. The Tax Policy Center explains:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Under current law, most senior citizens do not pay income tax because only a portion of Social Security benefits are subject to tax, and only for taxpayers with incomes above a threshold. In addition, senior citizens may claim an additional standard deduction. Nobody age 65 and over whose income comes entirely or almost entirely from Social Security is subject to income tax. The proposal would actually exempt comparatively well off, though not affluent, senior citizens from tax and give them a benefit not generally available to working Americans.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">And I have to say, I really don&#8217;t like the idea that certain demographic groups get exempted from taxation. Why, exactly, is this part of the plan? </p>
+<p class="story-body-text" itemprop="articleBody">The other is Making Work Pay, a tax credit of up to $500 a year for workers; given the formula, the great majority of workers would in fact receive a flat $500. The thing about this proposal is that it&#8217;s very, very expensive: $700 billion over 10 years, or close to half typical estimates of the cost of the subsidies needed to achieve universal health care. </p>
+<p class="story-body-text" itemprop="articleBody">What I don&#8217;t get about this proposal is that we already have a program to help lower-income workers, the Earned Income Tax Credit. If raising wages at the bottom is a priority, why not just make the EITC a lot bigger? As it is, the Making Work Pay proposal would give most of its benefits to relatively well off workers &#8212; again, at a huge cost, large enough to pose real problems for other initiatives. What&#8217;s that about?</p>
+<p class="story-body-text" itemprop="articleBody">Consider this an open thread for <a href="//www.nytimes.com/2008/06/16/opinion/16krugman.html?hp">today&#8217;s column</a>.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//krugman.blogs.nytimes.com/2008/06/16/tax-policy-puzzles/" data-title="Tax policy puzzles" data-description="">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-34175">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">steve from virginia</span>
+			<span class="comment-link">
+				<a href="#comment-34175" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:15 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Briefly:</p>
+<p>Both candidates are held hostage to circumstances. If the country is in a recession, the tax receipts will fall and increasing rates will be next to impossible for a host of reasons.</p>
+<p>At the same time, so much domestic &#8216;wealth&#8217; is the tail of business activities overseas &#8211; and out of reach of the taxman &#8211; that the candidates are simply realistic about the Bush Tax Cuts. If I was one of the fabulous &#8216;1%&#8217;ers&#8217; I would simply move my cash/income/receipts overseas.</p>
+<p>As for health care; increasing cash flow to the current health care &#8216;system&#8217; is pointless. It exists only to suck money out of people and is probably the best in the world &#8230; at sucking the money. Why give the beast more money to feed on?</p>
+<p>The best solution is to attack rising costs dead on &#8211; and eliminate ALL combinations that pay for health care. This includes private health insurance. That would give all participants in the &#8216;system&#8217; a level playing field.</p>
+<p>The Government could tax hospital admissions. The wealthy would pay no income tax but very high ulcer surgery rates. :) </p>
+<p>Since doctors, hospital administrators and medical supply/pharmaceutical company executives get sick and die &#8211; as do their wives and children &#8211;  there will alsways be quality health care. Let&#8217;s just let their mechanixm seek the market price (as it races to the bottom!)</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34173">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Gerald Sutliff, CA,  USA</span>
+			<span class="comment-link">
+				<a href="#comment-34173" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:42 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The quickest stimulus package would be to lift the Social Security Tax ceiling for those &#8220;earning&#8221; over $250,000.  At the same time cut the rate for both the worker and the employer by 30 per cent (or more depending on the numbers).  Payroll taxes, as we all know, provides a disincentive for new hires.</p>
+<p>The second step would be to seriously address the &#8220;revenue enhancer&#8221; of taxing (currently held)wealth.  </p>
+<p>Third would be to adequately fund the IRS with a stated mission of going after corporate &#8220;underpayers&#8221; and run away corporations.</p>
+<p>I despair at cutting cutting back on our support of the Military Industrial Complex not to mention the Criminal-Prison Industry Complex.</p>
+<p>Keep up the good work.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34169">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">David</span>
+			<span class="comment-link">
+				<a href="#comment-34169" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:51 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>It would be interesting to see a &#8220;virtual budget&#8221; of some sort that would consider the estimated costs of each candidate&#8217;s proposals as well as the savings where they can be estimated. (ie phased withdrawal from Iraq versus staying in full force)</p>
+<p>I really doubt the health care subsidies are off the table. Not having to pay for the Iraq war should free up enough to do both these things. Rolling back the tax cuts for those with an income over $250k should then move the budget much closer to being balanced, even if there&#8217;s some additional expenses for lowering taxes for incomes </p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34171">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Elizabeth</span>
+			<span class="comment-link">
+				<a href="#comment-34171" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:52 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Dear Mr. Krugman:<br />
+I would suggest that you incorporate the following issues in your analysis:<br />
+1. The Bush tax cut is in fact schedule to expire in 2011 unless Congress vote to continue it. So Unless there is a Republican dominated contrast in the next four years ( prospect is close to zero), Neither McCain nor Obama would have to institute any new policy changes, the tax programs that had been in place during the Clinton Administration is essentially restored:  Estate tax, lower dividend tax, capital gains tax, child tax credit,  etc., etc. So in that sense, the poison pill would only be adopted if Obama and the Democratic dominated Congress decided to extend different tax credits and tax breaks, most of the &#8220;bad&#8221; tax policies instituted under the Bush Administration would automatically be off the book.</p>
+<p>Second, Obama economic policies appeared to be disjointed as best. Whoever put together the payroll tax surcharge idea does not understand that these taxes go into a trust fund.  You may also want to question the wisdom adopting a tax initiative that would in effect lower the tax rate for those who earn between 102,000 to 250,000, but maintaining the same rate for all others with earned income.<br />
+Third, there need to be a better coordination between health care reform and Medicare reform.  This is the key to slowing the growth of uncontrollable fiscal spending.  Not only do many of the lower income seniors do not pay any tax, they pay little to no health care expense at the margin.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34167">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Mike from MA</span>
+			<span class="comment-link">
+				<a href="#comment-34167" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">12:57 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Dr. Krugman:</p>
+<p>I&#8217;d suggest that at the very least, the Obama plan is a step in the right direction.  I think small steps promised in an election atmosphere tend to allow a candidate, once elected, to modify and expand those proposals later.</p>
+<p>Just my thoughts&#8230;thanks.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34159">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Randolph</span>
+			<span class="comment-link">
+				<a href="#comment-34159" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:20 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Oh, health care will be funded by a &#8220;fee&#8221;, not a tax.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34161">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Phaedrus</span>
+			<span class="comment-link">
+				<a href="#comment-34161" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:25 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Your column refers to a Social Security trust fund.  It was my understanding that the money collected for SS was spent as it comes in, with any surplus going to the general budget.  Is that not correct?  Do we really have a &#8220;lock box&#8221; :)</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34163">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Perplexed</span>
+			<span class="comment-link">
+				<a href="#comment-34163" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The only fair part of the Bush tax bill is that people that have worked hard all their life and saved or invested their money prudently should not have to give half of it to IRS upon their death.  They have already paid taxes on it every year so why take away the incentive of hard work and being responsible by having to give back half of it?  I became sucessful by working 24/7 since I was a kid and I have to be punished for it?</p>
+<p>I don&#8217;t mind paying taxes but not for the war.  If it was for health care for the poor or for education I would pay it with a smile but to support Bush&#8217;s insanity I don&#8217;t want to pay a penny.</p>
+<p>Both candidates plans are not realistic.  Where will Obama find the money to fund his social programs? Why does McCain feel he can support big business while they cheat, lie and steal from all citizens?  Why support them when they are sending jobs overseas and adding to unemployment?  What about regulation on Wall Street or the oil companies? McCain won&#8217;t bother.  </p>
+<p>Voting for McCain is relecting Bush. I trust Obama to work out his tax problems with some sort of reality but the longer I live, the more I see the unfairness in taxation.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34157">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">r</span>
+			<span class="comment-link">
+				<a href="#comment-34157" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">1:37 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Your column refers to a Social Security trust fund. It was my understanding that the money collected for SS was spent as it comes in, with any surplus going to the general budget. Is that not correct? Do we really have a “lock box” :)<br />
+&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;<br />
+We have an &#8220;accounting lock box.&#8221;  Basically, the SS surplus is &#8220;borrowed&#8221; by the federal government to finance its deficits, with &#8220;special issue&#8221; US Treasuries in its place.  Approximately, four trillion of our 9 trillion national debt is owed to the entitlement trust funds.  The first date in the whole SS/Medicare timeline of note is 2010, when the SSA can no longer loan its surpluses to the Treasury; the federal government will then have to enter the public debt market to finance its deficits.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34153">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Robert Waldmann</span>
+			<span class="comment-link">
+				<a href="#comment-34153" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:36 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I really honestly think I know the solution to the second puzzle.  There is a third odd aspect of fiscal policy proposed by Obama which is the increase in FICA justified as shoring up the already sound social security trust fund.  Put the two odd policies together and they make sense.</p>
+<p>They become a shift of roughly the same pile of money from individuals who make over $250,000 in FICA taxable income (who are therefore members of families which have much more than $250,000 in total income) and giving it equally to families which make much less.</p>
+<p>I think that describing this huge redistribution as two different reforms is a way to wage class war without being too obvious.  To me, the trick seems pretty obvious, but it seems that many people haven&#8217;s seen through it.  It almost seems to me that you haven&#8217;t noticed.</p>
+<p>The expected present value dollar amounts are oddly similar aren&#8217;t they ?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34155">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Matt</span>
+			<span class="comment-link">
+				<a href="#comment-34155" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:40 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Obama needs to make his case for stability.  Government is unstable when the wealth distribution is double humped.</p>
+<p>Wealth and poverty would enter into an agreement that both parties agree that the goal is medium term stability so that government isn&#8217;t rocked into sudden changes for each recession.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34149">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">David Lindeman</span>
+			<span class="comment-link">
+				<a href="#comment-34149" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:10 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Paul &#8212; </p>
+<p>In addition, the Obama exemption for over-64 households violates a prime directive in tax-transfer design &#8212; avoid notches.  According to the TPC, one dollar of AGI, exempt social security and interest over 50K, you are back in regular tax schedule.  </p>
+<p>A similar potential notch exists re capital gains tax.  The TPC says Obama proposes to raise the capital gains rate only for those who are in the now restored (pre-Bush) 36 and 39.6 percent tax brackets but not for most tax filers in the current (post-Bush) 28 percent and below brackets.  Is the increase in the CG rate a function of non-CG income or inclusive of it?  Is it a notch or does the CG rate phase up from 15 percent to (TPC&#8217;s estimated) 25 percent?  Talk about opportunities for tax accountants and lawyers to advise clients on the timing of capital gains and other income, and possibly market inefficiencies.  </p>
+<p>The payroll tax credit is clearly designed as a talking point that Obama will have a generally applicable tax cut.  But, as you suggest, at the price of a large revenue loss and yet another one of those annoying phase-outs in the income tax.  Why? Well, can&#8217;t explicitly raise tax rates to compensate lest you give Republicans a talking point.  </p>
+<p>As an Obama supporter, I hope the realities of our dire fiscal condition trump the political necessity of these political panders once he is elected. But, sigh, that means the new Administration will open to the fluff brained pundit class chattering about cynicism and such.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34131">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">WillfromSF</span>
+			<span class="comment-link">
+				<a href="#comment-34131" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:46 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Not addressed is whether Making Work Pay is a replacement of the EITC and if it is, then that negates your argument.  It&#8217;s clear that McCain&#8217;s tax policy is going to be regressive and Obama&#8217;s progressive so why do you spend 95% of your column bashing Obama&#8217;s plan while calling McCain&#8217;s absurd more breaks for the rich as &#8220;nothing surprising in there.&#8221; Methinks you are still bitter that Hillary lost and are taking it out on Obama.  And like other still-bitter Hillary supporters you are willing to hand the election to Bush III and complete the destruction of this once great country out of spite.  &#8220;Conscience of a Liberal&#8221;, indeed!</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34151">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Jeff Charles</span>
+			<span class="comment-link">
+				<a href="#comment-34151" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">3:57 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I really doubt the health care subsidies are off the table. Not having to pay for the Iraq war should free up enough to do both these things.<br />
+&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+The Iraq war is being paid for with borrowed, off-budget money. Those dollars are not actually available to be freed up.</p>
+<p>The path to subsidies may be to redirect current health care money. For example, let corporations buy health insurance through Medicare, but at a price slightly higher than costs (but still below the cost of private insurance). That premium above costs could be a source of funds for subsidies.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34133">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lord</span>
+			<span class="comment-link">
+				<a href="#comment-34133" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:13 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>I assume this is just the way he plans to spend the revenue generated from the expiration of Bush&#8217;s tax cuts, one which is at least more progressive and stimulative.  Some of it, such as the senior change, seems to be mostly pandering for votes, but that looks to be the way both are going.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34135">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Debbie R.</span>
+			<span class="comment-link">
+				<a href="#comment-34135" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">4:35 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>&#8220;The only fair part of the Bush tax bill is that people that have worked hard all their life and saved or invested their money prudently should not have to give half of it to IRS upon their death<br />
+They have already paid taxes on it every year so why take away the incentive of hard work and being responsible by having to give back half of it?&#8221; </p>
+<p>Are you kidding me?  What do dead people need money for?  To give to their children, right?  Ah, but there you have it &#8211; the CHILDREN did not work for that money.  The parents did.  If you don&#8217;t want your kids to have to pay for their inherited wealth, then give your money to a charity, which won&#8217;t have to pay taxes.  Or give them money while you are alive.  </p>
+<p>When your money changes hands, its perfectly reasonable for it to be taxed.  According to you, its OK to tax your already taxed income if it goes to pay the housekeeper&#8217;s salary, but not if it goes into your kid&#8217;s trust fund.</p>
+<p>Most of us don&#8217;t have all that much in terms of an estate to leave the children.  Especially if you need some kind of special care in old age.  Certainly a tax that affects maybe the wealthiest families in the country cannot be considered &#8220;unfair&#8221;.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34137">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">dennisS</span>
+			<span class="comment-link">
+				<a href="#comment-34137" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:02 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Dr. Kruguman, in economics I easily don&#8217;t get a lot more than you don&#8217;t get, including Obama&#8217;s tax proposals, but here&#8217;s my WAG.</p>
+<p>A $500 credit putting $700B in the hands of working people is a powerful stimulus for an economy that really seems to need it.</p>
+<p>Raising the wage cap on Social Security, less useful in my opinion, might make a nice first step toward lowering the overall rate on the payroll tax.</p>
+<p>And, it would be nice going into the next round of tax and budget negotiations having a strong Democratic proposal that puts Republicans on the defensive.  For a decade I&#8217;ve dreamt of a future where conservatives used up their turn in office paying off all the debts liberals racked up, instead of the other way around.   Let them guard the gates for awhile.</p>
+<p>But, I&#8217;m with you and hope to get a better answer eventually.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34139">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">serban</span>
+			<span class="comment-link">
+				<a href="#comment-34139" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:08 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>A fair proposal is to eliminate the cap on social security tax and reduce the the tax so the total revenue from it remains the same. The argument that this is an increase on employers disappears.<br />
+That tax should not be used as another source of revenue for the federal government. When it comes to health care employers and employees are already heavily taxed by health insurance companies. The federal government might as well collect that money and provide insurance to everyone.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34141">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Ohioan</span>
+			<span class="comment-link">
+				<a href="#comment-34141" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:23 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>That&#8217;s funny &#8211; I don&#8217;t remember criticism in this column when John Edwards toted his $500 tax credit for earners of upto $75000. Or when Hillary toted an unspecified middle-class tax credit. I guess that wasn&#8217;t &#8220;puzzling&#8221; at all.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34143">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">LRHafe</span>
+			<span class="comment-link">
+				<a href="#comment-34143" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:34 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Re: SS payroll tax donut hole &#8212;</p>
+<p>There&#8217;s a hidden business cost in this tactic vs simply raising the salary cap, and that is the cost of programming to stop &amp; restart withholding at the appropriate times.  Currently, virtually all payroll systems are set up to allow the salary cap to be changed with little or no programming/technical intervention.  Just plug in the new number and away we go; doesn&#8217;t matter if the new number&#8217;s a chunk higher.</p>
+<p>However, this plan would require add&#8217;l programming to restart withholding at a certain amount &amp; possibly restop it at yet another amount, along with the structures to maintain those amounts so they can be changed the same way as the current cap.</p>
+<p>It&#8217;s not rocket science, and it keeps people like me employed, but it is a tangible effort &amp; cost for a policy that seems more interested in its own cleverness than actual usefulness.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34145">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">hmpierson</span>
+			<span class="comment-link">
+				<a href="#comment-34145" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">5:52 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Robert Waldmann wrote:</p>
+<p>&#8220;I think that describing this huge redistribution as two different reforms is a way to wage class war without being too obvious.&#8221;</p>
+<p>Actually, class warfare is already being waged, and your class is winning.</p>
+<p>When billionaire hedge fund managers pay only 15% marginal rates on income (so called &#8220;carried interest&#8221;) but a self-employed person with $33,000 in taxable income has a 40% marginal rate (25% income plus 15% FICA), please don&#8217;t make me laugh with your concerns about &#8220;class warfare.&#8221;</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34147">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">brendan</span>
+			<span class="comment-link">
+				<a href="#comment-34147" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">6:31 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>In your article, you mention Obama&#8217;s plan to apply social security taxes to those with incomes over $250,000, but you question the need for the money due to the fact that Social Security doesn&#8217;t need it.  However, I see it as a backdoor tax increase on the wealthy that is likely to eventually not only be used for to Social Security.  Obama&#8217;s argument for this tax increase is much easier than for a straight-up tax increase on the wealthy&#8211;he just has to say, &#8220;the working class pays this tax&#8211;why doesn&#8217;t the wealthy?&#8221;</p>
+<p>The government will then see a large pool of extra dollars coming in from this, and it will simply be too irresistible not to use the money for other purposes, whether those are other progressive tax cuts or spending (just like how Congress couldn&#8217;t resist using the 2000 surplus on the Bush tax cuts).</p>
+<p>Raising taxes on the rich is critical for progressive distributional outcomes, and the Social Security increase is key to that.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34129">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Gunther St</span>
+			<span class="comment-link">
+				<a href="#comment-34129" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:40 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>The obvious first solution is to remove the cap from the SS tax contributions. It will make the system less regressive, and may start to reverse the inevitable downward slippage to the country going broke. The high earners will object, no doubt, and the Congress will not have the guts to face the ational debt problem. Fiscal responsibility went out with Reagan and Bush-Cheney (&#8220;deficits don&#8217;t matter&#8221;).<br />
+   We the people hold $ trillion in paper which is not worth anything, but must be repaid with taxes on us. The other $5.5 trillion is owed to other countries, including China, Saudi Arabia and the rest of oil producers, and others. When they cash in their chips and switch their &#8220;reserve currency&#8221; from the dollar to the Euro, we will feel the pain very quickly.<br />
+  Are we going to get a President who face the music? Not McCain, who wants to worsen the problem with more &#8220;borrow and spend&#8221; policies and tax cuts.<br />
+Who will remind the people to start saving and not charging? we cannot have it all now, based on debt.<br />
+If you have the stomach to face reality, read/listen to <a href="//perotcharts.com/challenges/" rel="nofollow">//perotcharts.com/challenges/</a></p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-34123">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">vklip</span>
+			<span class="comment-link">
+				<a href="#comment-34123" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">7:42 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>As a 69 year old still working full time, earning a decent salary, and collecting Social Security, I am not in favor of making the first $50,000 of my income income-tax free.  Yeah, I pay taxes, on my earned income and on 80% of the Social Security I collect.  From my perspective, taxes are the way a society pays for services society needs as a whole.<br />
+And I do resent the nice deal the hedge fund managers get &#8211; I don&#8217;t understand why their commissions are treated as capital gains.  As I understand it, the investors in the hedge funds they manage get the capital gains (or losses) &#8211; what the managers get is a commission.  When a car salesman sells a car and gets a commission, it is taxed as income, not capital gains.  Why not treat the hedge fund managers the same way?<br />
+One of my major concerns is that with the downturn in housing and the frightening rate of foreclosures, more and more municipalities, small and large, are going to have to either cut services or increase real estate taxes &#8211; or both.  That is going to really hurt the middle-class and especially the elderly.  The other factor that is hurting middle and lower income families (including the elderly) is the drastic increase in energy costs, which translates into higher utility bills and higher food costs.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-34125">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">LindaR</span>
+			<span class="comment-link">
+				<a href="#comment-34125" title="Comment Permalink">
+					<span class="comment-date">June 16, 2008</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">8:46 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>First off, the EITC is not a program for poor or working people.</p>
+<p>The EITC is corporate welfare, designed to relieve the pressure of poverty just enough to keep people from demanding a living wage.</p>
+<p>The EITC hurts all working people in an indirect way, and it hurts all citizens by keeping income and FICA tax revenues artificially low since the incomes those revenues are based on are kept artificially low.</p>
+<p>Has anyone ever done a study on how much money the EITC has shifted away from both the public treasury and the incomes of working people?</p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//krugman.blogs.nytimes.com/2008/06/14/bad-free-trade-arguments/" title="Bad free trade arguments">
+				Bad free trade arguments			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//krugman.blogs.nytimes.com/2008/06/16/campaign-coverage-puzzle/" title="Campaign coverage puzzle">
+				Campaign coverage puzzle			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-6" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">ABOUT</h4><div class="entry">
+<p class="summary">Paul Krugman is an Op-Ed columnist for The New York Times.</p>
+<ul class="refer">
+<li><a href="//www.nytimes.com/ref/opinion/KRUGMAN-BIO.html">Biography »</a></li>
+<li><a href="//topics.nytimes.com/top/opinion/editorialsandoped/oped/columnists/paulkrugman/index.html">Columns »</a></li>
+<h6 class="kicker">Books</h6>
+<li><a href="//books.wwnorton.com/books/detail.aspx?ID=4294971028">End This Depression Now!</a> (2013)</li>
+<li><a href="//www.worthpublishers.com/newcatalog.aspx?search=krugman&isbn=0716771586">Principles of Economics, 2nd ed.</a> (2009)</li>
+<li><a href="//www.krugmanonline.com/books/the-return-of-depression-economics-and-the-crisis-of-2008.php" target="new" alt="The Return of Depression Economics and the Crisis of 2008">The Return of Depression Economics and the Crisis of 2008</a> (Dec. 2008)</li>
+<li><a href="//www.krugmanonline.com/books/the-conscience-of-a-liberal.php" target="new" alt="KrugmanOnline.com">The Conscience of a Liberal</a> (Oct. 2007)</li>
+</ul>
+</div>
+</div>		<div class="module ad" id="Box1"></div>
+        	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-48',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":46,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

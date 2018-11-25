@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js blog-learning section-education"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 blog-learning section-education" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000715071"><meta name="author" content="Shannon Doyne and Holly Epstein Ojalvo" />
+<meta name="CLMST" content="Shannon Doyne and Holly Epstein Ojalvo" />
+<meta name="byl" content="Shannon Doyne and Holly Epstein Ojalvo" />
+<meta name="GBLC" content="Creative Writing;Fiction;Film;Language Arts;Lesson Plans;Literature;Personal Writing">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1299789378" />
+<meta name="PUD" content="20110310" />
+<meta name="pdate" content="20110310" />
+<meta name="ptime" content="20110310153618" />
+<meta name="utime" content="20120202194142" />
+<meta property="article:modified_time" itemprop="dateModified" content="2012-02-02T19:41:42-05:00" />
+<meta name="DISPLAYDATE" content="March 10, 2011" />
+<meta name="dat" content="March 10, 2011" />
+<meta itemprop="articleSection" property="article:section" content="" />
+<meta name="CG" content="" />
+<meta name="SCG" content="learning" />
+<meta name="BN" content="learning" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Creative Writing" />
+<meta property="article:tag" content="Fiction" />
+<meta property="article:tag" content="Film" />
+<meta property="article:tag" content="Language Arts" />
+<meta property="article:tag" content="Lesson Plans" />
+<meta property="article:tag" content="Literature" />
+<meta property="article:tag" content="Personal Writing" />
+<meta name="keywords" content="Creative Writing,Fiction,Film,Language Arts,Lesson Plans,Literature,Personal Writing" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Flearning.blogs.nytimes.com%2F2011%2F03%2F10%2Fviewer-she-marries-him-comparing-jane-eyre-in-literature-and-film%2F" title="Viewer, She Marries Him: Comparing &#8216;Jane Eyre&#8217; in Literature and Film" />
+<meta name="description" content="Lesson Plan &#124; Activities for studying the novel &#8220;Jane Eyre&#8221; and film adaptations." />
+<meta name="hdl" content="Viewer, She Marries Him: Comparing &#039;Jane Eyre&#039; in Literature and Film" />
+<meta property="og:title" content="Viewer, She Marries Him: Comparing &#039;Jane Eyre&#039; in Literature and Film" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//learning.blogs.nytimes.com/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/" />
+<meta property="og:site_name" content="The Learning Network" />
+<meta property="og:description" content="Lesson Plan &#124; Activities for studying the novel &#8220;Jane Eyre&#8221; and film adaptations." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="Viewer, She Marries Him: Comparing &#039;Jane Eyre&#039; in Literature and Film" />
+<meta name="twitter:url" content="//learning.blogs.nytimes.com/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/" />
+<meta name="twitter:description" content="Lesson Plan &#124; Activities for studying the novel &#8220;Jane Eyre&#8221; and film adaptations." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@NYTimesLearning">
+<link rel='prev' title='Poetry Pairing | March 10, 2011' href='//learning.blogs.nytimes.com/2011/03/10/poetry-pairing-march-10-2011/' />
+<link rel='next' title='Word of the Day | visceral' href='//learning.blogs.nytimes.com/2011/03/11/word-of-the-day-visceral/' />
+<link rel='canonical' href='//learning.blogs.nytimes.com/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/' />
+<link rel='shortlink' href='//nyti.ms/gdOVNW' />
+<link rel='https://github.com/WP-API/WP-API' href='//learning.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/learning/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//learning.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/education/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/learning/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/" />
+<meta name="dfp-ad-unit-path" content="learning" />			<title>Viewer, She Marries Him: Comparing &#039;Jane Eyre&#039; in Literature and Film - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-58120 blog-universal nyt-blog-learning" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', '', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//learning.blogs.nytimes.com">
+                The Learning Network            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        Viewer, She Marries Him: Comparing &#8216;Jane Eyre&#8217; in Literature and Film        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//learning.blogs.nytimes.com/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/"
+	 data-title="Viewer, She Marries Him: Comparing &#8216;Jane Eyre&#8217; in Literature and Film"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Lesson Plan | Activities for studying the novel &quot;Jane Eyre&quot; and film adaptations.&lt;/span&gt;&lt;a href=&quot;//learning.blogs.nytimes.com/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="March 10, 2011 3:36 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>NYTD.jQuery = jQuery.noConflict();</script>
+<div id="learning" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//learning.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post" title="Go to The Learning Network Home"><img src="https://static01.nyt.com/images/blogs_v5/learning/learning_post.png" alt="The Learning Network - Teaching and Learning With The New York Times"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//learning.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search The Learning Network">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-58120 post type-post status-publish hentry category-creative-writing category-fiction category-film category-language-arts category-lesson-plans category-literature category-personal-writing tag-classics tag-film-adaptation tag-film-in-the-classroom tag-literary-characters tag-novel tag-victorian-literature" id="post-58120">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">Viewer, She Marries Him: Comparing &#8216;Jane Eyre&#8217; in Literature and Film</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Shannon Doyne and Holly Epstein Ojalvo			</address>
+			<!-- date published --><time class="dateline " datetime="2011-03-10T20:36:18+00:00" itemprop="datePublished">March 10, 2011 3:36 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">March 10, 2011 3:36 pm</span>		</div>
+			</header>
+		<div class="entry-content"><div class="w480"><img src="https://static01.nyt.com/images/2011/03/06/movies/jane-eyre-versions-slide-FSJK/jane-eyre-versions-slide-FSJK-blog480.jpg" id="100000000693425" width="480" height="210" alt=""/><span class="credit">BBC</span> <span class="caption">Toby Stephens and Ruth Wilson in the 2007 &#8220;Masterpiece Theater&#8221; version of &#8220;Jane Eyre.&#8221;<br />
+<a href="//www.nytimes.com/slideshow/2011/03/06/movies/jane-eyre-versions.html">Go to related slide show »</a> | <a href="//www.nytimes.com/2011/03/06/movies/06eyre.html">Go to related article »</a> </span></div>
+<div class="w151 right module">
+<div class="entry"><a title="See all Lesson Plans" href="/category/lesson-plans/"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan151.png" alt="Lesson Plans - The Learning Network" /></a><a title="See all lesson plans" href="/category/lesson-plans/"><img class="w35 right" src="https://static01.nyt.com/images/blogs_v3/learning/learning_lesson-plan35.png" alt="Lesson Plans - The Learning Network" /></a></p>
+<h6 class="kicker">Language Arts</h6>
+<p class="summary">Teaching ideas based on New York Times content.</p>
+<ul class="refer">
+<li><a href="/category/language-arts/">See all in Language Arts »</a></li>
+<li><a title="See all Lesson Plans" href="/category/lesson-plans/">See all lesson plans »</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"><strong>Overview</strong> |  In this lesson, students consider the themes and characters of Charlotte Brontë’s novel &#8220;Jane Eyre,” beginning with responding to key lines from the novel. They then engage in one of seven activities designed to guide them to deeper reading of the text. Some of the activities involve considering one or more film adaptations, including a 2011 movie version. Finally, they compare the life of someone they know, or themselves, with Jane Eyre. <span id="more-58120"></span></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Materials</strong> | Computer with Internet access and projector, sheets of poster paper with quotations from &#8220;Jane Eyre&#8221; on them, markers, copies or the <a href="//www.gutenberg.org/files/1260/1260-h/1260-h.htm">e-text</a> of &#8220;Jane Eyre.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Warm-Up</strong> | Before class, prepare six sheets of poster paper, each one with a quotation from the novel &#8220;Jane Eyre.&#8221; (This could be done while the class is reading it or as a wrap-up activity after they have read it. It could also be adapted slightly as an activity to introduce the novel.)</p>
+<p class="story-body-text" itemprop="articleBody">The quotes might include these:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">&#8220;It is in vain to say human beings ought to be satisfied with tranquillity: they must have action; and they will make it if they cannot find it.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;I desired liberty; for liberty I gasped; for liberty I uttered a prayer; it seemed scattered on the wind then faintly blowing.  I abandoned it and framed a humbler supplication; for change, stimulus: that petition, too, seemed swept off into vague space: &#8216;Then,&#8217; I cried, half desperate, &#8216;grant me at least a new servitude!'&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;[I]f others don’t love me I would rather die than live — I cannot bear to be solitary and hated.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless?  You think wrong! — I have as much soul as you — and full as much heart!&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">“I am no bird; and no net ensnares me; I am a free human being with an independent will.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;I know what it is to live entirely for and with what I love best on earth.  I hold myself supremely blest — blest beyond what language can express; because I am my husband’s life as fully as he is mine.&#8221;</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">You might include a seventh sheet, left blank, for students to write down the quotes of their choice.</p>
+<p class="story-body-text" itemprop="articleBody">When students enter, tell them to take a marker and rotate through the stations (for the sake of order, you might assign small groups to begin at different points and tell them when to move to the next station). Their task is to jot a comment on the quotation on the poster. They may also respond to their classmates&#8217; comments, effectively having a &#8220;conversation on paper&#8221; with the text and with one another.</p>
+<p class="story-body-text" itemprop="articleBody">When students are finished cycling through the stations, have them retake their seats, and review the completed posters. Ask: Looking at what was written, what do you notice? What responses strike you most and why? What interpretations do we have of Jane Eyre and &#8220;Jane Eyre&#8221;?</p>
+<p class="story-body-text" itemprop="articleBody">Now tell the class they will now read an article about a new film adaptation of &#8220;Jane Eyre.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Related</strong> | In &#8220;<a href="//www.nytimes.com/2011/03/06/movies/06eyre.html">Another Hike on the Moors for &#8216;Jane Eyre,'&#8221;</a> Charles McGrath notes that the novel has been adapted many times, including in a new film starring Mia Wasikowska:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Certain moments occur over and over again: the stool at Lowood, the miserable boarding school for orphans; Rochester skidding and falling from his horse; the screams at night, the burning bed chamber; Jane running across the barren countryside; the voice calling her across the moors. And it always ends the same way:  She marries him of course, though the movie Rochester is seldom the pitiable, damaged creature he proves to be in the book, where he loses both an eye and a hand.</p>
+<p class="story-body-text" itemprop="articleBody">If there has never been a definitive movie &#8220;Jane Eyre,” there has never been a truly rotten one. Even the sentimental 1996 Franco Zeffirelli version, with William Hurt embarrassingly miscast as a Rochester more nearly a mild eccentric than a brooding, Byronic type, has its moments. A couple of the movies have lingered a little on the sultry, Creole ancestry of Rochester’s first wife, Bertha Mason, and on a theme of colonial exploitation, but so far the one truly ground-breaking version is John Duigan’s 1993 film of &#8220;Wide Sargasso Sea,” the Jean Rhys novel that tells the story from the point of view of Bertha, the madwoman locked in the attic.</p>
+<p class="story-body-text" itemprop="articleBody">So why another &#8220;Jane Eyre,” then, with so many perfectly serviceable ones already available on DVD or download? The simplest answer is that movies get remade all the time, and the great 19th-century novelists — Austen and the Brontë sisters especially — have proved to be an inexhaustible and almost foolproof resource.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Read the entire article with your class, using the questions below.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Questions</strong> | For discussion and reading comprehension:</p>
+<ol>
+<li>Why has &#8220;Jane Eyre&#8221; been adapted for film numerous times?</li>
+<li>How does Cary Fukunaga, who directed a new adaptation, compare the literary worlds created by Jane Austen with those created by Charlotte and Emily Brontë?</li>
+<li>Why does the new movie use flashbacks to tell the story?</li>
+<li>How has this technique made this one different from the other films based on &#8220;Jane Eyre&#8221;?</li>
+<li>How do the filmmakers characterize Jane Eyre?</li>
+</ol>
+<div class="w190 right module">
+<div class="entry">
+<h5 class="kicker">RELATED RESOURCES</h5>
+<h6>From The Learning Network</h6>
+<ul class="refer">
+<li><a href="//learning.blogs.nytimes.com/2010/08/06/10-ways-to-use-the-new-york-times-for-teaching-literature/">10 Ways to Use The New York Times for Teaching Literature</a></li>
+<li><a href=" //learning.blogs.nytimes.com/2008/11/20/its-the-same-old-story/ ">Lesson: It&#8217;s the Same Old Story</a></li>
+<li><a href=" //learning.blogs.nytimes.com/2007/04/27/its-all-in-the-delivery/">Lesson: It&#8217;s All in the Delivery</a></li>
+</ul>
+<h6>From NYTimes.com</h6>
+<ul class="refer">
+<li><a href=" //www.nytimes.com/slideshow/2011/03/06/movies/jane-eyre-versions.html">Slide show: Jane, Rochester and That Zombie</a></li>
+<li><a href="//topics.nytimes.com/topics/reference/timestopics/people/b/charlotte_bronte/index.html">Times Topics: Charlotte Brontё</a></li>
+<li><a href="//www.nytimes.com/1996/03/08/books/the-four-brontes-myth-vs-reality.html">The Four Brontёs: Myth vs. Reality</a></li>
+</ul>
+<h6>Around the Web</h6>
+<ul class="refer">
+<li><a href=" //eyreguide.awardspace.co.uk/">The Enthusiast&#8217;s Guide to &#8220;Jane Eyre&#8221; Adaptations</a></li>
+<li><a href=" //www.focusfeatures.com/jane_eyre">&#8220;Jane Eyre&#8221; (2011) official Web site</a></li>
+<li><a href=" //www.pbs.org/wgbh/masterpiece/learningresources/book_janeeyre.html ">Masterpiece Theatre: &#8220;Jane Eyre&#8221; Discussion Questions</a></li>
+</ul>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody"><strong>Activity</strong> | Here are seven activity options for delving more deeply into &#8220;Jane Eyre,&#8221; each one paired with a past related Learning Network lesson that can easily be adapted for Brontë&#8217;s novel:</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Updating the Novel:</strong> Students imagine what would happen if Jane Eyre were freed from her time and place and dropped into the present day, retaining the characterizations, themes and basic conflicts, but modernizing the setting and details. <em>Related lesson:</em> <a href="//learning.blogs.nytimes.com/2010/10/21/big-brother-vs-little-brother-updating-orwells-1984/">&#8220;Big Brother vs. Little Brother: Updating Orwell&#8217;s &#8216;1984&#8217;.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Debating the Canon:</strong> Return to the line in the article about &#8220;Jane Eyre&#8221; being a &#8220;classic&#8221; with enduring relevance. Do students find that the novel resonates with them today? Students debate whether &#8220;Jane Eyre&#8221; should be kept on school reading lists. <em>Related lesson:</em> <a href="//learning.blogs.nytimes.com/2009/10/15/no-more-moldy-oldies-appreciating-classic-texts/">&#8220;No More Moldy Oldies? Appreciating Classic Texts.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Analyzing Scenes:</strong> Students do a close reading of a single scene in the novel and then compare it with how that scene was portrayed in the 2011 film or another movie adaptation. <em>Related lesson:</em> <a href="//learning.blogs.nytimes.com/2010/02/18/on-the-scene-analyzing-scenes-in-film-and-literature/">&#8220;On the Scene: Analyzing Scenes in Film and Literature.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Comparing Portrayals:</strong> How has Jane Eyre been played and portrayed through time? How have different actresses represented her? How do these portrayals contribute to our impressions of the character? Students look at <a href="//www.nytimes.com/slideshow/2011/03/06/movies/jane-eyre-versions.html">photos of different Jane Eyres</a> and watch, if possible, at least two movie versions, and write a comparison-contrast essay. <em>Related lesson:</em><br />
+<a href="//learning.blogs.nytimes.com/2010/01/14/what-a-character-comparing-literary-adaptations/">&#8220;What a Character! Comparing Literary Adaptations.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Writing Reviews:</strong> Half the class writes book reviews of the novel, and the other half writes <a href="//movies.nytimes.com/2011/03/11/movies/jane-eyre-starring-mia-wasikowska-review.html">movie reviews of the 2011 film</a>. They then pair up with partners from the other group and swap reviews for peer response. <em>Related lesson:</em> <a href="//learning.blogs.nytimes.com/2005/06/30/reviews-revealed/">&#8220;Reviews Revealed.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Looking Through a Feminist Lens:</strong> How is it significant that &#8220;Jane Eyre&#8221; was written by a woman, Charlotte Brontë, who at the time of publication <a href="//www.todayinliterature.com/stories.asp?Event_Date=8/24/1847">posed as a male writer named Currer Bell</a>? What &#8220;types&#8221; of women are represented in the story? Where else in literature, film and popular culture have they seen these types represented? Where else in our culture have women felt the need to seem more masculine to be taken seriously? How much has society changed for women since Brontë&#8217;s time? Students write personality profiles of Brontë as well as Jane and the other female characters in the novel, and then hold a discussion forum on these questions. <em>Related lesson:</em> <a href="//learning.blogs.nytimes.com/2009/10/29/thats-a-different-story-considering-narratives-by-and-about-women/">That&#8217;s a Different Story? Considering Narratives By and About Women.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Emulating Brontë:</strong> Students write a piece of short fiction in the vein of Charlotte Brontë, imitating her writing style. <em>Related lesson:</em> <a href="//learning.blogs.nytimes.com/2007/08/17/word-trip/">&#8220;Word Trip.&#8221;</a></p>
+<p class="story-body-text" itemprop="articleBody"><strong>Going Further</strong> | Students write personal essays called &#8220;My Jane Eyre,&#8221; about a real person they know who embodies aspects of Jane&#8217;s character or who has had experiences in which he or she encounters one or more of the same conflicts, challenges and struggles that Jane does in the novel, like balancing the desire to find love with the need to retain personal liberty or participate in the world of a social class to which they themselves do not belong.</p>
+<p class="story-body-text" itemprop="articleBody">Essays should also explain how the person&#8217;s outlook on life, interactions with others, dreams and personality correlate with Jane&#8217;s, drawing on both the text and their &#8220;Jane&#8217;s&#8221; real life to support their points.</p>
+<p class="story-body-text" itemprop="articleBody">Alternatively, they compare their own lives and outlooks with Jane Eyre&#8217;s. In what ways do they connect with her as a person? In what ways does her life and outlook seem foreign?</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Standards</strong> | This lesson is correlated to <a href="//www.mcrel.org/compendium/browse.asp">McREL&#8217;s national standards</a> (it can also be aligned to the new <a href="//www.corestandards.org/the-standards">Common Core State Standards</a>):</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Language Arts</strong><br />
+1. 	Uses the general skills and strategies of the writing process.<br />
+2. 	Uses the stylistic and rhetorical aspects of writing.<br />
+3. 	Uses grammatical and mechanical conventions in written compositions.<br />
+4. 	Gathers and uses information for research purposes.<br />
+5. 	Uses the general skills and strategies of the reading process.<br />
+6. 	Uses skills and strategies to read a variety of literary texts.<br />
+8. 	Uses listening and speaking strategies for different purposes.<br />
+9. 	Uses viewing skills and strategies to understand and interpret visual media.<br />
+10. 	Understands the characteristics and components of the media.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Arts Connections</strong><br />
+1. Understands connections among the various art forms and other disciplines.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Life Skills</strong><br />
+1.  Contributes to the overall effort of a group.<br />
+2. 	Uses conflict-resolution techniques.<br />
+3. 	Works well with diverse individuals and in diverse situations.<br />
+4. 	Displays effective interpersonal communication skills.<br />
+5. 	Demonstrates leadership skills.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Thinking and Reasoning</strong><br />
+1. 	Understands and applies the basic principles of presenting an argument.<br />
+2. 	Understands and applies basic principles of logic and reasoning.<br />
+3. 	Effectively uses mental processes that are based on identifying similarities and differences.</p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//learning.blogs.nytimes.com/2011/03/10/viewer-she-marries-him-comparing-jane-eyre-in-literature-and-film/" data-title="Viewer, She Marries Him: Comparing &#8216;Jane Eyre&#8217; in Literature and Film" data-description="Lesson Plan | Activities for studying the novel &quot;Jane Eyre&quot; and film adaptations.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+<div id="respond" class="comments-closed"><p>Comments are no longer being accepted.</p></div>
+<div id="legacy-comments" class="entry-comments module">
+		<div class="the-comment alt" id="comment-153535">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Cyndy</span>
+			<span class="comment-link">
+				<a href="#comment-153535" title="Comment Permalink">
+					<span class="comment-date">March 11, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:49 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>didn&#8217;t know if you knew of this source for activities.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment" id="comment-153537">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Cyndy</span>
+			<span class="comment-link">
+				<a href="#comment-153537" title="Comment Permalink">
+					<span class="comment-date">March 11, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:49 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>good source for you in planning.</p>
+
+		</div>
+	</div><!-- #comment-## -->
+	<div class="the-comment alt" id="comment-154321">
+
+		<div class="comment-meta">
+
+			<span class="comment-author">Lisa Simonitis, Orlando, FL</span>
+			<span class="comment-link">
+				<a href="#comment-154321" title="Comment Permalink">
+					<span class="comment-date">March 12, 2011</span>
+					<span class="comment-middot">&middot;</span>
+					<span class="comment-time">2:07 pm</span>
+				</a>
+			</span>
+		</div>
+		<div class="comment-content" style="display:block;">
+
+			<p>Companion novel by April Lindner, entitled, JANE just came out in Oct., 2010;  Published by Little, Brown &#038; Co.<br />
+It&#8217;s a nice contemporary parallel for struggling readers.  The girls really get into it.  Many opportunities for comparison.  <img src="//learning-admin.em.nytimes.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+		</div>
+	</div><!-- #comment-## -->
+</div> <!-- end comment text -->
+
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2011/03/10/poetry-pairing-march-10-2011/" title="Poetry Pairing | March 10, 2011">
+				Poetry Pairing | March 10, 2011			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//learning.blogs.nytimes.com/2011/03/11/word-of-the-day-visceral/" title="Word of the Day | visceral">
+				Word of the Day | visceral			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_promo_widget-16" class="module nocontent widget_nyt_promo_widget"><style>
+.cColumn.nocontent .module .entry.category{width: 100%;float: none;}
+</style>
+<div class="column">
+<div class="entry">
+
+	<a  href="//www.nytimes.com/section/learning" title="activities for students"><img src="https://static01.nyt.com/images/2016/10/05/learning/activitiesbandvertical2/activitiesbandvertical2-superJumbo.jpg"></a>
+
+</div>
+</div></div>		<div class="module ad" id="Box1"></div>
+        <div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><div id="nyt_promo_widget-7" class="module nocontent widget_nyt_promo_widget"><h4 class="moduleHeader">Weekly Newsletter</h4><style type="text/css" media="screen">
+
+button {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 7px 9px;
+    
+    vertical-align:middle;
+    -webkit-appearance: button;
+}
+
+.button:hover, .button:active, .button.active {
+    background-color:#f7f7f5;
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+</style>
+<div class="entry">
+<div class="w50 right"><a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network"><img src="https://static01.nyt.com/images/blogs_v3/learning/learning75.gif" alt="Subscribe to our Newsletter"></a></div>
+<p class="summary">Sign up for our free <a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network">newsletter</a>. Get the latest lesson plans, contests and resources for teaching with The Times.</p>
+<a href="//www.nytimes.com/newsletters/thelearningnetwork/" title="Learning Network" class="btn-subscribe"><button class="button">Subscribe Now</button></a></div><div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-double ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">The Learning Network on</span></span>
+</h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/NYTimesLearning" title="Follow NYTimesLearning on Twitter">Twitter</a></li><li class="blog-fw-facebook double"><a href="https://facebook.com/nytimeslearning" title="Follow nytimeslearning on Facebook">Facebook</a></li></ul>
+</div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-101',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":48,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

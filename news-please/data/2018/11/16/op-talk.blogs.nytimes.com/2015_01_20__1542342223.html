@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-op-talk section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-op-talk section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-op-talk section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-op-talk section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="channels" content="NytNow" />
+<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/op-talk/How Your Facebook Likes Could Cost You a Job ( 20150120 )" />
+<meta name="communityAssetURL" content="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003460231"><meta name="author" content="Anna North" />
+<meta name="CLMST" content="Anna North" />
+<meta name="byl" content="Anna North" />
+<meta name="GBLC" content="Deeper Dive">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1421766117" />
+<meta name="PUD" content="20150120" />
+<meta name="pdate" content="20150120" />
+<meta name="ptime" content="20150120100157" />
+<meta name="utime" content="20150120150157" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-01-20T15:01:57-05:00" />
+<meta name="DISPLAYDATE" content="January 20, 2015" />
+<meta name="dat" content="January 20, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="op-talk" />
+<meta name="BN" content="op-talk" />
+<meta name="robots" content="noodp">
+<meta name="des" content="Advertising and Marketing;Airport Security;Computers and the Internet;Data-Mining and Database Marketing;Friendship;Halloween;Hiring and Promotion;Labor and Jobs;Privacy;Psychology and Psychologists;Regulation and Deregulation of Industry;Research">
+<meta name="org" content="Facebook Inc">
+<meta name="geo" content="United States">
+<meta name="ticker" content="Facebook Inc|FB|NASDAQ" />
+<meta property="article:tag" content="Advertising and Marketing" />
+<meta property="article:tag" content="Airport Security" />
+<meta property="article:tag" content="Computers and the Internet" />
+<meta property="article:tag" content="Data-Mining and Database Marketing" />
+<meta property="article:tag" content="Friendship" />
+<meta property="article:tag" content="Halloween" />
+<meta property="article:tag" content="Hiring and Promotion" />
+<meta property="article:tag" content="Labor and Jobs" />
+<meta property="article:tag" content="Privacy" />
+<meta property="article:tag" content="Psychology and Psychologists" />
+<meta property="article:tag" content="Regulation and Deregulation of Industry" />
+<meta property="article:tag" content="Research" />
+<meta property="article:tag" content="Facebook Inc" />
+<meta property="article:tag" content="United States" />
+<meta property="article:tag" content="Deeper Dive" />
+<meta name="keywords" content="Advertising and Marketing,Airport Security,Computers and the Internet,Data-Mining and Database Marketing,Friendship,Halloween,Hiring and Promotion,Labor and Jobs,Privacy,Psychology and Psychologists,Regulation and Deregulation of Industry,Research,Facebook Inc,United States,Deeper Dive" />
+<meta name="news_keywords" content="Advertising Marketing,Airport security,Computers and the Internet,Data Mining,Friendship,Halloween,Job Recruiting and Hiring,Jobs,Privacy,Psychology,Regulation and Deregulation,Research,US" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fop-talk.blogs.nytimes.com%2F2015%2F01%2F20%2Fhow-your-facebook-likes-could-cost-you-a-job%2F" title="How Your Facebook Likes Could Cost You a Job" />
+<meta name="description" content="Researchers say a computer model can predict your personality based on your Facebook Likes, and such predictions could one day be used in hiring, banking and more. But should they?" />
+<meta name="hdl" content="How Your Facebook Likes Could Cost You a Job" />
+<meta property="og:title" content="How Your Facebook Likes Could Cost You a Job" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" />
+<meta property="og:site_name" content="Op-Talk" />
+<meta property="og:description" content="Researchers say a computer model can predict your personality based on your Facebook Likes, and such predictions could one day be used in hiring, banking and more. But should they?" />
+<meta property="og:image" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="How Your Facebook Likes Could Cost You a Job" />
+<meta name="twitter:url" content="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" />
+<meta name="twitter:description" content="Researchers say a computer model can predict your personality based on your Facebook Likes, and such predictions could one day be used in hiring, banking and more. But should they?" />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@nytopinion">
+<link rel='prev' title='The Best Way to Get Over a Breakup' href='//op-talk.blogs.nytimes.com/2015/01/16/the-best-way-to-get-over-a-breakup/' />
+<link rel='next' title='What America Thinks of the 2015 State of the Union Address' href='//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/' />
+<link rel='canonical' href='//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/' />
+<link rel='shortlink' href='//nyti.ms/1ElHiFT' />
+<link rel='https://github.com/WP-API/WP-API' href='//op-talk.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/op-talk/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//op-talk.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/op-talk/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" />
+<meta name="dfp-ad-unit-path" content="opinion/optalk" />			<title>How Your Facebook Likes Could Cost You a Job - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-5662 blog-universal nyt-blog-op-talk" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//op-talk.blogs.nytimes.com">
+                Op-Talk            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        How Your Facebook Likes Could Cost You a Job        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/"
+	 data-title="How Your Facebook Likes Could Cost You a Job"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Researchers say a computer model can predict your personality based on your Facebook Likes, and such predictions could one day be used in hiring, banking and more. But should they?&lt;/span&gt;&lt;a href=&quot;//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="January 20, 2015 10:01 am">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="op-talk" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//op-talk.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/op-talk/op-talk75.gif" alt="Op-Talk"/></div><div class="site-title">Op-Talk</div><div class="site-description">Opinions From All Over</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//op-talk.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Op-Talk">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-5662 post type-post status-publish hentry category-deeper-dive tag-advertising-and-marketing tag-airport-security tag-computers-and-the-internet tag-data-mining-and-database-marketing tag-facebook-inc tag-friendship tag-halloween tag-hiring-and-promotion tag-labor-and-jobs tag-privacy tag-psychology-and-psychologists tag-regulation-and-deregulation-of-industry tag-research tag-united-states des-advertising-and-marketing des-airport-security des-computers-and-the-internet des-data-mining-and-database-marketing des-friendship des-halloween des-hiring-and-promotion des-labor-and-jobs des-privacy des-psychology-and-psychologists des-regulation-and-deregulation-of-industry des-research org-facebook-inc geo-united-states news_keywords-advertising-marketing news_keywords-airport-security-2 news_keywords-computers-and-the-internet news_keywords-data-mining news_keywords-friendship news_keywords-halloween news_keywords-job-recruiting-and-hiring news_keywords-jobs news_keywords-privacy news_keywords-psychology news_keywords-regulation-and-deregulation news_keywords-research news_keywords-us" id="post-5662">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">How Your Facebook Likes Could Cost You a Job</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Anna North			</address>
+			<!-- date published --><time class="dateline " datetime="2015-01-20T15:01:57+00:00" itemprop="datePublished">January 20, 2015 10:01 am</time>
+			<!-- date updated --><span class="visually-hidden updated">January 20, 2015 10:01 am</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-tmagArticle.jpg" src="https://static01.nyt.com/images/2015/01/20/opinion/nyto-likes/nyto-likes-tmagArticle.jpg" id="100000003458614" width="592" height="526" alt=""   /><meta itemprop="height" content="526"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text"></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Jeff Chiu/Associated Press</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" data-title="How Your Facebook Likes Could Cost You a Job" data-description="Researchers say a computer model can predict your personality based on your Facebook Likes, and such predictions could one day be used in hiring, banking and more. But should they?">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody">&nbsp;</p>
+<p class="story-body-text" itemprop="articleBody">Liking Nicki Minaj on Facebook may not seem like a momentous decision — but one day, it could help determine whether you get hired. A new study suggests that based on your Facebook likes, a computer model can predict your personality better than your friends — and in some ways, know more about your life than you do. This also means anyone who can see your Facebook profile could one day learn about your personality, and make determinations about your future job performance, your creditworthiness and more.</p>
+<p class="story-body-text" itemprop="articleBody">Some fear that personality research will open up yet another front in the continuing battle over data privacy online. But could it also help ordinary users win that battle — or at least understand what they’re up against?</p>
+<p class="story-body-text" itemprop="articleBody">For a <a href="//www.pnas.org/content/early/2015/01/07/1418680112.full.pdf+html">paper</a> published in Proceedings of the National Academy of Sciences, Wu Youyou, Michal Kosinski and David Stillwell used a computer model to gauge subjects’ personalities based on Facebook Likes. To measure the model’s accuracy, the researchers compared its verdicts to subjects’ ratings of their own personalities. The result: Fed enough Likes, computers are quite good at judging human personality — better than the average friend or co-worker, and about as good as the average spouse. At least when it comes to a certain conception of personality (the researchers used the <a href="//www.oxfordbibliographies.com/view/document/obo-9780199828340/obo-9780199828340-0120.xml">five-factor model</a>, which looks at traits like extroversion and neuroticism), a computer program can know you as well as your husband or wife does.</p>
+<p class="story-body-text" itemprop="articleBody">The researchers also tested the computer model’s assessments to see how good they were at predicting 13 “life outcomes” that have been linked to personality, including health, political leanings and satisfaction with life. The model’s ratings were better than those provided by other humans at predicting all but one of these outcomes (life satisfaction). And they were better than people’s self-ratings of their personality at predicting four of the outcomes: Facebook use; number of Facebook friends; use of alcohol, tobacco, and drugs; and field of study.</p>
+<p class="story-body-text" itemprop="articleBody">The first two aren’t necessarily shocking, said Ms. Wu in an interview — you’d expect a Facebook-based algorithm to be able to predict Facebook behavior accurately. More surprising, she explained, is the fact that computers’ personality ratings were so good at predicting how much people drank or used drugs, and what subject they were likely to study. Using the computer model to guess at such outcomes is “basically a measure of how the judgment of personality described this person’s behavior in real life,” she said. “In that sense, computers to some extent know you better than people know themselves.”</p>
+<p class="story-body-text" itemprop="articleBody">Computer-based personality assessment could have a number of real-world uses, said Ms. Wu. Marketers could use the information (with users’ consent) to fine-tune their ads or reach out to certain groups: “A bungee-jumping company,” for example, “might want to target people who are open to new experience.” It could change online dating: Rather than asking daters to fill out site-specific questionnaires, “we can just take your digital records and make predictions about your characteristics and personality and try to pair you up with other people who are similar to you.” The model could also be used in job recruitment, perhaps making a better match between people and careers than companies are currently finding.</p>
+<p class="story-body-text" itemprop="articleBody">Dr. Kosinski, one of Ms. Wu’s co-authors, also sees computer personality testing as a possible recruitment tool. It has “the potential to completely change how we see the job market,” he said in an interview. Each person could get a computer-generated personality profile, and then prospective employers could search through the profiles for people whose personalities and skills matched their needs. Instead of posting a job and interviewing applicants, “you basically reach out to two or three people that match your profile.”</p>
+<p class="story-body-text" itemprop="articleBody">He’s not the first to suggest a broader role for data analysis in the hiring process — and that suggestion has inspired some concern. In an Atlantic analysis of what he describes as “the application of predictive analytics to people’s careers,” Don Peck <a href="//www.theatlantic.com/magazine/archive/2013/12/theyre-watching-you-at-work/354681/">asks</a>:</p>
+<p class="story-body-text" itemprop="articleBody">“Should job candidates be ranked by what their Web habits say about them? Should the ‘data signature’ of natural leaders play a role in promotion? These are all live questions today, and they prompt heavy concerns: that we will cede one of the most subtle and human of skills, the evaluation of the gifts and promise of other people, to machines; that the models will get it wrong; that some people will never get a shot in the new workforce.”</p>
+<p class="story-body-text" itemprop="articleBody">And Danielle Citron, a law professor who has studied privacy, worries that data on people’s personalities could be stored and used in contexts they never expected. “What concerns me,” she said in an interview, “is the potential for keeping people’s assessments and scores in ways that have a much more lasting effect, can be merged, and then analyzed and propagated in ways that aren’t accountable.”</p>
+<p class="story-body-text" itemprop="articleBody">Personality assessments don’t just reveal positive attributes, she noted — “there’s also people whose personalities may have some negative implications, like they’re very absent-minded or they have short attention spans.” And if computerized personality screening and data collection become widespread, such people could lose out on jobs, be denied bank loans or even be flagged for extra security at airports. “It’s not always a good story for everybody,” she said.</p>
+<p class="story-body-text" itemprop="articleBody">Dr. Citron believes limits on the use of personality data may not be sufficient to stop it from harming us — we may need to stop it from being gathered in the first place. She noted that the United States government used census data to target Japanese-Americans for internment during World War II. “If we’re going to rely on the use restrictions, those give way to times of crisis.” Instead, she said, “maybe we need to think about limits on collection.” And personality data may be “the sort of thing we don’t want employers to ever collect.”</p>
+<p class="story-body-text" itemprop="articleBody">Dr. Kosinski agrees that Facebook-based personality assessment presents privacy concerns. “With a psychological assessment that is automated and based on a digital footprint, anyone could potentially assess your personality without asking your permission,” he said.</p>
+<p class="story-body-text" itemprop="articleBody">However, he said, if we are concerned about online privacy, Facebook shouldn’t necessarily be our biggest worry. Your Facebook activities “are the least potentially dangerous types of digital footprint” from his perspective. “Your Internet service operator, your government, a bunch of marketing companies — they’re recording all the websites you’re visiting. Your credit card company records all the purchases you’re making and when and where and what did you buy and how much you paid for it. Your mobile phone operator records places you go to, whom you talk to, how much time did you spend talking with them.” You’d have to get rid of your credit card and phone to escape such data collection, he said.</p>
+<p class="story-body-text" itemprop="articleBody">His advice: “Use those technologies as much as you can, but also exert pressure on the decision makers and policy makers to design policies that will basically be protecting you in this environment.” Regulations, he said, “should give people full control over their personal data.”</p>
+<p class="story-body-text" itemprop="articleBody">But Scott R. Peppet, a law professor who also studies privacy issues, suggests that even control may not be sufficient, if not enough people exercise it. Even if revealing your information to an employer is technically voluntary, he said in an interview, if enough people do it, those who don’t may be at a disadvantage. “Let’s say employers routinely started asking for your Facebook information because they wanted to be able to look at your Likes and assess your personality, and you’re the one person in the group who says no,” he said. At a certain point, “the fact that you won’t reveal it is itself revealing about you, and people start to draw inferences based on that refusal.”</p>
+<p class="story-body-text" itemprop="articleBody">He agrees with Dr. Kosinski that Facebook may be only the beginning. “There’s probably lots of inputs that we’re going to show over the next few years correlate or predict or assess personality,” he explained, from your Fitbit stats to your iTunes downloads. “In a world where lots of things reveal lots of things about you, it’s not so clear if you’re going to know which one you should or shouldn’t do to protect your privacy.”</p>
+<p class="story-body-text" itemprop="articleBody">Dr. Peppet isn’t optimistic about future legal protections: “The likelihood of large-scale federal privacy regulation or a new privacy statute seems pretty low to me at the moment.” But studies like the one Ms. Wu and Dr. Kosinski conducted may at least draw attention to the issue: Such research, he said, is “making people realize that there are policy implications here that need to be seriously considered. I’m not sure what format that’s going to take, but I do think there’s increasing policy interest in, ‘what uses can these kinds of inferences be put to, and what uses are just too creepy?’”</p>
+<p class="story-body-text" itemprop="articleBody">And the study’s focus on Facebook activity may be a strength. “I like this study because Facebook Likes seem kind of innocuous,” he said. “You just Like your friend’s picture of their kid’s Halloween costume.” What Ms. Wu and her team have shown, he said, is that something “seemingly very innocent really does reveal a lot about us.”</p>
+<hr />
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2015/01/16/opinion/optalk-facebook/optalk-facebook-blog480.png" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/01/16/opinion/optalk-facebook/optalk-facebook-blog480.png" src="https://static01.nyt.com/images/2015/01/16/opinion/optalk-facebook/optalk-facebook-blog480.png" id="100000003455301" width="480" height="1099" alt=""   /><meta itemprop="height" content="1099"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text"></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> </span></figcaption></figure></div>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" data-title="How Your Facebook Likes Could Cost You a Job" data-description="Researchers say a computer model can predict your personality based on your Facebook Likes, and such predictions could one day be used in hiring, banking and more. But should they?">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//op-talk.blogs.nytimes.com/2015/01/16/the-best-way-to-get-over-a-breakup/" title="The Best Way to Get Over a Breakup">
+				The Best Way to Get Over a Breakup			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" title="What America Thinks of the 2015 State of the Union Address">
+				What America Thinks of the 2015 State of the Union Address			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About This Blog</h4><div class="entry">
+<p>Op-Talk is your guide to today's debates and the variety of voices behind them. From pizza to politics (and the politics of pizza), we offer new ways of looking at what's exciting, troubling, and inspiring.</p>
+</div>
+<div class="entry">
+<p class="summary"><b>John Guida</b> is a staff editor for Op-Talk.<br/><a href="//twitter.com/guidanyt">@guidanyt</a></p>
+<p class="summary"><b>Anna North</b> is a staff editor for Op-Talk.<br/><a href="//twitter.com/annanorthtweets">@annanorthtweets</a></p>
+<p class="summary"><b>Sara Barrett</b> is a photo editor for Opinion and Op-Talk.</p>
+<p class="summary"><b><a href="//jeffreyscales.tumblr.com/">Jeffrey Scales</a></b> is a photo editor for Opinion and Op-Talk.<br/><a href="https://twitter.com/JHensonScales">@JHensonScales</a></p>
+</div>
+</div>		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytopinion" title="Follow @nytopinion on twitter">@nytopinion</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytopinion" title="Follow nytopinion on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytopinion" title="Follow @nytopinion on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":72,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

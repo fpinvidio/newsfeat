@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dinersjournal section-dining"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dinersjournal section-dining" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000000339477"><meta name="author" content="Emily Weinstein" />
+<meta name="CLMST" content="Emily Weinstein" />
+<meta name="byl" content="Emily Weinstein" />
+<meta name="GBLC" content="Breads/Baked Goods;cooking;dessert;Fruit;Good for Groups;Other;Snack;The Baker's Apprentice">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1284141200" />
+<meta name="PUD" content="20100910" />
+<meta name="pdate" content="20100910" />
+<meta name="ptime" content="20100910135320" />
+<meta name="utime" content="20100930003218" />
+<meta property="article:modified_time" itemprop="dateModified" content="2010-09-30T00:32:18-04:00" />
+<meta name="DISPLAYDATE" content="September 10, 2010" />
+<meta name="dat" content="September 10, 2010" />
+<meta itemprop="articleSection" property="article:section" content="Style" />
+<meta name="CG" content="Style" />
+<meta name="SCG" content="Dining" />
+<meta name="BN" content="dinersjournal" />
+<meta name="robots" content="noodp">
+<meta property="article:tag" content="Breads/Baked Goods" />
+<meta property="article:tag" content="cooking" />
+<meta property="article:tag" content="dessert" />
+<meta property="article:tag" content="Fruit" />
+<meta property="article:tag" content="General" />
+<meta property="article:tag" content="Good for Groups" />
+<meta property="article:tag" content="Other" />
+<meta property="article:tag" content="Snack" />
+<meta property="article:tag" content="The Baker&#039;s Apprentice" />
+<meta name="keywords" content="Breads/Baked Goods,cooking,dessert,Fruit,General,Good for Groups,Other,Snack,The Baker&#039;s Apprentice" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F09%2F10%2Fthe-bakers-apprentice-peach-or-apple-pie%2F" title="The Baker&#8217;s Apprentice: Peach or Apple Pie" />
+<meta name="description" content="Emily Weinstein learns how to bake a pie." />
+<meta name="hdl" content="The Baker&#039;s Apprentice: Peach or Apple Pie" />
+<meta property="og:title" content="The Baker&#039;s Apprentice: Peach or Apple Pie" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/" />
+<meta property="og:site_name" content="Diner’s Journal Blog" />
+<meta property="og:description" content="Emily Weinstein learns how to bake a pie." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_2048_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="The Baker&#039;s Apprentice: Peach or Apple Pie" />
+<meta name="twitter:url" content="//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/" />
+<meta name="twitter:description" content="Emily Weinstein learns how to bake a pie." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@nytdining">
+<link rel='prev' title='The Public&#8217;s First Peek at Lincoln' href='//dinersjournal.blogs.nytimes.com/2010/09/10/the-publics-first-peek-at-lincoln/' />
+<link rel='next' title='Your $26 After-Dinner Coffee at Eleven Madison Park' href='//dinersjournal.blogs.nytimes.com/2010/09/10/your-26-after-dinner-coffee-at-eleven-madison-park/' />
+<link rel='canonical' href='//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/' />
+<link rel='shortlink' href='//nyti.ms/brqGY4' />
+<link rel='https://github.com/WP-API/WP-API' href='//dinersjournal.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dinersjournal/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dinersjournal.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/dining/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dinersjournal/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/" />
+<meta name="dfp-ad-unit-path" content="style/dinersjournal" />			<title>How to Make a Pie - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-35237 blog-universal nyt-blog-dinersjournal" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Style', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dinersjournal.blogs.nytimes.com">
+                Diner&#039;s Journal            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        The Baker&#8217;s Apprentice: Peach or Apple Pie        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/"
+	 data-title="The Baker&#8217;s Apprentice: Peach or Apple Pie"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Emily Weinstein learns how to bake a pie. &lt;/span&gt;&lt;a href=&quot;//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="September 10, 2010 1:53 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dinersjournal" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+		<div class="element1">
+	<div id="logo" ><a href="//dinersjournal.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Style" title="Go to Diner&#039;s Journal Home"><img src="https://static01.nyt.com/images/blogs_v5/dinersjournal/dinersjournal_post.png" alt="Diner&#039;s Journal - The New York Times Blog on Dining Out"/></a></div>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dinersjournal.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Diner&#039;s Journal">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-35237 post type-post status-publish hentry category-breadsbaked-goods category-cooking category-dessert category-fruit category-good-for-groups category-other category-snack category-the-bakers-apprentice tag-apple-pie tag-peach-pie tag-pie tag-pie-crust tag-the-bakers-apprentice" id="post-35237">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">The Baker&#8217;s Apprentice: Peach or Apple Pie</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Emily Weinstein			</address>
+			<!-- date published --><time class="dateline " datetime="2010-09-10T17:53:20+00:00" itemprop="datePublished">September 10, 2010 1:53 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">September 10, 2010 1:53 pm</span>		</div>
+			</header>
+		<div class="entry-content"><form method="post" name="emailThis_35237" id="emailThis_35237" style="display: inline;" enctype="application/x-www-form-urlencoded" action="//www.nytimes.com/mem/emailthis.html">
+<input type="hidden" name="type" value="1" />
+<input type="hidden" name="url" value="http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F09%2F10%2Fthe-bakers-apprentice-peach-or-apple-pie%2F" />
+<input type="hidden" name="title" value="Diner%26%23039%3Bs%20Journal%3A%20The%20Baker%26%238217%3Bs%20Apprentice%3A%20Peach%20or%20Apple%20Pie" />
+<input type="hidden" name="description" value="%3Cspan%20class%3D%22excerpt-inner%22%3EEmily%20Weinstein%20learns%20how%20to%20bake%20a%20pie.%20%3C%2Fspan%3E%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2010%2F09%2F10%2Fthe-bakers-apprentice-peach-or-apple-pie%2F%22%20class%3D%22more-link%22%3ERead%26nbsp%3Bmore...%3C%2Fa%3E" />
+<input type="hidden" name="author" value="By%20Emily%20Weinstein" />
+<input type="hidden" name="section" value="Style" />
+<input type="hidden" name="full_text" value="%3Cdiv%20class%3D%22w480%22%3E%3Cimg%20id%3D%22100000000336469%22%20src%3D%22https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2010%2F09%2F09%2Fdining%2Fdj-pie%2Fdj-pie-blogSpan.jpg%22%20alt%3D%22%22%20width%3D%22480%22%20height%3D%22441%22%20%2F%3E%3Cspan%20class%3D%22credit%22%3EEmily%20Weinstein%2FThe%20New%20York%20Times%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cp%3E%3Cem%3EEmily%20Weinstein%20is%20learning%20to%20bake%20with%20the%20food%20writer%20and%20cookbook%20author%20%3Ca%20href%3D%22http%3A%2F%2Fdoriegreenspan.com%2F%22%3EDorie%20Greenspan%3C%2Fa%3E.%20This%20week%2C%20Sarabeth%20Levine%2C%20of%20%3Ca%20href%3D%22http%3A%2F%2Fwww.sarabeth.com%2F%22%3ESarabeth%E2%80%99s%20Kitchen%3C%2Fa%3E%2C%20steps%20in%20as%20a%20special%20guest%20instructor%2C%20per%20Dorie%E2%80%99s%20suggestion.%20She%20is%20an%20expert%20in%20all%20things%20pie.%20Dorie%20will%20return%20next%20week.%20%3C%2Fem%3E%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3ELESSON%204%3A%20PEACH%20OR%20APPLE%20PIE%20%28From%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%2C%E2%80%9D%20coming%20in%20October%29%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cp%3E%E2%80%9CDon%E2%80%99t%20be%20afraid%20of%20it%2C%20it%E2%80%99s%20just%20food%21%E2%80%9D%20said%20Sarabeth%20Levine%2C%20owner%20of%20Sarabeth%E2%80%99s%20Kitchen%2C%20when%20the%20dough%20developed%20a%20hairline%20fracture%20as%20she%20rolled%20it%20out.%20She%20patched%20it%20with%20a%20scrap.%20%E2%80%9CNo%20problem.%E2%80%9D%3C%2Fp%3E%0A%3Cp%3EWe%20were%20standing%20in%20her%20big%20open%20kitchen%20at%20Chelsea%20Market%20in%20Manhattan%2C%20where%20she%20was%20teaching%20me%20how%20to%20make%20her%20rustic%20apple%20streusel%20pie.%20With%20folds%20of%20dough%20drawn%20up%20around%20the%20filling%2C%20topped%20off%20with%20a%20few%20handfuls%20of%20crumbs%2C%20its%20aesthetic%20was%20more%20free-spirited%2C%20forgiving%2C%20than%20other%20pies.%20%E2%80%9CI%20want%20you%20to%20go%20home%20and%20be%20able%20to%20reproduce%20what%20I%20do%2C%E2%80%9D%20she%20said.%20%E2%80%9CIt%20should%20look%20like%20the%20way%20I%20make%20it.%E2%80%9D%3C%2Fp%3E%0A%3Cp%3EThe%20phrase%20%E2%80%9Ceasy%20as%20pie%E2%80%9D%20must%20refer%20to%20eating%20pie%2C%20not%20baking%20it%20%E2%80%94%20or%20at%20least%2C%20baking%20it%20in%20an%20attractive%20manner.%20I%E2%80%99ve%20made%20three%20in%20a%20row%20now%20%E2%80%94%20three%20tries%2C%20three%20pies%20%E2%80%94%20one%20apple%20and%20two%20peach%2C%20each%20eliciting%20the%20same%20response%20from%20friends%20when%20I%20bemoan%20the%20messiness%20of%20the%20crust%3A%20%E2%80%9CIt%E2%80%99s%20meant%20to%20be%20rustic%21%E2%80%9D%20%3Cspan%20id%3D%22more-35237%22%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%3Cdiv%20class%3D%22w190%20right%22%3E%3Cimg%20id%3D%22100000000336469%22%20src%3D%22https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2010%2F09%2F09%2Fdining%2Fdj-pie%2Fdj-pie-articleInline.jpg%22%20alt%3D%22%22%20width%3D%22190%22%20height%3D%22597%22%20%2F%3E%3Cspan%20class%3D%22credit%22%3EEmily%20Weinstein%2FThe%20New%20York%20Times%3C%2Fspan%3E%20%3Cspan%20class%3D%22caption%22%3EFrom%20top%3A%20the%20first%20pie%2C%20apple%2C%20was%20covered%20in%20streusel%20crumbs%2C%20a%20last-ditch%20effort%20to%20save%20it%3B%20the%20next%20one%2C%20peach%2C%20browned%20nicely%20on%20top%20but%20was%20a%20little%20flat%3B%20the%20third%2C%20another%20peach%2C%20was%20the%20tastiest%2C%20if%20not%20quite%20browned.%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cp%3EI%20realize%20there%20is%20such%20a%20thing%20as%20a%20beautifully%20messy%20pie%2C%20a%20top%20crust%20whose%20perfection%20lies%20in%20its%20bumps%20and%20uneven%20browns%20and%20golds.%20But%20mine%20just%20looked%20sort%20of%20messy%2C%20period.%20It%20was%20the%20difference%20between%20a%20designer%20taking%20a%20pair%20of%20scissors%20to%20a%20shirt%2C%20and%20me%20doing%20it%20myself%20at%20home.%20Not%20the%20same.%20My%20pies%20not%20only%20didn%E2%80%99t%20resemble%20Sarabeth%E2%80%99s%20example%2C%20they%20were%20too%20rustic%20to%20even%20really%20be%20related.%20They%20were%20distant%20cousins%2C%20maybe%2C%20from%20the%20old%20country.%3C%2Fp%3E%0A%3Cp%3ETips%20from%20Sarabeth%3A%3C%2Fp%3E%0A%3Cli%3EA%20recipe%20is%20like%20a%20road%20map.%20%E2%80%9CIf%20you%20have%20to%20get%20to%20Chicago%20by%20car%2C%20you%20better%20get%20the%20map%20out%2C%E2%80%9D%20she%20said.%20If%20you%20read%20the%20recipe%20through%20twice%20before%20you%20begin%2C%20%E2%80%9Cyou%20will%20know%20where%20you%E2%80%99re%20going.%E2%80%9D%3C%2Fli%3E%0A%3Cli%3EA%20technique%20for%20cutting%20apples%20neatly%2C%20no%20corer%20necessary%3A%20peel%20the%20apples%20and%20then%20slice%20each%20vertically%2C%20core%20intact.%20Place%20each%20apple%20half%20face%20down%20on%20the%20cutting%20board%2C%20and%20work%20your%20way%20around%20it%20with%20the%20knife%2C%20cutting%20it%20into%20quarter-inch%20slices.%20Finally%2C%20trim%20off%20any%20bit%20of%20core%20that%20may%20be%20on%20each%20apple%20slice.%3C%2Fli%3E%0A%3Cli%3ETaste%20your%20apples%20%E2%80%94%20add%20sugar%20as%20necessary.%3C%2Fli%3E%0A%3Cli%3EDon%E2%80%99t%20overwork%20the%20dough.%20Handling%20it%20too%20much%20activates%20the%20gluten%2C%20which%20toughens%20it.%3C%2Fli%3E%0A%3Cp%3ENow%20this%20was%20not%20my%20first%20try%20at%20pie%20making.%20%3Ca%20href%3D%22http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2F2008%2F11%2F25%2Fhow-to-cooksomething-pumpkin-pie%2F%22%3EI%20tried%20making%20it%20two%20years%20ago%3C%2Fa%3E%2C%20with%20help%20from%20my%20father%2C%20as%20part%20of%20a%20series%20I%20wrote%20on%20this%20blog%20about%20learning%20to%20cook.%20But%20this%20was%20my%20first%20solo%20try%2C%20in%20my%20own%20kitchen.%20I%20stood%20at%20my%20counter%20and%20created%20the%20%3Ca%20href%3D%22http%3A%2F%2Fwww.epicurious.com%2Ftools%2Ffooddictionary%2Fentry%2F%3Fid%3D3523%22%3Emise%20en%20place%3C%2Fa%3E%20%E2%80%94%20%20%E2%80%9CI%20still%20do%20this%2C%20even%20after%20all%20these%20years%2C%E2%80%9D%20Sarabeth%20told%20me%20%E2%80%94%20and%20made%20the%20dough%2C%20which%2C%20to%20my%20delight%2C%20looked%20exactly%20like%20hers.%3C%2Fp%3E%0A%3Cp%3EThis%20small%20victory%20was%20satisfying%20enough%20to%20send%20me%20sailing%20into%20Part%202%20of%20the%20recipe%3A%20slicing%20the%20four%20pounds%20of%20tart%20Granny%20Smith%20apples%20into%20clean%20half%20moons%20while%20the%20dough%20chilled%20in%20the%20refrigerator.%3C%2Fp%3E%0A%3Cp%3EAs%20I%20neared%20the%20end%20of%20apple%20slicing%2C%20I%20took%20out%20the%20dough%20%26%238212%3B%20it%20had%20been%20chilling%20for%20far%20longer%20than%20an%20hour%20and%20I%20thought%20it%20might%20need%20to%20loosen%20up.%20Then%20I%20made%20the%20streusel%20topping%20and%20did%20some%20dishes%20to%20make%20room%20on%20the%20counter.%20Without%20thinking%20about%20it%2030%20minutes%20went%20by.%20This%20was%20not%20smart.%20But%20I%20didn%E2%80%99t%20know%20that%20until%20I%20scattered%20flour%20on%20the%20counter%20and%20rolled%20out%20the%20dough%2C%20which%20was%20a%20bit%20wet.%3C%2Fp%3E%0A%3Cp%3EAfter%20rolling%20it%20out%2C%20not%20too%20hard%2C%20not%20too%20soft%2C%20to%20what%20I%20thought%20appeared%20to%20be%20the%20prescribed%2015%20inches%2C%20I%20moved%20it%20to%20the%20pan%2C%20which%20it%20filled%2C%20but%20just%20barely.%20It%20was%20clear%20there%20would%20not%20be%20enough%20to%20fold%20up%20around%20the%20mound%20of%20apples%20I%20added%20next.%20Facing%20two%20options%20%26%238212%3B%20bake%20the%20pie%20or%20toss%20the%20pie%20%26%238212%3B%20I%20decided%20to%20just%20bake%20it%2C%20figuring%20the%20best%20way%20to%20salvage%20it%20was%20to%20hastily%20triple%20the%20streusel%20topping%20and%20spread%20it%20over%20the%20top.%20The%20finished%20pie%20was%20sweet%20in%20a%20way%20I%20knew%20was%20wrong%20%E2%80%94%20all%20that%20extra%20sugar%20topping%20%E2%80%94%20but%20tasty%20enough.%20It%20was%20not%2C%20however%2C%20Sarabeth%E2%80%99s%20pie.%3C%2Fp%3E%0A%3Cp%3EAnd%20so%20I%20tried%20again%2C%20but%20with%20peaches%20that%20had%20just%20ripened%20to%20a%20beautiful%20state%20of%20juiciness.%20I%20took%20care%20with%20pie%20No.%202%20to%20make%20sure%20the%20dough%20was%20cold%20enough%20when%20I%20rolled%20it%20out.%20I%20also%20measured%20its%20diameter%20this%20time%2C%20making%20sure%20there%20would%20be%20extra%20to%20drape%20over%20the%20filling.%20The%20pie%20turned%20out%20far%20better%20than%20the%20first%2C%20but%20it%20still%20wasn%E2%80%99t%20quite%20right.%20I%20hadn%E2%80%99t%20used%20enough%20peaches%2C%20and%20so%20the%20top%20was%20slightly%20concave.%20Also%2C%20it%20lacked%20sweetness%2C%20which%20left%20the%20flavor%20a%20bit%20flat.%20This%20surprised%20me%20%E2%80%94%20I%20should%20have%20tasted%20the%20peaches%20first%20and%20adjusted%20the%20sugar.%3C%2Fp%3E%0A%3Cp%3EFor%20the%20third%20and%20final%20pie%2C%20this%20time%20made%20with%20late-summer%20peaches%2C%20I%20used%20twice%20as%20many%20pieces%20of%20fruit.%20I%20followed%20every%20step%20to%20the%20letter.%20I%20even%20pulled%20out%20measuring%20tape%20and%20checked%20the%20depth%20of%20the%20rolled%20out%20dough.%20The%20pie%20had%20a%20nice%2C%20subtle%20domed%20shape%2C%20but%20the%20juice%20from%20the%20peaches%20crept%20up%20at%20the%20edges%2C%20subsuming%20the%20edge%20of%20the%20crust%2C%20forming%20a%20sticky%2C%20rich-hued%20halo.%3C%2Fp%3E%0A%3Cp%3ELooks-wise%2C%20it%20was%20still%20rustic%2C%20not%20as%20effortless%20and%20neat%20looking%20as%20Sarabeth%E2%80%99s%2C%20but%20I%20had%20made%20my%20peace%20with%20this%20pie.%20And%20flavor-wise%2C%20it%20was%20delicious%2C%20the%20way%20you%20intuitively%20expect%20good%20pie%20to%20taste.%3C%2Fp%3E%0A%3Cp%3E%3Cdiv%20class%3D%22recipe-wrap%22%3E%3Cdiv%20class%3D%22hrecipe%22%3E%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Ca%20class%3D%22recipe-print%22%20href%3D%22javascript%3AblogPostPrint%28%27apple%20pie%2CPeach%20Pie%2Cpie%2Cpie%20crust%2CThe%20Baker%27s%20Apprentice%27%2C%20%27September%2010%2C%202010%27%2C%20%2735237%27%2C%20%27http%3A%2F%2Fdinersjournal.blogs.nytimes.com%2FprintThis.html%27%2C%20%27https%3A%2F%2Fstatic01.nyt.com%2Fimages%2Fblogs_v3%2Fdinersjournal%2Fdinersjournal_print.png%27%20%29%3B%22%3EPrint%20Recipe%3C%2Fa%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3ETender%20Pie%20Dough%3C%2Fh3%3E%0A%3Cp%20class%3D%22recipe-yield%22%3E%3Ci%3EYield%3C%2Fi%3E%20Two%209-inch%20single-crust%20pies%2C%20one%20double-crust%20pie%2C%20or%20six%20individual%20deep-dish%20pies%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-time%22%3E%3Ci%3ETime%3C%2Fi%3E%2020%20minutes%2C%20plus%2030%20minutes%20to%201%20hour%20of%20chilling%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-author%22%3EAdapted%20from%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%E2%80%9D%20by%20Sarabeth%20Levine%20%28Rizzoli%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%20%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-summary%22%3E%3Ch5%3ESummary%3C%2Fh5%3E%3Cp%20class%3D%22summary%22%3EThis%20makes%20a%20large%20batch%20of%20dough.%20Divide%20it%20in%20half%20and%20use%20both%20halves%2C%20or%20freeze%20one%20portion%20to%20use%20another%20time.%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E14%20tablespoons%20%20%281%203%2F4%20sticks%29%20unsalted%20butter%2C%20at%20cool%20room%20temperature%2C%20cut%20into%20tablespoons%3C%2Fli%3E%3Cli%3E1%2F3%20cup%20whole%20milk%3C%2Fli%3E%3Cli%3E2%201%2F2%20cups%20%20unbleached%20all-purpose%20flour%3C%2Fli%3E%3Cli%3E1%20%20tablespoon%20%20and%201%20teaspoon%20superfine%20sugar%3C%2Fli%3E%3Cli%3E1%2F4%20%20teaspoon%20%20fine%20sea%20salt%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3E1.%20Beat%20the%20butter%20in%20the%20bowl%20of%20a%20heavy-duty%20stand%20mixer%20fitted%20with%20the%20paddle%20attachment%20at%20high%20speed%20until%20the%20butter%20is%20smooth%2C%20about%20two%20minutes.%20With%20the%20mixer%20running%2C%20slowly%20dribble%20in%20the%20milk%2C%20occasionally%20stopping%20the%20mixer%20and%20scraping%20down%20the%20sides%20of%20the%20bowl%20with%20a%20silicone%20spatula.%20The%20butter%20mixture%20should%20be%20fluffy%2C%20smooth%2C%20and%20shiny%2C%20like%20a%20butter%20cream%20frosting.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E2.%20Mix%20the%20flour%2C%20sugar%2C%20and%20salt%20together%20in%20a%20small%20bowl.%20With%20the%20mixer%20speed%20on%20low%2C%20gradually%20add%20the%20flour%20mixture%20and%20incorporate%20just%20until%20the%20dough%20forms%20a%20mass%20on%20the%20paddle%20and%20the%20sides%20of%20the%20bowl%20are%20clean.%20Turn%20out%20the%20dough%20onto%20a%20lightly%20floured%20surface.%20Knead%20a%20few%20times%20until%20it%20is%20smooth%20and%20supple.%20Divide%20the%20dough%20in%20half.%20Shape%20each%20portion%20into%20a%20disk%2C%20about%20one-inch%20thick.%20Wrap%20each%20disk%20in%20plastic%20wrap.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E3.%20Refrigerate%20until%20chilled%20but%20not%20hard%2C%2030%20minutes%20to%20an%20hour.%20%28The%20dough%20can%20be%20refrigerated%20up%20to%20one%20day%2C%20but%20it%20will%20be%20very%20hard%2C%20and%20should%20stand%20at%20room%20temperature%20for%20about%2030%20minutes%20before%20rolling%20out.%20The%20dough%20can%20also%20be%20frozen%2C%20double%20wrapped%20in%20plastic%2C%20for%20up%20to%20two%20weeks.%20Defrost%20in%20the%20refrigerator%20overnight.%20%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20from%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%E2%80%9D%20by%20Sarabeth%20Levine%20%28Rizzoli%2C%202010%29%3C%2Fp%3E%0A%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3ERustic%20Apple%20Streusel%20Pie%3C%2Fh3%3E%0A%3Cp%20class%3D%22recipe-time%22%3E%3Ci%3ETime%3C%2Fi%3E%20About%202%20hours%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-author%22%3EAdapted%20From%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%E2%80%9D%20by%20Sarabeth%20Levine%20%28Rizzoli%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%20%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-summary%22%3E%3Ch5%3ESummary%3C%2Fh5%3E%3Cp%20class%3D%22summary%22%3EBe%20sure%20to%20slice%20the%20apples%20thin%20so%20that%20they%20cook%20in%20the%20amount%20of%20time%20needed%20to%20bake%20the%20crust%20%E2%80%94%20this%20isn%E2%80%99t%20a%20chunky%20filling.%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E1%2F2%20%20recipe%20Tender%20Pie%20Dough%20%28see%20above%29%3C%2Fli%3E%3Cli%3E4%20pounds%20Granny%20Smith%20apples%2C%20peeled%2C%20cut%20into%201%2F4-inch-thick%20slices%20and%20trimmed%3C%2Fli%3E%3Cli%3E2%2F3%20cup%20%20superfine%20sugar%3C%2Fli%3E%3Cli%3E3%20%20tablespoons%20%20unbleached%20all-purpose%20flour%2C%20plus%20more%20for%20rolling%20out%20the%20dough%3C%2Fli%3E%3Cli%3E2%20%20teaspoons%20%20pure%20maple%20syrup%2C%20preferably%20Grade%20B%3C%2Fli%3E%3Cli%3E2%20%20teaspoons%20fresh%20lemon%20juice%3C%2Fli%3E%3Cli%3E1%2F2%20teaspoon%20%20ground%20cinnamon%3C%2Fli%3E%3Cli%3E3%2F4%20teaspoon%20pure%20vanilla%20extract%3C%2Fli%3E%3Cli%3E1%20large%20egg%2C%20well%20beaten%20with%20a%20hand%20blender%3C%2Fli%3E%3Cli%3EStreusel%20%28see%20below%29%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3E1.%20Position%20a%20rack%20in%20the%20center%20of%20the%20oven%20and%20preheat%20to%20350%C2%B0F.%20Line%20a%20half-sheet%20pan%20with%20parchment%0D%0Apaper.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E2.%20To%20make%20the%20filling%2C%20gently%20toss%20the%20apples%2C%20sugar%2C%20flour%2C%20maple%20syrup%2C%20lemon%20juice%2C%20cinnamon%2C%20and%20vanilla%20in%20a%20medium%20bowl%20until%20well%20combined.%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E3.%20Lightly%20flour%20a%20work%20surface.%20Unwrap%20the%20dough%20and%20rap%20the%20entire%20circumference%20around%20its%20edge%0D%0Aon%20the%20work%20surface.%20Dust%20the%20top%20of%20the%20dough%20with%20flour.%20Roll%20out%20into%20a%2015-inch%20round.%20Transfer%0D%0Athe%20dough%20to%20a%209-inch%20pie%20pan%2C%20centering%20it%20in%20the%20pan%2C%20and%20let%20the%20excess%20dough%20hang%20over%20the%20sides.%0D%0AHeap%20the%20apples%20in%20the%20crust%2C%20mounding%20them%20high%20in%20the%20center.%20Bring%20up%20the%20edges%20of%20the%20dough%2C%0D%0Apleating%20the%20dough%20as%20needed%20around%20the%20circumference%20of%20the%20dish%20%E2%80%94%20the%20center%20of%20the%20filling%20will%0D%0Abe%20visible.%20Brush%20the%20exposed%20crust%20with%20the%20egg.%20Place%20the%20streusel%20over%20the%20exposed%20filling%20to%20cover%0D%0Ait%2C%20then%20sprinkle%20any%20remaining%20streusel%20over%20the%20crust.%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3E4.%20Place%20the%20pie%20on%20the%20half-sheet%20pan.%20Bake%2C%20rotating%20the%20pan%20halfway%20through%2C%20until%20the%20crust%20is%20golden%0D%0Abrown%20and%20any%20juices%20that%20escape%20are%20thick%2C%20about%201%20hour.%20If%20the%20crust%20is%20browning%20too%20quickly%2C%20tent%20it%0D%0Awith%20parchment%20paper.%20Remove%20from%20the%20oven%20and%20cool%20on%20a%20wire%20rack%20for%201%20hour.%20Serve%20warm%20or%20at%0D%0Aroom%20temperature.%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-variations%22%3E%3Ch5%3EVariations%3C%2Fh5%3E%3Cul%3E%3Cli%3EThis%20pie%20can%20be%20made%20with%20peaches%20instead%20of%20apples.%20Replace%20the%20apple%20mixture%20above%20with%20the%20following%3A%20%3C%2Fli%3E%0D%0A%0D%0A%0D%0A%3Cli%3ECombine%2010%20%28or%20more%2C%20if%20necessary%29%20ripe%20medium%20peaches%2C%20pitted%2C%20peeled%2C%20and%20cut%20into%201%2F2-inch%20cubes%20%28about%208%20cups%29%20with%201%2F3%20cup%20packed%20light%20brown%20sugar%2C%202%20teaspoons%20cornstarch%20and%201%20teaspoon%20pure%20vanilla%20extract.%20%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20From%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%E2%80%9D%20by%20Sarabeth%20Levine%20%28Rizzoli%2C%202010%29%3C%2Fp%3E%0A%3Cdiv%20class%3D%22recipe-head%22%3E%0A%3Cdiv%20class%3D%22recipe-meta%22%3E%0A%3Ch3%3EStreusel%3C%2Fh3%3E%0A%3Cp%20class%3D%22recipe-time%22%3E%3Ci%3ETime%3C%2Fi%3E%2015%20minutes%3C%2Fp%3E%0A%3Cp%20class%3D%22recipe-author%22%3EAdapted%20From%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%E2%80%9D%20by%20Sarabeth%20Levine%20%28Rizzoli%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22recipe-img%22%3E%3Cimg%20alt%3D%22%22%20src%3D%22http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2010%2F05%2F28%2Fdining%2F0528tempveg%2F0528tempveg-custom1.jpg%20%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22caption%22%3E%3C%2Fspan%3E%0A%3Cdiv%20class%3D%22recipe-ingredients%22%3E%3Ch5%3EIngredients%3C%2Fh5%3E%3Cul%3E%3Cli%3E1%2F3%20%20cup%20plus%201%20tablespoon%20unbleached%20all-purpose%20flour%3C%2Fli%3E%3Cli%3E1%20%20tablespoon%20%20%20superfine%20sugar%3C%2Fli%3E%3Cli%3E1%20tablespoon%20%20light%20brown%20sugar%3C%2Fli%3E%3Cli%3E1%2F8%20teaspoon%20ground%20cinnamon%3C%2Fli%3E%3Cli%3E2%201%2F2%20tablespoons%20unsalted%20butter%2C%20melted%3C%2Fli%3E%3Cli%3E1%2F8%20teaspoon%20pure%20vanilla%20extract%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22recipe-process%22%3E%3Ch5%3EMethod%3C%2Fh5%3E%3Cul%3E%3Cli%3ECombine%20the%20flour%2C%20superfine%20sugar%2C%20brown%20sugar%2C%20and%20cinnamon%20in%20a%20small%20bowl.%20Stir%20the%20melted%20butter%20and%20vanilla%20together%20in%20another%20small%20bowl.%20Gradually%20stir%20the%20butter%20mixture%20into%20the%20flour%20mixture%2C%20just%20until%20evenly%20moistened%20%28you%20may%20not%20need%20all%20of%20the%20butter%29.%20Squeeze%20the%20mixture%20in%20your%20hands%20until%20thoroughly%20combined.%20Crumble%20the%20mixture%20in%20the%20bowl%20to%20make%20fine%20crumbs%20with%20some%20small%20lumps.%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cp%20class%3D%22recipe-source%22%3ESource%3A%20Adapted%20From%20%E2%80%9CSarabeth%E2%80%99s%20Bakery%3A%20From%20My%20Hands%20to%20Yours%E2%80%9D%20by%20Sarabeth%20Levine%20%28Rizzoli%2C%202010%29%3C%2Fp%3E%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fp%3E%0A" />
+</form>
+<div class="w480"><img id="100000000336469" src="https://static01.nyt.com/images/2010/09/09/dining/dj-pie/dj-pie-blogSpan.jpg" alt="" width="480" height="441" /><span class="credit">Emily Weinstein/The New York Times</span></div>
+<p class="story-body-text" itemprop="articleBody"><em>Emily Weinstein is learning to bake with the food writer and cookbook author <a href="//doriegreenspan.com/">Dorie Greenspan</a>. This week, Sarabeth Levine, of <a href="//www.sarabeth.com/">Sarabeth’s Kitchen</a>, steps in as a special guest instructor, per Dorie’s suggestion. She is an expert in all things pie. Dorie will return next week. </em></p>
+<p class="story-body-text" itemprop="articleBody"><strong>LESSON 4: PEACH OR APPLE PIE (From “Sarabeth’s Bakery: From My Hands to Yours,” coming in October)</strong></p>
+<p class="story-body-text" itemprop="articleBody">“Don’t be afraid of it, it’s just food!” said Sarabeth Levine, owner of Sarabeth’s Kitchen, when the dough developed a hairline fracture as she rolled it out. She patched it with a scrap. “No problem.”</p>
+<p class="story-body-text" itemprop="articleBody">We were standing in her big open kitchen at Chelsea Market in Manhattan, where she was teaching me how to make her rustic apple streusel pie. With folds of dough drawn up around the filling, topped off with a few handfuls of crumbs, its aesthetic was more free-spirited, forgiving, than other pies. “I want you to go home and be able to reproduce what I do,” she said. “It should look like the way I make it.”</p>
+<p class="story-body-text" itemprop="articleBody">The phrase “easy as pie” must refer to eating pie, not baking it — or at least, baking it in an attractive manner. I’ve made three in a row now — three tries, three pies — one apple and two peach, each eliciting the same response from friends when I bemoan the messiness of the crust: “It’s meant to be rustic!” <span id="more-35237"></span></p>
+<div class="w190 right"><img id="100000000336469" src="https://static01.nyt.com/images/2010/09/09/dining/dj-pie/dj-pie-articleInline.jpg" alt="" width="190" height="597" /><span class="credit">Emily Weinstein/The New York Times</span> <span class="caption">From top: the first pie, apple, was covered in streusel crumbs, a last-ditch effort to save it; the next one, peach, browned nicely on top but was a little flat; the third, another peach, was the tastiest, if not quite browned.</span></div>
+<p class="story-body-text" itemprop="articleBody">I realize there is such a thing as a beautifully messy pie, a top crust whose perfection lies in its bumps and uneven browns and golds. But mine just looked sort of messy, period. It was the difference between a designer taking a pair of scissors to a shirt, and me doing it myself at home. Not the same. My pies not only didn’t resemble Sarabeth’s example, they were too rustic to even really be related. They were distant cousins, maybe, from the old country.</p>
+<p class="story-body-text" itemprop="articleBody">Tips from Sarabeth:</p>
+<li>A recipe is like a road map. “If you have to get to Chicago by car, you better get the map out,” she said. If you read the recipe through twice before you begin, “you will know where you’re going.”</li>
+<li>A technique for cutting apples neatly, no corer necessary: peel the apples and then slice each vertically, core intact. Place each apple half face down on the cutting board, and work your way around it with the knife, cutting it into quarter-inch slices. Finally, trim off any bit of core that may be on each apple slice.</li>
+<li>Taste your apples — add sugar as necessary.</li>
+<li>Don’t overwork the dough. Handling it too much activates the gluten, which toughens it.</li>
+<p class="story-body-text" itemprop="articleBody">Now this was not my first try at pie making. <a href="//dinersjournal.blogs.nytimes.com/2008/11/25/how-to-cooksomething-pumpkin-pie/">I tried making it two years ago</a>, with help from my father, as part of a series I wrote on this blog about learning to cook. But this was my first solo try, in my own kitchen. I stood at my counter and created the <a href="//www.epicurious.com/tools/fooddictionary/entry/?id=3523">mise en place</a> —  “I still do this, even after all these years,” Sarabeth told me — and made the dough, which, to my delight, looked exactly like hers.</p>
+<p class="story-body-text" itemprop="articleBody">This small victory was satisfying enough to send me sailing into Part 2 of the recipe: slicing the four pounds of tart Granny Smith apples into clean half moons while the dough chilled in the refrigerator.</p>
+<p class="story-body-text" itemprop="articleBody">As I neared the end of apple slicing, I took out the dough &#8212; it had been chilling for far longer than an hour and I thought it might need to loosen up. Then I made the streusel topping and did some dishes to make room on the counter. Without thinking about it 30 minutes went by. This was not smart. But I didn’t know that until I scattered flour on the counter and rolled out the dough, which was a bit wet.</p>
+<p class="story-body-text" itemprop="articleBody">After rolling it out, not too hard, not too soft, to what I thought appeared to be the prescribed 15 inches, I moved it to the pan, which it filled, but just barely. It was clear there would not be enough to fold up around the mound of apples I added next. Facing two options &#8212; bake the pie or toss the pie &#8212; I decided to just bake it, figuring the best way to salvage it was to hastily triple the streusel topping and spread it over the top. The finished pie was sweet in a way I knew was wrong — all that extra sugar topping — but tasty enough. It was not, however, Sarabeth’s pie.</p>
+<p class="story-body-text" itemprop="articleBody">And so I tried again, but with peaches that had just ripened to a beautiful state of juiciness. I took care with pie No. 2 to make sure the dough was cold enough when I rolled it out. I also measured its diameter this time, making sure there would be extra to drape over the filling. The pie turned out far better than the first, but it still wasn’t quite right. I hadn’t used enough peaches, and so the top was slightly concave. Also, it lacked sweetness, which left the flavor a bit flat. This surprised me — I should have tasted the peaches first and adjusted the sugar.</p>
+<p class="story-body-text" itemprop="articleBody">For the third and final pie, this time made with late-summer peaches, I used twice as many pieces of fruit. I followed every step to the letter. I even pulled out measuring tape and checked the depth of the rolled out dough. The pie had a nice, subtle domed shape, but the juice from the peaches crept up at the edges, subsuming the edge of the crust, forming a sticky, rich-hued halo.</p>
+<p class="story-body-text" itemprop="articleBody">Looks-wise, it was still rustic, not as effortless and neat looking as Sarabeth’s, but I had made my peace with this pie. And flavor-wise, it was delicious, the way you intuitively expect good pie to taste.</p>
+<p class="story-body-text" itemprop="articleBody"><div class="recipe-wrap"><div class="hrecipe"><div class="recipe-head">
+<a class="recipe-print" href="javascript:blogPostPrint('apple pie,Peach Pie,pie,pie crust,The Baker's Apprentice', 'September 10, 2010', '35237', '//dinersjournal.blogs.nytimes.com/printThis.html', 'https://static01.nyt.com/images/blogs_v3/dinersjournal/dinersjournal_print.png' );">Print Recipe</a>
+<div class="recipe-meta">
+<h3>Tender Pie Dough</h3>
+<p class="recipe-yield"><i>Yield</i> Two 9-inch single-crust pies, one double-crust pie, or six individual deep-dish pies</p>
+<p class="recipe-time"><i>Time</i> 20 minutes, plus 30 minutes to 1 hour of chilling</p>
+<p class="recipe-author">Adapted from “Sarabeth’s Bakery: From My Hands to Yours” by Sarabeth Levine (Rizzoli, 2010)</p>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg "></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-summary"><h5>Summary</h5><p class="summary">This makes a large batch of dough. Divide it in half and use both halves, or freeze one portion to use another time.</p></div><div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>14 tablespoons  (1 3/4 sticks) unsalted butter, at cool room temperature, cut into tablespoons</li><li>1/3 cup whole milk</li><li>2 1/2 cups  unbleached all-purpose flour</li><li>1  tablespoon  and 1 teaspoon superfine sugar</li><li>1/4  teaspoon  fine sea salt</li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>1. Beat the butter in the bowl of a heavy-duty stand mixer fitted with the paddle attachment at high speed until the butter is smooth, about two minutes. With the mixer running, slowly dribble in the milk, occasionally stopping the mixer and scraping down the sides of the bowl with a silicone spatula. The butter mixture should be fluffy, smooth, and shiny, like a butter cream frosting.</li>
+
+
+<li>2. Mix the flour, sugar, and salt together in a small bowl. With the mixer speed on low, gradually add the flour mixture and incorporate just until the dough forms a mass on the paddle and the sides of the bowl are clean. Turn out the dough onto a lightly floured surface. Knead a few times until it is smooth and supple. Divide the dough in half. Shape each portion into a disk, about one-inch thick. Wrap each disk in plastic wrap.</li>
+
+
+<li>3. Refrigerate until chilled but not hard, 30 minutes to an hour. (The dough can be refrigerated up to one day, but it will be very hard, and should stand at room temperature for about 30 minutes before rolling out. The dough can also be frozen, double wrapped in plastic, for up to two weeks. Defrost in the refrigerator overnight. </li></ul></div><p class="recipe-source">Source: Adapted from “Sarabeth’s Bakery: From My Hands to Yours” by Sarabeth Levine (Rizzoli, 2010)</p>
+<div class="recipe-head">
+<div class="recipe-meta">
+<h3>Rustic Apple Streusel Pie</h3>
+<p class="recipe-time"><i>Time</i> About 2 hours</p>
+<p class="recipe-author">Adapted From “Sarabeth’s Bakery: From My Hands to Yours” by Sarabeth Levine (Rizzoli, 2010)</p>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg "></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-summary"><h5>Summary</h5><p class="summary">Be sure to slice the apples thin so that they cook in the amount of time needed to bake the crust — this isn’t a chunky filling.</p></div><div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>1/2  recipe Tender Pie Dough (see above)</li><li>4 pounds Granny Smith apples, peeled, cut into 1/4-inch-thick slices and trimmed</li><li>2/3 cup  superfine sugar</li><li>3  tablespoons  unbleached all-purpose flour, plus more for rolling out the dough</li><li>2  teaspoons  pure maple syrup, preferably Grade B</li><li>2  teaspoons fresh lemon juice</li><li>1/2 teaspoon  ground cinnamon</li><li>3/4 teaspoon pure vanilla extract</li><li>1 large egg, well beaten with a hand blender</li><li>Streusel (see below)</li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>1. Position a rack in the center of the oven and preheat to 350°F. Line a half-sheet pan with parchment
+paper.</li>
+
+
+<li>2. To make the filling, gently toss the apples, sugar, flour, maple syrup, lemon juice, cinnamon, and vanilla in a medium bowl until well combined.</li>
+
+
+<li>3. Lightly flour a work surface. Unwrap the dough and rap the entire circumference around its edge
+on the work surface. Dust the top of the dough with flour. Roll out into a 15-inch round. Transfer
+the dough to a 9-inch pie pan, centering it in the pan, and let the excess dough hang over the sides.
+Heap the apples in the crust, mounding them high in the center. Bring up the edges of the dough,
+pleating the dough as needed around the circumference of the dish — the center of the filling will
+be visible. Brush the exposed crust with the egg. Place the streusel over the exposed filling to cover
+it, then sprinkle any remaining streusel over the crust. </li>
+
+
+<li>4. Place the pie on the half-sheet pan. Bake, rotating the pan halfway through, until the crust is golden
+brown and any juices that escape are thick, about 1 hour. If the crust is browning too quickly, tent it
+with parchment paper. Remove from the oven and cool on a wire rack for 1 hour. Serve warm or at
+room temperature.</li></ul></div><div class="recipe-variations"><h5>Variations</h5><ul><li>This pie can be made with peaches instead of apples. Replace the apple mixture above with the following: </li>
+
+
+<li>Combine 10 (or more, if necessary) ripe medium peaches, pitted, peeled, and cut into 1/2-inch cubes (about 8 cups) with 1/3 cup packed light brown sugar, 2 teaspoons cornstarch and 1 teaspoon pure vanilla extract. </li></ul></div><p class="recipe-source">Source: Adapted From “Sarabeth’s Bakery: From My Hands to Yours” by Sarabeth Levine (Rizzoli, 2010)</p>
+<div class="recipe-head">
+<div class="recipe-meta">
+<h3>Streusel</h3>
+<p class="recipe-time"><i>Time</i> 15 minutes</p>
+<p class="recipe-author">Adapted From “Sarabeth’s Bakery: From My Hands to Yours” by Sarabeth Levine (Rizzoli, 2010)</p>
+</div>
+<div class="recipe-img"><img alt="" src="https://static01.nyt.com/images/2010/05/28/dining/0528tempveg/0528tempveg-custom1.jpg "></div>
+</div>
+<span class="caption"></span>
+<div class="recipe-ingredients"><h5>Ingredients</h5><ul><li>1/3  cup plus 1 tablespoon unbleached all-purpose flour</li><li>1  tablespoon   superfine sugar</li><li>1 tablespoon  light brown sugar</li><li>1/8 teaspoon ground cinnamon</li><li>2 1/2 tablespoons unsalted butter, melted</li><li>1/8 teaspoon pure vanilla extract</li></ul></div><div class="recipe-process"><h5>Method</h5><ul><li>Combine the flour, superfine sugar, brown sugar, and cinnamon in a small bowl. Stir the melted butter and vanilla together in another small bowl. Gradually stir the butter mixture into the flour mixture, just until evenly moistened (you may not need all of the butter). Squeeze the mixture in your hands until thoroughly combined. Crumble the mixture in the bowl to make fine crumbs with some small lumps.</li></ul></div><p class="recipe-source">Source: Adapted From “Sarabeth’s Bakery: From My Hands to Yours” by Sarabeth Levine (Rizzoli, 2010)</p>
+</div></div></p>
+	</div>
+		<footer class="entry-footer">
+					<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dinersjournal.blogs.nytimes.com/2010/09/10/the-bakers-apprentice-peach-or-apple-pie/" data-title="The Baker&#8217;s Apprentice: Peach or Apple Pie" data-description="Emily Weinstein learns how to bake a pie. ">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2010/09/10/the-publics-first-peek-at-lincoln/" title="The Public&#039;s First Peek at Lincoln">
+				The Public&#8217;s First Peek at Lincoln			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dinersjournal.blogs.nytimes.com/2010/09/10/your-26-after-dinner-coffee-at-eleven-madison-park/" title="Your $26 After-Dinner Coffee at Eleven Madison Park">
+				Your $26 After-Dinner Coffee at Eleven Madison Park			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dinersjournal.blogs.nytimes.com/2013/07/'> July 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/06/'> June 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/05/'> May 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/04/'> April 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/03/'> March 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/02/'> February 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2013/01/'> January 2013 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/12/'> December 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/11/'> November 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/10/'> October 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/09/'> September 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/08/'> August 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/07/'> July 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/06/'> June 2012 </option>
+	<option value='//dinersjournal.blogs.nytimes.com/2012/05/'> May 2012 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" title="Read: A Note to Readers">A Note to Readers</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diner&#8217;s Journal is ceasing publication so that we can create a single Dining section destination: nytimes.com/dining. <a href="//dinersjournal.blogs.nytimes.com/2013/07/12/a-note-to-readers/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"><img src="https://static01.nyt.com/images/2013/07/10/dining/10BURNER2/10BURNER2-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+						<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" title="Read: Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More">Front Burner: An Unusual Vegetable, Ceramic Ice Cream Cones and More</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Florence Fabricant&#8217;s recommendations for the week of July 9th. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/front-burner-an-unusual-vegetable-ceramic-ice-cream-cones-and-more/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/whats-for-dinner/">What's for Dinner?</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" title="Read: Vietnamese Marinated Flank Steak">Vietnamese Marinated Flank Steak</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Vary the marinade, and you can serve flank steak in endless variation all summer. <a href="//dinersjournal.blogs.nytimes.com/2013/07/09/vietnamese-marinated-flank-steak/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/drinking/">Drinking</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" title="Read: Wines for Savory, Pungent Sausages">Wines for Savory, Pungent Sausages</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A list of wines to take to your summer rental.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/wines-for-savory-pungent-sausages/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dinersjournal.blogs.nytimes.com/category/back-of-house/">Back of House</a>
+				</h6>
+							<h5><a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" title="Read: After Midnight, She Rules the Kitchen">After Midnight, She Rules the Kitchen</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Diana Bush, a baker at the NoMad, works from 8 p.m. to dawn making the restaurant&#8217;s bread.<a href="//dinersjournal.blogs.nytimes.com/2013/07/09/after-midnight-she-rules-the-kitchen/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">@nytdining</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytdining" title="Follow nytdining on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytdining" title="Follow @nytdining on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-13',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":67,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

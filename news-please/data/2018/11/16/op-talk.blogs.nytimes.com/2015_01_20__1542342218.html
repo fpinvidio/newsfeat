@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-op-talk section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-op-talk section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-op-talk section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-op-talk section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/op-talk/What America Thinks of the 2015 State of the Union Address ( 20150120 )" />
+<meta name="communityAssetURL" content="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003461528"><meta name="author" content="Anna North" />
+<meta name="CLMST" content="Anna North" />
+<meta name="byl" content="Anna North" />
+<meta name="GBLC" content="Deeper Dive">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1421795577" />
+<meta name="PUD" content="20150120" />
+<meta name="pdate" content="20150120" />
+<meta name="ptime" content="20150120181257" />
+<meta name="utime" content="20150121041147" />
+<meta property="article:modified_time" itemprop="dateModified" content="2015-01-21T04:11:47-05:00" />
+<meta name="DISPLAYDATE" content="January 20, 2015" />
+<meta name="dat" content="January 20, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="op-talk" />
+<meta name="BN" content="op-talk" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Obama, Barack">
+<meta name="des" content="Community Colleges;Federal Taxes (US);Inheritance and Estate Taxes;State of the Union Message (US);Tuition;United States Politics and Government">
+<meta name="org" content="Islamic State in Iraq and Syria (ISIS)">
+<meta name="geo" content="United States">
+<meta property="article:tag" content="Obama Barack" />
+<meta property="article:tag" content="Community Colleges" />
+<meta property="article:tag" content="Federal Taxes (US)" />
+<meta property="article:tag" content="Inheritance and Estate Taxes" />
+<meta property="article:tag" content="State of the Union Message (US)" />
+<meta property="article:tag" content="Tuition" />
+<meta property="article:tag" content="United States Politics and Government" />
+<meta property="article:tag" content="Islamic State in Iraq and Syria (ISIS)" />
+<meta property="article:tag" content="United States" />
+<meta property="article:tag" content="Deeper Dive" />
+<meta name="keywords" content="Obama Barack,Community Colleges,Federal Taxes (US),Inheritance and Estate Taxes,State of the Union Message (US),Tuition,United States Politics and Government,Islamic State in Iraq and Syria (ISIS),United States,Deeper Dive" />
+<meta name="news_keywords" content="Barack Obama,Community college,Federal Taxes,Inheritance Tax and Estate Tax,Islamic State in Iraq and Syria (ISIS),State of the Union;SOTU;State of the Union 2015,Tuition payments,US,US Politics" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fop-talk.blogs.nytimes.com%2F2015%2F01%2F20%2Fwhat-america-thinks-of-the-2015-state-of-the-union-address%2F" title="What America Thinks of the 2015 State of the Union Address" />
+<meta name="description" content="Watch the address and find out what observers are saying before, during, and afterward." />
+<meta name="hdl" content="What America Thinks of the 2015 State of the Union Address" />
+<meta property="og:title" content="What America Thinks of the 2015 State of the Union Address" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" />
+<meta property="og:site_name" content="Op-Talk" />
+<meta property="og:description" content="Watch the address and find out what observers are saying before, during, and afterward." />
+<meta property="og:image" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-facebookJumbo.jpg"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-thumbLarge.jpg"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="What America Thinks of the 2015 State of the Union Address" />
+<meta name="twitter:url" content="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" />
+<meta name="twitter:description" content="Watch the address and find out what observers are saying before, during, and afterward." />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-thumbLarge.jpg"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-thumbLarge.jpg" name="thumbnail" />
+<meta name="twitter:site" content="@nytopinion">
+<link rel='prev' title='How Your Facebook Likes Could Cost You a Job' href='//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/' />
+<link rel='next' title='Is Your Data Safe at Healthcare.gov?' href='//op-talk.blogs.nytimes.com/2015/01/23/is-your-data-safe-at-healthcare-gov/' />
+<link rel='canonical' href='//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/' />
+<link rel='shortlink' href='//nyti.ms/1CMJg0Q' />
+<link rel='https://github.com/WP-API/WP-API' href='//op-talk.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/op-talk/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//op-talk.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/op-talk/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" />
+<meta name="dfp-ad-unit-path" content="opinion/optalk" />			<title>What America Thinks of the 2015 State of the Union Address - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-5718 blog-universal nyt-blog-op-talk" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//op-talk.blogs.nytimes.com">
+                Op-Talk            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        What America Thinks of the 2015 State of the Union Address        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/"
+	 data-title="What America Thinks of the 2015 State of the Union Address"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;Watch the address and find out what observers are saying before, during, and afterward.&lt;/span&gt;&lt;a href=&quot;//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="January 20, 2015 6:12 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="op-talk" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//op-talk.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/op-talk/op-talk75.gif" alt="Op-Talk"/></div><div class="site-title">Op-Talk</div><div class="site-description">Opinions From All Over</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//op-talk.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Op-Talk">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-5718 post type-post status-publish hentry category-deeper-dive tag-community-colleges tag-federal-taxes-us tag-inheritance-and-estate-taxes tag-islamic-state-in-iraq-and-syria-isis tag-obama-barack tag-state-of-the-union-message-us tag-tuition tag-united-states tag-united-states-politics-and-government per-obama-barack des-community-colleges des-federal-taxes-us des-inheritance-and-estate-taxes des-state-of-the-union-message-us des-tuition des-united-states-politics-and-government org-islamic-state-in-iraq-and-syria-isis geo-united-states news_keywords-barack-obama news_keywords-community-college news_keywords-federal-taxes news_keywords-inheritance-tax-and-estate-tax news_keywords-islamic-state-in-iraq-and-syria-isis news_keywords-state-of-the-unionsotustate-of-the-union-2015 news_keywords-tuition-payments news_keywords-us news_keywords-us-politics" id="post-5718">
+	<header class="postHeader">
+				<div class="postKicker">
+					</div>
+				<h1 itemprop="headline" class="entry-title">What America Thinks of the 2015 State of the Union Address</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Anna North			</address>
+			<!-- date published --><time class="dateline " datetime="2015-01-20T23:12:57+00:00" itemprop="datePublished">January 20, 2015 6:12 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">January 20, 2015 6:12 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div class="w592"><figure class="media photo promo" itemprop="associatedMedia" itemscope="" itemid="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-tmagArticle.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-tmagArticle.jpg" src="https://static01.nyt.com/images/2015/01/20/opinion/nyto-speech/nyto-speech-tmagArticle.jpg" id="100000003462048" width="592" height="586" alt=""   /><meta itemprop="height" content="586"><meta itemprop="width" content="592"></div><figcaption class="caption" itemprop="description"><span class="caption-text"></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Doug Mills/The New York Times</span></figcaption></figure></div>
+<div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" data-title="What America Thinks of the 2015 State of the Union Address" data-description="Watch the address and find out what observers are saying before, during, and afterward.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody"><strong>Updated at 11:11 PM. </strong>What’s <a href="//takingnote.blogs.nytimes.com/2015/01/20/the-editorial-boards-state-of-the-union-wish-list/?module=BlogPost-Title&amp;version=Blog%20Main&amp;action=Click&amp;pgtype=Blogs&amp;region=Body">unusual</a> about this year’s State of the Union address, <a href="//abcnews.go.com/Politics/12-state-union-spoilers-obamas-speech/story?id=28325571">many</a> <a href="//www.theatlantic.com/politics/archive/2015/01/reasons-to-watch-obamas-state-of-the-union-address/384632/">have</a> <a href="//www.politico.com/story/2015/01/state-of-the-union-2015-will-there-be-any-surprises-114381.html">noted</a>, is how much we know already. President Obama has <a href="//www.nytimes.com/2015/01/21/us/in-state-of-the-union-speech-obama-to-urge-a-skeptical-congress-to-back-initiatives.html">revealed</a> that he’ll call for a <a href="//www.nytimes.com/2015/01/09/us/politics/obama-proposes-free-community-college-education-for-some-students.html">federal program</a> to cover community college tuition and <a href="//www.nytimes.com/2015/01/18/us/president-obama-will-seek-to-reduce-taxes-for-middle-class.html">tax credits for middle-income Americans</a> paid for by an increase in capital-gains taxes, among other changes. But, some say, that doesn’t mean we know everything about how Tuesday night’s speech will go. Below, watch the address and find out what observers are saying before, during and afterward — Op-Talk will be updating with reactions throughout the evening.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Follow</strong></p>
+<p class="story-body-text" itemprop="articleBody"><em>Take a look at these users for reactions and/or live-tweeting:</em></p>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/CharlesMBlow">Charles M. Blow</a> sees a reference to the #BlackLivesMatter campaign:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Obama said &quot;your life matter.&quot; Nod to <a href="https://www.twitter.com/hashtag/BlackLivesMatter?src=hash">#BlackLivesMatter</a>, I&#39;m sure of it. Pat yourselves on the back activists&#8230; <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Charles M. Blow (@CharlesMBlow) <a href="https://www.twitter.com/CharlesMBlow/status/557736824287035393">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">As does <a href="https://www.twitter.com/jamilahking">Jamilah King</a>, a senior editor at Colorlines:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">&quot;Every life matters&quot; is as close to <a href="https://www.twitter.com/hashtag/BlackLivesMatter?src=hash">#BlackLivesMatter</a> as we can expect to hear from a sitting US president. Huge. <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Jamilah King (@jamilahking) <a href="https://www.twitter.com/jamilahking/status/557737116458029059">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/GroverNorquist">Grover Norquist</a>, the president of Americans for Tax Reform, is unconvinced by the president’s message of bipartisanship:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Question. Has any president in 200 years given a state of the union speech which divided americans by party as often as Obama is doing.</p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Grover Norquist (@GroverNorquist) <a href="https://www.twitter.com/GroverNorquist/status/557735377768034304">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/greenpeaceusa">Greenpeace USA</a> calls for action on climate change:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Pres. Obama, if climate change is truly a top priority, work to end extraction of coal and oil. <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a> <a href="https://www.twitter.com/hashtag/savethearctic?src=hash">#savethearctic</a> <a href="//t.co/e5Jcw43Sr5">pic.twitter.com/e5Jcw43Sr5</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Greenpeace USA (@greenpeaceusa) <a href="https://www.twitter.com/greenpeaceusa/status/557733502075277315">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">But <a href="https://www.twitter.com/zeynep">Zeynep Tufekci</a>, an assistant professor at the School of Information and Library Science at the University of North Carolina, isn’t optimistic on the issue:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">The &quot;Climate Change&quot; portion is so depressing. Every year &quot;warmest year on record&#8230;&quot; &quot;We will not &#8230;&quot; <a href="https://www.twitter.com/hashtag/sotu?src=hash">#sotu</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Zeynep Tufekci (@zeynep) <a href="https://www.twitter.com/zeynep/status/557733587756523520">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/BethanyAllenEbr">Bethany Allen-Ebrahimian</a>, a fellow at Foreign Policy, criticizes Mr. Obama’s foreign-policy comments:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Really? Are we really &quot;making sure&quot; China is playing by the rules in Asia-Pacific? Japan, Philippines, Vietnam might beg to differ. <a href="https://www.twitter.com/hashtag/sotu15?src=hash">#sotu15</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; B. Allen-Ebrahimian (@BethanyAllenEbr) <a href="https://www.twitter.com/BethanyAllenEbr/status/557732911508905985">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">Apropos of the president’s comments on Ebola, <a href="https://www.twitter.com/SuzyKhimm">Suzy Khimm</a> of MSNBC questions the efficacy of America’s response:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Reminder: U.S.-built Ebola treatment centers in Liberia are nearly empty. <a href="//t.co/nyrnOXMjr9">//t.co/nyrnOXMjr9</a> Like many others, we responded too late.</p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Suzy Khimm (@SuzyKhimm) <a href="https://www.twitter.com/SuzyKhimm/status/557732953888133122">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">The official Twitter account of <a href="https://www.twitter.com/speakerboehner">Speaker John A. Boehner</a> critiques the president on education:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a> FACT: The president opposes true educational opportunity, like <a href="https://www.twitter.com/hashtag/schoolchoice?src=hash">#schoolchoice</a> <a href="//t.co/yK1HDcVwZO">//t.co/yK1HDcVwZO</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Speaker John Boehner (@SpeakerBoehner) <a href="https://www.twitter.com/SpeakerBoehner/status/557729091877871620">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/thisisjorge">Jorge Rivas</a> of Fusion asks about Americans’ pay:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">&quot;Our economy is growing and creating jobs at the fastest pace since 1999.&quot; But how do wages compare? <a href="https://www.twitter.com/hashtag/ThisIsAmerica?src=hash">#ThisIsAmerica</a> <a href="https://www.twitter.com/hashtag/StateOfTheUnion?src=hash">#StateOfTheUnion</a> <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Jorge Rivas (@thisisjorge) <a href="https://www.twitter.com/thisisjorge/status/557722582783635458">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Just sayin&#39; &#8230;average hourly earnings have gone down in the last decade <a href="https://www.twitter.com/hashtag/ThisIsAMERICA?src=hash">#ThisIsAMERICA</a> <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a> <a href="//t.co/RwBH7nUViQ">//t.co/RwBH7nUViQ</a> <a href="//t.co/kCM8vYhhs6">pic.twitter.com/kCM8vYhhs6</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Jorge Rivas (@thisisjorge) <a href="https://www.twitter.com/thisisjorge/status/557723270502707200">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/kasperka">Jana Kasperkevic</a> of The Guardian shares some perspectives on class in America:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Obama says that: &quot;middle-class economics works&quot; &#10;&#10;Our readers say <a href="https://www.twitter.com/hashtag/middleclass?src=hash">#middleclass</a> is living from one crisis to the next <a href="//t.co/r08SjT7WAS">//t.co/r08SjT7WAS</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Jana Kasperkevic (@kasperka) <a href="https://www.twitter.com/kasperka/status/557724612046626818">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">The New York Times op-ed columnist <a href="https://www.twitter.com/CharlesMBlow">Charles M. Blow</a> draws a parallel:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">That &quot;sorted into factions&quot; language was very interesting. Evoke &quot;Divergent&quot; for me&#8230; <a href="https://www.twitter.com/hashtag/IJS?src=hash">#IJS</a> <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Charles M. Blow (@CharlesMBlow) <a href="https://www.twitter.com/CharlesMBlow/status/557723876701245445">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/jeremyscahill">Jeremy Scahill</a>, a co-founding editor at The Intercept, questions the president’s comments on Afghanistan:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Our combat mission is over&#8230;. except the part where it isn&#39;t <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; jeremy scahill (@jeremyscahill) <a href="https://www.twitter.com/jeremyscahill/status/557722618535874564">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/gabrielarana">Gabriel Arana</a>, a contributing writer at Salon and a contributing editor at The American Prospect, quips on the economy:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">&quot;It has been, and still is, a hard time for many.&quot; <a href="https://www.twitter.com/hashtag/understatement?src=hash">#understatement</a> <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a> &#8230; or was that &quot;for money&quot;?</p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Gabriel Arana (@gabrielarana) <a href="https://www.twitter.com/gabrielarana/status/557722411962236928">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/PPact">Planned Parenthood</a> voices disapproval for Joni Ernst, the senator from Iowa who gives the Republican response to the president’s speech:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Let’s remember: Joni Ernst supports legislation that would ban ALL abortion, and could interfere with access to birth control. <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Planned Parenthood (@PPact) <a href="https://www.twitter.com/PPact/status/557714923653181442">January 21, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p class="story-body-text" itemprop="articleBody"><a href="https://www.twitter.com/AliciaMenendez/">Alicia Menendez</a> of Fusion is soliciting followers’ views in advance of the speech at <a href="https://www.twitter.com/hashtag/ThisisAmerica?src=hash">#ThisisAmerica</a>:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">What do you want to hear from the President in tonight&#39;s <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a>? Use <a href="https://www.twitter.com/hashtag/ThisisAmerica?src=hash">#ThisisAmerica</a> &amp; we&#39;ll include your response in our coverage.</p>
+<p class="story-body-text" itemprop="articleBody">&mdash; Alicia Menendez (@AliciaMenendez) <a href="https://www.twitter.com/AliciaMenendez/status/557572496653058048">January 20, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">The nonpartisan group <a href="https://www.twitter.com/factcheckdotorg">FactCheck.org</a> will provide analysis throughout the address:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Watching tonight&#39;s <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a>? Tweet us if you want us to fact check something President Obama says.</p>
+<p class="story-body-text" itemprop="articleBody">&mdash; FactCheck.org (@factcheckdotorg) <a href="https://www.twitter.com/factcheckdotorg/status/557575972074307584">January 20, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">For those seeking a libertarian perspective, the <a href="https://www.twitter.com/CatoInstitute">Cato Institute</a> will be tweeting with the hashtag <a href="https://www.twitter.com/hashtag/CatoSOTU?src=hash">#CatoSOTU</a>:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">Joining the <a href="https://www.twitter.com/hashtag/CatoSOTU?src=hash">#CatoSOTU</a> Twitter convo with <a href="https://www.twitter.com/CatoInstitute">@CatoInstitute</a> scholars tonight? Here&#39;s a list of scholars live-tweeting: <a href="//t.co/W3F0yoCS4E">//t.co/W3F0yoCS4E</a></p>
+<p class="story-body-text" itemprop="articleBody">&mdash; CatoEvents (@CatoEvents) <a href="https://www.twitter.com/CatoEvents/status/557600492071964672">January 20, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody">The <a href="https://www.twitter.com/nwlc/">National Women’s Law Center</a> is listing some issues it hopes Mr. Obama addresses to improve the lives of women and families:</p>
+<div class="w480">
+<blockquote class="twitter-tweet" width="480"><p class="story-body-text" itemprop="articleBody">When the President talks about jobs in <a href="https://www.twitter.com/hashtag/SOTU?src=hash">#SOTU</a>, we hope he makes it clear that workers deserve <a href="https://www.twitter.com/hashtag/SchedulesThatWork?src=hash">#SchedulesThatWork</a> &amp; a voice in when they work.</p>
+<p class="story-body-text" itemprop="articleBody">&mdash; NWLC (@nwlc) <a href="https://www.twitter.com/nwlc/status/557550629493944320">January 20, 2015</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</div>
+<p class="story-body-text" itemprop="articleBody"><strong>Read</strong></p>
+<p class="story-body-text" itemprop="articleBody"><i>Find opinion and analysis around the web:</i></p>
+<p class="story-body-text" itemprop="articleBody">• At ThinkProgress, Joe Romm <a href="//thinkprogress.org/climate/2015/01/20/3613554/obama-climate-state-of-the-union/">focuses</a> on the president’s comments on the climate: “Obama eviscerated those who ignore the warnings from scientists and the Pentagon. He responded directly to the absurd ‘I’m not a scientist’ dodge used by <a href="//thinkprogress.org/climate/2014/10/03/3575849/not-a-scientist/">many conservatives</a> (including Iowa Sen. Joni Ernst, who delivered the GOP response).”</p>
+<p class="story-body-text" itemprop="articleBody">“The GOP response makes clear that Obama will have to go it alone on climate action and clean energy,” Mr. Romm concludes. “His address shows he is prepared to do just that.”</p>
+<p class="story-body-text" itemprop="articleBody">• At New York Magazine, Annie Lowrey <a href="//nymag.com/daily/intelligencer/2015/01/obamas-middle-class-economics.html">takes up</a> Mr. Obama’s focus on “middle-class economics.” While critics might argue that the middle class hasn’t thrived during his tenure, Ms. Lowrey writes, “the truth is that many of Obama’s proposals would or will help those aggrieved middle-class families.” And, she says, the president on Tuesday night seemed energetic once again: “We saw Obama thunder, trumpet, and staccato-shout his policies, despite the nonexistent odds they have of passage. And the fact that the economy has turned around so much seemed to give him hope that the middle class would start feeling better, even if Washington never helps.”</p>
+<p class="story-body-text" itemprop="articleBody">• The New York Times Editorial Board <a href="//www.nytimes.com/2015/01/21/opinion/at-the-state-of-the-union-a-president-outgunned-in-congress-is-still-combative.html?ref=opinion">writes</a> that Mr. Obama “chose wisely to deliver a simple, dramatic message about economic fairness, about the fact that the well-off — the top earners, the big banks, Silicon Valley — have done just great, while the middle and working classes remain dead in the water.” And, the board adds, “Mr. Obama was speaking not just to the present but to the future, to the 2016 presidential elections and even beyond. By simply raising the plight of the middle class (and, looming behind it, the larger issue of economic inequality), he has firmly inserted issues of economic fairness into the political debate.”</p>
+<p class="story-body-text" itemprop="articleBody"><em>And predictions and other pre-speech thoughts:</em></p>
+<p class="story-body-text" itemprop="articleBody">• “With so much of his agenda known,” <a href="//www.theatlantic.com/politics/archive/2015/01/reasons-to-watch-obamas-state-of-the-union-address/384632/">asks</a> Russell Berman at The Atlantic, “why bother watching Obama’s address at all?” His answer: “For starters, the tone of his speech will offer the best clue yet as to how he’ll approach the new Republican majority in Congress.” Obama’s proposal on taxes “suggests the president will be combative,” writes Mr. Berman — but he could still seek common ground with Republicans on trade and on the military campaign against ISIS.</p>
+<p class="story-body-text" itemprop="articleBody">• Jason Johnson <a href="//www.theroot.com/articles/politics/2015/01/state_of_the_union_what_president_obama_will_say_and_why.html?wpisrc=topstories">writes</a> at The Root that “the State of the Union is more of a wish list than a menu at this point.” However, he adds, “that doesn’t mean there won’t be key moments when pieces of his legacy, vision and personal strength seep through the pomp and circumstance.” And he predicts that the president will gesture at the campaign to come: “Note that the <a href="//www.people.com/article/michelle-obama-malik-bryant-state-union-president-white-house" target="_blank">first lady’s guests</a> will be a wonderful coalition of men, women and children who resemble the voting bloc that President Obama nurtured to life in 2008. The president will mention these people as a not-so-subtle road map for potential 2016 contenders.”</p>
+<p class="story-body-text" itemprop="articleBody">• For a more literal “state of the union,” head over to Vox, where Matthew Yglesias <a href="//www.vox.com/2015/1/20/7547159/real-state-of-the-union-maps-and-charts">notes</a> that the idea of an annual address came “from a constitutional provision directing the executive branch to provide Congress with an annual update on how things are going.” Mr. Yglesias offers his version of such an update in 33 charts depicting America’s political polarization, employment situation, income distribution and more.</p>
+<p class="story-body-text" itemprop="articleBody">• At The New York Times, members of the editorial board <a href="//takingnote.blogs.nytimes.com/2015/01/20/the-editorial-boards-state-of-the-union-wish-list/?module=BlogPost-Title&amp;version=Blog%20Main&amp;action=Click&amp;pgtype=Blogs&amp;region=Body">discuss</a> the issues they hope the president takes up in his speech, from immigration reform to climate change. “I hope the president mentions that <a href="//www.nytimes.com/2015/01/17/science/earth/2014-was-hottest-year-on-record-surpassing-2010.html?hp&amp;action=click&amp;pgtype=Homepage&amp;module=first-column-region&amp;region=top-news&amp;WT.nav=top-news">2014 was the hottest year on record</a>,” writes Juliet Lapidos. “He should call out as hypocrites the Republicans who complain that we’re saddling our children with debt — but don’t seem to care that we’re also saddling them with environmental devastation.”</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Watch</strong></p>
+<p class="story-body-text" itemprop="articleBody"><em>Stream the speech below:</em></p>
+<p class="story-body-text" itemprop="articleBody"><iframe frameborder="0" height="370" src="https://www.youtube.com/watch?v=NPHH1Ykx1jY?list=PLRJNAhZxtqH9Pi7kE7oelQWgqCo6lyNMl" width="480"></iframe></p>
+<p class="story-body-text" itemprop="articleBody">The full text of the speech is also available at <a href="https://medium.com/@WhiteHouse/president-obamas-state-of-the-union-address-remarks-as-prepared-for-delivery-55f9825449b2">Medium</a>.</p>
+</div>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//op-talk.blogs.nytimes.com/2015/01/20/what-america-thinks-of-the-2015-state-of-the-union-address/" data-title="What America Thinks of the 2015 State of the Union Address" data-description="Watch the address and find out what observers are saying before, during, and afterward.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//op-talk.blogs.nytimes.com/2015/01/20/how-your-facebook-likes-could-cost-you-a-job/" title="How Your Facebook Likes Could Cost You a Job">
+				How Your Facebook Likes Could Cost You a Job			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//op-talk.blogs.nytimes.com/2015/01/23/is-your-data-safe-at-healthcare-gov/" title="Is Your Data Safe at Healthcare.gov?">
+				Is Your Data Safe at Healthcare.gov?			</a>
+					</li>
+	</ul>
+</div>
+<div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About This Blog</h4><div class="entry">
+<p>Op-Talk is your guide to today's debates and the variety of voices behind them. From pizza to politics (and the politics of pizza), we offer new ways of looking at what's exciting, troubling, and inspiring.</p>
+</div>
+<div class="entry">
+<p class="summary"><b>John Guida</b> is a staff editor for Op-Talk.<br/><a href="//twitter.com/guidanyt">@guidanyt</a></p>
+<p class="summary"><b>Anna North</b> is a staff editor for Op-Talk.<br/><a href="//twitter.com/annanorthtweets">@annanorthtweets</a></p>
+<p class="summary"><b>Sara Barrett</b> is a photo editor for Opinion and Op-Talk.</p>
+<p class="summary"><b><a href="//jeffreyscales.tumblr.com/">Jeffrey Scales</a></b> is a photo editor for Opinion and Op-Talk.<br/><a href="https://twitter.com/JHensonScales">@JHensonScales</a></p>
+</div>
+</div>		<div class="module ad" id="MiddleRight"></div>
+        		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/nytopinion" title="Follow @nytopinion on twitter">@nytopinion</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/nytopinion" title="Follow nytopinion on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/nytopinion" title="Follow @nytopinion on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":66,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

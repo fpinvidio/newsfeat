@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js has-comments blog-dotearth section-opinion"  itemscope xmlns:og="//opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 has-comments blog-dotearth section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 has-comments blog-dotearth section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 has-comments blog-dotearth section-opinion" xmlns:og="//opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="communityAssetLabels" content="NYT_Blogs" />
+<meta name="communityAssetTaxonomy" content="blogs/dotearth/A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis ( 20150725 )" />
+<meta name="communityAssetURL" content="//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/" />
+<meta name="PT" content="Blogs" />
+<meta name="PST" content="Blog Post" />
+<meta name="sourceApp" content="blogs" />
+<meta itemprop="identifier" name="blogpostid" content="100000003820470"><meta name="author" content="Andrew C. Revkin" />
+<meta name="CLMST" content="Andrew C. Revkin" />
+<meta name="byl" content="Andrew C. Revkin" />
+<meta name="article:author" content="//topics.nytimes.com/top/reference/timestopics/people/r/andrew_c_revkin/index.html" /><meta name="GBLC" content="Caribbean;Climate Change;Media;news;oceans;science">
+<meta name="PUV" content="normal" />
+<meta property="article:published_time" itemprop="datePublished" content="1437849898" />
+<meta name="PUD" content="20150725" />
+<meta name="pdate" content="20150725" />
+<meta name="ptime" content="20150725144458" />
+<meta name="utime" content="20160818154446" />
+<meta property="article:modified_time" itemprop="dateModified" content="2016-08-18T15:44:46-04:00" />
+<meta name="DISPLAYDATE" content="July 25, 2015" />
+<meta name="dat" content="July 25, 2015" />
+<meta itemprop="articleSection" property="article:section" content="Opinion" />
+<meta name="CG" content="Opinion" />
+<meta name="SCG" content="dotearth" />
+<meta name="BN" content="dotearth" />
+<meta name="robots" content="noodp">
+<meta name="per" content="Alley, Richard B;Caldeira, Ken;Freedman, Andrew;Hansen, James E;Hearty, Paul J;Jordan, Montell;Krugman, Paul">
+<meta name="geo" content="Antarctic Regions;Bahama Islands;Bermuda;Canary Islands;Caribbean Area;Eleuthera (Bahamas)">
+<meta property="article:tag" content="Alley Richard B" />
+<meta property="article:tag" content="Caldeira Ken" />
+<meta property="article:tag" content="Freedman Andrew" />
+<meta property="article:tag" content="Hansen James E" />
+<meta property="article:tag" content="Hearty Paul J" />
+<meta property="article:tag" content="Jordan Montell" />
+<meta property="article:tag" content="Krugman Paul" />
+<meta property="article:tag" content="Antarctic Regions" />
+<meta property="article:tag" content="Bahama Islands" />
+<meta property="article:tag" content="Bermuda" />
+<meta property="article:tag" content="Canary Islands" />
+<meta property="article:tag" content="Caribbean Area" />
+<meta property="article:tag" content="Eleuthera (Bahamas)" />
+<meta property="article:tag" content="Caribbean" />
+<meta property="article:tag" content="Climate Change" />
+<meta property="article:tag" content="Media" />
+<meta property="article:tag" content="news" />
+<meta property="article:tag" content="oceans" />
+<meta property="article:tag" content="science" />
+<meta name="keywords" content="Alley Richard B,Caldeira Ken,Freedman Andrew,Hansen James E,Hearty Paul J,Jordan Montell,Krugman Paul,Antarctic Regions,Bahama Islands,Bermuda,Canary Islands,Caribbean Area,Eleuthera (Bahamas),Caribbean,Climate Change,Media,news,oceans,science" />
+<meta name="news_keywords" content="Bermuda" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fdotearth.blogs.nytimes.com%2F2015%2F07%2F25%2Fa-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis%2F" title="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis" />
+<meta name="description" content="A new climate study warning of abrupt coastal flooding gets dipped in the acid bath of open peer review." />
+<meta name="hdl" content="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis" />
+<meta property="og:title" content="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/" />
+<meta property="og:site_name" content="Dot Earth Blog" />
+<meta property="og:description" content="A new climate study warning of abrupt coastal flooding gets dipped in the acid bath of open peer review." />
+<meta property="og:image" content="https://static01.nyt.com/images/blogs_v5/../icons/t_logo_291_black.png"/>
+<meta name="thumbnail_150" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta name="twitter:card" value="summary"><meta name="twitter:title" content="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis" />
+<meta name="twitter:url" content="//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/" />
+<meta name="twitter:description" content="A new climate study warning of abrupt coastal flooding gets dipped in the acid bath of open peer review." />
+<meta name="twitter:image" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png"/>
+<meta itemprop="thumbnailUrl" content="https://static01.nyt.com/packages/images/icons/t_logo_300_black.png" name="thumbnail" />
+<meta name="twitter:site" content="@dotearth">
+<link rel='prev' title='Whiplash Warning When Climate Science is Publicized Before Peer Review and Publication' href='//dotearth.blogs.nytimes.com/2015/07/23/whiplash-warning-when-climate-science-is-publicized-before-peer-review-and-publication/' />
+<link rel='next' title='The Promise and Limits of Obama&#8217;s &#8216;Clean Power Plan&#8217; for Limiting Global Warming' href='//dotearth.blogs.nytimes.com/2015/08/03/the-promise-and-limits-of-obamas-clean-power-plan-for-limiting-global-warming/' />
+<link rel='canonical' href='//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/' />
+<link rel='shortlink' href='//nyti.ms/1DFkZd0' />
+<link rel='https://github.com/WP-API/WP-API' href='//dotearth.blogs.nytimes.com/json' />
+<meta name="adxPage" content="blog.nytimes.com/dotearth/post" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//dotearth.blogs.nytimes.com/feed/" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/opinion/index.jsonp" />
+<link rel="alternate" href="//mobile.nytimes.com/blogs/dotearth/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/" />
+<meta name="dfp-ad-unit-path" content="opinion/dotearth" />			<title>A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis - The New York Times</title>
+            <!--[if (gt IE 9)|!(IE)]> <!-->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles.css" />
+<!--<![endif]-->
+<!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-ie.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="screen" href="https://int.nyt.com/assets/blogs/latest/css/blogs/universal.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://int.nyt.com/assets/blogs/latest/css/blogs/styles-print.css" />
+<script>
+var NYT = NYT || {}, NYTD = NYTD || {};
+</script>
+                        	<script src="https://int.nyt.com/assets/blogs/latest/js/blogs/layout.js"></script>
+	<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];if (!/NYT-T=out/.test(document.cookie)) {o.parentNode.insertBefore(t,o)}}();</script>
+<script id="magnum-feature-flags" type="application/json">["limitFabrikSave","facebookOauthButton","videoVHSCover","videoVHSShareTools","videoVHSEmbeddedOnly","removeInternationalEdition","piiBlockDFP","indexAsHeaderBidder","caslOpt"]</script>
+<script>
+var require = {
+    baseUrl: 'https://int.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'blogs/latest/js/foundation',
+        'shared': 'blogs/latest/js/shared',
+        'blogs': 'blogs/latest/js/blogs',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://int.nyt.com/assets/blogs/latest/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+<!--esi
+<script id="user-info-data" type="application/json">
+<esi:include src="/svc/web-products/userinfo-v3.json" />
+</script>
+-->
+    	</head><body class="single single-post postid-55582 blog-universal nyt-blog-dotearth" id="" data-env="production" data-region="ewr1">
+	<div id="shell" class="shell">
+			<header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="https://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="https://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://int.nyt.com/assets/blogs/latest/images/foundation/logos/', 'Opinion', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'blogs');</script>
+        </div><!-- close branding -->
+        <div class="story-meta">
+    <h6 class="kicker">
+        <span class="kicker-label">
+			            <a href="//dotearth.blogs.nytimes.com">
+                Dot Earth            </a>
+			        </span>
+
+                <span class="pipe">|</span>
+        A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis        
+    </h6>
+</div><!-- close story-meta -->
+
+
+        <div class="user-tools">
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div id="sharetools-masthead" class="sharetools theme-classic"
+	 data-shares="email,facebook,twitter,show-all|More"
+	 data-url="//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/"
+	 data-title="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis"
+	 data-description="&lt;span class=&quot;excerpt-inner&quot;&gt;A new climate study warning of abrupt coastal flooding gets dipped in the acid bath of open peer review.&lt;/span&gt;&lt;a href=&quot;//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/&quot; class=&quot;more-link&quot;&gt;Read&nbsp;more...&lt;/a&gt;"
+	data-publish-date="July 25, 2015 2:44 pm">
+<div class="ad sharetools-inline-article-ad hidden"></div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="https://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                <button class="button comments-button  button-masthead" data-skip-to-para-id="">
+</button>
+                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+</header>
+					<nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader "><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+						<nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+				<main id="main" class="main" role="main">
+				<div id="TopAd" class="ad top-ad"></div>
+				<div id="mobilebanner" class="ad mobilebanner"></div>
+								<div id="story" class="story theme-main">
+		<div id="dotearth" class="spanAC blog">
+			<header id="blogs-masthead" class="wrap opinion-alternate">
+	<div class="ad sponsortile-ad hidden nocontent robots-nocontent">
+		<div class="caption">Supported by</div>
+		<div id="sponsortile" class="ad sponsortile-ad-creative"></div>
+	</div>
+			<a href="//www.nytimes.com/pages/opinion/" class="opinion-kicker">
+			<img src="https://static01.nyt.com/images/blogs_v5/_misc/kicker-opinionpages.png" />
+		</a>
+		<div class="element1">
+	<a href="//dotearth.blogs.nytimes.com/?module=BlogMain&action=Click&region=Header&pgtype=Blogs&version=Blog Post&contentCollection=Opinion"><div id="logo" class="archived-blog-post"><div class="w75 left site-header-logo"><img src="https://static01.nyt.com/images/blogs_v3/dotearth/dotearth75.gif" alt="Dot Earth"/></div><div class="site-title">Dot Earth</div><div class="site-description">New York Times blog</div></div></a>    </div>
+    <div class="element2">
+    <div class="inlineSearchControl">
+	<form method="get" id="searchform" action="//dotearth.blogs.nytimes.com/">
+		<input type="text" value="" name="s" id="s" class="text" placeholder="Search Dot Earth">
+		<button type="submit" class="searchsubmit">Search</button>
+	</form>
+</div>	</div>
+	<div class="clear"></div>
+		</header>
+	<div class="a-column " id="a-col">
+	<div id="content" class="hfeed">
+	<article class="post-55582 post type-post status-publish hentry category-caribbean-oceans category-climate-change category-media category-news category-oceans category-science tag-alley-richard-b tag-antarctic-regions tag-bahama-islands tag-bermuda tag-caldeira-ken tag-canary-islands tag-caribbean-area tag-eleuthera-bahamas tag-freedman-andrew tag-hansen-james-e tag-hearty-paul-j tag-jordan-montell tag-krugman-paul per-alley-richard-b per-caldeira-ken per-freedman-andrew per-hansen-james-e per-hearty-paul-j per-jordan-montell per-krugman-paul geo-antarctic-regions geo-bahama-islands geo-bermuda geo-canary-islands geo-caribbean-area geo-eleuthera-bahamas news_keywords-bermuda" id="post-55582">
+	<header class="postHeader">
+				<div class="postKicker">
+			<span class="kicker"><a href="//dotearth.blogs.nytimes.com/category/climate-change/?module=BlogCategory&version=Blog Post&action=Click&contentCollection=Opinion&pgtype=Blogs&region=Header">Climate Change</a></span>
+		</div>
+				<h1 itemprop="headline" class="entry-title">A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis</h1>
+		<div class="story-meta-footer">
+			<address class="byline author vcard" itemprop="author creator" itemtype="//schema.org/Person">
+				By Andrew C. Revkin			</address>
+			<!-- date published --><time class="dateline " datetime="2015-07-25T18:44:58+00:00" itemprop="datePublished">July 25, 2015 2:44 pm</time>
+			<!-- date updated --><span class="visually-hidden updated">July 25, 2015 2:44 pm</span><button class="button comments-button  theme-kicker" data-skip-to-para-id="">
+</button>
+		</div>
+			</header>
+		<div class="entry-content"><div id="sharetools-story" class="sharetools theme-classic sharetools-story" data-shares="email|Email,facebook|Share,twitter|Tweet,save|Save,show-all|More,ad" data-url="//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/" data-title="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis" data-description="A new climate study warning of abrupt coastal flooding gets dipped in the acid bath of open peer review.">
+				<div class="ad sharetools-inline-article-ad"></div>
+				<div id="MiddleLeft" class="ad middle-left-ad nocontent robots-nocontent"></div>
+				</div><p class="story-body-text" itemprop="articleBody">[<webonly><span id="t11h33s" class="update">Updated, Aug. 18, 2016, 11:33 a.m.</span></webonly> |  When the Hansen paper finally <a href="//www.atmos-chem-phys.net/16/3761/2016/">passed peer review and was published in March 2016</a>, the elements predicting an imminent rapid rise in sea levels &#8212; the aspect of the paper that drew the attention of CNN, CBS and other major media &#8212; were largely replaced by projections.]</p>
+<p class="story-body-text" itemprop="articleBody">[<webonly><span id="t18h25s" class="update">Updated, Aug. 19, 2015, 12:25 p.m. | </span></webonly> Along with some chaff, some very important reviews of the Hansen paper have been posted, <a href="//www.atmos-chem-phys-discuss.net/15/C6089/2015/acpd-15-C6089-2015.pdf">particularly this one from Peter Thorne</a>, a longtime climate scientist <a href="https://www.maynoothuniversity.ie/people/peter-thorne">now at Ireland&#8217;s Maynooth University</a>.]</p>
+<p class="story-body-text" itemprop="articleBody">[<em>Update,</em> Aug. 4, 2015 | James Hansen has posted <a href="//www.atmos-chem-phys-discuss.net/15/C5615/2015/acpd-15-C5615-2015.pdf">a detailed response</a> to my comment on the Atmospheric Chemistry and Physics Discussion site <a href="//www.atmos-chem-phys-discuss.net/15/C5202/2015/acpd-15-C5202-2015.pdf">questioning his paper&#8217;s interpretations of beached boulders and seabed sediment formations</a> as evidence of Eemian &#8220;superstorms.&#8221;]</p>
+<p class="story-body-text" itemprop="articleBody">[<em>Update</em>, July 29, 11:30 a.m. | <em>Some climate bloggers, led by &#8220;Tamino&#8221;, <a href="https://tamino.wordpress.com/2015/07/28/hansen-et-al/">have harshly criticized me</a> for thinking I am qualified to <a href="//www.atmos-chem-phys-discuss.net/15/20059/2015/acpd-15-20059-2015-discussion.html">post a review comment</a> pointing to studies that appear to contradict the &#8220;superstorm&#8221; argument in the new draft paper by James Hansen and others. Read about this in the addendum</em>.]</p>
+<p class="story-body-text" itemprop="articleBody">On July 23, <a href="//dotearth.blogs.nytimes.com/2015/07/23/whiplash-warning-when-climate-science-is-publicized-before-peer-review-and-publication/?module=BlogPost-Title&amp;version=Blog%20Main&amp;contentCollection=Opinion&amp;action=Click&amp;pgtype=Blogs&amp;region=Body">I wrote about the rocky rollout</a>, prior to peer review, of &#8220;<a href="//www.atmos-chem-phys-discuss.net/15/20059/2015/acpd-15-20059-2015.html">Ice Melt, Sea Level Rise and Superstorms: Evidence from Paleoclimate Data, Climate Modeling, and Modern Observations that 2°C Global Warming is Highly Dangerous</a>.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">The 66-page, 17-author paper <a href="//www.atmos-chem-phys-discuss.net/15/20059/2015/acpd-15-20059-2015.html">was posted Thursday</a> in Atmospheric Chemistry and Physics Discussions, the pre-publication forum for papers submitted to the European Geosciences Union journal Atmospheric Chemistry and Physics. (You&#8217;ll hear more on the benefits and problems of such open-review journals toward the end of this post.)</p>
+<p class="story-body-text" itemprop="articleBody">The paper is a sweeping cross-disciplinary challenge to status-quo science on risks posed by the building greenhouse effect. The authors, led by James E. Hansen, the veteran <a href="//www.columbia.edu/~jeh1/">climatologist-turned-campaigner</a>, stitch a variety of findings and simulations into a worrisome vision of a looming and abrupt collapse of Antarctic ice sheets and a multi-meter rise in storm-raked seas. They directly call for urgent action by the world&#8217;s nations at the Paris treaty talks in December.</p>
+<p class="story-body-text" itemprop="articleBody">It&#8217;s no wonder the paper made headlines.</p>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2015/07/25/automobiles/dothansennews/dothansennews-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/07/25/automobiles/dothansennews/dothansennews-blog480.jpg" src="https://static01.nyt.com/images/2015/07/25/automobiles/dothansennews/dothansennews-blog480.jpg" id="100000003820351" width="480" height="327" alt="News coverage of a draft study warning of a warming-driven coastal crisis."   /><meta itemprop="height" content="327"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">News coverage of a draft study warning of a warming-driven coastal crisis.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Google</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">But, after less than two days of public review, the paper is being revealed as much more of a rough sketch, a provocation, than a thorough, deeply grounded new thesis.</p>
+<p class="story-body-text" itemprop="articleBody">[Updates below | <em>Jim Hansen has posted an essay pressing his argument for urgency. </em><em>A very positive review was posted Sunday on the journal website by David Archer of the University of Chicago</em>; <em>Judith Curry of Georgia Tech lauds Hansen&#8217;s sweep and &#8220;maverick&#8221; approach, but isn&#8217;t impressed with the sea-level conclusion</em>.]</p>
+<p class="story-body-text" itemprop="articleBody">In science, that&#8217;s not a bad thing. It is how progress gets made. Dip the gutsy new idea in the acid bath of peer review. What&#8217;s left is new knowledge.</p>
+<p class="story-body-text" itemprop="articleBody">But in the public sphere, with consequential science, the result can be whiplash, at best, and confusion and disengagement at worst.</p>
+<p class="story-body-text" itemprop="articleBody">Don&#8217;t take my word for it.</p>
+<p class="story-body-text" itemprop="articleBody">Below you&#8217;ll hear from scientists with significant concerns about keystone sections of the paper &#8212; on the evidence for &#8220;superstorms&#8221; in the last warm interval between ice ages, the Eemian, and on the pace at which seas could rise and the imminence of any substantial uptick in the rate of coastal inundation. Reviewers have until mid September to post comments at the discussion site. I hope the scientists below, and others, do so. As the Montell Jordan song goes, &#8220;<a href="https://www.youtube.com/watch?v=0hiUuL5uTKc">This is How We Do it</a>.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Then I&#8217;ll conclude with some ideas for improving this process, including thoughts from Ken Caldeira, a climate and energy researcher at the Carnegie Institution for Science.</p>
+<p class="story-body-text" itemprop="articleBody">Here goes&#8230;.<span id="more-55582"></span></p>
+<div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2015/07/25/blogs/dotwhiplash/dotwhiplash-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/07/25/blogs/dotwhiplash/dotwhiplash-articleInline.jpg" src="https://static01.nyt.com/images/2015/07/25/blogs/dotwhiplash/dotwhiplash-articleInline.jpg" id="100000003820268" width="190" height="160" alt="Whiplash &lt;a href=&quot;//dotearth.blogs.nytimes.com/?s=whiplash+journalism+climate&quot;&gt;isn&#039;t just a medical condition.&lt;/a&gt;"   /><meta itemprop="height" content="160"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">Whiplash <a href="//dotearth.blogs.nytimes.com/?s=whiplash+journalism+climate">isn't just a medical condition.</a></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> ADAM Inc./ The New York Times</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">First, it&#8217;s worth stepping back in time briefly for context. Eight years ago, I wrote this:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">When science is testing new ideas, the result is often a two-papers-forward-one-paper-back intellectual tussle among competing research teams. When the work touches on issues that worry the public, affect the economy or polarize politics, the news media and advocates of all stripes dive in. Under nonstop scrutiny, conflicting findings can make news coverage veer from one extreme to another, resulting in a kind of<a href="//dotearth.blogs.nytimes.com/2007/12/14/the-mania-for-a-front-page-thought-on-climate/"> journalistic whiplash</a> for the public.</p>
+<p class="story-body-text" itemprop="articleBody">This has been true for decades in health coverage. But lately the phenomenon has been glaringly apparent on the <a title="Recent and archival news about global warming." href="//topics.nytimes.com/top/news/science/topics/globalwarming/index.html?inline=nyt-classifier">global warming</a> beat&#8230;.</p>
+<p class="story-body-text" itemprop="articleBody">Scientists see persistent disputes as the normal stuttering journey toward improved understanding of how the world works. But many fear that the herky-jerky trajectory is distracting the public from the undisputed basics and blocking change. “One of the things that troubles me most is that the rapid-fire publication of unsettled results in highly visible venues creates the impression that the scientific community has no idea what’s going on,” said <a href="//instaar.colorado.edu/people/bios/pfeffer.html">W. Tad Pfeffer</a>, an expert on Greenland’s ice sheets at the <a title="More articles about the University of Colorado." href="//topics.nytimes.com/top/reference/timestopics/organizations/u/university_of_colorado/index.html?inline=nyt-org">University of Colorado</a>.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Sad to report, the situation is far worse now.</p>
+<p class="story-body-text" itemprop="articleBody">For just one relevant metric, consider that, at that time, there were about 6 million active Twitter users. Now there are <a href="//www.statista.com/statistics/282087/number-of-monthly-active-twitter-users/">more than 300 million</a>. The tendency to pounce on any finding, however tentative, as long as it suits some agenda is more amplified than ever. At the same time, the <a href="https://www.youtube.com/watch?v=1KgRHrsWL80">line between activism and journalism</a> has grown ever blurrier.</p>
+<p class="story-body-text" itemprop="articleBody">As I said on Thursday, &#8220;Maybe we’ll all be a little slower on the draw next time when work is promoted before it is publicized or peer reviewed. This isn’t the first time those covering climate science <a href="//dotearth.blogs.nytimes.com/?s=caution+publication+peer+review">have been through this drill</a>.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Hansen has become a hybrid voice. That&#8217;s always complicated.</p>
+<p class="story-body-text" itemprop="articleBody">In a Facebook discussion of my Thursday article, <a href="https://sagethoughts.wordpress.com/about/">Steven A. Leibo</a>, a professor of international history and politics at The Sage Colleges in upstate New York, put it this way:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">It strikes me that Jim Hansen is playing a somewhat different role these days, rather like that of Paul Krugman &#8212; the fully qualified Ph.D. scholar who does not have a peer reviewed process for every commentary he writes, and of course this study is in so many ways going to go through a fast, crowd-sourced peer review fully in time to be ready as we move closer to Paris.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Here&#8217;s how things are evolving as scientists in different fields dig in on this paper&#8217;s evidence and arguments.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Beached boulders and seabed chevrons</strong></p>
+<p class="story-body-text" itemprop="articleBody">Yesterday, I began querying experts on different aspects of the scientific story line built by the paper.</p>
+<p class="story-body-text" itemprop="articleBody">The study starts with observations of eroding ice sheets spreading, cooler freshwater at both ends of the planet and geological hints of tempestuous conditions toward the end of the Eemian, that last interval between ice ages when global temperatures and seas were higher than now. The authors use novel runs of computer simulations that result in a shift to cooling, stormier conditions and, extrapolating from today&#8217;s melting rate, get a multi-meter rise within a 100-year span. Brian Kahn at Climate Central posted <a href="//www.climatecentral.org/news/dire-climate-warning-questions-19268">a helpful breakdown of ideas and issues</a> early in the week, as <a href="//mashable.com/2015/07/22/james-hansen-scary-new-climate-study/">did Andrew Freedman at Mashable</a>.</p>
+<div class="w480"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2015/07/25/blogs/dotboulders/dotboulders-blog480.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2015/07/25/blogs/dotboulders/dotboulders-blog480.jpg" src="https://static01.nyt.com/images/2015/07/25/blogs/dotboulders/dotboulders-blog480.jpg" id="100000003820218" width="480" height="163" alt="A new paper warning of imminent climate danger interpreted boulders in the Bahamas as vestiges of past &quot;superstorms.&quot; Geologists see other explanations."   /><meta itemprop="height" content="163"><meta itemprop="width" content="480"></div><figcaption class="caption" itemprop="description"><span class="caption-text">A new paper warning of imminent climate danger interpreted boulders in the Bahamas as vestiges of past "superstorms." Geologists see other explanations.</span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> Journal of Atmosperhic Chemistry and Physics</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">The section on past and future tempestuous conditions centers on geological evidence from the Bahamas and Bermuda, particularly big boulders lodged well above sea level on Eleuthera and current-carved seabed and coastal features, called chevrons, denoting powerful oceanic dynamics. This section centers on <a href="https://scholar.google.com/scholar?hl=en&amp;q=hearty+boulders+bahamas+chevrons&amp;btnG=&amp;as_sdt=1%2C33&amp;as_sdtp=">decades of work in that region</a> by one author, <a href="//wamc.org/post/dr-paul-hearty-unc-wilmington-climate-change-patterns#stream/0">Paul J. Hearty</a> of the University of North Carolina, Wilmington.</p>
+<p class="story-body-text" itemprop="articleBody">An email conversation with <a href="//www2.le.ac.uk/departments/geology/people/zalasiewicz-ja">Jan Zalasiewicz</a>, a paleobiologist at the University of Leicester (<em>note: I work with him as <a href="//quaternary.stratigraphy.org/workinggroups/anthropocene/">part of the Anthropocene Working Group</a></em>), led me to past studies proposing that the boulders had been thrown ashore not by violent storms, but by a great tsunami generated across the Atlantic in the Canary Islands. Some also saw a tsunami explanation for seabed chevron features.</p>
+<p class="story-body-text" itemprop="articleBody">(Digression: I love digging into novel fields of science. Who knew there&#8217;s even a book on such tsunami relics, even a technical name: &#8220;<a href="//www.sciencedirect.com/science/book/9780444515520">Tsunamiites?&#8221;</a>)</p>
+<p class="story-body-text" itemprop="articleBody">Sure enough, there had been <a href="//rsta.royalsocietypublishing.org/content/364/1845/1889">one such catastrophic, ocean-spanning event</a> that, by one estimate, had occurred around the period the Hansen paper proposed the rocks had been deposited. The Hansen paper mentioned tsunamis as an explanation but excluded the possibility. I sent an email query with the Hansen paper to a batch of relevant researchers.</p>
+<p class="story-body-text" itemprop="articleBody">But later last night I <a href="//www.researchgate.net/publication/230562955_Age_of_the_El_Golfo_debris_avalanche_El_Hierro_(Canary_Islands)_New_constraints_from_laser_and_furnace_40Ar39Ar_dating">found a study setting that tsunami&#8217;s date</a> tens of thousands of years too recently to be the cause.</p>
+<p class="story-body-text" itemprop="articleBody">Tsunamis indeed appeared off the hook.</p>
+<p class="story-body-text" itemprop="articleBody">Then this morning, I received the following email from <a href="//www.geographie.uni-koeln.de/dr-max-engel.713.de.html">Max Engel</a>, a University of Köln geologist who was on my list because he&#8217;d done a lot of work on boulders, including in the Caribbean, as clues to past violent events. His note provides an answer on both boulders and chevrons that, at the very least, would seem to require more conditional language in the new paper, if not a reframing of the portion on the prospect of calamitous storms. I capitalized a couple of words but otherwise it appears as sent:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Thank you very much for pointing at this interesting manuscript. I always appreciated the innovative procedures of EGU journals, but when it comes to highly sensitive and controversial topics, differences between reviewed papers and discussion papers might be difficult to communicate in mass media.</p>
+<p class="story-body-text" itemprop="articleBody">Indeed, I only feel competent to comment on section 2.2, but this is quite easy. Others have already done the work:</p>
+<p class="story-body-text" itemprop="articleBody">Paul Hearty&#8217;s conclusions on MIS 5 [<a href="https://en.wikipedia.org/wiki/Marine_Isotope_Stage_5"><em>Marine Isotope Stage 5, the Eemian</em></a>] mega-storms or tsunamis from the Bahamas never seemed convincing to me, even though I am not the one to criticize them since I have never been to Eleuthera myself. However, the conclusions are persistently being repeated. The chevrons have been demystified by Bourgeois and Weiss (2009) in their Geology paper. Based on the fact that these V-shaped ridges are forming behind the shallow outlets between the small islands where tidal or other currents reach their maximum sediment transport capacity, they seem to rather be related to long-term dynamics than to any type of mega-wave event.</p>
+<p class="story-body-text" itemprop="articleBody">These ridges are a classical feature in coastal geomorphology and we find similar ones along our East Frisian coastline in Germany. The concentrated currents &#8212; tidal influence is, however, more pronounced here than in the Caribbean &#8212; between barrier islands form so-called &#8220;Riffbögen&#8221; (shoals and subaqueous ridges) at both sides of the channel.</p>
+<p class="story-body-text" itemprop="articleBody">The origin of the giant boulders shown in the ACPD manuscript (and many other papers before) has convincingly been reconstructed by Mylroie (2008) as weathered remnants of a lithified dune deposit. Dating in Hearty (1997) was based on amino acid racemisation, which is a method rarely used in Quaternary Sciences and generally not accepted without verification by other methods.</p>
+<p class="story-body-text" itemprop="articleBody">There is a neat, simple drawing in the paper explaining boulder formation through chemical weathering.</p>
+<p class="story-body-text" itemprop="articleBody">To sum up, in my opinion, chapter 2.2 seems to represent a slightly one-sided perspective on geological evidence for Eemian mega-storms.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Here are links to the relevant papers. I sent a query to their authors, as well, and will add input if I hear from them.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">“<a href="//faculty.washington.edu/jbourgeo/BourgeoisWeiss2009final.pdf">Chevrons” are not mega-tsunami deposits &#8212; A sedimentologic assessment</a>,&#8221; Geology, May 2009, Joanne Bourgeois, University of Washington Robert Weiss, Texas A&amp;M University (DOI: 10.1130/G25246A). Here&#8217;s <a href="//www.washington.edu/news/2009/04/30/contrary-to-recent-hypothesis-chevrons-are-not-evidence-of-megatsunamis-2/">a news release on this work</a>.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;<a href="//www.researchgate.net/publication/222920399_Late_Quaternary_sea-level_position_Evidence_from_Bahamian_carbonate_deposition_and_dissolution_cycles">Late Quaternary sea-level position: Evidence from Bahamian carbonate deposition and dissolution cycles</a>,&#8221; Quaternary International, May 2008, John E. Mylroie, Mississippi State University (DOI: 10.1016/j.quaint.2007.06.030).</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">This morning I sent Engel&#8217;s observations to Hansen and several co-authors. I&#8217;ll add any replies as they come in. I&#8217;ll be submitting a note in the comment section on the journal discussion website, as well. [<em><a href="//editor.copernicus.org/index.php/acpd-15-C5202-2015.pdf?_mdl=msover_md&amp;_jrl=10&amp;_lcm=oc108lcm109w&amp;_acm=get_comm_file&amp;_ms=30888&amp;c=91992&amp;salt=1122686142394340760">The comment is here.</a></em>]</p>
+<p class="story-body-text" itemprop="articleBody">I also sent Engel&#8217;s note and the papers to some of the scientists I&#8217;d queried about the science on Thursday, including Ricard B. Alley of Penn State, Ken Caldeira at the Carnegie Institution and Tad Pfeffer of the University of Colorado.</p>
+<p class="story-body-text" itemprop="articleBody">Here are some of their thoughts.</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Richard Alley</strong></p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Back to boring reality, once again we see that for those who do the science or enjoy the scientific details, the latest talk, manuscript, or even press release may be of great interest and use. But, for those focused primarily on the broader implications of the science, the logical path is to start with the authoritative assessments from the US National Academy of Sciences, the Royal Society, the I.P.C.C., etc. Science by its very nature celebrates attempts to overthrow established results, which unavoidably makes our work look “noisy” and confusing to a non-specialist, obscuring for those outside a field what is actually well-founded inside the field. To overcome this difficulty, governments and the broader society have established assessment mechanisms in which the full range of scientists, volunteering in the public eye for the public good, provide up-to-date information on what is solid, what speculative, and what silly. The assessment results are inefficient at generating headlines, he-said/she-saids, and “clicks” on web pages, but the assessment results are far better than the latest press releases at generating reliable, useful, policy-relevant understanding.</p>
+<p class="story-body-text" itemprop="articleBody">(Full disclosure: I have been [I.P.C.C.] or am [N.A.S., R.S.] a member of the groups I’m praising here.)</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><strong>Jan Zalasiewicz </strong>[<em>added</em> 10:15 p.m.]</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">The Bourgeois/Weiss and Mylroie explanations for those features look reasonable.  They both also underscore the generally dynamic nature (both erosive and depositional) of those environments, which suggests that the deposits of rare high-energy events there may not have good preservation potential.  Also shows how we tend to remember the dramatic rather than the prosaic interpretations.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><strong>Tad Pfeffer</strong></p>
+<p class="story-body-text" itemprop="articleBody">Last night I spoke with Tad Pfeffer, a lead author of <a href="//www.ipcc.ch/pdf/assessment-report/ar5/wg1/WG1AR5_Chapter13_FINAL.pdf">the last Intergovernmental Panel on Climate Change section on sea level</a> who has written important papers on the interlaced fates of ice sheets, climate and coasts, via a <a href="https://www.youtube.com/watch?v=1Dqar1x-F70">Google video chat</a>. His main concern with the paper was the lack of at least an estimate for the initiation of the abrupt sea-level rise the authors foresee.</p>
+<p class="story-body-text" itemprop="articleBody">(One un-submitted version of the paper that circulated early last week had a section saying unabated emissions of greenhouse gases &#8220;will make multi-meter sea level rise practically unavoidable and likely to occur this century.&#8221; But the submitted version has nothing that specific.)</p>
+<div class="w190 right"><figure class="media photo promo" itemprop="" itemscope="" itemid="https://static01.nyt.com/images/2014/05/14/blogs/dotthwaites/dotthwaites-articleInline.jpg" itemtype="//schema.org/ImageObject" role="group"><span class="visually-hidden">Photo</span><div class="image"><img itemprop="url" itemid="https://static01.nyt.com/images/2014/05/14/blogs/dotthwaites/dotthwaites-articleInline.jpg" src="https://static01.nyt.com/images/2014/05/14/blogs/dotthwaites/dotthwaites-articleInline.jpg" id="100000002879694" width="190" height="107" alt="An ice shelf extending into the sea from the Thwaites glacier in West Antarctica. Deep, relatively warm water is &lt;a href=&quot;//www.nytimes.com/2014/05/13/science/earth/collapse-of-parts-of-west-antarctica-ice-sheet-has-begun-scientists-say.html&quot;&gt;eroding the glacier from below.&lt;/a&gt;"   /><meta itemprop="height" content="107"><meta itemprop="width" content="190"></div><figcaption class="caption" itemprop="description"><span class="caption-text">An ice shelf extending into the sea from the Thwaites glacier in West Antarctica. Deep, relatively warm water is <a href="//www.nytimes.com/2014/05/13/science/earth/collapse-of-parts-of-west-antarctica-ice-sheet-has-begun-scientists-say.html">eroding the glacier from below.</a></span><span class="credit" itemprop="copyrightHolder"><span class="visually-hidden">Credit</span> NASA</span></figcaption></figure></div>
+<p class="story-body-text" itemprop="articleBody">This has been a longstanding question in ice-sheet research. The societal relevance of rising seas is largely a function of the pace of change, not the ultimate height seas reach &#8212; which, as I&#8217;ve written for years &#8212; will assuredly be on the order of meters. This piece is highly relevant: &#8220;<a href="//dotearth.blogs.nytimes.com/2014/05/12/keep-in-mind-scientific-and-societal-meanings-of-collapse-when-reading-antarctic-ice-news/">Consider Clashing Scientific and Societal Meanings of ‘Collapse’ When Reading Antarctic IceNews.</a>&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">Here&#8217;s Pfeffer on this point:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">If you look at this from the point of view of somebody who’s trying to use this information for anything other than scientific satisfaction, whether or not these very, very rapid rates of sea level rise happen in the next few decades or the next few centuries makes all the difference in the world.</p>
+<p class="story-body-text" itemprop="articleBody">The question of when does this start is not really addressed in this paper that I can find, and has been addressed only peripherally in most of the papers about ice sheet instability that I have seen.</p>
+<p class="story-body-text" itemprop="articleBody">Ian Joughin made some statements recently [<em><a href="//www.nature.com/news/crucial-west-antarctic-glaciers-are-retreating-unstoppably-1.15202">context</a></em>] that I thought were pretty solid about it being a few centuries before this kind of very rapid sea level rise can take place and that makes sense to me because there are some very important things that you have to do in order to turn on the rapid response of the Antarctic ice sheet – you have to get rid of a couple of big ice shelves for starters. And it’s going to take a few centuries to do that.</p>
+<p class="story-body-text" itemprop="articleBody">From a strictly geophysical, glaciological, point of view, a few centuries may not make much difference. But from the point of view of a planner, a policymaker, again these are the people who care about what exactly we’re saying. It makes all the difference in the world. And that’s the part I find missing in this paper. They have to say something about when this is going to occur. They may not be able to say with any great precision, but they have to say something. Because if this is something that’s going to happen in the next few decades, yeah, it’s something we’ve really got to wake up and pay attention about. If it’s something that’s going to happen in the next few centuries then there are a lot of other issues that we have to sort out first.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Here&#8217;s the raw video (sorry about the quirks):</p>
+<div class="w480">
+<div class="w480 youtube-video-container">
+<div class="youtube-video" data-youtube-id="1Dqar1x-F70" data-start="">
+<div class="thumb"><img src="https://img.youtube.com/vi/1Dqar1x-F70/0.jpg" />
+<div class="playButton">
+<div class="arrow"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="story-body-text" itemprop="articleBody">Pfeffer talked to me from Washington, where he&#8217;ll be spending the next year working on improving the interface between climate science and policy at the State Department or Agency for International Development as a Jefferson Fellow of the National Academy of Sciences.</p>
+<p class="story-body-text" itemprop="articleBody">I wish him good speed!</p>
+<p class="story-body-text" itemprop="articleBody"><strong><a href="//www.met.psu.edu/people/mem45">Michael E. Mann</a></strong>, Penn State [<em>Inserted</em> July 26, 10 a.m.]</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">I have mixed views about the paper. I don’t like the idea of publicizing an article prior to peer-review, although at the same time, it is sort of what happens at AGU/AAAS meeting press conferences, so I suppose it isn’t entirely without precedent.</p>
+<p class="story-body-text" itemprop="articleBody">And I do think there are a number of questions about interpretation of observations, and the details of the climate model experiment (the very large exponentially increasing freshwater fluxes, the low-resolution of the ocean which obscures the potentially important role of wind-driven ocean gyres, etc.).</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Answering a question on his active and useful <a href="https://www.facebook.com/MichaelMannScientist/posts/932041946852008?comment_id=932375396818663&amp;reply_comment_id=932380823484787&amp;total_comments=4&amp;comment_tracking=%7B%22tn%22%3A%22R9%22%7D">public Facebook page</a>, Mann made this point on sea-rise rates to a reader (and gave me permission to post it here):</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Hansen attempts to estimate a &#8220;doubling time&#8221; parameter to characterize what he assumes to be an exponential increase in rate. That is prone to a very large &#8220;extrapolation error&#8221; as we call it.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">The different approaches to gauging melt rates of ice sheets remind me of the different approaches to gauging human population growth &#8212; with the United Nations incorporating a more locked-in extrapolation of trends and the International Institute for Applied Systems Analysis including more granular factors affecting individual countries&#8217; fertility rates. In that case, it&#8217;s <a href="//blog.iiasa.ac.at/2014/09/23/9-billion-or-11-billion-the-research-behind-new-population-projections/">the difference between 11 billion and 9 billion people by 2100</a>. [<em>Inserted</em> July 26, 10 a.m.]</p>
+<p class="story-body-text" itemprop="articleBody"><a href="//geosci.uchicago.edu/people/david-archer/"><strong>David Arche</strong>r</a>, University of Chicago [<em>Added July 26</em>, 11:20 p.m.]</p>
+<p class="story-body-text" itemprop="articleBody">Archer posted a glowing review of the sea-rise section on the journal discussion site. Here&#8217;s an excerpt and link:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">This is another Hansen masterwork of scholarly synthesis, modeling virtuosity, and insight, with profound implications. The main thrust of the paper, the part getting all the press, arises from the confluence of several recent developments in glaciology. First is the identification of a runaway condition in outflow glaciers of the West Antarctic ice sheet that makes the IPCC prediction for year-2100 sea level rise clearly obsolete. The other is the recognition that warming ocean temperatures at the grounding line for the glaciers is driving a really strong flow and thus melting response.</p>
+<p class="story-body-text" itemprop="articleBody">Temperatures at this depth tend to have a paradoxical inverse relationship with surface temperatures, which can cool due to fresh meltwater input, trapping heat in the subsurface. This idea may also explain the mystery of why Heinrich events, collapses of the Laurentide ice sheet, always came at cold times in the D-O cycles. Analysis of sea level changes during Eemian time, the last interglacial, show changes of several meters in time scales of a century. If our ice sheets are going to change our sea level that much, from its current rate of melt, the melt rate would have to increase exponentially in the future. The way that could happen is if there is a positive feedback, such that melting begets faster melting, as opposed to a linear response where the melting rate is driven simply by temperature. The climate modeling results in this paper identify such a feedback. [<em><a href="//www.atmos-chem-phys-discuss.net/15/C5209/2015/acpd-15-C5209-2015.pdf">Please read the rest</a></em>.]</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><strong>Judith Curry</strong></p>
+<blockquote><p class="story-body-text" itemprop="articleBody">This is an intriguing and wide-sweeping paper that has put together a multi-disciplinary team to examine the possibility of near term catastrophic sea level rise&#8230;.</p>
+<p class="story-body-text" itemprop="articleBody">Human contribution so far to sea level rise does not seem particularly significant, given the early 20th century rate of sea level rise is about the same as the current rate. Our ways of inferring future rates of sea level rise from ice sheet melting is crude – we can speculate but not with much confidence. The danger posed by sea level rise is a function of the rate of change far more than the actual sea level itself.</p>
+<p class="story-body-text" itemprop="articleBody">Does Hansen et al. make any contribution to all this? Well their proposed mechanism with feedbacks is of interest and should be explored further. But their conclusions regarding an alarming rate of sea level rise are at best possible (and not plausible)&#8230;.</p>
+<p class="story-body-text" itemprop="articleBody">I am very sympathetic to what Hansen did. I regard him as a fellow maverick – thinking for himself and not afraid to challenge the ‘consensus’ – Hansen and I are of course on opposite ends of the climate maverick spectrum, with Hansen more alarmed and myself being less alarmed.</p>
+<p class="story-body-text" itemprop="articleBody">I think what Hansen did raises a whole host of very important issues about climate research, the science-policy interface, and how research is publicized. [<em><a href="//judithcurry.com/2015/07/26/hansens-backfire/#more-19429">Read on.</a></em>]</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">&nbsp;</p>
+<p class="story-body-text" itemprop="articleBody"><strong>Jim Hansen</strong> [<em>Added July 27</em>, 12:10 p.m.]</p>
+<p class="story-body-text" itemprop="articleBody">Jim Hansen has posted, &#8220;<a href="//www.columbia.edu/~jeh1/mailings/2015/20150727_SeaLevelDisaster.pdf">A Sea Level Disaster</a>&#8221; (pdf), one of his personal essays doubling down on his argument for urgency by echoing his global warming testimony from 1988 in a new phrase about sea level rise. Here&#8217;s the headline and deck:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Darn!! Sea Level Disaster Ahead! In 200-900 Years. When?? It’s Time to Stop Waffling So Much and Say that the Evidence is Pretty Strong… Multi-meter Sea Level Rise is an Issue for Today’s Public, not Next Millennium’s.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody"><strong>Solutions</strong></p>
+<p class="story-body-text" itemprop="articleBody">Finally, let&#8217;s ponder solutions. On Thursday, I&#8217;d said that an open review journal seemed ideal for a complex inter-disciplinary paper like this. In an email message to various contacts this morning I explained my thinking this way:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">It seems the challenge, in trying to connect dots others may have missed, is to be both broad and deep &#8212; mining each area&#8217;s literature as carefully as possible for supporting, or contrary, hints.</p>
+<p class="story-body-text" itemprop="articleBody">That is precisely the value that can come in pursuing publication in an open online discussion forum like the platform at the Journal of Atmospheric Physics and Chemistry as opposed to a traditional journal, where finding the right reviewers in a closed process might be a challenge given the sweep of the paper.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">But I conceded there are risks:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">The result here, just two days after posting, reinforces the danger in making too much of a brave new narrative before that open process has taken place. That point was reinforced in a comment sent Friday by Bárbara Ferreira, communications manager for the European Geosciences Union, endorsing what others have said about the dangers of publicizing research before it has been peer reviewed: &#8220;Our policy at the European Geosciences Union is to not advertise research submitted to our journals before the paper has been accepted and published in its final, peer-reviewed form – which, in this case, wouldn&#8217;t be for at least another three months, possibly more.&#8221;</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Ken Caldeira sent a comment expressing concern about journals like the one now reviewing the Hansen paper:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">The open &#8220;discussion&#8221; journals favored by the European Geophysical Union (EGU), including Atmospheric Chemistry and Physics Discussions (ACPD), may be doing the scientific community a disservice.</p>
+<p class="story-body-text" itemprop="articleBody">For those not initiated into the ways of these journals, scientists submit manuscripts to Atmospheric Chemistry and Physics Discussions where they are published without peer review, and then later if successfully peer reviewed, a modified version appears in the regular journal Atmospheric Chemistry and Physics.</p>
+<p class="story-body-text" itemprop="articleBody">This produces at least two versions of every paper: A non-peer-reviewed draft and and a final peer-reviewed version. The continued circulation of the non-peer-reviewed draft can act as a kind of pollution of the scientific literature, as it is often unclear to the uninitiated what it means to be published in an EGU &#8220;Discussions&#8221; journal.</p>
+<p class="story-body-text" itemprop="articleBody">One of the key contributions of the editorial and peer-review process provided by journals is the vetting of the scientific content both for importance and quality. There is way too much stuff being written to read everything, and the editorial process at a high-quality journal is supposed to help provide a filter and direct scientists to important, high-quality, papers.</p>
+<p class="story-body-text" itemprop="articleBody">It is a fiction to believe that busy scientists have the time to review a panoply of manuscripts that they are not specifically tasked with reviewing. Journal editors know how hard it often is to obtain thorough reviews of papers.</p>
+<p class="story-body-text" itemprop="articleBody">By publishing papers that are not peer reviewed, EGU journals such as ACPD are contributing to the noise of science, when the role of the editorial process should be to help readers find the rare nuggets of important high quality signal amid the abundance of excess noise.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">We batted this back and forth a bit.</p>
+<p class="story-body-text" itemprop="articleBody">&#8220;A professional norm that you do not issue a press release for a &#8216;discussions&#8217; submission might be a good starting point,&#8221; he wrote. But he then renewed his opposition: &#8220;It is not clear to me that open peer-review is the best way to satisfy the need to openly discuss unresolved scientific issues. Maybe what is needed is a good discussion forum where people can discuss important issues in a way that moderates out the kooks and so on.&#8221;</p>
+<p class="story-body-text" itemprop="articleBody">I would have shouted if we were on the phone because I had just a few days earlier learned about the <a href="https://powellcenter.usgs.gov/">John Wesley Powell Center for Analysis and Synthesis</a>, a little-known federal facility near Fort Collins, Colo., created precisely for this purpose. (Go to <a href="https://www.youtube.com/watch?v=1Dqar1x-F70?t=16m35s">the end of my chat with Pfeffer</a> for more on this.) The mission statement couldn&#8217;t be clearer, or more appropriate:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">Offering the opportunity for collaborative synthesis and analysis opportunities in Earth system science</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">To learn how it works, please read this recent Eos article by two seismologists, Ross Stein and Mark Stirling, who two years ago proposed a set of meetings, essentially a methodological smackdown, to try to resolve an intensifying division over how best to clarify and convey worst-case earthquake risks.</p>
+<blockquote><p class="story-body-text" itemprop="articleBody"><strong><a href="https://eos.org/project-updates/seismic-hazard-assessment-honing-the-debate-testing-the-models">Seismic Hazard Assessment: Honing the Debate, Testing the Models</a></strong></p>
+<p class="story-body-text" itemprop="articleBody"><em>Earthquake experts with opposing views found common ground working around a table and on a hiking trail.<br />
+</em></p>
+<p class="story-body-text" itemprop="articleBody"><em>By Ross S. Stein and Mark W. Stirling</em></p>
+<p class="story-body-text" itemprop="articleBody">Devastating—and, in some sense, unforeseen—earthquakes in Nepal, Japan, New Zealand, Haiti, and elsewhere have triggered a heated debate about the legitimacy and limitations of probabilistic seismic hazard assessment (PSHA) [see Frankel, 2013; Stein and Stein, 2014]. PSHA attempts to capture the likelihood of exceeding a specific level of shaking over any time period of interest, explicitly incorporating data uncertainty and lack of knowledge.</p>
+<p class="story-body-text" itemprop="articleBody">To address this debate, four workshops held in 2013–2014 at the U.S. Geological Survey (USGS) John Wesley Powell Center for Analysis and Synthesis brought together university, government, and insurance industry scientists from countries that straddle plate boundaries and those in plate interiors. Participants were invited; the workshops’ goals involved developing tests of PSHA and other earthquake hazard assessment strategies and seeking viable alternatives to overcome weaknesses to these strategies.</p>
+<p class="story-body-text" itemprop="articleBody">Scientists adopted a novel approach to ensure civil debate: roundtable discussions, sometimes over a group activity such as hiking.Workshop coordinators adopted a novel approach to ensure civil debate—roundtable discussions, sometimes over a group activity such as hiking. This approach could be adapted by any seeking to resolve scientific debates within disciplines. Three crucial aspects of the approach proved to be key to running the workshops.<br />
+First, we asked each invitee to take what we called the “Powell Blood Oath”; Each was welcome to argue passionately for personal views but must also present and acknowledge the weaknesses in that position. The oath kept everyone humble; no one grandstanded or dismissed others because no one had all the answers. Those who could not abide by the oath turned our invitation down. [<a href="https://eos.org/project-updates/seismic-hazard-assessment-honing-the-debate-testing-the-models"><em>Please read the rest</em></a>.]</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">I could see that center staying very busy for a long time to come. By Skype, I recently interviewed Stein, Stirling and <a href="https://www.fort.usgs.gov/staff-details/99">Jill Baron</a>, who helped run the discussions, and will post the video as soon as I have time.</p>
+<p class="story-body-text" itemprop="articleBody">Addendum, July 29, 11:30 a.m. | Some climate bloggers, <a href="https://tamino.wordpress.com/2015/07/28/hansen-et-al/">led by &#8220;Tamino&#8221;,</a> have harshly criticized me for thinking I am qualified to post a review comment pointing to studies that appear to contradict the &#8220;superstorm&#8221; argument in the paper. Here&#8217;s some of what he wrote:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">What the hell is going on here? If those geologists want to raise objections or contribute comments, great, let them do so — but second-hand, hearsay “reporting” from a reporter who lacks the knowledge base to make his own comments, does not constitute valid review.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">In my initial reply, I said:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">As I wrote on Dot Earth, with a sweeping multi-disciplinary paper like this one, it’s great to do review on an open platform. Does it matter if a journalist or scientist points to relevant published literature? If the papers are relevant, they should be considered.<a href="//nyti.ms/1LG4JR9" rel="nofollow">//nyti.ms/1LG4JR9</a></p></blockquote>
+<p class="story-body-text" itemprop="articleBody">He didn&#8217;t agree:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">What a crock. It sure as hell matters whether or not the comment comes from the <b>commenter</b>. Second-hand hearsay perverts the process. Scientific review is for those who *know the topic* to comment, and it’s abundantly clear, that ain’t you.</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">I figured it&#8217;s worth checking on the journal&#8217;s definition of &#8220;the scientific community&#8221; (the journal&#8217;s description of those who can comment) through the European Geosciences Union media officer, Bárbara Ferreira.</p>
+<p class="story-body-text" itemprop="articleBody">[<em>Update</em>, July 30, 8:03 a.m. | Ferreira asked me to replace her initial informal comments, which she had not realized would be posted in full, with this statement from Ulrich Pöschl, Chief-Executive Editor of Atmospheric Chemistry and Physics:</p>
+<blockquote><p class="story-body-text" itemprop="articleBody">
+To keep the peer review process efficient and avoid diluting the scientific discussion, only members of the scientific community are invited to post expert comments in the scientific discussion forums of the EGU interactive open access journals. People from outside the scientific community are welcome to read and follow the public review and discussion in the scientific discussion forums, but should pursue further (non-expert) discussions in other more appropriate venues (blogs etc.). Speaking informally: &#8220;scientific community&#8221; can be broadly defined as scientific researchers with an expert knowledge on the subject of the study under discussion, i.e., researchers with similar scientific interests and scientific expertise (“scientific peers”). Who is considered a member of the scientific community can vary from discipline to discipline; it is at the discretion of the editors of the various journals to exactly define who and who isn&#8217;t encouraged to comment.</p>
+<p class="story-body-text" itemprop="articleBody">In addition, and since the start of ACP (the first of EGU&#8217;s interactive journals) in 2001, the publication of interactive comments is supervised by the editors who have the option of censoring/deleting comments that are not of substantial nature or of direct relevance to the issues raised in the discussion paper or which contain personal insults. Authors are advised to follow the discussion of their paper and to notify the handling editor in case of abusive comments; other participants of the interactive discussion are also invited to indicate abusive commenting to the editorial office. The ACP editorial board reserves the right to exclude abusive commentators. Censoring/deletion of comments and exclusion of abusive commentators are subject to approval by the chief/executive editors.&#8221;</p></blockquote>
+<p class="story-body-text" itemprop="articleBody">Ferreira added, &#8220;As such, even if there is some ambiguity about whether or not you would belong to the &#8216;scientific community,&#8217; if your comment is &#8216;of substantial nature or of direct relevance to the issues raised in the discussion paper,&#8217; the editor in charge of the paper would, in principle, consider it relevant to the public peer review process, keeping it in the discussion.&#8221; (Her original comment is available upon request to revkin @nytimes.com.)</p>
+<p class="story-body-text" itemprop="articleBody">One last thought. Perhaps Tamino can step out from behind the shield of anonymity (which too often fuels vitriol) and <a href="https://tamino.wordpress.com/2013/03/22/the-tick/#comment-80280">confirm if he is indeed Grant Foster</a> (<a href="//www.climatecentral.org/news/sea-level-rising-faster-than-ipcc-projections-says-new-study-15293">quoted on Climate Central</a>).* Foster has published quite a bit on climate, <a href="//www.skepticalscience.com/rahmstorf-foster-cazenave-2012.html">including with Stefan Rahmstorf</a>, a leader of that 2014 review of experts on sea-level rise that is a far cray from what the new paper is projecting.</p>
+<p class="story-body-text" itemprop="articleBody">And we are both <a href="//www.renaissancefestival.com/forums/index.php?topic=3975.0">musicians</a>, it seems. Although that perhaps doesn&#8217;t go well with the rigor &#8220;Tamino&#8221; requires in paper reviewers.</p>
+<p class="story-body-text" itemprop="articleBody"><em>Footnote</em>, July 30, 11:30 p.m. | * I added a link to an Open Mind post in which the blogger known as Tamino <a href="https://tamino.wordpress.com/2013/03/22/the-tick/#comment-80280">acknowledges he is Grant Foster</a>.</p>
+	</div>
+		<footer class="entry-footer">
+			<button class="button comments-button theme-speech-bubble"></button>		<div id="sharetools-post-footer" class="sharetools theme-classic" data-shares="show-all|Share" data-url="//dotearth.blogs.nytimes.com/2015/07/25/a-rocky-first-review-for-a-climate-paper-warning-of-a-stormy-coastal-crisis/" data-title="A Rocky First Review for a Climate Paper Warning of a Stormy Coastal Crisis" data-description="A new climate study warning of abrupt coastal flooding gets dipped in the acid bath of open peer review.">
+				<div class="ad sharetools-inline-article-ad hidden"></div>
+			</div>		<div class="footer-tags">
+					</div>
+		</footer>
+</article>
+		<section id="whats-next" class="whats-next nocontent robots-nocontent">
+    <h2 class="visually-hidden">What's Next</h2>
+    <div class="nocontent robots-nocontent">
+        <div class="loader-container">
+            <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+        </div>
+    </div><!-- close nocontent -->
+</section>
+
+			</div><!-- end content -->
+</div><!-- end .a-column -->
+<div class="cColumn nocontent robots-nocontent">
+	<aside>
+	<div class="postNavigation">
+	<ul class="opposingFloatControl wrap">
+		<li class="element1">
+						<span class="previous">Previous Post</span>
+			<div class="arrow arrow-left">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dotearth.blogs.nytimes.com/2015/07/23/whiplash-warning-when-climate-science-is-publicized-before-peer-review-and-publication/" title="Whiplash Warning When Climate Science is Publicized Before Peer Review and Publication">
+				Whiplash Warning When Climate Science is Publicized Before Peer Review and Publication			</a>
+					</li>
+		<li class="element2">
+						<span class="next">Next Post</span>
+			<div class="arrow arrow-right">
+				<div class="arrow-conceal"></div>
+			</div>
+			<a class="postTitle" href="//dotearth.blogs.nytimes.com/2015/08/03/the-promise-and-limits-of-obamas-clean-power-plan-for-limiting-global-warming/" title="The Promise and Limits of Obama&#039;s &#039;Clean Power Plan&#039; for Limiting Global Warming">
+				The Promise and Limits of Obama&#8217;s &#8216;Clean Power Plan&#8217; for Limiting Global Warming			</a>
+					</li>
+	</ul>
+</div>
+		<div class="module ad" id="MiddleRight"></div>
+        <div id="nyt_about_blog-3" class="module nocontent widget_nyt_about_blog"><h4 class="moduleHeader">About</h4><div class="entry"><img class="w151 right" src="https://static01.nyt.com/images/2012/10/28/opinion/Revkin/Revkin-blogSmallInline.jpg" alt="Andrew C. Revkin on Sustainability" /></p>
+<p class="summary">By 2050 or so, the human population is expected to <a href="//esa.un.org/unpd/wpp/index.htm">pass nine billion</a>. Those billions will be seeking food, water and other resources on a planet where humans are already shaping climate and the web of life. Dot Earth was created by <a href="//about.me/revkin">Andrew Revkin</a> in October 2007 -- in part with support from a John Simon Guggenheim Fellowship -- to explore ways to balance human needs and the planet's limits.</p>
+<p class="summary">The blog moved to the Opinion side of The Times in 2010 when Revkin left the Times staff to teach communication courses at Pace University. He won a <a href="//dotearth.blogs.nytimes.com/2011/09/15/four-years-163-posts-and-a-nice-award/">National Academies Communication Award</a> for Dot Earth in 2011 and Time Magazine named him <a href="//techland.time.com/2013/08/05/the-25-best-bloggers-2013-edition/slide/andrew-revkin-dot-earth/">one of the web's 25 top bloggers</a> in 2013.</p>
+<p class="summary">In December 2016, Revkin ended the blog and left Pace to return to full-time journalism as senior reporter on climate and related issues for the public-interest newsroom <a href="https://www.propublica.org/about/andrew-revkin-to-join-propublica-as-senior-reporter-on-climate-change" target="_blank">ProPublica</a>.</p>
+<p>Click here for a <a href="https://static01.nyt.com/packages/html/science/20071024_DOTEARTH_FEATURE/index.html">narrated slide show</a> on the roots of Revkin's journalistic journey.</p>
+<ul class="refer">
+<li>More: <a href="//twitter.com/revkin">Twitter</a> | <a href="//www.facebook.com/Andrew.Revkin.5">Facebook</a> | <a href="//www.youtube.com/anrevk">YouTube</a> | <a href="https://plus.google.com/u/0/106981109992478346191/posts">Google+</a> | <a href="//www.amazon.com/Andrew-Revkin/e/B001IXNSRK/ref=sr_tc_2_0?qid=1390325965&sr=1-2-ent">Books</a> | <a href="//j.mp/revkinmusic">Music</a></li>
+</ul>
+</div>
+</div>		<div class="module archivesModule clearfix nocontent">
+			<h4 class="moduleHeader">Archive</h4>			<select name="archive_chrono" onchange="window.location.href=this.value; this.selectedIndex=this.options[0]">
+				<option class="archiveform_option" value="">Select Month</option>
+					<option value='//dotearth.blogs.nytimes.com/2016/12/'> December 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/11/'> November 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/10/'> October 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/09/'> September 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/08/'> August 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/07/'> July 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/06/'> June 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/05/'> May 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/04/'> April 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/03/'> March 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/02/'> February 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2016/01/'> January 2016 </option>
+	<option value='//dotearth.blogs.nytimes.com/2015/12/'> December 2015 </option>
+	<option value='//dotearth.blogs.nytimes.com/2015/11/'> November 2015 </option>
+	<option value='//dotearth.blogs.nytimes.com/2015/10/'> October 2015 </option>
+			</select>
+		</div>
+        <div id="recentposts-2" class="module nocontent widget_recentposts"><h4 class="moduleHeader">Recent Posts</h4>				<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/"><img src="https://static01.nyt.com/images/2012/10/23/blogs/dotearthmaprace/dotearthmaprace-thumbStandard-v2.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/sustainability/">sustainability</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/" title="Read: After Nine Years and 2,810 Posts, a Dot Earth Farewell">After Nine Years and 2,810 Posts, a Dot Earth Farewell</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/"></a>
+				</span>			</h5>
+			<p class="summary">
+			After nine years and 2,810 posts, a blog seeking a sustainable path for humans on a finite planet comes to an end.<a href="//dotearth.blogs.nytimes.com/2016/12/05/after-nine-years-and-2810-posts-a-dot-earth-farewell/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/activism/">activism</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/04/facing-standing-rock-campaign-army-corps-blocks-dakota-pipeline-path/" title="Read: Facing Standing Rock Campaign, Obama Administration Blocks Dakota Pipeline Path">Facing Standing Rock Campaign, Obama Administration Blocks Dakota Pipeline Path</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/04/facing-standing-rock-campaign-army-corps-blocks-dakota-pipeline-path/"></a>
+				</span>			</h5>
+			<p class="summary">
+			Intensifying Indian protests prompted the Obama administration to block a pipeline&#8217;s path in North Dakota.<a href="//dotearth.blogs.nytimes.com/2016/12/04/facing-standing-rock-campaign-army-corps-blocks-dakota-pipeline-path/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/"><img src="https://static01.nyt.com/images/2016/06/13/blogs/dotsequoiabeforeafter/dotsequoiabeforeafter-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/forests/">forests</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/" title="Read: Will California Ever Let Sierra Nevada Forests Burn?">Will California Ever Let Sierra Nevada Forests Burn?</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/"></a>
+				</span>			</h5>
+			<p class="summary">
+			In the Sierra Nevada, California&#8217;s main forest fire problem lies in not letting forests burn.<a href="//dotearth.blogs.nytimes.com/2016/12/04/will-california-ever-let-sierra-nevada-forests-burn/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/"><img src="https://static01.nyt.com/images/2016/12/02/blogs/dotgormezano/dotgormezano-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/appreciation/">Appreciation</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/" title="Read: A Belated Farewell to a Pioneering Polar Bear Researcher">A Belated Farewell to a Pioneering Polar Bear Researcher</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/"></a>
+				</span>			</h5>
+			<p class="summary">
+			A tribute after the death of a young and innovative field researcher who used a scat-sniffing dog to help figure out polar bears&#8217; changing diets.<a href="//dotearth.blogs.nytimes.com/2016/12/03/a-belated-farewell-to-a-pioneering-polar-bear-researcher/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+					<div class="entry">
+						<div class="w50 right">
+				<a href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/"><img src="https://static01.nyt.com/images/2016/11/29/blogs/dotunnatural/dotunnatural-thumbStandard.jpg" width="50" height="50" /></a>
+			</div>
+							<h6 class="kicker">
+					<a href="//dotearth.blogs.nytimes.com/category/anthropocene-2/">Anthropocene</a>
+				</h6>
+							<h5><a href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/" title="Read: TED&#8217;s Science Curator Sees Hope in Earth&#8217;s Anthropocene Age">TED&#8217;s Science Curator Sees Hope in Earth&#8217;s Anthropocene Age</a>
+			<span class="postMetaHeaderCommentCount commentCount hidden">
+					<i class="icon"></i>
+					<a class="commentCountLink commentCountNumberOnly commentCountNoPrompt" href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/"></a>
+				</span>			</h5>
+			<p class="summary">
+			TED&#8217;s new curator of science, David Biello, explains why he sees hints of hope in Earth&#8217;s emerging Anthropocene &#8220;age of us.&#8221;<a href="//dotearth.blogs.nytimes.com/2016/11/30/teds-science-curator-sees-hope-in-the-anthropocene/" class="more-link">Read&#160;more&#8230;</a></p>
+		</div>
+		</div><!-- end Recent Posts side tool -->
+    		<div class="module ad" id="Box1"></div>
+        <div id="nyt_blog_social_media-3" class="module nocontent widget_nyt_blog_social_media"><!-- begin #blog-follow-widget -->
+<div id="blog-follow-widget" class="blog-fw-single ">
+<h4 class="">
+<span class="blog-fw-generic-followmessage">Follow <span class="blog-fw-desk">us on</span></span>
+<span class="blog-fw-specific-followmessage"><span class="blog-fw-username"><a href="https://twitter.com/dotearth" title="Follow @dotearth on twitter">@dotearth</a></span> on <span class="blog-fw-twitter">twitter</span></span></h4>
+<ul>
+<li class="blog-fw-twitter single"><a href="https://twitter.com/dotearth" title="Follow dotearth on Twitter">Twitter</a></li></ul>
+<p class="blog-fw-followbutton"><a href="https://twitter.com/dotearth" title="Follow @dotearth on twitter">Follow</a></p></div> <!-- end #blog-follow-widget -->
+</div>	</aside>
+</div>		<div class="clear"></div>
+	</div><!-- end blog wrap -->
+	<div class="hideContent"></div>
+
+	
+<!-- Google Analytics start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;if (!/NYT-T=out/.test(document.cookie)) {m.parentNode.insertBefore(a,m)} })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-4406282-14',  { 'alwaysSendReferrer': true } );
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics end -->
+		<div id="mobilebanner2" class="ad mobilebanner2"></div>
+		<div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+<div id="SponLink" class="text-ad bottom-left-ad nocontent robots-nocontent"></div>
+
+		<div id="Top5" class="ad top5-ad hidden nocontent robots-nocontent"></div>
+
+					</div>
+			<div class="search-overlay"></div>
+		</main><!-- close main -->
+						<footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+         <ul>
+             <li>
+                <a href="https://www.nytco.com" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2017</span>
+					<span itemprop="copyrightHolder provider sourceOrganization" itemscope
+						itemtype="//schema.org/Organization"
+						itemid="//www.nytimes.com">
+						<span itemprop="name"> The New York Times Company</span>
+						<meta itemprop="tickerSymbol" content="NYSE NYT"/>
+					</span>
+                </a>
+            </li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li><a href="//www.nytco.com/careers/">Work With Us</a></li>
+            <li><a href="//nytmediakit.com/">Advertise</a></li>
+            <li><a href="https://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="https://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="https://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <ul>
+            <li><a href="//spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="https://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="last-item"><a href="https://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>		</div><!-- close shell -->
+	<script>
+require(['foundation/main'], function () {
+    require(['blogs/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/json-kidd.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+	<div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"5164608","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRtQWV9TFxtCDkk=","queueTime":0,"applicationTime":53,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
