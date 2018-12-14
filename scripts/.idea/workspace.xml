@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../htdocs/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/config.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/bcancer-doc-count.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/bcancer-metadata.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-doc-count.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-metadata.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-qrels.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-term-count.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/english-sentences.arpa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/function-words-short.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/function-words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/lemur-stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/porter2_stems.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sample-document.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-end-exceptions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-punctuation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-start-exceptions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/config.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/docs.labels" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/labelids.mapping" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/metadata.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/metadata.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/postings.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/postings.index_index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/termids.mapping" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/termids.mapping.inverse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/line.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/metadata.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/news.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/static/css/newsfeat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../metadata.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../news.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../newsfeat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../newsfeat/news/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/news/templates/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-processor.py" afterDir="false" />
-    </list>
+    <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
