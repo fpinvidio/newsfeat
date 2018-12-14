@@ -1,4 +1,4 @@
-from newsfeat.lib.search_engine.searcher import Searcher
+from searcher import Searcher
 from flask import Flask
 from flask import render_template
 from flask import request

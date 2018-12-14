@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="" />
+    <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/lib/search_engine/searcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/searcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
