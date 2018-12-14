@@ -2,12 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../htdocs/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/config.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/bcancer-doc-count.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/bcancer-metadata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-doc-count.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-metadata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-qrels.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-term-count.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/english-sentences.arpa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/function-words-short.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/function-words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/lemur-stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/porter2_stems.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sample-document.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-end-exceptions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-punctuation.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-start-exceptions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/config.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/docs.labels" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/labelids.mapping" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/metadata.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/metadata.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/postings.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/postings.index_index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/termids.mapping" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/termids.mapping.inverse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/line.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/metadata.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/news.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/static/css/newsfeat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../htdocs/newsfeat/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../metadata.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../news.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../news.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../newsfeat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../newsfeat/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/news/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../newsfeat/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../newsfeat/news/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/news/templates/news/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-processor.py" afterDir="false" />
     </list>
@@ -22,10 +53,10 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,14 +77,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dat" value="4" />
-          <entry key="py" value="815" />
+          <entry key="py" value="954" />
           <entry key="toml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="815" />
+          <entry key="Python" value="954" />
           <entry key="TOML file" value="64" />
         </counts>
       </usages-collector>
@@ -103,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news-processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+            <state relative-caret-position="490">
+              <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -153,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,7 +196,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,7 +234,7 @@
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11087268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11230329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,14 +308,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/news.dat">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="-19759">
           <caret line="147" selection-start-line="147" selection-end-line="153" selection-end-column="122" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -321,8 +352,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news-processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        <state relative-caret-position="490">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

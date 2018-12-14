@@ -38,12 +38,14 @@ for filename in glob.iglob('/Users/federicoperezinvidio/Projects/illinois/newsfe
             print("Parsing doc #", count)
             #print(text[0:50])
             count = count + 1
-            if count > 4029:
+            if count > 0:
                 try:
-                    file_json["giveme5w1h"] = extract_article(file_json)
-                    post_id = news.insert_one(file_json).inserted_id
-                    news_file.write("%s\n" % text.replace("\n", ""))
-                    meta_file.write("%s\n" % post_id)
+                    #file_json["giveme5w1h"] = extract_article(file_json)
+                    #post_id = news.insert_one(file_json).inserted_id
+                    found_one = news.find_one({"text": file_json["text"]})
+                    if found_one is not None:
+                        news_file.write("%s\n" % text.replace("\n", ""))
+                        meta_file.write("%s\n" % found_one.get('_id'))
                 except:
                     print("Exceptuib")
                     pass
