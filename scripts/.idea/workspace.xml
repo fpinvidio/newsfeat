@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../newsfeat/news/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../metadata.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../news.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../news.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../newsfeat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../newsfeat/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../newsfeat/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../newsfeat/news/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-processor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +21,11 @@
     <session id="-1011547136">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,14 +46,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dat" value="4" />
-          <entry key="py" value="410" />
+          <entry key="py" value="815" />
           <entry key="toml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="410" />
+          <entry key="Python" value="815" />
           <entry key="TOML file" value="64" />
         </counts>
       </usages-collector>
@@ -53,7 +61,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-processor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -92,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news-processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="533">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -118,13 +126,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/line.toml" />
-        <option value="$PROJECT_DIR$/news-processor.py" />
         <option value="$PROJECT_DIR$/search.toml" />
         <option value="$PROJECT_DIR$/news/metadata.dat" />
         <option value="$PROJECT_DIR$/news/news.dat" />
         <option value="$PROJECT_DIR$/config.toml" />
         <option value="$PROJECT_DIR$/news/line.toml" />
         <option value="$PROJECT_DIR$/test-processor.py" />
+        <option value="$PROJECT_DIR$/news-processor.py" />
       </list>
     </option>
   </component>
@@ -145,7 +153,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,15 +160,11 @@
               <item name="scripts" type="b2602c69:ProjectViewProjectNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="scripts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,10 +200,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10801145" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11087268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,14 +277,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news/news.dat">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-19759">
-          <caret line="147" selection-start-line="147" selection-end-line="153" selection-end-column="122" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-19759">
+          <caret line="147" selection-start-line="147" selection-end-line="153" selection-end-column="122" />
         </state>
       </provider>
     </entry>
@@ -318,8 +321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news-processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="533">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
