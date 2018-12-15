@@ -25,7 +25,7 @@ def index():
 
 @app.route('/search')
 def search():
-    ix = open_dir("idx")
+    ix = open_dir("/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
     query_str = request.args.get('query')
     topN = 10
     client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
