@@ -27,7 +27,6 @@ Flask==1.0.2
 future==0.17.1
 geographiclib==1.49
 geopy==1.17.0
-giveme5w1h==1.0.13
 hjson==3.0.1
 hurry.filesize==0.9
 hyperlink==18.0.0
@@ -48,7 +47,7 @@ msgpack==0.5.6
 msgpack-numpy==0.4.3.2
 murmurhash==1.0.1
 nbformat==4.4.0
-news-please==1.2.44
+newspaper3k==0.2.8
 nltk==3.3
 numpy==1.15.4
 pandas==0.23.4
