@@ -56,11 +56,17 @@
     </div>
 
     <div class="my-3 p-3 bg-white rounded shadow-sm">
-        <h6 class="border-bottom border-gray pb-2 mb-0">Results</h6>
+        <h6 class="border-bottom border-gray pb-2 mb-0">Results
+        <span class="badge badge-primary">Who</span>
+        <span class="badge badge-secondary">What</span>
+        <span class="badge badge-success">Where</span>
+        <span class="badge badge-danger">When</span>
+        <span class="badge badge-warning">Why</span>
+        <span class="badge badge-info">How</span></h6>
         <div id="search-results">
         </div>
         <small class="d-block text-right mt-3">
-            <a href="#">All updates</a>
+            <a href="" id="elapsed-time"></a>
         </small>
     </div>
     <script>
@@ -84,7 +90,14 @@
                 $('#search-results').empty();
                 for (var i=0; i < results.length; i++) {
                     let result = results[i];
-                    $('#search-results').append('<div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"><strong class="d-block text-gray-dark"> ' + result.title + ' </strong>' + result.description + '</p></div>')
+                    let giveme5 = (result.giveme5w1h.who ? ('<span class="badge badge-primary">' + result.giveme5w1h.who + '</span> ') : "") +
+                        (result.giveme5w1h.what ? ('<span class="badge badge-secondary">' + result.giveme5w1h.what + '</span> ') : "") +
+                        (result.giveme5w1h.where ? ('<span class="badge badge-success">' + result.giveme5w1h.where + '</span> ') : "") +
+                        (result.giveme5w1h.when ? ('<span class="badge badge-danger">' + result.giveme5w1h.when + '</span> ') : "") +
+                        (result.giveme5w1h.why ? ('<span class="badge badge-warning">' + result.giveme5w1h.why + '</span> ') : "") +
+                        (result.giveme5w1h.how ? ('<span class="badge badge-info">' + result.giveme5w1h.how + '</span> ') : "");
+                    $('#search-results').append('<div class="media-wrapper"><div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125"><strong class="d-block text-gray-dark"> ' + result.title + ' </strong>' + result.description + '</p></div><div class="giveme-wrapper border-bottom border-gray">' + giveme5 + '</div></div>')
+                    $('#elapsed-time').text((json_data.elapsed_time || 0.0).toFixed(2) + " seconds");
                 }
         }
 
