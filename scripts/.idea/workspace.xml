@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/bcancer-doc-count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/bcancer-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-doc-count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-qrels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/ceeaus-term-count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/english-sentences.arpa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/function-words-short.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/function-words.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/lemur-stopwords.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/porter2_stems.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/sample-document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-end-exceptions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-punctuation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/data/sentence-boundaries/sentence-start-exceptions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/config.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/docs.labels" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/labelids.mapping" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/metadata.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/metadata.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/postings.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/postings.index_index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/termids.mapping" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/idx/inv/termids.mapping.inverse" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/news/metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/metadata.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/news/news.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/news/news.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/search-processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/search-processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/searcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/searcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/stopwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/stopwords.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/test-processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/test-processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../metadata.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../news.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../news.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bcancer-doc-count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bcancer-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ceeaus-doc-count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ceeaus-metadata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ceeaus-qrels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ceeaus-term-count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/english-sentences.arpa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/function-words-short.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/function-words.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lemur-stopwords.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/porter2_stems.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sample-document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sentence-boundaries/sentence-end-exceptions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sentence-boundaries/sentence-punctuation.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sentence-boundaries/sentence-start-exceptions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-processor.py" afterDir="false" />
-    </list>
+    <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

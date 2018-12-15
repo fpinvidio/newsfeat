@@ -28,7 +28,7 @@ def search():
     ix = open_dir("idx")
     query_str = request.args.get('query')
     topN = 10
-    client = MongoClient()
+    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
     db = client.newsfeat
     news = db.news
     response = {'query': query_str, 'results': []}
