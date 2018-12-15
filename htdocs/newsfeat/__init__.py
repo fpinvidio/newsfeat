@@ -11,11 +11,9 @@ def index():
 
 @app.route('/search')
 def search():
-    searcher = Searcher()
-    search_data = {'query': request.args.get('query')}
-    results = searcher.search(search_data)
-    print(results)
-    return results
+    search_data = 'London'#request.args.get('query')}
+    execfile('search-processor.py')
+    return "Success"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")

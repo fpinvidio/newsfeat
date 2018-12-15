@@ -5,7 +5,7 @@ import sys
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
-client = MongoClient()
+client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
 db = client.newsfeat
 news = db.news
 idx = metapy.index.make_inverted_index('config.toml')

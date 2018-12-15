@@ -16,29 +16,30 @@ class Searcher:
         Create/load a MeTA inverted index based on the provided config file and
         set the default ranking algorithm to Okapi BM25.
         """
+        print("idx")
         self.idx = metapy.index.make_inverted_index('config.toml')
         self.default_ranker = metapy.index.OkapiBM25()
 
-    def search(self, request):
+    def search(self, search_term):
         """
         Accept a JSON request and run the provided query with the specified
         ranker.
         """
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/')
+        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
         db = client.newsfeat
         news = db.news
-
         start = time.time()
         query = metapy.index.Document()
-        query.content(request['query'])
+        query.content(search_term)
         ranker = self.default_ranker
-        response = {'query': request['query'], 'results': []}
-
-        for num, (d_id, _) in ranker.score(self.idx, query, 25):
+        response = {'query': search_term, 'results': []}
+        print(ranker.score(self.idx, query, 10))
+        for (d_id, _) in ranker.score(self.idx, query, 10):
             original_id = self.idx.metadata(d_id).get('path').strip()
             result = news.find({'_id': ObjectId(original_id)})
             for doc in result:
                 response['results'].append(doc)
 
         response['elapsed_time'] = time.time() - start
-        return json.dumps(response, indent=2)
+        #return json.dumps(response, indent=2)
+        return response
