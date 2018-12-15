@@ -24,7 +24,7 @@ class Searcher:
         Accept a JSON request and run the provided query with the specified
         ranker.
         """
-        client = MongoClient()
+        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/')
         db = client.newsfeat
         news = db.news
 
