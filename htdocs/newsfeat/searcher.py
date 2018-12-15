@@ -16,7 +16,6 @@ class Searcher:
         Create/load a MeTA inverted index based on the provided config file and
         set the default ranking algorithm to Okapi BM25.
         """
-        print("idx")
         self.idx = metapy.index.make_inverted_index('config.toml')
         self.default_ranker = metapy.index.OkapiBM25()
 
@@ -33,7 +32,6 @@ class Searcher:
         query.content(search_term)
         ranker = self.default_ranker
         response = {'query': search_term, 'results': []}
-        print(ranker.score(self.idx, query, 10))
         for (d_id, _) in ranker.score(self.idx, query, 10):
             original_id = self.idx.metadata(d_id).get('path').strip()
             result = news.find({'_id': ObjectId(original_id)})

@@ -1,9 +1,0 @@
-index = "idx"
-corpus = "line.toml"
-dataset = "news"
-prefix = "."
-stop-words = "./data/lemur-stopwords.txt"
-[[analyzers]]
-	filter = "default-unigram-chain"
-	ngram = 1
-	method = "ngram-word"

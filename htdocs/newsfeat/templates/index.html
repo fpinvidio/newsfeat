@@ -28,8 +28,8 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2" id="search-input2" type="text" placeholder="Search" aria-label="Search">
+          <button id="search-button2" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="performSearch2()">Search</button>
         </form>
       </div>
     </nav>
@@ -56,30 +56,8 @@
     </div>
 
     <div class="my-3 p-3 bg-white rounded shadow-sm">
-        <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-        <div class="media text-muted pt-3">
-            <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark">@username</strong>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-        </div>
-        <div class="media text-muted pt-3">
-            <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
-            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark">@username</strong>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-        </div>
-        <div class="media text-muted pt-3">
-            <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
-            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark">@username</strong>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
+        <h6 class="border-bottom border-gray pb-2 mb-0">Results</h6>
+        <div id="search-results">
         </div>
         <small class="d-block text-right mt-3">
             <a href="#">All updates</a>
@@ -89,12 +67,25 @@
         function performSearch() {
             let url = "/search?query=" + $("#search-input").val();
             $.get(url, function (data, status) {
-                alert("Data: " + data + "\nStatus: " + status);
+                updateResults(data);
             });
         }
 
-        function updateResults() {
+        function performSearch2() {
+            let url = "/search?query=" + $("#search-input2").val();
+            $.get(url, function (data, status) {
+                updateResults(data);
+            });
+        }
 
+        function updateResults(data) {
+                let json_data = JSON.parse(data);
+                let results = json_data.results;
+                $('#search-results').empty();
+                for (var i=0; i < results.length; i++) {
+                    let result = results[i];
+                    $('#search-results').append('<div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"><strong class="d-block text-gray-dark"> ' + result.title + ' </strong>' + result.description + '</p></div>')
+                }
         }
 
         function likeNews() {

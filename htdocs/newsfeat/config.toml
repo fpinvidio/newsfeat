@@ -1,10 +1,15 @@
-stop-words = "./data/lemur-stopwords.txt"
-
 prefix = "."
 dataset = "news"
 corpus = "line.toml"
 index = "idx"
 
+stop-words = "stopwords.txt"
+
+[ranker]
+method = "bm25"
+k1 = 1.2
+b = 0.75
+k3 = 500
 
 [[analyzers]]
 method = "ngram-word"
