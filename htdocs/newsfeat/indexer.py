@@ -33,4 +33,4 @@ class Indexer:
                 writer.add_document(title=unicode(path.split("/")[1]), path=unicode(path.split("/")[0]), \
                                     content=content, textdata=content)
         writer.commit()
-        return true
+        return "true"
