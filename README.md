@@ -115,7 +115,7 @@ Collaborative filtering including WARP ranking losses is used for recommending a
 For simplicity of the project only five users are available on the system, for supporting more a refactor would be required.
 Like and dislike buttons are available for every news, so that users may input the feedback. 
 
-[recommender.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/recommender.py) contains a Recommend class with a recommend method that returns relevant articles for a specific user with some prior training. 
+[recommender.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/recommender.py) contains a Recommender class with a recommend method that returns relevant articles for a specific user with some prior training. 
 
 ```python
 class Recommender:
