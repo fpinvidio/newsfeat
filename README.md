@@ -205,6 +205,7 @@ You can use the requirements.txt located within the htdocs folder for an automat
 ```
 pip install -r requirements.txt
 ```
+Currently this file has a specific dependancy(PyObjc) for OSX due to the LightFM library, therefore installing this library in other systems will produce an error. For that reason it is recommended to install separately. 
 
 #### Importing the database
 
