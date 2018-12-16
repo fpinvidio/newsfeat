@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -9,35 +9,51 @@
 
     <title>Newsfeat</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/newsfeat.css') }}">
-  </head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Newsfeat</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Newsfeat</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" id="search-input2" type="text" placeholder="Search" aria-label="Search">
-          <button id="search-button2" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="performSearch2()">Search</button>
+            <span style="color: white;"><b>Current user:</b></span>
+            <select class="form-control" id="user_id_select" style="margin-left: 10px; margin-right: 20px;">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <input class="form-control mr-sm-2" id="search-input2" type="text" placeholder="Search" aria-label="Search">
+            <button id="search-button2" class="btn btn-outline-success my-2 my-sm-0" type="button"
+                    onclick="performSearch2()">Search
+            </button>
         </form>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <main role="main" class="container">
-      <h1 style="margin-top: 40px;">Welcome to newsfeat</h1>
+<main role="main" class="container">
+    <h1 style="margin-top: 40px;">Welcome to newsfeat</h1>
     <p class="lead">Use any of the searchboxes for querying the NY Times dataset.</p>
-
+    <h3 style="margin-top: 40px;">Recommended News</h3>
+    <div class="card-deck" id="card-deck">
+    </div>
+    <h3 style="margin-top: 40px;">Not finding what you are looking for?</h3>
     <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded shadow-sm">
         <img class="mr-3" src="" alt="" width="48" height="48">
         <div class="lh-100">
@@ -57,65 +73,113 @@
 
     <div class="my-3 p-3 bg-white rounded shadow-sm">
         <h6 class="border-bottom border-gray pb-2 mb-0">Results
-        <span class="badge badge-primary">Who</span>
-        <span class="badge badge-secondary">What</span>
-        <span class="badge badge-success">Where</span>
-        <span class="badge badge-danger">When</span>
-        <span class="badge badge-warning">Why</span>
-        <span class="badge badge-info">How</span></h6>
+            <span class="badge badge-primary">Who</span>
+            <span class="badge badge-secondary">What</span>
+            <span class="badge badge-success">Where</span>
+            <span class="badge badge-danger">When</span>
+            <span class="badge badge-warning">Why</span>
+            <span class="badge badge-info">How</span></h6>
         <div id="search-results">
         </div>
         <small class="d-block text-right mt-3">
-            <a href="" id="elapsed-time"></a>
+            <a id="elapsed-time" onclick="performRecommend()"></a>
         </small>
     </div>
-    <script>
-        function performSearch() {
-            let url = "/search?query=" + $("#search-input").val();
-            $.get(url, function (data, status) {
-                updateResults(data);
-            });
+</main><!-- /.container -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+    var user_id = 1;
+    function performSearch() {
+        let url = "/search?query=" + $("#search-input").val();
+        $.get(url, function (data, status) {
+            updateResults(data);
+        });
+    }
+
+    function performSearch2() {
+        let url = "/search?query=" + $("#search-input2").val();
+        $.get(url, function (data, status) {
+            updateResults(data);
+        });
+    }
+
+    function updateResults(data) {
+        let json_data = JSON.parse(data);
+        let results = json_data.results;
+        $('#search-results').empty();
+        for (var i = 0; i < results.length; i++) {
+            let result = results[i];
+            let giveme5 = (result.giveme5w1h.who ? ('<span class="badge badge-primary">' + result.giveme5w1h.who + '</span> ') : "") +
+                (result.giveme5w1h.what ? ('<span class="badge badge-secondary">' + result.giveme5w1h.what + '</span> ') : "") +
+                (result.giveme5w1h.where ? ('<span class="badge badge-success">' + result.giveme5w1h.where + '</span> ') : "") +
+                (result.giveme5w1h.when ? ('<span class="badge badge-danger">' + result.giveme5w1h.when + '</span> ') : "") +
+                (result.giveme5w1h.why ? ('<span class="badge badge-warning">' + result.giveme5w1h.why + '</span> ') : "") +
+                (result.giveme5w1h.how ? ('<span class="badge badge-info">' + result.giveme5w1h.how + '</span> ') : "");
+            $('#search-results').append('<div class="media-wrapper"><div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125"><strong class="d-block text-gray-dark"> ' + result.title + ' <span class="text-right"><i class="fas fa-thumbs-up text-success" onclick="likeNews(\''+result._id["$oid"]+'\')"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-down text-danger" onclick="dislikeNews(\''+result._id["$oid"]+'\')"></i></span></strong>' + result.description + '</p></div><div class="giveme-wrapper border-bottom border-gray">' + giveme5 + '</div></div>')
+            $('#elapsed-time').text((json_data.elapsed_time || 0.0).toFixed(2) + " seconds");
         }
+    }
 
-        function performSearch2() {
-            let url = "/search?query=" + $("#search-input2").val();
-            $.get(url, function (data, status) {
-                updateResults(data);
-            });
+    function performRecommend() {
+        let url = "/recommend?user_id=" + user_id;
+        $.get(url, function (data, status) {
+            updateCards(data);
+        });
+    }
+
+    function updateCards(data) {
+        let json_data = JSON.parse(data);
+        let results = json_data.results;
+        $('#card-deck').empty();
+        for (var i = 0; i < results.length; i++) {
+            if (i == 3) break;
+            let result = results[i];
+            $('#card-deck').append('<div class="card"><img class="card-img-top" src="' + result.image_url + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + result.title + '</h5><p class="card-text">' + result.description + '</p></div><div class="card-footer text-right"><i class="fas fa-thumbs-up text-success" onclick="likeNews(\''+result._id["$oid"]+'\')"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-down text-danger" onclick="dislikeNews(\''+result._id["$oid"]+'\')"></i></div></div>')
         }
+    }
 
-        function updateResults(data) {
-                let json_data = JSON.parse(data);
-                let results = json_data.results;
-                $('#search-results').empty();
-                for (var i=0; i < results.length; i++) {
-                    let result = results[i];
-                    let giveme5 = (result.giveme5w1h.who ? ('<span class="badge badge-primary">' + result.giveme5w1h.who + '</span> ') : "") +
-                        (result.giveme5w1h.what ? ('<span class="badge badge-secondary">' + result.giveme5w1h.what + '</span> ') : "") +
-                        (result.giveme5w1h.where ? ('<span class="badge badge-success">' + result.giveme5w1h.where + '</span> ') : "") +
-                        (result.giveme5w1h.when ? ('<span class="badge badge-danger">' + result.giveme5w1h.when + '</span> ') : "") +
-                        (result.giveme5w1h.why ? ('<span class="badge badge-warning">' + result.giveme5w1h.why + '</span> ') : "") +
-                        (result.giveme5w1h.how ? ('<span class="badge badge-info">' + result.giveme5w1h.how + '</span> ') : "");
-                    $('#search-results').append('<div class="media-wrapper"><div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125"><strong class="d-block text-gray-dark"> ' + result.title + ' </strong>' + result.description + '</p></div><div class="giveme-wrapper border-bottom border-gray">' + giveme5 + '</div></div>')
-                    $('#elapsed-time').text((json_data.elapsed_time || 0.0).toFixed(2) + " seconds");
-                }
-        }
+    function likeNews(id) {
+        $.ajax({
+            type: 'POST',
+            url: '/news/' + id + '/like',
+            data: {
+                'user_id': user_id
+            },
+            success: function(msg){
+                alert('Liked successfully');
+            }
+        });
+    }
 
-        function likeNews() {
+    function dislikeNews(id) {
+        $.ajax({
+            type: 'POST',
+            url: '/news/' + id + '/dislike',
+            data: {
+                'user_id': user_id
+            },
+            success: function(msg){
+                alert('Disliked successfully');
+            }
+        });
+    }
 
-        }
-
-        function dislikeNews() {
-
-        }
-    </script>
-    </main><!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    jQuery(function () {
+        performRecommend();
+        $('#user_id_select').on('change', function() {
+          user_id = this.value;
+          performRecommend();
+        });
+    });
+</script>
+</body>
 </html>
