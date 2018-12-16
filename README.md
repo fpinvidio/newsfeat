@@ -175,7 +175,7 @@ class Recommender:
 
 Django was the first choice for web framework at the beginning, but due to incompatibilities with the metapy library it was changed for Flask.
 Flask is a very simple microframework for Python. Within the [\_\_init__.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/__init__.py) are all the routes available for the web application.
-[Bootstrap](https://getbootstrap.com/), an open source toolkit, was used for building the webapp.
+[Bootstrap](https://getbootstrap.com/), an open source toolkit, was used for building the webapp. jQuery was also used for executing the ajax GET and POST requests.
 
 #### Web server
 
