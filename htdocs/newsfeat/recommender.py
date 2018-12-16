@@ -14,8 +14,8 @@ class Recommender:
         Create/load a MeTA inverted index based on the provided config file and
         set the default ranking algorithm to Okapi BM25.
         """
-        # client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-        client = MongoClient()
+        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        #client = MongoClient()
         db = client.newsfeat
         news = db.news
         # news.update_many({}, {"$set" : {"user_likes": [0, 0, 0, 0, 0]}})
@@ -40,7 +40,7 @@ class Recommender:
         self.train = train
 
     def recommend(self, user_ids):
-        client = MongoClient()
+        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
         db = client.newsfeat
         news = db.news
         # number of users and news in training data

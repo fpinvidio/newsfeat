@@ -27,8 +27,8 @@ def recommend():
 
 @app.route('/news/<string:id>/like', methods=['POST'])
 def like_news(id):
-    #client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-    client = MongoClient()
+    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+    #client = MongoClient()
     db = client.newsfeat
     news = db.news
     article = news.find_one({'_id': ObjectId(id)})
@@ -42,8 +42,8 @@ def like_news(id):
 
 @app.route('/news/<string:id>/dislike', methods=['POST'])
 def dislike_news(id):
-    #client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-    client = MongoClient()
+    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+    #client = MongoClient()
     db = client.newsfeat
     news = db.news
     article = news.find_one({'_id': ObjectId(id)})

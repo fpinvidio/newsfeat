@@ -4,7 +4,6 @@
     <list default="true" id="7df219ba-fb0a-4c5d-bf29-eff2c525e998" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/recommender.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htdocs/newsfeat/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../htdocs/newsfeat/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
