@@ -2,7 +2,7 @@
 
 A demo of this project is available at: http://cs410.fpinvidio.com
 
-A video presentation explaining the basics for this project is available at: http://cs410.fpinvidio.com 
+A video presentation explaining the basics for this project is available at: [https://youtu.be/KOX6byO2mq4](https://youtu.be/KOX6byO2mq4)
 
 ### What's all the fuss about?
 
