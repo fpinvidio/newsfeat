@@ -15,8 +15,8 @@ def index():
 
 @app.route('/search')
 def search():
-    #searcher = Searcher("/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
-    searcher = Searcher("idx")
+    searcher = Searcher("/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
+    #searcher = Searcher("idx")
     return searcher.search(request.args.get('query'))
 
 @app.route('/recommend')
@@ -58,8 +58,8 @@ def dislike_news(id):
 
 @app.route('/search_index')
 def search_index():
-    #indexer = Indexer("data", "/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
-    indexer = Indexer("data", "idx")
+    indexer = Indexer("data", "/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
+    #indexer = Indexer("data", "idx")
     return indexer.index()
 
 if __name__ == "__main__":
