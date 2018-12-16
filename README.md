@@ -35,14 +35,14 @@ It's starts by retrieving the news articles. News crawler [news-please](https://
 About 10K were successfully extracted as json files in a specific directory structure. For that reason some pre-processing was needed before running the indexing.
 A script that searched through the directories, found the files, parsed the extracted news json and generated txts with the article text as a line was implemented.
 The script called [news-processor](https://github.com/fpinvidio/newsfeat/blob/master/scripts/news-processor.py) user for this operation is available in the scripts folder.
-About a 5% of the articles were a default maintenance message from NY Times, those were excluded from the dataset.  
+About a 5% of the articles contained a default maintenance message from NY Times and those were excluded from the dataset.  
 Additionally, the extracted json information was stored in a MongoDB database for simplifying information querying.
 
 #### Search engine feature
 
-News data was correctly indexed and Okapi BM25 is being used for the search engine feature.
-Initially metapy was used in the project for searching, due to encountered errors which difficulted the realization of the project it was changed for [Whoosh](https://whoosh.readthedocs.io/en/latest/), a fast search engine library for python and continuing using Okapi BM25 as algorithm for ranking.
-Indexing of the dataset is required prior for searching. For that, the [indexer.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/indexer.py) has the Indexer class with an index method.
+News data was correctly indexed and Okapi BM25 is currently being used for the search engine feature.
+Initially metapy was used in the project for searching, due to encountered errors which difficulted the integration with the web framework it was changed for [Whoosh](https://whoosh.readthedocs.io/en/latest/), a fast search engine library for python. And we continued using Okapi BM25 as the main algorithm for ranking.
+Indexing of the dataset is required prior for searching. For that, the [indexer.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/indexer.py) script has the Indexer class with an index method that iterates over all the files and generates the index. 
 ```python
 class Indexer:
     def __init__(self, root, idx_path):
@@ -76,22 +76,23 @@ class Indexer:
         return "true"
 ```
 
-The script [searcher.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/searcher.py) contains the class Searcher. It recieves an index path for initialization and contains a search method that returns a json with the result. 
+The script [searcher.py](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/searcher.py) contains the class Searcher. It recieves an index path for initialization and contains a search method that returns a json with the results. 
 
 ```python
 class Searcher:
     """
-    Wraps the Whoosh search engine and its rankers.
+    Wraps the MeTA search engine and its rankers.
     """
     def __init__(self, idx_path):
         """
-        Load the inverted index based on the provided index_path.
+        Create/load a MeTA inverted index based on the provided config file and
+        set the default ranking algorithm to Okapi BM25.
         """
         self.ix = open_dir(idx_path)
 
     def search(self, search_term):
         topN = 10
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        client = MongoClient(constants.MONGODB_CLIENT)
         db = client.newsfeat
         news = db.news
         response = {'query': search_term, 'results': []}
@@ -120,10 +121,14 @@ Like and dislike buttons are available for every news, so that users may input t
 ```python
 class Recommender:
     """
-    Trains the data.
+    Wraps the MeTA search engine and its rankers.
     """
     def __init__(self):
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        """
+        Create/load a MeTA inverted index based on the provided config file and
+        set the default ranking algorithm to Okapi BM25.
+        """
+        client = MongoClient(constants.MONGODB_CLIENT)
         #client = MongoClient()
         db = client.newsfeat
         news = db.news
@@ -149,7 +154,7 @@ class Recommender:
         self.train = train
 
     def recommend(self, user_ids):
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        client = MongoClient(constants.MONGODB_CLIENT)
         db = client.newsfeat
         news = db.news
         # number of users and news in training data
@@ -180,39 +185,37 @@ Flask is a very simple microframework for Python. Within the [\_\_init__.py](htt
 Within the templates dir you'll find the index.html which contains the [index.html](https://github.com/fpinvidio/newsfeat/blob/master/htdocs/newsfeat/templates/index.html) used in the webapp.
 The following shows the available API methods for the flask application: 
 ```python
-"""
-    Index route for rendering the index.html template
-"""
 @app.route('/')
 def index():
+    """
+        Index route for rendering the index.html template
+    """
     return render_template('index.html')
 
-"""
-    Route used for searching. Receives a query param and returns a json with all the results.
-"""
 @app.route('/search')
 def search():
-    searcher = Searcher("/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
-    #searcher = Searcher("idx")
+    """
+        Route used for searching. Receives a query param and returns a json with all the results.
+    """
+    searcher = Searcher(constants.INDEX_PATH)
     return searcher.search(request.args.get('query'))
 
-"""
-    Route used for recommending. Receives a user_id param for specifying the user and returns a json with all the results.
-"""
 @app.route('/recommend')
 def recommend():
+    """
+        Route used for recommending. Receives a user_id param for specifying the user and returns a json with all the results.
+    """
     recommender = Recommender()
     user_id = int(request.args.get('user_id'))-1
     return recommender.recommend([user_id])
 
-"""
-    POST Route used for liking an article. An id param is used for specifying
-    the article and a user_id param is for identifying the user.
-"""
 @app.route('/news/<string:id>/like', methods=['POST'])
 def like_news(id):
-    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-    #client = MongoClient()
+    """
+        POST Route used for liking an article. An id param is used for specifying
+        the article and a user_id param is for identifying the user.
+    """
+    client = MongoClient(constants.MONGODB_CLIENT)
     db = client.newsfeat
     news = db.news
     article = news.find_one({'_id': ObjectId(id)})
@@ -224,14 +227,13 @@ def like_news(id):
         return "{success: true}"
     return "{success: false}"
 
-"""
-    POST Route used for disliking an article. An id param is used for specifying
-    the article and a user_id param is for identifying the user.
-"""
 @app.route('/news/<string:id>/dislike', methods=['POST'])
 def dislike_news(id):
-    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-    #client = MongoClient()
+    """
+        POST Route used for disliking an article. An id param is used for specifying
+        the article and a user_id param is for identifying the user.
+    """
+    client = MongoClient(constants.MONGODB_CLIENT)
     db = client.newsfeat
     news = db.news
     article = news.find_one({'_id': ObjectId(id)})
@@ -243,13 +245,26 @@ def dislike_news(id):
         return "{success: true}"
     return "{success: false}"
 
-"""
-    Additional route used for indexing the dataset.
-"""
+@app.route('/articles/<string:id>')
+def show(id):
+    """
+        Route used for returning article json.
+    """
+    client = MongoClient(constants.MONGODB_CLIENT)
+    db = client.newsfeat
+    news = db.news
+    article = news.find_one({'_id': ObjectId(id)})
+    if article is not None:
+        response = {'success': "true", 'article': article}
+        return json.dumps(response,default=json_util.default)
+    return "{success: false}"
+
 @app.route('/search_index')
 def search_index():
-    indexer = Indexer("data", "/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
-    #indexer = Indexer("data", "idx")
+    """
+        Additional route used for indexing the dataset.
+    """
+    indexer = Indexer(constants.CORPUS_NAME, constants.INDEX_PATH)
     return indexer.index()
 
 if __name__ == "__main__":
