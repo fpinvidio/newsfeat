@@ -10,7 +10,7 @@ People dedicated to content generation rely on relevant news for building their 
 Current search engines depend strictly on the user's query and don't take into account other variables such as user interests.
 A massive amount of news are created every day making it impossible for a human to process that much information in an adequate time.
 
-That's where Newsfeat comes in, a feature based News Recommendation Engine. Newsfeat suggests relevant news based on your specific interests or a set of important features at a specific time. And for each recommended news presented it extracts phrases that answer the most important questions that describe the article’s event. **Who, What, When, Where, Why and How?**
+That's where Newsfeat comes in. Newsfeat suggests relevant news based on your specific interests and also it also allows you to search its database in an efficient way. And for each recommended news presented it extracts phrases that answer the most important questions that describe the article’s event. **Who, What, When, Where, Why and How?**
 
 ### For who?
 
@@ -280,17 +280,17 @@ This project has a dependency on the following libraries:
 * Flask
 * Json
 
-You can use the requirements.txt located within the htdocs folder for an automated dependecy installation using the following: 
-```
-pip install -r requirements.txt
-```
-Currently this file has a specific dependancy(PyObjc) for OSX due to the LightFM library, therefore installing this library in other systems will produce an error. For that reason it is recommended to install separately.
-
-Or by running the following:
+You can install the dependencies required for starting the server by running the following:
 
 ```
 pip install numpy scipy pymongo flask whoosh lightfm
 ``` 
+
+If not, although not recommended in this case, you can use the requirements.txt located within the htdocs folder for an automated dependency installation using the following: 
+```
+pip install -r requirements.txt
+```
+Currently this file has a specific dependancy(PyObjc) for OSX due to the LightFM library, therefore installing this library in other systems will produce an error. For that reason it is recommended to install separately.
 
 #### Importing the database
 
