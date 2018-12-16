@@ -1,7 +1,6 @@
 import json
 from bson import json_util
 import time
-import metapy
 
 from pymongo import MongoClient
 from whoosh.qparser import QueryParser
