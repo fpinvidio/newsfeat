@@ -85,6 +85,25 @@
             <a id="elapsed-time" onclick="performRecommend()"></a>
         </small>
     </div>
+
+    <div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal_article_title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_article_content">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </main><!-- /.container -->
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -124,7 +143,7 @@
                 (result.giveme5w1h.when ? ('<span class="badge badge-danger">' + result.giveme5w1h.when + '</span> ') : "") +
                 (result.giveme5w1h.why ? ('<span class="badge badge-warning">' + result.giveme5w1h.why + '</span> ') : "") +
                 (result.giveme5w1h.how ? ('<span class="badge badge-info">' + result.giveme5w1h.how + '</span> ') : "");
-            $('#search-results').append('<div class="media-wrapper"><div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125"><strong class="d-block text-gray-dark"> ' + result.title + ' <span class="text-right"><i class="fas fa-thumbs-up text-success" onclick="likeNews(\''+result._id["$oid"]+'\')"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-down text-danger" onclick="dislikeNews(\''+result._id["$oid"]+'\')"></i></span></strong>' + result.description + '</p></div><div class="giveme-wrapper border-bottom border-gray">' + giveme5 + '</div></div>')
+            $('#search-results').append('<div class="media-wrapper"><div class="media text-muted pt-3"><p class="media-body pb-3 mb-0 small lh-125"><strong class="d-block text-gray-dark"> ' + result.title + ' <span class="text-right"><i class="fas fa-thumbs-up text-success" onclick="likeNews(\''+result._id["$oid"]+'\')"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-down text-danger" onclick="dislikeNews(\''+result._id["$oid"]+'\')"></i></span></strong>' + result.description + '</p><button type="button" class="btn btn-primary" onclick="showArticle(\''+result._id["$oid"]+'\')">View more</button></div><div class="giveme-wrapper border-bottom border-gray">' + giveme5 + '</div></div>')
             $('#elapsed-time').text((json_data.elapsed_time || 0.0).toFixed(2) + " seconds");
         }
     }
@@ -143,7 +162,7 @@
         for (var i = 0; i < results.length; i++) {
             if (i == 3) break;
             let result = results[i];
-            $('#card-deck').append('<div class="card"><img class="card-img-top" src="' + result.image_url + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + result.title + '</h5><p class="card-text">' + result.description + '</p></div><div class="card-footer text-right"><i class="fas fa-thumbs-up text-success" onclick="likeNews(\''+result._id["$oid"]+'\')"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-down text-danger" onclick="dislikeNews(\''+result._id["$oid"]+'\')"></i></div></div>')
+            $('#card-deck').append('<div class="card"><img class="card-img-top" src="' + result.image_url + '" alt="Card image cap"><div class="card-body"><h5 class="card-title">' + result.title + '</h5><p class="card-text">' + result.description + '</p><button type="button" class="btn btn-primary" onclick="showArticle(\''+result._id["$oid"]+'\')">View more</button></div><div class="card-footer text-right"><i class="fas fa-thumbs-up text-success" onclick="likeNews(\''+result._id["$oid"]+'\')"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-thumbs-down text-danger" onclick="dislikeNews(\''+result._id["$oid"]+'\')"></i></div></div>')
         }
     }
 
@@ -171,6 +190,22 @@
                 alert('Disliked successfully');
             }
         });
+    }
+
+    function showArticle(id) {
+        let url = "/articles/" + id;
+        $.get(url, function (data, status) {
+            let json_data = JSON.parse(data);
+            if (json_data.article)
+                displayModal(json_data.article);
+        });
+    }
+
+    function displayModal(article) {
+        let body = '<img src="'+article.image_url+'" style="max-width: 100%"/><br><p>'+article.text+'</p>';
+        $('#modal_article_title').html(article.title);
+        $('#modal_article_content').html(body);
+        $('#articleModal').modal('show');
     }
 
     jQuery(function () {

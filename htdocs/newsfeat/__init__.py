@@ -1,3 +1,6 @@
+import json
+import constants
+from bson import json_util
 from bson.objectid import ObjectId
 from pymongo import MongoClient
 from searcher import Searcher
@@ -6,7 +9,6 @@ from indexer import Indexer
 from flask import Flask
 from flask import render_template
 from flask import request
-import constants
 
 app = Flask(__name__)
 
@@ -68,6 +70,20 @@ def dislike_news(id):
         user_likes[user_id] = -1
         news.update({'_id': ObjectId(id)}, {"$set": {"user_likes": user_likes}})
         return "{success: true}"
+    return "{success: false}"
+
+@app.route('/articles/<string:id>')
+def show(id):
+    """
+        Route used for returning article json.
+    """
+    client = MongoClient(constants.MONGODB_CLIENT)
+    db = client.newsfeat
+    news = db.news
+    article = news.find_one({'_id': ObjectId(id)})
+    if article is not None:
+        response = {'success': "true", 'article': article}
+        return json.dumps(response,default=json_util.default)
     return "{success: false}"
 
 @app.route('/search_index')
