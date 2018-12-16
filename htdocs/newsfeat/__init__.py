@@ -6,42 +6,41 @@ from indexer import Indexer
 from flask import Flask
 from flask import render_template
 from flask import request
+import constants
 
 app = Flask(__name__)
 
-"""
-    Index route for rendering the index.html template
-"""
 @app.route('/')
 def index():
+    """
+        Index route for rendering the index.html template
+    """
     return render_template('index.html')
 
-"""
-    Route used for searching. Receives a query param and returns a json with all the results.
-"""
 @app.route('/search')
 def search():
-    searcher = Searcher("/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
-    #searcher = Searcher("idx")
+    """
+        Route used for searching. Receives a query param and returns a json with all the results.
+    """
+    searcher = Searcher(constants.INDEX_PATH)
     return searcher.search(request.args.get('query'))
 
-"""
-    Route used for recommending. Receives a user_id param for specifying the user and returns a json with all the results.
-"""
 @app.route('/recommend')
 def recommend():
+    """
+        Route used for recommending. Receives a user_id param for specifying the user and returns a json with all the results.
+    """
     recommender = Recommender()
     user_id = int(request.args.get('user_id'))-1
     return recommender.recommend([user_id])
 
-"""
-    POST Route used for liking an article. An id param is used for specifying
-    the article and a user_id param is for identifying the user.
-"""
 @app.route('/news/<string:id>/like', methods=['POST'])
 def like_news(id):
-    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-    #client = MongoClient()
+    """
+        POST Route used for liking an article. An id param is used for specifying
+        the article and a user_id param is for identifying the user.
+    """
+    client = MongoClient(constants.MONGODB_CLIENT)
     db = client.newsfeat
     news = db.news
     article = news.find_one({'_id': ObjectId(id)})
@@ -53,14 +52,13 @@ def like_news(id):
         return "{success: true}"
     return "{success: false}"
 
-"""
-    POST Route used for disliking an article. An id param is used for specifying
-    the article and a user_id param is for identifying the user.
-"""
 @app.route('/news/<string:id>/dislike', methods=['POST'])
 def dislike_news(id):
-    client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
-    #client = MongoClient()
+    """
+        POST Route used for disliking an article. An id param is used for specifying
+        the article and a user_id param is for identifying the user.
+    """
+    client = MongoClient(constants.MONGODB_CLIENT)
     db = client.newsfeat
     news = db.news
     article = news.find_one({'_id': ObjectId(id)})
@@ -72,13 +70,12 @@ def dislike_news(id):
         return "{success: true}"
     return "{success: false}"
 
-"""
-    Additional route used for indexing the dataset.
-"""
 @app.route('/search_index')
 def search_index():
-    indexer = Indexer("data", "/var/www/cs410.fpinvidio.com/htdocs/newsfeat/htdocs/newsfeat/idx")
-    #indexer = Indexer("data", "idx")
+    """
+        Additional route used for indexing the dataset.
+    """
+    indexer = Indexer(constants.CORPUS_NAME, constants.INDEX_PATH)
     return indexer.index()
 
 if __name__ == "__main__":

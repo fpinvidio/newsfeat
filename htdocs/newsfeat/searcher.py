@@ -1,6 +1,7 @@
 import json
 from bson import json_util
 import time
+import constants
 
 from pymongo import MongoClient
 from whoosh.qparser import QueryParser
@@ -20,7 +21,7 @@ class Searcher:
 
     def search(self, search_term):
         topN = 10
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        client = MongoClient(constants.MONGODB_CLIENT)
         db = client.newsfeat
         news = db.news
         response = {'query': search_term, 'results': []}

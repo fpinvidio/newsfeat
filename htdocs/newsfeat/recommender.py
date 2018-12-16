@@ -1,4 +1,5 @@
 import numpy as np
+import constants
 from pymongo import MongoClient
 from lightfm import LightFM
 from scipy.sparse import coo_matrix
@@ -14,7 +15,7 @@ class Recommender:
         Create/load a MeTA inverted index based on the provided config file and
         set the default ranking algorithm to Okapi BM25.
         """
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        client = MongoClient(constants.MONGODB_CLIENT)
         #client = MongoClient()
         db = client.newsfeat
         news = db.news
@@ -40,7 +41,7 @@ class Recommender:
         self.train = train
 
     def recommend(self, user_ids):
-        client = MongoClient('mongodb://newsfeat:N3usF3at@ds043062.mlab.com:43062/newsfeat')
+        client = MongoClient(constants.MONGODB_CLIENT)
         db = client.newsfeat
         news = db.news
         # number of users and news in training data
