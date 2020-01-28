@@ -229,7 +229,7 @@ statistics==1.0.3.5
 subprocess32==3.5.1
 tabulate==0.7.5
 tensorboard==1.11.0
-tensorflow==1.11.0
+tensorflow==1.15.2
 termcolor==1.1.0
 texttable==0.9.1
 thinc==6.12.0
