@@ -210,7 +210,7 @@ python-dateutil==2.7.5
 pytoml==0.1.19
 pyttsx==1.1
 pytz==2018.7
-PyYAML==3.13
+PyYAML==5.4
 queuelib==1.5.0
 readability-lxml==0.7
 regex==2018.1.10
