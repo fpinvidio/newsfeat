@@ -49,7 +49,7 @@ queuelib==1.5.0
 readability-lxml==0.7
 requests==2.20.1
 requests-file==1.4.3
-rsa==3.4.2
+rsa==4.7
 s3transfer==0.1.13
 Scrapy==1.5.1
 service-identity==17.0.0
