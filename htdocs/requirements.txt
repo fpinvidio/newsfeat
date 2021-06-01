@@ -242,7 +242,7 @@ Twisted==18.9.0
 typing==3.6.6
 ujson==1.35
 Unidecode==1.0.23
-urllib3==1.24.1
+urllib3==1.26.5
 virtualenv==16.1.0
 w3lib==1.19.0
 warcio==1.6.2
