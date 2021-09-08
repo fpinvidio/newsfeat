@@ -92,7 +92,7 @@ parsel==1.5.1
 pathlib==1.0.1
 pathspec==0.5.5
 pbr==5.0.0
-Pillow==5.3.0
+Pillow==8.3.2
 plac==0.9.6
 plotly==3.4.2
 preshed==2.0.1
