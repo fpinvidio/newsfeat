@@ -56,7 +56,7 @@ service-identity==17.0.0
 six==1.11.0
 tinysegmenter==0.3
 tldextract==2.2.0
-Twisted==18.9.0
+Twisted==22.2.0
 urllib3==1.24.1
 w3lib==1.19.0
 warcio==1.6.2
